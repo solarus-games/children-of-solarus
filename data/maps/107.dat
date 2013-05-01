@@ -5306,7 +5306,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 421,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b818",
 }
@@ -5315,7 +5315,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 421,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b819",
 }
@@ -5324,7 +5324,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 453,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b820",
 }
@@ -5333,7 +5333,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 453,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b821",
 }
@@ -5342,7 +5342,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 485,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b822",
 }
@@ -5351,7 +5351,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 485,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b823",
 }
@@ -5360,7 +5360,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 517,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b824",
 }
@@ -5369,7 +5369,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 517,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b825",
 }
@@ -5378,7 +5378,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 549,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b826",
 }
@@ -5387,7 +5387,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 549,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b827",
 }
@@ -5396,7 +5396,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 581,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b828",
 }
@@ -5405,7 +5405,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 581,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b829",
 }
@@ -5414,7 +5414,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 613,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b830",
 }
@@ -5423,7 +5423,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 613,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b831",
 }
@@ -5432,7 +5432,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 645,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b832",
 }
@@ -5441,7 +5441,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 645,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b833",
 }
@@ -5450,7 +5450,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 421,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b834",
 }
@@ -5459,7 +5459,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 421,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b835",
 }
@@ -5468,7 +5468,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 453,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b836",
 }
@@ -5477,7 +5477,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 453,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b837",
 }
@@ -5486,7 +5486,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 485,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b838",
 }
@@ -5495,7 +5495,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 485,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b839",
 }
@@ -5504,7 +5504,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 517,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b840",
 }
@@ -5513,7 +5513,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 517,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b841",
 }
@@ -5522,7 +5522,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 549,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b842",
 }
@@ -5531,7 +5531,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 549,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b843",
 }
@@ -5540,7 +5540,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 581,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b844",
 }
@@ -5549,7 +5549,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 581,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b845",
 }
@@ -5558,7 +5558,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 613,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b846",
 }
@@ -5567,7 +5567,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 613,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b847",
 }
@@ -5576,7 +5576,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 645,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b848",
 }
@@ -5585,7 +5585,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 645,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b849",
 }
@@ -5594,7 +5594,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 677,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b850",
 }
@@ -5603,7 +5603,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 677,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b851",
 }
@@ -5612,7 +5612,7 @@ pickable{
   layer = 1,
   x = 1704,
   y = 709,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b852",
 }
@@ -5621,7 +5621,7 @@ pickable{
   layer = 1,
   x = 1672,
   y = 709,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b853",
 }
@@ -5630,7 +5630,7 @@ pickable{
   layer = 1,
   x = 1768,
   y = 677,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b854",
 }
@@ -5639,7 +5639,7 @@ pickable{
   layer = 1,
   x = 1736,
   y = 677,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b855",
 }
@@ -5648,7 +5648,7 @@ pickable{
   layer = 1,
   x = 1768,
   y = 709,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b856",
 }
@@ -5657,7 +5657,7 @@ pickable{
   layer = 1,
   x = 1736,
   y = 709,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b857",
 }
@@ -5666,7 +5666,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 677,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b858",
 }
@@ -5675,7 +5675,7 @@ pickable{
   layer = 1,
   x = 1800,
   y = 677,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b859",
 }
@@ -5684,7 +5684,7 @@ pickable{
   layer = 1,
   x = 1832,
   y = 709,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b860",
 }
@@ -5693,7 +5693,7 @@ pickable{
   layer = 1,
   x = 1800,
   y = 709,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b861",
 }
@@ -5702,7 +5702,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 677,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b862",
 }
@@ -5711,7 +5711,7 @@ pickable{
   layer = 1,
   x = 1864,
   y = 709,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b863",
 }
@@ -6068,7 +6068,7 @@ chest{
   x = 2200,
   y = 1341,
   name = "chest",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 4,
   treasure_savegame_variable = "b865",
   sprite = "entities/chest",

@@ -147,7 +147,7 @@
 0	1	280	360	16	8	79
 0	1	280	384	16	8	81
 5	1	72	184	chest	0	bomb	2	932
-5	1	256	536	chest_2	0	rupee	3	933
+5	1	256	536	chest_2	0	gem	3	933
 7	1	172	277	enemy	3	red_helmasaur	0	-1	_random	1	-1
 7	1	236	349	enemy_2	3	red_helmasaur	0	-1	_random	1	-1
 7	1	172	373	enemy_3	3	red_helmasaur	0	-1	_random	1	-1

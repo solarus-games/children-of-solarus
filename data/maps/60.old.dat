@@ -286,8 +286,8 @@
 3	0	304	1045	piece_of_heart	1	413
 2	0	248	808	32	32	teletransporter_11	_none	_none	1	59	_same
 2	0	328	856	16	16	teletransporter_35	_none	_none	1	59	from_1F_c_hole_down
-5	0	200	760	chest_6	0	rupee	4	414
-5	0	208	656	chest_7	0	rupee	5	418
+5	0	200	760	chest_6	0	gem	4	414
+5	0	208	656	chest_7	0	gem	5	418
 7	0	464	1037	enemy	3	skeletor	0	-1	_random	1	-1
 7	0	96	957	enemy_2	3	red_bullblin	0	-1	_random	1	-1
 9	0	152	605	block	-1	entities/block	0	0	0

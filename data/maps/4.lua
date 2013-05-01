@@ -21,7 +21,7 @@ function map:on_started(destination)
     map:get_game():set_hud_enabled(false)
     map:set_entities_enabled("enemy", false)
     sol.audio.play_music("fanfare")
-    map:set_entities_enabled("broken_rupee_house", false)
+    map:set_entities_enabled("broken_gem_house", false)
   else
     -- enable dark world
     if map:get_game():get_value("b905") then
@@ -31,13 +31,13 @@ function map:on_started(destination)
       sol.audio.play_music("overworld")
     end
 
-    -- broken rupee house
+    -- broken gem house
     if map:get_game():get_value("b155") then
-      to_rupee_house:set_enabled(false)
-      rupee_house_door:set_enabled(false)
+      to_gem_house:set_enabled(false)
+      gem_house_door:set_enabled(false)
     else
-      to_broken_rupee_house:set_enabled(false)
-      map:set_entities_enabled("broken_rupee_house", false)
+      to_broken_gem_house:set_enabled(false)
+      map:set_entities_enabled("broken_gem_house", false)
     end
   end
 
@@ -63,7 +63,7 @@ function map:on_started(destination)
 
   -- Entrances of houses.
   local entrance_names = {
-    "rupee_house", "lyly"
+    "gem_house", "lyly"
   }
   for _, entrance_name in ipairs(entrance_names) do
     local sensor = map:get_entity(entrance_name .. "_door_sensor")

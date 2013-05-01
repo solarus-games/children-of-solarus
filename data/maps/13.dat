@@ -958,7 +958,7 @@ destructible{
   x = 408,
   y = 173,
   subtype = "white_stone",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 3,
   treasure_savegame_variable = "b945",
 }

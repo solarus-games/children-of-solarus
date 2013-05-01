@@ -25,9 +25,9 @@ map.caption.dungeon_name_9        Templo de los$Recuerdos
 map.caption.dungeon_name_10       Torre Celestial
 
 # Quest status submenu
-quest_status.caption.rupee_bag_1    Bolsa de Rupias
-quest_status.caption.rupee_bag_2    Bolsa de Rupias$Grande
-quest_status.caption.rupee_bag_3    Bolsa de Rupias$Gigante
+quest_status.caption.gem_bag_1    Bolsa de Rupias
+quest_status.caption.gem_bag_2    Bolsa de Rupias$Grande
+quest_status.caption.gem_bag_3    Bolsa de Rupias$Gigante
 quest_status.caption.bomb_bag_1     Saco de Bombas
 quest_status.caption.bomb_bag_2     Saco de Bombas$Grande
 quest_status.caption.bomb_bag_3     Saco de Bombas$Gigante

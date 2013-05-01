@@ -11,8 +11,8 @@
 0	28	Link's House
 0	1	Link's House - Secret room
 0	11	Grandma house
-0	2	Rupee House
-0	70	Rupee House (broken)
+0	2	gem House
+0	70	gem House (broken)
 0	12	Sahasrahla house
 0	13	Sahasrahla house B1
 0	14	Sahasrahla house B2
@@ -382,14 +382,14 @@
 5	sword	Sword
 5	shield	Shield
 5	world_map	World map
-5	rupee_bag	Rupee bag (small / large / huge)
+5	gem_bag	gem bag (small / large / huge)
 5	magic_bar	Maximum of magic (none / half / full)
 5	map	Dungeon map
 5	compass	Dungeon compass
 5	big_key	Dungeon big key
 5	boss_key	Dungeon boss key
 5	small_key	Small key
-5	rupee	Rupees (x1 / x5 / x20 / x50 / x100 / x300)
+5	gem	gems (x1 / x5 / x20 / x50 / x100 / x300)
 5	magic_flask	Magic flask (small / big)
 5	heart	Heart (x1)
 5	heart_container	Heart container

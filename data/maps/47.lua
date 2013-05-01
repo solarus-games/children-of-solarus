@@ -2,7 +2,7 @@ local map = ...
 -- Dungeon 8 1F
 
 -- Legend
--- RC: Rupee Chest
+-- RC: gem Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door

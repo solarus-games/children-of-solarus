@@ -62,9 +62,9 @@
 0	0	192	152	8	8	331
 0	0	192	160	8	16	335
 18	0	80	48	door	1	0	928
-5	0	200	136	chest	0	rupee	5	104
+5	0	200	136	chest	0	gem	5	104
 8	0	152	77	billy	3	1	npc/billy	map
-4	0	72	173	0	rupee	1	-1
+4	0	72	173	0	gem	1	-1
 1	0	112	189	from_outside	1	_none
 2	0	104	208	16	16	to_outside	_none	_none	1	5	from_billy_cave
 13	0	112	189	16	16	save_solid_ground_sensor

@@ -2,7 +2,7 @@ local map = ...
 -- Waterfall cave 1F
 
 local nb_chests_open = 0
-local rupee_reward_variants = {
+local gem_reward_variants = {
   1, 1, 2, 2, 3, 4
 }
 
@@ -13,7 +13,7 @@ local function chest_empty(chest)
   if nb_chests_open == 7 then
     hero:start_treasure("piece_of_heart", 1, "b197")
   else
-    hero:start_treasure("rupee", rupee_reward_variants[nb_chests_open])
+    hero:start_treasure("gem", gem_reward_variants[nb_chests_open])
   end
 end
 

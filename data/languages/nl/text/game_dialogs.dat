@@ -580,7 +580,7 @@ next = outside_world.village.hat_man_npc.4
 line1 = "beter dan mij kunnen"
 line2 = "doen!"
 
-[outside_world.village.rupee_house_sign]
+[outside_world.village.gem_house_sign]
 # Pancarte à l'entrée de la maison des rubis
 #       |-----------------------|
 line1 = "   - Robijnenhuis -"
@@ -840,68 +840,68 @@ next = link_house.dream.2
 line1 = "Ik moet... je praten..."
 line2 = "Kom vlug, $v..."
 
-[rupee_house.game_1.intro]
+[gem_house.game_1.intro]
 # Jeu du coffre-mystère dans la maison des rubis
 #       |-----------------------|
 line1 = "Welkom aan het spel van"
 line2 = "de Geheimkist. Betaal 20"
 line3 = "robijnen om één van de"
-next = rupee_house.game_1.intro.2
+next = gem_house.game_1.intro.2
 
-[rupee_house.game_1.intro.2]
+[gem_house.game_1.intro.2]
 #       |-----------------------|
 line1 = "drie kisten te openen"
 line2 = "en veel robijnen"
 line3 = "proberen te winnen!"
-next = rupee_house.game_1.intro.3
+next = gem_house.game_1.intro.3
 
-[rupee_house.game_1.intro.3]
+[gem_house.game_1.intro.3]
 #       |-----------------------|
 line1 = "Zo, wil je spelen?"
 line2 = "Ja"
 line3 = "Nee"
 question = true
 
-[rupee_house.game_1.choose_chest]
+[gem_house.game_1.choose_chest]
 # Coffre-mystère : quand on parle au vendeur après avoir déjà payé
 #       |-----------------------|
 line1 = "Kies één van de drie"
 line2 = "kisten!"
-next = rupee_house.game_1.choose_chest.2
+next = gem_house.game_1.choose_chest.2
 
-[rupee_house.game_1.choose_chest.2]
+[gem_house.game_1.choose_chest.2]
 #       |-----------------------|
 line1 = "Maar reken niet op mij"
 line2 = "om je te helpen!"
 
-[rupee_house.game_1.good_luck]
+[gem_house.game_1.good_luck]
 # Coffre-mystère : quand on accepte de jouer
 #       |-----------------------|
 line1 = "Ga één kist kiezen en"
 line2 = "succes!"
 
-[rupee_house.game_1.not_allowed_to_play]
+[gem_house.game_1.not_allowed_to_play]
 # Coffre-mystère : quand on a déjà trop gagné pour avoir le droit de rejouer
 #       |-----------------------|
 line1 = "Heb je niet al genoeg"
 line2 = "gewonnen? We zijn door"
 line3 = "je geruïneerd!"
 
-[rupee_house.game_1.play_again_question]
+[gem_house.game_1.play_again_question]
 # Coffre-mystère : veut-on rejouer ?
 #       |-----------------------|
 line1 = "Wil je opnieuw"
 line2 = "proberen?"
-next = rupee_house.game_1.play_again_question.2
+next = gem_house.game_1.play_again_question.2
 
-[rupee_house.game_1.play_again_question.2]
+[gem_house.game_1.play_again_question.2]
 #       |-----------------------|
 line1 = "Dat kost 20 robijnen!"
 line2 = "Ja"
 line3 = "Nee"
 question = true
 
-[rupee_house.game_1.not_playing]
+[gem_house.game_1.not_playing]
 # Coffre-mystère : quand on refuse de jouer
 # C'est un clin d'oeil à Link's Awakening, dans le stand
 # de pêche tout au début du jeu, quand on refuse de jouer ou de rejouer
@@ -909,41 +909,41 @@ question = true
 line1 = "Leef zoals je wilt!"
 line2 = "Wees meer gemotiveerd!"
 
-[rupee_house.game_2.intro]
+[gem_house.game_2.intro]
 # Jeu du bandit manchot dans la maison des rubis
 #       |-----------------------|
 line1 = "Welkom aan het nieuwe"
 line2 = "spel, de gokautomaat!"
-next = rupee_house.game_2.intro.2
+next = gem_house.game_2.intro.2
 
-[rupee_house.game_2.intro.2]
+[gem_house.game_2.intro.2]
 #       |-----------------------|
 line1 = "Zet 5 of 20 robijnen in"
 line2 = "en probeer op een rij"
 line3 = "drie identieke symbolen"
-next = rupee_house.game_2.intro.3
+next = gem_house.game_2.intro.3
 
-[rupee_house.game_2.intro.3]
+[gem_house.game_2.intro.3]
 #       |-----------------------|
 line1 = "te zetten om"
 line2 = "verscillende keren je"
 line3 = "inzet te winnen!"
-next = rupee_house.game_2.intro.4
+next = gem_house.game_2.intro.4
 
-[rupee_house.game_2.intro.4]
+[gem_house.game_2.intro.4]
 #       |-----------------------|
 line1 = "Zo, wil je spelen?"
 line2 = "Ja"
 line3 = "Nee"
 question = true
 
-[rupee_house.game_2.not_playing]
+[gem_house.game_2.not_playing]
 # Bandit manchot : quand on refuse de jouer
 #       |-----------------------|
 line1 = "Misschien een andere"
 line2 = "keer?"
 
-[rupee_house.game_2.choose_bet]
+[gem_house.game_2.choose_bet]
 # Bandit manchot : quand on accepte de jouer
 #       |-----------------------|
 line1 = "Hoeveel wil je zetten?"
@@ -951,98 +951,98 @@ line2 = "5 robijnen"
 line3 = "20 robijnen"
 question = true
 
-[rupee_house.game_2.just_paid]
+[gem_house.game_2.just_paid]
 # Bandit manchot : quand on a choisi une des deux sommes à miser
 # et qu'on a effectiement assez d'argent
 #       |-----------------------|
 line1 = "Dank je!"
-next = rupee_house.game_2.playing
+next = gem_house.game_2.playing
 
-[rupee_house.game_2.playing]
+[gem_house.game_2.playing]
 # Bandit manchot : quand on reparle au vendeur pendant que les roulettes tournent déjà
 #       |-----------------------|
 line1 = "Ga naar de rouletten"
 line2 = "en druk op de actie"
 line3 = "toets om hen te"
-next = rupee_house.game_2.playing.2
+next = gem_house.game_2.playing.2
 
-[rupee_house.game_2.playing.2]
+[gem_house.game_2.playing.2]
 #       |-----------------------|
 line1 = "stoppen. Succes!"
 
-[rupee_house.game_2.reward.same_any]
+[gem_house.game_2.reward.same_any]
 # Bandit manchot : quand on obtient 3 symboles identiques qui ne rapportent rien d'exceptionnel
 #       |-----------------------|
 line1 = "Drie identieke"
 line2 = "symbolen, goed! Je wint"
 line3 = "4 keren je inzet."
 
-[rupee_house.game_2.reward.green_rupees]
+[gem_house.game_2.reward.green_gems]
 # Bandit manchot : quand on obtient 3 symboles de rubis verts
 #       |-----------------------|
 line1 = "Drie groene robijnen,"
 line2 = "leuk! Je wint 5 keren"
 line3 = "je inzet!"
 
-[rupee_house.game_2.reward.blue_rupees]
+[gem_house.game_2.reward.blue_gems]
 # Bandit manchot : quand on obtient 3 symboles de rubis bleus
 #       |-----------------------|
 line1 = "Drie blauwe robijnen!"
 line2 = "Proficiat, je gaat"
 line3 = "terug met niet meer dan"
-next = rupee_house.game_2.reward.blue_rupees.2
+next = gem_house.game_2.reward.blue_gems.2
 
-[rupee_house.game_2.reward.blue_rupees.2]
+[gem_house.game_2.reward.blue_gems.2]
 #       |-----------------------|
 line1 = "7 keren je inzet!"
 
-[rupee_house.game_2.reward.red_rupees]
+[gem_house.game_2.reward.red_gems]
 # Bandit manchot : quand on obtient 3 symboles de rubis rouges
 #       |-----------------------|
 line1 = "Drie rode robijnen!!!"
 line2 = "Ik ben stomverbaasd!"
-next = rupee_house.game_2.reward.red_rupees.2
+next = gem_house.game_2.reward.red_gems.2
 
-[rupee_house.game_2.reward.red_rupees.2]
+[gem_house.game_2.reward.red_gems.2]
 #       |-----------------------|
 line1 = "Je gaat terug met 10"
 line2 = "keren je inzet. Bravo!"
-[rupee_house.game_2.reward.different_rupees]
+[gem_house.game_2.reward.different_gems]
 # Bandit manchot : quand on obtient 3 symboles de rubis différents
 #       |-----------------------|
 line1 = "Whaou!!! Je hebt drie"
 line2 = "robijnen van"
 line3 = "verschillende kleuren"
-next = rupee_house.game_2.reward.different_rupees.2
+next = gem_house.game_2.reward.different_gems.2
 
-[rupee_house.game_2.reward.different_rupees.2]
+[gem_house.game_2.reward.different_gems.2]
 #       |-----------------------|
 line1 = "gekregen, men ziet niet"
 line2 = "dat elke dag! Je wint"
 line3 = "15 keren je inzet."
 
-[rupee_house.game_2.reward.yoshi]
+[gem_house.game_2.reward.yoshi]
 # Bandit manchot : quand on obtient 3 symboles Yoshi (c'est la récompense maximale)
 #       |-----------------------|
 line1 = "$1...$3Drie Yoshi?! Dat"
 line2 = "is ongelooflijk! Dat is"
 line3 = "de beste mogelijke"
-next = rupee_house.game_2.reward.yoshi.2
+next = gem_house.game_2.reward.yoshi.2
 
-[rupee_house.game_2.reward.yoshi.2]
+[gem_house.game_2.reward.yoshi.2]
 #       |-----------------------|
 line1 = "verbinding... Je wint"
 line2 = "20 keren je inzet!"
 
-[rupee_house.game_2.reward.none]
+[gem_house.game_2.reward.none]
 # Bandit manchot : quand on n'obtient rien
 #       |-----------------------|
 line1 = "Geen geluk, je hebt"
 line2 = "geen verbinding"
 line3 = "gevormd."
-next = rupee_house.game_2.reward.none.2
+next = gem_house.game_2.reward.none.2
 
-[rupee_house.game_2.reward.none.2]
+[gem_house.game_2.reward.none.2]
 # Bandit manchot : question pour rejouer
 #       |-----------------------|
 line1 = "Probeer je opnieuw?"
@@ -1050,74 +1050,74 @@ line2 = "Ja"
 line3 = "Nee"
 question = true
 
-[rupee_house.game_3.intro]
+[gem_house.game_3.intro]
 # Jeu du labyrinthe dans la maison des rubis
 #       |-----------------------|
 line1 = "Het doel van het spel"
 line2 = "is de doolhof in een"
 line3 = "begrensde tijd over te"
-next = rupee_house.game_3.intro.2
+next = gem_house.game_3.intro.2
 
-[rupee_house.game_3.intro.2]
+[gem_house.game_3.intro.2]
 #       |-----------------------|
 line1 = "steken en de blokken te"
 line2 = "duwen om je een weg te"
 line3 = "banen. Dat zal je"
-next = rupee_house.game_3.intro.3
+next = gem_house.game_3.intro.3
 
-[rupee_house.game_3.intro.3]
+[gem_house.game_3.intro.3]
 #       |-----------------------|
 line1 = "alleen maar 10 robijnen"
 line2 = "te kosten en er is een"
 line3 = "Stukje Hart te winnen!"
-next = rupee_house.game_3.intro.4
+next = gem_house.game_3.intro.4
 
-[rupee_house.game_3.intro.4]
+[gem_house.game_3.intro.4]
 #       |-----------------------|
 line1 = "Zo, wil je proberen?"
 line2 = "Ja"
 line3 = "Nee"
 question = true
 
-[rupee_house.game_3.go]
+[gem_house.game_3.go]
 # Jeu du labyrinthe : quand on accepte de jouer et qu'on a assez d'argent
 #       |-----------------------|
 line1 = "En... Dat begint!"
 line2 = "Succes!"
 
-[rupee_house.game_3.not_playing]
+[gem_house.game_3.not_playing]
 # Jeu du labyrinthe : quand on refuse de jouer
 #       |-----------------------|
 line1 = "Dat is je keuze!"
 
-[rupee_house.game_3.not_allowed_to_play]
+[gem_house.game_3.not_allowed_to_play]
 # Jeu du labyrinthe : quand on parle au vendeur alors qu'on a déjà obtenu le fragment de coeur
 #       |-----------------------|
 line1 = "Diepbedroefd, je hebt "
 line2 = "al aan dit spel"
 line3 = "gewonnen!"
 
-[rupee_house.game_3.restart_question]
+[gem_house.game_3.restart_question]
 # Jeu du labyrinthe : quand on parle au vendeur alors que le jeu est déjà commencé
 #       |-----------------------|
 line1 = "Wil je opnieuw van het"
 line2 = "begin proberen?"
-next = rupee_house.game_3.restart_question.2
+next = gem_house.game_3.restart_question.2
 
-[rupee_house.game_3.restart_question.2]
+[gem_house.game_3.restart_question.2]
 #       |-----------------------|
 line1 = "Dat kost 10 robijnen!"
 line2 = "Ja"
 line3 = "Nee"
 question = true
 
-[rupee_house.not_enough_money]
+[gem_house.not_enough_money]
 # Maison des rubis : quand on n'a pas assez d'argent (quel que soit le jeu)
 #       |-----------------------|
 line1 = "Je hebt niet genoeg"
 line2 = "geld!"
 
-[rupee_house.pay_first]
+[gem_house.pay_first]
 # Maison des rubis : quand on interagit avec le jeu sans avoir payé (coffre-mystère et bandit manchot)
 #       |-----------------------|
 line1 = "Hé! Hier moet je"

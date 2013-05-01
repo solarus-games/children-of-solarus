@@ -36,7 +36,7 @@ function solarus_child:on_interaction()
                     sol.timer.start(2000, function()
                       map:get_game():set_dungeon_finished(4)
                       map:get_game():set_value("b905", true) -- enable the dark world
-                      map:get_game():set_value("b155", true) -- break the rupee house
+                      map:get_game():set_value("b155", true) -- break the gem house
                       hero:teleport(66, "from_dungeon_4")
                     end)
                   end)

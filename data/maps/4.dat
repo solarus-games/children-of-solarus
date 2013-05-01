@@ -8734,14 +8734,14 @@ sensor{
   y = 629,
   width = 32,
   height = 16,
-  name = "rupee_house_door_sensor",
+  name = "gem_house_door_sensor",
 }
 
 destination{
   layer = 0,
   x = 120,
   y = 629,
-  name = "out_rupee_house",
+  name = "out_gem_house",
   direction = 3,
 }
 
@@ -8762,7 +8762,7 @@ dynamic_tile{
   y = 600,
   width = 16,
   height = 16,
-  name = "rupee_house_door",
+  name = "gem_house_door",
   pattern = 915,
   enabled_at_start = true,
 }
@@ -8795,7 +8795,7 @@ dynamic_tile{
   y = 536,
   width = 88,
   height = 32,
-  name = "broken_rupee_house_8",
+  name = "broken_gem_house_8",
   pattern = 1058,
   enabled_at_start = true,
 }
@@ -8806,7 +8806,7 @@ dynamic_tile{
   y = 600,
   width = 32,
   height = 16,
-  name = "broken_rupee_house_27",
+  name = "broken_gem_house_27",
   pattern = 664,
   enabled_at_start = true,
 }
@@ -8852,7 +8852,7 @@ teletransporter{
   y = 600,
   width = 16,
   height = 16,
-  name = "to_broken_rupee_house",
+  name = "to_broken_gem_house",
   transition = 1,
   destination_map = "70",
   destination = "main_entrance",
@@ -8946,11 +8946,11 @@ npc{
   layer = 0,
   x = 144,
   y = 629,
-  name = "rupee_house_sign",
+  name = "gem_house_sign",
   direction = 3,
   subtype = "0",
   sprite = "entities/sign",
-  behavior = "dialog#outside_world.village.rupee_house_sign",
+  behavior = "dialog#outside_world.village.gem_house_sign",
 }
 
 npc{
@@ -9748,7 +9748,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_2",
+  name = "broken_gem_house_2",
   pattern = 558,
   enabled_at_start = true,
 }
@@ -9759,7 +9759,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_3",
+  name = "broken_gem_house_3",
   pattern = 1049,
   enabled_at_start = true,
 }
@@ -9770,7 +9770,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_5",
+  name = "broken_gem_house_5",
   pattern = 1051,
   enabled_at_start = true,
 }
@@ -9781,7 +9781,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_4",
+  name = "broken_gem_house_4",
   pattern = 1050,
   enabled_at_start = true,
 }
@@ -9792,7 +9792,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_6",
+  name = "broken_gem_house_6",
   pattern = 1052,
   enabled_at_start = true,
 }
@@ -9803,7 +9803,7 @@ dynamic_tile{
   y = 528,
   width = 16,
   height = 8,
-  name = "broken_rupee_house_7",
+  name = "broken_gem_house_7",
   pattern = 7,
   enabled_at_start = true,
 }
@@ -9814,7 +9814,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_9",
+  name = "broken_gem_house_9",
   pattern = 1053,
   enabled_at_start = true,
 }
@@ -9825,7 +9825,7 @@ dynamic_tile{
   y = 528,
   width = 40,
   height = 16,
-  name = "broken_rupee_house_11",
+  name = "broken_gem_house_11",
   pattern = 1051,
   enabled_at_start = true,
 }
@@ -9836,7 +9836,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_10",
+  name = "broken_gem_house_10",
   pattern = 1050,
   enabled_at_start = true,
 }
@@ -9847,7 +9847,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_12",
+  name = "broken_gem_house_12",
   pattern = 1050,
   enabled_at_start = true,
 }
@@ -9858,7 +9858,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_13",
+  name = "broken_gem_house_13",
   pattern = 1050,
   enabled_at_start = true,
 }
@@ -9869,7 +9869,7 @@ dynamic_tile{
   y = 528,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_14",
+  name = "broken_gem_house_14",
   pattern = 1046,
   enabled_at_start = true,
 }
@@ -9880,7 +9880,7 @@ dynamic_tile{
   y = 536,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_15",
+  name = "broken_gem_house_15",
   pattern = 1047,
   enabled_at_start = true,
 }
@@ -9891,7 +9891,7 @@ dynamic_tile{
   y = 552,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_16",
+  name = "broken_gem_house_16",
   pattern = 1048,
   enabled_at_start = true,
 }
@@ -9902,7 +9902,7 @@ dynamic_tile{
   y = 544,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_17",
+  name = "broken_gem_house_17",
   pattern = 1056,
   enabled_at_start = true,
 }
@@ -9913,7 +9913,7 @@ dynamic_tile{
   y = 544,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_18",
+  name = "broken_gem_house_18",
   pattern = 1055,
   enabled_at_start = true,
 }
@@ -9924,7 +9924,7 @@ dynamic_tile{
   y = 552,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_21",
+  name = "broken_gem_house_21",
   pattern = 1056,
   enabled_at_start = true,
 }
@@ -9935,7 +9935,7 @@ dynamic_tile{
   y = 552,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_22",
+  name = "broken_gem_house_22",
   pattern = 1055,
   enabled_at_start = true,
 }
@@ -9946,7 +9946,7 @@ dynamic_tile{
   y = 560,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_20",
+  name = "broken_gem_house_20",
   pattern = 1055,
   enabled_at_start = true,
 }
@@ -9957,7 +9957,7 @@ dynamic_tile{
   y = 560,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_19",
+  name = "broken_gem_house_19",
   pattern = 1056,
   enabled_at_start = true,
 }
@@ -9968,7 +9968,7 @@ dynamic_tile{
   y = 544,
   width = 8,
   height = 24,
-  name = "broken_rupee_house_23",
+  name = "broken_gem_house_23",
   pattern = 1068,
   enabled_at_start = true,
 }
@@ -9979,7 +9979,7 @@ dynamic_tile{
   y = 536,
   width = 8,
   height = 32,
-  name = "broken_rupee_house_24",
+  name = "broken_gem_house_24",
   pattern = 1066,
   enabled_at_start = true,
 }
@@ -9990,7 +9990,7 @@ dynamic_tile{
   y = 544,
   width = 8,
   height = 24,
-  name = "broken_rupee_house",
+  name = "broken_gem_house",
   pattern = 1071,
   enabled_at_start = true,
 }
@@ -10001,7 +10001,7 @@ dynamic_tile{
   y = 536,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_25",
+  name = "broken_gem_house_25",
   pattern = 1070,
   enabled_at_start = true,
 }
@@ -10012,7 +10012,7 @@ dynamic_tile{
   y = 568,
   width = 96,
   height = 8,
-  name = "broken_rupee_house_26",
+  name = "broken_gem_house_26",
   pattern = 661,
   enabled_at_start = true,
 }
@@ -10023,7 +10023,7 @@ dynamic_tile{
   y = 576,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_34",
+  name = "broken_gem_house_34",
   pattern = 1059,
   enabled_at_start = true,
 }
@@ -10034,7 +10034,7 @@ dynamic_tile{
   y = 584,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_33",
+  name = "broken_gem_house_33",
   pattern = 1063,
   enabled_at_start = true,
 }
@@ -10045,7 +10045,7 @@ dynamic_tile{
   y = 576,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_30",
+  name = "broken_gem_house_30",
   pattern = 1068,
   enabled_at_start = true,
 }
@@ -10056,7 +10056,7 @@ dynamic_tile{
   y = 584,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_32",
+  name = "broken_gem_house_32",
   pattern = 1064,
   enabled_at_start = true,
 }
@@ -10067,7 +10067,7 @@ dynamic_tile{
   y = 584,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_31",
+  name = "broken_gem_house_31",
   pattern = 1065,
   enabled_at_start = true,
 }
@@ -10078,7 +10078,7 @@ dynamic_tile{
   y = 576,
   width = 8,
   height = 8,
-  name = "broken_rupee_house_29",
+  name = "broken_gem_house_29",
   pattern = 1069,
   enabled_at_start = true,
 }
@@ -10100,7 +10100,7 @@ dynamic_tile{
   y = 600,
   width = 8,
   height = 16,
-  name = "broken_rupee_house_28",
+  name = "broken_gem_house_28",
   pattern = 1053,
   enabled_at_start = true,
 }
@@ -10111,7 +10111,7 @@ teletransporter{
   y = 600,
   width = 16,
   height = 16,
-  name = "to_rupee_house",
+  name = "to_gem_house",
   transition = 1,
   destination_map = "2",
   destination = "main_entrance",

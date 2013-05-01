@@ -203,7 +203,7 @@
 4	0	72	461	0	heart	1	-1
 4	0	280	461	0	heart	1	-1
 4	0	280	477	0	heart	1	-1
-4	0	280	557	0	rupee	1	-1
+4	0	280	557	0	gem	1	-1
 5	0	264	280	map_chest	0	map	1	54
 11	0	272	320	map_room_switch	1	0	0
 12	0	104	80	8	32	custom_obstacle	1	1	1	1

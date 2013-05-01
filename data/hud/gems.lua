@@ -1,8 +1,8 @@
 -- The money counter shown in the game screen.
 
-local rupees = {}
+local gems = {}
 
-function rupees:new(game)
+function gems:new(game)
 
   local object = {}
   setmetatable(object, self)
@@ -13,7 +13,7 @@ function rupees:new(game)
   return object
 end
 
-function rupees:initialize(game)
+function gems:initialize(game)
 
   self.game = game
   self.surface = sol.surface.create(48, 12)
@@ -23,24 +23,24 @@ function rupees:initialize(game)
     horizontal_alignment = "left",
   }
   self.digits_text:set_text(game:get_money())
-  self.rupee_icons_img = sol.surface.create("hud/rupee_icon.png")
-  self.rupee_bag_displayed = self.game:get_item("rupee_bag"):get_variant()
+  self.gem_icons_img = sol.surface.create("hud/rupee_icon.png")
+  self.gem_bag_displayed = self.game:get_item("gem_bag"):get_variant()
   self.money_displayed = self.game:get_money()
 
   self:check()
   self:rebuild_surface()
 end
 
-function rupees:check()
+function gems:check()
 
   local need_rebuild = false
-  local rupee_bag = self.game:get_item("rupee_bag"):get_variant()
+  local gem_bag = self.game:get_item("gem_bag"):get_variant()
   local money = self.game:get_money()
 
   -- Max money.
-  if rupee_bag ~= self.rupee_bag_displayed then
+  if gem_bag ~= self.gem_bag_displayed then
     need_rebuild = true
-    self.rupee_bag_displayed = rupee_bag
+    self.gem_bag_displayed = gem_bag
   end
 
   -- Current money.
@@ -56,11 +56,11 @@ function rupees:check()
 
     -- Play a sound if we have just reached the final value.
     if self.money_displayed == money then
-      sol.audio.play_sound("rupee_counter_end")
+      sol.audio.play_sound("gem_counter_end")
 
     -- While the counter is scrolling, play a sound every 3 values.
     elseif self.money_displayed % 3 == 0 then
-      sol.audio.play_sound("rupee_counter_end")
+      sol.audio.play_sound("gem_counter_end")
     end
   end
 
@@ -75,14 +75,14 @@ function rupees:check()
   end)
 end
 
-function rupees:rebuild_surface()
+function gems:rebuild_surface()
 
   self.surface:fill_color{0, 0, 0}
 
   -- Max money (icon).
-  self.rupee_icons_img:draw_region((self.rupee_bag_displayed - 1) * 12, 0, 12, 12, self.surface)
+  self.gem_icons_img:draw_region((self.gem_bag_displayed - 1) * 12, 0, 12, 12, self.surface)
 
-  -- Current rupee (counter).
+  -- Current gem (counter).
   local max_money = self.game:get_max_money()
   if self.money_displayed == max_money then
     self.digits_text:set_font("green_digits")
@@ -93,12 +93,12 @@ function rupees:rebuild_surface()
   self.digits_text:draw(self.surface, 16, 5)
 end
 
-function rupees:set_dst_position(x, y)
+function gems:set_dst_position(x, y)
   self.dst_x = x
   self.dst_y = y
 end
 
-function rupees:on_draw(dst_surface)
+function gems:on_draw(dst_surface)
 
   local x, y = self.dst_x, self.dst_y
   local width, height = dst_surface:get_size()
@@ -112,5 +112,5 @@ function rupees:on_draw(dst_surface)
   self.surface:draw(dst_surface, x, y)
 end
 
-return rupees
+return gems
 

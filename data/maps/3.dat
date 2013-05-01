@@ -17269,7 +17269,7 @@ destructible{
   x = 904,
   y = 221,
   subtype = "white_stone",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 1,
 }
 
@@ -17278,7 +17278,7 @@ destructible{
   x = 968,
   y = 221,
   subtype = "white_stone",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
 }
 
@@ -17845,7 +17845,7 @@ chest{
   x = 936,
   y = 325,
   name = "chest_2",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 4,
   treasure_savegame_variable = "b13",
   sprite = "entities/chest",
@@ -18646,7 +18646,7 @@ chest{
   x = 688,
   y = 229,
   name = "chest",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 5,
   treasure_savegame_variable = "b912",
   sprite = "entities/chest",

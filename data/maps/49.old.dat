@@ -681,14 +681,14 @@
 2	1	240	24	16	16	teletransporter_2	_none	_none	1	48	from_B2_C
 11	1	1088	608	BRoom1	3	0	0
 18	1	984	632	LD15	2	0	-1
-5	1	1344	624	RC50	0	rupee	4	712
+5	1	1344	624	RC50	0	gem	4	712
 15	1	1536	672	32	32	1
 14	1	1448	701	crystal_2
 15	1	1536	592	32	32	0
 14	1	1448	605	crystal_3
 8	1	1432	293	TD01	3	0	entities/hint_stone	map
 8	1	1112	293	TD02	3	0	entities/hint_stone	map
-5	1	1440	1152	RC100	0	rupee	5	711
+5	1	1440	1152	RC100	0	gem	5	711
 2	1	736	416	144	48	hole_to_B3_C	_none	_none	1	50	_same
 2	1	456	592	64	112	hole_to_B3_B	_none	_none	1	50	_same
 5	1	1120	896	XK01	0	boss_key	1	726
@@ -733,10 +733,10 @@
 7	1	1560	573	enemy_6	2	pike_auto	0	-1	_random	1	-1
 7	1	1336	733	enemy_7	0	pike_auto	0	-1	_random	1	-1
 12	1	1440	1000	16	64	custom_obstacle_4	0	1	0	0
-7	1	1428	1149	rupee_enemy_1	3	red_helmasaur	0	-1	_random	1	-1
-7	1	1468	1149	rupee_enemy_2	3	red_helmasaur	0	-1	_random	1	-1
-7	1	1428	1189	rupee_enemy_3	3	red_helmasaur	0	-1	_random	1	-1
-7	1	1468	1189	rupee_enemy_4	3	red_helmasaur	0	-1	_random	1	-1
+7	1	1428	1149	gem_enemy_1	3	red_helmasaur	0	-1	_random	1	-1
+7	1	1468	1149	gem_enemy_2	3	red_helmasaur	0	-1	_random	1	-1
+7	1	1428	1189	gem_enemy_3	3	red_helmasaur	0	-1	_random	1	-1
+7	1	1468	1189	gem_enemy_4	3	red_helmasaur	0	-1	_random	1	-1
 12	1	1576	896	64	16	custom_obstacle_5	0	1	0	0
 7	1	1656	853	enemy_12	3	red_bullblin	0	-1	_random	1	-1
 7	1	1880	981	enemy_13	3	red_bullblin	0	-1	_random	1	-1

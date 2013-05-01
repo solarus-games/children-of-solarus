@@ -1563,7 +1563,7 @@ dans l'écran Carte.
 
 -- Grand sac de rubis
 dialog{
-  id = "_treasure.rupee_bag.2",
+  id = "_treasure.gem_bag.2",
   icon = 52,
   text = [[
 Tu as trouvé le
@@ -1577,7 +1577,7 @@ jusqu'à 300 rubis !
 
 -- Sac de rubis géant
 dialog{
-  id = "_treasure.rupee_bag.3",
+  id = "_treasure.gem_bag.3",
   icon = 53,
   text = [[
 Tu as trouvé le
@@ -2056,7 +2056,7 @@ d'énergie magique !
 
 -- 1 rubis vert
 dialog{
-  id = "_treasure.rupee.1",
+  id = "_treasure.gem.1",
   icon = 90,
   text = [[
 Tu as trouvé un
@@ -2067,7 +2067,7 @@ Rubis !
 
 -- 1 rubis bleu
 dialog{
-  id = "_treasure.rupee.2",
+  id = "_treasure.gem.2",
   icon = 91,
   text = [[
 Tu as trouvé un
@@ -2079,7 +2079,7 @@ Il vaut 5 Rubis !
 
 -- 1 rubis rouge
 dialog{
-  id = "_treasure.rupee.3",
+  id = "_treasure.gem.3",
   icon = 92,
   text = [[
 Tu as trouvé un
@@ -2092,7 +2092,7 @@ Il vaut 20 Rubis !
 -- 50 rubis
 -- Remarque : clin d'oeil à Link's Awakening
 dialog{
-  id = "_treasure.rupee.4",
+  id = "_treasure.gem.4",
   icon = 90,
   text = [[
 Tu as trouvé 50
@@ -2105,7 +2105,7 @@ Merveilleux !
 -- 100 rubis
 -- Remarque : clin d'oeil à Link's Awakening
 dialog{
-  id = "_treasure.rupee.5",
+  id = "_treasure.gem.5",
   icon = 90,
   text = [[
 Tu as trouvé 100
@@ -2118,7 +2118,7 @@ Fantastique !
 -- 300 rubis
 -- Remarque : clin d'oeil à Link's Awakening
 dialog{
-  id = "_treasure.rupee.6",
+  id = "_treasure.gem.6",
   icon = 90,
   text = [[
 Tu as trouvé 300
@@ -2888,7 +2888,7 @@ Tu y crois, toi ?
 
 -- Pancarte à l'entrée de la maison des rubis
 dialog{
-  id = "outside_world.village.rupee_house_sign",
+  id = "outside_world.village.gem_house_sign",
   text = [[
   - Maison des Rubis -
 Gagnez de l'argent
@@ -3201,7 +3201,7 @@ Viens vite, $v...
 
 -- Jeu du coffre-mystère dans la maison des rubis
 dialog{
-  id = "rupee_house.game_1.intro",
+  id = "gem_house.game_1.intro",
   question = true,
   text = [[
 Bienvenue au jeu du
@@ -3219,7 +3219,7 @@ Non
 
 -- Coffre-mystère : quand on parle au vendeur après avoir déjà payé
 dialog{
-  id = "rupee_house.game_1.choose_chest",
+  id = "gem_house.game_1.choose_chest",
   text = [[
 Va choisir l'un des
 trois coffres !
@@ -3232,7 +3232,7 @@ moi pour t'aider !
 
 -- Coffre-mystère : quand on accepte de jouer
 dialog{
-  id = "rupee_house.game_1.good_luck",
+  id = "gem_house.game_1.good_luck",
   text = [[
 Va choisir un coffre
 et bonne chance !
@@ -3242,7 +3242,7 @@ et bonne chance !
 
 -- Coffre-mystère : quand on a déjà trop gagné pour avoir le droit de rejouer
 dialog{
-  id = "rupee_house.game_1.not_allowed_to_play",
+  id = "gem_house.game_1.not_allowed_to_play",
   text = [[
 Tu as déjà assez gagné
 non ? Nous sommes
@@ -3253,7 +3253,7 @@ ruinés à cause de toi !
 
 -- Coffre-mystère : veut-on rejouer ?
 dialog{
-  id = "rupee_house.game_1.play_again_question",
+  id = "gem_house.game_1.play_again_question",
   question = true,
   text = [[
 Tu veux retenter ta
@@ -3270,7 +3270,7 @@ Non
 -- C'est un clin d'oeil à Link's Awakening, dans le stand
 -- de pêche tout au début du jeu, quand on refuse de jouer ou de rejouer
 dialog{
-  id = "rupee_house.game_1.not_playing",
+  id = "gem_house.game_1.not_playing",
   text = [[
 Vis ta vie ! Sois
 un peu plus motivé !
@@ -3280,7 +3280,7 @@ un peu plus motivé !
 
 -- Jeu du bandit manchot dans la maison des rubis
 dialog{
-  id = "rupee_house.game_2.intro",
+  id = "gem_house.game_2.intro",
   question = true,
   text = [[
 Bienvenue au tout
@@ -3301,7 +3301,7 @@ Non
 
 -- Bandit manchot : quand on refuse de jouer
 dialog{
-  id = "rupee_house.game_2.not_playing",
+  id = "gem_house.game_2.not_playing",
   text = [[
 Une autre fois
 peut-être ?
@@ -3311,7 +3311,7 @@ peut-être ?
 
 -- Bandit manchot : quand on accepte de jouer
 dialog{
-  id = "rupee_house.game_2.choose_bet",
+  id = "gem_house.game_2.choose_bet",
   question = true,
   text = [[
 Combien veux-tu miser ?
@@ -3324,8 +3324,8 @@ Combien veux-tu miser ?
 -- Bandit manchot : quand on a choisi une des deux sommes à miser
 -- et qu'on a effectiement assez d'argent
 dialog{
-  id = "rupee_house.game_2.just_paid",
-  next = "rupee_house.game_2.playing",
+  id = "gem_house.game_2.just_paid",
+  next = "gem_house.game_2.playing",
   text = [[
 Merci !
 ]]
@@ -3334,7 +3334,7 @@ Merci !
 
 -- Bandit manchot : quand on reparle au vendeur pendant que les roulettes tournent déjà
 dialog{
-  id = "rupee_house.game_2.playing",
+  id = "gem_house.game_2.playing",
   text = [[
 Approche-toi des
 roulettes et appuie sur
@@ -3347,7 +3347,7 @@ Bonne chance !
 
 -- Bandit manchot : quand on obtient 3 symboles identiques qui ne rapportent rien d'exceptionnel
 dialog{
-  id = "rupee_house.game_2.reward.same_any",
+  id = "gem_house.game_2.reward.same_any",
   text = [[
 Trois symboles identi-
 ques, pas mal ! Tu
@@ -3358,7 +3358,7 @@ gagnes 4 fois ta mise.
 
 -- Bandit manchot : quand on obtient 3 symboles de rubis verts
 dialog{
-  id = "rupee_house.game_2.reward.green_rupees",
+  id = "gem_house.game_2.reward.green_gems",
   text = [[
 Trois rubis verts,
 joli ! Tu remportes
@@ -3369,7 +3369,7 @@ joli ! Tu remportes
 
 -- Bandit manchot : quand on obtient 3 symboles de rubis bleus
 dialog{
-  id = "rupee_house.game_2.reward.blue_rupees",
+  id = "gem_house.game_2.reward.blue_gems",
   text = [[
 Trois rubis bleus !
 Félicitations, tu
@@ -3381,7 +3381,7 @@ de 7 fois ta mise !
 
 -- Bandit manchot : quand on obtient 3 symboles de rubis rouges
 dialog{
-  id = "rupee_house.game_2.reward.red_rupees",
+  id = "gem_house.game_2.reward.red_gems",
   text = [[
 Trois rubis rouges !!!
 Je suis très
@@ -3394,7 +3394,7 @@ ta mise. Bravo !
 
 -- Bandit manchot : quand on obtient 3 symboles de rubis différents
 dialog{
-  id = "rupee_house.game_2.reward.different_rupees",
+  id = "gem_house.game_2.reward.different_gems",
   text = [[
 Whaou !!! Tu as obtenu
 trois rubis de couleurs
@@ -3408,7 +3408,7 @@ voit ça ! Tu remportes
 
 -- Bandit manchot : quand on obtient 3 symboles Yoshi (c'est la récompense maximale)
 dialog{
-  id = "rupee_house.game_2.reward.yoshi",
+  id = "gem_house.game_2.reward.yoshi",
   text = [[
 $1...$3Trois Yoshi ?!
 C'est à peine
@@ -3422,7 +3422,7 @@ possible... Tu gagnes
 
 -- Bandit manchot : quand on n'obtient rien
 dialog{
-  id = "rupee_house.game_2.reward.none",
+  id = "gem_house.game_2.reward.none",
   question = true,
   text = [[
 Pas de chance, tu n'as
@@ -3437,7 +3437,7 @@ Non
 
 -- Jeu du labyrinthe dans la maison des rubis
 dialog{
-  id = "rupee_house.game_3.intro",
+  id = "gem_house.game_3.intro",
   question = true,
   text = [[
 Le but du jeu est de
@@ -3458,7 +3458,7 @@ Non
 
 -- Jeu du labyrinthe : quand on accepte de jouer et qu'on a assez d'argent
 dialog{
-  id = "rupee_house.game_3.go",
+  id = "gem_house.game_3.go",
   text = [[
 Et c'est parti !
 Bonne chance !
@@ -3468,7 +3468,7 @@ Bonne chance !
 
 -- Jeu du labyrinthe : quand on refuse de jouer
 dialog{
-  id = "rupee_house.game_3.not_playing",
+  id = "gem_house.game_3.not_playing",
   text = [[
 C'est toi qui vois !
 ]]
@@ -3477,7 +3477,7 @@ C'est toi qui vois !
 
 -- Jeu du labyrinthe : quand on parle au vendeur alors qu'on a déjà obtenu le fragment de coeur
 dialog{
-  id = "rupee_house.game_3.not_allowed_to_play",
+  id = "gem_house.game_3.not_allowed_to_play",
   text = [[
 Désolé, tu as déjà
 gagné à ce jeu !
@@ -3487,7 +3487,7 @@ gagné à ce jeu !
 
 -- Jeu du labyrinthe : quand on parle au vendeur alors que le jeu est déjà commencé
 dialog{
-  id = "rupee_house.game_3.restart_question",
+  id = "gem_house.game_3.restart_question",
   question = true,
   text = [[
 Tu veux recommencer à
@@ -3502,7 +3502,7 @@ Non
 
 -- Maison des rubis : quand on n'a pas assez d'argent (quel que soit le jeu)
 dialog{
-  id = "rupee_house.not_enough_money",
+  id = "gem_house.not_enough_money",
   text = [[
 Tu n'as pas assez
 d'argent !
@@ -3512,7 +3512,7 @@ d'argent !
 
 -- Maison des rubis : quand on interagit avec le jeu sans avoir payé (coffre-mystère et bandit manchot)
 dialog{
-  id = "rupee_house.pay_first",
+  id = "gem_house.pay_first",
   text = [[
 Hé ! Ici il faut payer
 avant de jouer !
@@ -3522,7 +3522,7 @@ avant de jouer !
 
 -- Maison des rubis dévalisée (PNJ de gauche)
 dialog{
-  id = "rupee_house_broken.help_us_left",
+  id = "gem_house_broken.help_us_left",
   text = [[
 Au secours !
 Au secours !
@@ -3535,7 +3535,7 @@ dévalisée !
 
 -- Maison des rubis dévalisée (PNJ du milieu)
 dialog{
-  id = "rupee_house_broken.help_us_middle",
+  id = "gem_house_broken.help_us_middle",
   text = [[
 Les bandits ont emporté
 l'argent réservé aux
@@ -3546,7 +3546,7 @@ gains !
 
 -- Maison des rubis dévalisée (PNJ de droite)
 dialog{
-  id = "rupee_house_broken.help_us_right",
+  id = "gem_house_broken.help_us_right",
   text = [[
 Les voleurs sont partis
 en direction de la
@@ -3557,7 +3557,7 @@ caverne du forgeron !
 
 -- Maison des rubis dévalisée (voleurs battus)
 dialog{
-  id = "rupee_house_broken.thanks",
+  id = "gem_house_broken.thanks",
   text = [[
 Tu as retrouvé notre
 argent ! Grâce à toi
@@ -3570,7 +3570,7 @@ remercier...
 -----------------------
 
 dialog{
-  id = "rupee_house_broken.thanks_again",
+  id = "gem_house_broken.thanks_again",
   text = [[
 Encore merci !
 ]]
@@ -3979,7 +3979,7 @@ temps qui courent.
 
 -- Boutique : quand on regarde le sac de rubis 2
 dialog{
-  id = "lyriann_shop.rupee_bag",
+  id = "lyriann_shop.gem_bag",
   next = "_unknown",
   text = [[
 Une nouvelle bourse
@@ -5172,7 +5172,7 @@ standard.
 -----------------------
 
 dialog{
-  id = "junk_shop.red_rupee",
+  id = "junk_shop.red_gem",
   text = [[
 Un Rubis Rouge en
 promotion. Mais c'est
@@ -5419,7 +5419,7 @@ Les pierres noires...
 -----------------------
 
 dialog{
-  id = "inferno.want_rupees",
+  id = "inferno.want_gems",
   text = [[
 Soit.
 ]]
@@ -5427,7 +5427,7 @@ Soit.
 -----------------------
 
 dialog{
-  id = "inferno.want_rupees_again",
+  id = "inferno.want_gems_again",
   text = [[
 Tu as déjà bénéficié de
 cette faveur.

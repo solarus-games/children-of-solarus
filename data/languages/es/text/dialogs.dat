@@ -1574,7 +1574,7 @@ pantalla del Mapa.
 
 -- Big Wallet
 dialog{
-  id = "_treasure.rupee_bag.2",
+  id = "_treasure.gem_bag.2",
   icon = 52,
   text = [[
 ¡Encontraste la
@@ -1588,7 +1588,7 @@ hasta 300 Rupias!
 
 -- Giant Wallet
 dialog{
-  id = "_treasure.rupee_bag.3",
+  id = "_treasure.gem_bag.3",
   icon = 53,
   text = [[
 ¡Encontraste la
@@ -2068,9 +2068,9 @@ se ha llenado bastante.
 }
 --------------------
 
--- 1 green rupee
+-- 1 green gem
 dialog{
-  id = "_treasure.rupee.1",
+  id = "_treasure.gem.1",
   icon = 90,
   text = [[
 ¡Encontraste una
@@ -2080,9 +2080,9 @@ Rupia Verde!
 }
 --------------------
 
--- 1 blue rupee
+-- 1 blue gem
 dialog{
-  id = "_treasure.rupee.2",
+  id = "_treasure.gem.2",
   icon = 91,
   text = [[
 ¡Encontraste una
@@ -2092,9 +2092,9 @@ Rupia Azul!
 }
 --------------------
 
--- 1 red rupee
+-- 1 red gem
 dialog{
-  id = "_treasure.rupee.3",
+  id = "_treasure.gem.3",
   icon = 92,
   text = [[
 ¡Encontraste una
@@ -2104,10 +2104,10 @@ Rupia Roja!
 }
 --------------------
 
--- 50 rupees
+-- 50 gems
 -- Note: reference to Link's Awakening
 dialog{
-  id = "_treasure.rupee.4",
+  id = "_treasure.gem.4",
   icon = 90,
   text = [[
 ¡Encontraste 50
@@ -2116,10 +2116,10 @@ Rupias! ¡Estupendo!
 }
 --------------------
 
--- 100 rupees
+-- 100 gems
 -- Note: reference to Link's Awakening
 dialog{
-  id = "_treasure.rupee.5",
+  id = "_treasure.gem.5",
   icon = 90,
   text = [[
 ¡Encontraste 100
@@ -2128,10 +2128,10 @@ Rupias! ¡Fantástico!
 }
 --------------------
 
--- 300 rupees
+-- 300 gems
 -- Note: reference to Link's Awakening
 dialog{
-  id = "_treasure.rupee.6",
+  id = "_treasure.gem.6",
   icon = 90,
   text = [[
 ¡Encontraste 300
@@ -2308,7 +2308,7 @@ No Comprar
 }
 -----------------------
 
--- Trying to buy a shop item, but not enough rupees.
+-- Trying to buy a shop item, but not enough gems.
 dialog{
   id = "_shop.not_enough_money",
   skip = "all",
@@ -2895,7 +2895,7 @@ verdad?
 -----------------------
 
 dialog{
-  id = "outside_world.village.rupee_house_sign",
+  id = "outside_world.village.gem_house_sign",
   text = [[
   - Casa de las Rupias -
 ¡Gana unas cuantas Rupias
@@ -3188,9 +3188,9 @@ Ven deprisa, $v...
 }
 -----------------------
 
--- Mystery chest game in the rupee house.
+-- Mystery chest game in the gem house.
 dialog{
-  id = "rupee_house.game_1.intro",
+  id = "gem_house.game_1.intro",
   question = true,
   text = [[
 Bienvenido al juego de
@@ -3211,7 +3211,7 @@ No
 
 -- Mystery chest game: talking to the guy after the payment.
 dialog{
-  id = "rupee_house.game_1.choose_chest",
+  id = "gem_house.game_1.choose_chest",
   text = [[
 ¡Vamos allá, escoge un
 cofre!
@@ -3224,7 +3224,7 @@ pienso decir cuál escoger!
 
 -- Mystery chest game: accepted to play.
 dialog{
-  id = "rupee_house.game_1.good_luck",
+  id = "gem_house.game_1.good_luck",
   text = [[
 ¡Buena suerte!
 ]]
@@ -3233,7 +3233,7 @@ dialog{
 
 -- Mystery chest game: won too much, cannot play anymore.
 dialog{
-  id = "rupee_house.game_1.not_allowed_to_play",
+  id = "gem_house.game_1.not_allowed_to_play",
   text = [[
 Ya has ganado antes,
 ¿no? ¡Nos hemos
@@ -3244,7 +3244,7 @@ arruinado por tu culpa!
 
 -- Mystery chest game: play again?
 dialog{
-  id = "rupee_house.game_1.play_again_question",
+  id = "gem_house.game_1.play_again_question",
   question = true,
   text = [[
 ¿Quieres jugar otra vez?
@@ -3260,7 +3260,7 @@ No
 -- Mystery chest game: refusing to play again.
 -- Reference to Link's Awakening in the fishing game.
 dialog{
-  id = "rupee_house.game_1.not_playing",
+  id = "gem_house.game_1.not_playing",
   text = [[
 ¡Debes tener más pasión!
 ¡Vive un poco!
@@ -3268,9 +3268,9 @@ dialog{
 }
 -----------------------
 
--- Slot machine in the rupee house.
+-- Slot machine in the gem house.
 dialog{
-  id = "rupee_house.game_2.intro",
+  id = "gem_house.game_2.intro",
   question = true,
   text = [[
 ¡Bienvenido a la 
@@ -3291,7 +3291,7 @@ No
 
 -- Slot machine: refused to play.
 dialog{
-  id = "rupee_house.game_2.not_playing",
+  id = "gem_house.game_2.not_playing",
   text = [[
 Será la próxima
 vez...
@@ -3301,7 +3301,7 @@ vez...
 
 -- Slot machine: accepted to play.
 dialog{
-  id = "rupee_house.game_2.choose_bet",
+  id = "gem_house.game_2.choose_bet",
   question = true,
   text = [[
 ¿Cuánto apuestas?
@@ -3313,8 +3313,8 @@ dialog{
 
 -- Slot machine: choosed a bet, having enough money.
 dialog{
-  id = "rupee_house.game_2.just_paid",
-  next = "rupee_house.game_2.playing",
+  id = "gem_house.game_2.just_paid",
+  next = "gem_house.game_2.playing",
   text = [[
 ¡Gracias!
 ]]
@@ -3323,7 +3323,7 @@ dialog{
 
 -- Slot machine: talking to the NPC again while playing.
 dialog{
-  id = "rupee_house.game_2.playing",
+  id = "gem_house.game_2.playing",
   text = [[
 Mantente al lado de
 las ruletas y pulsa
@@ -3336,7 +3336,7 @@ detenerlas.
 
 -- Slot machine: obtained 3 identical symbols, nothing incredible though.
 dialog{
-  id = "rupee_house.game_2.reward.same_any",
+  id = "gem_house.game_2.reward.same_any",
   text = [[
 Tres símbolos
 idénticos. ¡No está
@@ -3347,9 +3347,9 @@ apuesta.
 }
 -----------------------
 
--- Slot machine: obtained 3 green rupee symbols.
+-- Slot machine: obtained 3 green gem symbols.
 dialog{
-  id = "rupee_house.game_2.reward.green_rupees",
+  id = "gem_house.game_2.reward.green_gems",
   text = [[
 Tres Rupias verdes.
 ¡Bien! Ganas 5 veces
@@ -3358,9 +3358,9 @@ tu apuesta.
 }
 -----------------------
 
--- Slot machine: obtained 3 blue rupee symbols.
+-- Slot machine: obtained 3 blue gem symbols.
 dialog{
-  id = "rupee_house.game_2.reward.blue_rupees",
+  id = "gem_house.game_2.reward.blue_gems",
   text = [[
 ¡Tres Rupias azules!
 ¡Enhorabuena, has
@@ -3370,9 +3370,9 @@ apuesta inicial!
 }
 -----------------------
 
--- Slot machine: obtained 3 red rupee symbols.
+-- Slot machine: obtained 3 red gem symbols.
 dialog{
-  id = "rupee_house.game_2.reward.red_rupees",
+  id = "gem_house.game_2.reward.red_gems",
   text = [[
 ¡¡¡Tres Rupias rojas!!!
 ¡Asombroso!
@@ -3382,9 +3382,9 @@ que 10 veces tu apuesta!
 }
 -----------------------
 
--- Slot machine: obtained 3 different rupee symbols.
+-- Slot machine: obtained 3 different gem symbols.
 dialog{
-  id = "rupee_house.game_2.reward.different_rupees",
+  id = "gem_house.game_2.reward.different_gems",
   text = [[
 ¡Guau! Tienes tres
 Rupias de diferente
@@ -3398,7 +3398,7 @@ La recompensa es
 
 -- Slot machine: obtained 3 Yoshi symbols (maximum reward).
 dialog{
-  id = "rupee_house.game_2.reward.yoshi",
+  id = "gem_house.game_2.reward.yoshi",
   text = [[
 $1...$3¡¿Tres Yoshis?!
 ¡I-n-c-r-e-í-b-l-e!
@@ -3412,7 +3412,7 @@ multiplica por 20.
 
 -- Slot machine: not obtained anything.
 dialog{
-  id = "rupee_house.game_2.reward.none",
+  id = "gem_house.game_2.reward.none",
   question = true,
   text = [[
 Mala suerte, no
@@ -3428,9 +3428,9 @@ No
 }
 -----------------------
 
--- Maze game in the rupee house.
+-- Maze game in the gem house.
 dialog{
-  id = "rupee_house.game_3.intro",
+  id = "gem_house.game_3.intro",
   question = true,
   text = [[
 Navega por el
@@ -3454,7 +3454,7 @@ No
 
 -- Maze game: accepted to play, having enough money.
 dialog{
-  id = "rupee_house.game_3.go",
+  id = "gem_house.game_3.go",
   text = [[
 ¡Allá vamos!
 ¡Buena suerte!
@@ -3464,7 +3464,7 @@ dialog{
 
 -- Maze game: refused to play.
 dialog{
-  id = "rupee_house.game_3.not_playing",
+  id = "gem_house.game_3.not_playing",
   text = [[
 Es tu elección...
 ]]
@@ -3473,7 +3473,7 @@ Es tu elección...
 
 -- Maze game: talking to the NPC but the piece of heart was already found.
 dialog{
-  id = "rupee_house.game_3.not_allowed_to_play",
+  id = "gem_house.game_3.not_allowed_to_play",
   text = [[
 ¡Perdona, pero ya
 completaste este juego!
@@ -3483,7 +3483,7 @@ completaste este juego!
 
 -- Maze game: talking to the NPC when the game is already started.
 dialog{
-  id = "rupee_house.game_3.restart_question",
+  id = "gem_house.game_3.restart_question",
   question = true,
   text = [[
 ¿Quieres volver a
@@ -3496,9 +3496,9 @@ No
 }
 -----------------------
 
--- Rupee house: not having enough money (for all three games).
+-- gem house: not having enough money (for all three games).
 dialog{
-  id = "rupee_house.not_enough_money",
+  id = "gem_house.not_enough_money",
   text = [[
 ¡No tienes suficiente
 dinero!
@@ -3506,9 +3506,9 @@ dinero!
 }
 -----------------------
 
--- Rupee house: interacting with a game without paying.
+-- gem house: interacting with a game without paying.
 dialog{
-  id = "rupee_house.pay_first",
+  id = "gem_house.pay_first",
   text = [[
 ¡Hey! ¡Tienes que pagar
 si quieres jugar aquí!
@@ -3516,9 +3516,9 @@ si quieres jugar aquí!
 }
 -----------------------
 
--- Broken rupee house (left NPC).
+-- Broken gem house (left NPC).
 dialog{
-  id = "rupee_house_broken.help_us_left",
+  id = "gem_house_broken.help_us_left",
   text = [[
 ¡Ayuda!
 ¡Ayuda!
@@ -3529,9 +3529,9 @@ la casa!
 }
 -----------------------
 
--- Broken rupee house (middle NPC).
+-- Broken gem house (middle NPC).
 dialog{
-  id = "rupee_house_broken.help_us_middle",
+  id = "gem_house_broken.help_us_middle",
   text = [[
 ¡Los bandidos robaron
 las Rupias destinadas
@@ -3540,9 +3540,9 @@ a pagar los sueldos!
 }
 -----------------------
 
--- Broken rupee house (right NPC).
+-- Broken gem house (right NPC).
 dialog{
-  id = "rupee_house_broken.help_us_right",
+  id = "gem_house_broken.help_us_right",
   text = [[
 ¡Los delincuentes se
 dirigieron hacia la
@@ -3551,9 +3551,9 @@ cueva del herrero!
 }
 -----------------------
 
--- Broken rupee house: solved the problem.
+-- Broken gem house: solved the problem.
 dialog{
-  id = "rupee_house_broken.thanks",
+  id = "gem_house_broken.thanks",
   text = [[
 ¡Encontraste nuestras
 Rupias! Gracias a ti
@@ -3566,7 +3566,7 @@ compensarte...
 -----------------------
 
 dialog{
-  id = "rupee_house_broken.thanks_again",
+  id = "gem_house_broken.thanks_again",
   text = [[
 ¡Gracias de nuevo!
 ]]
@@ -4188,7 +4188,7 @@ Flechas estándar.
 -----------------------
 
 dialog{
-  id = "junk_shop.red_rupee",
+  id = "junk_shop.red_gem",
   text = [[
 Una Rupia Roja de
 oferta especial, pero
@@ -4437,7 +4437,7 @@ Las piedras negras...
 -----------------------
 
 dialog{
-  id = "inferno.want_rupees",
+  id = "inferno.want_gems",
   text = [[
 Que así sea.
 ]]
@@ -4445,7 +4445,7 @@ Que así sea.
 -----------------------
 
 dialog{
-  id = "inferno.want_rupees_again",
+  id = "inferno.want_gems_again",
   text = [[
 Ya te he dado
 ese premio.
@@ -5935,7 +5935,7 @@ Un Carcaj grande.
 
 -- Shop: watching the Large Wallet.
 dialog{
-  id = "lyriann_shop.rupee_bag",
+  id = "lyriann_shop.gem_bag",
   next = "_unknown",
   text = [[
 Una nueva Bolsa para

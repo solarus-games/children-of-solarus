@@ -208,7 +208,7 @@
 0	0	48	288	16	8	236
 0	0	56	96	8	8	69
 1	0	120	309	main_entrance	1	_none
-2	0	112	320	16	16	to_outside	_none	_none	1	4	out_rupee_house
+2	0	112	320	16	16	to_outside	_none	_none	1	4	out_gem_house
 8	0	80	213	game_1_man	3	1	npc/static_villager11	map
 9	0	240	141	block_3	-1	entities/block	1	0	0
 9	0	128	149	block_2	-1	entities/block	1	0	0

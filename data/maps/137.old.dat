@@ -207,10 +207,10 @@
 12	1	384	272	8	8	custom_obstacle_2	1	1	1	1
 12	1	496	408	8	8	custom_obstacle_3	1	1	1	1
 12	1	520	408	8	8	custom_obstacle_4	1	1	1	1
-4	1	280	61	0	rupee	2	-1
+4	1	280	61	0	gem	2	-1
 4	1	584	61	0	heart	1	-1
 4	1	584	445	0	bomb	1	-1
-4	1	280	445	0	rupee	2	-1
+4	1	280	445	0	gem	2	-1
 7	1	324	181	enemy	3	ropa	0	-1	_random	1	-1
 7	1	580	317	enemy_2	3	ropa	0	-1	_random	1	-1
 7	1	580	341	enemy_3	3	ropa	0	-1	_random	1	-1

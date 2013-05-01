@@ -123,7 +123,7 @@ bottle_4 entities/items.png 6 0 -1
 world_map entities/items.png 1 0 -1
 448	0	16	16	8	13	1	1
 
-rupee_bag entities/items.png 3 0 -1
+gem_bag entities/items.png 3 0 -1
 464	0	16	16	8	13	1	1
 464	16	16	16	8	13	1	1
 464	32	16	16	8	13	1	1
@@ -193,7 +193,7 @@ magic_bar entities/items.png 2 0 -1
 704	32	16	16	8	13	1	1
 704	32	16	16	8	13	1	1
 
-rupee entities/items.png 6 100 0
+gem entities/items.png 6 100 0
 0	48	8	16	4	16	10	10
 0	64	8	16	4	16	10	10
 0	80	8	16	4	16	10	10

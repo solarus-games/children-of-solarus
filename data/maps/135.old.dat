@@ -267,7 +267,7 @@
 0	1	424	240	16	24	457
 4	1	56	93	0	heart	1	-1
 4	1	72	93	0	arrow	2	-1
-4	1	88	93	0	rupee	2	-1
+4	1	88	93	0	gem	2	-1
 12	1	144	72	8	8	custom_obstacle	1	1	1	1
 12	1	168	72	8	8	custom_obstacle_2	1	1	1	1
 12	1	320	72	8	8	custom_obstacle_3	1	1	1	1

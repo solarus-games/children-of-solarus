@@ -148,7 +148,7 @@
 2	1	376	464	16	16	teletransporter_2	_none	_none	1	6	from_lake_west_cave_s
 2	1	88	216	16	16	teletransporter	_none	_none	1	6	from_lake_west_cave_n
 19	1	88	216	stairs	3	2
-5	1	304	80	chest	0	rupee	5	942
+5	1	304	80	chest	0	gem	5	942
 0	2	48	232	96	8	412
 0	2	336	456	96	8	412
 0	2	0	0	480	16	170

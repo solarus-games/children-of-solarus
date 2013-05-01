@@ -1914,8 +1914,8 @@
 4	0	784	453	2	_random	1	-1
 4	0	768	453	2	_random	1	-1
 4	0	816	237	3	_random	1	-1
-4	0	904	221	3	rupee	1	-1
-4	0	968	221	3	rupee	2	-1
+4	0	904	221	3	gem	1	-1
+4	0	968	221	3	gem	2	-1
 4	0	120	877	5	_random	1	-1
 4	0	104	877	5	_random	1	-1
 4	0	88	893	5	_random	1	-1
@@ -1977,7 +1977,7 @@
 6	0	1064	264	24	24	Jump_sensor_4	5	56
 4	0	824	269	2	_random	1	-1
 4	0	840	269	2	_random	1	-1
-5	0	928	312	chest_2	0	rupee	4	13
+5	0	928	312	chest_2	0	gem	4	13
 4	0	656	677	2	_random	1	-1
 4	0	672	677	2	_random	1	-1
 4	0	688	677	2	_random	1	-1
@@ -2057,7 +2057,7 @@
 7	0	160	357	enemy_7	3	red_knight_soldier	0	-1	_random	0	-1
 4	0	792	141	3	_random	1	-1
 4	0	672	245	4	_random	1	-1
-5	0	680	216	chest	0	rupee	5	912
+5	0	680	216	chest	0	gem	5	912
 4	0	688	261	4	_random	1	-1
 4	0	704	245	4	_random	1	-1
 4	0	656	245	5	_random	1	-1

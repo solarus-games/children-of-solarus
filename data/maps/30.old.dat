@@ -574,7 +574,7 @@
 4	0	1072	485	0	_random	1	-1
 4	0	1072	501	0	_random	1	-1
 4	0	1056	501	0	heart	1	-1
-5	0	944	64	chest_5	0	rupee	3	951
+5	0	944	64	chest_5	0	gem	3	951
 0	1	408	216	96	8	358
 0	1	776	616	160	112	2
 0	1	784	720	144	8	236
@@ -836,7 +836,7 @@
 10	1	104	536	32	8	barrier	70	1
 7	1	272	405	enemy	3	skeletor	0	-1	small_key	1	74
 5	1	656	216	chest_2	0	big_key	1	84
-5	1	56	536	chest_4	0	rupee	2	87
+5	1	56	536	chest_4	0	gem	2	87
 10	1	448	216	16	8	hidden_stairs_open	273	0
 10	1	528	304	8	32	hidden_door_open	163	0
 2	1	832	728	16	16	teletransporter_2	_none	_none	0	31	tmp

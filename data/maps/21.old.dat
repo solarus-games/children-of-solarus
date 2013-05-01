@@ -373,7 +373,7 @@
 4	0	256	469	0	heart	1	-1
 4	0	416	325	0	_none	1	-1
 5	0	80	184	chest	0	piece_of_heart	1	39
-5	0	368	168	chest_2	0	rupee	3	40
+5	0	368	168	chest_2	0	gem	3	40
 4	0	120	597	0	_random	1	-1
 4	0	104	597	0	_random	1	-1
 2	0	416	176	16	16	teletransporter	entities/teletransporter	warp	1	21	destination_point
@@ -389,11 +389,11 @@
 15	0	112	96	32	16	0
 15	0	112	112	32	16	1
 1	0	168	189	from_1F_middle_stairs	3	_none
-4	0	248	253	0	rupee	2	-1
+4	0	248	253	0	gem	2	-1
 4	0	296	253	0	_random	1	-1
 4	0	296	229	0	heart	1	-1
 4	0	248	229	0	_random	1	-1
-4	0	168	445	0	rupee	1	-1
+4	0	168	445	0	gem	1	-1
 2	0	160	176	16	16	to_1F_middle_stairs	_none	_none	1	20	from_B1_middle_stairs
 11	0	144	216	open_barrier_2_switch	0	0	0
 1	0	288	589	from_1F_hole_2_west	-1	_none

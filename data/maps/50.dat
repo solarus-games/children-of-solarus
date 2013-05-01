@@ -1529,7 +1529,7 @@ destructible{
   x = 768,
   y = 621,
   subtype = "pot",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 1,
 }
 
@@ -1547,7 +1547,7 @@ destructible{
   x = 768,
   y = 653,
   subtype = "pot",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 1,
 }
 
@@ -1556,7 +1556,7 @@ destructible{
   x = 848,
   y = 653,
   subtype = "pot",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 1,
 }
 
@@ -1574,7 +1574,7 @@ destructible{
   x = 848,
   y = 621,
   subtype = "pot",
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 1,
 }
 

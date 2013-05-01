@@ -177,7 +177,7 @@
 15	0	664	504	48	32	0
 15	0	472	488	48	32	1
 4	0	432	469	6	arrow	2	-1
-5	0	608	448	chest_3	1	rupee_bag	2	88
+5	0	608	448	chest_3	1	gem_bag	2	88
 9	0	576	557	block	2	entities/block	1	0	1
 19	0	168	400	stairs_1	1	4
 19	0	448	224	stairs_2	1	0

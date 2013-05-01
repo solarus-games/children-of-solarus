@@ -26,7 +26,7 @@ function item:print_pieces_of_heart()
 
   local pieces = {
     {savegame_variable =  "b12", description = "Link's house secret room"},
-    {savegame_variable =  "b17", description = "rupee house: game 3"},
+    {savegame_variable =  "b17", description = "gem house: game 3"},
     {savegame_variable = "b922", description = "outside world A3: above dungeon 3"},
     {savegame_variable =  "b18", description = "outside world B3: north of the village, after a hole"},
     {savegame_variable =  "b21", description = "outside world B4: balcony from the cave under the waterfall"},

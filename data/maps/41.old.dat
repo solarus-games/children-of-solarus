@@ -969,7 +969,7 @@
 10	1	728	712	8	16	shortcut_b_4	609	1
 10	1	704	712	8	16	shortcut_b_2	608	1
 10	1	704	728	32	8	shortcut_b_5	606	1
-5	1	272	48	n_chest	0	rupee	6	949
+5	1	272	48	n_chest	0	gem	6	949
 11	1	480	72	n_switch	1	0	0
 1	1	528	37	from_outside	3	_none
 2	1	520	24	16	16	teletransporter_19	_none	_none	1	3	from_dungeon_3_2F
