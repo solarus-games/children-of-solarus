@@ -26,7 +26,7 @@ function map:on_started(destination)
   -- enable dark world
   if map:get_game():get_value("b905") then
     sol.audio.play_music("dark_world")
-    map:set_tileset(13)
+    map:set_tileset("nether")
   else
     sol.audio.play_music("overworld")
   end

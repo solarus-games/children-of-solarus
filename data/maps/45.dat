@@ -4,7 +4,7 @@ properties{
   width = 368,
   height = 280,
   world = "inside_world",
-  tileset = "1",
+  tileset = "overworld",
   music = "mini_game",
 }
 

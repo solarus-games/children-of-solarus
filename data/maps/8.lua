@@ -18,7 +18,7 @@ function map:on_started(destination)
   else
     -- enable dark world
     if map:get_game():get_value("b905") then
-      map:set_tileset(13)
+      map:set_tileset("nether")
     end
   end
 
