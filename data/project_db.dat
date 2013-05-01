@@ -282,6 +282,8 @@
 4	explosion	explosion
 4	external_stairs_down	external_stairs_down
 4	external_stairs_up	external_stairs_up
+4	gem_counter_end	gem_counter_end
+4	gem_counter	gem_counter
 4	heart_container	heart_container
 4	heart	heart
 4	hero_dying	hero_dying
@@ -307,13 +309,11 @@
 4	ok	ok
 4	pause_closed	pause_closed
 4	pause_open	pause_open
+4	picked_gem	picked_gem
 4	picked_item	picked_item
-4	picked_rupee	picked_rupee
 4	picked_small_key	picked_small_key
 4	piece_of_heart	piece_of_heart
 4	running	running
-4	rupee_counter_end	rupee_counter_end
-4	rupee_counter	rupee_counter
 4	secret	secret
 4	shield	shield
 4	splash	splash
