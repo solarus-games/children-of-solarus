@@ -1,4 +1,4 @@
-This package contains the data files of the game Zelda: Mystery of Solarus DX.
+This package contains the data files of the game Children of Solarus
 This quest is a free, open-source game that works with Solarus,
 an open-source Zelda-like 2D game engine.
 To play this game, you need Solarus.
@@ -28,7 +28,7 @@ solarus accepts two forms of quest paths:
 - a directory having a subdirectory named "data" with all data inside,
 - a directory having a zip archive "data.solarus" with all data inside.
 
-Thus, to run zsdx, if the current directory is the one that
+Thus, to run this game, if the current directory is the one that
 contains the "data" subdirectory (and this readme), you can type
 
 $ solarus .
@@ -48,7 +48,7 @@ if solarus was compiled with the default quest set to ".".
 2.1  Default settings
 ----------------------
 
-If you want to install zsdx, cmake and zip are recommended.
+If you want to install Children of Solarus, cmake and zip are recommended.
 Just type
 
 $ cmake .
