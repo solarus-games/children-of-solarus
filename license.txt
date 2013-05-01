@@ -12,8 +12,10 @@ Scripts under GNU GPL v3:
 -------------------------
 **.lua
 
-Data files under CC BY-SA 3.0:
-------------------------------
+Data files under CC BY-SA 3.0:                      Author (if known)
+------------------------------                      -----------------
+art_src/dark.xcf                                    Bertram
+
 **.dat
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
@@ -40,6 +42,7 @@ sprites/enemies/papillosaur_king.png
 sprites/enemies/poutroxor.png
 sprites/enemies/skeletor.png
 sprites/entities/conveyor_belt.png
+sprites/entities/dark*.png                           Bertram
 sprites/entities/fresco.png
 sprites/hud/dialog_box.png
 sprites/hud/icons_flip.png
@@ -109,7 +112,6 @@ sprites/entities/bed.png
 sprites/entities/bomb.png
 sprites/entities/boomerang.png
 sprites/entities/chest.png
-sprites/entities/dark*.png
 sprites/entities/explosion.png
 sprites/entities/hookshot.png
 sprites/entities/items.png
@@ -134,4 +136,3 @@ sprites/menus/title_logo.png
 sprites/npc/alttp.png
 sprites/npc/black_knight_soldier.png
 sprites/npc/witch.png
-
