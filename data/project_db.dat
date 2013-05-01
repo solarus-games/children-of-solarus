@@ -156,11 +156,9 @@
 1	16	Old school dungeon
 1	6	Intro
 2	agahnim	Agahnim theme
-2	beginning	Beginning
 2	boss	Boss
 2	castle	Castle
 2	cave	Cave
-2	credits	Credits
 2	dark_mountain	Dark Mountain
 2	dark_world	Dark World
 2	light_world_dungeon	Dungeon (light world)
@@ -177,20 +175,16 @@
 2	great_fairy	Great Fairy
 2	village	Kakariko Village
 2	legend	Legend
-2	lost_woods	Lost Woods
 2	mini_game	Mini game
 2	la_mountains	Mountains (LA)
 2	overworld	Overworld
-2	sanctuary	Sanctuary
 2	game_over	Selection menu & Game Over
 2	soldiers	Soldiers
 2	southern_shrine	Southern Shrine (LA)
-2	rabbit	Turned into a rabbit
 2	title_screen	Title screen
 2	triforce	Triforce
 2	victory	Victory
 2	witch_hut	Witch (LA)
-2	zelda	Zelda theme
 3	npc/agahnim	Agahnim
 3	npc/billy	Billy
 3	npc/black_knight_soldier	Black Knight Soldier
@@ -310,7 +304,6 @@
 4	message_letter	message_letter
 4	monkey	monkey
 4	monster_hurt	monster_hurt
-4	octorok	octorok
 4	ok	ok
 4	pause_closed	pause_closed
 4	pause_open	pause_open
@@ -348,7 +341,6 @@
 4	warp	warp
 4	world_warp	world_warp
 4	wrong	wrong
-4	zora	zora
 5	random	(Random)
 5	feather	Feather
 5	bombs_counter	Bombs counter
