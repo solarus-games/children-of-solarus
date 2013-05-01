@@ -61,18 +61,18 @@ of the quest. You can then install it with
 
 This installs the following files (assuming that the install directory
 is /usr/local):
-- the quest data archive ("data.solarus") in /usr/local/share/solarus/zsdx/
-- a script called "zsdx" in /usr/local/bin/
+- the quest data archive ("data.solarus") in /usr/local/share/solarus/ChildrenOfSolarus/
+- a script called "ChildrenOfSolarus" in /usr/local/bin/
 
 The zsdx script launches solarus with the appropriate command-line argument
 to specify the quest path.
-This means that you can launch the zsdx quest with the command:
+This means that you can launch the ChildrenOfSolarus quest with the command:
 
-$ zsdx
+$ ChildrenOfSolarus
 
 which is equivalent to:
 
-$ solarus /usr/local/share/solarus/zsdx
+$ solarus /usr/local/share/solarus/ChildrenOfSolarus
 
 
 3.2  Change the install directory

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(ZSDX)
 
-set(quest_name "zsdx")
+set(quest_name "ChildrenOfSolarus")
 
 # data files list
 file(GLOB_RECURSE data_files
