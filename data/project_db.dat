@@ -163,25 +163,25 @@
 2	dark_world	Dark World
 2	light_world_dungeon	Dungeon (light world)
 2	dark_world_dungeon	Dungeon (dark world)
-2	tloz_dungeon	Dungeon (old school)
+2	old_dungeon	Dungeon (old school)
 2	dungeon_finished	Dungeon finished
-2	eagle_tower	Eagle's Tower
-2	excalibur	Excalibur
+2	fairy	Fairy
 2	fanfare	Fanfare
 2	fortune_teller	Fortune Teller
 2	ganon_appears	Ganon appears
 2	ganon_battle	Ganon battle
 2	ganon_theme	Ganon theme
-2	great_fairy	Great Fairy
 2	village	Kakariko Village
 2	legend	Legend
+2	memory_shrine	Memory Shrine
 2	mini_game	Mini game
-2	la_mountains	Mountains (LA)
+2	mountains	Mountains
 2	overworld	Overworld
 2	game_over	Selection menu & Game Over
 2	soldiers	Soldiers
-2	southern_shrine	Southern Shrine (LA)
+2	sword	Legendary Sword 
 2	title_screen	Title screen
+2	tower	Tower
 2	triforce	Triforce
 2	victory	Victory
 2	witch_hut	Witch (LA)
