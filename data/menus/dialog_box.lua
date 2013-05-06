@@ -540,3 +540,11 @@ function dialog_box:on_draw(dst_surface)
   self.dialog_surface:draw(dst_surface)
 end
 
+function game:quit_dialog_box()
+
+  if self.dialog_box ~= nil then
+    sol.menu.stop(self.dialog_box)
+    self.dialog_box = nil
+  end
+end
+
