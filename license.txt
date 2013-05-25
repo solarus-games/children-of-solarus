@@ -15,9 +15,8 @@ Scripts under GNU GPL v3:
 Data files under CC BY-SA 3.0:                      Author (if known)
 ------------------------------                      -----------------
 art_src/dark.xcf                                    Bertram
-art_src/bomb_n_leaves.xcf                           Bertram - From LPC sprites: http://opengameart.org/content/lpc-tile-atlas
+art_src/bomb_n_leaves.xcf                           Bertram - From LPC sprites: http://opengameart.org/content/lpc-tile-atlas, http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 art_src/chests.xcf                                  Bertram - adapted from sprites here: http://opengameart.org/content/modified-32x32-treasure-chest, http://opengameart.org/content/jrpg-chests-16-32-64-and-128px-squared 
-
 
 **.dat
 sprites/enemies/arbror_root.png
@@ -44,8 +43,11 @@ sprites/enemies/mowatulla.png
 sprites/enemies/papillosaur_king.png
 sprites/enemies/poutroxor.png
 sprites/enemies/skeletor.png
+sprites/entities/bomb.png                           Bertram, adapted from: http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 sprites/entities/conveyor_belt.png
-sprites/entities/dark*.png                           Bertram
+sprites/entities/dark*.png                          Bertram
+sprites/entities/chest.png                          Bertram - adapted from sprites here: http://opengameart.org/content/modified-32x32-treasure-chest, http://opengameart.org/content/jrpg-chests-16-32-64-and-128px-squared
+sprites/entities/explosion.png                      Bertram, adapted from: http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 sprites/entities/fresco.png
 sprites/hud/dialog_box.png
 sprites/hud/icons_flip.png
@@ -76,7 +78,7 @@ sprites/menus/title_sunset_*.png
 sprites/npc/inferno.png
 sprites/npc/newlink.png
 sprites/npc/solarus_child*.png
-tilesets/0.entities.png                              Bertram, adapted from tiles of: http://opengameart.org/content/lpc-tile-atlas
+tilesets/0.entities.png                             Bertram, adapted from tiles of: http://opengameart.org/content/lpc-tile-atlas
 
 TODO: Check the status of these fonts:
 --------------------------------------
@@ -114,10 +116,7 @@ sprites/enemies/snap_dragon.png
 sprites/enemies/tentacle.png
 sprites/entities/arrow.png
 sprites/entities/bed.png
-sprites/entities/bomb.png
 sprites/entities/boomerang.png
-sprites/entities/chest.png                           Bertram - adapted from sprites here: http://opengameart.org/content/modified-32x32-treasure-chest, http://opengameart.org/content/jrpg-chests-16-32-64-and-128px-squared
-sprites/entities/explosion.png
 sprites/entities/hookshot.png
 sprites/entities/items.png
 sprites/entities/miscellaneous.png
