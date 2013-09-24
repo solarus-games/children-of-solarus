@@ -80,9 +80,9 @@ sprites/npc/newlink.png
 sprites/npc/solarus_child*.png
 tilesets/0.entities.png                             Bertram, adapted from tiles of: http://opengameart.org/content/lpc-tile-atlas
 
-musics/village.ogg                                  Eduardo Dueñas
-musics/fanfare.ogg                                  Eduardo Dueñas
-musics/title_screen.ogg                             Eduardo Dueñas
+musics/village.ogg                                  Eduardo Dueñas <duenase@hotmail.com>
+musics/fanfare.ogg                                  Eduardo Dueñas <duenase@hotmail.com>
+musics/title_screen.ogg                             Eduardo Dueñas <duenase@hotmail.com>
 
 TODO: Check the status of these fonts:
 --------------------------------------
