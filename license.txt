@@ -85,6 +85,7 @@ musics/fairy.ogg                                    Eduardo Dueñas <duenase@hot
 musics/fairy_intro.ogg                              Eduardo Dueñas <duenase@hotmail.com>
 musics/fanfare.ogg                                  Eduardo Dueñas <duenase@hotmail.com>
 musics/title_screen.ogg                             Eduardo Dueñas <duenase@hotmail.com>
+musics/witch_hut.ogg                                Eduardo Dueñas <duenase@hotmail.com>
 
 TODO: Check the status of these fonts:
 --------------------------------------
