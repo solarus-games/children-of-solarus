@@ -87,13 +87,8 @@ text{ key = "inventory.caption.item.bottle_4.6", value = "Magic Bottle$(Fairy)" 
 text{ key = "options.caption.press_action_change_mode", value = "Press Action to$switch video mode" }
 text{ key = "options.caption.press_action_customize_key", value = "Press Action to$configure this key" }
 text{ key = "options.caption.press_key", value = "Press any key on$the keyboard or joypad" }
-text{ key = "options.video_mode.windowed_stretched", value = "Windowed 640x480" }
-text{ key = "options.video_mode.windowed_scale2x", value = "Windowed 640x480 smoothed" }
-text{ key = "options.video_mode.windowed_normal", value = "Windowed 320x240" }
-text{ key = "options.video_mode.fullscreen_normal", value = "Fullscreen stretched" }
-text{ key = "options.video_mode.fullscreen_wide", value = "Fullscreen stretched (large)" }
-text{ key = "options.video_mode.fullscreen_scale2x", value = "Fullscreen smoothed" }
-text{ key = "options.video_mode.fullscreen_scale2x_wide", value = "Fullscreen smoothed (large)" }
+text{ key = "options.video_mode.windowed", value = "Windowed" }
+text{ key = "options.video_mode.fullscreen", value = "Fullscreen" }
 text{ key = "options.commands_column", value = "Controls" }
 text{ key = "options.keyboard_column", value = "Keyboard" }
 text{ key = "options.joypad_column", value = "Joypad" }
