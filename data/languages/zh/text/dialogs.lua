@@ -1,4 +1,4 @@
--- Zelda Mystery of Solarus DX:
+-- Children of Solarus:
 -- English dialogs
 
 -- ****** Contributors ******
@@ -9,6 +9,7 @@
 -- * Christopho
 -- * JeFF
 -- * rypervenche
+-- * Nate-Devv
 
 -- ****** Please respect the limit of each line! ******
 -- 23 chars for normal lines,
@@ -2570,7 +2571,7 @@ $2Many generations
 later, an evil spell
 seemed to threaten
 Hyrule. A mysterious
-sorceror named Agahnim
+sorceror named Lunarius
 fought back the
 darkness. Acclaimed by
 the people, the King
@@ -2580,7 +2581,7 @@ However, the sorceror
 was in fact plotting
 against the royal
 family. He tried to
-bring back Ganondorf,
+bring back Neptunedorf,
 King of thieves, from a
 forgotten time.
 ]]
@@ -2611,7 +2612,7 @@ $2Eventually, he who was
 known as the Hero
 repelled the evil.
 Thanks to his courage,
-he defeated Ganondorf,
+he defeated Neptunedorf,
 who had built an
 impressive pyramid
 within the Golden Land.
@@ -2625,7 +2626,7 @@ dialog{
   skip = "current",
   text = [[
 $2The young Hero then
-wished for Ganondorf
+wished for Neptunedorf
 to be imprisoned
 forever in the Golden
 Land. The King of
@@ -2667,9 +2668,9 @@ guidance of his master
 Sahasrahla, trusted
 the heiress of the
 royal powers, Princess
-Zelda with the
+Solaritine with the
 Triforce.
-Zelda teamed with eight
+Solaritine teamed with eight
 mysterious children to
 shatter the Triforce
 into eight fragments
@@ -3223,7 +3224,7 @@ No
 -- C'est un clin d'oeil à Link's Awakening, dans le stand
 -- de pêche tout au début du jeu, quand on refuse de jouer ou de rejouer
 -- English Translation taken from the actual LA text dump.
--- http://www.zeldalegends.net/files/emulation/dumps/zelda4/usa/z4dump(usa).html
+-- http://www.Solaritinelegends.net/files/emulation/dumps/Solaritine4/usa/z4dump(usa).html
 dialog{
   id = "gem_house.game_1.not_playing",
   text = [[
@@ -3676,7 +3677,7 @@ dialog{
   id = "grandma_house.dark_world_enabled",
   skip = "all",
   text = [[
-Agahnim seized control
+Lunarius seized control
 of the kingdom...
 Evil grows along his
 path. One of the
@@ -4090,12 +4091,12 @@ death and get ahold of
 the Triforce.
 Who could have done
 that?
-Surely Ganondorf and
+Surely Neptunedorf and
 his minions...
 The Seal of the Seven
 Sages weakened after
 our poor King's death.
-Ganon would have
+Neptune would have
 managed to escape from
 the Dark World?
 We must not let him
@@ -4510,7 +4511,7 @@ $2$v... Thank you. You
 saved my life. I am one
 of the eight protectors
 called forth by
-Princess Zelda. We are
+Princess Solaritine. We are
 devoted to watching
 over the remains of the
 holy relic, the
@@ -4721,7 +4722,7 @@ During my expedition to
 Mount Terror, I brought
 back a priceless
 treasure. Even Princess
-Zelda would not have
+Solaritine would not have
 been able to find it.
 It's an extremely rare
 plant.
@@ -5541,11 +5542,11 @@ $2$v... Thank you.
 You saved my life.
 I am one of the eight
 protectors called forth
-by Princess Zelda to
+by Princess Solaritine to
 watch over the Triforce.
 Using the power of the
 Solarus amulet, a relic
-worn by Princess Zelda,
+worn by Princess Solaritine,
 is the only way to
 restore the Triforce.
 We have shattered it
@@ -5553,7 +5554,7 @@ into eight pieces
 hidden across the
 kingdom. We are here
 to guard the eight
-fragments, as Zelda
+fragments, as Solaritine
 watches over the
 Solarus Amulet.
 It must not fall into
@@ -5616,7 +5617,7 @@ not never trouble the
 Kingdom again.
 I am one of the eight
 protectors called forth
-by Princess Zelda.
+by Princess Solaritine.
 The Triforce is still
 in danger as long as
 one of my brothers is
@@ -5680,7 +5681,7 @@ $2$v... Thank you.
 You saved my life.
 I am one of the eight
 protectors called forth
-by Princess Zelda.
+by Princess Solaritine.
 You have demonstrated
 a remarkable courage.
 Thanks to you, we are
@@ -5696,7 +5697,7 @@ to the Kingdom!
 -----------------------
 
 dialog{
-  id = "dungeon_4.agahnim",
+  id = "dungeon_4.Lunarius",
   text = [[
 $1A G A H N I M !
 $3Yes, himself!
@@ -5715,7 +5716,7 @@ Ah ah ah ah ah ah!!!
 Acknowledge, young man,
 that I did not come
 back to free the
-despicable Ganon, he
+despicable Neptune, he
 who once dared call me
 his alter ego...
 I would rather leave
@@ -5837,7 +5838,7 @@ is activated...
 -----------------------
 
 dialog{
-  id = "dungeon_5.agahnim_beginning",
+  id = "dungeon_5.Lunarius_beginning",
   text = [[
 You were able to pass
 through the security of
@@ -5851,7 +5852,7 @@ flight ends here!
 -----------------------
 
 dialog{
-  id = "dungeon_5.agahnim_end",
+  id = "dungeon_5.Lunarius_end",
   text = [[
 ...$0...........$0
 You defeated me this
@@ -5932,7 +5933,7 @@ some serious facts...
 Our king's death was
 not accidental.
 I poisoned him.
-I was under Agahnim's
+I was under Lunarius's
 control...
 He cast a spell on me
 and I lost my free
@@ -5945,13 +5946,13 @@ decided to retire to
 the cave where we first
 met. Then I was thrown
 in jail while trying
-to resist when Agahnim
+to resist when Lunarius
 seized control of the
 castle...
 $v... You must now
 travel to Mount Terror.
-Agahnim went there
-to look for Zelda.
+Lunarius went there
+to look for Solaritine.
 You must first free
 Sahasrahla before the
 sorcerer manages to
@@ -6016,7 +6017,7 @@ to resist a while
 more...
 Those culprits coaxed
 me into revealing the
-location of Zelda and
+location of Solaritine and
 the Solarus children.
 Protect them from all
 danger, before
@@ -6027,11 +6028,11 @@ palace sitting east
 of the mountains. The
 eight Solarus beings
 must escape from
-Agahnim, else the
+Lunarius, else the
 sorcerer could break
 the seal created by
 the Solarus Amulet, the
-relic worn by Zelda,
+relic worn by Solaritine,
 necessary to the
 gathering of the
 Triforce shards.
@@ -6046,7 +6047,7 @@ place or even a world,
 as the seven sages once
 did when they sealed
 away the Golden Land.
-Zelda is the heiress of
+Solaritine is the heiress of
 that power. She used it
 to seal the Triforce
 shards, using the eight
@@ -6109,7 +6110,7 @@ They did find shelter
 in my palace, but I
 took the responsability
 of handing them to
-Agahnim...
+Lunarius...
 
 
 Now, it is your turn
@@ -6119,7 +6120,7 @@ to die!
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim",
+  id = "dungeon_8.Lunarius",
   text = [[
 $1That Billy was really
 incapable of anything.
@@ -6140,7 +6141,7 @@ world. Ah ah ah ah!
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim_middle",
+  id = "dungeon_8.Lunarius_middle",
   text = [[
 $1$0...$0.............$0
 You are rather tough,
@@ -6151,7 +6152,7 @@ But what about this?
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim_end",
+  id = "dungeon_8.Lunarius_end",
   text = [[
 $1$0...$0 .........$0
 I am defeated...$0
@@ -6172,12 +6173,12 @@ Ah ah ah ah ah ah!!!
 -----------------------
 
 dialog{
-  id = "dungeon_8.ganon",
+  id = "dungeon_8.Neptune",
   text = [[
 $1Thus, you have
 managed to defeat my
 alter ego, the dark
-sorcerer Agahnim...
+sorcerer Lunarius...
 That was pretty useless
 considering it made him
 free me, the dark times
@@ -6248,7 +6249,7 @@ dialog{
   id = "dungeon_9.5f_childs_hint",
   skip = "all",
   text = [[
-$1To defeat Ganon,
+$1To defeat Neptune,
 the torches must be
 lit clockwise.
 ]]
@@ -6272,7 +6273,7 @@ Prepare to die.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda",
+  id = "dungeon_9.Solaritine",
   text = [[
 $1$v... Thank you.
 Your victory on evil
@@ -6291,7 +6292,7 @@ is whole once again.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda_children",
+  id = "dungeon_9.Solaritine_children",
   text = [[
 $1I must destroy this
 relic. The power of
@@ -6306,7 +6307,7 @@ good purpose as you
 once used it, the evil
 will always try to
 reach for it, like
-Agahnim and Ganondorf.
+Lunarius and Neptunedorf.
 With the power of the
 eight beings created
 by the Solarus Essence,
@@ -6319,7 +6320,7 @@ I must destroy it.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda_end",
+  id = "dungeon_9.Solaritine_end",
   text = [[
 $1It is over.$0
 

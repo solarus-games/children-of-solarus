@@ -1,6 +1,6 @@
 local enemy = ...
 
--- Agahnim (Boss of dungeon 8).
+-- Lunarius (Boss of dungeon 8).
 
 -- Possible positions where he appears.
 local positions = {
@@ -32,7 +32,7 @@ function enemy:on_created()
 
   self:set_life(initial_life)
   self:set_damage(16)
-  self:create_sprite("enemies/agahnim_2")
+  self:create_sprite("enemies/Lunarius_2")
   self:set_optimization_distance(0)
   self:set_size(16, 16)
   self:set_origin(8, 13)
@@ -123,7 +123,7 @@ function enemy:fire_step_2()
     -- Blue fireball: the hero can do nothing but run away.
     sprite:set_animation("preparing_blue_fireball")
   else
-    -- Red fireball: possible to shoot it back to Agahnim.
+    -- Red fireball: possible to shoot it back to Lunarius.
     sprite:set_animation("preparing_red_fireball")
   end
 
@@ -160,7 +160,7 @@ function fire_step_3()
 
   function throw_fire()
     nb_sons_created = nb_sons_created + 1
-    self:create_enemy("agahnim_fireball_" .. nb_sons_created,
+    self:create_enemy("Lunarius_fireball_" .. nb_sons_created,
         next_fireball_breed, 0, -21)
   end
 
@@ -187,7 +187,7 @@ end
 
 function enemy:receive_bounced_fireball(fireball)
 
-  if fireball:get_name():find("^agahnim_fireball")
+  if fireball:get_name():find("^Lunarius_fireball")
       and vulnerable then
     -- Receive a fireball shot back by the hero: get hurt or throw it back.
     if math.random(100) <= hurt_proba then
@@ -209,30 +209,30 @@ function enemy:on_hurt(attack, life_lost)
   local life = self:get_life()
   if life <= 0 then
     -- Dying.
-    self:get_map():remove_entities("agahnim_fireball")
+    self:get_map():remove_entities("Lunarius_fireball")
     self:get_map():remove_entities(self:get_name() .. "_")
     sprite:set_ignore_suspend(true)
-    self:get_map():start_dialog("dungeon_8.agahnim_end")
+    self:get_map():start_dialog("dungeon_8.Lunarius_end")
     sol.timer.stop_all(self)
   elseif life <= initial_life * 2 / 3 then
     -- Not dying yet: start creating fakes after a few hits.
     sprite:set_ignore_suspend(true)
     if not middle_dialog then
-      self:get_map():start_dialog("dungeon_8.agahnim_middle")
+      self:get_map():start_dialog("dungeon_8.Lunarius_middle")
       middle_dialog = true
     end
     self:create_fakes()
   end
 end
 
--- Create fake Agahnims.
+-- Create fake Lunariuss.
 function enemy:create_fakes()
 
   local prefix = self:get_name() .. "_fake_"
   if self:get_map():get_entities_count(prefix) < 3 then
     nb_fakes_created = nb_fakes_created + 1
     local fake_name = prefix .. nb_fakes_created
-    self:create_enemy(fake_name, "agahnim_2_fake", 0, 0)
+    self:create_enemy(fake_name, "Lunarius_2_fake", 0, 0)
   end
 
   if self:get_life() < initial_life / 3

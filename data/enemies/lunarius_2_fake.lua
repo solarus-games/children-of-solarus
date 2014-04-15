@@ -1,6 +1,6 @@
 local enemy = ...
 
--- Fake Agahnim (with the boss of dungeon 8).
+-- Fake Lunarius (with the boss of dungeon 8).
 
 -- Possible positions where he appears.
 local positions = {
@@ -28,7 +28,7 @@ function enemy:on_created()
 
   self:set_life(1)
   self:set_damage(8)
-  self:create_sprite("enemies/agahnim_2_fake")
+  self:create_sprite("enemies/Lunarius_2_fake")
   self:set_optimization_distance(0)
   self:set_size(16, 16)
   self:set_origin(8, 13)
@@ -171,7 +171,7 @@ function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
 
     local x = self:get_position()
     if x > 0 then
-      -- Collision with another Agahnim.
+      -- Collision with another Lunarius.
       sol.timer.stop_all(self)
       self:hide()  -- Go somewhere else.
     end
@@ -180,7 +180,7 @@ end
 
 function enemy:receive_bounced_fireball(fireball)
 
-  if fireball:get_name():find("^agahnim_fireball") then
+  if fireball:get_name():find("^Lunarius_fireball") then
     -- Receive a fireball shot back by the hero: disappear.
     self:disappear()
   end

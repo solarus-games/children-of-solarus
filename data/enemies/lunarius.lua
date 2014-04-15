@@ -1,6 +1,6 @@
 local enemy = ...
 
--- Agahnim (Boss of dungeon 5)
+-- Lunarius (Boss of dungeon 5)
 
 -- Possible positions where he appears.
 local positions = {
@@ -19,7 +19,7 @@ function enemy:on_created()
 
   self:set_life(initial_life)
   self:set_damage(12)
-  self:create_sprite("enemies/agahnim")
+  self:create_sprite("enemies/Lunarius")
   self:set_optimization_distance(0)
   self:set_size(16, 16)
   self:set_origin(8, 13)
@@ -109,7 +109,7 @@ function enemy:fire_step_3()
   function throw_fire()
 
     nb_sons_created = nb_sons_created + 1
-    self:create_enemy("agahnim_fireball_" .. nb_sons_created, breed, 0, -21)
+    self:create_enemy("Lunarius_fireball_" .. nb_sons_created, breed, 0, -21)
   end
 
   throw_fire()
@@ -121,7 +121,7 @@ end
 
 function enemy:receive_bounced_fireball(fireball)
 
-  if fireball:get_name():find("^agahnim_fireball")
+  if fireball:get_name():find("^Lunarius_fireball")
       and vulnerable then
     -- Receive a fireball shot back by the hero: get hurt.
     sol.timer.stop_all(self)
@@ -134,7 +134,7 @@ function enemy:on_hurt(attack, life_lost)
 
   local life = self:get_life()
   if life <= 0 then
-    self:get_map():remove_entities("agahnim_fireball")
+    self:get_map():remove_entities("Lunarius_fireball")
     self:set_life(1)
     finished = true
   elseif life <= initial_life / 3 then
@@ -144,10 +144,10 @@ end
 
 function enemy:end_dialog()
 
-  self:get_map():remove_entities("agahnim_fire_ball_" .. i)
+  self:get_map():remove_entities("Lunarius_fire_ball_" .. i)
   local sprite = self:get_sprite()
   sprite:set_ignore_suspend(true)
-  self:get_map():start_dialog("dungeon_5.agahnim_end")
+  self:get_map():start_dialog("dungeon_5.Lunarius_end")
 end
 
 function enemy:fade_out()
