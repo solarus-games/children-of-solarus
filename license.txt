@@ -35,6 +35,8 @@ sprites/enemies/globul.png
 sprites/enemies/khorneth.png
 sprites/enemies/khotor.png
 sprites/enemies/lizalfos.png
+sprites/enemies/lunarius.png
+sprites/enemies/lunarius_fake.png
 sprites/enemies/mandible.png
 sprites/enemies/master_arbror.png
 sprites/enemies/minillosaur_egg.png
@@ -94,6 +96,10 @@ TODO: Check the status of these fonts:
 text/fixed8.fon
 text/wqy-microhei.ttc
 
+Files with an original name but with Nintendo content:
+------------------------------------------------------
+sprites/enemies/neptune.png
+
 Files that include content from Nintendo:
 -----------------------------------------
 languages/*/images/*.png
@@ -101,10 +107,7 @@ musics/*
 sounds/*.ogg
 text/*.png
 text/la.ttf
-
 tilesets/*.png
-sprites/enemies/agahnim.png
-sprites/enemies/agahnim_fake.png
 sprites/enemies/blue_flame.png
 sprites/enemies/*_knight_soldier.png
 sprites/enemies/bubble.png
@@ -112,7 +115,6 @@ sprites/enemies/chain_and_ball.png
 sprites/enemies/enemy_killed.png
 sprites/enemies/fireball_triple.png
 sprites/enemies/fire_bat.png
-sprites/enemies/ganon.png
 sprites/enemies/gibdo.png
 sprites/enemies/hardhat_bettle.png
 sprites/enemies/laser.png
