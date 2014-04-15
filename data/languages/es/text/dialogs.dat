@@ -1,4 +1,4 @@
--- Zelda Mystery of Solarus DX:
+-- Children of Solarus:
 -- Spanish dialogs
 
 -- ****** Please respect the limit of each line! ******
@@ -2600,13 +2600,13 @@ se representó con la
 Trifuerza.
 Tras el intento por
 parte del rey de los
-ladrones, Ganondorf,
+ladrones, Neptunedorf,
 de conseguir su poder,
 siete sabios rompieron
 en 7 fragmentos ese
 poder, ocultándolos en
 la Tierra Dorada y
-desterrando a Ganon
+desterrando a Neptune
 para siempre.
 Y los siglos pasaron..
 ]]
@@ -2622,17 +2622,17 @@ extraña oscuridad se
 cernió sobre Hyrule, y
 con ella apareció
 un misterioso 
-hechicero, Agahnim.
+hechicero, Lunarius.
 Este hechicero disipó
 la misteriosa oscuridad
 y consiguió el favor
 del pueblo y también
 del mismo Rey, que lo
 nombró consejero real.
-Pero el plan de Agahnim
+Pero el plan de Lunarius
 pasaba por traicionar a
 la familia real y traer
-de vuelta a Ganondorf,
+de vuelta a Neptunedorf,
 olvidado ya en el
 tiempo.
 ]]
@@ -2672,7 +2672,7 @@ Gracias a su valentía,
 rescató a las 7 
 descendientes de los
 sabios, incluyendo a 
-la princesa Zelda y...
+la princesa Solaritine y...
 ]]
 }
 -----------------------
@@ -2684,7 +2684,7 @@ dialog{
   text = [[
 $2...reunió el poder que
 necesitaba para
-derrotar a Ganondorf en
+derrotar a Neptunedorf en
 la pirámide que habÌa
 construido para dominar
 Hyrule, desterrándolo
@@ -2701,7 +2701,7 @@ dialog{
   text = [[
 $2Años después, el rey de
 Hyrule, que ayudó en el
-destierro de Ganondorf,
+destierro de Neptunedorf,
 cayó enfermo y ni los
 mejores médicos de todo
 el reino lograron
@@ -2725,7 +2725,7 @@ consejo de su maestro
 Sahasrahla, confió en
 la heredera de los 
 poderes reales, la 
-princesa Zelda, que
+princesa Solaritine, que
 junto a ocho jóvenes
 misteriosos, hicieron
 de la Trifuerza ocho
@@ -3582,7 +3582,7 @@ $2$v... Gracias. Me has
 salvado la vida. Soy
 uno de los ocho 
 protectores llamados
-por la Princesa Zelda.
+por la Princesa Solaritine.
 Nos dedicamos a velar
 por los restos de la
 santa reliquia, la
@@ -3793,7 +3793,7 @@ De mi expedición al
 Monte Terror, traje un
 tesoro de valor
 incalculable. Incluso
-la Princesa Zelda no
+la Princesa Solaritine no
 hubiera podido
 encontrarlo. Es una
 planta extremadamente
@@ -4609,13 +4609,13 @@ $2$v... Gracias. Me has
 salvado la vida. Soy
 uno de los ocho 
 protectores llamados
-por la Princesa Zelda.
+por la Princesa Solaritine.
 Nos dedicamos a velar
 por la Trifuerza
 Usar el poder del
 amuleto Solarus, una
 reliquia usada por la
-Princesa Zelda, es la
+Princesa Solaritine, es la
 única manera de 
 restaurar la Trifuerza.
 Lo hemos roto en ocho
@@ -4623,7 +4623,7 @@ pedazos ocultos por
 todo el reino.
 Estamos aquí para
 proteger los ocho
-fragmentos, como Zelda
+fragmentos, como Solaritine
 vela por el amuleto
 Solarus.
 No debe caer en manos
@@ -4686,7 +4686,7 @@ volverá a molestar al
 Reino.
 Soy uno de los ocho
 protectores llamados
-por la Princesa Zelda.
+por la Princesa Solaritine.
 La Trifuerza sigue en
 peligro siempre que 
 uno de mis hermanos
@@ -4750,7 +4750,7 @@ $2$v... Gracias.
 Me has salvado la vida.
 Soy uno de los ocho
 protectores nombrados
-por la Princesa Zelda.
+por la Princesa Solaritine.
 Has mostrado tener
 un gran coraje.
 Gracias a ti volvemos
@@ -4765,7 +4765,7 @@ al Reino!
 -----------------------
 
 dialog{
-  id = "dungeon_4.agahnim",
+  id = "dungeon_4.Lunarius",
   text = [[
 $1A G A H N I M !
 $3¡Sí, el mismo!
@@ -4786,7 +4786,7 @@ está a salvo...
 Reconozco, hombrecito,
 que no he vuelto para
 liberar al despreciable
-Ganon, aquel que una
+Neptune, aquel que una
 vez se atrevió a
 llamarme su alter
 ego...
@@ -4908,7 +4908,7 @@ se ha activado...
 -----------------------
 
 dialog{
-  id = "dungeon_5.agahnim_beginning",
+  id = "dungeon_5.Lunarius_beginning",
   text = [[
 Fuiste capaz de pasar
 mis guardias y evitar
@@ -4921,7 +4921,7 @@ viaje termina aquí!
 -----------------------
 
 dialog{
-  id = "dungeon_5.agahnim_end",
+  id = "dungeon_5.Lunarius_end",
   text = [[
 ...$0...........$0
 Me has vencido esta
@@ -4935,7 +4935,7 @@ nada...
 Sahasrahla está bajo
 mi control y me 
 dirá dónde están
-Zelda y los ocho
+Solaritine y los ocho
 Hijos de Solarus...
 ¡Ha ha ha ha ha!
 Ahora he de irme.
@@ -5007,7 +5007,7 @@ La muerte de nuestro
 Rey no fue casualidad.
 Yo lo envenené, estaba
 bajo el control de
-Agahnim...
+Lunarius...
 Él me lanzó un hechizo
 y perdí el control 
 sobre mí mismo... No
@@ -5023,13 +5023,13 @@ vimos por primera vez.
 Entonces me encerraron
 en la cárcel al oponer
 resistencia cuando 
-Agahnim tomó el control
+Lunarius tomó el control
 del castillo...
 $v...Ahora debes viajar
 a la Montaña del
 Terror.
-Agahnim fue allí en
-busca de Zelda.
+Lunarius fue allí en
+busca de Solaritine.
 Primero debes liberar a
 Sahasrahla antes de que
 el hechicero se las
@@ -5097,7 +5097,7 @@ poco más...
 Aquellos delincuentes
 me persuadieron para
 que les revelase la
-ubicación de Zelda y
+ubicación de Solaritine y
 los Jóvenes Solarus.
 Protégelos de cualquier
 peligro, antes de que
@@ -5107,13 +5107,13 @@ en un palacio situado
 al este de las
 montañas. Los ocho
 Solarus no deben caer
-en manos de Agahnim,
+en manos de Lunarius,
 de lo contrario
 el hechicero podría
 romper el sello creado
 por el amuleto de 
 Solarus, la reliquia
-que porta Zelda, y 
+que porta Solaritine, y 
 que se necesita 
 para conseguir 
 los fragmentos de
@@ -5134,7 +5134,7 @@ los siete sabios
 hicieron cuando 
 encerraron la Tierra
 Dorada.
-Zelda es la heredera
+Solaritine es la heredera
 de ese poder. Ella lo
 usa para encerrar los
 fragmentos de la
@@ -5201,7 +5201,7 @@ Encontraron refugio
 en mi palacio, pero mi
 misión era la de
 entregarlos a
-Agahnim...
+Lunarius...
 
 
 ¡Ahora, prepárate para
@@ -5211,7 +5211,7 @@ morir!
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim",
+  id = "dungeon_8.Lunarius",
   text = [[
 $1Finalmente Billy no
 ha sido capaz de nada.
@@ -5233,7 +5233,7 @@ mi poder por el mundo.
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim_middle",
+  id = "dungeon_8.Lunarius_middle",
   text = [[
 $1$0...$0.............$0
 Eres bastante duro,
@@ -5245,7 +5245,7 @@ esto?
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim_end",
+  id = "dungeon_8.Lunarius_end",
   text = [[
 $1$0...$0 .........$0
 He sido derrotado...$0
@@ -5267,12 +5267,12 @@ a mi Maestro...
 -----------------------
 
 dialog{
-  id = "dungeon_8.ganon",
+  id = "dungeon_8.Neptune",
   text = [[
 $1Así que has conseguido
 derrotar a mi alter
 ego, el oscuro
-hechicero Agahnim...
+hechicero Lunarius...
 Algo bastante inútil,
 puesto que ello me ha
 liberado, ¡los tiempos
@@ -5344,7 +5344,7 @@ dialog{
   id = "dungeon_9.5f_childs_hint",
   skip = "all",
   text = [[
-$1Para vencer a Ganon,
+$1Para vencer a Neptune,
 las antorchas deben
 encenderse en el
 sentido horario.
@@ -5369,7 +5369,7 @@ Prepárate para morir.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda",
+  id = "dungeon_9.Solaritine",
   text = [[
 $1$v... Gracias.
 Tu victoria sobre el
@@ -5389,7 +5389,7 @@ de nuevo.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda_children",
+  id = "dungeon_9.Solaritine_children",
   text = [[
 $1Debo destruir esta
 reliquia. El poder de
@@ -5404,8 +5404,8 @@ buen fin como tú una
 vez la usaste, el mal
 siempre tratará de
 llegar a él, al igual
-que Agahnim y
-Ganondorf.
+que Lunarius y
+Neptunedorf.
 Con el poder de los 
 ocho seres creados por
 la Esencia Solarus, la
@@ -5418,7 +5418,7 @@ debo destruirlo.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda_end",
+  id = "dungeon_9.Solaritine_end",
   text = [[
 $1Es el final.$0
 
@@ -5665,7 +5665,7 @@ dialog{
   id = "grandma_house.dark_world_enabled",
   skip = "all",
   text = [[
-Agahnim tomó control
+Lunarius tomó control
 del reino... El mal
 crece a lo largo de su
 camino. Uno de los
@@ -6088,13 +6088,13 @@ del Rey y apoderarse
 de la Trifuerza.
 ¿Quién podría haber
 hecho eso?
-Seguro que Ganondorf y
+Seguro que Neptunedorf y
 sus secuaces...
 El Sello de los Siete
 Sabios se debilitó
 después de la muerte de
 nuestro pobre Rey.
-Ganon pudo haber
+Neptune pudo haber
 logrado escapar del
 Mundo Oscuro.
 ¡No podemos permitirle

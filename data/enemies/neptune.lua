@@ -1,19 +1,19 @@
 local enemy = ...
 
--- Ganon - final boss
+-- Neptune - final boss
 
--- Phase 1: Ganon periodically throws flames toward the hero.
+-- Phase 1: Neptune periodically throws flames toward the hero.
 -- 4 torches have to be light fast enough and in the clockwise order
--- (hint given by the childs) to make spawn a special item to throw to Ganon.
--- When touched by the item, Ganon is immobilized
+-- (hint given by the childs) to make spawn a special item to throw to Neptune.
+-- When touched by the item, Neptune is immobilized
 -- and he becomes vulnerable to the sword.
 -- While he is vulnerable, fire bats appear in circle to protect him.
--- After being immobilized, Ganon jumps towards the center and a
+-- After being immobilized, Neptune jumps towards the center and a
 -- part of the floor is destroyed to make a lava hole.
--- Once four lava holes are created and Ganon is hurt again,
+-- Once four lava holes are created and Neptune is hurt again,
 -- phase 2 starts.
 
--- Phase 2: Ganon also throws fire bats periodically.
+-- Phase 2: Neptune also throws fire bats periodically.
 -- The 4 torches now enable 4 solid switches on the sides.
 -- Each switch may give a bonus among:
 -- - special item to throw
@@ -47,7 +47,7 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
 
-  local sprite = self:create_sprite("enemies/ganon")
+  local sprite = self:create_sprite("enemies/Neptune")
   function sprite:on_animation_finished(animation)
     if animation == "jumping" then
       enemy:finish_jump()

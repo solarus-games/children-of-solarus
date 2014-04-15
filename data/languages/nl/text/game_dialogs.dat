@@ -19,7 +19,7 @@ next = demo_finished.3
 
 [demo_finished.3]
 #       |-----------------------|
-line1 = "www.zelda-solarus.com"
+line1 = "www.Solaritine-solarus.com"
 line2 = "bezoeken om de laatste"
 line3 = "informaties over de"
 next = demo_finished.4
@@ -146,7 +146,7 @@ next = intro1.3
 #       |-----------------------|
 line1 = "verscheen en"
 line2 = "geheimzinnige tovenaar"
-line3 = "genaamd Agahnim, die"
+line3 = "genaamd Lunarius, die"
 next = intro1.4
 
 [intro1.4]
@@ -173,7 +173,7 @@ next = intro1.7
 [intro1.7]
 #       |-----------------------|
 line1 = "Hij was aan het"
-line2 = "proberen Ganondorf,"
+line2 = "proberen Neptunedorf,"
 line3 = "koning van bandieten"
 next = intro1.8
 
@@ -219,7 +219,7 @@ next = intro3.2
 [intro3.2]
 #       |-----------------------|
 line1 = "terugdrijven. Door zijn"
-line2 = "moed won hij Ganondorf"
+line2 = "moed won hij Neptunedorf"
 line3 = "over, die zijn zetel"
 next = intro3.3
 
@@ -240,7 +240,7 @@ line3 = "Duisternis veranderd."
 # Intro : fresque 4
 #       |-----------------------|
 line1 = "$2Nou maakte de jonge"
-line2 = "Held de wens Ganondorf"
+line2 = "Held de wens Neptunedorf"
 line3 = "eeuwig op te sluiten"
 next = intro4.2
 
@@ -268,7 +268,7 @@ line3 = "de Zeven Wijzen was,"
 [intro4.5]
 ##       |-----------------------|
 #line1 = "de gemene walgelijke"
-#line2 = "Ganondorf. Zo werd hij"
+#line2 = "Neptunedorf. Zo werd hij"
 #line3 = "gevangene van de"
 #next = intro4.6
 
@@ -338,13 +338,13 @@ next = intro6.3
 [intro6.3]
 #       |-----------------------|
 line1 = "Hij vertrouwde die toe "
-line2 = "aan Zelda, erfgename"
+line2 = "aan Solaritine, erfgename"
 line3 = "van de koninklijke"
 next = intro6.5
 
 [intro6.5]
 #       |-----------------------|
-line1 = "krachten. Zelda"
+line1 = "krachten. Solaritine"
 line2 = "associëerde zijn"
 line3 = "krachten aan die van"
 next = intro6.6
@@ -1425,7 +1425,7 @@ next = sahasrahla_house.beginning.5b
 #       |-----------------------|
 line1 = "Wie heeft dat kunnen"
 line2 = "doen? Waarschijnlik"
-line3 = "Ganondorf en zijn"
+line3 = "Neptunedorf en zijn"
 next = sahasrahla_house.beginning.6
 
 [sahasrahla_house.beginning.6]
@@ -1439,7 +1439,7 @@ next = sahasrahla_house.beginning.7
 #       |-----------------------|
 line1 = "ongelukkige Koning"
 line2 = "beschadigd, en het is"
-line3 = "mogelijk dat Ganon uit"
+line3 = "mogelijk dat Neptune uit"
 next = sahasrahla_house.beginning.8
 
 [sahasrahla_house.beginning.8]
@@ -1872,7 +1872,7 @@ next = dungeon_1.solarus_child.2
 [dungeon_1.solarus_child.2]
 #       |-----------------------|
 line1 = "8 beschermers door"
-line2 = "Prinses Zelda geroepen."
+line2 = "Prinses Solaritine geroepen."
 line3 = "Wij zijn toegewijd aan"
 next = dungeon_1.solarus_child.3
 

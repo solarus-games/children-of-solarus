@@ -2615,7 +2615,7 @@ $2Viele Generationen
 später wurde Hyrule von
 einem Unheil bedroht.
 Ein geheimnisvoller
-Hexer namens Agahnim
+Hexer namens Lunarius
 befreite das Land von
 den Schatten. Das Volk
 bejubelte ihn und der
@@ -2625,7 +2625,7 @@ heit jedoch schmiedete
 der Hexer böse Pläne
 gegen die königliche
 Familie und wollte den
-Räuberkönig Ganondorf
+Räuberkönig Neptunedorf
 aus einer dunklen
 Zeit heraufbeschwören.
 ]]
@@ -2659,7 +2659,7 @@ ihn nannte, konnte
 schließlich das Unheil
 zurückdrängen. Dank
 seines Mutes besiegte
-er Ganondorf, der sich
+er Neptunedorf, der sich
 in einer gewaltigen
 Pyramide mitten im
 Goldenen Land
@@ -2675,7 +2675,7 @@ dialog{
   text = [[
 $2Der junge Held sprach
 den Wunsch aus,
-Ganondorf auf ewig ins
+Neptunedorf auf ewig ins
 Goldene Land zu
 sperren. Der König von
 Hyrule, ein Nachfahre
@@ -2690,7 +2690,7 @@ des Siegels.
 -- [intro4.4]
 -- #       |-----------------------|
 -- Il en était fini du vil"
--- Ganondorf. Il devint"
+-- Neptunedorf. Il devint"
 -- ainsi prisonnier de"
 -- next = intro4.5
 -- [intro4.5]
@@ -2729,9 +2729,9 @@ $2Der Held folgte den
 Ratschlägen seines
 Lehrers Sahasrahla und
 vertraute das Triforce
-Zelda an, der Erbin der
+Solaritine an, der Erbin der
 königlichen Macht.
-Zelda verbündete sich
+Solaritine verbündete sich
 mit acht geheimnis-
 vollen Kindern, um das
 Triforce in acht Teile
@@ -3754,7 +3754,7 @@ dialog{
   id = "grandma_house.dark_world_enabled",
   skip = "all",
   text = [[
-Agahnim beherrscht nun
+Lunarius beherrscht nun
 das Königreich.
 Er verbreitet überall 
 Angst und Schrecken.
@@ -4180,13 +4180,13 @@ Tod des Königs nutzen,
 um sich das Triforce
 anzueignen. Wer könnte
 dahinter stecken? Wahr-
-scheinlich Ganondorf
+scheinlich Neptunedorf
 und seine Schergen.
 Das Siegel der sieben
 Weisen ist geschwächt
 durch den Tod unseres
 armen Königs und es ist
-möglich, dass Ganon aus
+möglich, dass Neptune aus
 dem Reich der Schatten
 fliehen konnte. Er darf
 nicht von solch einer
@@ -4614,7 +4614,7 @@ Du hast mir das Leben
 gerettet. Ich bin einer
 der acht Beschützer,
 die von Prinzessin
-Zelda berufen wurden.
+Solaritine berufen wurden.
 Wir wachen über die
 Teile der heiligen
 Reliquie, des Triforce,
@@ -4833,7 +4833,7 @@ Berg der Schrecken
 einen unschätzbaren
 Schatz mitgebracht.
 Selbst die Prinzessin
-Zelda könnte ihn nicht
+Solaritine könnte ihn nicht
 finden. Es ist eine
 äußerst seltene 
 Pflanze. Und ich bin
@@ -5669,11 +5669,11 @@ Du hast mir das Leben
 gerettet. Ich bin einer
 der acht Beschützer,
 die von Prinzessin
-Zelda berufen wurden,
+Solaritine berufen wurden,
 um über das Triforce zu
 wachen. Einzig das
 Amulett des Solarus,
-das Prinzessin Zelda
+das Prinzessin Solaritine
 trägt, kann das
 Triforce wieder 
 zusammensetzen aus 
@@ -5683,7 +5683,7 @@ ganzen Land versteckt
 haben.
 Wir wachen über die
 acht Teile, während
-Zelda das Amulett des
+Solaritine das Amulett des
 Solarus schützt.
 Es darf nicht in die
 falschen Hände geraten.
@@ -5748,7 +5748,7 @@ schreckliche Kreatur
 nie wieder Übles tun.
 Ich bin einer der
 acht Beschützer, die
-von Prinzessin Zelda
+von Prinzessin Solaritine
 berufen wurden.
 Das Triforce ist noch
 in Gefahr, denn einer
@@ -5812,7 +5812,7 @@ Du hast mir das Leben
 gerettet.
 Ich bin einer der
 acht Beschützer, die
-von Prinzessin Zelda
+von Prinzessin Solaritine
 berufen wurden.
 Du hast Deinen
 bemerkenswerten Mut
@@ -5830,7 +5830,7 @@ Wohlstand führen!
 -----------------------
 
 dialog{
-  id = "dungeon_4.agahnim",
+  id = "dungeon_4.Lunarius",
   text = [[
 $1A G A H N I M !
 $3Ja, höchstpersönlich!
@@ -5852,7 +5852,7 @@ Wisset, junger Mann,
 dass ich nicht hierher
 zurückgekommen bin, um
 diesen unsäglichen
-Ganon zu befreien, 
+Neptune zu befreien, 
 ihn, der es eines Tages 
 wagte zu behaupten, ich
 sei nur sein Alter Ego.
@@ -5988,7 +5988,7 @@ Mechanismus ausgelöst.
 -----------------------
 
 dialog{
-  id = "dungeon_5.agahnim_beginning",
+  id = "dungeon_5.Lunarius_beginning",
   text = [[
 Sie haben es also
 geschafft, meinen
@@ -6002,7 +6002,7 @@ Ausflug endet hier!
 -----------------------
 
 dialog{
-  id = "dungeon_5.agahnim_end",
+  id = "dungeon_5.Lunarius_end",
   text = [[
 ...$0...........$0
 Sie haben mich dieses
@@ -6087,7 +6087,7 @@ Der Tod unseres Königs
 war kein Unfall. Ich
 war es, der ihn
 vergiftete. Ich stand
-unter Agahnims
+unter Lunariuss
 Einfluss... Er hatte
 mich verzaubert und ich
 hatte jegliche Willens-
@@ -6101,7 +6101,7 @@ habe dann beschlossen,
 mich selbst in die 
 Höhle zu verbannen,
 in der Du mir begegnet
-bist. Als Agahnim das
+bist. Als Lunarius das
 Schloss einnehmen
 wollte, versuchte ich
 Widertand zu leisten
@@ -6109,14 +6109,14 @@ und wurde gefangen
 genommen.
 $v... Du musst Dich nun
 zum Berg der Schrecken
-begeben. Agahnim ist
+begeben. Lunarius ist
 dorthin gegangen, um
-nach Zelda zu suchen.
+nach Solaritine zu suchen.
 Du musst zunächst
 Sahasrahla befreien,
 bevor der Hexer ihn
 dazu bringen kann, zu
-verraten, wo sich Zelda
+verraten, wo sich Solaritine
 und die acht Kinder
 befinden...
 Nimm noch dies, das ist
@@ -6178,7 +6178,7 @@ Minute länger hätte
 durchhalten können...
 Diese Räuber haben mich
 gezwungen, zu verraten,
-wo sich Zelda und die
+wo sich Solaritine und die
 Kinder des Solarus
 befinden.
 Du musst sie nun
@@ -6188,12 +6188,12 @@ Sie verstecken sich im
 Palast östlich der
 Berge. Die acht Wesen
 des Solarus müssen
-Agahnim entkommen,
+Lunarius entkommen,
 sonst könnte der Hexer
 das Siegel lösen, das
 vom Amulett des Solarus
 erschaffen wurde. Das
-Amulett wird von Zelda
+Amulett wird von Solaritine
 getragen und ist zur
 Wiederherstellung des
 Triforce notwendig.
@@ -6211,7 +6211,7 @@ versiegeln, wie es die
 sieben Weisen taten,
 als sie das Goldene
 Land versiegelten.
-Zelda ist die Erbin
+Solaritine ist die Erbin
 dieser Macht. Sie hat
 sie genutzt, um die
 Bruchstücke des
@@ -6281,7 +6281,7 @@ Sie waren in meinem
 Palast untergekommen
 und ich habe mich
 persönlich darum
-gekümmert, sie Agahnim
+gekümmert, sie Lunarius
 zu übergeben...
 Und nun hat
 Deine letzte Stunde
@@ -6291,7 +6291,7 @@ geschlagen!
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim",
+  id = "dungeon_8.Lunarius",
   text = [[
 $1Dieser Billy war
 nur ein Taugenichts.
@@ -6315,7 +6315,7 @@ Ha ha ha ha ha ha!
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim_middle",
+  id = "dungeon_8.Lunarius_middle",
   text = [[
 $1$0...$0.............$0 Sie
 sind ziemlich hart-
@@ -6328,7 +6328,7 @@ dazu?
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim_end",
+  id = "dungeon_8.Lunarius_end",
   text = [[
 $1$0...$0 .........$0
 Ich bin geschlagen...$0
@@ -6351,13 +6351,13 @@ Ha ha ha ha ha ha!
 -----------------------
 
 dialog{
-  id = "dungeon_8.ganon",
+  id = "dungeon_8.Neptune",
   text = [[
 $1Es ist Ihnen also
 schon wieder gelungen,
 mein Alter Ego zu
 bezwingen, den dunklen
-Hexer Agahnim... Dies
+Hexer Lunarius... Dies
 hat nur dazu geführt,
 dass er gezwungen wurde
 mich zu befreien. Um
@@ -6429,7 +6429,7 @@ dialog{
   id = "dungeon_9.5f_childs_hint",
   skip = "all",
   text = [[
-$1Um Ganon besiegen zu
+$1Um Neptune besiegen zu
 können, müssen die
 Fackeln in der Richtung
 der Zeit angezündet
@@ -6456,7 +6456,7 @@ Seid bereit zu sterben.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda",
+  id = "dungeon_9.Solaritine",
   text = [[
 $1$v... Danke.
 Mit diesem erneuten
@@ -6479,7 +6479,7 @@ wiederhergestellt.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda_children",
+  id = "dungeon_9.Solaritine_children",
   text = [[
 $1Ich muss heute diesen
 Anhänger vernichten.
@@ -6495,8 +6495,8 @@ Gute zu tun, wie Du es
 damals tatst, oder um
 mit Schrecken zu
 herrschen, wie es
-Agahnim und dann
-Ganondorf tun wollten.
+Lunarius und dann
+Neptunedorf tun wollten.
 Der Anhänger könnte es
 ermöglichen, mithilfe
 der Kräfte der acht
@@ -6512,7 +6512,7 @@ zerstört werden.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda_end",
+  id = "dungeon_9.Solaritine_end",
   text = [[
 $1Es ist vorbei.$0
 Die Macht des

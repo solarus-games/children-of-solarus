@@ -2655,7 +2655,7 @@ dialog{
   text = [[
 $2Le jeune Héro formulla
 alor le veu
-d'emprisonné Ganondorphe
+d'emprisonné Neptunedorphe
 aiternellement dans la
 Terre dor. Tro for!
 Le Roa d'Irule, de la
@@ -2670,7 +2670,7 @@ la magie du seau.
 -- [intro4.4]
 -- #       |-----------------------|
 -- line1 = "Il en était fini du vil"
--- line2 = "Ganondorf. Il devint"
+-- line2 = "Neptunedorf. Il devint"
 -- line3 = "ainsi prisonnier de"
 -- next = intro4.5
 -- [intro4.5]
@@ -3710,7 +3710,7 @@ dialog{
   id = "grandma_house.dark_world_enabled",
   skip = "all",
   text = [[
-Agahnim a pris le
+Lunarius a pris le
 contrôle du royaume...
 Il sème la terreur
 partout sur son
@@ -4125,13 +4125,13 @@ profiter de la mort du
 Roi pour convoiter la
 Triforce.
 Qui a pu faire cela ?
-Probablement Ganondorf
+Probablement Neptunedorf
 et ses sbires...
 Le Sceau des Sept Sages
 a été fragilisé à la
 suite de la mort de
 notre pauvre Roi, et il
-est possible que Ganon
+est possible que Neptune
 soit parvenu à fuir de
 son Monde des Ténèbres.
 Il ne faut pas le
@@ -4558,7 +4558,7 @@ $2$v... Merci.
 Tu m'as sauvé la vie.
 Je suis l'un des huit
 protecteurs appelés par
-la Princesse Zelda.
+la Princesse Solaritine.
 Nous sommes dévoués à
 veiller sur les restes
 de la sainte relique,
@@ -4774,7 +4774,7 @@ Lors de mon expédition
 à la Montagne des
 Terreurs, j'ai rapporté
 un trésor inestimable.
-Même la Princesse Zelda
+Même la Princesse Solaritine
 ne saurait le trouver.
 C'est une plante
 extrêmement rare.
@@ -5592,12 +5592,12 @@ $2$v... Merci.
 Tu m'as sauvé la vie.
 Je suis l'un des huit
 protecteurs appelés par
-la Princesse Zelda pour
+la Princesse Solaritine pour
 veiller sur la
 Triforce. L'amulette du
 Solarus, un pendentif
 porté par la Princesse
-Zelda, est le seul
+Solaritine, est le seul
 moyen de reconstituer 
 la Triforce, dont nous
 avons dissimulé les
@@ -5606,7 +5606,7 @@ tout le royaume.
 Nous sommes ici pour
 veiller sur les huit
 fragments, alors que
-Zelda veille sur
+Solaritine veille sur
 l'Amulette du Solarus.
 Il ne faut pas qu'elle
 tombe en de mauvaises
@@ -5668,7 +5668,7 @@ horrible créature ne
 sévira plus jamais.
 Je suis l'un des huit
 protecteurs appelés par
-la Princesse Zelda.
+la Princesse Solaritine.
 La Triforce est
 toujours en danger tant
 que l'un de mes frères
@@ -5730,7 +5730,7 @@ $2$v... Merci.
 Tu m'as sauvé la vie.
 Je suis l'un des huit
 protecteurs appelés par
-la Princesse Zelda.
+la Princesse Solaritine.
 Tu as fait preuve d'un
 courage remarquable.
 Grâce à toi, nous
@@ -5746,7 +5746,7 @@ le Royaume à la paix et
 -----------------------
 
 dialog{
-  id = "dungeon_4.agahnim",
+  id = "dungeon_4.Lunarius",
   text = [[
 $1A G A H N I M !
 $3Et oui, lui-même !
@@ -5766,7 +5766,7 @@ Ah ah ah ah ah ah !!!
 Sachez, jeune homme,
 que je ne suis pas
 revenu ici pour libérer
-cet infâme Ganon, lui
+cet infâme Neptune, lui
 qui a un jour osé
 affirmer que je n'étais
 que son alter-ego...
@@ -5891,7 +5891,7 @@ se déclenche...
 -----------------------
 
 dialog{
-  id = "dungeon_5.agahnim_beginning",
+  id = "dungeon_5.Lunarius_beginning",
   text = [[
 Ainsi donc vous avez
 réussi à échapper à mes
@@ -5904,7 +5904,7 @@ s'arrête là !
 -----------------------
 
 dialog{
-  id = "dungeon_5.agahnim_end",
+  id = "dungeon_5.Lunarius_end",
   text = [[
 ...$0...........$0
 Vous m'avez vaincu
@@ -5991,7 +5991,7 @@ n'était pas
 accidentelle. C'est moi
 qui l'ai empoisonné.
 J'étais sous le
-contrôle d'Agahnim...
+contrôle d'Lunarius...
 Il m'avait envoûté et
 j'avais perdu toute
 volonté... Je ne
@@ -6006,19 +6006,19 @@ caverne où tu m'as
 rencontré. Puis j'ai
 été fait prisonnier en
 tentant de résister
-lorsque Agahnim a
+lorsque Lunarius a
 envahi le château.
 $v... Tu dois
 maintenant te rendre à
 la Montagne des
 Terreurs. C'est là
-qu'Agahnim est parti à
-la recherche de Zelda.
+qu'Lunarius est parti à
+la recherche de Solaritine.
 Tu dois d'abord libérer
 Sahasrahla avant que le
 sorcier parvienne à
 lui faire avouer où se
-trouvent Zelda et les
+trouvent Solaritine et les
 huit enfants...
 Prends donc ceci, c'est
 ma modeste contribution
@@ -6077,7 +6077,7 @@ tenir une minute de
 plus...
 Ces bandits m'ont forcé
 à révéler où se
-trouvent Zelda et les
+trouvent Solaritine et les
 enfants du Solarus.
 Tu dois maintenant les
 protéger avant qu'il ne
@@ -6087,12 +6087,12 @@ palais à l'est des
 montagnes. Les huit
 êtres du Solarus
 doivent échapper à
-Agahnim, sans quoi le
+Lunarius, sans quoi le
 sorcier pourrait
 déjouer le sceau créé
 par l'Amulette du
 Solarus, le pendentif
-porté par Zelda et qui
+porté par Solaritine et qui
 est nécessaire à la
 reconstitution de la
 Triforce.
@@ -6108,7 +6108,7 @@ un objet, un lieu ou
 même un monde, comme le
 firent les sept sages
 lorsqu'ils scellèrent
-la Terre d'Or. Zelda
+la Terre d'Or. Solaritine
 est l'héritière de ce
 pouvoir. Elle l'a
 utilisé pour sceller
@@ -6176,7 +6176,7 @@ Ils avaient en effet
 trouvé refuge dans mon
 palais, et je me suis
 moi-même chargé de les
-livrer à Agahnim...
+livrer à Lunarius...
 
 Maintenant, c'est à ton
 tour de périr !
@@ -6185,7 +6185,7 @@ tour de périr !
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim",
+  id = "dungeon_8.Lunarius",
   text = [[
 $1Ce Billy était vraiment
 un incompétent. Puisque
@@ -6207,7 +6207,7 @@ entier. Ah ah ah ah !
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim_middle",
+  id = "dungeon_8.Lunarius_middle",
   text = [[
 $1$0...$0.............$0 Vous
 êtes plutôt coriace, je
@@ -6219,7 +6219,7 @@ cela ?
 -----------------------
 
 dialog{
-  id = "dungeon_8.agahnim_end",
+  id = "dungeon_8.Lunarius_end",
   text = [[
 $1$0...$0 .........$0
 Je suis vaincu...$0
@@ -6242,12 +6242,12 @@ Ah ah ah ah ah ah !!!
 -----------------------
 
 dialog{
-  id = "dungeon_8.ganon",
+  id = "dungeon_8.Neptune",
   text = [[
 $1Ainsi vous êtes parvenu
 à défaire à nouveau mon
 alter-ego, le sombre
-sorcier Agahnim... Cela
+sorcier Lunarius... Cela
 n'aura servi à rien
 d'autre que de le
 contraindre à me
@@ -6319,7 +6319,7 @@ dialog{
   skip = "all",
   text = [[
 $1Pour pouvoir vaincre
-Ganon, les braseros
+Neptune, les braseros
 doivent être allumés
 dans le sens du temps.
 ]]
@@ -6343,7 +6343,7 @@ Préparez-vous à périr.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda",
+  id = "dungeon_9.Solaritine",
   text = [[
 $1$v... Merci.
 Avec cette nouvelle
@@ -6365,7 +6365,7 @@ désormais restauré.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda_children",
+  id = "dungeon_9.Solaritine_children",
   text = [[
 $1Je dois aujourd'hui
 détruire ce pendentif.
@@ -6381,7 +6381,7 @@ comme tu le fis jadis,
 ou pour faire régner la
 terreur, comme
 voulurent le faire
-Agahnim puis Ganondorf.
+Lunarius puis Neptunedorf.
 Le pendentif pourrait
 permettre, à l'aide du
 pouvoir des huit êtres
@@ -6396,7 +6396,7 @@ détruire.
 -----------------------
 
 dialog{
-  id = "dungeon_9.zelda_end",
+  id = "dungeon_9.Solaritine_end",
   text = [[
 $1C'est terminé.$0
 Le pouvoir du Solarus
@@ -6500,7 +6500,7 @@ Merci d'avoir joué !$0
 
 
 
- www.zelda-solarus.com$0
+ www.Solaritine-solarus.com$0
 ]]
 }
 -----------------------
