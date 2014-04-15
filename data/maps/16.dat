@@ -1624,7 +1624,7 @@ destructible{
   x = 104,
   y = 93,
   subtype = "pot",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 2,
 }
 
@@ -1641,7 +1641,7 @@ destructible{
   x = 152,
   y = 93,
   subtype = "pot",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 1,
 }
 
@@ -3070,7 +3070,7 @@ pickable{
   layer = 1,
   x = 320,
   y = 341,
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 2,
   treasure_savegame_variable = "b44",
 }
@@ -3079,7 +3079,7 @@ pickable{
   layer = 1,
   x = 416,
   y = 341,
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 2,
   treasure_savegame_variable = "b45",
 }
@@ -3088,7 +3088,7 @@ pickable{
   layer = 1,
   x = 192,
   y = 301,
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 2,
   treasure_savegame_variable = "b43",
 }

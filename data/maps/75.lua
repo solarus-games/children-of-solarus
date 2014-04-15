@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Chests game cave
 
 local playing = false
@@ -13,9 +14,9 @@ local rewards = {
   {item_name = "piece_of_heart", variant = 1, savegame_variable = "b181"},
   {item_name = "piece_of_heart", variant = 1, savegame_variable = "b181"},
   {item_name = "heart", variant = 1},
-  {item_name = "gem", variant = 1},
-  {item_name = "gem", variant = 3},
-  {item_name = "gem", variant = 4},
+  {item_name = "rupee", variant = 1},
+  {item_name = "rupee", variant = 3},
+  {item_name = "rupee", variant = 4},
   {item_name = "bomb", variant = 3},
   {item_name = "arrow", variant = 3},
   {item_name = "magic_flask", variant = 2},
@@ -24,7 +25,7 @@ local rewards = {
 
 function map:on_started(destination)
 
-  if not map:get_game():is_dungeon_finished(6) then
+  if not game:is_dungeon_finished(6) then
     mini_game_npc:remove()
   end
 end
@@ -32,24 +33,24 @@ end
 local function play_question_dialog_finished(answer)
 
   if answer == 1 then
-    if map:get_game():get_money() >= 30 then
-      map:get_game():remove_money(30)
+    if game:get_money() >= 30 then
+      game:remove_money(30)
       playing = true
 
       if chest_open ~= nil then
         chest_open:set_open(false)
       end
 
-      if not map:get_game():get_value("b180") then
-        map:start_dialog("chests_game_cave.start_game_wooden_key")
-      elseif not map:get_game():get_value("b181") then
-        map:start_dialog("chests_game_cave.start_game_piece_of_heart")
+      if not game:get_value("b180") then
+        game:start_dialog("chests_game_cave.start_game_wooden_key")
+      elseif not game:get_value("b181") then
+        game:start_dialog("chests_game_cave.start_game_piece_of_heart")
       else
-        map:start_dialog("chests_game_cave.start_game")
+        game:start_dialog("chests_game_cave.start_game")
       end
     else
       sol.audio.play_sound("wrong")
-      map:start_dialog("chests_game_cave.not_enough_money")
+      game:start_dialog("chests_game_cave.not_enough_money")
     end
   end
 end
@@ -57,13 +58,13 @@ end
 function mini_game_npc:on_interaction()
 
   if playing then
-    map:start_dialog("chests_game_cave.already_playing")
-  elseif not map:get_game():get_value("b160") then
+    game:start_dialog("chests_game_cave.already_playing")
+  elseif not game:get_value("b160") then
     -- first time
-    map:start_dialog("chests_game_cave.first_time", play_question_dialog_finished)
-    map:get_game():set_value("b160", true)
+    game:start_dialog("chests_game_cave.first_time", play_question_dialog_finished)
+    game:set_value("b160", true)
   else
-    map:start_dialog("chests_game_cave.not_first_time", play_question_dialog_finished)
+    game:start_dialog("chests_game_cave.not_first_time", play_question_dialog_finished)
   end
 end
 
@@ -78,7 +79,7 @@ local function chest_empty(chest)
     local index = math.random(#rewards)
 
     while rewards[index].savegame_variable ~= nil and
-        map:get_game():get_value("b" .. rewards[index].savegame_variable) do
+        game:get_value(rewards[index].savegame_variable) do
       -- don't give a saved reward twice (wooden key or piece of heart)
       index = math.random(#rewards)
     end
@@ -90,7 +91,7 @@ local function chest_empty(chest)
     chest:set_open(false)
   end
 end
-for _, chest in ipairs(map:get_entities("chest_")) do
+for chest in map:get_entities("chest_") do
   chest.on_empty = chest_empty
 end
 

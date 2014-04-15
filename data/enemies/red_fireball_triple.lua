@@ -34,6 +34,7 @@ function enemy:on_restarted()
   local m = sol.movement.create("straight")
   m:set_speed(speed)
   m:set_angle(angle)
+  m:set_smooth(false)
   m:start(self)
 end
 
@@ -68,7 +69,10 @@ function enemy:on_custom_attack_received(attack, sprite)
 
     local hero_x, hero_y = self:get_map():get_entity("hero"):get_position()
     local angle = self:get_angle(hero_x, hero_y - 5) + math.pi
-    local m = sol.movement.straight_movement_create(speed, angle)
+    local m = sol.movement.create("straight")
+    m:set_speed(speed)
+    m:set_angle(angle)
+    m:set_smooth(false)
     m:start(self)
     sol.audio.play_sound("boss_fireball")
     used_sword = true
@@ -78,7 +82,7 @@ end
 function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
 
   if used_sword then
-    if other_enemy:receive_bounced_fireball ~= nil then
+    if other_enemy.receive_bounced_fireball ~= nil then
       other_enemy:receive_bounced_fireball(self)
     end
   end

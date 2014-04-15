@@ -1011,11 +1011,11 @@ shop_item{
   x = 144,
   y = 88,
   name = "shop_item_3",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 3,
   treasure_savegame_variable = "b198",
   price = 19,
-  dialog = "junk_shop.red_gem",
+  dialog = "junk_shop.red_rupee",
 }
 
 shop_item{

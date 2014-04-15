@@ -1,7 +1,8 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 5 2F
 
-sol.main.do_file("maps/prison_guard")
+sol.main.load_file("maps/prison_guard")(map)
 
 local puzzle_next_sensor = 1
 
@@ -39,8 +40,8 @@ local function puzzle_solved()
   sol.timer.start(1000, function()
     sol.timer.start(1000, function()
       sol.audio.play_sound("secret")
-      map:get_game():set_value("b519", true)
-      map:start_dialog("dungeon_5.puzzle_solved", function()
+      game:set_value("b519", true)
+      game:start_dialog("dungeon_5.puzzle_solved", function()
 	hero:unfreeze()
       end)
     end)
@@ -50,14 +51,15 @@ function map:on_started(destination)
 
   init_guard(guard_3, {6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0})
 
-  if map:get_game():get_value("b515") then
+  if game:get_value("b515") then
+    -- Disable the block first so that it does not fall into the hole and play a sound.
+    weak_floor_block:set_enabled(false)
     weak_floor:set_enabled(false)
     weak_floor_sensor:set_enabled(false)
-    weak_floor_block:set_enabled(false)
   end
 
   -- blocks necessary to go back when found the feather
-  if map:get_game():get_value("b517") then
+  if game:get_value("b517") then
     s_block_1:set_position(464, 773)
     s_block_2:set_position(496, 773)
   end
@@ -66,30 +68,32 @@ end
 function map:on_opening_transition_finished(destination)
 
   -- show the welcome message
-  if destination:get_name() == "from_roof"
-      or destination:get_name() == "from_outside_w"
-      or destination:get_name() == "from_outside_e" then
-    map:start_dialog("dungeon_5.welcome")
+  if destination == from_roof
+      or destination == from_outside_w
+      or destination == from_outside_e then
+    game:start_dialog("dungeon_5.welcome")
   end
 end
 
-function puzzle_wrong_sensor:on_activated()
-
+local function puzzle_wrong_sensor_activated()
   puzzle_next_sensor = 1
+end
+for sensor in map:get_entities("puzzle_wrong_sensor_") do
+  sensor.on_activated = puzzle_wrong_sensor_activated
 end
 
 function save_s_blocks_sensor:on_activated()
 
-  if map:get_game():has_item("feather")
-      and not map:get_game():get_value("b517") then
+  if game:has_item("feather")
+      and not game:get_value("b517") then
     -- solved the blocks puzzle necessary to exit this floor
-    map:get_game():set_value("b517", true)
+    game:set_value("b517", true)
   end
 end
 
 local function puzzle_sensor_activated(sensor)
   local i = sensor:get_name():match("puzzle_sensor_([1-4])")
-  if i ~= nil and not map:get_game():get_value("b519") then
+  if i ~= nil and not game:get_value("b519") then
     i = tonumber(i)
     if puzzle_next_sensor == 5 and i == 1 then
       puzzle_solved()
@@ -100,7 +104,7 @@ local function puzzle_sensor_activated(sensor)
     end
   end
 end
-for _, sensor in ipairs(map:get_entities("puzzle_sensor_")) do
+for sensor in map:get_entities("puzzle_sensor_") do
   sensor.on_activated = puzzle_sensor_activated
 end
 
@@ -133,13 +137,9 @@ function weak_floor_sensor:on_collision_explosion()
     weak_floor:set_enabled(false)
     weak_floor_sensor:set_enabled(false)
     sol.audio.play_sound("secret")
-    map:get_game():set_value("b515", true)
-    sol.timer.start(1500, function()
-      weak_floor_block:set_enabled(false)
-      sol.audio.play_sound("jump")
-      sol.timer.start(200, function()
-	sol.audio.play_sound("bomb")
-      end)
+    game:set_value("b515", true)
+    sol.timer.start(1000, function()
+      sol.audio.play_sound("bomb")
     end)
   end
 end

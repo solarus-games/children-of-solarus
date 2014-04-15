@@ -1,15 +1,16 @@
 local map = ...
+local game = map:get_game()
 -- The end
 
 function map:on_started(destination)
 
-  if destination:get_name() == "from_ending" then
+  if destination == from_ending then
     hero:freeze()
     hero:set_visible(false)
-    map:get_game():set_hud_enabled(false)
-    map:set_pause_enabled(false)
+    game:set_hud_enabled(false)
+    game:set_pause_allowed(false)
     sol.timer.start(25000, function()
-      map:get_game().reset()
+      sol.main.reset()
     end)
   end
 end

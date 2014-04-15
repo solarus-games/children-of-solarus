@@ -22,7 +22,6 @@ local boss_arrows = {
   [80] = { x = 1056, y = 477, created = true },
 }
 local fighting_boss = false
-local timers = {}
 
 local function puzzle_switch_activated(switch)
 
@@ -62,6 +61,10 @@ local function puzzle_switch_left(switch)
     end
   end
 end
+for switch, _ in pairs(switches_puzzle_order) do
+  switch.on_activated = puzzle_switch_activated
+  switch.on_left = puzzle_switch_left
+end
 
 local function boss_change_floor(first, last, inc, enable)
 
@@ -98,7 +101,7 @@ local function boss_change_floor(first, last, inc, enable)
     end
 
     if index ~= last then
-      timers[#timers + 1] = sol.timer.start(delay, repeat_change)
+      sol.timer.start(map, delay, repeat_change)
     end
     index = index + inc
   end
@@ -109,7 +112,7 @@ local function boss_restore_floor(with_arrows)
 
   -- restore the whole floor immediately
   map:set_entities_enabled("boss_floor", true)
-  for _, t in ipairs(timers) do t:stop() end
+  sol.timer.stop_all(map)
 
   if with_arrows then
     for k, v in pairs(boss_arrows) do
@@ -137,13 +140,11 @@ function map:on_started(destination)
     -- boss key chest already found
     for switch, _ in pairs(switches_puzzle_order) do
       switch:set_activated(true)
-      switch.on_activated = puzzle_switch_activated
-      switch.on_left = puzzle_switch_left
     end
   end
 
   map:set_doors_open("boss_door", true)
-  if destination:get_name() == "from_final_room"
+  if destination == from_final_room
       or map:get_game():get_value("b103") then
     map:set_doors_open("final_room_door", true)
   end
@@ -193,10 +194,10 @@ function boss_floor_sensor_1:on_activated()
   if fighting_boss
       and boss_floor_1:is_enabled() then
 
-    map:set_entities_enabled("boss_floor_sensor", false)
     boss_restore_floor(true)
+    map:set_entities_enabled("boss_floor_sensor", false)
     boss_change_floor(1, 92, 1, false)
-    timers[#timers + 1] = sol.timer.start(10000, function()
+    sol.timer.start(map, 10000, function()
       map:set_entities_enabled("boss_floor_sensor", true)
       boss_change_floor(92, 1, -1, true)
     end)
@@ -208,10 +209,10 @@ function boss_floor_sensor_2:on_activated()
   if fighting_boss
       and boss_floor_92:is_enabled() then
 
-    map:set_entities_enabled("boss_floor_sensor", false)
     boss_restore_floor(true)
+    map:set_entities_enabled("boss_floor_sensor", false)
     boss_change_floor(92, 1, -1, false)
-    timers[#timers + 1] = sol.timer.start(10000, function()
+    sol.timer.start(map, 10000, function()
       map:set_entities_enabled("boss_floor_sensor", true)
       boss_change_floor(1, 92, 1, true)
     end)
@@ -225,11 +226,11 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
       sol.audio.play_sound("secret")
       map:open_doors("final_room_door")
       boss_killed_floor:set_enabled(true)
-      self:unfreeze()
+      hero:unfreeze()
     end)
     sol.audio.play_music("victory")
-    self:freeze()
-    self:set_direction(3)
+    hero:freeze()
+    hero:set_direction(3)
   end
 end
 
@@ -250,7 +251,7 @@ if boss ~= nil then
       y = 437,
       layer = 0
     }
-    for _, t in ipairs(timers) do t:stop() end
+    sol.timer.stop_all(map)
   end
 end
 

@@ -5,7 +5,7 @@ function game:initialize_hud()
   -- Set up the HUD.
   local hearts_builder = require("hud/hearts")
   local magic_bar_builder = require("hud/magic_bar")
-  local gems_builder = require("hud/gems")
+  local rupees_builder = require("hud/rupees")
   local small_keys_builder = require("hud/small_keys")
   local floor_builder = require("hud/floor")
   local attack_icon_builder = require("hud/attack_icon")
@@ -27,7 +27,7 @@ function game:initialize_hud()
   menu:set_dst_position(-104, 27)
   self.hud[#self.hud + 1] = menu
 
-  menu = gems_builder:new(self)
+  menu = rupees_builder:new(self)
   menu:set_dst_position(8, -20)
   self.hud[#self.hud + 1] = menu
 
@@ -69,13 +69,25 @@ function game:initialize_hud()
   self:check_hud()
 end
 
+function game:quit_hud()
+
+  if self:is_hud_enabled() then
+    -- Stop all HUD menus.
+    self:set_hud_enabled(false)
+  end
+  self.hud = nil
+end
+
 function game:check_hud()
 
   local map = self:get_map()
   if map ~= nil then
     -- If the hero is below the top-left icons, make them semi-transparent.
     local hero = map:get_entity("hero")
-    local x, y = hero:get_position()
+    local hero_x, hero_y = hero:get_position()
+    local camera_x, camera_y = map:get_camera_position()
+    local x = hero_x - camera_x
+    local y = hero_y - camera_y
     local opacity = nil
 
     if self.hud.top_left_opacity == 255
@@ -101,12 +113,12 @@ function game:check_hud()
 
     -- During a dialog, move the action icon and the sword icon.
     if not self.hud.showing_dialog and
-        map:is_dialog_enabled() then
+        game:is_dialog_enabled() then
       self.hud.showing_dialog = true
       self.hud.action_icon:set_dst_position(0, 54)
       self.hud.attack_icon:set_dst_position(0, 29)
     elseif self.hud.showing_dialog and
-        not map:is_dialog_enabled() then
+        not game:is_dialog_enabled() then
       self.hud.showing_dialog = false
       self.hud.action_icon:set_dst_position(26, 51)
       self.hud.attack_icon:set_dst_position(13, 29)
@@ -157,14 +169,14 @@ end
 
 function game:set_hud_enabled(hud_enabled)
 
-  if hud_enabled ~= game.hud_enabled then
+  if hud_enabled ~= self.hud_enabled then
     game.hud_enabled = hud_enabled
 
     for _, menu in ipairs(self.hud) do
       if hud_enabled then
-	sol.menu.start(self, menu)
+        sol.menu.start(self, menu)
       else
-	sol.menu.stop(menu)
+        sol.menu.stop(menu)
       end
     end
   end
@@ -175,13 +187,15 @@ function game:get_custom_command_effect(command)
   return self.hud.custom_command_effects[command]
 end
 
--- Make the action (or attack) icon show something else than the
+-- Make the action (or attack) icon of the HUD show something else than the
 -- built-in effect or the action (or attack) command.
 -- You are responsible to override the command if you don't want the built-in
 -- effect to be performed.
 -- Set the effect to nil to show the built-in effect again.
 function game:set_custom_command_effect(command, effect)
 
-  self.hud.custom_command_effects[command] = effect
+  if self.hud ~= nil then
+    self.hud.custom_command_effects[command] = effect
+  end
 end
 

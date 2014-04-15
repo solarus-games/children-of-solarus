@@ -3,7 +3,7 @@ local map = ...
 
 -- Legend
 -- CB: Chest Button
--- RC: gem Chest
+-- RC: Rupee Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door
@@ -13,10 +13,12 @@ local map = ...
 -- BB: Barrier Button
 -- DS: Door Sensor
 
+local light_manager = require("maps/lib/light_manager")
 local dont_close_LD06 = false
 
 function map:on_started()
 
+  light_manager.enable_light_features(map)
   map:set_light(0)
   if not map:get_game():get_value("b725") then
     STT5:set_enabled(false)
@@ -42,21 +44,11 @@ end
 
 function DB03:on_inactivated()
 
-  if not DB04:is_activated() then
-    if LD06:is_open() and not dont_close_LD06 then
-      map:close_doors("LD06")
-    end
+  if not LD06:is_closed() and not dont_close_LD06 then
+    map:close_doors("LD06")
   end
 end
-
-function DB04:on_inactivated()
-
-  if not DB03:is_activated() then
-    if LD06:is_open() and not dont_close_LD06 then
-      map:close_doors("LD06")
-    end
-  end
-end
+DB04.on_inactivated = DB03.on_inactivated
 
 function dont_close_LD06_sensor:on_activated()
   dont_close_LD06 = true

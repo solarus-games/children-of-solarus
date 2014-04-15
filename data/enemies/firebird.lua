@@ -43,14 +43,20 @@ end
 function enemy:prepare_flames()
 
   local prefix = self:get_name() .. "_son_"
-  nb_sons_created = nb_sons_created + 1
   local life_lost = initial_life - self:get_life()
   local nb_to_create = 3 + life_lost
 
   function repeat_throw_flame()
     sol.audio.play_sound("lamp")
+    nb_sons_created = nb_sons_created + 1
     local son_name = prefix .. nb_sons_created
-    self:create_enemy(son_name, "red_flame", 0, -16, 0)
+    self:create_enemy{
+      name = son_name,
+      breed = "red_flame",
+      x = 0,
+      y = -16,
+      layer = 0,
+    }
     nb_to_create = nb_to_create - 1
     if nb_to_create > 0 then
       sol.timer.start(self, 200, repeat_throw_flame)
@@ -66,7 +72,7 @@ end
 function enemy:on_hurt(attack, life_lost)
 
   if self:get_life() <= 0 then
-    self:get_map():remove_entities(self:get_name() .. "_")
+    self:get_map():remove_entities(self:get_name() .. "_son_")
   end
 end
 

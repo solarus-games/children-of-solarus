@@ -1,13 +1,7 @@
--- Savegame selection screen, displayed after the title screen.
+-- Savegame selection screen.
 
 local savegame_menu = {}
-
-function savegame_menu:new()
-  local object = {}
-  setmetatable(object, self)
-  self.__index = self
-  return object
-end
+local cloud_width, cloud_height = 111, 88
 
 function savegame_menu:on_started()
 
@@ -22,7 +16,7 @@ function savegame_menu:on_started()
   self.option2_text = sol.text_surface.create()
   self.title_text = sol.text_surface.create{
     horizontal_alignment = "center",
-    font = "fixed"
+    font = sol.language.get_menu_font(),
   }
   self.cursor_position = 1
   self.cursor_sprite = sol.sprite.create("menus/selection_menu_cursor")
@@ -153,7 +147,7 @@ function savegame_menu:on_draw(dst_surface)
     local x, y = position.x, position.y
     self.cloud_img:draw(self.surface, x, y)
 
-    if position.x >= width - 80 then
+    if position.x >= width - cloud_width then
       x = position.x - width
       y = position.y
       self.cloud_img:draw(self.surface, x, y)
@@ -244,14 +238,23 @@ function savegame_menu:read_savegames()
     slot.savegame = sol.game.load(slot.file_name)
     slot.number_img = sol.surface.create("menus/selection_menu_save" .. i .. ".png")
 
-    slot.player_name_text = sol.text_surface.create()
+    slot.player_name_text = sol.text_surface.create{
+      font = sol.language.get_dialog_font(),
+    }
     if sol.game.exists(slot.file_name) then
       -- Existing file.
+      if slot.savegame:get_ability("tunic") == 0 then
+        -- Savegame not fully initialized (created with Solarus 0.9).
+        slot.savegame:set_ability("tunic", 1)
+        slot.savegame:get_item("rupee_bag"):set_variant(1)
+      end
+
       slot.player_name_text:set_text(slot.savegame:get_value("player_name"))
 
       -- Hearts.
       local hearts_class = require("hud/hearts")
       slot.hearts_view = hearts_class:new(slot.savegame)
+      slot.hearts_view:on_started()
     else
       -- New file.
       local name = "- " .. sol.language.get_string("selection_menu.empty") .. " -"
@@ -327,8 +330,8 @@ function savegame_menu:repeat_move_clouds()
     end
 
     position.y = position.y - 1
-    if position.y <= -44 then
-      position.y = height - 44
+    if position.y <= -cloud_height then
+      position.y = height - cloud_height
     end
   end
 
@@ -365,7 +368,9 @@ function savegame_menu:key_pressed_phase_select_file(key)
       if sol.game.exists(slot.file_name) then
         -- The file exists: run it after a fade-out effect.
         self.finished = true
-        self.surface:fade_out(function()
+        self.surface:fade_out()
+        sol.timer.start(self, 700, function()
+          sol.menu.stop(self)
 	  sol.main:start_savegame(slot.savegame)
         end)
       else
@@ -595,13 +600,13 @@ function savegame_menu:init_phase_options()
 
     -- Text surface of the label.
     option.label_text = sol.text_surface.create{
-      font = "fixed",
+      font = sol.language.get_menu_font(),
       text_key = "selection_menu.options." .. option.name
     }
 
     -- Text surface of the value.
     option.value_text = sol.text_surface.create{
-      font = "fixed",
+      font = sol.language.get_menu_font(),
       horizontal_alignment = "right"
     }
   end
@@ -803,9 +808,12 @@ end
 -- This function is called when the language has just been changed.
 function savegame_menu:reload_options_strings()
 
+  local font = sol.language.get_menu_font()
   -- Update the label of each option.
   for _, option in ipairs(self.options) do
 
+    option.label_text:set_font(font)
+    option.value_text:set_font(font)
     option.label_text:set_text_key("selection_menu.options." .. option.name)
 
     -- And the value of the video mode.
@@ -817,6 +825,7 @@ function savegame_menu:reload_options_strings()
 
   -- Other menu elements
   self.title_text:set_text_key("selection_menu.phase.options")
+  self.title_text:set_font(font)
   self:set_bottom_buttons("selection_menu.back", nil)
   self:read_savegames()  -- To update "- Empty -" mentions.
 end
@@ -830,7 +839,9 @@ function savegame_menu:init_phase_choose_name()
   self.title_text:set_text_key("selection_menu.phase.choose_name")
   self.cursor_sprite:set_animation("letters")
   self.player_name = ""
-  self.player_name_text = sol.text_surface.create()
+  self.player_name_text = sol.text_surface.create{
+    font = sol.language.get_menu_font()
+  }
   self.letter_cursor = { x = 0, y = 0 }
   self.letters_img = sol.surface.create("menus/selection_menu_letters.png")
   self.name_arrow_sprite = sol.sprite.create("menus/arrow")
@@ -994,7 +1005,7 @@ function savegame_menu:set_initial_values(savegame)
   savegame:set_life(savegame:get_max_life())
   savegame:get_item("tunic"):set_variant(1)
   savegame:set_ability("tunic", 1)
-  savegame:get_item("gem_bag"):set_variant(1)
+  savegame:get_item("rupee_bag"):set_variant(1)
 end
 
 return savegame_menu

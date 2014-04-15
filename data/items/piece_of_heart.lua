@@ -7,11 +7,17 @@ local message_id = {
   "found_piece_of_heart.fourth"
 }
 
+function item:on_created()
+
+  self:set_sound_when_picked(nil)
+  self:set_sound_when_brandished("piece_of_heart")
+end
+
 function item:on_obtained(variant)
 
   local game = self:get_game()
   local nb_pieces_of_heart = game:get_value("i1030") or 0
-  self:get_map():start_dialog(message_id[nb_pieces_of_heart + 1], function()
+  game:start_dialog(message_id[nb_pieces_of_heart + 1], function()
 
     game:set_value("i1030", (nb_pieces_of_heart + 1) % 4)
     if nb_pieces_of_heart == 3 then
@@ -26,7 +32,7 @@ function item:print_pieces_of_heart()
 
   local pieces = {
     {savegame_variable =  "b12", description = "Link's house secret room"},
-    {savegame_variable =  "b17", description = "gem house: game 3"},
+    {savegame_variable =  "b17", description = "rupee house: game 3"},
     {savegame_variable = "b922", description = "outside world A3: above dungeon 3"},
     {savegame_variable =  "b18", description = "outside world B3: north of the village, after a hole"},
     {savegame_variable =  "b21", description = "outside world B4: balcony from the cave under the waterfall"},

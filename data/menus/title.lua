@@ -1,18 +1,6 @@
--- This screen is displayed when the program starts, after the language
--- selection screen (if any).
-
--- This menu is scripted in an object-oriented style:
--- we create a class title_screen and return it.
--- All data are stored in the self instance.
+-- Title screen of the game.
 
 local title_screen = {}
-
-function title_screen:new()
-  local object = {}
-  setmetatable(object, self)
-  self.__index = self
-  return object
-end
 
 function title_screen:on_started()
 
@@ -42,7 +30,10 @@ function title_screen:phase_zs_presents()
   sol.audio.play_sound("intro")
 
   sol.timer.start(self, 2000, function()
-    self:phase_title()
+    self.surface:fade_out(10)
+    sol.timer.start(self, 700, function()
+      self:phase_title()
+    end)
   end)
 end
 
@@ -57,16 +48,12 @@ function title_screen:phase_title()
   -- show a background that depends on the hour of the day
   local hours = tonumber(os.date("%H"))
   local time_of_day
-  local hour_text_color
   if hours >= 8 and hours < 18 then
     time_of_day = "daylight"
-    hour_text_color = {0, 0, 92}
   elseif hours >= 18 and hours < 20 then
     time_of_day = "sunset"
-    hour_text_color = {0, 0, 92}
   else
     time_of_day = "night"
-    hour_text_color = {255, 128, 0}
   end
 
   -- create all images
@@ -75,19 +62,18 @@ function title_screen:phase_title()
   self.clouds_img = sol.surface.create("menus/title_" .. time_of_day
       .. "_clouds.png")
   self.logo_img = sol.surface.create("menus/title_logo.png")
+  self.borders_img = sol.surface.create("menus/title_borders.png")
 
   self.website_img = sol.text_surface.create{
-    font = "dialog",
-    rendering_mode = "antialiasing",
-    color = hour_text_color,
+    font = sol.language.get_menu_font(),
+    color = {240, 200, 56},
     text_key = "title_screen.website",
     horizontal_alignment = "center"
   }
 
   self.press_space_img = sol.text_surface.create{
-    font = "dialog_big",
-    rendering_mode = "antialiasing",
-    color = hour_text_color,
+    font = sol.language.get_dialog_font(),
+    color = {255, 255, 255},
     text_key = "title_screen.press_space",
     horizontal_alignment = "center"
   }
@@ -127,6 +113,11 @@ function title_screen:phase_title()
 
   -- show an opening transition
   self.surface:fade_in(30)
+
+  self.allow_skip = false
+  sol.timer.start(self, 2000, function()
+    self.allow_skip = true
+  end)
 end
 
 function title_screen:on_draw(dst_surface)
@@ -158,6 +149,9 @@ function title_screen:draw_phase_title()
   y = self.clouds_xy.y - 299
   self.clouds_img:draw(self.surface, x, y)
 
+  -- black bars
+  self.borders_img:draw(self.surface, 0, 0)
+
   -- website name and logo
   self.website_img:draw(self.surface, 160, 220)
   self.logo_img:draw(self.surface)
@@ -169,7 +163,7 @@ function title_screen:draw_phase_title()
     self.star_img:draw(self.surface)
   end
   if self.show_press_space then
-    self.press_space_img:draw(self.surface, 160, 190)
+    self.press_space_img:draw(self.surface, 160, 200)
   end
 end
 
@@ -206,11 +200,12 @@ function title_screen:try_finish_title()
   local handled = false
 
   if self.phase == "title"
-      and self.dx_img ~= nil
+      and self.allow_skip
       and not self.finished then
     self.finished = true
 
-    self.surface:fade_out(30, function()
+    self.surface:fade_out(30)
+    sol.timer.start(self, 700, function()
       self:finish_title()
     end)
 
@@ -222,9 +217,8 @@ end
 
 function title_screen:finish_title()
 
-  local savegame_menu = require("menus/savegames")
   sol.audio.stop_music()
-  sol.main:start_menu(savegame_menu:new())
+  sol.menu.stop(self)
 end
 
 return title_screen

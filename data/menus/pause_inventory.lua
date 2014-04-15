@@ -59,7 +59,7 @@ function inventory_submenu:on_started()
           horizontal_alignment = "center",
           vertical_alignment = "top",
           text = item:get_amount(),
-          font = "white_digits",
+          font = (amount == maximum) and "green_digits" or "white_digits",
         }
       end
 
@@ -87,8 +87,10 @@ function inventory_submenu:on_finished()
     self:finish_assigning_item()
   end
 
-  self.game.hud.item_icon_1.surface:set_opacity(255)
-  self.game.hud.item_icon_2.surface:set_opacity(255)
+  if self.game.hud ~= nil then
+    self.game.hud.item_icon_1.surface:set_opacity(255)
+    self.game.hud.item_icon_2.surface:set_opacity(255)
+  end
 end
 
 function inventory_submenu:set_cursor_position(row, column)
@@ -101,8 +103,8 @@ function inventory_submenu:set_cursor_position(row, column)
 
   -- Update the caption text and the action icon.
   local item_name = item_names[index + 1]
-  local item = self.game:get_item(item_name)
-  local variant = item:get_variant()
+  local item = item_name and self.game:get_item(item_name) or nil
+  local variant = item and item:get_variant() or 0
 
   local item_icon_opacity = 128
   if variant > 0 then
@@ -195,11 +197,14 @@ function inventory_submenu:on_draw(dst_surface)
   self:draw_caption(dst_surface)
 
   -- Draw each inventory item.
-  local y = 82
+  local quest_width, quest_height = dst_surface:get_size()
+  local initial_x = quest_width / 2 - 96
+  local initial_y = quest_height / 2 - 38
+  local y = initial_y
   local k = 0
 
   for i = 0, 3 do
-    local x = 64
+    local x = initial_x
 
     for j = 0, 6 do
       k = k + 1
@@ -219,7 +224,7 @@ function inventory_submenu:on_draw(dst_surface)
   end
 
   -- Draw the cursor.
-  self.cursor_sprite:draw(dst_surface, 64 + 32 * self.cursor_column, 77 + 32 * self.cursor_row)
+  self.cursor_sprite:draw(dst_surface, initial_x + 32 * self.cursor_column, initial_y - 5 + 32 * self.cursor_row)
 
   -- Draw the item being assigned if any.
   if self:is_assigning_item() then
@@ -239,15 +244,17 @@ function inventory_submenu:show_info_message()
 
   -- Position of the dialog (top or bottom).
   if self.cursor_row >= 2 then
-    map:set_dialog_position(1)  -- Top of the screen.
+    self.game:set_dialog_position("top")  -- Top of the screen.
   else
-    map:set_dialog_position(2)  -- Bottom of the screen.
+    self.game:set_dialog_position("bottom")  -- Bottom of the screen.
   end
 
   self.game:set_custom_command_effect("action", nil)
-  map:start_dialog("_item_description." .. item_name .. "." .. variant, function()
+  self.game:set_custom_command_effect("attack", nil)
+  self.game:start_dialog("_item_description." .. item_name .. "." .. variant, function()
     self.game:set_custom_command_effect("action", "info")
-    map:set_dialog_position(0)  -- Back to automatic position.
+    self.game:set_custom_command_effect("attack", "save")
+    self.game:set_dialog_position("auto")  -- Back to automatic position.
   end)
 
 end

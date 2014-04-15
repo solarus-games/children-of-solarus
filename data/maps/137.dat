@@ -1912,7 +1912,7 @@ destructible{
   x = 280,
   y = 61,
   subtype = "pot",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 2,
 }
 
@@ -1939,7 +1939,7 @@ destructible{
   x = 280,
   y = 445,
   subtype = "pot",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 2,
 }
 

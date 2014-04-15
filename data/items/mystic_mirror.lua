@@ -16,7 +16,7 @@ function item:on_npc_interaction(npc)
 
   -- Give a hint when looking at the waterfall.
   if npc:get_name():find("^riverfall_detector_[we]$") then
-    npc:get_map():start_dialog("outside_world.mountain_riverfall")
+    self:get_game():start_dialog("outside_world.mountain_riverfall")
   end
 end
 
@@ -26,7 +26,7 @@ function item:on_npc_interaction_item(npc, item_used)
   if side ~= nil and item:get_name() == "mystic_mirror" then
     -- Using the mirror with the waterfall: reverse the waterfall
     -- and traverse it.
-    self:get_map():hero_freeze()
+    self:get_map():get_entity("hero"):freeze()
     sol.audio.play_sound("water_drain")
     if timer ~= nil then
       timer:stop()
@@ -42,7 +42,7 @@ function item:on_npc_interaction_item(npc, item_used)
     i = 1
 
     function repeat_change_riverfall()
-      self:get_map():tile_set_enabled("riverfall_" .. i, true)
+      self:get_map():get_entity("riverfall_tile_" .. i):set_enabled(true)
       i = i + 1
       if i <= 8 then
         timer = sol.timer.start(350, repeat_change_riverfall)
@@ -55,7 +55,7 @@ function item:on_npc_interaction_item(npc, item_used)
 
     function repeat_restore_riverfall()
       i = i - 1
-      local tile = self:get_map():get_entity("riverfall_" .. i)
+      local tile = self:get_map():get_entity("riverfall_tile_" .. i)
       tile:set_enabled(false)
       if i > 1 then
         timer = sol.timer.start(350, repeat_restore_riverfall)

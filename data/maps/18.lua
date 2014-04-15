@@ -11,7 +11,6 @@ function map:on_started(destination)
       -- unless all advanced equipment was bought
       apples:remove()
       heart:remove()
-      lamp:remove()
 
       if not map:get_game():get_value("b938") then
         -- a bomb bag still available in this shop
@@ -40,9 +39,9 @@ function map:on_started(destination)
     bomb_bag_3:remove()
     quiver_2:remove()
     quiver_3:remove()
-    gem_bag:remove()
+    rupee_bag:remove()
 
-    if map:get_game():has_item("gem_bag")
+    if map:get_game():has_item("rupee_bag")
         and not map:get_game():is_dungeon_finished(2) then
       lamp:remove()
     end

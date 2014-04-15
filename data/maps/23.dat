@@ -1858,7 +1858,7 @@ destructible{
   x = 280,
   y = 557,
   subtype = "pot",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 1,
 }
 

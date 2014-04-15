@@ -1,6 +1,11 @@
 -- Main script of the quest.
 
-local console = sol.main.load_file("console")()
+local console = require("console")
+
+local debug_enabled = false
+function sol.main.is_debug_enabled()
+  return debug_enabled
+end
 
 -- Event called when the program starts.
 function sol.main:on_started()
@@ -8,13 +13,40 @@ function sol.main:on_started()
   -- Load built-in settings (audio volume, video mode, etc.).
   sol.main.load_settings()
 
-  -- Just need this here, no need to require globally.
-  local language_menu = require("menus/language")
+  -- If there is a file called "debug" in the write directory, enable debug mode.
+  debug_enabled = sol.file.exists("debug")
 
-  -- Show the language menu initially.
-  sol.main:start_menu(language_menu:new())
+  local solarus_logo = require("menus/solarus_logo")
+  local language_menu = require("menus/language")
+  local title_screen = require("menus/title")
+  local savegame_menu = require("menus/savegames")
+
+  -- Show the Solarus logo first.
+  sol.menu.start(self, solarus_logo)
+
+  -- Then the language selection menu, unless a game was started by a debug key.
+  solarus_logo.on_finished = function()
+    if self.game == nil then
+      sol.menu.start(self, language_menu)
+    end
+  end
+
+  -- Then the title screen.
+  language_menu.on_finished = function()
+    if self.game == nil then
+      sol.menu.start(self, title_screen)
+    end
+  end
+
+  -- Then the savegame menu.
+  title_screen.on_finished = function()
+    if self.game == nil then
+      sol.menu.start(self, savegame_menu)
+    end
+  end
 end
 
+-- Event called when the program stops.
 function sol.main:on_finished()
 
   sol.main.save_settings()
@@ -24,13 +56,25 @@ function sol.main:debug_on_key_pressed(key, modifiers)
 
   local handled = true
   if key == "f1" then
-    self:start_savegame(sol.game.load("save1.dat"))
+    if sol.game.exists("save1.dat") then
+      self.game = sol.game.load("save1.dat")
+      sol.menu.stop_all(self)
+      self:start_savegame(self.game)
+    end
   elseif key == "f2" then
-    self:start_savegame(sol.game.load("save2.dat"))
+    if sol.game.exists("save2.dat") then
+      self.game = sol.game.load("save2.dat")
+      sol.menu.stop_all(self)
+      self:start_savegame(self.game)
+    end
   elseif key == "f3" then
-    self:start_savegame(sol.game.load("save3.dat"))
+    if sol.game.exists("save3.dat") then
+      self.game = sol.game.load("save3.dat")
+      sol.menu.stop_all(self)
+      self:start_savegame(self.game)
+    end
   elseif key == "f12" and not console.enabled then
-    console:start()
+    sol.menu.start(self, console)
   elseif sol.main.game ~= nil and not console.enabled then
     local game = sol.main.game
     local hero = nil
@@ -93,6 +137,12 @@ function sol.main:debug_on_key_pressed(key, modifiers)
       if layer ~= 2 then
 	hero:set_position(x, y, layer + 1)
       end
+    elseif key == "r" then
+      if hero:get_walking_speed() == 300 then
+        hero:set_walking_speed(88)
+      else
+        hero:set_walking_speed(300)
+      end
     else
       -- Not a known in-game debug key.
       handled = false
@@ -103,6 +153,50 @@ function sol.main:debug_on_key_pressed(key, modifiers)
   end
 
   return handled
+end
+
+-- If debug is enabled, the shift key skips dialogs
+-- and the control key traverses walls.
+local hero_movement = nil
+local ctrl_pressed = false
+function sol.main:on_update()
+
+  if sol.main.is_debug_enabled() then
+    local game = sol.main.game
+    if game ~= nil then
+
+      if game:is_dialog_enabled() then
+        if sol.input.is_key_pressed("left shift") or sol.input.is_key_pressed("right shift") then
+          game.dialog_box:show_all_now()
+        end
+      end
+
+      local hero = game:get_hero()
+      if hero ~= nil then
+        if hero:get_movement() ~= hero_movement then
+          -- The movement has changed.
+          hero_movement = hero:get_movement()
+          if hero_movement ~= nil
+              and ctrl_pressed
+              and not hero_movement:get_ignore_obstacles() then
+            -- Also traverse obstacles in the new movement.
+            hero_movement:set_ignore_obstacles(true)
+          end
+        end
+        if hero_movement ~= nil then
+          if not ctrl_pressed
+              and (sol.input.is_key_pressed("left control") or sol.input.is_key_pressed("right control")) then
+            hero_movement:set_ignore_obstacles(true)
+            ctrl_pressed = true
+          elseif ctrl_pressed
+              and (not sol.input.is_key_pressed("left control") and not sol.input.is_key_pressed("right control")) then
+            hero_movement:set_ignore_obstacles(false)
+            ctrl_pressed = false
+          end
+        end
+      end
+    end
+  end
 end
 
 -- Event called when the player pressed a keyboard key.
@@ -133,30 +227,44 @@ function sol.main:on_key_pressed(key, modifiers)
   return handled
 end
 
--- Stops the current menu and start another one.
-function sol.main:start_menu(menu)
-
-  if sol.main.menu ~= nil then
-    sol.menu.stop(sol.main.menu)
-  end
-
-  sol.main.menu = menu
-
-  if menu ~= nil then
-    sol.menu.start(sol.main, menu)
-  end
-end
-
--- Stops the current menu if any and starts a game.
+-- Starts a game.
 function sol.main:start_savegame(game)
-
-  if sol.main.menu ~= nil then
-    sol.menu.stop(sol.main.menu)
-  end
-
-  sol.main.menu = nil
 
   local play_game = sol.main.load_file("play_game")
   play_game(game)
+end
+
+-- Returns the font to be used for dialogs
+-- depending on the specified language (the current one by default).
+function sol.language.get_dialog_font(language)
+
+  language = language or sol.language.get_language()
+
+  local font
+  if language == "zh_TW" or language == "zh_CN" then
+    -- Chinese font.
+    font = "chinese"
+  else
+    font = "dialog"
+  end
+
+  return font
+end
+
+-- Returns the font to be used to display text in menus
+-- depending on the specified language (the current one by default).
+function sol.language.get_menu_font(language)
+
+  language = language or sol.language.get_language()
+
+  local font
+  if language == "zh_TW" or language == "zh_CN" then
+    -- Chinese font.
+    font = "chinese"
+  else
+    font = "fixed"
+  end
+
+  return font
 end
 

@@ -2,7 +2,7 @@ local map = ...
 -- Dungeon 8 B2
 
 -- Legend
--- RC: gem Chest
+-- RC: Rupee Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door
@@ -20,7 +20,7 @@ function map:on_started(destination)
     RC100:set_enabled(false)
   end
 
-  if destination ~= nil and destination:get_name() == "from_B3_C" then
+  if destination == from_B3_C then
     map:set_doors_open("LD15", true)
     for i = 1, 9 do
       map:get_entity("BRoom" .. i):set_activated(true)
@@ -153,11 +153,11 @@ function TD02:on_interaction()
   hero:set_position(hero_x + 320, hero_y)
 end
 
-for _, enemy in ipairs(map:get_entities("gem_enemy")) do
+for enemy in map:get_entities("rupee_enemy") do
 
   function enemy:on_dead(enemy_name)
-    if not map:has_entities("gem_enemy") then
-      -- 100 gem room: kill all enemies
+    if not map:has_entities("rupee_enemy") then
+      -- 100 rupee room: kill all enemies
       if not RC100:is_enabled() then
         sol.audio.play_sound("chest_appears")
         RC100:set_enabled(true)
