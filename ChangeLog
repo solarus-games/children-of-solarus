@@ -39,6 +39,16 @@ work/pieces_of_heart.txt
 data/maps/19.dat
 data/maps/57.lua
 data/maps/107.dat
+data/languages/kikoolol/text/dialogs.dat
+data/languages/fr/text/dialogs.dat
+data/languages/de/text/strings.dat
+data/languages/zh_CN/text/strings.dat
+data/languages/zh_TW/text/strings.dat
+data/languages/en/text/strings.dat
+data/languages/es/text/strings.dat
+data/languages/fr/text/strings.dat
+data/maps/18.dat
+data/maps/48.lua (also RC -> GC)
 
 zsdx-1.7.1 (2013-12-01)
 
