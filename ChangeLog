@@ -2,12 +2,14 @@ Children of Solarus edits to zsdx:
 Edited some Nintendo images (not documented here because they should never come in from zsdx)
 
 Ganon -> Neptune:
-
+data/maps/130.dat
+data/maps/130.lua
 Agahnim -> Lunarius:
 
 Zelda -> Solaritine:
 
 Rupee -> Gem:
+data/hud/hud.lua
 data/maps/70.lua
 data/hud/rupees.lua
 data/items/rupee.lua
