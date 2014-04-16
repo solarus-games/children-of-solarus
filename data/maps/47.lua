@@ -1,8 +1,9 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 8 1F
 
 -- Legend
--- RC: gem Chest
+-- RC: Rupee Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door
@@ -22,48 +23,48 @@ function map:on_started(destination)
   map:set_doors_open("boss_door", true)
 
   -- Hide the map chest if not already opened
-  if not map:get_game():get_value("b700") then
+  if not game:get_value("b700") then
     MAP:set_enabled(false)
   end
 
   -- Hide the big key chest if not already opened
-  if not map:get_game():get_value("b705") then
+  if not game:get_value("b705") then
     BK01:set_enabled(false)
   end
 
   -- Link has the mirror shield: no laser obstacles
-  if map:get_game():get_ability("shield") >= 3 then
+  if game:get_ability("shield") >= 3 then
     LO1:set_enabled(false)
     map:set_entities_enabled("LO2", false)
   end
 
-  if destination:get_name() == "from_boss" or destination:get_name() == "from_hidden_room" then
+  if destination == from_boss or destination == from_hidden_room then
     map:set_doors_open("LD5", true)
   end
 
-  if destination:get_name() == "from_hidden_room" then
+  if destination == from_hidden_room then
     map:remove_entities("room_LD5_enemy")
   end
 
   -- door to Agahnim open if Billy's heart container was picked
-  if map:get_game():get_value("b729") then
+  if game:get_value("b729") then
     map:set_doors_open("agahnim_door", true)
   end
 
   -- statues puzzle
-  if map:get_game():get_value("b723") then
+  if game:get_value("b723") then
     DB06:set_activated(true)
   end
 
   -- boss key door and laser
-  if map:get_game():get_value("b730") then
+  if game:get_value("b730") then
     boss_key_door_laser:remove()
   end
 end
 
 function map:on_opening_transition_finished(destination)
-  if destination:get_name() == "from_outside" then
-    map:start_dialog("dungeon_8.welcome")
+  if destination == from_outside then
+    game:start_dialog("dungeon_8.welcome")
   end
 end
 
@@ -96,7 +97,7 @@ function DB06:on_activated()
   sol.audio.play_sound("secret")
 end
 
-for _, switch in ipairs(map:get_entities("RPS")) do
+for switch in map:get_entities("RPS") do
 
   function switch:on_activated()
     -- Resets position of statues
@@ -132,14 +133,14 @@ end
 
 function start_boss_sensor:on_activated()
 
-  if not fighting_boss and not map:get_game():get_value("b727") then
+  if not fighting_boss and not game:get_value("b727") then
     sol.audio.stop_music()
     map:close_doors("boss_door")
     billy_npc:set_enabled(true)
     hero:freeze()
     fighting_boss = true
     sol.timer.start(1000, function()
-      map:start_dialog("dungeon_8.billy", function()
+      game:start_dialog("dungeon_8.billy", function()
         sol.audio.play_music("boss")
         hero:unfreeze()
         boss:set_enabled(true)
@@ -149,7 +150,7 @@ function start_boss_sensor:on_activated()
   end
 end
 
-for _, enemy in ipairs(map:get_entities("room_LD1_enemy")) do
+for enemy in map:get_entities("room_LD1_enemy") do
   
   function enemy:on_dead()
     if not map:has_entities("room_LD1_enemy") then
@@ -163,7 +164,7 @@ for _, enemy in ipairs(map:get_entities("room_LD1_enemy")) do
   end
 end
 
-for _, enemy in ipairs(map:get_entities("room_LD5_enemy")) do
+for enemy in map:get_entities("room_LD5_enemy") do
   
   function enemy:on_dead()
 
@@ -175,13 +176,13 @@ for _, enemy in ipairs(map:get_entities("room_LD5_enemy")) do
   end
 end
 
-for _, enemy in ipairs(map:get_entities("map_enemy")) do
+for enemy in map:get_entities("map_enemy") do
   
   function enemy:on_dead()
 
     if not map:has_entities("map_enemy") then
       -- Map chest room: kill all enemies and the chest will appear
-      if not map:get_game():get_value("b700") then
+      if not game:get_value("b700") then
         MAP:set_enabled(true)
         sol.audio.play_sound("chest_appears")
       elseif not LD3:is_open() then
@@ -192,13 +193,13 @@ for _, enemy in ipairs(map:get_entities("map_enemy")) do
   end
 end
 
-for _, enemy in ipairs(map:get_entities("room_big_enemy")) do
+for enemy in map:get_entities("room_big_enemy") do
   
   function enemy:on_dead()
 
     if not map:has_entities("room_big_enemy") then
       -- Big key chest room: kill all enemies and the chest will appear
-      if not map:get_game():get_value("b705") then
+      if not game:get_value("b705") then
         BK01:set_enabled(true)
         sol.audio.play_sound("chest_appears")
       end

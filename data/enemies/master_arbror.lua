@@ -2,10 +2,11 @@ local enemy = ...
 
 -- A giant tree boss from Newlink.
 
-local sons = {}
+local nb_sons_created = 0
 local nb_sons_immobilized_needed = 3  -- Number of sons immobilized needed to get him vulnerable.
 local vulnerable = false
 local initial_life = 8
+local son_prefix = enemy:get_name() .. "_son_"
 
 enemy:set_life(initial_life)
 enemy:set_damage(4)
@@ -47,7 +48,7 @@ function enemy:on_hurt(attack, life_lost)
   local life = self:get_life()
   if life <= 0 then
     sprite:set_ignore_suspend(true)
-    self:get_map():start_dialog("dungeon_3.arbror_killed")
+    self:get_map():get_game():start_dialog("dungeon_3.arbror_killed")
     self:remove_sons()
   else
     if life > 9 then
@@ -65,7 +66,7 @@ end
 function enemy:prepare_son()
 
   if not vulnerable and sprite:get_animation() == "walking" then
-    if #sons < nb_sons_immobilized_needed then
+    if self:get_nb_sons() < nb_sons_immobilized_needed then
       sprite:set_animation("preparing_son")
       sol.audio.play_sound("hero_pushes")
       sol.timer.start(self, 1000, function() self:create_son() end)
@@ -80,19 +81,31 @@ function enemy:create_son()
 
   local x = math.random(-7, 7) * 16
 
-  local son_name = self:get_name() .. "_son_" .. (#sons + 1)
-  local son = self:create_enemy(son_name, "arbror_root", x, 80)
-  son.master_arbor = self
+  nb_sons_created = nb_sons_created + 1
+  local son_name = son_prefix .. nb_sons_created
+  local son = self:create_enemy{
+    name = son_name,
+    breed = "arbror_root",
+    x = x,
+    y = 80,
+  }
+  son.master_arbror = self
   son.speed = 48 + (initial_life - self:get_life()) * 5
-  sons[#sons + 1] = son
   sol.audio.play_sound("stone")
 end
 
+-- Returns the number of currently existing sons.
+function enemy:get_nb_sons()
+
+  return self:get_map():get_entities_count(son_prefix)
+end
+
+-- Returns the number of sons that are currently immobilized.
 function enemy:get_nb_sons_immobilized()
 
   local count = 0
-  for _, son in ipairs(sons) do
-    if son.immobilized then
+  for son in self:get_map():get_entities(son_prefix) do
+    if son.immobilized and not son.disappearing then
       count = count + 1
     end
   end
@@ -117,7 +130,15 @@ function sprite:on_animation_finished(animation)
       self:set_animation("vulnerable")
       sol.audio.play_sound("boss_hurt")
       sol.timer.stop_all(enemy)
-      sol.timer.start(enemy, 4000, function() enemy:stop_vulnerable() end)
+      sol.timer.start(
+          enemy:get_map(),  -- To make this timer persist after the enemy gets hurt.
+          4000,
+          function()
+            if enemy:get_life() > 0 then
+              enemy:stop_vulnerable()
+            end
+          end
+      )
       enemy:remove_sons()
     else
       self:set_animation("walking")
@@ -127,7 +148,7 @@ end
 
 function enemy:son_started_immobilized()
 
-  if get_nb_sons_immobilized() < nb_sons_immobilized_needed then
+  if enemy:get_nb_sons_immobilized() < nb_sons_immobilized_needed then
     local animation = sprite:get_animation()
 
     if animation == "preparing_son" then
@@ -151,13 +172,10 @@ end
 
 function enemy:remove_sons()
 
-  local son_prefix = self:get_name() .. "_son"
-
-  for i, son in ipairs(sons) do
+  for son in self:get_map():get_entities(son_prefix) do
     if son:exists() then
       son:disappear()
     end
   end
-  sons = {}
 end
 

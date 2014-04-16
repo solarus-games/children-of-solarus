@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 9 3F
 
 local fighting_miniboss = false
@@ -8,7 +9,7 @@ function map:on_started(destination)
   -- miniboss
   map:set_entities_enabled("miniboss_enemy", false)
   map:set_doors_open("miniboss_e_door", true)
-  if map:get_game():get_value("b866") then
+  if game:get_value("b866") then
     map:set_doors_open("miniboss_door", true)
   end
 end
@@ -25,7 +26,7 @@ local function door_a_enemy_dead(enemy)
   end
 end
 
-for _, enemy in ipairs(map:get_entities("door_a_enemy")) do
+for enemy in map:get_entities("door_a_enemy") do
   enemy.on_dead = door_a_enemy_dead
 end
 
@@ -37,11 +38,11 @@ local function miniboss_enemy_dead(enemy)
     sol.audio.play_music("southern_shrine")
     sol.audio.play_sound("secret")
     map:open_doors("miniboss_door")
-    map:get_game():set_value("b866", true)
+    game:set_value("b866", true)
   end
 end
 
-for _, enemy in ipairs(map:get_entities("miniboss_enemy")) do
+for enemy in map:get_entities("miniboss_enemy") do
   enemy.on_dead = miniboss_enemy_dead
 end
 
@@ -49,14 +50,14 @@ end
 local function door_b_hint_interaction(npc)
 
   if not door_b:is_open() then
-    local door_b_next = (map:get_game():get_value("i1202") or 0) + 1
+    local door_b_next = (game:get_value("i1202") or 0) + 1
     local index = tonumber(npc:get_name():match("^door_b_hint_([1-8])$"))
     if index == door_b_next then
       -- correct
       if index < 8 then
         local directions = { 0, 0, 0, 3, 2, 2, 2 }
-        map:start_dialog("dungeon_9.3f_door_b_hint_" .. directions[index])
-        map:get_game():set_value("i1202", index)
+        game:start_dialog("dungeon_9.3f_door_b_hint_" .. directions[index])
+        game:set_value("i1202", index)
       else
         map:move_camera(1928, 1928, 500, function()
           sol.audio.play_sound("secret")
@@ -66,19 +67,19 @@ local function door_b_hint_interaction(npc)
     else
       -- wrong
       sol.audio.play_sound("wrong")
-      map:get_game():set_value("i1202", 0)
+      game:set_value("i1202", 0)
     end
   end
 end
 
-for _, npc in ipairs(map:get_entities("door_b_hint")) do
+for npc in map:get_entities("door_b_hint") do
   npc.on_interaction = door_b_hint_interaction
 end
 
 -- miniboss
 function start_miniboss_sensor:on_activated()
 
-  if not map:get_game():get_value("b866")
+  if not game:get_value("b866")
       and not fighting_miniboss then
 
     hero:freeze()

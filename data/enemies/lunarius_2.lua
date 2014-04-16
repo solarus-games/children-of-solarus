@@ -27,12 +27,12 @@ local vulnerable = false
 local hurt_proba
 local middle_dialog = false
 local nb_fakes_created = 0
+local sprite
 
 function enemy:on_created()
 
   self:set_life(initial_life)
   self:set_damage(16)
-  self:create_sprite("enemies/Lunarius_2")
   self:set_optimization_distance(0)
   self:set_size(16, 16)
   self:set_origin(8, 13)
@@ -46,25 +46,21 @@ function enemy:on_created()
   self:set_push_hero_on_sword(true)
   self:set_can_attack(false)
 
-  local sprite = self:get_sprite()
-  sprite:set_animation("stopped")
+  sprite = self:create_sprite("enemies/Lunarius_2")
 end
 
 function enemy:on_restarted()
 
   vulnerable = false
-  local sprite = self:get_sprite()
-  sprite:set_ignore_suspend(false)
-  sprite:fade_out()
-  sol.timer.start(self, 700, function()
-    self:hide()
+  sprite:set_animation("stopped")
+  sol.timer.start(self, 100, function()
+    sprite:fade_out(function() self:hide() end)
   end)
 end
 
 function enemy:on_update()
 
   -- Look in the direction of the hero.
-  local sprite = self:get_sprite()
   sprite:set_direction(self:get_direction4_to_hero())
 end
 
@@ -91,7 +87,7 @@ function enemy:unhide()
   -- Come back somewhere.
   local position = (positions[math.random(#positions)])
   self:set_position(position.x, position.y)
-  local sprite = self:get_sprite()
+  sprite:set_animation("walking")
   sprite:set_direction(self:get_direction4_to_hero())
   sprite:fade_in()
   sol.timer.start(self, 1000, function()
@@ -102,7 +98,6 @@ end
 function enemy:fire_step_1()
 
   -- Before preparing a fireball.
-  local sprite = self:get_sprite()
   sprite:set_animation("arms_up")
   sol.timer.start(self, 1000, function()
     self:fire_step_2()
@@ -113,7 +108,6 @@ end
 function enemy:fire_step_2()
 
   -- Prepare a fireball (red or blue).
-  local sprite = self:get_sprite()
   local blue = math.random(100) <= blue_fireball_proba
 
   if math.random(5) == 1 then
@@ -140,10 +134,9 @@ function enemy:fire_step_2()
   end)
 end
 
-function fire_step_3()
+function enemy:fire_step_3()
 
   -- Shoot the fireball(s).
-  local sprite = self:get_sprite()
   sprite:set_animation("stopped")
   sol.audio.play_sound(next_fireball_sound)
   vulnerable = true
@@ -158,22 +151,26 @@ function fire_step_3()
     self:restart()
   end)
 
-  function throw_fire()
+  local function throw_fire()
     nb_sons_created = nb_sons_created + 1
-    self:create_enemy("Lunarius_fireball_" .. nb_sons_created,
-        next_fireball_breed, 0, -21)
+    self:create_enemy{
+      name = "Lunarius_fireball_" .. nb_sons_created,
+      breed = next_fireball_breed,
+      x = 0,
+      y = -21,
+    }
   end
 
-  self:throw_fire()
+  throw_fire()
 
   -- Shoot more fireballs if the life becomes short.
   local life = self:get_life()
   if life <= initial_life / 2 then
-    sol.timer.start(self, 200, function() self:throw_fire() end)
-    sol.timer.start(self, 400, function() self:throw_fire() end)
+    sol.timer.start(self, 200, function() throw_fire() end)
+    sol.timer.start(self, 400, function() throw_fire() end)
     if life <= initial_life / 4 then
-      sol.timer.start(self, 600, function() self:throw_fire() end)
-      sol.timer.start(self, 800, function() self:throw_fire() end)
+      sol.timer.start(self, 600, function() throw_fire() end)
+      sol.timer.start(self, 800, function() throw_fire() end)
     end
   end
 
@@ -191,7 +188,6 @@ function enemy:receive_bounced_fireball(fireball)
       and vulnerable then
     -- Receive a fireball shot back by the hero: get hurt or throw it back.
     if math.random(100) <= hurt_proba then
-      sol.timer.stop_all(self)
       fireball:remove()
       self:hurt(1)
     else
@@ -205,20 +201,19 @@ end
 
 function enemy:on_hurt(attack, life_lost)
 
-  local sprite = self:get_sprite()
   local life = self:get_life()
   if life <= 0 then
     -- Dying.
     self:get_map():remove_entities("Lunarius_fireball")
     self:get_map():remove_entities(self:get_name() .. "_")
     sprite:set_ignore_suspend(true)
-    self:get_map():start_dialog("dungeon_8.Lunarius_end")
+    self:get_map():get_game():start_dialog("dungeon_8.Lunarius_end")
     sol.timer.stop_all(self)
   elseif life <= initial_life * 2 / 3 then
     -- Not dying yet: start creating fakes after a few hits.
     sprite:set_ignore_suspend(true)
     if not middle_dialog then
-      self:get_map():start_dialog("dungeon_8.Lunarius_middle")
+      self:get_map():get_game():start_dialog("dungeon_8.Lunarius_middle")
       middle_dialog = true
     end
     self:create_fakes()
@@ -232,7 +227,10 @@ function enemy:create_fakes()
   if self:get_map():get_entities_count(prefix) < 3 then
     nb_fakes_created = nb_fakes_created + 1
     local fake_name = prefix .. nb_fakes_created
-    self:create_enemy(fake_name, "Lunarius_2_fake", 0, 0)
+    self:create_enemy{
+      name = fake_name,
+      breed = "Lunarius_2_fake",
+    }
   end
 
   if self:get_life() < initial_life / 3
@@ -241,4 +239,3 @@ function enemy:create_fakes()
     self:create_fakes()
   end
 end
-

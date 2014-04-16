@@ -1,8 +1,11 @@
 local map = ...
 -- Dungeon 3 3F
 
+local light_manager = require("maps/lib/light_manager")
+
 function map:on_started(destination)
 
+  light_manager.enable_light_features(map)
   map:set_light(0)
 
   -- weak floor
@@ -28,7 +31,7 @@ function se_door_switch:on_activated()
   end
 end
 
-function nc_door_switch:is_activated()
+function nc_door_switch:on_activated()
 
   if not nc_door:is_open() then
     sol.audio.play_sound("secret")

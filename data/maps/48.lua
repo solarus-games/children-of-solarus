@@ -2,7 +2,7 @@ local map = ...
 -- Dungeon 8 B1
 
 -- Legend
--- RC: gem Chest
+-- RC: Rupee Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door
@@ -31,12 +31,12 @@ function map:on_started(destination)
     KC04:set_enabled(false)
   end
 
-  if destination ~= nil and destination:get_name() == "from_1F_A" then
+  if destination == from_1F_A then
     map:set_doors_open("LD8", true)
     DB08:set_activated(true)
   end
 
-  if destination ~= nil and destination:get_name() ~= "from_B2_C" then
+  if destination ~= from_B2_C then
     map:set_doors_open("LD12", true)
   end
 end
@@ -111,7 +111,7 @@ function map:on_obtaining_treasure(item, variant, savegame_variable)
   end
 end
 
-for _, enemy in ipairs(map:get_entities("LD7_enemy")) do
+for enemy in map:get_entities("LD7_enemy") do
 
   function enemy:on_dead()
     if not map:has_entities("LD7_enemy") then
@@ -124,7 +124,7 @@ for _, enemy in ipairs(map:get_entities("LD7_enemy")) do
   end
 end
 
-for _, enemy in ipairs(map:get_entities("LD9_enemy")) do
+for enemy in map:get_entities("LD9_enemy") do
 
   function enemy:on_dead()
 

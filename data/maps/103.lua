@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 7 3F
 
 local fighting_boss = false
@@ -19,24 +20,24 @@ local arrows_timer
 function map:on_started(destination)
 
   -- block fallen into the hole
-  if map:get_game():get_value("b623") then
+  if game:get_value("b623") then
     nw_block:set_enabled(false)
   end
 
   -- NW door
-  if map:get_game():get_value("b624") then
+  if game:get_value("b624") then
     map:set_doors_open("ne_door", true)
   end
 
   -- door A (timed doors)
-  if map:get_game():get_value("b627") then
+  if game:get_value("b627") then
     door_a_switch:set_activated(true)
   end
 
   -- boss
   map:set_doors_open("boss_door", true)
-  if map:get_game():get_value("b625")
-    and not map:get_game():get_value("b626") then
+  if game:get_value("b625")
+    and not game:get_value("b626") then
     -- boss killed, heart container not picked
     map:create_pickable{
       treasure_name = "heart_container",
@@ -49,7 +50,7 @@ function map:on_started(destination)
   end
 
   -- special torch door
-  if map:get_game():get_value("b624") then
+  if game:get_value("b624") then
     ne_switch:set_activated(true)
   end
 end
@@ -62,34 +63,8 @@ function nw_block:on_moved()
     self:set_enabled(false)
     hole_a:set_enabled(true)
     hole_a_teletransporter:set_enabled(true)
-    map:get_game():set_value("b623", true)
-    sol.audio.play_sound("jump")
+    game:set_value("b623", true)
     sol.timer.start(500, function() sol.audio.play_sound("bomb") end)
-  end
-end
-
-function map:on_update()
-
-  if not map:get_game():get_value("b623") then
-    -- blocks could overlap holes or teletransporters with old versions of the engine,
-    -- so we disable the hole A and its teletransporter when necessary
-    -- TODO this is not necessary anymore
-
-    local disable_hole = false
-    local block_x, block_y = nw_block:get_position()
-    if block_y == 69 and block_x >= 520 and block_x < 544 then
-      -- the block is just before the hole
-      local hero_x = hero:get_position()
-      disable_hole = hero_x < block_x
-    end
-
-    if disable_hole and hole_a:is_enabled() then
-      hole_a:set_enabled(false)
-      hole_a_teletransporter:set_enabled(false)
-    elseif not disable_hole and not hole_a:is_enabled() then
-      hole_a:set_enabled(true)
-      hole_a_teletransporter:set_enabled(true)
-    end
   end
 end
 
@@ -157,10 +132,10 @@ for door, _ in pairs(door_properties) do
   local close_sensor = map:get_entity(door:get_name() .. "_close_sensor")
   switch.on_activated = timed_door_switch_activated
   if done_sensor ~= nil then
-    done_sensor.on_activated = timer_door_done_sensor_activated
+    done_sensor.on_activated = timed_door_done_sensor_activated
   end
   if close_sensor ~= nil then
-    close_sensor.on_activated = timer_door_close_sensor_activated
+    close_sensor.on_activated = timed_door_close_sensor_activated
   end
 end
 
@@ -178,16 +153,17 @@ function map:on_camera_back()
     special_torch_timer:set_with_sound(true)
 
   elseif current_door ~= nil then
-    local door_name = current_door:get_name()
-    local timer = sol.timer.start(door_properties[current_door].delay, function()
-      if door_timers[current_door] ~= nil then
+    local door = current_door
+    local door_name = door:get_name()
+    local timer = sol.timer.start(door_properties[door].delay, function()
+      if door_timers[door] ~= nil then
 	map:close_doors(door_name)
 	map:get_entity(door_name .. "_switch"):set_activated(false)
-	door_timers[current_door] = nil
+	door_timers[door] = nil
       end
     end)
     timer:set_with_sound(true)
-    door_timers[current_door] = true
+    door_timers[door] = true
     current_door = nil
 
   end
@@ -205,7 +181,8 @@ end
 -- boss door
 function close_boss_door_sensor:on_activated()
 
-  if boss_door:is_open() then
+  if boss_door:is_open() and not game:get_value("b625") then
+    -- The boss is alive.
     map:close_doors("boss_door")
     sol.audio.stop_music()
   end
@@ -215,7 +192,7 @@ end
 local function repeat_give_arrows()
 
   -- give arrows if necessary during the boss fight
-  if map:get_game():get_item_amount("bow") == 0 then
+  if game:get_item("bow"):get_amount() == 0 then
     local positions = {
       { x = 416, y = 685 },
       { x = 672, y = 685 },
@@ -236,7 +213,7 @@ end
 
 function start_boss_sensor:on_activated()
 
-  if not map:get_game():get_value("b625")
+  if not game:get_value("b625")
       and not fighting_boss then
     sol.audio.play_music("boss")
     boss:set_enabled(true)
@@ -266,14 +243,13 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
       hero:set_direction(1)
       sahasrahla:set_position(544, 717)
       map:move_camera(544, 712, 100, function()
-	map:set_dialog_variable("dungeon_7.sahasrahla", map:get_game():get_player_name())
-	map:start_dialog("dungeon_7.sahasrahla", function()
-	  hero:start_victory(function()
-            map:get_game():set_dungeon_finished(7)
+        game:start_dialog("dungeon_7.sahasrahla", game:get_player_name(), function()
+          hero:start_victory(function()
+            game:set_dungeon_finished(7)
             hero:teleport(8, "from_dungeon_7")
           end)
-	end)
-      end)
+        end)
+      end, 1000, 86400000)
     end)
   end
 end

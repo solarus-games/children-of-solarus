@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 5 1F
 
 sol.main.load_file("maps/prison_guard")(map)
@@ -24,17 +25,17 @@ end
 function map:on_started(destination)
 
   -- torches door
-  if map:get_game():get_value("b514") then
+  if game:get_value("b514") then
     lock_torches()
   end
 
   -- middle door
-  if map:get_game():get_value("b522") then
+  if game:get_value("b522") then
     c_door_switch:set_activated(true)
   end
 
   -- block fallen from 2F
-  if not map:get_game():get_value("b515") then
+  if not game:get_value("b515") then
     block_from_2f:set_enabled(false)
   end
 end
@@ -42,8 +43,8 @@ end
 function map:on_opening_transition_finished(destination)
 
   -- show the welcome message
-  if destination:get_name() == "from_outside" then
-    map:start_dialog("dungeon_5.welcome")
+  if destination == from_outside then
+    game:start_dialog("dungeon_5.welcome")
   end
 end
 
@@ -55,7 +56,7 @@ function se_room_enemy:on_dead()
   end
 end
 
-for _, enemy in ipairs(map:get_entities("s_room_enemy")) do
+for enemy in map:get_entities("s_room_enemy") do
 
   function enemy:on_dead()
     if not map:has_entities("s_room_enemy")
@@ -68,7 +69,7 @@ end
 
 function map:on_update()
 
-  if not map:get_game():get_value("b514")
+  if not game:get_value("b514")
       and are_all_torches_on() then
     sol.audio.play_sound("secret")
     map:open_doors("w_door")

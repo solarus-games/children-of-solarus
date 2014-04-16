@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 9 2F
 
 local ne_puzzle_step = nil
@@ -25,20 +26,20 @@ end
 function map:on_started(destination)
 
   -- north barrier
-  if map:get_game():get_value("b812") then
+  if game:get_value("b812") then
     n_barrier_switch:set_activated(true)
     n_barrier:set_enabled(false)
   end
 
   -- enemies rooms
   map:set_doors_open("door_c", true)
-  if destination:get_name() ~= "from_3f_e"
-      and destination ~= "from_outside_e" then
+  if destination ~= from_3f_e
+      and destination ~= from_outside_e then
     map:set_doors_open("door_b", true)
   end
 
   -- north-east room
-  if destination:get_name() == "from_3f_e" then
+  if destination == from_3f_e then
     map:set_doors_open("door_a", true)
     ne_puzzle_set_step(5)
   else
@@ -46,7 +47,7 @@ function map:on_started(destination)
   end
 
   -- compass
-  if map:get_game():get_value("b814") then
+  if game:get_value("b814") then
     for i = 1, 7 do
       map:get_entity("compass_chest_" .. i):set_open(true)
     end
@@ -55,7 +56,7 @@ function map:on_started(destination)
   end
 
   -- clockwise switches and next doors
-  if destination:get_name() ~= "from_1f" then
+  if destination ~= from_1f then
     map:set_doors_open("door_d", true)
     map:set_doors_open("door_e", true)
     door_e_switch:set_activated(true)
@@ -71,8 +72,8 @@ end
 function map:on_opening_transition_finished(destination)
 
   -- show the welcome message
-  if destination:get_name():find("^from_outside") then
-    map:start_dialog("dungeon_9.welcome")
+  if destination ~= nil and destination:get_name():find("^from_outside") then
+    game:start_dialog("dungeon_9.welcome")
   end
 end
 
@@ -82,7 +83,7 @@ function n_barrier_switch:on_activated()
   sol.audio.play_sound("secret")
   sol.audio.play_sound("door_open")
   n_barrier:set_enabled(false)
-  map:get_game():set_value("b812", true)
+  game:set_value("b812", true)
 end
 
 -- door A
@@ -150,10 +151,10 @@ end
 
 local function nw_switch_left(switch)
 
-  self:set_locked(false)
+  switch:set_locked(false)
 end
 
-for _, switch in ipairs(map:get_entities("nw_switch")) do
+for switch in map:get_entities("nw_switch") do
   switch.on_activated = nw_switch_activated
   switch.on_left = nw_switch_left
 end
@@ -209,7 +210,7 @@ local function close_door_g()
   end
 end
 
-for _, sensor in ipairs(map:get_entities("close_door_g_sensor")) do
+for sensor in map:get_entities("close_door_g_sensor") do
   sensor.on_activated = close_door_g
 end
 
@@ -222,7 +223,7 @@ local function close_door_e()
   end
 end
 
-for _, sensor in ipairs(map:get_entities("close_door_e_sensor")) do
+for sensor in map:get_entities("close_door_e_sensor") do
   sensor.on_activated = close_door_e
 end
 
@@ -250,16 +251,16 @@ function close_door_c_sensor_1:on_activated()
   end
 end
 close_door_c_sensor_2.on_activated = close_door_c_sensor_1.on_activated 
---
+
 -- save solid ground location
-for _, sensor in ipairs(map:get_entities("save_solid_ground_sensor")) do
+for sensor in map:get_entities("save_solid_ground_sensor") do
   function sensor:on_activated()
     hero:save_solid_ground()
   end
 end
 
 -- reset solid ground location
-for _, sensor in ipairs(map:get_entities("reset_solid_ground_sensor")) do
+for sensor in map:get_entities("reset_solid_ground_sensor") do
   function sensor:on_activated()
     hero:reset_solid_ground()
   end
@@ -275,7 +276,7 @@ local function door_b_enemy_dead(enemy)
   end
 end
 
-for _, enemy in ipairs(map:get_entities("door_b_enemy")) do
+for enemy in map:get_entities("door_b_enemy") do
   enemy.on_dead = door_b_enemy_dead
 end
 
@@ -289,7 +290,7 @@ local function door_c_enemy_dead(enemy)
   end
 end
 
-for _, enemy in ipairs(map:get_entities("door_c_enemy")) do
+for enemy in map:get_entities("door_c_enemy") do
   enemy.on_dead = door_c_enemy_dead
 end
 
@@ -315,7 +316,7 @@ local function compass_chest_empty(chest)
   end
 end
 
-for _, chest in ipairs(map:get_entities("compass_chest_")) do
+for chest in map:get_entities("compass_chest_") do
   chest.on_empty = compass_chest_empty
 end
 
@@ -323,11 +324,11 @@ end
 -- because we don't want usual behavior from items/lamp.lua:
 -- we want a shorter delay and we want torches to enable the bridge
 local function torch_interaction(torch)
-  map:start_dialog("torch.need_lamp")
+  game:start_dialog("torch.need_lamp")
 end
 
 -- Called when fire touches a torch.
-local function torch_collsion_fire(torch)
+local function torch_collision_fire(torch)
 
   local torch_sprite = torch:get_sprite()
   if torch_sprite:get_animation() == "unlit" then
@@ -347,7 +348,7 @@ local function torch_collsion_fire(torch)
   end
 end
 
-for _, torch in ipairs(map:get_entities("torch_")) do
+for torch in map:get_entities("torch_") do
   torch.on_interaction = torch_interaction
   torch.on_collision_fire = torch_collision_fire
 end

@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 7 1F
 
 local next_sign = 1
@@ -24,8 +25,8 @@ end
 function map:on_opening_transition_finished(destination)
 
   -- show the welcome message
-  if destination:get_name() == "from_outside" then
-    map:start_dialog("dungeon_7.welcome")
+  if destination == from_outside then
+    game:start_dialog("dungeon_7.welcome")
   end
 end
 
@@ -80,13 +81,13 @@ local function pipe_sensor_in_activated(sensor)
     hero:set_visible(true)
   end
 end
-for _, sensor in ipairs(map:get_entities("pipe_in_")) do
+for sensor in map:get_entities("pipe_in_") do
   sensor.on_activated = pipe_sensor_in_activated
 end
 
 local function pipe_sensor_out_activated(sensor)
 
-  local pipe = string.match(sensor_name, "^pipe_out_([a-z])_sensor")
+  local pipe = string.match(sensor:get_name(), "^pipe_out_([a-z])_sensor")
   if pipe ~= nil then
     -- leaving a pipe
     map:set_entities_enabled("pipe_under_" .. pipe, true)
@@ -94,7 +95,7 @@ local function pipe_sensor_out_activated(sensor)
     map:set_entities_enabled("pipe_border_" .. pipe, false)
   end
 end
-for _, sensor in ipairs(map:get_entities("pipe_out_")) do
+for sensor in map:get_entities("pipe_out_") do
   sensor.on_activated = pipe_sensor_out_activated
 end
 
@@ -103,7 +104,7 @@ local function hide_hero_sensor_activated(sensor)
   -- hide the hero
   hero:set_visible(false)
 end
-for _, sensor in ipairs(map:get_entities("hide_hero_sensor")) do
+for sensor in map:get_entities("hide_hero_sensor") do
   sensor.on_activated = hide_hero_sensor_activated
 end
 
@@ -112,7 +113,7 @@ local function unhide_hero_sensor_activated(sensor)
   -- unhide the hero
   hero:set_visible(true)
 end
-for _, sensor in ipairs(map:get_entities("unhide_hero_sensor")) do
+for sensor in map:get_entities("unhide_hero_sensor") do
   sensor.on_activated = unhide_hero_sensor_activated
 end
 
@@ -122,7 +123,7 @@ local function sign_interaction(sign)
     if sign:get_name() == "sign_" .. next_sign then
 
       if next_sign <= #directions then
-        map:start_dialog("surprise_wall.direction_" .. directions[next_sign])
+        game:start_dialog("surprise_wall.direction_" .. directions[next_sign])
       elseif next_sign == #directions + 1 then
 	map:move_camera(376, 984, 250, function()
 	  sol.audio.play_sound("secret")
@@ -137,7 +138,7 @@ local function sign_interaction(sign)
   end
 end
 -- sign maze
-for _, sign in ipairs(map:get_entities("sign_")) do
+for sign in map:get_entities("sign_") do
   sign.on_interaction = sign_interaction
 end
 

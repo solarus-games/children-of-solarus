@@ -2560,7 +2560,7 @@ chest{
   x = 264,
   y = 77,
   name = "chest",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 6,
   treasure_savegame_variable = "b196",
   sprite = "entities/chest",

@@ -84,7 +84,7 @@ function enemy:unhide()
   local position = (positions[math.random(#positions)])
   self:set_position(position.x, position.y)
   local sprite = self:get_sprite()
-  sprite:set_direction(get_direction4_to_hero())
+  sprite:set_direction(self:get_direction4_to_hero())
   sprite:fade_in()
   sol.timer.start(self, 1000, function()
     self:fire_step_1()
@@ -139,8 +139,12 @@ function enemy:fire_step_3()
   function throw_fire()
 
     nb_sons_created = nb_sons_created + 1
-    self:create_enemy(self:get_name() .. "_fireball_" .. nb_sons_created,
-      next_fireball_breed, 0, -21)
+    self:create_enemy{
+      name = self:get_name() .. "_fireball_" .. nb_sons_created,
+      breed = next_fireball_breed,
+      x = 0,
+      y = -21,
+    }
   end
 
   throw_fire()

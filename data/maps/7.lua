@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Outside world B2
 
 local function remove_iron_lock()
@@ -17,50 +18,50 @@ local function inferno_open()
   hero:walk("66", false, false)
 end
 
-local function inferno_open_finish()
-
-  sol.audio.play_sound("secret")
-  hero:unfreeze()
-  map:get_game():set_value("b914", true)
-  inferno_set_open()
-end
-
 local function inferno_set_open()
 
   inferno:get_sprite():set_animation("open")
   to_dungeon_6:set_enabled(true)
 end
 
+local function inferno_open_finish()
+
+  sol.audio.play_sound("secret")
+  hero:unfreeze()
+  game:set_value("b914", true)
+  inferno_set_open()
+end
+
 function map:on_started(destination)
 
   -- enable dark world
-  if map:get_game():get_value("b905") then
+  if game:get_value("b905") then
     sol.audio.play_music("dark_world")
-    map:set_tileset("nether")
+    map:set_tileset(13)
   else
     sol.audio.play_music("overworld")
   end
 
   -- remove the iron lock if open
-  if map:get_game():get_value("b193") then
+  if game:get_value("b193") then
     remove_iron_lock()
   end
 
   -- remove the wooden lock if open
-  if map:get_game():get_value("b194") then
+  if game:get_value("b194") then
     remove_wooden_lock()
   end
 
   -- Inferno
-  if not map:get_game():is_dungeon_finished(5) then
+  if not game:is_dungeon_finished(5) then
     inferno:remove()
   else
     inferno:get_sprite():set_ignore_suspend(true)
-    if map:get_game():get_value("b914") then
+    if game:get_value("b914") then
       inferno_set_open()
     end
   end
-  if not map:get_game():get_value("b914") then
+  if not game:get_value("b914") then
     to_dungeon_6:set_enabled(false)
   end
   inferno_sensor:set_enabled(false)
@@ -69,54 +70,54 @@ end
 function iron_lock:on_interaction()
 
   -- open the door if the player has the iron key
-  if map:get_game():has_item("iron_key") then
+  if game:has_item("iron_key") then
     sol.audio.play_sound("door_open")
     sol.audio.play_sound("secret")
-    map:get_game():set_value("b193", true)
+    game:set_value("b193", true)
     remove_iron_lock()
   else
-    map:start_dialog("outside_world.iron_key_required")
+    game:start_dialog("outside_world.iron_key_required")
   end
 end
 
 function wooden_lock:on_interaction()
 
   -- open the door if the player has the wooden key
-  if map:get_game():has_item("wooden_key") then
+  if game:has_item("wooden_key") then
     sol.audio.play_sound("door_open")
     sol.audio.play_sound("secret")
-    map:get_game():set_value("b194", true)
+    game:set_value("b194", true)
     remove_wooden_lock()
   else
-    map:start_dialog("outside_world.wooden_key_required")
+    game:start_dialog("outside_world.wooden_key_required")
   end
 end
 
 function inferno:on_interaction()
 
-  if not map:get_game():get_value("b915") then
+  if not game:get_value("b915") then
     -- first time
-    map:start_dialog("inferno.first_time")
-    map:get_game():set_value("b915", true)
-  elseif not map:get_game():get_value("b914") then
+    game:start_dialog("inferno.first_time")
+    game:set_value("b915", true)
+  elseif not game:get_value("b914") then
     -- not open yet
-    if not map:get_game():get_item("fire_stones_counter"):has_amount(3) then
-      map:start_dialog("inferno.find_fire_stones")
+    if not game:get_item("fire_stones_counter"):has_amount(3) then
+      game:start_dialog("inferno.find_fire_stones")
     else
-      map:start_dialog("inferno.found_fire_stones", function(answer)
+      game:start_dialog("inferno.found_fire_stones", function(answer)
         if answer == 1 then
           -- black stones
-          map:start_dialog("inferno.want_black_stones", function()
+          game:start_dialog("inferno.want_black_stones", function()
             inferno_open()
           end)
         else
-          -- 100 gems
-          if not map:get_game():get_value("b916") then
-            map:start_dialog("inferno.want_gems", function()
-              hero:start_treasure("gem", 5, "b916")
+          -- 100 rupees
+          if not game:get_value("b916") then
+            game:start_dialog("inferno.want_rupees", function()
+              hero:start_treasure("rupee", 5, "b916")
             end)
           else
-            map:start_dialog("inferno.want_gems_again")
+            game:start_dialog("inferno.want_rupees_again")
           end
         end
       end)

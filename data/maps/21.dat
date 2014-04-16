@@ -3388,7 +3388,7 @@ chest{
   x = 376,
   y = 181,
   name = "chest_2",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 3,
   treasure_savegame_variable = "b40",
   sprite = "entities/chest",
@@ -3549,7 +3549,7 @@ destructible{
   x = 248,
   y = 253,
   subtype = "pot",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 2,
 }
 
@@ -3585,7 +3585,7 @@ destructible{
   x = 168,
   y = 445,
   subtype = "pot",
-  treasure_name = "gem",
+  treasure_name = "rupee",
   treasure_variant = 1,
 }
 

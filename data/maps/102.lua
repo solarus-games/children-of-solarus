@@ -70,7 +70,7 @@ function map:on_started(destination)
   map:set_entities_enabled("miniboss_enemy", false)
 
   -- save the north-west door from 1F
-  if destination:get_name() == "from_1f_ne" then
+  if destination == from_1f_ne then
     map:get_game():set_value("b621", true)
   end
 
@@ -133,13 +133,13 @@ local function pipe_sensor_in_activated(sensor)
     hero:set_visible(true)
   end
 end
-for _, sensor in ipairs(map:get_entities("pipe_in_")) do
+for sensor in map:get_entities("pipe_in_") do
   sensor.on_activated = pipe_sensor_in_activated
 end
 
 local function pipe_sensor_out_activated(sensor)
 
-  local pipe = string.match(sensor_name, "^pipe_out_([a-z])_sensor")
+  local pipe = string.match(sensor:get_name(), "^pipe_out_([a-z])_sensor")
   if pipe ~= nil then
     -- leaving a pipe
     map:set_entities_enabled("pipe_under_" .. pipe, true)
@@ -147,7 +147,7 @@ local function pipe_sensor_out_activated(sensor)
     map:set_entities_enabled("pipe_border_" .. pipe, false)
   end
 end
-for _, sensor in ipairs(map:get_entities("pipe_out_")) do
+for sensor in map:get_entities("pipe_out_") do
   sensor.on_activated = pipe_sensor_out_activated
 end
 
@@ -157,7 +157,7 @@ local function hide_hero_sensor_activated(sensor)
   hero:set_visible(false)
 end
 
-for _, sensor in ipairs(map:get_entities("hide_hero_sensor")) do
+for sensor in map:get_entities("hide_hero_sensor") do
   sensor.on_activated = hide_hero_sensor_activated
 end
 
@@ -166,7 +166,7 @@ local function unhide_hero_sensor_activated(sensor)
   -- unhide the hero
   hero:set_visible(true)
 end
-for _, sensor in ipairs(map:get_entities("unhide_hero_sensor")) do
+for sensor in map:get_entities("unhide_hero_sensor") do
   sensor.on_activated = unhide_hero_sensor_activated
 end
 
@@ -225,15 +225,15 @@ local function code_switch_activated(switch)
 	code_nb_activated = 0
 
 	-- make sure the switch index won't get reactivated right now
-	self:set_locked(true)
+	switch:set_locked(true)
 	sol.timer.start(500, function()
-	  self:set_locked(false)
+	  switch:set_locked(false)
 	end)
       end
     end
   end
 end
-for _, switch in ipairs(map:get_entities("code_switch_")) do
+for switch in map:get_entities("code_switch_") do
   switch.on_activated = code_switch_activated
 end
 
@@ -259,7 +259,7 @@ local function w_room_enemy_dead(enemy)
     end
   end
 end
-for _, enemy in ipairs(map:get_entities("w_room_enemy")) do
+for enemy in map:get_entities("w_room_enemy") do
   enemy.on_dead = w_room_enemy_dead
 end
 
@@ -274,7 +274,7 @@ local function miniboss_enemy_dead(enemy)
     map:get_game():set_value("b620", true)
   end
 end
-for _, enemy in ipairs(map:get_entities("miniboss_enemy")) do
+for enemy in map:get_entities("miniboss_enemy") do
   enemy.on_dead = miniboss_enemy_dead
 end
 
@@ -284,6 +284,7 @@ function map:on_update()
     and are_all_torches_on() then
 
     lock_torches()
+    map:get_game():set_value("b618", true)
     map:move_camera(32, 120, 250, function()
       sol.audio.play_sound("secret")
       nw_hint_stone:set_position(32, 125)

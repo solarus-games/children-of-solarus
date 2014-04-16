@@ -1897,7 +1897,7 @@ teletransporter{
   name = "to_outside",
   transition = 1,
   destination_map = "4",
-  destination = "out_gem_house",
+  destination = "out_rupee_house",
 }
 
 npc{

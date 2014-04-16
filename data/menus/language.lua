@@ -1,25 +1,17 @@
--- This menu is displayed when the program starts, before the title screen.
--- The user can select his language.
--- If a language is already set, we go directly to the title screen.
+-- Language selection menu.
+-- If a language is already set, we skip this menu.
 
 local language_menu = {}
-
-function language_menu:new()
-  local object = {}
-  setmetatable(object, self)
-  self.__index = self
-  return object
-end
 
 function language_menu:on_started()
 
   if sol.language.get_language() ~= nil then
     -- A language is already set: skip this screen.
-    self:start_title_screen()
+    sol.menu.stop(self)
   else
 
     local ids = sol.language.get_languages()
-    local default_id = sol.language.get_default_language()
+    local default_id = "en"
     local index = 1
     local cursor_position = 1
     self.surface = sol.surface.create(320, 240)
@@ -32,7 +24,7 @@ function language_menu:on_started()
       local language = {}
       language.id = id
       language.text = sol.text_surface.create{
-        font = "fixed",
+        font = sol.language.get_menu_font(id),
         text = sol.language.get_language_name(id),
         horizontal_alignment = "center"
       }
@@ -50,7 +42,7 @@ function language_menu:on_started()
       if #self.languages == 1 then
         sol.language.set_language(self.languages[1].id)
       end
-      self:start_title_screen()
+      sol.menu.stop(self)
     else
       self:set_cursor_position(cursor_position)
     end
@@ -91,8 +83,9 @@ function language_menu:on_key_pressed(key)
       local language = self.languages[self.cursor_position]
       sol.language.set_language(language.id)
       self.finished = true
-      self.surface:fade_out(function()
-        self:start_title_screen()
+      self.surface:fade_out()
+      sol.timer.start(self, 700, function()
+        sol.menu.stop(self)
       end)
     end
 
@@ -176,12 +169,6 @@ function language_menu:set_cursor_position(cursor_position)
   end
 
   self.cursor_position = cursor_position
-end
-
-function language_menu:start_title_screen()
-
-  local title_screen = require("menus/title")
-  sol.main:start_menu(title_screen:new())
 end
 
 return language_menu

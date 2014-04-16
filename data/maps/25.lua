@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 1 2F
 
 local fighting_miniboss = false
@@ -15,14 +16,14 @@ end
 function map:on_opening_transition_finished(destination)
 
   -- show the welcome message
-  if destination:get_name() == "from_outside" then
-    map:start_dialog("dungeon_1")
+  if destination == from_outside then
+    game:start_dialog("dungeon_1")
   end
 end
 
 function start_miniboss_sensor:on_activated()
 
-  if not map:get_game():get_value("b62") and not fighting_miniboss then
+  if not game:get_value("b62") and not fighting_miniboss then
     -- the miniboss is alive
     map:close_doors("miniboss_door")
     hero:freeze()
@@ -43,7 +44,7 @@ if khorneth ~= nil then
   end
 end
 
-for _, enemy in ipairs(map:get_entities("boss_key_battle")) do
+for enemy in map:get_entities("boss_key_battle") do
   function enemy:on_dead()
     if not map:has_entities("boss_key_battle")
         and not boss_key_chest:is_enabled() then

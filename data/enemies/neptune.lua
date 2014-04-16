@@ -28,8 +28,8 @@ local attacking = false
 local nb_floors_destroyed = 0
 local nb_flames_created = 0
 local nb_bats_created = 0
-local attack_scheduled = false
 local cancel_next_attack = false
+local attack_scheduled = false
 
 function enemy:on_created()
 
@@ -64,7 +64,7 @@ function enemy:on_restarted()
       m:start(self)
       self:set_hurt_style("normal")
       if not attack_scheduled then
-	self:schedule_attack()
+        self:schedule_attack()
       end
     else
       self:jump()
@@ -157,15 +157,15 @@ function enemy:destroy_floor(prefix, first, last)
   local index = first
   local delay = 30
 
-  function repeat_change()
+  local function repeat_change()
     if index % 10 == 1 then
       sol.audio.play_sound("stone")
     end
 
-    self:get_map():entities_set_enabled(prefix .. index, false)
+    self:get_map():get_entity(prefix .. index):set_enabled(false)
 
     if index ~= last then
-      sol.timer.start(self, delay, repeat_change)
+      sol.timer.start(self:get_map(), delay, repeat_change)
     end
     index = index + 1
   end
@@ -208,10 +208,16 @@ function enemy:throw_flames()
     sol.audio.play_sound("lamp")
     nb_flames_created = nb_flames_created + 1
     local son_name = prefix .. nb_flames_created
-    self:create_enemy(son_name, "red_flame", 0, -24, 0)
+    self:create_enemy{
+      name = son_name,
+      breed = "red_flame",
+      x = 0,
+      y = -24,
+      layer = 0,
+    }
     nb_to_create = nb_to_create - 1
     if nb_to_create > 0 then
-      sol.timer.start(self, 150, repeat_throw_flame)
+      sol.timer.start(self:get_map(), 150, repeat_throw_flame)
     else
       attacking = false
       attack_scheduled = false
@@ -219,6 +225,7 @@ function enemy:throw_flames()
     end
   end
   self:stop_movement()
+  self:get_sprite():set_direction(0)
   repeat_throw_flame()
 end
 
@@ -243,17 +250,23 @@ function enemy:throw_bats()
     sol.audio.play_sound("lamp")
     nb_bats_created = nb_bats_created + 1
     local son_name = prefix .. nb_bats_created
-    local son = self:create_enemy(son_name, "fire_bat", 0, -21, 0)
+    local son = self:create_enemy{
+      name = son_name,
+      breed = "fire_bat",
+      x = 0,
+      y = -21,
+      layer = 0,
+    }
     if math.random(6) == 1 then
       son:set_treasure("magic_flask", 1)
     end
     son:go_circle(self)
     local go_hero_delay = 2000 + (nb_to_create * 150)
-    sol.timer.start(self, go_hero_delay, function() son:go_hero() end)
+    sol.timer.start(son, go_hero_delay, function() son:go_hero() end)
 
     nb_to_create = nb_to_create - 1
     if nb_to_create > 0 then
-      sol.timer.start(self, 233, repeat_throw_bat)
+      sol.timer.start(self:get_map(), 233, repeat_throw_bat)
     else
       attacking = false
       attack_scheduled = false
@@ -265,12 +278,13 @@ function enemy:throw_bats()
     end
   end
   self:stop_movement()
+  self:get_sprite():set_direction(0)
   repeat_throw_bat()
 end
 
 function enemy:schedule_attack()
 
-  sol.timer.start(self, math.random(3000, 6000), function()
+  sol.timer.start(self:get_map(), math.random(3000, 6000), function()
     self:attack()
   end)
   attack_scheduled = true

@@ -16,50 +16,52 @@ function submenu:on_started()
   self.save_dialog_sprite = sol.sprite.create("menus/pause_save_dialog")
   self.save_dialog_state = 0
 
+  local dialog_font = sol.language.get_dialog_font()
+  local menu_font = sol.language.get_menu_font()
+
   self.question_text_1 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     color = {8, 8, 8},
+    font = dialog_font,
   }
   self.question_text_2 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     color = {8, 8, 8},
+    font = dialog_font,
   }
   self.answer_text_1 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     color = {8, 8, 8},
     text_key = "save_dialog.yes",
+    font = dialog_font,
   }
   self.answer_text_2 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     color = {8, 8, 8},
     text_key = "save_dialog.no",
+    font = dialog_font,
   }
 
   self.caption_text_1 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     font = "fixed",
+    font = menu_font,
   }
 
   self.caption_text_2 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     font = "fixed",
+    font = menu_font,
   }
 
   self.game:set_custom_command_effect("action", nil)
   self.game:set_custom_command_effect("attack", "save")
-
-  -- Show this menu below the dialog box and HUD.
-  -- TODO make functions sol.menu.bring_to_front, sol.menu.bring_to_back
-  sol.menu.stop(self.game.dialog_box)
-  sol.menu.start(self.game, self.game.dialog_box)
-  self.game:set_hud_enabled(false)
-  self.game:set_hud_enabled(true)
 end
 
 -- Sets the caption text.
@@ -107,7 +109,7 @@ function submenu:next_submenu()
   local submenu_index = self.game:get_value("pause_last_submenu")
   submenu_index = (submenu_index % #submenus) + 1
   self.game:set_value("pause_last_submenu", submenu_index)
-  sol.menu.start(self.game, submenus[submenu_index])
+  sol.menu.start(self.game, submenus[submenu_index], false)
 end
 
 function submenu:previous_submenu()
@@ -118,12 +120,17 @@ function submenu:previous_submenu()
   local submenu_index = self.game:get_value("pause_last_submenu")
   submenu_index = (submenu_index + 2) % #submenus + 1
   self.game:set_value("pause_last_submenu", submenu_index)
-  sol.menu.start(self.game, submenus[submenu_index])
+  sol.menu.start(self.game, submenus[submenu_index], false)
 end
 
 function submenu:on_command_pressed(command)
 
   local handled = false
+
+  if self.game:is_dialog_enabled() then
+    -- Commands will be applied to the dialog box only.
+    return false
+  end
 
   if self.save_dialog_state == 0 then
     -- The save dialog is not shown
@@ -142,6 +149,10 @@ function submenu:on_command_pressed(command)
     end
   else
     -- The save dialog is visible.
+    if command ~= "pause" then
+      handled = true  -- Block all commands on the submenu except pause.
+    end
+
     if command == "left" or command == "right" then
       -- Move the cursor.
       sol.audio.play_sound("cursor")
@@ -152,7 +163,6 @@ function submenu:on_command_pressed(command)
         self.save_dialog_choice = 0
         self.save_dialog_sprite:set_animation("left")
       end
-      handled = true
     elseif command == "action" or command == "attack" then
       -- Validate a choice.
       if self.save_dialog_state == 1 then
@@ -178,7 +188,6 @@ function submenu:on_command_pressed(command)
           sol.main.reset()
         end
       end
-      handled = true
     end
   end
 

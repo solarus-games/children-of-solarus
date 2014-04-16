@@ -1,4 +1,5 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 9 1F
 
 -- puzzle B
@@ -12,12 +13,12 @@ function map:on_started(destination)
 
   -- hidden Gibdo and chest
   map:set_entities_enabled("hidden_enemy", false)
-  if not map:get_game():get_value("b800") then
+  if not game:get_value("b800") then
     hidden_chest:set_enabled(false)
   end
 
   -- puzzle A
-  if map:get_game():get_value("b802") then
+  if game:get_value("b802") then
     -- already solved
     map:set_entities_enabled("puzzle_a_red", false)
     map:set_entities_enabled("puzzle_a_switch", false)
@@ -28,14 +29,14 @@ function map:on_started(destination)
   map:set_entities_enabled("puzzle_a_green", false)
 
   -- puzzle B
-  if destination:get_name() == "from_b1_w"
-      or destination:get_name() == "from_b1_e" then
+  if destination == from_b1_w
+      or destination == from_b1_e then
     map:set_doors_open("puzzle_b_door", true)
     puzzle_b_door_switch:set_activated(true)
   end
 
   -- south door
-  if destination:get_name() ~= "from_outside" then
+  if destination ~= from_outside then
     map:set_doors_open("s_door", true)
   end
 
@@ -43,7 +44,7 @@ function map:on_started(destination)
   map:set_entities_enabled("bridge", false)
 
   -- west enemies room
-  if not map:get_game():get_value("b806") then
+  if not game:get_value("b806") then
     w_room_chest:set_enabled(false)
   else
     map:set_doors_open("w_room_door", true)
@@ -54,12 +55,12 @@ function map:on_started(destination)
   map:set_doors_open("c_door_s", true)
 
   -- east enemies room
-  if not map:get_game():get_value("b808") then
+  if not game:get_value("b808") then
     e_room_chest:set_enabled(false)
   end
 
   -- north-west chest
-  if not map:get_game():get_value("b810") then
+  if not game:get_value("b810") then
     nw_chest:set_enabled(false)
   else
     nw_switch_1:set_activated(true)
@@ -67,7 +68,7 @@ function map:on_started(destination)
   end
 
   -- shortcut to the boss
-  if not map:get_game():get_value("b816") then
+  if not game:get_value("b816") then
     shortcut:set_enabled(false)
     shortcut_teletransporter:set_enabled(false)
   end
@@ -76,8 +77,8 @@ end
 function map:on_opening_transition_finished(destination)
 
   -- show the welcome message
-  if destination:get_name() == "from_outside" then
-    map:start_dialog("dungeon_9.welcome")
+  if destination == from_outside then
+    game:start_dialog("dungeon_9.welcome")
   end
 end
 
@@ -109,7 +110,7 @@ local function hidden_enemy_dead(enemy)
     end)
   end
 end
-for _, enemy in ipairs(map:get_entities("hidden_enemy")) do
+for enemy in map:get_entities("hidden_enemy") do
   enemy.on_dead = hidden_enemy_dead
 end
 
@@ -124,7 +125,7 @@ local function s_door_enemy_dead(enemy)
     end)
   end
 end
-for _, enemy in ipairs(map:get_entities("s_door_enemy")) do
+for enemy in map:get_entities("s_door_enemy") do
   enemy.on_dead = s_door_enemy_dead
 end
 
@@ -139,9 +140,6 @@ local function w_room_enemy_dead(enemy)
     end
   end
 end
-for _, enemy in ipairs(map:get_entities("w_room_enemy")) do
-  enemy.on_dead = w_room_enemy_dead
-end
 
 -- east enemies room
 local function e_room_enemy_dead(enemy)
@@ -154,7 +152,7 @@ local function e_room_enemy_dead(enemy)
     end)
   end
 end
-for _, enemy in ipairs(map:get_entities("e_room_enemy")) do
+for enemy in map:get_entities("e_room_enemy") do
   enemy.on_dead = e_room_enemy_dead
 end
 
@@ -239,7 +237,7 @@ local function puzzle_b_switch_left(switch)
 
   switch:set_locked(false)
 end
-for _, switch in ipairs(map:get_entities("puzzle_b_switch")) do
+for switch in map:get_entities("puzzle_b_switch") do
   switch.on_activated = puzzle_b_switch_activated
   switch.on_left = puzzle_b_switch_left
 end
@@ -276,12 +274,12 @@ local function puzzle_a_switch_activated(switch)
       map:move_camera(896, 1896, 250, function()
 	sol.audio.play_sound("chest_appears")
 	puzzle_a_chest:set_enabled(true)
-	map:get_game():set_value("b802", true)
+	game:set_value("b802", true)
       end)
     end
   end
 end
-for _, switch in ipairs(map:get_entities("puzzle_a_switch")) do
+for switch in map:get_entities("puzzle_a_switch") do
   switch.on_activated = puzzle_a_switch_activated
 end
 
@@ -297,6 +295,7 @@ function close_w_room_sensor:on_activated()
       layer = 1,
       x = 752,
       y = 877,
+      direction = 0,
       treasure_name = "random"
     }
     map:create_enemy{
@@ -305,6 +304,7 @@ function close_w_room_sensor:on_activated()
       layer = 1,
       x = 808,
       y = 885,
+      direction = 0,
       treasure_name = "random"
     }
     map:create_enemy{
@@ -313,8 +313,12 @@ function close_w_room_sensor:on_activated()
       layer = 1,
       x = 864,
       y = 877,
+      direction = 0,
       treasure_name = "random"
     }
+    for enemy in map:get_entities("w_room_enemy") do
+      enemy.on_dead = w_room_enemy_dead
+    end
   end
 end
 
@@ -351,14 +355,14 @@ end
 close_puzzle_b_door_sensor_2.on_activated = close_puzzle_b_door_sensor.on_activated
 
 -- save solid ground location
-for _, sensor in ipairs(map:get_entities("save_solid_ground_sensor")) do
+for sensor in map:get_entities("save_solid_ground_sensor") do
   function sensor:on_activated()
     hero:save_solid_ground()
   end
 end
 
 -- reset solid ground location
-for _, sensor in ipairs(map:get_entities("reset_solid_ground_sensor")) do
+for sensor in map:get_entities("reset_solid_ground_sensor") do
   function sensor:on_activated()
     hero:reset_solid_ground()
   end
@@ -368,11 +372,11 @@ end
 -- because we don't want usual behavior from items/lamp.lua:
 -- we want a shorter delay and we want torches to enable the bridge
 local function torch_interaction(torch)
-  map:start_dialog("torch.need_lamp")
+  game:start_dialog("torch.need_lamp")
 end
 
 -- Called when fire touches a torch.
-local function torch_collsion_fire(torch)
+local function torch_collision_fire(torch)
 
   local torch_sprite = torch:get_sprite()
   if torch_sprite:get_animation() == "unlit" then
@@ -391,7 +395,7 @@ local function torch_collsion_fire(torch)
     end)
   end
 end
-for _, torch in ipairs(map:get_entities("torch_")) do
+for torch in map:get_entities("torch_") do
   torch.on_interaction = torch_interaction
   torch.on_collision_fire = torch_collision_fire
 end

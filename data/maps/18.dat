@@ -674,12 +674,12 @@ shop_item{
   layer = 0,
   x = 208,
   y = 104,
-  name = "gem_bag",
-  treasure_name = "gem_bag",
+  name = "rupee_bag",
+  treasure_name = "rupee_bag",
   treasure_variant = 3,
   treasure_savegame_variable = "b940",
   price = 300,
-  dialog = "lyriann_shop.gem_bag",
+  dialog = "lyriann_shop.rupee_bag",
 }
 
 tile{

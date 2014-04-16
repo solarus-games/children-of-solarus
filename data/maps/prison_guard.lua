@@ -25,7 +25,7 @@ local function seen_by_guard(guard)
       prison_go_timer:stop()
       prison_go_timer = nil
     end
-    map:start_dialog("dungeon_5.hero_seen_by_guard", function()
+    map:get_game():start_dialog("dungeon_5.hero_seen_by_guard", function()
       prison_go_timer = sol.timer.start(1000, function()
 	hero_seen = false
 	if prison_dialog_timer ~= nil then
@@ -67,10 +67,8 @@ local function guard_sensor_activated(sensor)
   end
 end
 
-local guards = map:get_entities("guard_")
-for _, guard in ipairs(guards) do
-  local sensors = map:get_entities(guard:get_name() .. "_sensor_")
-  for _, sensor in ipairs(sensors) do
+for guard in map:get_entities("guard_") do
+  for sensor in map:get_entities(guard:get_name() .. "_sensor_") do
     sensor.on_activated = guard_sensor_activated
     sensor.on_activated_repeat = guard_sensor_activated
   end

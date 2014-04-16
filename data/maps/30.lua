@@ -1,33 +1,9 @@
 local map = ...
+local game = map:get_game()
 -- Dungeon 2 1F
 
 local fighting_miniboss = false
 local camera_back_start_timer = false
-
-local function check_eye_statues()
-
-  if left_eye_switch:is_activated() and right_eye_switch:is_activated() then
-
-    left_eye_switch:set_activated(false)
-    right_eye_switch:set_activated(false)
-
-    if not map:get_game():get_value("b90") then
-      sol.audio.play_sound("switch")
-      map:move_camera(456, 232, 250, function()
-        sol.audio.play_sound("secret")
-        open_hidden_stairs()
-        map:get_game():set_value("b90", true)
-      end)
-    elseif not map:get_game():get_value("b91") then
-      sol.audio.play_sound("switch")
-      map:move_camera(520, 320, 250, function()
-        sol.audio.play_sound("secret")
-        open_hidden_door()
-        map:get_game():set_value("b91", true)
-      end)
-    end
-  end
-end
 
 local function open_hidden_stairs()
   map:set_entities_enabled("hidden_stairs_closed", false)
@@ -39,21 +15,46 @@ local function open_hidden_door()
   map:set_entities_enabled("hidden_door_open", true)
 end
 
+local function check_eye_statues()
+
+  if left_eye_switch:is_activated() and right_eye_switch:is_activated() then
+
+    left_eye_switch:set_activated(false)
+    right_eye_switch:set_activated(false)
+
+    if not game:get_value("b90") then
+      sol.audio.play_sound("switch")
+      map:move_camera(456, 232, 250, function()
+        sol.audio.play_sound("secret")
+        open_hidden_stairs()
+        game:set_value("b90", true)
+      end)
+    elseif not game:get_value("b91") then
+      sol.audio.play_sound("switch")
+      map:move_camera(520, 320, 250, function()
+        sol.audio.play_sound("secret")
+        open_hidden_door()
+        game:set_value("b91", true)
+      end)
+    end
+  end
+end
+
 function map:on_started(destination)
 
   -- west barrier
-  if map:get_game():get_value("b78") then
+  if game:get_value("b78") then
     barrier:set_enabled(false)
     barrier_switch:set_activated(true)
   end
 
   -- hidden stairs
-  if map:get_game():get_value("b90") then
+  if game:get_value("b90") then
     open_hidden_stairs()
   end
 
   -- hidden door
-  if map:get_game():get_value("b91") then
+  if game:get_value("b91") then
     open_hidden_door()
   end
 
@@ -65,14 +66,14 @@ end
 function map:on_opening_transition_finished(destination)
 
   -- show the welcome message
-  if destination:get_name() == "from_outside" then
-    map:start_dialog("dungeon_2")
+  if destination == from_outside then
+    game:start_dialog("dungeon_2")
   end
 end
 
 function start_miniboss_sensor:on_activated()
 
-  if not map:get_game():get_value("b92") and not fighting_miniboss then
+  if not game:get_value("b92") and not fighting_miniboss then
     -- the miniboss is alive
     map:close_doors("miniboss_door")
     hero:freeze()
@@ -98,7 +99,7 @@ function barrier_switch:on_activated()
   map:move_camera(120, 536, 250, function()
     sol.audio.play_sound("secret")
     barrier:set_enabled(false)
-    map:get_game():set_value("b78", true)
+    game:set_value("b78", true)
   end)
 end
 
