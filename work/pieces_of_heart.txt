@@ -14,7 +14,7 @@ Note that each dungeon contains exactly one piece of heart.
 List of the 32 pieces of heart:
 
 1) Heros's house (secret room)
-2) Rupee house (reward of game 3)
+2) Gem house (reward of game 3)
 3) Outside world A3, on the top of dungeon 3
 4) Outside world B3: jump over holes with the feather
 5) Outside world B4: balcony from the cave under the waterfall
@@ -29,7 +29,7 @@ List of the 32 pieces of heart:
 14) Hole and flower cave
 15) True hero cave 1F
 16) Fairy cave 2F: after the hole
-17) Junk shop (499 rupees)
+17) Junk shop (499 gems)
 18) West mountains cave 1F (requires the cane of somaria)
 19) West mountains cave 3F (come from the east entrance)
 20) Chests game cave

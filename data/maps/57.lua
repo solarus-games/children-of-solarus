@@ -94,7 +94,7 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
 	      end
 	      hero:start_treasure("quiver", variant, "b941", function()
                 game:set_dungeon_finished(6)
-                game:set_value("b155", false) -- reopen the rupee house
+                game:set_value("b155", false) -- reopen the gem house
                 hero:teleport(7, "from_dungeon_6")
               end)
 	    end)

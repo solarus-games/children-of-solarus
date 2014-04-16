@@ -9,7 +9,6 @@ Agahnim -> Lunarius:
 Zelda -> Solaritine:
 
 Rupee -> Gem:
-data/hud/hud.lua
 data/maps/70.lua
 data/hud/rupees.lua
 data/items/rupee.lua
@@ -30,6 +29,16 @@ data/languages/es/text/dialogs.dat
 data/maps/11.lua
 data/maps/50.lua
 data/languages/nl/text/strings.dat
+data/languages/zh_TW/text/dialogs.dat
+data/languages/zh_CN/text/dialogs.dat
+work/savegame.txt
+data/languages/de/text/dialogs.dat
+data/languages/en/text/dialogs.dat
+data/languages/kikoolol/text/strings.dat
+work/pieces_of_heart.txt
+data/maps/19.dat
+data/maps/57.lua
+data/maps/107.dat
 
 zsdx-1.7.1 (2013-12-01)
 
