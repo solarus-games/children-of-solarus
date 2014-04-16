@@ -246,7 +246,7 @@ function savegame_menu:read_savegames()
       if slot.savegame:get_ability("tunic") == 0 then
         -- Savegame not fully initialized (created with Solarus 0.9).
         slot.savegame:set_ability("tunic", 1)
-        slot.savegame:get_item("rupee_bag"):set_variant(1)
+        slot.savegame:get_item("gem_bag"):set_variant(1)
       end
 
       slot.player_name_text:set_text(slot.savegame:get_value("player_name"))
@@ -1005,7 +1005,7 @@ function savegame_menu:set_initial_values(savegame)
   savegame:set_life(savegame:get_max_life())
   savegame:get_item("tunic"):set_variant(1)
   savegame:set_ability("tunic", 1)
-  savegame:get_item("rupee_bag"):set_variant(1)
+  savegame:get_item("gem_bag"):set_variant(1)
 end
 
 return savegame_menu

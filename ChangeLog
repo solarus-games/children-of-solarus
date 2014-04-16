@@ -1,3 +1,34 @@
+Children of Solarus edits to zsdx:
+Edited some Nintendo images (not documented here because they should never come in from zsdx)
+
+Ganon -> Neptune:
+
+Agahnim -> Lunarius:
+
+Zelda -> Solaritine:
+
+Rupee -> Gem:
+data/maps/70.lua
+data/hud/rupees.lua
+data/items/rupee.lua
+data/items/rupee_bag.lua
+data/items/random.lua
+data/maps/2.lua
+data/maps/4.lua
+data/items/magic_flask.lua
+data/maps/18.lua
+data/menus/pause_quest_status.lua
+data/maps/32.lua
+data/languages/nl/text/game_dialogs.dat
+data/maps/75.lua
+data/maps/49.lua (also RC -> GC)
+data/maps/51.lua (also RC -> GC)
+data/maps/87.lua
+data/languages/es/text/dialogs.dat
+data/maps/11.lua
+data/maps/50.lua
+data/languages/nl/text/strings.dat
+
 zsdx-1.7.1 (2013-12-01)
 
 * Use Solarus 1.1.1.

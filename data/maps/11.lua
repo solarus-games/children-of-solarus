@@ -36,7 +36,7 @@ function grandma:on_interaction()
     -- use the telepathic booth
     game:start_dialog("grandma_house.go_telepathic_booth")
   elseif not game:is_dungeon_finished(5) then
-    -- rupee house broken
+    -- gem house broken
     game:start_dialog("grandma_house.dark_world_enabled")
   else
     -- use the telepathic booth again

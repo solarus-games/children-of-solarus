@@ -43,12 +43,12 @@ function quest_status_submenu:on_started()
   end
 
   -- Wallet.
-  local rupee_bag = self.game:get_item("rupee_bag"):get_variant()
-  if rupee_bag > 0 then
-    item_sprite:set_animation("rupee_bag")
-    item_sprite:set_direction(rupee_bag - 1)
+  local gem_bag = self.game:get_item("gem_bag"):get_variant()
+  if gem_bag > 0 then
+    item_sprite:set_animation("gem_bag")
+    item_sprite:set_direction(gem_bag - 1)
     item_sprite:draw(self.quest_items_surface, 68, 84)
-    self.caption_text_keys[0] = "quest_status.caption.rupee_bag_" .. rupee_bag
+    self.caption_text_keys[0] = "quest_status.caption.gem_bag_" .. gem_bag
   end
 
   -- Bomb bag.

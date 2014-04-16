@@ -1,13 +1,13 @@
 local map = ...
 local game = map:get_game()
--- Rupee house.
+-- gem house.
 
 -- Initializations made when the map has just been loaded.
 local playing_game_1 = false
 local playing_game_2 = false
 local playing_game_3 = false
 local already_played_game_1 = false
-local game_1_rewards = {5, 20, 50}  -- Possible rupee rewards in game 1.
+local game_1_rewards = {5, 20, 50}  -- Possible gem rewards in game 1.
 local game_2_bet = 0
 local game_2_reward = 0
 local game_2_man_sprite = nil
@@ -47,7 +47,7 @@ function game_1_man:on_interaction()
 
   if playing_game_1 then
     -- the player is already playing: tell him to choose a chest
-    game:start_dialog("rupee_house.game_1.choose_chest")
+    game:start_dialog("gem_house.game_1.choose_chest")
   else
 
     -- see if the player can still play
@@ -55,14 +55,14 @@ function game_1_man:on_interaction()
 
     if unauthorized then
       -- the player already won much money
-      game:start_dialog("rupee_house.game_1.not_allowed_to_play")
+      game:start_dialog("gem_house.game_1.not_allowed_to_play")
     else
       if not already_played_game_1 then
         -- first time: long dialog with the game rules
-        game:start_dialog("rupee_house.game_1.intro", game_1_question_dialog_finished)
+        game:start_dialog("gem_house.game_1.intro", game_1_question_dialog_finished)
       else
         -- quick dialog to play again
-        game:start_dialog("rupee_house.game_1.play_again_question", game_1_question_dialog_finished)
+        game:start_dialog("gem_house.game_1.play_again_question", game_1_question_dialog_finished)
       end
     end
   end
@@ -74,10 +74,10 @@ function game_2_man:on_interaction()
 
   if playing_game_2 then
     -- the player is already playing: tell him to stop the reels
-    game:start_dialog("rupee_house.game_2.playing")
+    game:start_dialog("gem_house.game_2.playing")
   else
     -- dialog with the game rules
-    game:start_dialog("rupee_house.game_2.intro", game_2_question_dialog_finished)
+    game:start_dialog("gem_house.game_2.intro", game_2_question_dialog_finished)
   end
 end
 
@@ -86,17 +86,17 @@ function game_3_man:on_interaction()
 
   if playing_game_3 then
     -- the player is already playing: let him restart the game
-    game:start_dialog("rupee_house.game_3.restart_question", game_3_question_dialog_finished)
+    game:start_dialog("gem_house.game_3.restart_question", game_3_question_dialog_finished)
   else
     -- see if the player can still play
     local unauthorized = game:get_value("b17")
 
     if unauthorized then
       -- the player already won this game
-      game:start_dialog("rupee_house.game_3.not_allowed_to_play")
+      game:start_dialog("gem_house.game_3.not_allowed_to_play")
     else
       -- game rules
-      game:start_dialog("rupee_house.game_3.intro", game_3_question_dialog_finished)
+      game:start_dialog("gem_house.game_3.intro", game_3_question_dialog_finished)
     end
   end
 end
@@ -128,7 +128,7 @@ function map:activate_slot_machine(npc)
     end
   else
     sol.audio.play_sound("wrong")
-    game:start_dialog("rupee_house.pay_first")
+    game:start_dialog("gem_house.pay_first")
   end
 end
 
@@ -136,14 +136,14 @@ function game_1_question_dialog_finished(answer)
 
   if answer == 2 then
     -- the player does not want to play the game
-    game:start_dialog("rupee_house.game_1.not_playing")
+    game:start_dialog("gem_house.game_1.not_playing")
   else
     -- wants to play game 1
 
     if game:get_money() < 20 then
       -- not enough money
       sol.audio.play_sound("wrong")
-      game:start_dialog("rupee_house.not_enough_money")
+      game:start_dialog("gem_house.not_enough_money")
 
     else
       -- enough money: reset the 3 chests, pay and start the game
@@ -152,7 +152,7 @@ function game_1_question_dialog_finished(answer)
       chest_3:set_open(false)
 
       game:remove_money(20)
-      game:start_dialog("rupee_house.game_1.good_luck")
+      game:start_dialog("gem_house.game_1.good_luck")
       playing_game_1 = true
     end
   end
@@ -162,31 +162,31 @@ function game_2_question_dialog_finished(answer)
 
   if answer == 2 then
     -- don't want to play the game
-    game:start_dialog("rupee_house.game_2.not_playing")
+    game:start_dialog("gem_house.game_2.not_playing")
   else
     -- wants to play game 2
-    game:start_dialog("rupee_house.game_2.choose_bet", game_2_choose_bet_dialog_finished)
+    game:start_dialog("gem_house.game_2.choose_bet", game_2_choose_bet_dialog_finished)
   end
 end
 
 function game_2_choose_bet_dialog_finished(answer)
 
   if answer == 1 then
-    -- bet 5 rupees
+    -- bet 5 gems
     game_2_bet = 5
   else
-    -- bet 20 rupees
+    -- bet 20 gems
     game_2_bet = 20
   end
 
   if game:get_money() < game_2_bet then
     -- not enough money
     sol.audio.play_sound("wrong")
-    game:start_dialog("rupee_house.not_enough_money")
+    game:start_dialog("gem_house.not_enough_money")
   else
     -- enough money: pay and start the game
     game:remove_money(game_2_bet)
-    game:start_dialog("rupee_house.game_2.just_paid")
+    game:start_dialog("gem_house.game_2.just_paid")
     playing_game_2 = true
 
     -- start the slot machine animations
@@ -206,14 +206,14 @@ function game_3_question_dialog_finished(answer)
 
   if answer == 2 then
     -- don't want to play the game
-    game:start_dialog("rupee_house.game_3.not_playing")
+    game:start_dialog("gem_house.game_3.not_playing")
   else
     -- wants to play game 3
 
     if game:get_money() < 10 then
       -- not enough money
       sol.audio.play_sound("wrong")
-      game:start_dialog("rupee_house.not_enough_money")
+      game:start_dialog("gem_house.not_enough_money")
 
     else
       -- enough money: reset the game, pay and start the game
@@ -228,7 +228,7 @@ function game_3_question_dialog_finished(answer)
       end
 
       game:remove_money(10)
-      game:start_dialog("rupee_house.game_3.go", function()
+      game:start_dialog("gem_house.game_3.go", function()
         game_3_timer = sol.timer.start(8000, function()
           sol.audio.play_sound("door_closed")
           game_3_middle_barrier:set_enabled(true)
@@ -256,7 +256,7 @@ function open_game_1_chest(chest)
 
   if not playing_game_1 then
     -- trying to open a chest but not playing yet
-    game:start_dialog("rupee_house.pay_first") -- the game man is angry
+    game:start_dialog("gem_house.pay_first") -- the game man is angry
     chest:set_open(false) -- close the chest again
     sol.audio.play_sound("wrong")
     hero:unfreeze() -- restore the control
@@ -265,17 +265,17 @@ function open_game_1_chest(chest)
     local index = math.random(#game_1_rewards)
     local amount = game_1_rewards[index]
     if amount == 50 and not already_played_game_1 then
-      -- don't give 50 rupees at the first attempt
+      -- don't give 50 gems at the first attempt
       amount = 5
     end
 
-    -- give the rupees
+    -- give the gems
     if amount == 5 then
-      hero:start_treasure("rupee", 2)
+      hero:start_treasure("gem", 2)
     elseif amount == 20 then
-      hero:start_treasure("rupee", 3)
+      hero:start_treasure("gem", 3)
     elseif amount == 50 then
-      hero:start_treasure("rupee", 4)
+      hero:start_treasure("gem", 4)
     end
 
     if amount == 50 then
@@ -362,29 +362,29 @@ function game_2_timeout()
   if symbols[1] == symbols[2] and symbols[2] == symbols[3] then
     -- three identical symbols
 
-    if symbols[1] == 0 then -- 3 green rupees
-      game:start_dialog("rupee_house.game_2.reward.green_rupees", game_2_give_reward)
+    if symbols[1] == 0 then -- 3 green gems
+      game:start_dialog("gem_house.game_2.reward.green_gems", game_2_give_reward)
       game_2_reward = 5 * game_2_bet
-    elseif symbols[1] == 2 then -- 3 blue rupees
-      game:start_dialog("rupee_house.game_2.reward.blue_rupees", game_2_give_reward)
+    elseif symbols[1] == 2 then -- 3 blue gems
+      game:start_dialog("gem_house.game_2.reward.blue_gems", game_2_give_reward)
       game_2_reward = 7 * game_2_bet
-    elseif symbols[1] == 4 then -- 3 red rupees
-      game:start_dialog("rupee_house.game_2.reward.red_rupees", game_2_give_reward)
+    elseif symbols[1] == 4 then -- 3 red gems
+      game:start_dialog("gem_house.game_2.reward.red_gems", game_2_give_reward)
       game_2_reward = 10 * game_2_bet
     elseif symbols[1] == 5 then -- 3 Yoshi
-      game:start_dialog("rupee_house.game_2.reward.yoshi", game_2_give_reward)
+      game:start_dialog("gem_house.game_2.reward.yoshi", game_2_give_reward)
       game_2_reward = 20 * game_2_bet
     else -- other symbol
-      game:start_dialog("rupee_house.game_2.reward.same_any", game_2_give_reward)
+      game:start_dialog("gem_house.game_2.reward.same_any", game_2_give_reward)
       game_2_reward = 4 * game_2_bet
     end
 
   elseif green_found and blue_found and red_found then
-    -- three rupees with different colors
-    game:start_dialog("rupee_house.game_2.reward.different_rupees", game_2_give_reward)
+    -- three gems with different colors
+    game:start_dialog("gem_house.game_2.reward.different_gems", game_2_give_reward)
     game_2_reward = 15 * game_2_bet
   else
-    game:start_dialog("rupee_house.game_2.reward.none", game_2_question_dialog_finished)
+    game:start_dialog("gem_house.game_2.reward.none", game_2_question_dialog_finished)
     game_2_reward = 0
   end
 
