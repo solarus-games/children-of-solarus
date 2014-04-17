@@ -1525,7 +1525,7 @@ destructible{
   x = 768,
   y = 621,
   subtype = "pot",
-  treasure_name = "rupee",
+  treasure_name = "gem",
 }
 
 destructible{
@@ -1541,7 +1541,7 @@ destructible{
   x = 768,
   y = 653,
   subtype = "pot",
-  treasure_name = "rupee",
+  treasure_name = "gem",
 }
 
 destructible{
@@ -1549,7 +1549,7 @@ destructible{
   x = 848,
   y = 653,
   subtype = "pot",
-  treasure_name = "rupee",
+  treasure_name = "gem",
 }
 
 destructible{
@@ -1565,7 +1565,7 @@ destructible{
   x = 848,
   y = 621,
   subtype = "pot",
-  treasure_name = "rupee",
+  treasure_name = "gem",
 }
 
 enemy{
