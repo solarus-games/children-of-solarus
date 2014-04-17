@@ -1381,7 +1381,7 @@ dialog{
 
 -- Grand sac de rubis / Big Wallet
 dialog{
-  id = "_treasure.rupee_bag.2",
+  id = "_treasure.gem_bag.2",
   icon = 52,
   text = [[
 你發現一個大錢包!$0
@@ -1393,7 +1393,7 @@ dialog{
 
 -- Sac de rubis géant / Giant Wallet
 dialog{
-  id = "_treasure.rupee_bag.3",
+  id = "_treasure.gem_bag.3",
   icon = 53,
   text = [[
 你發現超大錢包！$0
@@ -1811,9 +1811,9 @@ dialog{
 }
 --------------------
 
--- 1 rubis vert / 1 green rupee
+-- 1 rubis vert / 1 green gem
 dialog{
-  id = "_treasure.rupee.1",
+  id = "_treasure.gem.1",
   icon = 90,
   text = [[
 發現一個綠色盧比!
@@ -1822,9 +1822,9 @@ dialog{
 }
 --------------------
 
--- 1 rubis bleu / 1 blue rupee
+-- 1 rubis bleu / 1 blue gem
 dialog{
-  id = "_treasure.rupee.2",
+  id = "_treasure.gem.2",
   icon = 91,
   text = [[
 發現藍色盧比!
@@ -1833,9 +1833,9 @@ dialog{
 }
 --------------------
 
--- 1 rubis rouge / 1 red rupee
+-- 1 rubis rouge / 1 red gem
 dialog{
-  id = "_treasure.rupee.3",
+  id = "_treasure.gem.3",
   icon = 92,
   text = [[
 發現紅色盧幣!
@@ -1844,10 +1844,10 @@ dialog{
 }
 --------------------
 
--- 50 rubis / 50 rupees
+-- 50 rubis / 50 gems
 -- Remarque : clin d'oeil à Link's Awakening
 dialog{
-  id = "_treasure.rupee.4",
+  id = "_treasure.gem.4",
   icon = 90,
   text = [[
 你發現50盧幣!
@@ -1856,10 +1856,10 @@ dialog{
 }
 --------------------
 
--- 100 rubis / 100 rupees
+-- 100 rubis / 100 gems
 -- Remarque : clin d'oeil à Link's Awakening
 dialog{
-  id = "_treasure.rupee.5",
+  id = "_treasure.gem.5",
   icon = 90,
   text = [[
 你發現100盧幣!
@@ -1868,10 +1868,10 @@ dialog{
 }
 --------------------
 
--- 300 rubis / 300 rupees
+-- 300 rubis / 300 gems
 -- Remarque : clin d'oeil à Link's Awakening
 dialog{
-  id = "_treasure.rupee.6",
+  id = "_treasure.gem.6",
   icon = 90,
   text = [[
 你發現300盧幣!
@@ -2551,7 +2551,7 @@ dialog{
 
 -- Pancarte à l'entrée de la maison des rubis
 dialog{
-  id = "outside_world.village.rupee_house_sign",
+  id = "outside_world.village.gem_house_sign",
   text = [[
      - 盧幣屋 -
     
@@ -2831,7 +2831,7 @@ dialog{
 
 -- Jeu du coffre-mystère dans la maison des rubis
 dialog{
-  id = "rupee_house.game_1.intro",
+  id = "gem_house.game_1.intro",
   question = true,
   text = [[
 歡迎來到奇異的箱子
@@ -2846,7 +2846,7 @@ dialog{
 
 -- Coffre-mystère : quand on parle au vendeur après avoir déjà payé
 dialog{
-  id = "rupee_house.game_1.choose_chest",
+  id = "gem_house.game_1.choose_chest",
   text = [[
 快點選擇一個箱子!
 
@@ -2858,7 +2858,7 @@ dialog{
 
 -- Coffre-mystère : quand on accepte de jouer
 dialog{
-  id = "rupee_house.game_1.good_luck",
+  id = "gem_house.game_1.good_luck",
   text = [[
 祝你好遠!
 ]]
@@ -2867,7 +2867,7 @@ dialog{
 
 -- Coffre-mystère : quand on a déjà trop gagné pour avoir le droit de rejouer
 dialog{
-  id = "rupee_house.game_1.not_allowed_to_play",
+  id = "gem_house.game_1.not_allowed_to_play",
   text = [[
 你不是已經贏了嗎？
 我們因你而損失！
@@ -2877,7 +2877,7 @@ dialog{
 
 -- Coffre-mystère : veut-on rejouer ?
 dialog{
-  id = "rupee_house.game_1.play_again_question",
+  id = "gem_house.game_1.play_again_question",
   question = true,
   text = [[
 你想再玩一次嗎?
@@ -2893,7 +2893,7 @@ dialog{
 -- English Translation taken from the actual LA text dump.
 -- http://www.Solaritinelegends.net/files/emulation/dumps/Solaritine4/usa/z4dump(usa).html
 dialog{
-  id = "rupee_house.game_1.not_playing",
+  id = "gem_house.game_1.not_playing",
   text = [[
 你不得不有更多的激情!
 享受一下生活！
@@ -2903,7 +2903,7 @@ dialog{
 
 -- Jeu du bandit manchot dans la maison des rubis
 dialog{
-  id = "rupee_house.game_2.intro",
+  id = "gem_house.game_2.intro",
   question = true,
   text = [[
 歡迎來到嶄新的老虎機!
@@ -2921,7 +2921,7 @@ dialog{
 
 -- Bandit manchot : quand on refuse de jouer
 dialog{
-  id = "rupee_house.game_2.not_playing",
+  id = "gem_house.game_2.not_playing",
   text = [[
 下次來玩...
 ]]
@@ -2930,7 +2930,7 @@ dialog{
 
 -- Bandit manchot : quand on accepte de jouer
 dialog{
-  id = "rupee_house.game_2.choose_bet",
+  id = "gem_house.game_2.choose_bet",
   question = true,
   text = [[
 你準備賭多少盧幣?
@@ -2943,8 +2943,8 @@ dialog{
 -- Bandit manchot : quand on a choisi une des deux sommes à miser
 -- et qu'on a effectiement assez d'argent
 dialog{
-  id = "rupee_house.game_2.just_paid",
-  next = "rupee_house.game_2.playing",
+  id = "gem_house.game_2.just_paid",
+  next = "gem_house.game_2.playing",
   text = [[
 謝謝!
 ]]
@@ -2953,7 +2953,7 @@ dialog{
 
 -- Bandit manchot : quand on reparle au vendeur pendant que les roulettes tournent déjà
 dialog{
-  id = "rupee_house.game_2.playing",
+  id = "gem_house.game_2.playing",
   text = [[
 站在輪盤旁按動作鍵
 使它們停止.
@@ -2964,7 +2964,7 @@ dialog{
 
 -- Bandit manchot : quand on obtient 3 symboles identiques qui ne rapportent rien d'exceptionnel
 dialog{
-  id = "rupee_house.game_2.reward.same_any",
+  id = "gem_house.game_2.reward.same_any",
   text = [[
 三個相同輪盤,不壞!
 你贏得4倍賭注.
@@ -2974,7 +2974,7 @@ dialog{
 
 -- Bandit manchot : quand on obtient 3 symboles de rubis verts
 dialog{
-  id = "rupee_house.game_2.reward.green_rupees",
+  id = "gem_house.game_2.reward.green_gems",
   text = [[
 三個綠盧幣,漂亮!
 你贏得5倍賭注.
@@ -2984,7 +2984,7 @@ dialog{
 
 -- Bandit manchot : quand on obtient 3 symboles de rubis bleus
 dialog{
-  id = "rupee_house.game_2.reward.blue_rupees",
+  id = "gem_house.game_2.reward.blue_gems",
   text = [[
 三個藍盧幣!恭喜!
 你贏得七倍賭注.
@@ -2994,7 +2994,7 @@ dialog{
 
 -- Bandit manchot : quand on obtient 3 symboles de rubis rouges
 dialog{
-  id = "rupee_house.game_2.reward.red_rupees",
+  id = "gem_house.game_2.reward.red_gems",
   text = [[
 三個紅盧幣!!!驚人的!
 你贏得至少十倍賭注!
@@ -3004,7 +3004,7 @@ dialog{
 
 -- Bandit manchot : quand on obtient 3 symboles de rubis différents
 dialog{
-  id = "rupee_house.game_2.reward.different_rupees",
+  id = "gem_house.game_2.reward.different_gems",
   text = [[
 Wow!!!你得到三個不同
 顏色的盧幣,這不是每天
@@ -3016,7 +3016,7 @@ Wow!!!你得到三個不同
 
 -- Bandit manchot : quand on obtient 3 symboles Yoshi (c'est la récompense maximale)
 dialog{
-  id = "rupee_house.game_2.reward.yoshi",
+  id = "gem_house.game_2.reward.yoshi",
   text = [[
 $1...
 三個Yoshi?!
@@ -3029,7 +3029,7 @@ $1...
 
 -- Bandit manchot : quand on n'obtient rien
 dialog{
-  id = "rupee_house.game_2.reward.none",
+  id = "gem_house.game_2.reward.none",
   question = true,
   text = [[
 壞運氣,沒得到任何組合
@@ -3044,7 +3044,7 @@ dialog{
 
 -- Jeu du labyrinthe dans la maison des rubis
 dialog{
-  id = "rupee_house.game_3.intro",
+  id = "gem_house.game_3.intro",
   question = true,
   text = [[
 控制在時間用盡前通過
@@ -3062,7 +3062,7 @@ dialog{
 
 -- Jeu du labyrinthe : quand on accepte de jouer et qu'on a assez d'argent
 dialog{
-  id = "rupee_house.game_3.go",
+  id = "gem_house.game_3.go",
   text = [[
 我們走!
 祝你好運!
@@ -3072,7 +3072,7 @@ dialog{
 
 -- Jeu du labyrinthe : quand on refuse de jouer
 dialog{
-  id = "rupee_house.game_3.not_playing",
+  id = "gem_house.game_3.not_playing",
   text = [[
 這是你的選擇...
 ]]
@@ -3081,7 +3081,7 @@ dialog{
 
 -- Jeu du labyrinthe : quand on parle au vendeur alors qu'on a déjà obtenu le fragment de coeur
 dialog{
-  id = "rupee_house.game_3.not_allowed_to_play",
+  id = "gem_house.game_3.not_allowed_to_play",
   text = [[
 對不起,你已經贏得了這個
 遊戲!
@@ -3091,7 +3091,7 @@ dialog{
 
 -- Jeu du labyrinthe : quand on parle au vendeur alors que le jeu est déjà commencé
 dialog{
-  id = "rupee_house.game_3.restart_question",
+  id = "gem_house.game_3.restart_question",
   question = true,
   text = [[
 你想重新開始嗎?
@@ -3106,7 +3106,7 @@ dialog{
 
 -- Maison des rubis : quand on n'a pas assez d'argent (quel que soit le jeu)
 dialog{
-  id = "rupee_house.not_enough_money",
+  id = "gem_house.not_enough_money",
   text = [[
 你沒有足夠的錢!
 ]]
@@ -3115,7 +3115,7 @@ dialog{
 
 -- Maison des rubis : quand on interagit avec le jeu sans avoir payé (coffre-mystère et bandit manchot)
 dialog{
-  id = "rupee_house.pay_first",
+  id = "gem_house.pay_first",
   text = [[
 嘿!如果你想玩的話
 必須付錢!
@@ -3125,7 +3125,7 @@ dialog{
 
 -- Maison des rubis dévalisée (PNJ de gauche)
 dialog{
-  id = "rupee_house_broken.help_us_left",
+  id = "gem_house_broken.help_us_left",
   text = [[
 救命!
 救命!
@@ -3138,7 +3138,7 @@ dialog{
 
 -- Maison des rubis dévalisée (PNJ du milieu)
 dialog{
-  id = "rupee_house_broken.help_us_middle",
+  id = "gem_house_broken.help_us_middle",
   text = [[
 土匪偷走了用於
 支付收益的盧幣!
@@ -3148,7 +3148,7 @@ dialog{
 
 -- Maison des rubis dévalisée (PNJ de droite)
 dialog{
-  id = "rupee_house_broken.help_us_right",
+  id = "gem_house_broken.help_us_right",
   text = [[
 犯人是朝blacksmith
 的洞穴走!
@@ -3158,7 +3158,7 @@ dialog{
 
 -- Maison des rubis dévalisée (voleurs battus)
 dialog{
-  id = "rupee_house_broken.thanks",
+  id = "gem_house_broken.thanks",
   text = [[
 你找到了我們的盧幣!
 我們準備使生意恢復
@@ -3169,7 +3169,7 @@ dialog{
 -----------------------
 
 dialog{
-  id = "rupee_house_broken.thanks_again",
+  id = "gem_house_broken.thanks_again",
   text = [[
 再次感謝!
 ]]
@@ -3523,7 +3523,7 @@ dialog{
 
 -- Boutique : quand on regarde le sac de rubis 2
 dialog{
-  id = "lyriann_shop.rupee_bag",
+  id = "lyriann_shop.gem_bag",
   next = "_unknown",
   text = [[
 一個新錢包能裝更多
@@ -4550,7 +4550,7 @@ dialog{
 -----------------------
 
 dialog{
-  id = "junk_shop.red_rupee",
+  id = "junk_shop.red_gem",
   text = [[
 特別提供紅盧比,但是
 這是基本模型.
@@ -4761,7 +4761,7 @@ dialog{
 -----------------------
 
 dialog{
-  id = "inferno.want_rupees",
+  id = "inferno.want_gems",
   text = [[
 那就這樣吧.
 ]]
@@ -4769,7 +4769,7 @@ dialog{
 -----------------------
 
 dialog{
-  id = "inferno.want_rupees_again",
+  id = "inferno.want_gems_again",
   text = [[
 我已經給了你獎勵.
 ]]

@@ -39,9 +39,9 @@ function map:on_started(destination)
     bomb_bag_3:remove()
     quiver_2:remove()
     quiver_3:remove()
-    rupee_bag:remove()
+    gem_bag:remove()
 
-    if map:get_game():has_item("rupee_bag")
+    if map:get_game():has_item("gem_bag")
         and not map:get_game():is_dungeon_finished(2) then
       lamp:remove()
     end

@@ -3,7 +3,7 @@ local map = ...
 
 -- Legend
 -- CB: Chest Button
--- RC: Rupee Chest
+-- GC: Gem Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door

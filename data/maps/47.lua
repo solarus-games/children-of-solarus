@@ -3,7 +3,7 @@ local game = map:get_game()
 -- Dungeon 8 1F
 
 -- Legend
--- RC: Rupee Chest
+-- GC: Gem Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door

@@ -20,7 +20,7 @@ function item:on_obtaining(variant, savegame_variable)
   local amounts = {6, 42}
   local amount = amounts[variant]
   if amount == nil then
-    error("Invalid variant '" .. variant .. "' for item 'rupee'")
+    error("Invalid variant '" .. variant .. "' for item 'gem'")
   end
   self:get_game():add_magic(amount)
 end

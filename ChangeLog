@@ -1,3 +1,28 @@
+Children of Solarus edits to zsdx:
+Edited some Nintendo images (not documented here because they should never come in from zsdx)
+Edited license.txt, readme.txt, and ChangeLog
+Edited project_db.dat and quest.dat
+
+Ganon -> Neptune:
+data/maps/130.dat
+data/maps/130.lua
+Agahnim -> Lunarius:
+
+Zelda -> Solaritine:
+
+Rupee -> Gem:
+data/maps/{70,2,4,18,32,75,87,11,50,57,7,3}.lua
+data/maps/{19,107,18,11,28,4,37,2,84,16,24,120,137,21,49,126,13,134,6,136,50,70,29,135,82,30,55,60,23,31,88,48,41,64,103,5,40,102}.dat
+data/hud/{gems}.lua
+data/items/{gem,gem_bag,random,magic_flask,piece_of_heart}.lua
+data/menus/{pause_quest_status,savegames}.lua
+data/languages/nl/text/{game_dialogs,strings}.dat
+data/maps/{49,51,48,47}.lua (also RC -> GC)
+data/languages/{es,zh_TW,zh_CN,de,en,kikoolol,fr}/text/dialogs.dat
+work/{savegame,pieces_of_heart}.txt
+data/languages/{kikoolol,de,zh_CN,zh_TW,en,es,fr}/text/strings.dat
+data/sprites/entities/items.dat
+
 zsdx-1.7.1 (2013-12-01)
 
 * Use Solarus 1.1.1.
@@ -14,7 +39,7 @@ zsdx-1.7.0 (2013-10-13)
 * Fix savegames freshly created with Solarus 0.9 and never run yet.
 * Fix a slight alignment issue with the hurt animation of the hero.
 * Fix a small breach in dungeon 9 4F in the timed chest room (#4).
-* Fix easy infinite rupees in the waterfall cave (#13).
+* Fix easy infinite gems in the waterfall cave (#13).
 * Fix low health beeping playing at final screen (#56).
 * Add a teletransporter from south lake to the cave under the waterfall (#10).
 * Dungeon 7 boss: the player could get stuck in the boss room (#6).
@@ -45,7 +70,7 @@ zsdx-1.6 (2013-06-22)
 * Dungeon 7 2F: save the nort-west torches.
 * Savegames menu: the joypad was not working to delete a savegame.
 * Dungeon 10 B1: fix a cauldron the hero could walk on (#20).
-* Rupee house: don't let the player to get the piece of heart with the sword.
+* Gem house: don't let the player to get the piece of heart with the sword.
 * Dungeon 6 2F: move crystal blocks to avoid a possible breach.
 * Outside world B3: fix a minor tile error (#12).
 * Dungeon 8 B1: fix a minor tile error (#2).
