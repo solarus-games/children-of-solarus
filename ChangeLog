@@ -1,5 +1,7 @@
 Children of Solarus edits to zsdx:
 Edited some Nintendo images (not documented here because they should never come in from zsdx)
+Edited license.txt, readme.txt, and ChangeLog
+Edited project_db.dat and quest.dat
 
 Ganon -> Neptune:
 data/maps/130.dat
@@ -49,6 +51,14 @@ data/languages/es/text/strings.dat
 data/languages/fr/text/strings.dat
 data/maps/18.dat
 data/maps/48.lua (also RC -> GC)
+data/maps/7.lua
+data/maps/11.dat
+data/maps/28.dat
+data/maps/4.dat
+data/maps/37.dat
+data/maps/47.lua (also RC -> GC)
+data/maps/3.lua
+data/item/piece_of_heart.lua
 
 zsdx-1.7.1 (2013-12-01)
 

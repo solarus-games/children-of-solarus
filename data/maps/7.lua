@@ -111,13 +111,13 @@ function inferno:on_interaction()
             inferno_open()
           end)
         else
-          -- 100 rupees
+          -- 100 gems
           if not game:get_value("b916") then
-            game:start_dialog("inferno.want_rupees", function()
-              hero:start_treasure("rupee", 5, "b916")
+            game:start_dialog("inferno.want_gems", function()
+              hero:start_treasure("gem", 5, "b916")
             end)
           else
-            game:start_dialog("inferno.want_rupees_again")
+            game:start_dialog("inferno.want_gems_again")
           end
         end
       end)

@@ -138,7 +138,7 @@ function tree_woman:on_interaction()
 
   game:start_dialog("outside_world.village.tree_woman", function(answer)
     if answer ~= "skipped" then
-      hero:start_treasure("rupee", 1)
+      hero:start_treasure("gem", 1)
     end
   end)
 end
