@@ -1447,7 +1447,7 @@ teletransporter{
   name = "to_outside",
   transition = 1,
   destination_map = "4",
-  destination = "out_rupee_house",
+  destination = "out_gem_house",
 }
 
 chest{
@@ -1693,7 +1693,7 @@ pickable{
   layer = 0,
   x = 224,
   y = 157,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b114",
 }
@@ -1702,7 +1702,7 @@ pickable{
   layer = 0,
   x = 256,
   y = 157,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b115",
 }
@@ -1711,7 +1711,7 @@ pickable{
   layer = 0,
   x = 240,
   y = 205,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 2,
   treasure_savegame_variable = "b116",
 }
@@ -1720,7 +1720,7 @@ pickable{
   layer = 0,
   x = 408,
   y = 285,
-  treasure_name = "rupee",
+  treasure_name = "gem",
   treasure_variant = 3,
   treasure_savegame_variable = "b117",
 }
