@@ -11,87 +11,17 @@ Agahnim -> Lunarius:
 Zelda -> Solaritine:
 
 Rupee -> Gem:
-data/maps/70.lua
-data/hud/gems.lua
-data/items/gem.lua
-data/items/gem_bag.lua
-data/items/random.lua
-data/maps/2.lua
-data/maps/4.lua
-data/items/magic_flask.lua
-data/maps/18.lua
-data/menus/pause_quest_status.lua
-data/maps/32.lua
-data/languages/nl/text/game_dialogs.dat
-data/maps/75.lua
-data/maps/49.lua (also RC -> GC)
-data/maps/51.lua (also RC -> GC)
-data/maps/87.lua
-data/languages/es/text/dialogs.dat
-data/maps/11.lua
-data/maps/50.lua
-data/languages/nl/text/strings.dat
-data/languages/zh_TW/text/dialogs.dat
-data/languages/zh_CN/text/dialogs.dat
-work/savegame.txt
-data/languages/de/text/dialogs.dat
-data/languages/en/text/dialogs.dat
-data/languages/kikoolol/text/strings.dat
-work/pieces_of_heart.txt
-data/maps/19.dat
-data/maps/57.lua
-data/maps/107.dat
-data/languages/kikoolol/text/dialogs.dat
-data/languages/fr/text/dialogs.dat
-data/languages/de/text/strings.dat
-data/languages/zh_CN/text/strings.dat
-data/languages/zh_TW/text/strings.dat
-data/languages/en/text/strings.dat
-data/languages/es/text/strings.dat
-data/languages/fr/text/strings.dat
-data/maps/18.dat
-data/maps/48.lua (also RC -> GC)
-data/maps/7.lua
-data/maps/11.dat
-data/maps/28.dat
-data/maps/4.dat
-data/maps/37.dat
-data/maps/47.lua (also RC -> GC)
-data/maps/3.lua
-data/item/piece_of_heart.lua
-data/maps/2.dat
-data/maps/84.dat
+data/maps/{70,2,4,18,32,75,87,11,50,57,7,3}.lua
+data/maps/{19,107,18,11,28,4,37,2,84,16,24,120,137,21,49,126,13,134,6,136,50,70,29,135,82,30,55,60,23,31,88,48,41,64,103,5,40,102}.dat
+data/hud/{gems}.lua
+data/items/{gem,gem_bag,random,magic_flask,piece_of_heart}.lua
+data/menus/{pause_quest_status,savegames}.lua
+data/languages/nl/text/{game_dialogs,strings}.dat
+data/maps/{49,51,48,47}.lua (also RC -> GC)
+data/languages/{es,zh_TW,zh_CN,de,en,kikoolol,fr}/text/dialogs.dat
+work/{savegame,pieces_of_heart}.txt
+data/languages/{kikoolol,de,zh_CN,zh_TW,en,es,fr}/text/strings.dat
 data/sprites/entities/items.dat
-data/maps/16.dat
-data/maps/24.dat
-data/maps/120.dat
-data/menus/savegames.lua
-data/maps/137.dat
-data/maps/21.dat
-data/maps/49.dat
-data/maps/126.dat
-data/maps/13.dat
-data/maps/134.dat
-data/maps/6.dat
-data/maps/136.dat
-data/maps/50.dat
-data/maps/70.dat
-data/maps/29.dat
-data/maps/135.dat
-data/maps/82.dat
-data/maps/30.dat
-data/maps/55.dat
-data/maps/60.dat
-data/maps/23.dat
-data/maps/31.dat
-data/maps/88.dat
-data/maps/48.dat
-data/maps/41.dat
-data/maps/64.dat
-data/maps/103.dat
-data/maps/5.dat
-data/maps/40.dat
-data/maps/102.dat
 
 zsdx-1.7.1 (2013-12-01)
 
