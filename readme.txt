@@ -64,7 +64,7 @@ is /usr/local):
 - the quest data archive ("data.solarus") in /usr/local/share/solarus/ChildrenOfSolarus/
 - a script called "ChildrenOfSolarus" in /usr/local/bin/
 
-The zsdx script launches solarus with the appropriate command-line argument
+The ChildrenOfSolarus script launches solarus with the appropriate command-line argument
 to specify the quest path.
 This means that you can launch the ChildrenOfSolarus quest with the command:
 
