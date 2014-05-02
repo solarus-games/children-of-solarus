@@ -807,10 +807,10 @@ npc{
   layer = 1,
   x = 88,
   y = -11,
-  name = "agahnim",
+  name = "lunarius",
   direction = 3,
   subtype = "1",
-  sprite = "npc/agahnim",
+  sprite = "npc/lunarius",
 }
 
 tile{

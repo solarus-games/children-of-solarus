@@ -10549,7 +10549,7 @@ door{
   layer = 1,
   x = 1120,
   y = 24,
-  name = "agahnim_door",
+  name = "lunarius_door",
   direction = 1,
   sprite = "entities/door_normal",
 }
@@ -12028,7 +12028,7 @@ dynamic_tile{
   y = 16,
   width = 32,
   height = 8,
-  name = "agahnim_door_open_2",
+  name = "lunarius_door_open_2",
   pattern = 429,
   enabled_at_start = true,
 }
@@ -12039,7 +12039,7 @@ dynamic_tile{
   y = 16,
   width = 16,
   height = 8,
-  name = "agahnim_door_open",
+  name = "lunarius_door_open",
   pattern = 435,
   enabled_at_start = true,
 }
@@ -12050,7 +12050,7 @@ dynamic_tile{
   y = 16,
   width = 32,
   height = 8,
-  name = "agahnim_door_closed",
+  name = "lunarius_door_closed",
   pattern = 154,
   enabled_at_start = true,
 }

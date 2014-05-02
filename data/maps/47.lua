@@ -48,7 +48,7 @@ function map:on_started(destination)
 
   -- door to Agahnim open if Billy's heart container was picked
   if game:get_value("b729") then
-    map:set_doors_open("agahnim_door", true)
+    map:set_doors_open("lunarius_door", true)
   end
 
   -- statues puzzle
@@ -215,7 +215,7 @@ function map:on_obtained_treasure(item, variant, savegame_variable)
     hero:set_direction(3)
     sol.timer.start(9000, function()
       map:open_doors("boss_door")
-      map:open_doors("agahnim_door")
+      map:open_doors("lunarius_door")
       sol.audio.play_sound("secret")
       hero:unfreeze()
     end)

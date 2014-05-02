@@ -12685,7 +12685,7 @@ enemy{
   y = 277,
   name = "boss",
   direction = 3,
-  breed = "agahnim",
+  breed = "lunarius",
   rank = 2,
   savegame_variable = "b520",
   treasure_name = "heart_container",

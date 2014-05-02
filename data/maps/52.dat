@@ -344,10 +344,10 @@ npc{
   layer = 1,
   x = 632,
   y = 381,
-  name = "ganon_npc",
+  name = "neptune_npc",
   direction = 3,
   subtype = "1",
-  sprite = "npc/ganon",
+  sprite = "npc/neptune",
 }
 
 wall{
@@ -409,10 +409,10 @@ npc{
   layer = 1,
   x = 632,
   y = 221,
-  name = "agahnim_npc",
+  name = "lunarius_npc",
   direction = 1,
   subtype = "1",
-  sprite = "npc/agahnim",
+  sprite = "npc/lunarius",
 }
 
 sensor{
@@ -438,7 +438,7 @@ enemy{
   y = 373,
   name = "boss",
   direction = 3,
-  breed = "agahnim_2",
+  breed = "lunarius_2",
   rank = 2,
   savegame_variable = "b728",
   treasure_variant = 1,
@@ -448,7 +448,7 @@ destination{
   layer = 1,
   x = 632,
   y = 453,
-  name = "ganon_dialog_destination_point",
+  name = "neptune_dialog_destination_point",
   direction = 1,
 }
 

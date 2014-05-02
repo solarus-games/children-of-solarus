@@ -986,10 +986,10 @@ npc{
   layer = 0,
   x = 240,
   y = 221,
-  name = "zelda",
+  name = "solaritine",
   direction = 3,
   subtype = "1",
-  sprite = "npc/zelda",
+  sprite = "npc/solaritine",
 }
 
 enemy{
@@ -998,7 +998,7 @@ enemy{
   y = 189,
   name = "boss",
   direction = 3,
-  breed = "ganon",
+  breed = "neptune",
   rank = 2,
   savegame_variable = "b881",
 }
