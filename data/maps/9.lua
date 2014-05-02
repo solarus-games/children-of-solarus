@@ -11,7 +11,7 @@ function map:on_started(destination)
   if game:get_value("b905") then
     -- enable dark world
     new_music = "dark_world"
-    map:set_tileset(13)
+    map:set_tileset("nether")
     map:set_entities_enabled("castle_east_bridge", false)
     map:set_entities_enabled("castle_east_bridge_off", true)
 

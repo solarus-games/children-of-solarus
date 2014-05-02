@@ -20,7 +20,7 @@ function map:on_started(destination)
     -- enable dark world
     if game:get_value("b905") then
       new_music = "dark_mountain"
-      map:set_tileset(13)
+      map:set_tileset("nether")
     else
       new_music = "overworld"
     end
