@@ -79,11 +79,6 @@ function title_screen:phase_title()
   }
 
   -- set up the appearance of images and texts
-  sol.timer.start(self, 5000, function()
-    sol.audio.play_sound("ok")
-    self.dx_img = sol.surface.create("menus/title_dx.png")
-  end)
-
   sol.timer.start(self, 6000, function()
     self.star_img = sol.surface.create("menus/title_star.png")
   end)
