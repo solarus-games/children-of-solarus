@@ -27,7 +27,7 @@ function map:on_started(destination)
     -- enable dark world
     if game:get_value("b905") then
       sol.audio.play_music("dark_world")
-      map:set_tileset("nether")
+      map:set_tileset(13)
     else
       sol.audio.play_music("overworld")
     end
@@ -45,7 +45,6 @@ function map:on_started(destination)
   local m = sol.movement.create("random_path")
   m:set_speed(32)
   m:start(chignon_woman)
-  chignon_woman:get_sprite():set_animation("walking")
 
   -- remove Tom's cave door if open
   if game:get_value("b36") then

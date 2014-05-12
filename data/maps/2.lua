@@ -1,6 +1,6 @@
 local map = ...
 local game = map:get_game()
--- gem house.
+-- Gem house.
 
 -- Initializations made when the map has just been loaded.
 local playing_game_1 = false

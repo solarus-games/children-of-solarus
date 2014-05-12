@@ -1,6 +1,6 @@
 local enemy = ...
 
--- A fire bat shot by Ganon.
+-- A fire bat shot by Neptune.
 
 function enemy:on_created()
 

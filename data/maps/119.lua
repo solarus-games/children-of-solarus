@@ -7,7 +7,7 @@ local arrows_timer
 
 function map:on_started(destination)
 
-  local new_music = nil
+  local new_music
   if destination == from_ending then
     -- game ending sequence
     hero:freeze()
@@ -20,7 +20,7 @@ function map:on_started(destination)
     -- enable dark world
     if game:get_value("b905") then
       new_music = "dark_mountain"
-      map:set_tileset("nether")
+      map:set_tileset(13)
     else
       new_music = "overworld"
     end
@@ -30,7 +30,7 @@ function map:on_started(destination)
 
       if not game:get_value("b299") then
 	-- boss not killed yet
-        new_music = "none"
+        new_music = nil
         map:set_entities_enabled("enemy", false) -- disable all simple enemies
       elseif not game:get_value("b298") then
 	-- boss killed but sword not got yet
@@ -51,6 +51,10 @@ function map:on_started(destination)
     else
       map:set_entities_enabled("roof_entrance", false)
     end
+  end
+
+  if boss ~= nil then
+    boss:set_enabled(false)
   end
 
   sol.audio.play_music(new_music)

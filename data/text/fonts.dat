@@ -17,8 +17,14 @@ font{
 
 font{
   id = "fixed",
-  file = "text/fixed8.fon",
-  size = 11,
+  file = "text/minecraftia.ttf",
+  size = 8,
+}
+
+font{
+  id = "chinese",
+  file = "text/wqy-zenhei.ttc",
+  size = 12,
 }
 
 font{

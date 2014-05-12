@@ -3,7 +3,7 @@ local map = ...
 
 -- Legend
 -- CB: Chest Button
--- GC: Gem Chest
+-- RC: Gem Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door

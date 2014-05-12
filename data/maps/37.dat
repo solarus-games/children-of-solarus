@@ -600,7 +600,9 @@ destructible{
   layer = 0,
   x = 72,
   y = 173,
-  subtype = "pot",
+  sprite = "entities/pot",
+  destruction_sound = "stone",
+  damage_on_enemies = 2,
   treasure_name = "gem",
 }
 
@@ -619,7 +621,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "to_outside",
-  transition = 1,
+  transition = "fade",
   destination_map = "5",
   destination = "from_billy_cave",
 }
@@ -649,7 +651,7 @@ teletransporter{
   width = 16,
   height = 16,
   name = "teletransporter",
-  transition = 2,
+  transition = "scrolling",
   destination_map = "121",
   destination = "_side",
 }

@@ -35,6 +35,9 @@ function map:on_started(destination)
   end
 
   -- boss
+  if boss ~= nil then
+    boss:set_enabled(false)
+  end
   map:set_doors_open("boss_door", true)
   if game:get_value("b625")
     and not game:get_value("b626") then
@@ -58,7 +61,7 @@ end
 function nw_block:on_moved()
 
   local x, y = self:get_position()
-  if x == 544 and y == 69 then
+  if x == 536 and y == 69 then
     -- make the block fall
     self:set_enabled(false)
     hole_a:set_enabled(true)
