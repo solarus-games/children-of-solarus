@@ -4,10 +4,14 @@ local game = map:get_game()
 
 function map:on_started(destination)
 
+  if boss ~= nil then
+    boss:set_enabled(false)
+  end
+
   neptune_npc:set_enabled(false)
   if destination == from_1F then
     if game:get_value("b728") then
-      -- lunarius already killed
+      -- Lunarius already killed
       lunarius_npc:set_enabled(false)
     end
   end
@@ -32,8 +36,8 @@ function start_boss_sensor:on_activated()
     end)
 
   elseif not game:is_dungeon_finished(8) then
-    -- lunarius already killed but neptune's sequence not done yet
-    -- (possible if the player dies or exits while lunarius is dying)
+    -- Lunarius already killed but Neptune's sequence not done yet
+    -- (possible if the player dies or exits while Lunarius is dying)
     hero:freeze()
     sol.timer.start(100, function()
       hero:teleport(52, "neptune_dialog_destination_point")

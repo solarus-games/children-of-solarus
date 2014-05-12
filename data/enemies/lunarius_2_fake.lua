@@ -28,7 +28,7 @@ function enemy:on_created()
 
   self:set_life(1)
   self:set_damage(8)
-  self:create_sprite("enemies/Lunarius_2_fake")
+  self:create_sprite("enemies/lunarius_2_fake")
   self:set_optimization_distance(0)
   self:set_size(16, 16)
   self:set_origin(8, 13)
@@ -184,7 +184,7 @@ end
 
 function enemy:receive_bounced_fireball(fireball)
 
-  if fireball:get_name():find("^Lunarius_fireball") then
+  if fireball:get_name():find("^lunarius_fireball") then
     -- Receive a fireball shot back by the hero: disappear.
     self:disappear()
   end

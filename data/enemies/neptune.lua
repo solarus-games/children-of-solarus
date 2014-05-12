@@ -47,7 +47,7 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
 
-  local sprite = self:create_sprite("enemies/Neptune")
+  local sprite = self:create_sprite("enemies/neptune")
   function sprite:on_animation_finished(animation)
     if animation == "jumping" then
       enemy:finish_jump()

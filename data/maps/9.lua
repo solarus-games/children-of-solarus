@@ -2,16 +2,20 @@ local map = ...
 local game = map:get_game()
 -- Outside world A2
 
-local fighting_boss = false -- lunarius
+local fighting_boss = false -- Lunarius
 
 function map:on_started(destination)
 
-  local new_music = nil
+  local new_music
+
+  if boss ~= nil then
+    boss:set_enabled(false)
+  end
 
   if game:get_value("b905") then
     -- enable dark world
     new_music = "dark_world"
-    map:set_tileset("nether")
+    map:set_tileset(13)
     map:set_entities_enabled("castle_east_bridge", false)
     map:set_entities_enabled("castle_east_bridge_off", true)
 
@@ -23,12 +27,12 @@ function map:on_started(destination)
 
     map:set_entities_enabled("teletransporter_lw", false)
 
-    -- lunarius fight
+    -- Lunarius fight
     if destination == from_dungeon_5_2F_ne
         and game:get_value("b507")
         and not game:get_value("b520") then
 
-      new_music = "none"
+      new_music = nil
       cannon:remove()
       map:set_entities_enabled("enemy", false) -- disable all simple enemies
     end
@@ -81,7 +85,7 @@ function start_boss_sensor:on_activated()
       and not game:get_value("b520")
       and not fighting_boss then
 
-    -- lunarius fight
+    -- Lunarius fight
     hero:freeze()
     map:set_entities_enabled("castle_roof_entrance", false)
     map:set_entities_enabled("castle_roof_stairs", false)

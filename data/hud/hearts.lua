@@ -17,7 +17,6 @@ function hearts:initialize(game)
 
   self.game = game
   self.surface = sol.surface.create(90, 18)
-  self.surface:set_transparency_color{0, 0, 0}
   self.dst_x = 0
   self.dst_y = 0
   self.empty_heart_sprite = sol.sprite.create("hud/empty_heart")
@@ -48,6 +47,12 @@ function hearts:check()
   local nb_max_hearts = self.game:get_max_life() / 4
   if nb_max_hearts ~= self.nb_max_hearts_displayed then
     need_rebuild = true
+
+    if nb_max_hearts < self.nb_max_hearts_displayed then
+      -- Decrease immediately if the max life is reduced.
+      self.nb_current_hearts_displayed = self.game:get_life()
+    end
+
     self.nb_max_hearts_displayed = nb_max_hearts
   end
 
@@ -115,8 +120,7 @@ end
 
 function hearts:rebuild_surface()
 
-  -- Transparency color.
-  self.surface:fill_color{0, 0, 0}
+  self.surface:clear()
 
   -- Display the hearts.
   for i = 0, self.nb_max_hearts_displayed - 1 do

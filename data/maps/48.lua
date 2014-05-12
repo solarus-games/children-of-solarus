@@ -2,7 +2,7 @@ local map = ...
 -- Dungeon 8 B1
 
 -- Legend
--- GC: Gem Chest
+-- RC: Gem Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door

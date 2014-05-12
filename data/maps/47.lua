@@ -3,7 +3,7 @@ local game = map:get_game()
 -- Dungeon 8 1F
 
 -- Legend
--- GC: Gem Chest
+-- RC: Gem Chest
 -- KC: Key Chest
 -- KP: Key Pot
 -- LD: Locked Door
@@ -46,7 +46,7 @@ function map:on_started(destination)
     map:remove_entities("room_LD5_enemy")
   end
 
-  -- door to Agahnim open if Billy's heart container was picked
+  -- door to Lunarius open if Billy's heart container was picked
   if game:get_value("b729") then
     map:set_doors_open("lunarius_door", true)
   end
@@ -59,6 +59,10 @@ function map:on_started(destination)
   -- boss key door and laser
   if game:get_value("b730") then
     boss_key_door_laser:remove()
+  end
+
+  if boss ~= nil then
+    boss:set_enabled(false)
   end
 end
 

@@ -586,3 +586,4 @@ language{ id = "en", description = "English" }
 language{ id = "es", description = "Español" }
 language{ id = "de", description = "Deutsch" }
 
+sound{ id = "running_obstacle", description = "running_obstacle" }

@@ -31,7 +31,7 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
 
-  sprite = self:create_sprite("enemies/Lunarius")
+  sprite = self:create_sprite("enemies/lunarius")
 end
 
 function enemy:on_restarted()
@@ -106,7 +106,7 @@ function enemy:fire_step_3()
 
     nb_sons_created = nb_sons_created + 1
     self:create_enemy{
-      name = "Lunarius_fireball_" .. nb_sons_created,
+      name = "lunarius_fireball_" .. nb_sons_created,
       breed = breed,
       x = 0,
       y = -21
@@ -122,7 +122,7 @@ end
 
 function enemy:receive_bounced_fireball(fireball)
 
-  if fireball:get_name():find("^Lunarius_fireball")
+  if fireball:get_name():find("^lunarius_fireball")
       and vulnerable then
     -- Receive a fireball shot back by the hero: get hurt.
     sol.timer.stop_all(self)
@@ -131,11 +131,11 @@ function enemy:receive_bounced_fireball(fireball)
   end
 end
 
-function enemy:on_hurt(attack, life_lost)
+function enemy:on_hurt(attack)
 
   local life = self:get_life()
   if life <= 0 then
-    self:get_map():remove_entities("Lunarius_fireball")
+    self:get_map():remove_entities("lunarius_fireball")
     self:set_life(1)
     finished = true
   elseif life <= initial_life / 3 then
@@ -145,9 +145,9 @@ end
 
 function enemy:end_dialog()
 
-  self:get_map():remove_entities("Lunarius_fireball")
+  self:get_map():remove_entities("lunarius_fireball")
   sprite:set_ignore_suspend(true)
-  self:get_map():get_game():start_dialog("dungeon_5.Lunarius_end")
+  self:get_map():get_game():start_dialog("dungeon_5.lunarius_end")
 end
 
 function enemy:escape()

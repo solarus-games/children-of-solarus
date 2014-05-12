@@ -46,7 +46,7 @@ function enemy:on_created()
   self:set_push_hero_on_sword(true)
   self:set_can_attack(false)
 
-  sprite = self:create_sprite("enemies/Lunarius_2")
+  sprite = self:create_sprite("enemies/lunarius_2")
 end
 
 function enemy:on_restarted()
@@ -154,7 +154,7 @@ function enemy:fire_step_3()
   local function throw_fire()
     nb_sons_created = nb_sons_created + 1
     self:create_enemy{
-      name = "Lunarius_fireball_" .. nb_sons_created,
+      name = "lunarius_fireball_" .. nb_sons_created,
       breed = next_fireball_breed,
       x = 0,
       y = -21,
@@ -184,7 +184,7 @@ end
 
 function enemy:receive_bounced_fireball(fireball)
 
-  if fireball:get_name():find("^Lunarius_fireball")
+  if fireball:get_name():find("^lunarius_fireball")
       and vulnerable then
     -- Receive a fireball shot back by the hero: get hurt or throw it back.
     if math.random(100) <= hurt_proba then
@@ -199,21 +199,21 @@ function enemy:receive_bounced_fireball(fireball)
   end
 end
 
-function enemy:on_hurt(attack, life_lost)
+function enemy:on_hurt(attack)
 
   local life = self:get_life()
   if life <= 0 then
     -- Dying.
-    self:get_map():remove_entities("Lunarius_fireball")
+    self:get_map():remove_entities("lunarius_fireball")
     self:get_map():remove_entities(self:get_name() .. "_")
     sprite:set_ignore_suspend(true)
-    self:get_map():get_game():start_dialog("dungeon_8.Lunarius_end")
+    self:get_map():get_game():start_dialog("dungeon_8.lunarius_end")
     sol.timer.stop_all(self)
   elseif life <= initial_life * 2 / 3 then
     -- Not dying yet: start creating fakes after a few hits.
     sprite:set_ignore_suspend(true)
     if not middle_dialog then
-      self:get_map():get_game():start_dialog("dungeon_8.Lunarius_middle")
+      self:get_map():get_game():start_dialog("dungeon_8.lunarius_middle")
       middle_dialog = true
     end
     self:create_fakes()
@@ -229,7 +229,7 @@ function enemy:create_fakes()
     local fake_name = prefix .. nb_fakes_created
     self:create_enemy{
       name = fake_name,
-      breed = "Lunarius_2_fake",
+      breed = "lunarius_2_fake",
     }
   end
 

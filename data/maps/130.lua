@@ -134,7 +134,6 @@ end
 
 local function unlight_torches()
 
-  print("unlight torches")
   for i = 1, 4 do
     map:get_entity("torch_" .. i):get_sprite():set_animation("unlit")
   end
@@ -189,10 +188,10 @@ local function create_bats()
   end
 end
 
--- Creates a stone that the hero can lift and throw to neptune.
+-- Creates a stone that the hero can lift and throw to Neptune.
 local function create_stone()
 
-  -- we have to check the position of neptune and the hero
+  -- we have to check the position of Neptune and the hero
   local x, y
   local boss_x, boss_y = boss:get_position()
   if boss_x < 240 then
@@ -207,15 +206,18 @@ local function create_stone()
     y = 205
   end
 
-  map:create_destructible{
-    subtype = "black_stone",
+  local stone = map:create_destructible{
     x = x,
     y = y,
     layer = 0,
-    on_destroyed = function()
-      allow_stone_creation = true
-    end
+    sprite = "entities/stone_small_black",
+    destruction_sound = "stone",
+    weight = 2,
+    damage_on_enemies = 4,
   }
+  stone.on_lifting = function()
+    allow_stone_creation = true
+  end
   allow_stone_creation = false
 end
 
@@ -258,7 +260,7 @@ local function distant_switch_activated(switch)
     end
 
   elseif index == 2 then
-    -- create the stone that makes neptune vulnerable
+    -- create the stone that makes Neptune vulnerable
     if allow_stone_creation then
       sol.audio.play_sound("secret")
       create_stone()
@@ -281,7 +283,7 @@ end
 
 -- Torches on this map interact with the map script
 -- because we don't want usual behavior from items/lamp.lua:
--- we want a longer delay and special neptune interaction
+-- we want a longer delay and special Neptune interaction
 local function torch_interaction(torch)
   game:start_dialog("torch.need_lamp")
 end
