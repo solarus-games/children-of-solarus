@@ -16,34 +16,33 @@ function submenu:on_started()
   self.save_dialog_sprite = sol.sprite.create("menus/pause_save_dialog")
   self.save_dialog_state = 0
 
-  local dialog_font = sol.language.get_dialog_font()
   local menu_font = sol.language.get_menu_font()
 
   self.question_text_1 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     color = {8, 8, 8},
-    font = dialog_font,
+    font = menu_font,
   }
   self.question_text_2 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     color = {8, 8, 8},
-    font = dialog_font,
+    font = menu_font,
   }
   self.answer_text_1 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     color = {8, 8, 8},
     text_key = "save_dialog.yes",
-    font = dialog_font,
+    font = menu_font,
   }
   self.answer_text_2 = sol.text_surface.create{
     horizontal_alignment = "center",
     vertical_alignment = "middle",
     color = {8, 8, 8},
     text_key = "save_dialog.no",
-    font = dialog_font,
+    font = menu_font,
   }
 
   self.caption_text_1 = sol.text_surface.create{
@@ -210,10 +209,10 @@ function submenu:draw_save_dialog_if_any(dst_surface)
     local x = width / 2
     local y = height / 2
     self.save_dialog_sprite:draw(dst_surface, x - 110, y - 33)
-    self.question_text_1:draw(dst_surface, x, y - 8)
-    self.question_text_2:draw(dst_surface, x, y + 8)
-    self.answer_text_1:draw(dst_surface, x - 60, y + 28)
-    self.answer_text_2:draw(dst_surface, x + 59, y + 28)
+    self.question_text_1:draw(dst_surface, x, y - 11)
+    self.question_text_2:draw(dst_surface, x, y + 5)
+    self.answer_text_1:draw(dst_surface, x - 60, y + 25)
+    self.answer_text_2:draw(dst_surface, x + 59, y + 25)
   end
 end
 

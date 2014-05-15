@@ -12,8 +12,12 @@ function savegame_menu:on_started()
   self.cloud_img = sol.surface.create("menus/selection_menu_cloud.png")
   self.save_container_img = sol.surface.create("menus/selection_menu_save_container.png")
   self.option_container_img = sol.surface.create("menus/selection_menu_option_container.png")
-  self.option1_text = sol.text_surface.create()
-  self.option2_text = sol.text_surface.create()
+  self.option1_text = sol.text_surface.create{
+    font = sol.language.get_menu_font(),
+  }
+  self.option2_text = sol.text_surface.create{
+    font = sol.language.get_menu_font(),
+  }
   self.title_text = sol.text_surface.create{
     horizontal_alignment = "center",
     font = sol.language.get_menu_font(),
@@ -168,7 +172,7 @@ function savegame_menu:on_draw(dst_surface)
 
   -- Savegames container.
   self.background_img:draw(self.surface, 37, 38)
-  self.title_text:draw(self.surface, 160, 54)
+  self.title_text:draw(self.surface, 160, 51)
 
   -- Phase-specific draw method.
   local method_name = "draw_phase_" .. self.phase
@@ -183,7 +187,7 @@ function savegame_menu:draw_savegame(slot_index)
 
   local slot = self.slots[slot_index]
   self.save_container_img:draw(self.surface, 57, 48 + slot_index * 27)
-  slot.player_name_text:draw(self.surface, 87, 61 + slot_index * 27)
+  slot.player_name_text:draw(self.surface, 87, 58 + slot_index * 27)
 
   if slot.hearts_view ~= nil then
     slot.hearts_view:set_dst_position(168, 51 + slot_index * 27)
@@ -220,12 +224,12 @@ function savegame_menu:draw_bottom_buttons()
   if self.option1_text:get_text():len() > 0 then
     x = 57
     self.option_container_img:draw(self.surface, x, y)
-    self.option1_text:draw(self.surface, 90, 172)
+    self.option1_text:draw(self.surface, 90, 169)
   end
   if self.option2_text:get_text():len() > 0 then
     x = 165
     self.option_container_img:draw(self.surface, x, y)
-    self.option2_text:draw(self.surface, 198, 172)
+    self.option2_text:draw(self.surface, 198, 169)
   end
 end
 
@@ -239,7 +243,7 @@ function savegame_menu:read_savegames()
     slot.number_img = sol.surface.create("menus/selection_menu_save" .. i .. ".png")
 
     slot.player_name_text = sol.text_surface.create{
-      font = sol.language.get_dialog_font(),
+      font = sol.language.get_menu_font(),
     }
     if sol.game.exists(slot.file_name) then
       -- Existing file.
@@ -729,7 +733,7 @@ function savegame_menu:draw_phase_options()
 
   -- All options.
   for i, option in ipairs(self.options) do
-    local y = 70 + i * 16
+    local y = 67 + i * 16
     option.label_text:draw(self.surface, 64, y)
     option.value_text:draw(self.surface, 266, y)
   end
@@ -918,7 +922,7 @@ function savegame_menu:draw_phase_choose_name()
 
   -- Name and letters.
   self.name_arrow_sprite:draw(self.surface, 57, 76)
-  self.player_name_text:draw(self.surface, 67, 85)
+  self.player_name_text:draw(self.surface, 67, 82)
   self.letters_img:draw(self.surface, 57, 98)
 end
 

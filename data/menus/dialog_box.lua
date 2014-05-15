@@ -498,7 +498,7 @@ function dialog_box:on_draw(dst_surface)
 
   -- Draw the text.
   local text_x = x + (self.icon_index == nil and 16 or 48)
-  local text_y = y - 1
+  local text_y = y - 4
   for i = 1, nb_visible_lines do
     text_y = text_y + 13
     if self.selected_answer ~= nil
