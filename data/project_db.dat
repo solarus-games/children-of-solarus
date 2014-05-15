@@ -582,9 +582,6 @@ enemy{ id = "billy", description = "Billy" }
 enemy{ id = "neptune", description = "Neptune" }
 enemy{ id = "fire_bat", description = "Fire bat" }
 
-language{ id = "fr", description = "Français" }
 language{ id = "en", description = "English" }
-language{ id = "es", description = "Español" }
-language{ id = "de", description = "Deutsch" }
 
 sound{ id = "running_obstacle", description = "running_obstacle" }
