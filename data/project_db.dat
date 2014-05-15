@@ -271,6 +271,7 @@ sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/stone_small_black", description = "Small black stone" }
