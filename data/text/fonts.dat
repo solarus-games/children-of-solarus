@@ -3,28 +3,15 @@
 -- tools/data_files_conversion/0.9.2_to_1.0.0/convert_font_list.lua.
 
 font{
-  id = "dialog",
-  file = "text/la.ttf",
-  size = 11,
+  id = "8_bit",
+  file = "text/8_bit.png",
   default = true
-}
-
-font{
-  id = "dialog_big",
-  file = "text/la.ttf",
-  size = 18,
 }
 
 font{
   id = "fixed",
   file = "text/minecraftia.ttf",
   size = 8,
-}
-
-font{
-  id = "chinese",
-  file = "text/wqy-zenhei.ttc",
-  size = 12,
 }
 
 font{
