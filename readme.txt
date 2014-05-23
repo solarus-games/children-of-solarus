@@ -78,7 +78,7 @@ $ solarus /usr/local/share/solarus/ChildrenOfSolarus
 3.2  Change the install directory
 ---------------------------------
 
-You may want to install zsdx in another directory
+You may want to install Children of Solarus in another directory
 (e.g. so that no root access is necessary). You can specify this directory
 as a parameter of cmake:
 
