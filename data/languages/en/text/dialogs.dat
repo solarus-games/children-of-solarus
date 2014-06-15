@@ -1,4 +1,4 @@
--- Solaritine Mystery of Solarus DX:
+-- Solarina Mystery of Solarus DX:
 -- English dialogs
 
 -- ****** Contributors ******
@@ -2584,7 +2584,7 @@ However, the sorceror
 was in fact plotting
 against the royal
 family. He tried to
-bring back Neptunedorf,
+bring back Neptune,
 King of Thieves, from a
 forgotten time.
 ]]
@@ -2615,7 +2615,7 @@ $2Eventually, he who was
 known as the Hero
 repelled the evil.
 Thanks to his courage,
-he defeated Neptunedorf,
+he defeated Neptune,
 who had built an
 impressive pyramid
 within the Golden Land.
@@ -2629,7 +2629,7 @@ dialog{
   skip = "current",
   text = [[
 $2The young Hero then
-wished for Neptunedorf
+wished for Neptune
 to be imprisoned
 forever in the Golden
 Land. The King of
@@ -2670,9 +2670,9 @@ guidance of his master
 Sahasrahla, trusted
 the heiress of the
 royal powers, Princess
-Solaritine, with the
+Solarina, with the
 Triforce.
-Solaritine teamed with eight
+Solarina teamed with eight
 mysterious children to
 shatter the Triforce
 into eight fragments
@@ -3227,7 +3227,7 @@ No
 -- C'est un clin d'oeil à Link's Awakening, dans le stand
 -- de pêche tout au début du jeu, quand on refuse de jouer ou de rejouer
 -- English Translation taken from the actual LA text dump.
--- http://www.Solaritinelegends.net/files/emulation/dumps/Solaritine4/usa/z4dump(usa).html
+-- http://www.zeldalegends.net/files/emulation/dumps/zelda4/usa/z4dump(usa).html
 dialog{
   id = "gem_house.game_1.not_playing",
   text = [[
@@ -4095,7 +4095,7 @@ death and get a hold of
 the Triforce.
 Who could have done
 that?
-Surely Neptunedorf and
+Surely Neptune and
 his minions...
 The Seal of the Seven
 Sages weakened after
@@ -4514,7 +4514,7 @@ $2$v... Thank you. You
 saved my life. I am one
 of the eight protectors
 called forth by
-Princess Solaritine. We are
+Princess Solarina. We are
 devoted to watching
 over the remains of the
 holy relic, the
@@ -4725,7 +4725,7 @@ During my expedition to
 Mount Terror, I brought
 back a priceless
 treasure. Even Princess
-Solaritine would not have
+Solarina would not have
 been able to find it.
 It's an extremely rare
 plant.
@@ -5544,11 +5544,11 @@ $2$v... Thank you.
 You saved my life.
 I am one of the eight
 protectors called forth
-by Princess Solaritine to
+by Princess Solarina to
 watch over the Triforce.
 Using the power of the
 Solarus amulet, a relic
-worn by Princess Solaritine,
+worn by Princess Solarina,
 is the only way to
 restore the Triforce.
 We have shattered it
@@ -5556,7 +5556,7 @@ into eight pieces
 hidden across the
 kingdom. We are here
 to guard the eight
-fragments, as Solaritine
+fragments, as Solarina
 watches over the
 Solarus Amulet.
 It must not fall into
@@ -5619,7 +5619,7 @@ never trouble the
 Kingdom again.
 I am one of the eight
 protectors called forth
-by Princess Solaritine.
+by Princess Solarina.
 The Triforce is still
 in danger as long as
 one of my brothers is
@@ -5682,7 +5682,7 @@ $2$v... Thank you.
 You saved my life.
 I am one of the eight
 protectors called forth
-by Princess Solaritine.
+by Princess Solarina.
 You have demonstrated
 remarkable courage.
 Thanks to you, we are
@@ -5952,7 +5952,7 @@ castle...
 $v... You must now
 travel to Mount Terror.
 Lunarius went there
-to look for Solaritine.
+to look for Solarina.
 You must first free
 Sahasrahla before the
 sorcerer manages to
@@ -6017,7 +6017,7 @@ to resist a while
 longer...
 They coaxed me into
 revealing the
-location of Solaritine and
+location of Solarina and
 the Solarus children.
 Please, protect them
 from danger, before
@@ -6032,7 +6032,7 @@ Lunarius, else the
 sorcerer could break
 the seal created by
 the Solarus Amulet, the
-relic worn by Solaritine,
+relic worn by Solarina,
 necessary to the
 gathering of the
 Triforce shards.
@@ -6047,7 +6047,7 @@ place or even a world,
 as the seven sages once
 did when they sealed
 away the Golden Land.
-Solaritine is the heiress of
+Solarina is the heiress of
 that power. She used it
 to seal the Triforce
 shards, using the eight
@@ -6272,7 +6272,7 @@ Prepare to die.
 -----------------------
 
 dialog{
-  id = "dungeon_9.Solaritine",
+  id = "dungeon_9.Solarina",
   text = [[
 $1$v... Thank you.
 Your victory over evil
@@ -6291,7 +6291,7 @@ is whole once again.
 -----------------------
 
 dialog{
-  id = "dungeon_9.Solaritine_children",
+  id = "dungeon_9.Solarina_children",
   text = [[
 $1I must destroy this
 relic. The power of
@@ -6306,7 +6306,7 @@ good purpose as you
 once used it, evil
 will always try to
 obtain it, like
-Lunarius and Neptunedorf.
+Lunarius and Neptune.
 With the power of the
 eight beings created
 by the Solarus Essence,
@@ -6319,7 +6319,7 @@ I must destroy it.
 -----------------------
 
 dialog{
-  id = "dungeon_9.Solaritine_end",
+  id = "dungeon_9.Solarina_end",
   text = [[
 $1It is over.$0
 
@@ -6445,12 +6445,12 @@ Thanks for playing!$0
 -- Remember that properties "id" and "text" are the only ones
 -- imposed by the Solarus engine.
 -- All other properties are custom, they work with
--- the specific dialog box system of Solaritine Mystery of Solarus DX.
--- In other words, the documentation below relates to Solaritine Mystery of
+-- the specific dialog box system of Solarina Mystery of Solarus DX.
+-- In other words, the documentation below relates to Solarina Mystery of
 -- Solarus DX (or to any other quest that uses the same dialog box system),
 -- but not to all Solarus quests.
 
--- In Solaritine Mystery of Solarus DX, a dialog has the following properties:
+-- In Solarina Mystery of Solarus DX, a dialog has the following properties:
 --
 -- - id (string): A name identifying the dialog.
 --   The id allows the engine and the scripts to refer to the dialog whenever they

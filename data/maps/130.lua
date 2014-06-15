@@ -50,7 +50,7 @@ function map:on_started(destination)
   if not game:get_value("b881") then
     sol.audio.play_music("neptune_appears")
     boss:set_enabled(true)
-    solaritine:set_enabled(false)
+    solaria:set_enabled(false)
     map:set_entities_enabled("child", false)
     hero:save_solid_ground()
   end
@@ -67,7 +67,7 @@ function map:on_opening_transition_finished(destination)
         sol.audio.play_music("neptune_battle")
       end)
     else
-      start_solaritine_sequence()
+      start_solaria_sequence()
     end
   end
 end
@@ -96,7 +96,7 @@ if boss ~= nil then
         sol.audio.play_music("triforce")
         hero:freeze()
         hero:set_direction(1)
-        solaritine:set_enabled(true)
+        solaria:set_enabled(true)
         for i = 1, 8 do
           local npc = map:get_entity("child_" .. i)
           npc:set_enabled(true)
@@ -105,9 +105,9 @@ if boss ~= nil then
         end
 
         sol.timer.start(3000, function()
-          game:start_dialog("dungeon_9.solaritine", game:get_player_name(), function()
+          game:start_dialog("dungeon_9.solaria", game:get_player_name(), function()
             sol.timer.start(1000, function()
-              game:start_dialog("dungeon_9.solaritine_children", function()
+              game:start_dialog("dungeon_9.solaria_children", function()
                 sol.audio.stop_music()
                 sol.audio.play_sound("world_warp")
                 sol.timer.start(1000, function()
@@ -116,7 +116,7 @@ if boss ~= nil then
                   end
                 end)
                 sol.timer.start(5000, function()
-                  game:start_dialog("dungeon_9.solaritine_end", function()
+                  game:start_dialog("dungeon_9.solaria_end", function()
                     sol.timer.start(2000, function()
                       hero:teleport(8, "from_ending")
                       -- Yeah! New nested anonymous functions record!

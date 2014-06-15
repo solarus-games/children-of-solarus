@@ -18,7 +18,7 @@ end
 
 function title_screen:phase_zs_presents()
 
-  -- "Solaritine Solarus presents" displayed for two seconds
+  -- "Solarina Solarus presents" displayed for two seconds
   self.phase = "zs_presents"
 
   self.zs_presents_img =
