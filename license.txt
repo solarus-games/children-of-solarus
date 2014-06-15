@@ -17,6 +17,7 @@ Data files under CC BY-SA 3.0:                      Author (if known)
 art_src/dark.xcf                                    Bertram
 art_src/bomb_n_leaves.xcf                           Bertram - From LPC sprites: http://opengameart.org/content/lpc-tile-atlas, http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 art_src/chests.xcf                                  Bertram - adapted from sprites here: http://opengameart.org/content/modified-32x32-treasure-chest, http://opengameart.org/content/jrpg-chests-16-32-64-and-128px-squared
+art_src/logo/*                                      Oliver Cléro
 **.dat
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
@@ -75,7 +76,7 @@ sprites/menus/title_daylight_*.png
 sprites/menus/title_night_*.png
 sprites/menus/title_star.png
 sprites/menus/title_sunset_*.png
-sprites/menus/title_logo.png                        Nathan Moore <nathanmoore@cox.net>
+sprites/menus/title_logo.png                        Oliver Cléro
 sprites/npc/inferno.png
 sprites/npc/newlink.png
 sprites/npc/solarus_child*.png
