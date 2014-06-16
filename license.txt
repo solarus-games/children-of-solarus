@@ -94,6 +94,7 @@ text/minecraftia.png                                Andrew Tyler: http://www.and
 Data files under public domain:
 -------------------------------
 text/8_bit.png                                      Christopho, adapted from: http://opengameart.org/content/a-package-of-8-bit-fonts-for-grafx2-and-linux
+sprites/menus/selection_menu_letters.png            Nate-Devv, apdapted from text/8_bit.png
 
 Files with an original name but with Nintendo content:
 ------------------------------------------------------
@@ -147,7 +148,6 @@ sprites/hud/small_key_icon.png
 sprites/menus/dungeon_map_icons.png
 sprites/menus/hero_head.png
 sprites/menus/outside_world_map.png
-sprites/menus/selection_menu_letters.png
 sprites/npc/alttp.png
 sprites/npc/black_knight_soldier.png
 sprites/npc/witch.png
