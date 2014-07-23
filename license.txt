@@ -5,7 +5,7 @@ in version 3.
 Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0).
 http://creativecommons.org/licenses/by-sa/3.0/
 
-- Some graphics, sounds and names in Zelda Mystery of Solarus DX include
+- Some graphics, sounds and names in Children of Solarus include
 content that belong to Nintendo. We don't own this content.
 
 Scripts under GNU GPL v3:
@@ -18,6 +18,7 @@ art_src/dark.xcf                                    Bertram
 art_src/bomb_n_leaves.xcf                           Bertram - From LPC sprites: http://opengameart.org/content/lpc-tile-atlas, http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 art_src/chests.xcf                                  Bertram - adapted from sprites here: http://opengameart.org/content/modified-32x32-treasure-chest, http://opengameart.org/content/jrpg-chests-16-32-64-and-128px-squared
 art_src/logo/*                                      Oliver Cléro
+art_src/title/*                                     Oliver Cléro
 **.dat
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
@@ -72,10 +73,10 @@ sprites/menus/selection_menu_mode.png
 sprites/menus/selection_menu_option_container.png
 sprites/menus/selection_menu_save*.png
 sprites/menus/selection_menu_save_container.png
-sprites/menus/title_daylight_*.png
-sprites/menus/title_night_*.png
-sprites/menus/title_star.png
-sprites/menus/title_sunset_*.png
+sprites/menus/title_daylight_*.png                  Oliver Cléro
+sprites/menus/title_night_*.png                     Oliver Cléro
+sprites/menus/title_star.png                        Oliver Cléro
+sprites/menus/title_sunset_*.png                    Oliver Cléro
 sprites/menus/title_logo.png                        Oliver Cléro
 sprites/npc/inferno.png
 sprites/npc/newlink.png
