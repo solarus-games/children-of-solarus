@@ -87,6 +87,7 @@ musics/boss_intro.ogg                               Eduardo Dueñas <duenase@hot
 musics/great_fairy.ogg                              Eduardo Dueñas <duenase@hotmail.com>
 musics/fairy_intro.ogg                              Eduardo Dueñas <duenase@hotmail.com>
 musics/fanfare.ogg                                  Eduardo Dueñas <duenase@hotmail.com>
+musics/la_mountains.ogg                             Eduardo Dueñas <duenase@hotmail.com>
 musics/title_screen.ogg                             Eduardo Dueñas <duenase@hotmail.com>
 musics/village.ogg                                  Eduardo Dueñas <duenase@hotmail.com>
 musics/witch_hut.ogg                                Eduardo Dueñas <duenase@hotmail.com>
