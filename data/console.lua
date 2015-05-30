@@ -9,19 +9,14 @@ local console = {
   history_capacity = 50,   -- Maximum size of the history.
   history_position = 1,    -- Current position when browsing the history.
   input_text_surface = sol.text_surface.create{
-    font = "fixed"
+    font = "minecraftia",
+    font_size = 8,
   },
   output_text_surface = sol.text_surface.create{
-    font = "fixed"
+    font = "minecraftia",
+    font_size = 8,
   },
 }
-
--- Global function tp to mean hero:teleport()
-function tp(...)
-
-  local hero = sol.main.game and sol.main.game:get_hero() or nil
-  hero:teleport(...)
-end
 
 function console:on_started()
   self.enabled = true
@@ -191,6 +186,8 @@ function console.print(...)
     local arg = select(i, ...)
     if type(arg) == "string" or type(arg) == "number" then
       text = text .. arg
+    elseif type(arg) == "boolean" then
+      text = text .. (arg and "true" or "false")
     else
       text = text .. type(arg)
     end

@@ -52,11 +52,14 @@ function game:initialize_dialog_box()
   game.dialog_box = dialog_box
 
   -- Initialize dialog box data.
+  local font, font_size = sol.language.get_dialog_font()
   for i = 1, nb_visible_lines do
     dialog_box.lines[i] = ""
     dialog_box.line_surfaces[i] = sol.text_surface.create{
       horizontal_alignment = "left",
       vertical_alignment = "top",
+      font = font,
+      font_size = font_size,
     }
   end
   dialog_box.dialog_surface = sol.surface.create(sol.video.get_quest_size())
@@ -312,7 +315,6 @@ function dialog_box:show_more_lines()
 
   -- Prepare the 3 lines.
   for i = 1, nb_visible_lines do
-    self.line_surfaces[i]:set_font(sol.language.get_dialog_font())
     self.line_surfaces[i]:set_text("")
     if self:has_more_lines() then
       self.lines[i] = self.next_line

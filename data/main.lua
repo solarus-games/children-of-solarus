@@ -252,6 +252,6 @@ end
 function sol.language.get_menu_font(language)
 
   -- No font differences between languages (for now).
-  return "fixed"
+  return "minecraftia", 8
 end
 

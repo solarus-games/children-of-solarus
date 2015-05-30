@@ -22,9 +22,11 @@ function language_menu:on_started()
     self.languages = {}
     for _, id in ipairs(ids) do
       local language = {}
+      local font, font_size = sol.language.get_menu_font(id)
       language.id = id
       language.text = sol.text_surface.create{
-        font = sol.language.get_menu_font(id),
+        font = font,
+        font_size = font_size,
         text = sol.language.get_language_name(id),
         horizontal_alignment = "center"
       }
