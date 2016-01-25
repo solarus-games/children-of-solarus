@@ -9952,7 +9952,7 @@ tile{
 }
 
 destination{
-  layer = 1,
+  layer = 0,
   x = 440,
   y = 437,
   name = "from_dungeon_10",
