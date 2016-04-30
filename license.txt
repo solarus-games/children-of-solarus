@@ -32,6 +32,7 @@ musics/sword_fanfare.ogg                            Eduardo Dueñas <duenase@hot
 musics/title_screen.ogg                             Eduardo Dueñas <duenase@hotmail.com>
 musics/village.ogg                                  Eduardo Dueñas <duenase@hotmail.com>
 musics/witch_hut.ogg                                Eduardo Dueñas <duenase@hotmail.com>
+sounds/secret.ogg                                   Eduardo Dueñas <duenase@hotmail.com>
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
 sprites/enemies/billy.png
