@@ -22,6 +22,7 @@ art_src/logo/*                                      Oliver Cléro
 art_src/title/*                                     Oliver Cléro
 musics/boss.ogg                                     Eduardo Dueñas <duenase@hotmail.com>
 musics/boss_intro.ogg                               Eduardo Dueñas <duenase@hotmail.com>
+musics/caroussel.ogg                                NoufNouf
 musics/great_fairy.ogg                              Eduardo Dueñas <duenase@hotmail.com>
 musics/fairy_intro.ogg                              Eduardo Dueñas <duenase@hotmail.com>
 musics/fanfare.ogg                                  Eduardo Dueñas <duenase@hotmail.com>
