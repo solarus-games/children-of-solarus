@@ -5,6 +5,8 @@ properties{
   height = 1120,
   world = "dungeon_4",
   floor = -1,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "11",
   music = "light_world_dungeon",
 }

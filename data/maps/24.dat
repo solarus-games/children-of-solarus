@@ -5,6 +5,8 @@ properties{
   height = 696,
   world = "dungeon_1",
   floor = -1,
+  min_layer = 0,
+  max_layer = 2,
   tileset = "5",
   music = "light_world_dungeon",
 }
@@ -4590,7 +4592,6 @@ enemy{
   name = "boss",
   direction = 3,
   breed = "papillosaur_king",
-  rank = 2,
   savegame_variable = "b63",
   treasure_name = "heart_container",
   treasure_variant = 1,

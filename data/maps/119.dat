@@ -4,6 +4,8 @@ properties{
   width = 640,
   height = 752,
   world = "outside_world",
+  min_layer = 0,
+  max_layer = 2,
   tileset = "overworld",
   music = "same",
 }
@@ -10109,7 +10111,6 @@ enemy{
   name = "boss",
   direction = 3,
   breed = "poutroxor",
-  rank = 2,
   savegame_variable = "b299",
   treasure_variant = 1,
 }

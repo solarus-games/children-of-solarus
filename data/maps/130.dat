@@ -4,6 +4,8 @@ properties{
   width = 480,
   height = 480,
   world = "dungeon_9",
+  min_layer = 0,
+  max_layer = 2,
   tileset = "15",
 }
 
@@ -999,7 +1001,6 @@ enemy{
   name = "boss",
   direction = 3,
   breed = "neptune",
-  rank = 2,
   savegame_variable = "b881",
 }
 
