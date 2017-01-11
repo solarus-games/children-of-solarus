@@ -92,7 +92,7 @@ function solarus_logo_menu:step1()
   sword:stop_movement()
   sword:set_xy(-48, 48)
   -- Play the sword sound.
-  sol.audio.play_sound("solarus_logo")
+  sol.audio.play_sound("gem_counter_end")
   -- Update the surface.
   rebuild_surface()
 end
