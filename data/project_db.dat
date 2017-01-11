@@ -50,7 +50,7 @@ map{ id = "16", description = "Smith cave" }
 map{ id = "17", description = "Dungeon 10 1F" }
 map{ id = "18", description = "Shop" }
 map{ id = "19", description = "Cake shop" }
-map{ id = "2", description = "gem House" }
+map{ id = "2", description = "Gem House" }
 map{ id = "20", description = "Lyriann Cave 1F" }
 map{ id = "21", description = "Lyriann Cave B1" }
 map{ id = "23", description = "Dungeon 1 1F" }
@@ -154,6 +154,7 @@ tileset{ id = "6", description = "Intro" }
 tileset{ id = "7", description = "Brown dungeon (LW)" }
 tileset{ id = "8", description = "Blue dungeon (DW)" }
 tileset{ id = "9", description = "Green dungeon (DW)" }
+tileset{ id = "diarandor/light_overworld", description = "Light Overworld" }
 tileset{ id = "nether", description = "Nether" }
 tileset{ id = "overworld", description = "Overworld" }
 
@@ -238,6 +239,8 @@ sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/bone_key_door", description = "Bone key door" }
+sprite{ id = "entities/boomerang1", description = "Boomerang 1" }
+sprite{ id = "entities/boomerang2", description = "Boomerang 2" }
 sprite{ id = "entities/bush", description = "Bush" }
 sprite{ id = "entities/cannon", description = "Cannon" }
 sprite{ id = "entities/castle_lock", description = "Castle prison lock" }
@@ -296,20 +299,21 @@ sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
 sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
 sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
-sprite{ id = "hud/action_icon_flip", description = "HUD: Action icon" }
+sprite{ id = "hud/action_icon_flip", description = "Action icon" }
 sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
-sprite{ id = "hud/empty_heart", description = "HUD: Empty heart" }
-sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
-sprite{ id = "hud/magic_bar", description = "HUD: Magic bar" }
-sprite{ id = "hud/pause_icon_flip", description = "HUD: Pause icon" }
-sprite{ id = "hud/sword_icon_flip", description = "HUD: Sword icon" }
-sprite{ id = "menus/arrow", description = "Menu: Arrow" }
-sprite{ id = "menus/hero_head", description = "Menu: Hero head" }
-sprite{ id = "menus/hero_point", description = "Menu: Hero point" }
-sprite{ id = "menus/options_cursor", description = "Menu: Options cursor" }
-sprite{ id = "menus/pause_cursor", description = "Menu: Pause cursor" }
-sprite{ id = "menus/pause_save_dialog", description = "Menu: Pause save dialog" }
-sprite{ id = "menus/selection_menu_cursor", description = "Menu: Savegame cursor" }
+sprite{ id = "hud/empty_heart", description = "Empty heart" }
+sprite{ id = "hud/gameover_fade", description = "Game-over fade" }
+sprite{ id = "hud/magic_bar", description = "Magic bar" }
+sprite{ id = "hud/pause_icon_flip", description = "Pause icon" }
+sprite{ id = "hud/sword_icon_flip", description = "Sword icon" }
+sprite{ id = "menus/arrow", description = "Arrow" }
+sprite{ id = "menus/hero_head", description = "Hero head" }
+sprite{ id = "menus/hero_point", description = "Hero point" }
+sprite{ id = "menus/options_cursor", description = "Options cursor" }
+sprite{ id = "menus/pause_cursor", description = "Pause cursor" }
+sprite{ id = "menus/pause_save_dialog", description = "Pause save dialog" }
+sprite{ id = "menus/selection_menu_cursor", description = "Savegame cursor" }
+sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "npc/billy", description = "Billy" }
 sprite{ id = "npc/black_knight_soldier", description = "Black Knight Soldier" }
 sprite{ id = "npc/castle_guard", description = "Castle guard" }
@@ -549,6 +553,7 @@ enemy{ id = "billy", description = "Billy" }
 enemy{ id = "blue_bullblin", description = "Bullblin (blue)" }
 enemy{ id = "blue_dogman", description = "Dogman (blue)" }
 enemy{ id = "blue_duck_soldier", description = "Duck Soldier (blue)" }
+enemy{ id = "blue_fireball_triple", description = "Triple blue Fireball" }
 enemy{ id = "blue_flame", description = "Flame (blue)" }
 enemy{ id = "blue_hardhat_beetle", description = "Hardhat Beetle (blue)" }
 enemy{ id = "blue_knight_soldier", description = "Knight Soldier (blue)" }
@@ -560,12 +565,14 @@ enemy{ id = "drakomos_head", description = "Drakomos head" }
 enemy{ id = "drakomos_lava_spawner", description = "Drakomos lava spawner" }
 enemy{ id = "evil_tile", description = "Evil Tile" }
 enemy{ id = "fire_bat", description = "Fire bat" }
+enemy{ id = "fire_circle", description = "Fire circle" }
 enemy{ id = "fireball_simple", description = "Fireball (simple)" }
-enemy{ id = "fireball_triple", description = "Fireball (triple)" }
 enemy{ id = "firebird", description = "Fire Bird" }
 enemy{ id = "flora_gohma", description = "Flora Gohma" }
 enemy{ id = "flora_gohma_eye", description = "Flora Gohma eye" }
 enemy{ id = "gelidrak", description = "Gelidrak" }
+enemy{ id = "gelidrak_head", description = "Gelidrak Head" }
+enemy{ id = "gelidrak_tail", description = "Gelidrak Tail" }
 enemy{ id = "gibdo", description = "Gibdo" }
 enemy{ id = "globul", description = "Globul" }
 enemy{ id = "green_duck_soldier", description = "Duck Soldier (green)" }
@@ -579,6 +586,7 @@ enemy{ id = "lunarius_2", description = "Lunarius (second fight)" }
 enemy{ id = "lunarius_2_fake", description = "Fake Lunarius (second fight)" }
 enemy{ id = "mandible", description = "Mandible" }
 enemy{ id = "master_arbror", description = "Master Arbror" }
+enemy{ id = "mini_mowatulla", description = "Mini Mowatulla" }
 enemy{ id = "minillosaur_egg_fixed", description = "Minillosaur Egg (thrown)" }
 enemy{ id = "minillosaur_egg_thrown", description = "Minillosaur Egg (fixed)" }
 enemy{ id = "mowatulla", description = "Mowatulla" }
@@ -591,6 +599,8 @@ enemy{ id = "poutroxor", description = "Poutroxor" }
 enemy{ id = "red_bullblin", description = "Bullblin (red)" }
 enemy{ id = "red_dogman", description = "Dogman (red)" }
 enemy{ id = "red_duck_soldier", description = "Duck Soldier (red)" }
+enemy{ id = "red_fireball_triple", description = "Red triple Fireball" }
+enemy{ id = "red_flame", description = "Red flame" }
 enemy{ id = "red_hardhat_beetle", description = "Hardhat Beetle (red)" }
 enemy{ id = "red_helmasaur", description = "Helmasaur (red)" }
 enemy{ id = "red_knight_soldier", description = "Knight Soldier (red)" }
