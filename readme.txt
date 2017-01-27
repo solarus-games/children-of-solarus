@@ -90,3 +90,5 @@ This installs the files described above, with the
 /usr/local prefix replaced by the one you specified.
 The script generated runs solarus with the appropriate quest path.
 
+
+Join the chat at https://gitter.im/solarus-games/children-of-solarus
