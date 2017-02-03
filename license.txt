@@ -192,7 +192,6 @@ sprites/enemies/neptune.png
 Files that include content from Nintendo (to be removed):
 ---------------------------------------------------------
 languages/*/images/*.png
-musics/*.it
 text/green_digits.png
 text/small_green_digits.png
 text/small_white_digits.png
