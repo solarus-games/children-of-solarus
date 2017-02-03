@@ -356,36 +356,23 @@ sprite{ id = "npc/villager3", description = "ALTTP villager 3" }
 sprite{ id = "npc/witch", description = "Witch" }
 sprite{ id = "npc/wizard", description = "Wizard" }
 
-music{ id = "boss", description = "Boss" }
-music{ id = "castle", description = "Castle" }
-music{ id = "cave", description = "Cave" }
-music{ id = "dark_mountain", description = "Dark Mountain" }
-music{ id = "dark_world", description = "Dark World" }
-music{ id = "dark_world_dungeon", description = "Dungeon (dark world)" }
-music{ id = "dungeon_finished", description = "Dungeon finished" }
-music{ id = "fairy", description = "Fairy" }
-music{ id = "fanfare", description = "Fanfare" }
-music{ id = "fortune_teller", description = "Fortune Teller" }
-music{ id = "game_over", description = "Selection menu & Game Over" }
-music{ id = "legend", description = "Legend" }
-music{ id = "light_world_dungeon", description = "Dungeon (light world)" }
-music{ id = "lunarius", description = "Lunarius theme" }
-music{ id = "memory_shrine", description = "Memory Shrine" }
-music{ id = "mini_game", description = "Mini game" }
-music{ id = "mountains", description = "Mountains" }
-music{ id = "neptune_appears", description = "Neptune appears" }
-music{ id = "neptune_battle", description = "Neptune battle" }
-music{ id = "neptune_theme", description = "Neptune theme" }
-music{ id = "old_dungeon", description = "Dungeon (old school)" }
-music{ id = "overworld", description = "Overworld" }
-music{ id = "soldiers", description = "Soldiers" }
-music{ id = "sword", description = "Legendary Sword " }
-music{ id = "title_screen", description = "Title screen" }
-music{ id = "tower", description = "Tower" }
-music{ id = "triforce", description = "Triforce" }
-music{ id = "victory", description = "Victory" }
-music{ id = "village", description = "Kakariko Village" }
-music{ id = "witch_hut", description = "Witch (LA)" }
+music{ id = "eduardo/boss", description = "Boss" }
+music{ id = "eduardo/cave", description = "Cave" }
+music{ id = "eduardo/dungeon_finished", description = "Dungeon finished" }
+music{ id = "eduardo/fairy", description = "Fairy" }
+music{ id = "eduardo/fanfare", description = "Fanfare" }
+music{ id = "eduardo/game_over", description = "Game Over" }
+music{ id = "eduardo/lunarius", description = "Lunarius theme" }
+music{ id = "eduardo/mini_game", description = "Mini game" }
+music{ id = "eduardo/mountains", description = "Mountains" }
+music{ id = "eduardo/neptune_battle", description = "Neptune battle" }
+music{ id = "eduardo/overworld", description = "Overworld" }
+music{ id = "eduardo/soldiers", description = "Soldiers" }
+music{ id = "eduardo/sword_fanfare", description = "Sword fanfare" }
+music{ id = "eduardo/title_screen", description = "Title screen" }
+music{ id = "eduardo/village", description = "Village" }
+music{ id = "eduardo/witch_hut", description = "Witch" }
+music{ id = "zonzifleur/carrousel", description = "Carrousel" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bomb", description = "bomb" }

@@ -44,20 +44,6 @@ items/**.dat                                        Christopho
 
 maps/**.dat                                         Christopho, Diarandor
 
-musics/boss.ogg                                     Eduardo Dueñas
-musics/boss_intro.ogg                               Eduardo Dueñas
-musics/carrousel.ogg                                Zonzifleur
-musics/great_fairy.ogg                              Eduardo Dueñas
-musics/fairy_intro.ogg                              Eduardo Dueñas
-musics/fanfare.ogg                                  Eduardo Dueñas
-musics/la_mountains.ogg                             Eduardo Dueñas
-musics/lunarius.ogg                                 Eduardo Dueñas
-musics/neptune_battle.ogg                           Eduardo Dueñas
-musics/sword_fanfare.ogg                            Eduardo Dueñas
-musics/title_screen.ogg                             Eduardo Dueñas
-musics/village.ogg                                  Eduardo Dueñas
-musics/witch_hut.ogg                                Eduardo Dueñas
-
 sounds/arrow_hit.ogg                                Diarandor
 sounds/bomb.ogg                                     Diarandor
 sounds/boots_crash.ogg                              Diarandor
