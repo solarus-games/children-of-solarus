@@ -1,15 +1,16 @@
-We give in this file gives the license information of all data files of
+We give in this file the license information of
 the Children of Solarus quest.
-
-Some resources come from communities like OpenGameArt, and others are original
-creations made by us, the Solarus team.
 
 - Lua scripts are licensed under the terms of the GNU General Public License
 in version 3.
 
-- All data files we created (other than Lua scripts) are licensed under
+- All data files other than Lua scripts are licensed under
 Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0).
 http://creativecommons.org/licenses/by-sa/4.0/
+
+Most data files of this quest come from the official
+Solarus Free Resource Pack:
+https://github.com/solarus-games/solarus-free-resource-pack
 
 Main contributors:
 - Christopho
@@ -20,6 +21,12 @@ Main contributors:
 - Eduardo Dueñas <duenase@hotmail.com>
 - Bertram
 
+The more detailed license information of the Solarus Free Resource Pack
+can be found here:
+https://github.com/solarus-games/solarus-free-resource-pack/blob/master/license.txt
+
+We give below the license of all other files of this quest,
+that is, the ones that do not come from the Solarus Free Resource Pack.
 
 Scripts under GNU GPL v3:
 -------------------------
