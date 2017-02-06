@@ -4,9 +4,11 @@ the Children of Solarus quest.
 - Lua scripts are licensed under the terms of the GNU General Public License
 in version 3.
 
-- All data files other than Lua scripts are licensed under
+- Most data files other than Lua scripts are licensed under
 Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0).
 http://creativecommons.org/licenses/by-sa/4.0/
+
+- A few data files are in public domain.
 
 Most data files of this quest come from the official
 Solarus Free Resource Pack:
@@ -178,12 +180,9 @@ tilesets/0.entities.png                             Bertram, adapted from tiles 
 tilesets/diarandor/light_overworld.dat              Diarandor
 tilesets/diarandor/light_overworld.tiles.png        Diarandor
 
-text/minecraftia.png                                Andrew Tyler: http://www.andrewtyler.net
-
 Data files under public domain:
 -------------------------------
-text/8_bit.png                                      Christopho, adapted from: http://opengameart.org/content/a-package-of-8-bit-fonts-for-grafx2-and-linux
-sprites/menus/selection_menu_letters.png            Nate-Devv, apdapted from text/8_bit.png
+sprites/menus/selection_menu_letters.png            Nate-Devv, adapted from fonts/8_bit.png
 
 Files with an original name but with Nintendo content (to be updated):
 ----------------------------------------------------------------------
