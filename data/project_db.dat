@@ -601,9 +601,9 @@ enemy{ id = "tentacle", description = "Tentacle" }
 
 language{ id = "en", description = "English" }
 
-font{ id = "8_bit", description = "8_bit" }
+font{ id = "8_bit", description = "8 bit" }
 font{ id = "green_digits", description = "green_digits" }
-font{ id = "minecraftia", description = "minecraftia" }
+font{ id = "minecraftia", description = "Minecraftia" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
