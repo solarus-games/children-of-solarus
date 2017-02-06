@@ -190,12 +190,11 @@ sprites/enemies/neptune.png
 
 Files that include content from Nintendo (to be removed):
 ---------------------------------------------------------
+fonts/green_digits.png
+fonts/small_green_digits.png
+fonts/small_white_digits.png
+fonts/white_digits.png
 languages/*/images/*.png
-text/green_digits.png
-text/small_green_digits.png
-text/small_white_digits.png
-text/white_digits.png
-tilesets/*.png
 sprites/enemies/blue_flame.png
 sprites/enemies/*_knight_soldier.png
 sprites/enemies/bubble.png
@@ -237,4 +236,5 @@ sprites/menus/outside_world_map.png
 sprites/npc/alttp.png
 sprites/npc/black_knight_soldier.png
 sprites/npc/witch.png
+tilesets/*.png
 
