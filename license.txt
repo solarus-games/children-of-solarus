@@ -30,11 +30,11 @@ https://github.com/solarus-games/solarus-free-resource-pack/blob/master/license.
 We give below the license of all other files of this quest,
 that is, the ones that do not come from the Solarus Free Resource Pack.
 
-Scripts under GNU GPL v3:
--------------------------
-**.lua
+Scripts under GNU GPL v3:                           Author
+-------------------------                           ------
+**.lua                                              Christopho
 
-Data files under CC BY-SA 4.0:                      Author/Origin
+Data files under CC BY-SA 4.0:                      Author
 ------------------------------                      -------------
 art_src/dark.xcf                                    Bertram
 art_src/bomb_n_leaves.xcf                           Bertram - From LPC sprites: http://opengameart.org/content/lpc-tile-atlas, http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
@@ -45,74 +45,6 @@ art_src/title/*                                     Oliver Cléro
 items/**.dat                                        Christopho
 
 maps/**.dat                                         Christopho, Diarandor
-
-sounds/arrow_hit.ogg                                Diarandor
-sounds/bomb.ogg                                     Diarandor
-sounds/boots_crash.ogg                              Diarandor
-sounds/bounce.ogg                                   Diarandor
-sounds/bow.ogg                                      Diarandor
-sounds/bush.ogg                                     Diarandor
-sounds/cat.ogg                                      Diarandor
-sounds/chest_appears.ogg                            Diarandor
-sounds/chest_open.ogg                               Diarandor
-sounds/crystal.ogg                                  Diarandor
-sounds/cursor.ogg                                   Diarandor
-sounds/danger.ogg                                   Diarandor
-sounds/door_closed.ogg                              Diarandor
-sounds/door_open.ogg                                Diarandor
-sounds/enemy_hurt.ogg                               Diarandor
-sounds/enemy_killed.ogg                             Diarandor
-sounds/falling_on_hole.ogg                          Diarandor
-sounds/falling_rock.ogg                             Diarandor
-sounds/fire_ball.ogg                                Diarandor
-sounds/heart.ogg                                    Diarandor
-sounds/hero_dying.ogg                               Diarandor
-sounds/hero_falls.ogg                               Diarandor
-sounds/hero_hurt.ogg                                Diarandor
-sounds/hero_lands.ogg                               Diarandor
-sounds/hero_pushes.ogg                              Diarandor
-sounds/item_fall.ogg                                Diarandor
-sounds/jump.ogg                                     Diarandor
-sounds/key_fall.ogg                                 Diarandor
-sounds/lift.ogg                                     Diarandor
-sounds/message_end.ogg                              Diarandor
-sounds/message_letter.ogg                           Diarandor
-sounds/mouse.ogg                                    Diarandor
-sounds/ok.ogg                                       Diarandor
-sounds/open_lock.ogg                                Diarandor
-sounds/pause_closed.ogg                             Diarandor
-sounds/pause_open.ogg                               Diarandor
-sounds/picked_item.ogg                              Diarandor
-sounds/picked_rupee.ogg                             Diarandor
-sounds/quake.ogg                                    Diarandor
-sounds/running.ogg                                  Diarandor
-sounds/rupee_counter.ogg                            Diarandor
-sounds/rupee_counter_end.ogg                        Diarandor
-sounds/secret.ogg                                   Eduardo Dueñas
-sounds/soft_tap.ogg                                 Diarandor
-sounds/splash.ogg                                   Diarandor
-sounds/stairs_down_end.ogg                          Diarandor
-sounds/stairs_down_start.ogg                        Diarandor
-sounds/stairs_up_end.ogg                            Diarandor
-sounds/stairs_up_start.ogg                          Diarandor
-sounds/swim.ogg                                     Diarandor
-sounds/switch.ogg                                   Diarandor
-sounds/switch_hero.ogg                              Diarandor
-sounds/sword_spin_attack_load.ogg                   Diarandor
-sounds/sword_spin_attack_release.ogg                Diarandor
-sounds/sword_tapping.ogg                            Diarandor
-sounds/sword_tapping_weak_wall.ogg                  Diarandor
-sounds/sword1.ogg                                   Diarandor
-sounds/teleporter.ogg                               Diarandor
-sounds/throw.ogg                                    Diarandor
-sounds/tongue.ogg                                   Diarandor
-sounds/treasure.ogg                                 Diarandor
-sounds/victory.ogg                                  Diarandor
-sounds/walk_on_grass.ogg                            Diarandor
-sounds/walk_on_water.ogg                            Diarandor
-sounds/warp.ogg                                     Diarandor
-sounds/wrong.ogg                                    Diarandor
-sounds/wrong2.ogg                                   Diarandor
 
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
