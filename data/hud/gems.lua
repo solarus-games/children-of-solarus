@@ -55,11 +55,11 @@ function gems:check()
 
     -- Play a sound if we have just reached the final value.
     if self.money_displayed == money then
-      sol.audio.play_sound("gem_counter_end")
+      sol.audio.play_sound("money_counter_end")
 
     -- While the counter is scrolling, play a sound every 3 values.
     elseif self.money_displayed % 3 == 0 then
-      sol.audio.play_sound("gem_counter_end")
+      sol.audio.play_sound("money_counter_end")
     end
   end
 

@@ -91,8 +91,8 @@ function solarus_logo_menu:step1()
   sun:set_xy(0, -33)
   sword:stop_movement()
   sword:set_xy(-48, 48)
-  -- Play the sword sound.
-  sol.audio.play_sound("gem_counter_end")
+  -- Play the logo sound.
+  sol.audio.play_sound("money_counter_end")
   -- Update the surface.
   rebuild_surface()
 end
