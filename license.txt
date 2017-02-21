@@ -46,6 +46,8 @@ items/**.dat                                        Christopho
 
 maps/**.dat                                         Christopho, Diarandor
 
+sounds/zonzifleur/solarus_team_logo.ogg             Zonzifleur
+
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
 sprites/enemies/billy.png
@@ -84,26 +86,32 @@ sprites/hud/item_icon_*.png
 sprites/hud/magic_bar.png
 sprites/hud/rupee_icon.png
 sprites/menus/dungeon_maps/*.png
-sprites/menus/arrow.png
-sprites/menus/dungeon_map_background.png
-sprites/menus/hero_point.png
-sprites/menus/options_cursor.png
-sprites/menus/outside_world_clouds.png
-sprites/menus/pause_cursor.png
-sprites/menus/pause_save_dialog.png
-sprites/menus/quest_status_*.png
-sprites/menus/selection_menu_background.png
-sprites/menus/selection_menu_cloud.png
-sprites/menus/selection_menu_cursor.png
-sprites/menus/selection_menu_mode.png
-sprites/menus/selection_menu_option_container.png
-sprites/menus/selection_menu_save*.png
-sprites/menus/selection_menu_save_container.png
-sprites/menus/title_daylight_*.png                  Oliver Cléro
-sprites/menus/title_night_*.png                     Oliver Cléro
-sprites/menus/title_star.png                        Oliver Cléro
-sprites/menus/title_sunset_*.png                    Oliver Cléro
-sprites/menus/title_logo.png                        Oliver Cléro
+sprites/menus/arrow.png                             Metallizer
+sprites/menus/dungeon_map_background.png            Metallizer
+sprites/menus/hero_point.png                        Christopho
+sprites/menus/options_cursor.png                    Christopho
+sprites/menus/outside_world_clouds.png              Metallizer
+sprites/menus/pause_cursor.png                      Metallizer
+sprites/menus/pause_save_dialog.png                 Metallizer
+sprites/menus/quest_status_pieces_of_heart.png      Metallizer
+sprites/menus/selection_menu_background.png         Metallizer
+sprites/menus/selection_menu_cloud.png              Metallizer
+sprites/menus/selection_menu_cursor.png             Metallizer
+sprites/menus/selection_menu_mode.png               Metallizer
+sprites/menus/selection_menu_option_container.png   Metallizer
+sprites/menus/selection_menu_save1.png              Metallizer
+sprites/menus/selection_menu_save2.png              Metallizer
+sprites/menus/selection_menu_save3.png              Metallizer
+sprites/menus/selection_menu_save_container.png     Metallizer
+sprites/menus/title_daylight_background.png         Olivier Cléro
+sprites/menus/title_daylight_clouds.png             Olivier Cléro
+sprites/menus/title_night_background.png            Olivier Cléro
+sprites/menus/title_night_clouds.png                Olivier Cléro
+sprites/menus/title_star.png                        Olivier Cléro
+sprites/menus/title_sunset_background.png           Olivier Cléro
+sprites/menus/title_sunset_clouds.png               Olivier Cléro
+sprites/menus/title_star.png                        Olivier Cléro
+sprites/menus/title_logo.png                        Olivier Cléro
 sprites/npc/inferno.png
 sprites/npc/newlink.png
 sprites/npc/solarus_child*.png
