@@ -314,6 +314,7 @@ sprite{ id = "menus/pause_cursor", description = "Pause cursor" }
 sprite{ id = "menus/pause_save_dialog", description = "Pause save dialog" }
 sprite{ id = "menus/selection_menu_cursor", description = "Savegame cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
+sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
 sprite{ id = "npc/billy", description = "Billy" }
 sprite{ id = "npc/black_knight_soldier", description = "Black Knight Soldier" }
 sprite{ id = "npc/castle_guard", description = "Castle guard" }
@@ -491,6 +492,7 @@ sound{ id = "world_warp", description = "world_warp" }
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
+sound{ id = "zonzifleur/solarus_team_logo", description = "Solarus Team logo" }
 
 item{ id = "apple", description = "Apples (x3)" }
 item{ id = "apples_counter", description = "Apples counter" }
