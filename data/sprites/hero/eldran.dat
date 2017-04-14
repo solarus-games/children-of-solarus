@@ -211,10 +211,10 @@ animation{
   frame_delay = 500,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 12, num_frames = 2 },
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 12, num_frames = 2 },
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 12, num_frames = 2 },
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 12, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 2 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 2 },
   },
 }
 animation{
@@ -223,7 +223,7 @@ animation{
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
-    { x = 48, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 4 },
+    { x = 48, y = 48, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 32, num_frames = 4 },
   },
 }
 animation{
@@ -295,12 +295,12 @@ animation{
 animation{
   name = "sword",
   src_image = "main_heroes/eldran_sword_brandish.png",
-  frame_delay = 30,
+  frame_delay = 45,
   directions = {
-    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 12, origin_y = 29, num_frames = 12 },
-    { x = 0, y = 104, frame_width = 48, frame_height = 48, origin_x = 20, origin_y = 29, num_frames = 12 },
-    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 36, origin_y = 29, num_frames = 12 },
-    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 20, origin_y = 29, num_frames = 12 },
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 12, origin_y = 29, num_frames = 10 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 20, origin_y = 37, num_frames = 10 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 36, origin_y = 29, num_frames = 10 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 20, origin_y = 29, num_frames = 10 },
   },
 }
 animation{
@@ -318,22 +318,22 @@ animation{
   name = "sword_loading_stopped",
   src_image = "main_heroes/eldran_sword_loading.png",
   directions = {
-    { x = 144, y = 56, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 168, y = 56, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 192, y = 56, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 216, y = 56, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 192, y = 48, frame_width = 40, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 272, y = 48, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37 },
+    { x = 232, y = 48, frame_width = 40, frame_height = 24, origin_x = 28, origin_y = 21 },
+    { x = 296, y = 48, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 21 },
   },
 }
 animation{
   name = "sword_loading_walking",
   src_image = "main_heroes/eldran_sword_loading.png",
-  frame_delay = 100,
+  frame_delay = 70,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
-    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
-    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 40, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 37, num_frames = 8 },
+    { x = 0, y = 24, frame_width = 40, frame_height = 24, origin_x = 28, origin_y = 21, num_frames = 8 },
+    { x = 0, y = 88, frame_width = 24, frame_height = 40, origin_x = 12, origin_y = 21, num_frames = 8 },
   },
 }
 animation{
