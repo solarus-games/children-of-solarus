@@ -231,6 +231,9 @@ sprite{ id = "enemies/ropa", description = "Enemy: Ropa" }
 sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldier (green)" }
 sprite{ id = "enemies/skeletor", description = "Enemy: Skeletor" }
 sprite{ id = "enemies/snap_dragon", description = "Enemy: Snap Dragon" }
+sprite{ id = "enemies/soldier", description = "Soldier" }
+sprite{ id = "enemies/soldier_feather", description = "Soldier Feather" }
+sprite{ id = "enemies/soldier_sword", description = "Soldier Sword" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
