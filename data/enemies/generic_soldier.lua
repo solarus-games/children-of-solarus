@@ -59,6 +59,7 @@ return function(enemy)
     self:set_hurt_style(properties.hurt_style)
     sword_sprite = self:create_sprite(properties.sword_sprite)
     main_sprite = self:create_sprite(properties.main_sprite)
+    self:bring_sprite_to_front(sword_sprite)
     self:set_size(16, 16)
     self:set_origin(8, 13)
 
