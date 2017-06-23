@@ -135,6 +135,7 @@ map{ id = "96", description = "Dungeon 10 3F" }
 map{ id = "97", description = "Dungeon 10 2F" }
 map{ id = "98", description = "Dungeon 10 B1" }
 map{ id = "99", description = "Dungeon 10 4F" }
+map{ id = "test_maps/start_point", description = "Starting Point" }
 
 tileset{ id = "0", description = "House" }
 tileset{ id = "10", description = "Orange dungeon (DW)" }
@@ -287,6 +288,7 @@ sprite{ id = "entities/teletransporter", description = "Teletransporter (yellow)
 sprite{ id = "entities/the_end", description = "The end" }
 sprite{ id = "entities/torch", description = "Torch" }
 sprite{ id = "entities/vine", description = "Vine" }
+sprite{ id = "hero/eldran", description = "Eldran sprite" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/shield1", description = "Hero shield 1" }

@@ -1,0 +1,166 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "0",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "203",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 176,
+  width = 144,
+  height = 64,
+  pattern = "284",
+}
+
+destination{
+  name = "starting_point",
+  layer = 0,
+  x = 152,
+  y = 61,
+  direction = 1,
+  default = true,
+}
+
+pickable{
+  layer = 0,
+  x = 152,
+  y = 125,
+  treasure_name = "sword",
+}
+
+pickable{
+  layer = 0,
+  x = 176,
+  y = 125,
+  treasure_name = "flippers",
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 125,
+  treasure_name = "bow",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "138",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 0,
+  width = 16,
+  height = 24,
+  pattern = "138",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 216,
+  width = 16,
+  height = 24,
+  pattern = "138",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 216,
+  width = 16,
+  height = 24,
+  pattern = "138",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "204",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "204",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "204",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "204",
+}
+

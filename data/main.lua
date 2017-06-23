@@ -11,6 +11,14 @@ end
 -- Event called when the program starts.
 function sol.main:on_started()
 
+  -- Creates a game for TESTING.
+  local game = sol.game.load("save_test.dat")
+  game:set_starting_location("test_maps/start_point")
+  game:start() -- Start game.
+  game:get_hero():set_tunic_sprite_id("hero/eldran")
+  
+
+--[[
   -- Make quest-specific initializations.
   quest_manager:initialize_quest()
 
@@ -56,6 +64,7 @@ function sol.main:on_started()
       sol.menu.start(self, savegame_menu)
     end
   end
+--]]
 end
 
 -- Event called when the program stops.

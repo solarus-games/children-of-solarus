@@ -1,6 +1,6 @@
 animation{
   name = "loading",
-  src_image = "main_heroes/loading_sword_magic.png",
+  src_image = "hero/loading_sword_magic.png",
   frame_delay = 50,
   frame_to_loop_on = 20,
   directions = {
