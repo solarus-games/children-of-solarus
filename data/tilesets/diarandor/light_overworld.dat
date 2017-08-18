@@ -3940,6 +3940,36 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "fence_post",
+  ground = "wall",
+  default_layer = 0,
+  x = 984,
+  y = 24,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "fence_post2",
+  ground = "wall",
+  default_layer = 0,
+  x = 1000,
+  y = 24,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "fence_wall",
+  ground = "wall",
+  default_layer = 0,
+  x = 992,
+  y = 24,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
   id = "flower_blue",
   ground = "empty",
   default_layer = 0,
