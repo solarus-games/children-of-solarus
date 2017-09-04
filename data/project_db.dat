@@ -1,9 +1,19 @@
+map{ id = "SHOP_maps/overworldTest0.4", description = "overworldTest0.4" }
 map{ id = "test_maps/start_point", description = "Starting Point" }
 
 tileset{ id = "diarandor/light_overworld", description = "Light Overworld" }
 
 sprite{ id = "console/cursor", description = "Console cursor" }
 sprite{ id = "console/icons", description = "Console icons" }
+sprite{ id = "destructibles/cabbagge_green", description = "Plant Green" }
+sprite{ id = "destructibles/cabbagge_grey", description = "Plant Grey" }
+sprite{ id = "destructibles/cabbagge_red", description = "Plant Red" }
+sprite{ id = "destructibles/cabbagge_violet", description = "Plant Violet" }
+sprite{ id = "destructibles/cabbagge_yellow", description = "Plant Yellow" }
+sprite{ id = "destructibles/pot_1", description = "Pot 1" }
+sprite{ id = "destructibles/rock_golden", description = "Rock Golden" }
+sprite{ id = "destructibles/rock_grey", description = "Rock Grey" }
+sprite{ id = "destructibles/signpost", description = "Signpost" }
 sprite{ id = "enemies/arbror_root", description = "Enemy: Arbror root" }
 sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
 sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }

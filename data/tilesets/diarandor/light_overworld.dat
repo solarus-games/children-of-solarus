@@ -390,6 +390,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "GrassPlain1",
+  ground = "traversable",
+  default_layer = 0,
+  x = 120,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "GrassPlain2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 128,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "Grass_big",
   ground = "grass",
   default_layer = 0,
@@ -2510,6 +2530,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "ShallowWaterPlain",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = 136,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "StairsUndergroundBorderLeft",
   ground = "wall",
   default_layer = 0,
@@ -2567,6 +2597,36 @@ tile_pattern{
   y = 112,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "WaterPlain",
+  ground = "deep_water",
+  default_layer = 0,
+  x = 144,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "WaterPlain1",
+  ground = "deep_water",
+  default_layer = 0,
+  x = 152,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "WaterPlain2",
+  ground = "deep_water",
+  default_layer = 0,
+  x = 160,
+  y = 0,
+  width = 8,
+  height = 8,
 }
 
 tile_pattern{
