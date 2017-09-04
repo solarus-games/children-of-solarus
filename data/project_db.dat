@@ -1,8 +1,6 @@
 map{ id = "test_maps/start_point", description = "Starting Point" }
 
 tileset{ id = "diarandor/light_overworld", description = "Light Overworld" }
-tileset{ id = "nether", description = "Nether" }
-tileset{ id = "overworld", description = "Overworld" }
 
 sprite{ id = "enemies/arbror_root", description = "Enemy: Arbror root" }
 sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }

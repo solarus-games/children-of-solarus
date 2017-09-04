@@ -1,3 +1,5 @@
+text{ key = "copyright_menu.solarus_license.line1", value = "Solarus est un logiciel libre" }
+text{ key = "copyright_menu.solarus_license.line2", value = "sous licence GPL v3." }
 text{ key = "map.caption.world_map", value = "World Map" }
 text{ key = "map.caption.dungeon_name_1", value = "Forest Dungeon" }
 text{ key = "map.caption.dungeon_name_2", value = "Roc's Cavern" }

@@ -1,16 +1,24 @@
 animation{
   name = "left",
   src_image = "menus/pause_save_dialog.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 220, frame_height = 67 },
+    { x = 0, y = 0, frame_width = 220, frame_height = 67, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 220, frame_height = 67, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 220, frame_height = 67, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 220, frame_height = 67, origin_x = 0, origin_y = 0, num_frames = 2 },
   },
 }
-
 animation{
   name = "right",
   src_image = "menus/pause_save_dialog.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 67, frame_width = 220, frame_height = 67 },
+    { x = 0, y = 67, frame_width = 220, frame_height = 67, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 67, frame_width = 220, frame_height = 67, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 67, frame_width = 220, frame_height = 67, origin_x = 0, origin_y = 0, num_frames = 2 },
+    { x = 0, y = 67, frame_width = 220, frame_height = 67, origin_x = 0, origin_y = 0, num_frames = 2 },
   },
 }
-
