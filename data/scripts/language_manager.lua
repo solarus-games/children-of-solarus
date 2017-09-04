@@ -17,7 +17,7 @@ end
 function language_manager:get_dialog_font(language)
 
   -- No font differences between languages (for now).
-  return "la", 11
+  return "minecraftia", 8
 end
 
 -- Returns the font and font size to be used to display text in menus

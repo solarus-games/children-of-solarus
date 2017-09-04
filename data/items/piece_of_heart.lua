@@ -1,4 +1,5 @@
 local item = ...
+local game = item:get_game()
 
 local message_id = {
   "found_piece_of_heart.first",
@@ -7,15 +8,33 @@ local message_id = {
   "found_piece_of_heart.fourth"
 }
 
+-- Returns the current number of pieces of heart between 0 and 3.
+function item:get_num_pieces_of_heart()
+
+  return game:get_value("num_pieces_of_heart") or 0
+end
+
+-- Returns the total number of pieces of hearts already found.
+function item:get_total_pieces_of_heart()
+
+  return game:get_value("total_pieces_of_heart") or 0
+end
+
+-- Returns the number of pieces of hearts existing in the game.
+function item:get_max_pieces_of_heart()
+
+  return 32
+end
+
+
 function item:on_created()
 
-  self:set_sound_when_picked(nil)
-  self:set_sound_when_brandished("piece_of_heart")
+  item:set_sound_when_picked(nil)
+  item:set_sound_when_brandished("piece_of_heart")
 end
 
 function item:on_obtained(variant)
 
-  local game = self:get_game()
   local nb_pieces_of_heart = game:get_value("i1030") or 0
   game:start_dialog(message_id[nb_pieces_of_heart + 1], function()
 
@@ -30,6 +49,7 @@ end
 -- This function is not used in releases :)
 function item:print_pieces_of_heart()
 
+  -- TODO change savegame variables
   local pieces = {
     {savegame_variable =  "b12", description = "Link's house secret room"},
     {savegame_variable =  "b17", description = "gem house: game 3"},
@@ -39,7 +59,7 @@ function item:print_pieces_of_heart()
     {savegame_variable =  "b20", description = "outside world B4: behind the lake shop"},
     {savegame_variable = "b935", description = "outside world B4: south of the lake "},
     {savegame_variable =  "b14", description = "outside world A4: near the entrance of dungeon 1 2F"},
-    {savegame_variable = "b936", description = "twin caves: chest reachable with the cane of somaria"},
+    {savegame_variable = "b936", description = "twin caves: chest reachable with the cane"},
     {savegame_variable = "b107", description = "outside world A2: island near the castle"},
     {savegame_variable = "b920", description = "outside world B1: bottom of the vine"},
     {savegame_variable =  "b27", description = "Sahsarahla cave: chest reachable with the golden glove"},
@@ -48,8 +68,8 @@ function item:print_pieces_of_heart()
     {savegame_variable = "b105", description = "true hero maze"},
     {savegame_variable = "b191", description = "fairy cave 2F"},
     {savegame_variable = "b900", description = "junk shop"},
-    {savegame_variable = "b917", description = "west mountains cave 1F: reachable with the cane of somaria"},
-    {savegame_variable = "b918", description = "west mountains cave 3F: come from the waterfall using the mysic mirror"},
+    {savegame_variable = "b917", description = "west mountains cave 1F: reachable with the cane"},
+    {savegame_variable = "b918", description = "west mountains cave 3F: come from the waterfall using the mystic mirror"},
     {savegame_variable = "b181", description = "chests game"},
     {savegame_variable = "b197", description = "waterfall cave 1F: open all chests"},
     {savegame_variable = "b937", description = "laser cave"},
@@ -67,7 +87,7 @@ function item:print_pieces_of_heart()
 
   local nb_found = 0
   for i, v in ipairs(pieces) do
-    if self:get_game():get_value(v.savegame_variable) then
+    if item:get_value(v.savegame_variable) then
       nb_found = nb_found + 1
     else
       print("You don't have piece of heart #" .. i .. ": " .. v.description)

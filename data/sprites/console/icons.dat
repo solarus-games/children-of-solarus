@@ -1,0 +1,14 @@
+animation{
+  name = "error",
+  src_image = "console/icons.png",
+  directions = {
+    { x = 12, y = 0, frame_width = 12, frame_height = 9, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "return",
+  src_image = "console/icons.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 12, frame_height = 9, origin_x = 0, origin_y = 0 },
+  },
+}

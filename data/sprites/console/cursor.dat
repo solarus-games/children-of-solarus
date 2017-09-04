@@ -1,0 +1,9 @@
+animation{
+  name = "default",
+  src_image = "console/cursor.png",
+  frame_delay = 500,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 7, frame_height = 9, origin_x = 0, origin_y = 0, num_frames = 2 },
+  },
+}

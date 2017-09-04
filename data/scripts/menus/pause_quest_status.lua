@@ -44,12 +44,12 @@ function quest_status_submenu:on_started()
   end
 
   -- Wallet.
-  local rupee_bag = self.game:get_item("rupee_bag"):get_variant()
-  if rupee_bag > 0 then
-    item_sprite:set_animation("rupee_bag")
-    item_sprite:set_direction(rupee_bag - 1)
+  local money_bag = self.game:get_item("money_bag"):get_variant()
+  if money_bag > 0 then
+    item_sprite:set_animation("money_bag")
+    item_sprite:set_direction(money_bag - 1)
     item_sprite:draw(self.quest_items_surface, 68, 84)
-    self.caption_text_keys[0] = "quest_status.caption.rupee_bag_" .. rupee_bag
+    self.caption_text_keys[0] = "quest_status.caption.money_bag_" .. money_bag
   end
 
   -- Bomb bag.
@@ -75,14 +75,6 @@ function quest_status_submenu:on_started()
   item_sprite:set_direction(0)
   item_sprite:draw(self.quest_items_surface, 107, 177)
   self.caption_text_keys[3] = "quest_status.caption.world_map"
-
-  -- Library award.
-  if self.game:has_item("library_award") then
-    item_sprite:set_animation("library_award")
-    item_sprite:set_direction(0)
-    item_sprite:draw(self.quest_items_surface, 146, 177)
-    self.caption_text_keys[4] = "quest_status.caption.library_award"
-  end
 
   -- Pieces of heart.
   local pieces_of_heart_img = sol.surface.create("menus/quest_status_pieces_of_heart.png")
@@ -121,6 +113,7 @@ function quest_status_submenu:set_cursor_position(position)
       -- World map.
       self.cursor_sprite_x = 107
     elseif position == 4 then
+      -- TODO remove
       -- Library award.
       self.cursor_sprite_x = 146
     elseif position == 5 then

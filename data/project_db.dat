@@ -2,6 +2,8 @@ map{ id = "test_maps/start_point", description = "Starting Point" }
 
 tileset{ id = "diarandor/light_overworld", description = "Light Overworld" }
 
+sprite{ id = "console/cursor", description = "Console cursor" }
+sprite{ id = "console/icons", description = "Console icons" }
 sprite{ id = "enemies/arbror_root", description = "Enemy: Arbror root" }
 sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
 sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }
@@ -368,8 +370,7 @@ item{ id = "feather", description = "Feather" }
 item{ id = "fire_stone", description = "Fire stone (x1)" }
 item{ id = "fire_stones_counter", description = "Fire stones counter" }
 item{ id = "flippers", description = "Flippers" }
-item{ id = "gem", description = "gems (x1 / x5 / x20 / x50 / x100 / x300)" }
-item{ id = "gem_bag", description = "gem bag (small / large / huge)" }
+item{ id = "gem", description = "Gems (x1 / x5 / x20 / x50 / x100 / x300)" }
 item{ id = "glove", description = "Iron glove / Golden glove" }
 item{ id = "green_potion", description = "Green potion" }
 item{ id = "heart", description = "Heart (x1)" }
@@ -383,6 +384,7 @@ item{ id = "magic_bar", description = "Maximum of magic (none / half / full)" }
 item{ id = "magic_cape", description = "Magic cape" }
 item{ id = "magic_flask", description = "Magic flask (small / big)" }
 item{ id = "map", description = "Dungeon map" }
+item{ id = "money_bag", description = "Money bag (small / large / huge)" }
 item{ id = "mystic_mirror", description = "Mystic mirror" }
 item{ id = "pain_au_chocolat", description = "Pain au chocolat (x1)" }
 item{ id = "pains_au_chocolat_counter", description = "Pains au chocolat counter" }
@@ -470,6 +472,7 @@ language{ id = "en", description = "English" }
 font{ id = "8_bit", description = "8 bit" }
 font{ id = "green_digits", description = "green_digits" }
 font{ id = "minecraftia", description = "Minecraftia" }
+font{ id = "minecraftia_mono", description = "Minecraftia mono" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }

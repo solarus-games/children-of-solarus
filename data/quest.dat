@@ -1,6 +1,6 @@
 quest{
   solarus_version = "1.6",
-  write_dir = "ChildrenOfSolarus",
+  write_dir = "children-of-solarus",
   title = "Children of Solarus",
   short_description = "New project from the Solarus team",
   long_description = [[
