@@ -47,13 +47,6 @@ local hud_config = {
     y = 70,
   },
 
-  -- Prehistoric label.
-  {
-    menu_script = "scripts/hud/prehistoric",
-    x = -58,
-    y = -22,
-  },
-
   -- Pause icon.
   {
     menu_script = "scripts/hud/pause_icon",
