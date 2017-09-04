@@ -8,8 +8,6 @@ in version 3.
 Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0).
 http://creativecommons.org/licenses/by-sa/4.0/
 
-- A few data files are in public domain.
-
 Most data files of this quest come from the official
 Solarus Free Resource Pack:
 https://github.com/solarus-games/solarus-free-resource-pack
@@ -39,15 +37,28 @@ Data files under CC BY-SA 4.0:                      Author
 art_src/dark.xcf                                    Bertram
 art_src/bomb_n_leaves.xcf                           Bertram - From LPC sprites: http://opengameart.org/content/lpc-tile-atlas, http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 art_src/chests.xcf                                  Bertram - adapted from sprites here: http://opengameart.org/content/modified-32x32-treasure-chest, http://opengameart.org/content/jrpg-chests-16-32-64-and-128px-squared
-art_src/logo/*                                      Oliver Cléro
-art_src/title/*                                     Oliver Cléro
+art_src/logo/*                                      Olivier Cléro
+art_src/title/*                                     Olivier Cléro
+
+fonts/minecraftia.ttf                               Andrew Tyler: http://www.andrewtyler.net
+fonts/minecraftia_mono.png                          Olivier Cléro, adapted from Andrew Tyler's font
+
+languages/fr/images/action_icon.png                 Metallizer, Olivier Cléro
+languages/fr/images/floors.png                      Metallizer, Olivier Cléro
+languages/fr/images/gameover_menu.png               Metallizer, Olivier Cléro
+languages/fr/images/pause_icon.png                  Metallizer, Olivier Cléro
+languages/fr/images/pause_submenus.png              Metallizer, Olivier Cléro
+languages/fr/images/sword_icon.png                  Metallizer, Olivier Cléro
 
 items/**.dat                                        Christopho
 
 maps/**.dat                                         Christopho, Diarandor
 
+sounds/diarandor/solarus_logo.ogg                   Diarandor
 sounds/zonzifleur/solarus_team_logo.ogg             Zonzifleur
 
+sprites/console/cursor.png                          Maxs
+sprites/console/icons.png                           Maxs
 sprites/enemies/arbror_root.png
 sprites/enemies/bee_guard.png
 sprites/enemies/billy.png
@@ -80,49 +91,47 @@ sprites/entities/dark*.png                          Bertram
 sprites/entities/chest.png                          Bertram - adapted from sprites here: http://opengameart.org/content/modified-32x32-treasure-chest, http://opengameart.org/content/jrpg-chests-16-32-64-and-128px-squared
 sprites/entities/explosion.png                      Bertram, adapted from: http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 sprites/entities/fresco.png
-sprites/hud/dialog_box.png
-sprites/hud/icons_flip.png
-sprites/hud/item_icon_*.png
-sprites/hud/magic_bar.png
-sprites/hud/rupee_icon.png
+sprites/hud/gameover_fade.png                       Metallizer
+sprites/hud/dialog_box.png                          Metallizer, Olivier Cléro
+sprites/hud/hearts.png                              Olivier Cléro
+sprites/hud/icons_flip.png                          Metallizer, Olivier Cléro
+sprites/hud/item_icon_1.png                         Metallizer, Olivier Cléro
+sprites/hud/item_icon_2.png                         Metallizer, Olivier Cléro
+sprites/hud/magic_bar.png                           Metallizer, Olivier Cléro
+sprites/hud/money_icon.png                          Metallizer, Olivier Cléro
+sprites/hud/small_key_icon.png                      Olivier Cléro
 sprites/menus/dungeon_maps/*.png
 sprites/menus/arrow.png                             Metallizer
 sprites/menus/dungeon_map_background.png            Metallizer
+sprites/menus/gplv3_logo.png                        Olivier Cléro
 sprites/menus/hero_point.png                        Christopho
 sprites/menus/options_cursor.png                    Christopho
 sprites/menus/outside_world_clouds.png              Metallizer
-sprites/menus/pause_cursor.png                      Metallizer
-sprites/menus/pause_save_dialog.png                 Metallizer
-sprites/menus/quest_status_pieces_of_heart.png      Metallizer
-sprites/menus/selection_menu_background.png         Metallizer
-sprites/menus/selection_menu_cloud.png              Metallizer
-sprites/menus/selection_menu_cursor.png             Metallizer
-sprites/menus/selection_menu_mode.png               Metallizer
-sprites/menus/selection_menu_option_container.png   Metallizer
-sprites/menus/selection_menu_save1.png              Metallizer
-sprites/menus/selection_menu_save2.png              Metallizer
-sprites/menus/selection_menu_save3.png              Metallizer
-sprites/menus/selection_menu_save_container.png     Metallizer
-sprites/menus/title_daylight_background.png         Olivier Cléro
-sprites/menus/title_daylight_clouds.png             Olivier Cléro
-sprites/menus/title_night_background.png            Olivier Cléro
-sprites/menus/title_night_clouds.png                Olivier Cléro
-sprites/menus/title_star.png                        Olivier Cléro
-sprites/menus/title_sunset_background.png           Olivier Cléro
-sprites/menus/title_sunset_clouds.png               Olivier Cléro
-sprites/menus/title_star.png                        Olivier Cléro
-sprites/menus/title_logo.png                        Olivier Cléro
+sprites/menus/pause_cursor.png                      Metallizer, Olivier Cléro
+sprites/menus/pause_save_dialog.png                 Metallizer, Olivier Cléro
+sprites/menus/quest_status_pieces_of_heart.png      Metallizer, Olivier Cléro
+sprites/menus/selection_menu_background.png         Olivier Cléro
+sprites/menus/selection_menu_cursor.png             Metallizer, Olivier Cléro
+sprites/menus/selection_menu_letters.png            Olivier Cléro
+sprites/menus/selection_menu_option_container.png   Olivier Cléro
+sprites/menus/selection_menu_save1.png              Olivier Cléro
+sprites/menus/selection_menu_save2.png              Olivier Cléro
+sprites/menus/selection_menu_save3.png              Olivier Cléro
+sprites/menus/selection_menu_save_container.png     Olivier Cléro
+sprites/menus/solarus_logo.png                      Olivier Cléro
+sprites/menus/team_logo.png                         Olivier Cléro
+sprites/menus/team_logo_text.png                    Olivier Cléro
+sprites/menus/title_screen/title_background.png     Olivier Cléro
+sprites/menus/title_screen/title_cloud_1.png        Olivier Cléro
+sprites/menus/title_screen/title_cloud_2.png        Olivier Cléro
+sprites/menus/title_screen/title_cloud_3.png        Olivier Cléro
 sprites/npc/inferno.png
 sprites/npc/newlink.png
 sprites/npc/solarus_child*.png
 
-tilesets/0.entities.png                             Bertram, adapted from tiles of: http://opengameart.org/content/lpc-tile-atlas
+tilesets/house.entities.png                         Bertram, adapted from tiles of: http://opengameart.org/content/lpc-tile-atlas
 tilesets/diarandor/light_overworld.dat              Diarandor
 tilesets/diarandor/light_overworld.tiles.png        Diarandor
-
-Data files under public domain:
--------------------------------
-sprites/menus/selection_menu_letters.png            Nate-Devv, adapted from fonts/8_bit.png
 
 Files with an original name but with Nintendo content (to be updated):
 ----------------------------------------------------------------------
@@ -176,5 +185,4 @@ sprites/menus/outside_world_map.png
 sprites/npc/alttp.png
 sprites/npc/black_knight_soldier.png
 sprites/npc/witch.png
-tilesets/*.png
 
