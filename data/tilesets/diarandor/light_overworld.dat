@@ -2611,7 +2611,7 @@ tile_pattern{
 
 tile_pattern{
   id = "WaterPlain1",
-  ground = "deep_water",
+  ground = "shallow_water",
   default_layer = 0,
   x = 152,
   y = 0,
@@ -6952,6 +6952,23 @@ tile_pattern{
   y = 96,
   width = 8,
   height = 8,
+}
+
+border_set{
+  id = "grassborder",
+  inner = true,
+  pattern_0 = "Gnd_grassborder4",
+  pattern_1 = "Gnd_grassborder6",
+  pattern_2 = "Gnd_grassborder0",
+  pattern_3 = "Gnd_grassborder2",
+  pattern_4 = "Gnd_grassborder5inner",
+  pattern_5 = "Gnd_grassborder7inner",
+  pattern_6 = "Gnd_grassborder1inner",
+  pattern_7 = "Gnd_grassborder3inner",
+  pattern_8 = "Gnd_grassborder5",
+  pattern_9 = "Gnd_grassborder7",
+  pattern_10 = "Gnd_grassborder1",
+  pattern_11 = "Gnd_grassborder3",
 }
 
 border_set{

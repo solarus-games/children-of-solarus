@@ -22,11 +22,29 @@ custom_entity{
 
 tile{
   layer = 0,
-  x = 1056,
-  y = 632,
-  width = 56,
-  height = 80,
+  x = 728,
+  y = 328,
+  width = 472,
+  height = 352,
   pattern = "GrassPlain",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 128,
+  width = 216,
+  height = 560,
+  pattern = "GrassPlain",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 488,
+  width = 32,
+  height = 16,
+  pattern = "Gnd_sand",
 }
 
 tile{
@@ -1282,7 +1300,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1088,
+  x = 1096,
   y = 464,
   width = 32,
   height = 16,
@@ -1337,9 +1355,9 @@ tile{
 tile{
   layer = 0,
   x = 1120,
-  y = 464,
-  width = 80,
-  height = 32,
+  y = 480,
+  width = 48,
+  height = 16,
   pattern = "Gnd_sand",
 }
 
@@ -1377,60 +1395,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 456,
-  width = 8,
-  height = 8,
-  pattern = "GrassPlain",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 464,
-  width = 8,
-  height = 8,
-  pattern = "GrassPlain",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 488,
-  width = 8,
-  height = 8,
-  pattern = "GrassPlain",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 496,
-  width = 8,
-  height = 8,
-  pattern = "GrassPlain",
-}
-
-tile{
-  layer = 0,
-  x = 800,
-  y = 464,
-  width = 8,
-  height = 8,
-  pattern = "GrassPlain",
-}
-
-tile{
-  layer = 0,
-  x = 792,
-  y = 456,
-  width = 8,
-  height = 8,
-  pattern = "GrassPlain",
 }
 
 tile{
@@ -2097,6 +2061,1221 @@ tile{
   width = 8,
   height = 8,
   pattern = "Gnd_smallrock4",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 400,
+  width = 8,
+  height = 56,
+  pattern = "Gnd_grassedge4",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 416,
+  width = 8,
+  height = 40,
+  pattern = "Gnd_grassedge0",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 456,
+  width = 32,
+  height = 8,
+  pattern = "Gnd_grassedge6",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 456,
+  width = 16,
+  height = 8,
+  pattern = "Gnd_grassedge6",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 464,
+  width = 24,
+  height = 8,
+  pattern = "Gnd_grassedge6",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 472,
+  width = 8,
+  height = 16,
+  pattern = "Gnd_grassedge0",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 472,
+  width = 216,
+  height = 8,
+  pattern = "Gnd_grassedge6",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge4",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 496,
+  width = 344,
+  height = 8,
+  pattern = "Gnd_grassedge2",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 504,
+  width = 80,
+  height = 8,
+  pattern = "Gnd_grassedge2",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge7",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge7",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge7",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge5",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge7",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge5",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge7",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge5",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 472,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge5",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 472,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge7",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner5",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge1",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner5",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge1",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner5",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner7",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 480,
+  width = 32,
+  height = 8,
+  pattern = "Gnd_grassedge6",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 480,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge5",
+}
+
+tile{
+  layer = 0,
+  x = 1120,
+  y = 472,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge4",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 488,
+  width = 24,
+  height = 8,
+  pattern = "Gnd_grassedge6",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 480,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_smallcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge5",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 536,
+  width = 48,
+  height = 80,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 552,
+  width = 32,
+  height = 40,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 544,
+  width = 8,
+  height = 64,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 440,
+  width = 128,
+  height = 192,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 432,
+  width = 112,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 424,
+  width = 96,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 416,
+  width = 80,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 408,
+  width = 64,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 400,
+  width = 48,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 632,
+  width = 112,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 640,
+  width = 96,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 648,
+  width = 80,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 656,
+  width = 64,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 664,
+  width = 48,
+  height = 8,
+  pattern = "WaterPlain1",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 400,
+  width = 32,
+  height = 8,
+  pattern = "Gnd_grassborder6",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 448,
+  width = 8,
+  height = 176,
+  pattern = "Gnd_grassborder0",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 448,
+  width = 8,
+  height = 176,
+  pattern = "Gnd_grassborder4",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 664,
+  width = 32,
+  height = 8,
+  pattern = "Gnd_grassborder2",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7inner",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 400,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5inner",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7inner",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 408,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5inner",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7inner",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5inner",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7inner",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5inner",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7inner",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5inner",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7inner",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 440,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5inner",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1inner",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 624,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3inner",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 632,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1inner",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 632,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 632,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 632,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3inner",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1inner",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 640,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3inner",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1inner",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3inner",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1inner",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3inner",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 664,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1inner",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 664,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3inner",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 536,
+  width = 32,
+  height = 8,
+  pattern = "Gnd_grassborder6",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 544,
+  width = 16,
+  height = 8,
+  pattern = "Gnd_grassborder6",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 552,
+  width = 8,
+  height = 48,
+  pattern = "Gnd_grassborder0",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 552,
+  width = 32,
+  height = 8,
+  pattern = "Gnd_grassborder6",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 584,
+  width = 32,
+  height = 8,
+  pattern = "Gnd_grassborder2",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 592,
+  width = 8,
+  height = 16,
+  pattern = "Gnd_grassborder4",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 600,
+  width = 16,
+  height = 8,
+  pattern = "Gnd_grassborder2",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 608,
+  width = 32,
+  height = 8,
+  pattern = "Gnd_grassborder2",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7inner",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5inner",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7inner",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder7",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5inner",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder5",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 584,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 600,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1inner",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 600,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 600,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 600,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3inner",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder1inner",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassborder3inner",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "Water_shallow_spotted_big",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "Water_shallow_spotted_big",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "Water_shallow_spotted_small",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 592,
+  width = 8,
+  height = 8,
+  pattern = "Water_shallow_spotted_small",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 568,
+  width = 8,
+  height = 8,
+  pattern = "Water_shallow_spotted_small",
 }
 
 wall{
