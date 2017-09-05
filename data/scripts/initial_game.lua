@@ -9,7 +9,7 @@ local initial_game = {}
 -- Sets initial values to a new savegame file.
 function initial_game:initialize_new_savegame(game)
 
-  game:set_starting_location("test_maps/start_point", nil)
+  game:set_starting_location("out/a3", "from_hero_house")
 
   game:set_ability("jump_over_water", 1)
 

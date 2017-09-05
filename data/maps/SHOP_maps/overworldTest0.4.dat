@@ -10,6 +10,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 0,
+  y = 0,
+  width = 1296,
+  height = 480,
+  pattern = "GrassPlain",
+}
+
+tile{
+  layer = 0,
   x = 832,
   y = 360,
   width = 16,
