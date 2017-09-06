@@ -59,32 +59,23 @@ sounds/zonzifleur/solarus_team_logo.ogg             Zonzifleur
 
 sprites/console/cursor.png                          Maxs
 sprites/console/icons.png                           Maxs
-sprites/enemies/arbror_root.png
-sprites/enemies/bee_guard.png
-sprites/enemies/billy.png
-sprites/enemies/*_bullblin.png
-sprites/enemies/*_dogman.png
-sprites/enemies/*_duck_soldier.png
-sprites/enemies/*_pig_soldier.png
-sprites/enemies/drakomos*.png
-sprites/enemies/firebird.png
-sprites/enemies/fire_circle.png
-sprites/enemies/flora_gohma.png
-sprites/enemies/gelidrak.png
-sprites/enemies/globul.png
-sprites/enemies/khorneth.png
-sprites/enemies/khotor.png
-sprites/enemies/lizalfos.png
-sprites/enemies/lunarius.png
-sprites/enemies/lunarius_fake.png
-sprites/enemies/mandible.png
-sprites/enemies/master_arbror.png
-sprites/enemies/minillosaur_egg.png
-sprites/enemies/mini_mowatulla.png
-sprites/enemies/mowatulla.png
-sprites/enemies/papillosaur_king.png
-sprites/enemies/poutroxor.png
-sprites/enemies/skeletor.png
+sprites/enemies/arbror_root.png                     Newlink
+sprites/enemies/billy.png                           Newlink
+sprites/enemies/blue_dogman.png                     Newlink
+sprites/enemies/drakomos.png                        Newlink
+sprites/enemies/drakomos_lava_spawner.png           Newlink
+sprites/enemies/firebird.png                        Newlink
+sprites/enemies/flora.png                           Newlink
+sprites/enemies/gelidrak.png                        Newlink
+sprites/enemies/giant_spider.png                    Newlink
+sprites/enemies/globul.png                          Newlink
+sprites/enemies/khorneth.png                        @PyroNet
+sprites/enemies/khotor.png                          Newlink
+sprites/enemies/mandible.png                        Newlink
+sprites/enemies/minillosaur_egg.png                 Newlink
+sprites/enemies/papillosaur_king.png                Newlink
+sprites/enemies/poutroxor.png                       Newlink
+sprites/enemies/red_dogman.png                      Newlink
 sprites/entities/bomb.png                           Bertram, adapted from: http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 sprites/entities/conveyor_belt.png
 sprites/entities/dark*.png                          Bertram

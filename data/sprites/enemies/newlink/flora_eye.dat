@@ -1,6 +1,6 @@
 animation{
   name = "walking",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   frame_delay = 300,
   frame_to_loop_on = 0,
   directions = {
@@ -13,7 +13,7 @@ animation{
 
 animation{
   name = "eye",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   directions = {
     { x = 0, y = 208, frame_width = 104, frame_height = 64, origin_x = 52, origin_y = 64 },
     { x = 0, y = 208, frame_width = 104, frame_height = 64, origin_x = 52, origin_y = 64 },
@@ -24,7 +24,7 @@ animation{
 
 animation{
   name = "hurt",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -37,7 +37,7 @@ animation{
 
 animation{
   name = "petal_1",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   directions = {
     { x = 312, y = 240, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 54 },
     { x = 312, y = 240, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 54 },
@@ -48,7 +48,7 @@ animation{
 
 animation{
   name = "petal_hurt_1",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -61,7 +61,7 @@ animation{
 
 animation{
   name = "petal_2",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   directions = {
     { x = 312, y = 168, frame_width = 32, frame_height = 24, origin_x = 31, origin_y = 44 },
     { x = 312, y = 168, frame_width = 32, frame_height = 24, origin_x = 31, origin_y = 44 },
@@ -72,7 +72,7 @@ animation{
 
 animation{
   name = "petal_hurt_2",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -85,7 +85,7 @@ animation{
 
 animation{
   name = "petal_3",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   directions = {
     { x = 312, y = 192, frame_width = 32, frame_height = 24, origin_x = 19, origin_y = 23 },
     { x = 312, y = 192, frame_width = 32, frame_height = 24, origin_x = 19, origin_y = 23 },
@@ -96,7 +96,7 @@ animation{
 
 animation{
   name = "petal_hurt_3",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -109,7 +109,7 @@ animation{
 
 animation{
   name = "petal_4",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   directions = {
     { x = 312, y = 216, frame_width = 32, frame_height = 24, origin_x = 13, origin_y = 23 },
     { x = 312, y = 216, frame_width = 32, frame_height = 24, origin_x = 13, origin_y = 23 },
@@ -120,7 +120,7 @@ animation{
 
 animation{
   name = "petal_hurt_4",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -133,7 +133,7 @@ animation{
 
 animation{
   name = "petal_5",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   directions = {
     { x = 312, y = 144, frame_width = 32, frame_height = 24, origin_y = 44 },
     { x = 312, y = 144, frame_width = 32, frame_height = 24, origin_y = 44 },
@@ -144,7 +144,7 @@ animation{
 
 animation{
   name = "petal_hurt_5",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -157,7 +157,7 @@ animation{
 
 animation{
   name = "ball",
-  src_image = "enemies/flora_gohma.png",
+  src_image = "enemies/flora.png",
   directions = {
     { x = 320, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },
     { x = 320, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 8 },

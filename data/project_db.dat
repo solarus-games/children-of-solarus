@@ -20,83 +20,35 @@ sprite{ id = "destructibles/pot_1", description = "Pot 1" }
 sprite{ id = "destructibles/rock_golden", description = "Rock Golden" }
 sprite{ id = "destructibles/rock_grey", description = "Rock Grey" }
 sprite{ id = "destructibles/signpost", description = "Signpost" }
-sprite{ id = "enemies/arbror_root", description = "Enemy: Arbror root" }
-sprite{ id = "enemies/bee_guard", description = "Enemy: Bee Guard" }
-sprite{ id = "enemies/bee_guard_sword", description = "Enemy: Bee Guard sword" }
-sprite{ id = "enemies/billy", description = "Enemy: Billy" }
-sprite{ id = "enemies/black_knight_soldier_sword", description = "Enemy: Black knight soldier sword" }
-sprite{ id = "enemies/blue_bullblin", description = "Enemy: Bullblin (blue)" }
-sprite{ id = "enemies/blue_bullblin_sword", description = "Enemy: Bullblin (blue) sword" }
-sprite{ id = "enemies/blue_dogman", description = "Enemy: Dogman (blue)" }
-sprite{ id = "enemies/blue_duck_soldier", description = "Enemy: Duck Soldier (blue)" }
-sprite{ id = "enemies/blue_duck_soldier_sword", description = "Enemy: Duck Soldier (blue) sword" }
-sprite{ id = "enemies/blue_flame", description = "Enemy: Flame (blue)" }
-sprite{ id = "enemies/blue_hardhat_beetle", description = "Enemy: Hardhat Beetle (blue)" }
-sprite{ id = "enemies/blue_knight_soldier", description = "Enemy: Knight Soldier (blue)" }
-sprite{ id = "enemies/blue_knight_soldier_sword", description = "Enemy: Knight Soldier (blue) sword" }
-sprite{ id = "enemies/blue_pig_soldier", description = "Enemy: Pig Soldier (blue)" }
-sprite{ id = "enemies/blue_pig_soldier_sword", description = "Enemy: Pig Soldier (blue) sword" }
-sprite{ id = "enemies/bubble", description = "Enemy: Bubble" }
-sprite{ id = "enemies/chain_and_ball", description = "Enemy: Chain and ball" }
-sprite{ id = "enemies/drakomos", description = "Enemy: Drakomos" }
-sprite{ id = "enemies/drakomos_head", description = "Enemy: Drakomos head" }
-sprite{ id = "enemies/drakomos_lava_spawner", description = "Enemy: Drakomos lava spawner" }
-sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
-sprite{ id = "enemies/evil_tile", description = "Enemy: Evil Tile" }
-sprite{ id = "enemies/fire_bat", description = "Enemy: Fire bat" }
-sprite{ id = "enemies/fireball_simple", description = "Enemy: Fireball (simple)" }
-sprite{ id = "enemies/firebird", description = "Enemy: Fire Bird" }
-sprite{ id = "enemies/flora_gohma", description = "Enemy: Flora Gohma" }
-sprite{ id = "enemies/flora_gohma_eye", description = "Enemy: Flora Gohma eye" }
-sprite{ id = "enemies/gelidrak", description = "Enemy: Gelidrak" }
-sprite{ id = "enemies/gibdo", description = "Enemy: Gibdo" }
-sprite{ id = "enemies/globul", description = "Enemy: Globul" }
-sprite{ id = "enemies/green_duck_soldier", description = "Enemy: Duck Soldier (green)" }
-sprite{ id = "enemies/green_duck_soldier_sword", description = "Enemy: Duck Soldier (green) sword" }
-sprite{ id = "enemies/green_knight_soldier", description = "Enemy: Knight Soldier (green)" }
-sprite{ id = "enemies/green_knight_soldier_sword", description = "Enemy: Knight Soldier (green) sword" }
-sprite{ id = "enemies/khorneth", description = "Enemy: Khorneth" }
-sprite{ id = "enemies/khorneth_left_blade", description = "Enemy: Khorneth left blade" }
-sprite{ id = "enemies/khorneth_right_blade", description = "Enemy: Khorneth right blade" }
-sprite{ id = "enemies/khotor", description = "Enemy: Khotor" }
-sprite{ id = "enemies/laser", description = "Enemy: Laser" }
-sprite{ id = "enemies/lizalfos", description = "Enemy: Lizalfos" }
-sprite{ id = "enemies/lizalfos_sword", description = "Enemy: Lizalfos sword" }
-sprite{ id = "enemies/lunarius", description = "Enemy: Lunarius (first fight)" }
-sprite{ id = "enemies/lunarius_2", description = "Enemy: Lunarius (second fight)" }
-sprite{ id = "enemies/lunarius_2_fake", description = "Enemy: Fake Lunarius (second fight)" }
-sprite{ id = "enemies/mandible", description = "Enemy: Mandible" }
-sprite{ id = "enemies/master_arbror", description = "Enemy: Master Arbror" }
-sprite{ id = "enemies/minillosaur_egg_fixed", description = "Enemy: Minillosaur Egg (thrown)" }
-sprite{ id = "enemies/minillosaur_egg_thrown", description = "Enemy: Minillosaur Egg (fixed)" }
-sprite{ id = "enemies/mowatulla", description = "Enemy: Mowatulla" }
-sprite{ id = "enemies/neptune", description = "Enemy: Neptune" }
-sprite{ id = "enemies/papillosaur_king", description = "Enemy: Papillosaur King" }
-sprite{ id = "enemies/pike_auto", description = "Enemy: Pike (always moving)" }
-sprite{ id = "enemies/pike_detect", description = "Enemy: Pike (moves near hero)" }
-sprite{ id = "enemies/pike_fixed", description = "Enemy: Pike (never moving)" }
-sprite{ id = "enemies/poutroxor", description = "Enemy: Poutroxor" }
-sprite{ id = "enemies/poutroxor_head", description = "Enemy: Poutroxor head" }
-sprite{ id = "enemies/poutroxor_skeleton", description = "Enemy: Poutroxor skeleton" }
-sprite{ id = "enemies/red_bullblin", description = "Enemy: Bullblin (red)" }
-sprite{ id = "enemies/red_bullblin_sword", description = "Enemy: Bullblin (red) sword" }
-sprite{ id = "enemies/red_dogman", description = "Enemy: Dogman (red)" }
-sprite{ id = "enemies/red_duck_soldier", description = "Enemy: Duck Soldier (red)" }
-sprite{ id = "enemies/red_duck_soldier_sword", description = "Enemy: Duck Soldier (red) sword" }
-sprite{ id = "enemies/red_hardhat_beetle", description = "Enemy: Hardhat Beetle (red)" }
-sprite{ id = "enemies/red_helmasaur", description = "Enemy: Helmasaur (red)" }
-sprite{ id = "enemies/red_knight_soldier", description = "Enemy: Knight Soldier (red)" }
-sprite{ id = "enemies/red_knight_soldier_sword", description = "Enemy: Knight Soldier (red) sword" }
-sprite{ id = "enemies/red_pig_soldier", description = "Enemy: Pig Soldier (red)" }
-sprite{ id = "enemies/red_pig_soldier_sword", description = "Enemy: Pig Soldier (red) sword" }
-sprite{ id = "enemies/ropa", description = "Enemy: Ropa" }
-sprite{ id = "enemies/simple_green_soldier", description = "Enemy: Simple Soldier (green)" }
-sprite{ id = "enemies/skeletor", description = "Enemy: Skeletor" }
-sprite{ id = "enemies/snap_dragon", description = "Enemy: Snap Dragon" }
-sprite{ id = "enemies/soldier", description = "Soldier" }
-sprite{ id = "enemies/soldier_feather", description = "Soldier Feather" }
-sprite{ id = "enemies/soldier_sword", description = "Soldier Sword" }
-sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "enemies/newlink/arbror_root", description = "Arbror root" }
+sprite{ id = "enemies/newlink/billy", description = "Billy" }
+sprite{ id = "enemies/newlink/blue_dogman", description = "Dogman (blue)" }
+sprite{ id = "enemies/newlink/drakomos", description = "Drakomos" }
+sprite{ id = "enemies/newlink/drakomos_head", description = "Drakomos head" }
+sprite{ id = "enemies/newlink/drakomos_lava_spawner", description = "Drakomos lava spawner" }
+sprite{ id = "enemies/newlink/firebird", description = "Fire Bird" }
+sprite{ id = "enemies/newlink/flora_gohma", description = "Flora" }
+sprite{ id = "enemies/newlink/flora_gohma_eye", description = "Flora eye" }
+sprite{ id = "enemies/newlink/gelidrak", description = "Gelidrak" }
+sprite{ id = "enemies/newlink/gelidrak_head", description = "Gelidrak head" }
+sprite{ id = "enemies/newlink/gelidrak_tail", description = "Gelidrak tail" }
+sprite{ id = "enemies/newlink/giant_spider", description = "Giant spider" }
+sprite{ id = "enemies/newlink/globul", description = "Globul" }
+sprite{ id = "enemies/apyronet/khorneth", description = "Khorneth" }
+sprite{ id = "enemies/apyronet/khorneth_left_blade", description = "Khorneth left blade" }
+sprite{ id = "enemies/apyronet/khorneth_right_blade", description = "Khorneth right blade" }
+sprite{ id = "enemies/newlink/khotor", description = "Khotor" }
+sprite{ id = "enemies/newlink/mandible", description = "Mandible" }
+sprite{ id = "enemies/newlink/minillosaur_egg_fixed", description = "Minillosaur Egg (thrown)" }
+sprite{ id = "enemies/newlink/minillosaur_egg_thrown", description = "Minillosaur Egg (fixed)" }
+sprite{ id = "enemies/newlink/papillosaur_king", description = "Papillosaur King" }
+sprite{ id = "enemies/newlink/poutroxor", description = "Poutroxor" }
+sprite{ id = "enemies/newlink/poutroxor_head", description = "Poutroxor head" }
+sprite{ id = "enemies/newlink/poutroxor_skeleton", description = "Poutroxor skeleton" }
+sprite{ id = "enemies/newlink/red_dogman", description = "Dogman (red)" }
+sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
+sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }
+sprite{ id = "enemies/diarandor/soldier_sword", description = "Soldier Sword" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
@@ -418,71 +370,6 @@ item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
-
-enemy{ id = "arbror_root", description = "Arbror root" }
-enemy{ id = "bee_guard", description = "Bee Guard" }
-enemy{ id = "billy", description = "Billy" }
-enemy{ id = "blue_bullblin", description = "Bullblin (blue)" }
-enemy{ id = "blue_dogman", description = "Dogman (blue)" }
-enemy{ id = "blue_duck_soldier", description = "Duck Soldier (blue)" }
-enemy{ id = "blue_fireball_triple", description = "Triple blue Fireball" }
-enemy{ id = "blue_flame", description = "Flame (blue)" }
-enemy{ id = "blue_hardhat_beetle", description = "Hardhat Beetle (blue)" }
-enemy{ id = "blue_knight_soldier", description = "Knight Soldier (blue)" }
-enemy{ id = "blue_pig_soldier", description = "Pig Soldier (blue)" }
-enemy{ id = "bubble", description = "Bubble" }
-enemy{ id = "chain_and_ball", description = "Chain and ball" }
-enemy{ id = "drakomos", description = "Drakomos" }
-enemy{ id = "drakomos_head", description = "Drakomos head" }
-enemy{ id = "drakomos_lava_spawner", description = "Drakomos lava spawner" }
-enemy{ id = "evil_tile", description = "Evil Tile" }
-enemy{ id = "fire_bat", description = "Fire bat" }
-enemy{ id = "fire_circle", description = "Fire circle" }
-enemy{ id = "fireball_simple", description = "Fireball (simple)" }
-enemy{ id = "firebird", description = "Fire Bird" }
-enemy{ id = "flora_gohma", description = "Flora Gohma" }
-enemy{ id = "flora_gohma_eye", description = "Flora Gohma eye" }
-enemy{ id = "gelidrak", description = "Gelidrak" }
-enemy{ id = "gelidrak_head", description = "Gelidrak Head" }
-enemy{ id = "gelidrak_tail", description = "Gelidrak Tail" }
-enemy{ id = "gibdo", description = "Gibdo" }
-enemy{ id = "globul", description = "Globul" }
-enemy{ id = "green_duck_soldier", description = "Duck Soldier (green)" }
-enemy{ id = "green_knight_soldier", description = "Knight Soldier (green)" }
-enemy{ id = "khorneth", description = "Khorneth" }
-enemy{ id = "khotor", description = "Khotor" }
-enemy{ id = "laser", description = "Laser" }
-enemy{ id = "lizalfos", description = "Lizalfos" }
-enemy{ id = "lunarius", description = "Lunarius (first fight)" }
-enemy{ id = "lunarius_2", description = "Lunarius (second fight)" }
-enemy{ id = "lunarius_2_fake", description = "Fake Lunarius (second fight)" }
-enemy{ id = "mandible", description = "Mandible" }
-enemy{ id = "master_arbror", description = "Master Arbror" }
-enemy{ id = "mini_mowatulla", description = "Mini Mowatulla" }
-enemy{ id = "minillosaur_egg_fixed", description = "Minillosaur Egg (thrown)" }
-enemy{ id = "minillosaur_egg_thrown", description = "Minillosaur Egg (fixed)" }
-enemy{ id = "mowatulla", description = "Mowatulla" }
-enemy{ id = "neptune", description = "Neptune" }
-enemy{ id = "papillosaur_king", description = "Papillosaur King" }
-enemy{ id = "pike_auto", description = "Pike (always moving)" }
-enemy{ id = "pike_detect", description = "Pike (moves near hero)" }
-enemy{ id = "pike_fixed", description = "Pike (never moving)" }
-enemy{ id = "poutroxor", description = "Poutroxor" }
-enemy{ id = "red_bullblin", description = "Bullblin (red)" }
-enemy{ id = "red_dogman", description = "Dogman (red)" }
-enemy{ id = "red_duck_soldier", description = "Duck Soldier (red)" }
-enemy{ id = "red_fireball_triple", description = "Red triple Fireball" }
-enemy{ id = "red_flame", description = "Red flame" }
-enemy{ id = "red_hardhat_beetle", description = "Hardhat Beetle (red)" }
-enemy{ id = "red_helmasaur", description = "Helmasaur (red)" }
-enemy{ id = "red_knight_soldier", description = "Knight Soldier (red)" }
-enemy{ id = "red_pig_soldier", description = "Pig Soldier (red)" }
-enemy{ id = "ropa", description = "Ropa" }
-enemy{ id = "simple_green_soldier", description = "Simple Soldier (green)" }
-enemy{ id = "skeletor", description = "Skeletor" }
-enemy{ id = "snap_dragon", description = "Snap Dragon" }
-enemy{ id = "tentacle", description = "Tentacle" }
-
 
 language{ id = "en", description = "English" }
 
