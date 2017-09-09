@@ -22,6 +22,114 @@ custom_entity{
 
 tile{
   layer = 0,
+  x = 40,
+  y = 128,
+  width = 216,
+  height = 560,
+  pattern = "GrassPlain",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 664,
+  width = 48,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 656,
+  width = 64,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 648,
+  width = 80,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 640,
+  width = 96,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 632,
+  width = 112,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 440,
+  width = 128,
+  height = 192,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 432,
+  width = 112,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 424,
+  width = 96,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 416,
+  width = 80,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 408,
+  width = 64,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 400,
+  width = 48,
+  height = 8,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
   x = 728,
   y = 328,
   width = 472,
@@ -31,11 +139,38 @@ tile{
 
 tile{
   layer = 0,
-  x = 40,
-  y = 128,
-  width = 216,
-  height = 560,
-  pattern = "GrassPlain",
+  x = 1152,
+  y = 544,
+  width = 16,
+  height = 64,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 552,
+  width = 32,
+  height = 40,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 544,
+  width = 8,
+  height = 64,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 536,
+  width = 48,
+  height = 80,
+  pattern = "ShallowWaterPlain",
 }
 
 tile{
@@ -2470,141 +2605,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1104,
-  y = 536,
-  width = 48,
-  height = 80,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 1152,
-  y = 544,
-  width = 16,
-  height = 64,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 1168,
-  y = 552,
-  width = 32,
-  height = 40,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 1096,
-  y = 544,
-  width = 8,
-  height = 64,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 440,
-  width = 128,
-  height = 192,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 432,
-  width = 112,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 424,
-  width = 96,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 416,
-  width = 80,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 408,
-  width = 64,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 400,
-  width = 48,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 632,
-  width = 112,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 640,
-  width = 96,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 88,
-  y = 648,
-  width = 80,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 656,
-  width = 64,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 664,
-  width = 48,
-  height = 8,
-  pattern = "WaterPlain1",
-}
-
-tile{
-  layer = 0,
   x = 112,
   y = 400,
   width = 32,
@@ -3051,15 +3051,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "Gnd_grassborder6",
-}
-
-tile{
-  layer = 0,
-  x = 1096,
-  y = 552,
-  width = 8,
-  height = 48,
-  pattern = "Gnd_grassborder0",
 }
 
 tile{
@@ -3276,6 +3267,15 @@ tile{
   width = 8,
   height = 8,
   pattern = "Water_shallow_spotted_small",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 552,
+  width = 8,
+  height = 48,
+  pattern = "Gnd_grassborder0",
 }
 
 wall{

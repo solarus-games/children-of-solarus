@@ -5669,44 +5669,95 @@ tile{
   pattern = "roof_red_border_6",
 }
 
-destination{
-  name = "destination",
+tile{
+  layer = 0,
+  x = 152,
+  y = 56,
+  width = 8,
+  height = 32,
+  pattern = "StairsUndergroundBorderRight",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 56,
+  width = 8,
+  height = 32,
+  pattern = "StairsUndergroundBorderLeft",
+}
+
+tile{
   layer = 0,
   x = 136,
-  y = 85,
-  direction = 1,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "StairsUndergroundBorderUp",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 64,
+  width = 16,
+  height = 24,
+  pattern = "StairsUndergroundMiddle",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 32,
+  width = 8,
+  height = 32,
+  pattern = "StairsUndergroundBorderRight",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 32,
+  width = 8,
+  height = 32,
+  pattern = "StairsUndergroundBorderLeft",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "StairsUndergroundBorderUp",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 40,
+  width = 16,
+  height = 24,
+  pattern = "StairsUndergroundMiddle",
+}
+
+destination{
+  name = "starting_point",
+  layer = 0,
+  x = 144,
+  y = 93,
+  direction = 3,
   starting_location_mode = "yes",
 }
 
 teletransporter{
   name = "house_entrance",
   layer = 0,
-  x = 144,
-  y = 72,
+  x = 136,
+  y = 64,
   width = 16,
   height = 16,
-  destination_map = "root_prairie/000x000",
-  destination = "blacksmith_exit",
-  sprite = "things/stairs_left_down",
-}
-
-teletransporter{
-  layer = 0,
-  x = 296,
-  y = 56,
-  width = 16,
-  height = 16,
-  destination_map = "root_prairie/overworld_test",
-  destination = "balcony",
-  sprite = "things/stairs_left_down",
-}
-
-destination{
-  name = "to_balcony",
-  layer = 0,
-  x = 320,
-  y = 69,
-  direction = 1,
+  destination_map = "",
 }
 
 jumper{
@@ -5717,33 +5768,6 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 56,
-}
-
-destination{
-  name = "balcony",
-  layer = 0,
-  x = 120,
-  y = 301,
-  direction = 1,
-}
-
-teletransporter{
-  layer = 0,
-  x = 112,
-  y = 272,
-  width = 16,
-  height = 16,
-  destination_map = "root_prairie/overworld_test",
-  destination = "to_balcony",
-}
-
-teletransporter{
-  layer = 0,
-  x = 592,
-  y = 352,
-  width = 16,
-  height = 16,
-  destination_map = "light_overworld_template",
 }
 
 destructible{

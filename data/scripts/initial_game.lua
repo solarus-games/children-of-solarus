@@ -10,6 +10,7 @@ local initial_game = {}
 function initial_game:initialize_new_savegame(game)
 
   game:set_starting_location("out/a3", "from_hero_house")
+  -- game:set_starting_location("SHOP_maps/overworldTest0.4", "starting_point")
 
   game:set_ability("jump_over_water", 1)
 
