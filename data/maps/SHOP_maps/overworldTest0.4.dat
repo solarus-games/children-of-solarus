@@ -5086,15 +5086,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 952,
-  y = 232,
-  width = 32,
-  height = 8,
-  pattern = "house_entrance_wooden_down",
-}
-
-tile{
-  layer = 0,
   x = 960,
   y = 216,
   width = 16,
@@ -5284,15 +5275,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 768,
-  y = 336,
-  width = 32,
-  height = 8,
-  pattern = "house_entrance_wooden_down",
-}
-
-tile{
-  layer = 0,
   x = 720,
   y = 320,
   width = 16,
@@ -5451,15 +5433,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "house_entrance_wooden_right",
-}
-
-tile{
-  layer = 0,
-  x = 768,
-  y = 232,
-  width = 32,
-  height = 8,
-  pattern = "house_entrance_wooden_down",
 }
 
 tile{
@@ -5739,6 +5712,60 @@ tile{
   width = 16,
   height = 24,
   pattern = "StairsUndergroundMiddle",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "house_entrance_wooden_down_right",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "house_entrance_wooden_down_left",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "house_entrance_wooden_down_right",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "house_entrance_wooden_down_left",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "house_entrance_wooden_down_right",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "house_entrance_wooden_down_left",
 }
 
 destination{

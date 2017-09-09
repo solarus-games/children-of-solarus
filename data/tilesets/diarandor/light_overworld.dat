@@ -1720,16 +1720,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "InvisibleLadder",
-  ground = "ladder",
-  default_layer = 0,
-  x = 80,
-  y = 104,
-  width = 8,
-  height = 8,
-}
-
-tile_pattern{
   id = "InvisiblePlatform",
   ground = "traversable",
   default_layer = 0,
@@ -3054,9 +3044,9 @@ tile_pattern{
   ground = "traversable",
   default_layer = 2,
   x = 600,
-  y = 80,
+  y = 64,
   width = 48,
-  height = 40,
+  height = 56,
 }
 
 tile_pattern{
@@ -3097,16 +3087,6 @@ tile_pattern{
   y = 32,
   width = 32,
   height = 32,
-}
-
-tile_pattern{
-  id = "Wood_tree_blue_up",
-  ground = "traversable",
-  default_layer = 2,
-  x = 600,
-  y = 64,
-  width = 48,
-  height = 16,
 }
 
 tile_pattern{
@@ -3154,9 +3134,9 @@ tile_pattern{
   ground = "traversable",
   default_layer = 2,
   x = 536,
-  y = 16,
+  y = 0,
   width = 48,
-  height = 40,
+  height = 56,
 }
 
 tile_pattern{
@@ -3200,23 +3180,13 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "Wood_tree_green_up",
-  ground = "traversable",
-  default_layer = 2,
-  x = 536,
-  y = 0,
-  width = 48,
-  height = 16,
-}
-
-tile_pattern{
   id = "Wood_tree_purple_center",
   ground = "traversable",
   default_layer = 2,
   x = 600,
-  y = 16,
+  y = 0,
   width = 48,
-  height = 40,
+  height = 56,
 }
 
 tile_pattern{
@@ -3260,16 +3230,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "Wood_tree_purple_up",
-  ground = "traversable",
-  default_layer = 2,
-  x = 600,
-  y = 0,
-  width = 48,
-  height = 16,
-}
-
-tile_pattern{
   id = "Wood_tree_trunk_big_down",
   ground = "wall",
   default_layer = 0,
@@ -3292,7 +3252,7 @@ tile_pattern{
 tile_pattern{
   id = "Wood_tree_trunk_big_middle",
   ground = "traversable",
-  default_layer = 2,
+  default_layer = 1,
   x = 472,
   y = 8,
   width = 48,
@@ -3334,9 +3294,9 @@ tile_pattern{
   ground = "traversable",
   default_layer = 2,
   x = 536,
-  y = 80,
+  y = 64,
   width = 48,
-  height = 40,
+  height = 56,
 }
 
 tile_pattern{
@@ -3377,16 +3337,6 @@ tile_pattern{
   y = 32,
   width = 32,
   height = 32,
-}
-
-tile_pattern{
-  id = "Wood_tree_yellow_up",
-  ground = "traversable",
-  default_layer = 2,
-  x = 536,
-  y = 64,
-  width = 48,
-  height = 16,
 }
 
 tile_pattern{
@@ -4220,12 +4170,22 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "house_entrance_wooden_down",
-  ground = "traversable",
+  id = "house_entrance_wooden_down_left",
+  ground = "wall",
   default_layer = 0,
   x = 944,
   y = 32,
-  width = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "house_entrance_wooden_down_right",
+  ground = "wall",
+  default_layer = 0,
+  x = 968,
+  y = 32,
+  width = 8,
   height = 8,
 }
 
@@ -6968,10 +6928,10 @@ border_set{
   pattern_1 = "Gnd_grassedge6",
   pattern_2 = "Gnd_grassedge0",
   pattern_3 = "Gnd_grassedge2",
-  pattern_4 = "Gnd_grass_smallcorner1",
-  pattern_5 = "Gnd_grass_smallcorner3",
-  pattern_6 = "Gnd_grass_smallcorner5",
-  pattern_7 = "Gnd_grass_smallcorner7",
+  pattern_4 = "Gnd_grass_bigcorner1",
+  pattern_5 = "Gnd_grass_bigcorner3",
+  pattern_6 = "Gnd_grass_bigcorner5",
+  pattern_7 = "Gnd_grass_bigcorner7",
   pattern_8 = "Gnd_grassedge5",
   pattern_9 = "Gnd_grassedge7",
   pattern_10 = "Gnd_grassedge1",
