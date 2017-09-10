@@ -20,35 +20,55 @@ sprite{ id = "destructibles/pot_1", description = "Pot 1" }
 sprite{ id = "destructibles/rock_golden", description = "Rock Golden" }
 sprite{ id = "destructibles/rock_grey", description = "Rock Grey" }
 sprite{ id = "destructibles/signpost", description = "Signpost" }
-sprite{ id = "enemies/newlink/arbror_root", description = "Arbror root" }
-sprite{ id = "enemies/newlink/billy", description = "Billy" }
-sprite{ id = "enemies/newlink/blue_dogman", description = "Dogman (blue)" }
-sprite{ id = "enemies/newlink/drakomos", description = "Drakomos" }
-sprite{ id = "enemies/newlink/drakomos_head", description = "Drakomos head" }
-sprite{ id = "enemies/newlink/drakomos_lava_spawner", description = "Drakomos lava spawner" }
-sprite{ id = "enemies/newlink/firebird", description = "Fire Bird" }
-sprite{ id = "enemies/newlink/flora_gohma", description = "Flora" }
-sprite{ id = "enemies/newlink/flora_gohma_eye", description = "Flora eye" }
-sprite{ id = "enemies/newlink/gelidrak", description = "Gelidrak" }
-sprite{ id = "enemies/newlink/gelidrak_head", description = "Gelidrak head" }
-sprite{ id = "enemies/newlink/gelidrak_tail", description = "Gelidrak tail" }
-sprite{ id = "enemies/newlink/giant_spider", description = "Giant spider" }
-sprite{ id = "enemies/newlink/globul", description = "Globul" }
-sprite{ id = "enemies/apyronet/khorneth", description = "Khorneth" }
-sprite{ id = "enemies/apyronet/khorneth_left_blade", description = "Khorneth left blade" }
-sprite{ id = "enemies/apyronet/khorneth_right_blade", description = "Khorneth right blade" }
-sprite{ id = "enemies/newlink/khotor", description = "Khotor" }
-sprite{ id = "enemies/newlink/mandible", description = "Mandible" }
-sprite{ id = "enemies/newlink/minillosaur_egg_fixed", description = "Minillosaur Egg (thrown)" }
-sprite{ id = "enemies/newlink/minillosaur_egg_thrown", description = "Minillosaur Egg (fixed)" }
-sprite{ id = "enemies/newlink/papillosaur_king", description = "Papillosaur King" }
-sprite{ id = "enemies/newlink/poutroxor", description = "Poutroxor" }
-sprite{ id = "enemies/newlink/poutroxor_head", description = "Poutroxor head" }
-sprite{ id = "enemies/newlink/poutroxor_skeleton", description = "Poutroxor skeleton" }
-sprite{ id = "enemies/newlink/red_dogman", description = "Dogman (red)" }
+sprite{ id = "enemies/apyronet/bosses/khorneth", description = "Khorneth" }
+sprite{ id = "enemies/apyronet/bosses/khorneth_left_blade", description = "Khorneth left blade" }
+sprite{ id = "enemies/apyronet/bosses/khorneth_right_blade", description = "Khorneth right blade" }
 sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
 sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }
 sprite{ id = "enemies/diarandor/soldier_sword", description = "Soldier Sword" }
+sprite{ id = "enemies/newlink/bosses/arbror_root", description = "Arbror root" }
+sprite{ id = "enemies/newlink/bosses/drakomos", description = "Drakomos" }
+sprite{ id = "enemies/newlink/bosses/drakomos_head", description = "Drakomos head" }
+sprite{ id = "enemies/newlink/bosses/drakomos_lava", description = "Drakomos lava spawner" }
+sprite{ id = "enemies/newlink/bosses/firebird", description = "Fire Bird" }
+sprite{ id = "enemies/newlink/bosses/flora", description = "Flora" }
+sprite{ id = "enemies/newlink/bosses/flora_eye", description = "Flora eye" }
+sprite{ id = "enemies/newlink/bosses/gelidrak", description = "Gelidrak" }
+sprite{ id = "enemies/newlink/bosses/gelidrak_head", description = "Gelidrak head" }
+sprite{ id = "enemies/newlink/bosses/gelidrak_tail", description = "Gelidrak tail" }
+sprite{ id = "enemies/newlink/bosses/giant_spider", description = "Giant spider" }
+sprite{ id = "enemies/newlink/bosses/khotor", description = "Khotor" }
+sprite{ id = "enemies/newlink/bosses/papillosaur_king", description = "Papillosaur King" }
+sprite{ id = "enemies/newlink/bosses/poutroxor", description = "Poutroxor" }
+sprite{ id = "enemies/newlink/bosses/poutroxor_head", description = "Poutroxor head" }
+sprite{ id = "enemies/newlink/bosses/poutroxor_skeleton", description = "Poutroxor skeleton" }
+sprite{ id = "enemies/newlink/bee_guard", description = "Bee Guard" }
+sprite{ id = "enemies/newlink/bee_guard_weapon", description = "Bee Guard weapon" }
+sprite{ id = "enemies/newlink/bullblin_blue", description = "Bullblin (blue)" }
+sprite{ id = "enemies/newlink/bullblin_blue_weapon", description = "Bullblin (blue) weapon" }
+sprite{ id = "enemies/newlink/bullblin_red", description = "Bullblin (red)" }
+sprite{ id = "enemies/newlink/bullblin_red_weapon", description = "Bullblin (red) weapon" }
+sprite{ id = "enemies/newlink/dogman_blue", description = "Dogman (blue)" }
+sprite{ id = "enemies/newlink/dogman_red", description = "Dogman (red)" }
+sprite{ id = "enemies/newlink/duck_soldier_blue", description = "Duck Soldier (blue)" }
+sprite{ id = "enemies/newlink/duck_soldier_blue_weapon", description = "Duck Soldier (blue) weapon" }
+sprite{ id = "enemies/newlink/duck_soldier_green", description = "Duck Soldier (green)" }
+sprite{ id = "enemies/newlink/duck_soldier_green_weapon", description = "Duck Soldier (green) weapon" }
+sprite{ id = "enemies/newlink/duck_soldier_red", description = "Duck Soldier (red)" }
+sprite{ id = "enemies/newlink/duck_soldier_red_weapon", description = "Duck Soldier (red) weapon" }
+sprite{ id = "enemies/newlink/fire_circle", description = "Fire circle" }
+sprite{ id = "enemies/newlink/globul", description = "Globul" }
+sprite{ id = "enemies/newlink/lizard", description = "Lizard" }
+sprite{ id = "enemies/newlink/lizard_weapon", description = "Lizard weapon" }
+sprite{ id = "enemies/newlink/mandible", description = "Mandible" }
+sprite{ id = "enemies/newlink/minillosaur_egg_fixed", description = "Minillosaur Egg (thrown)" }
+sprite{ id = "enemies/newlink/minillosaur_egg_thrown", description = "Minillosaur Egg (fixed)" }
+sprite{ id = "enemies/newlink/pig_soldier_blue", description = "Pig Soldier (blue)" }
+sprite{ id = "enemies/newlink/pig_soldier_blue_weapon", description = "Pig Soldier (blue) weapon" }
+sprite{ id = "enemies/newlink/pig_soldier_red", description = "Pig Soldier (red)" }
+sprite{ id = "enemies/newlink/pig_soldier_red_weapon", description = "Pig Soldier (red) weapon" }
+sprite{ id = "enemies/newlink/skeletor", description = "Skeletor" }
+sprite{ id = "enemies/newlink/spider", description = "Spider" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
@@ -370,6 +390,8 @@ item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
+
+
 
 language{ id = "en", description = "English" }
 

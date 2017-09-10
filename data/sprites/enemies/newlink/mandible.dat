@@ -1,6 +1,6 @@
 animation{
   name = "walking",
-  src_image = "enemies/mandible.png",
+  src_image = "enemies/newlink/mandible.png",
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
@@ -13,7 +13,7 @@ animation{
 
 animation{
   name = "immobilized",
-  src_image = "enemies/mandible.png",
+  src_image = "enemies/newlink/mandible.png",
   directions = {
     { x = 192, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
     { x = 192, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
@@ -24,7 +24,7 @@ animation{
 
 animation{
   name = "shaking",
-  src_image = "enemies/mandible.png",
+  src_image = "enemies/newlink/mandible.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -37,7 +37,7 @@ animation{
 
 animation{
   name = "hurt",
-  src_image = "enemies/mandible.png",
+  src_image = "enemies/newlink/mandible.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {

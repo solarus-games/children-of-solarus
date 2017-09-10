@@ -1,6 +1,6 @@
 animation{
   name = "walking",
-  src_image = "enemies/soldier_sword.png",
+  src_image = "enemies/diarandor/soldier_sword.png",
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
@@ -12,7 +12,7 @@ animation{
 }
 animation{
   name = "feather",
-  src_image = "enemies/soldier_sword.png",
+  src_image = "enemies/diarandor/soldier_sword.png",
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
@@ -24,7 +24,7 @@ animation{
 }
 animation{
   name = "hurt",
-  src_image = "enemies/soldier_sword.png",
+  src_image = "enemies/diarandor/soldier_sword.png",
   frame_delay = 50,
   frame_to_loop_on = 0,
   directions = {
@@ -36,7 +36,7 @@ animation{
 }
 animation{
   name = "stopped",
-  src_image = "enemies/soldier_sword.png",
+  src_image = "enemies/diarandor/soldier_sword.png",
   directions = {
     { x = 0, y = 0, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 29 },
     { x = 0, y = 40, frame_width = 32, frame_height = 40, origin_x = 8, origin_y = 29 },
