@@ -5090,6 +5090,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "mailbox_down",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1008,
+  y = 56,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "mailbox_up",
+  ground = "wall",
+  default_layer = 0,
+  x = 1008,
+  y = 40,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "roof_blue_0",
   ground = "wall",
   default_layer = 1,
@@ -6872,6 +6892,26 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "sign_inn",
+  ground = "wall",
+  default_layer = 0,
+  x = 984,
+  y = 56,
+  width = 24,
+  height = 16,
+}
+
+tile_pattern{
+  id = "sign_shop",
+  ground = "wall",
+  default_layer = 0,
+  x = 984,
+  y = 40,
+  width = 24,
+  height = 16,
 }
 
 tile_pattern{
