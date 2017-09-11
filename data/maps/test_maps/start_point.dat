@@ -8,12 +8,21 @@ properties{
   tileset = "diarandor/light_overworld",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  pattern = "GrassPlain",
+}
+
 destination{
   name = "starting_point",
   layer = 0,
   x = 152,
   y = 61,
-  direction = 1,
+  direction = 3,
   default = true,
 }
 
@@ -38,9 +47,20 @@ pickable{
   treasure_name = "bow",
 }
 
+teletransporter{
+  layer = 0,
+  x = 32,
+  y = 88,
+  width = 16,
+  height = 16,
+  destination_map = "out/a3",
+  destination = "from_hero_house",
+  sprite = "entities/teletransporter",
+}
+
 pickable{
   layer = 0,
-  x = 88,
+  x = 72,
   y = 69,
   treasure_name = "feather",
   treasure_variant = 2,

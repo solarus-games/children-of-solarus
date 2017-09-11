@@ -1,5 +1,6 @@
 local item = ...
 
+require("scripts/meta/custom_teleporter.lua")
 local hero_meta = sol.main.get_metatable("hero")
 
 -- Initialize parameters for custom jump.
@@ -22,14 +23,15 @@ function item:on_using()
     hero:start_jumping(direction4 * 2, 32, false)
     self:set_finished()
   else -- Custom jump.
-    hero:start_custom_jump()
+    self:start_custom_jump()
   end
 end
 
 -- Used to detect if custom jump is being used.
 -- Necessary to determine if other items can be used.
+function item:is_jumping() return is_hero_jumping end
 function hero_meta:is_jumping()
-  return is_hero_jumping
+  return self:get_game():get_item("feather"):is_jumping()
 end
 
 -- Function to determine if the hero can jump on this type of ground.
@@ -44,12 +46,11 @@ local function is_jumpable_ground(ground_type)
 end
 
 -- Define custom jump on hero metatable.
-function hero_meta:start_custom_jump()
+function item:start_custom_jump()
 
-  local hero = self
   local game = self:get_game()
   local map = self:get_map()
-  local item = game:get_item("feather")
+  local hero = map:get_hero()
 
   -- Do nothing if the hero is frozen, carrying, "custom jumping",
   -- or if there is bad ground below. [Add more restrictions if necessary.]
@@ -64,14 +65,14 @@ function hero_meta:start_custom_jump()
   end
 
   -- Prepare hero for jump.
-  hero:unfreeze()  
   is_hero_jumping = true
+  hero:unfreeze()  
   hero:save_solid_ground(hero:get_position()) -- Save solid position.
   local ws = hero:get_walking_speed() -- Default walking speed.
   hero:set_walking_speed(jumping_speed)
   hero:set_invincible(true, jump_duration)
   sol.audio.play_sound("jump")
- 
+
   -- Change and fix tunic animations to display the jump.
   local state = hero:get_state()
   if state == "free" then
@@ -101,7 +102,7 @@ function hero_meta:start_custom_jump()
 
   -- Shift all sprites during jump with parabolic trajectory.
   local instant = 0
-  sol.timer.start(self, 1, function()
+  sol.timer.start(item, 1, function()
     if not is_hero_jumping then return false end
     local tn = instant/jump_duration
     local height = math.floor(4*max_height*tn*(1-tn))
@@ -115,6 +116,7 @@ function hero_meta:start_custom_jump()
 
   -- Finish the jump.
   sol.timer.start(item, jump_duration, function()
+
     hero:set_walking_speed(ws) -- Restore initial walking speed.
     hero:set_fixed_animations(nil, nil) -- Restore tunic animations.
     tile:remove()  -- Delete shadow platform tile.
@@ -129,12 +131,12 @@ function hero_meta:start_custom_jump()
     end
     -- Reset sprite shifts.
     for _, s in hero:get_sprites() do s:set_xy(0, 0) end
-    
+
     -- Create ground effect.
     -- item:create_ground_effect(x, y, layer)
 
     -- Restore solid ground as soon as possible.
-    sol.timer.start(self, 1, function()
+    sol.timer.start(map, 1, function()
       local ground_type = map:get_ground(hero:get_position())    
       local is_good_ground = is_jumpable_ground(ground_type)
       if is_good_ground then
@@ -145,8 +147,9 @@ function hero_meta:start_custom_jump()
     end)   
 
     -- Finish jump.
-    is_hero_jumping = false
     item:set_finished()
+    sol.timer.stop_all(item)
+    is_hero_jumping = false
   end)
 end
 

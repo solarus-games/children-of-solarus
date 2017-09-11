@@ -3737,6 +3737,17 @@ jumper{
   jump_length = 48,
 }
 
+teletransporter{
+  layer = 0,
+  x = 1144,
+  y = 632,
+  width = 16,
+  height = 16,
+  destination_map = "test_maps/start_point",
+  destination = "starting_point",
+  sprite = "entities/teletransporter",
+}
+
 tile{
   layer = 1,
   x = 952,
