@@ -38,3 +38,11 @@ pickable{
   treasure_name = "bow",
 }
 
+pickable{
+  layer = 0,
+  x = 88,
+  y = 69,
+  treasure_name = "feather",
+  treasure_variant = 2,
+}
+
