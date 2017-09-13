@@ -1,7 +1,9 @@
 map{ id = "SHOP_maps/overworldTest0.4", description = "overworldTest0.4" }
+map{ id = "out/a1", description = "Outside A1" }
 map{ id = "out/a2", description = "Outside A2" }
 map{ id = "out/a3", description = "Outside A3" }
 map{ id = "out/a4", description = "Outside A4" }
+map{ id = "out/b1", description = "Outside B1" }
 map{ id = "out/b2", description = "Outside B2" }
 map{ id = "out/b3", description = "Outside B3" }
 map{ id = "out/b4", description = "Outside B2" }
@@ -26,6 +28,8 @@ sprite{ id = "enemies/apyronet/bosses/khorneth_right_blade", description = "Khor
 sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
 sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }
 sprite{ id = "enemies/diarandor/soldier_sword", description = "Soldier Sword" }
+sprite{ id = "enemies/newlink/bee_guard", description = "Bee Guard" }
+sprite{ id = "enemies/newlink/bee_guard_weapon", description = "Bee Guard weapon" }
 sprite{ id = "enemies/newlink/bosses/arbror_root", description = "Arbror root" }
 sprite{ id = "enemies/newlink/bosses/drakomos", description = "Drakomos" }
 sprite{ id = "enemies/newlink/bosses/drakomos_head", description = "Drakomos head" }
@@ -42,8 +46,6 @@ sprite{ id = "enemies/newlink/bosses/papillosaur_king", description = "Papillosa
 sprite{ id = "enemies/newlink/bosses/poutroxor", description = "Poutroxor" }
 sprite{ id = "enemies/newlink/bosses/poutroxor_head", description = "Poutroxor head" }
 sprite{ id = "enemies/newlink/bosses/poutroxor_skeleton", description = "Poutroxor skeleton" }
-sprite{ id = "enemies/newlink/bee_guard", description = "Bee Guard" }
-sprite{ id = "enemies/newlink/bee_guard_weapon", description = "Bee Guard weapon" }
 sprite{ id = "enemies/newlink/bullblin_blue", description = "Bullblin (blue)" }
 sprite{ id = "enemies/newlink/bullblin_blue_weapon", description = "Bullblin (blue) weapon" }
 sprite{ id = "enemies/newlink/bullblin_red", description = "Bullblin (red)" }
