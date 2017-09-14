@@ -1,5 +1,6 @@
 local item = ...
 
+require("scripts/multi_events")
 require("scripts/meta/custom_teleporter.lua")
 local hero_meta = sol.main.get_metatable("hero")
 
@@ -9,14 +10,33 @@ local jump_duration = 600 -- Duration of jump in milliseconds.
 local max_height = 16 -- Height of jump in pixels.
 local max_distance = 31 -- Max distance of jump in pixels.
 local jumping_speed = math.floor(1000 * max_distance / jump_duration)
-local streams, fake_streams -- Near streams that are disabled during the jump
+local streams, fake_streams -- Nearby streams that are disabled during the jump
 
 function item:on_created()
   self:set_savegame_variable("i1100")
   self:set_assignable(true)
+  --[[ Redefine event game.on_command_pressed.
+  -- Avoids restarting hero animation when feather command is pressed
+  -- in the middle of a jump, and using weapons while jumping. --]]
+  local game = self:get_game()
+  game:register_event("on_command_pressed", function(self, command)
+    local item = game:get_item("feather")
+    local effect = game:get_command_effect(command)
+    local slot = ((effect == "use_item_1") and 1)
+        or ((effect == "use_item_2") and 2)
+    if slot and game:get_item_assigned(slot) == item then
+      if not item:is_jumping() then
+        item:on_custom_using()
+      end
+      return true
+    end
+  end)
 end
 
-function item:on_using()
+-- The custom jump can only be used under certain conditions.
+-- We define "item.on_custom_using" instead of "item.on_using", which
+-- is directly called by the event "game.on_command_pressed".
+function item:on_custom_using()
   local hero = self:get_game():get_hero()
   if item:get_variant() == 1 then -- Built-in jump.
     sol.audio.play_sound("jump")
@@ -37,13 +57,23 @@ end
 
 -- Function to determine if the hero can jump on this type of ground.
 local function is_jumpable_ground(ground_type)
-  return (
-    (ground_type == "traversable")
+  local is_good_ground = ( (ground_type == "traversable")
     or (ground_type == "wall_top_right") or (ground_type == "wall_top_left")
     or (ground_type == "wall_bottom_left") or (ground_type == "wall_bottom_right")
     or (ground_type == "shallow_water") or (ground_type == "grass")
-    or (ground_type == "ice")
-  )
+    or (ground_type == "ice") )
+  return is_good_ground
+end
+-- Returns true if there are streams below the hero.
+local function streams_below_hero(map)
+  local hero = map:get_hero()
+  local x, y, _ = hero:get_position()
+  for e in map:get_entities_in_rectangle(x, y, 1 , 1) do
+    if e:get_type() == "stream" then
+      return true
+    end
+  end
+  return false
 end
 
 -- Define custom jump on hero metatable.
@@ -60,8 +90,10 @@ function item:start_custom_jump()
   local is_hero_carrying = hero_state == "carrying"
   local ground_type = map:get_ground(hero:get_position())
   local is_ground_jumpable = is_jumpable_ground(ground_type)
+  local is_on_stream = streams_below_hero(map)
 
-  if is_hero_frozen or is_hero_jumping or is_hero_carrying or (not is_ground_jumpable) then
+  if is_hero_frozen or is_hero_jumping or is_hero_carrying 
+      or (not is_ground_jumpable) or is_on_stream then
     return
   end
 
@@ -115,8 +147,8 @@ function item:start_custom_jump()
     return true
   end)
 
-  -- Disable near streams during the jump.
-  item:disable_near_streams()
+  -- Disable nearby streams during the jump.
+  item:disable_nearby_streams()
   
   -- Finish the jump.
   sol.timer.start(item, jump_duration, function()
@@ -139,8 +171,8 @@ function item:start_custom_jump()
     -- Create ground effect.
     -- item:create_ground_effect(x, y, layer)
     
-    -- Enable near streams that were disabled during the jump.
-    item:enable_near_streams()
+    -- Enable nearby streams that were disabled during the jump.
+    item:enable_nearby_streams()
 
     -- Restore solid ground as soon as possible.
     sol.timer.start(map, 1, function()
@@ -178,9 +210,9 @@ function item:create_ground_effect(x, y, layer)
   end
 end
 
--- Disable near streams during the jump, allowing to jump over them.
+-- Disable nearby streams during the jump, allowing to jump over them.
 -- Create fake streams.
-function item:disable_near_streams()
+function item:disable_nearby_streams()
   local map = item:get_map()
   local hero = map:get_hero()
   local hx, hy = hero:get_position()
@@ -212,9 +244,9 @@ function item:disable_near_streams()
     end
   end
 end
--- Enable near streams that were disabled during the jump.
+-- Enable nearby streams that were disabled during the jump.
 -- Destroy fake streams.
-function item:enable_near_streams()
+function item:enable_nearby_streams()
   for _, st in pairs(streams) do
     if st:exists() then st:set_enabled(true) end
   end
