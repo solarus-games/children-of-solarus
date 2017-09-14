@@ -17,11 +17,47 @@ tile{
   pattern = "GrassPlain",
 }
 
+tile{
+  layer = 0,
+  x = 184,
+  y = 136,
+  width = 64,
+  height = 32,
+  pattern = "Grass_big",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 136,
+  width = 56,
+  height = 32,
+  pattern = "ShallowWaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 136,
+  width = 48,
+  height = 32,
+  pattern = "WaterPlain",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 0,
+  width = 48,
+  height = 32,
+  pattern = "Hole",
+}
+
 destination{
   name = "starting_point",
   layer = 0,
-  x = 40,
-  y = 45,
+  x = 16,
+  y = 69,
   direction = 3,
   default = true,
 }

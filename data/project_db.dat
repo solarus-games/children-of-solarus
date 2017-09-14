@@ -123,6 +123,10 @@ sprite{ id = "entities/teletransporter", description = "Teletransporter (yellow)
 sprite{ id = "entities/the_end", description = "The end" }
 sprite{ id = "entities/torch", description = "Torch" }
 sprite{ id = "entities/vine", description = "Vine" }
+sprite{ id = "ground_effects/fall_on_hole", description = "fall hole" }
+sprite{ id = "ground_effects/lava_splash", description = "lava splash" }
+sprite{ id = "ground_effects/leaves", description = "leaves" }
+sprite{ id = "ground_effects/water_splash", description = "water splash" }
 sprite{ id = "hero/eldran", description = "Eldran sprite" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }

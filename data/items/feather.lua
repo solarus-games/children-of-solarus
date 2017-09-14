@@ -1,6 +1,7 @@
 local item = ...
 
 require("scripts/multi_events")
+require("scripts/ground_effects")
 require("scripts/meta/custom_teleporter.lua")
 local hero_meta = sol.main.get_metatable("hero")
 
@@ -19,6 +20,7 @@ function item:on_created()
   -- Avoids restarting hero animation when feather command is pressed
   -- in the middle of a jump, and using weapons while jumping. --]]
   local game = self:get_game()
+  game:set_ability("jump_over_water", 0) -- Disable auto-jump on water border.
   game:register_event("on_command_pressed", function(self, command)
     local item = game:get_item("feather")
     local effect = game:get_command_effect(command)
@@ -169,7 +171,7 @@ function item:start_custom_jump()
     for _, s in hero:get_sprites() do s:set_xy(0, 0) end
 
     -- Create ground effect.
-    -- item:create_ground_effect(x, y, layer)
+    map:ground_collision(hero)
     
     -- Enable nearby streams that were disabled during the jump.
     item:enable_nearby_streams()
