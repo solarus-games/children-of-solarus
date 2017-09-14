@@ -64,13 +64,13 @@ local function is_jumpable_ground(ground_type)
     or (ground_type == "ice") )
   return is_good_ground
 end
--- Returns true if there are streams below the hero.
-local function streams_below_hero(map)
+-- Returns true if there are "blocking streams" below the hero.
+local function blocking_stream_below_hero(map)
   local hero = map:get_hero()
   local x, y, _ = hero:get_position()
   for e in map:get_entities_in_rectangle(x, y, 1 , 1) do
     if e:get_type() == "stream" then
-      return true
+      return (not e:get_allow_movement())
     end
   end
   return false
@@ -90,10 +90,10 @@ function item:start_custom_jump()
   local is_hero_carrying = hero_state == "carrying"
   local ground_type = map:get_ground(hero:get_position())
   local is_ground_jumpable = is_jumpable_ground(ground_type)
-  local is_on_stream = streams_below_hero(map)
+  local is_blocked_on_stream = blocking_stream_below_hero(map)
 
   if is_hero_frozen or is_hero_jumping or is_hero_carrying 
-      or (not is_ground_jumpable) or is_on_stream then
+      or (not is_ground_jumpable) or is_blocked_on_stream then
     return
   end
 

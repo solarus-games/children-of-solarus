@@ -20,8 +20,8 @@ tile{
 destination{
   name = "starting_point",
   layer = 0,
-  x = 152,
-  y = 61,
+  x = 40,
+  y = 45,
   direction = 3,
   default = true,
 }
@@ -60,16 +60,16 @@ teletransporter{
 
 pickable{
   layer = 0,
-  x = 72,
-  y = 69,
+  x = 56,
+  y = 141,
   treasure_name = "feather",
   treasure_variant = 2,
 }
 
 stream{
   layer = 0,
-  x = 120,
-  y = 117,
+  x = 144,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -79,8 +79,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 136,
-  y = 117,
+  x = 160,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -90,8 +90,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 152,
-  y = 117,
+  x = 176,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -101,8 +101,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 168,
-  y = 117,
+  x = 192,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -112,8 +112,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 184,
-  y = 117,
+  x = 208,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -123,8 +123,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 120,
-  y = 133,
+  x = 144,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -134,8 +134,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 136,
-  y = 133,
+  x = 160,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -145,8 +145,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 152,
-  y = 133,
+  x = 176,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -156,8 +156,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 168,
-  y = 133,
+  x = 192,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -167,8 +167,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 184,
-  y = 133,
+  x = 208,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -178,8 +178,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 200,
-  y = 117,
+  x = 224,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -189,8 +189,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 216,
-  y = 117,
+  x = 240,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -200,8 +200,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 232,
-  y = 117,
+  x = 256,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -211,8 +211,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 248,
-  y = 117,
+  x = 272,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -222,8 +222,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 264,
-  y = 117,
+  x = 288,
+  y = 37,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -233,8 +233,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 200,
-  y = 133,
+  x = 224,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -244,8 +244,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 216,
-  y = 133,
+  x = 240,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -255,8 +255,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 232,
-  y = 133,
+  x = 256,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -266,8 +266,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 248,
-  y = 133,
+  x = 272,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -277,8 +277,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 264,
-  y = 133,
+  x = 288,
+  y = 53,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -288,8 +288,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 120,
-  y = 149,
+  x = 144,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -299,8 +299,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 136,
-  y = 149,
+  x = 160,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -310,8 +310,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 152,
-  y = 149,
+  x = 176,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -321,8 +321,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 168,
-  y = 149,
+  x = 192,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -332,8 +332,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 184,
-  y = 149,
+  x = 208,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -343,8 +343,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 200,
-  y = 149,
+  x = 224,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -354,8 +354,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 216,
-  y = 149,
+  x = 240,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -365,8 +365,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 232,
-  y = 149,
+  x = 256,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -376,8 +376,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 248,
-  y = 149,
+  x = 272,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -387,8 +387,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 264,
-  y = 149,
+  x = 288,
+  y = 69,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -398,8 +398,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 120,
-  y = 197,
+  x = 144,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -409,8 +409,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 136,
-  y = 197,
+  x = 160,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -420,8 +420,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 152,
-  y = 197,
+  x = 176,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -431,8 +431,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 168,
-  y = 197,
+  x = 192,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -442,8 +442,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 184,
-  y = 197,
+  x = 208,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -453,8 +453,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 200,
-  y = 197,
+  x = 224,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -464,8 +464,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 216,
-  y = 197,
+  x = 240,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -475,8 +475,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 232,
-  y = 197,
+  x = 256,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -486,8 +486,8 @@ stream{
 
 stream{
   layer = 0,
-  x = 248,
-  y = 197,
+  x = 272,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
@@ -497,11 +497,311 @@ stream{
 
 stream{
   layer = 0,
-  x = 264,
-  y = 197,
+  x = 288,
+  y = 125,
   direction = 0,
   sprite = "entities/destination",
   allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 128,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 160,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 176,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 192,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 208,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 224,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 240,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 256,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 272,
+  y = 189,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 128,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 160,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 176,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 192,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 208,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 224,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 240,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 256,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 272,
+  y = 205,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 128,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 160,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 176,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 192,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 208,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 224,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 240,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 256,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 272,
+  y = 221,
+  direction = 0,
+  sprite = "entities/destination",
   allow_attack = false,
   allow_item = false,
 }
