@@ -28,22 +28,22 @@ destination{
 
 pickable{
   layer = 0,
-  x = 152,
-  y = 125,
+  x = 40,
+  y = 173,
   treasure_name = "sword",
 }
 
 pickable{
   layer = 0,
-  x = 176,
-  y = 125,
+  x = 64,
+  y = 173,
   treasure_name = "flippers",
 }
 
 pickable{
   layer = 0,
-  x = 128,
-  y = 125,
+  x = 16,
+  y = 173,
   treasure_name = "bow",
 }
 
@@ -64,5 +64,445 @@ pickable{
   y = 69,
   treasure_name = "feather",
   treasure_variant = 2,
+}
+
+stream{
+  layer = 0,
+  x = 120,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 136,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 152,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 168,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 184,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 120,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 136,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 152,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 168,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 184,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 200,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 216,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 232,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 248,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 264,
+  y = 117,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 200,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 216,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 232,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 248,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 264,
+  y = 133,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 120,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 136,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 152,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 168,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 184,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 200,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 216,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 232,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 248,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 264,
+  y = 149,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 120,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 136,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 152,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 168,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 184,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 200,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 216,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 232,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 248,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 264,
+  y = 197,
+  direction = 0,
+  sprite = "entities/destination",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
 }
 

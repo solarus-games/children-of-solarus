@@ -9,6 +9,7 @@ local jump_duration = 600 -- Duration of jump in milliseconds.
 local max_height = 16 -- Height of jump in pixels.
 local max_distance = 31 -- Max distance of jump in pixels.
 local jumping_speed = math.floor(1000 * max_distance / jump_duration)
+local streams, fake_streams -- Near streams that are disabled during the jump
 
 function item:on_created()
   self:set_savegame_variable("i1100")
@@ -114,6 +115,9 @@ function item:start_custom_jump()
     return true
   end)
 
+  -- Disable near streams during the jump.
+  item:disable_near_streams()
+  
   -- Finish the jump.
   sol.timer.start(item, jump_duration, function()
 
@@ -134,6 +138,9 @@ function item:start_custom_jump()
 
     -- Create ground effect.
     -- item:create_ground_effect(x, y, layer)
+    
+    -- Enable near streams that were disabled during the jump.
+    item:enable_near_streams()
 
     -- Restore solid ground as soon as possible.
     sol.timer.start(map, 1, function()
@@ -169,4 +176,50 @@ function item:create_ground_effect(x, y, layer)
     -- For other grounds, make landing sound.
     sol.audio.play_sound("hero_lands")      
   end
+end
+
+-- Disable near streams during the jump, allowing to jump over them.
+-- Create fake streams.
+function item:disable_near_streams()
+  local map = item:get_map()
+  local hero = map:get_hero()
+  local hx, hy = hero:get_position()
+  -- Get rectangle coordinates and disable streams on it.
+  local x, y = hx - max_distance, hy - max_distance
+  local w, h = 24 + 2*max_distance, 24 + 2*max_distance
+  streams, fake_streams = {}, {}
+  for st in map:get_entities_in_rectangle(x, y, w, h) do
+    if st:get_type() == "stream" then
+      streams[#streams + 1] = st
+      local sprite = st:get_sprite()
+      if sprite then -- Create fake stream.
+        local x_st, y_st, layer_st = st:get_position()
+        local w_st, h_st = st:get_size()
+        local id = sprite:get_animation_set()
+        local anim = sprite:get_animation()
+        local dir = sprite:get_direction()
+        local prop = {x = x_st, y = y_st, layer = layer_st,
+          direction = dir, width = w_st, height = h_st, sprite = id}
+        local fake_st = map:create_custom_entity(prop)
+        fake_st:bring_to_back() -- Show under hero shadow tile.
+        local fake_sprite = fake_st:get_sprite()
+        fake_sprite:set_animation(anim)
+        fake_sprite:set_direction(dir)
+        fake_sprite:synchronize(sprite)
+        fake_streams[#fake_streams + 1] = fake_st
+      end
+      st:set_enabled(false) -- Disable stream.
+    end
+  end
+end
+-- Enable near streams that were disabled during the jump.
+-- Destroy fake streams.
+function item:enable_near_streams()
+  for _, st in pairs(streams) do
+    if st:exists() then st:set_enabled(true) end
+  end
+  for _, fake_st in pairs(fake_streams) do
+    fake_st:remove()
+  end
+  streams, fake_streams = nil, nil -- Clear lists.
 end
