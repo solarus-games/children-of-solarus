@@ -1,7 +1,7 @@
 properties{
   x = 0,
   y = 0,
-  width = 1200,
+  width = 1280,
   height = 960,
   min_layer = 0,
   max_layer = 2,

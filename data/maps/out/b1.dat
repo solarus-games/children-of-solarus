@@ -1,8 +1,8 @@
 properties{
   x = 0,
   y = 0,
-  width = 320,
-  height = 240,
+  width = 1280,
+  height = 720,
   min_layer = 0,
   max_layer = 2,
   world = "outside",
