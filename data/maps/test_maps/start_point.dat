@@ -435,108 +435,9 @@ stream{
 stream{
   layer = 0,
   x = 144,
-  y = 125,
+  y = 117,
   direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 160,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 176,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 192,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 208,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 224,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 240,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 256,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 272,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
-  allow_movement = false,
-  allow_attack = false,
-  allow_item = false,
-}
-
-stream{
-  layer = 0,
-  x = 288,
-  y = 125,
-  direction = 0,
-  sprite = "entities/destination",
+  sprite = "entities/teletransporter",
   allow_movement = false,
   allow_attack = false,
   allow_item = false,
@@ -838,6 +739,149 @@ stream{
   y = 221,
   direction = 0,
   sprite = "entities/destination",
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 160,
+  y = 117,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 176,
+  y = 117,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 192,
+  y = 117,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 208,
+  y = 117,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 224,
+  y = 117,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 240,
+  y = 117,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 224,
+  y = 101,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 240,
+  y = 101,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 208,
+  y = 101,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 192,
+  y = 101,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 176,
+  y = 101,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 160,
+  y = 101,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
+  allow_attack = false,
+  allow_item = false,
+}
+
+stream{
+  layer = 0,
+  x = 144,
+  y = 101,
+  direction = 0,
+  sprite = "entities/teletransporter",
+  allow_movement = false,
   allow_attack = false,
   allow_item = false,
 }
