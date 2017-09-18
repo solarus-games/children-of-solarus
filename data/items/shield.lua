@@ -1,7 +1,7 @@
 local item = ...
 
+local direction_fix_enabled = true
 local shield_state, shield_command_released
-local shield_variant = 1
 
 function item:on_created()
   self:set_savegame_variable("i1130")
@@ -13,17 +13,15 @@ function item:on_variant_changed(variant)
 end
 
 function item:on_obtained()
-
-  -- TODO: add item to inventory.
 end
 
----------------------------------
 -- Program custom shield.
 function item:on_using()
   local map = self:get_map()
   local game = map:get_game()
   local hero = map:get_hero()
   local hero_tunic_sprite = hero:get_sprite()
+  local variant = item:get_variant()
 
   -- Do not use if there is bad ground below.
   if not hero:is_jumping() and not map:is_solid_ground(hero:get_ground_position()) then return end 
@@ -44,7 +42,7 @@ function item:on_using()
   -- Remove fixed animations (used if jumping).
   hero:set_fixed_animations(nil, nil)
   -- Show "shield_brandish" animation on hero.
-  hero:set_animation("shield_"..shield_variant.."_brandish")
+  hero:set_animation("shield_" .. variant .. "_brandish")
 
   -- Stop using item if there is bad ground under the hero.
   sol.timer.start(item, 5, function()
@@ -55,9 +53,11 @@ function item:on_using()
   end)
 
   -- Check if the item command is being hold all the time.
+  local slot = game:get_item_assigned(1) == item and 1 or 2
+  local command = "item_" .. slot
   sol.timer.start(item, 1, function()
-    local command = self:get_command()
-    if not command or not game:is_command_pressed(command) then 
+    local is_still_assigned = game:get_item_assigned(slot) == item
+    if not is_still_assigned or not game:is_command_pressed(command) then 
       -- Notify that the item button was released.
       shield_command_released = true
       return
@@ -87,10 +87,10 @@ function item:on_using()
     end
     -- Start loading sword if necessary. Fix direction and loading animations.
     shield_state = "using"
-    hero:set_fixed_animations("shield_"..shield_variant.."_stopped", "shield_"..shield_variant.."_walking")
-    local dir = hero:get_direction()
+    hero:set_fixed_animations("shield_" .. variant .. "_stopped", "shield_" .. variant .. "_walking")
+    local dir = direction_fix_enabled and hero:get_direction() or nil
     hero:set_fixed_direction(dir)
-    hero:set_animation("shield_"..shield_variant.."_stopped")
+    hero:set_animation("shield_" .. variant .. "_stopped")
     hero:unfreeze() -- Allow the hero to walk.
   end)
 

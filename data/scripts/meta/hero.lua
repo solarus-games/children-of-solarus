@@ -77,7 +77,7 @@ function hero_meta:initialize_fixing_functions()
     --end
   end
   function sprite:on_direction_changed(animation, direction)
-    local fixed_direction = hero.fixed_direction
+    local fixed_direction = fixed_direction
     local tunic_direction = sprite:get_direction()
     if fixed_direction ~= nil and fixed_direction ~= tunic_direction then
       sprite:set_direction(fixed_direction)
