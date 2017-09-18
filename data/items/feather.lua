@@ -2,7 +2,6 @@ local item = ...
 
 require("scripts/multi_events")
 require("scripts/ground_effects")
-require("scripts/meta/custom_teleporter.lua")
 local hero_meta = sol.main.get_metatable("hero")
 
 -- Initialize parameters for custom jump.
@@ -11,10 +10,10 @@ local jump_duration = 600 -- Duration of jump in milliseconds.
 local max_height = 16 -- Height of jump in pixels.
 local max_distance = 31 -- Max distance of jump in pixels.
 local jumping_speed = math.floor(1000 * max_distance / jump_duration)
-local streams -- Nearby streams that are disabled during the jump
+local disabled_entities -- Nearby streams and teletransporters that are disabled during the jump
 
 function item:on_created()
-  self:set_savegame_variable("i1100")
+  self:set_savegame_variable("possession_feather")
   self:set_assignable(true)
   --[[ Redefine event game.on_command_pressed.
   -- Avoids restarting hero animation when feather command is pressed
@@ -40,14 +39,7 @@ end
 -- is directly called by the event "game.on_command_pressed".
 function item:on_custom_using()
   local hero = self:get_game():get_hero()
-  if item:get_variant() == 1 then -- Built-in jump.
-    sol.audio.play_sound("jump")
-    local direction4 = hero:get_direction()
-    hero:start_jumping(direction4 * 2, 32, false)
-    self:set_finished()
-  else -- Custom jump.
-    self:start_custom_jump()
-  end
+  self:start_custom_jump()
 end
 
 -- Used to detect if custom jump is being used.
@@ -80,7 +72,6 @@ end
 
 -- Define custom jump on hero metatable.
 function item:start_custom_jump()
-
   local game = self:get_game()
   local map = self:get_map()
   local hero = map:get_hero()
@@ -149,8 +140,8 @@ function item:start_custom_jump()
     return true
   end)
 
-  -- Disable nearby streams during the jump.
-  item:disable_nearby_streams()
+  -- Disable nearby streams and teletransporters during the jump.
+  item:disable_nearby_entities()
   
   -- Finish the jump.
   sol.timer.start(item, jump_duration, function()
@@ -173,8 +164,8 @@ function item:start_custom_jump()
     -- Create ground effect.
     map:ground_collision(hero)
     
-    -- Enable nearby streams that were disabled during the jump.
-    item:enable_nearby_streams()
+    -- Enable nearby streams and teletransporters that were disabled during the jump.
+    item:enable_nearby_entities()
 
     -- Restore solid ground as soon as possible.
     sol.timer.start(map, 1, function()
@@ -212,50 +203,60 @@ function item:create_ground_effect(x, y, layer)
   end
 end
 
--- Disable nearby streams during the jump, allowing to jump over them.
-function item:disable_nearby_streams()
+-- Disable nearby streams and teletransporters during the jump, allowing to jump over them.
+function item:disable_nearby_entities()
   local map = item:get_map()
   local hero = map:get_hero()
   local hx, hy = hero:get_position()
   -- Get rectangle coordinates and disable streams on it.
   local x, y = hx - max_distance, hy - max_distance
-  local w, h = 24 + 2*max_distance, 24 + 2*max_distance
-  streams = {}
-  for st in map:get_entities_in_rectangle(x, y, w, h) do
-    if st:get_type() == "stream" then
-      streams[#streams + 1] = st
-      st:set_enabled(false) -- Disable stream.
+  local w, h = 24 + 2 * max_distance, 24 + 2 * max_distance
+  disabled_entities = {}
+  for entity in map:get_entities_in_rectangle(x, y, w, h) do
+    if entity:is_enabled() then
+      if entity:get_type() == "stream" or
+          entity:get_type() == "teletransporter" then
+        disabled_entities[#disabled_entities + 1] = entity
+        entity:set_enabled(false)
+      end
     end
   end
 end
+
 -- Enable nearby streams that were disabled during the jump.
-function item:enable_nearby_streams()
-  for _, st in pairs(streams) do
-    if st:exists() then st:set_enabled(true) end
+function item:enable_nearby_entities()
+  for _, entity in pairs(disabled_entities) do
+    if entity:exists() then
+      entity:set_enabled(true)
+    end
   end
-  streams = nil -- Clear list.
+  disabled_entities = nil -- Clear list.
 end
 
 -- Make streams invisible and use a sprite on custom entities instead.
-local stream_meta = sol.main.get_metatable("stream")
-function stream_meta:on_created()
-  local map = self:get_map()
-  self:set_visible(false)
-  local sprite = self:get_sprite()
+local function entity_to_hide_on_created(entity)
+  local map = entity:get_map()
+  entity:set_visible(false)
+  local sprite = entity:get_sprite()
   if sprite then -- Create custom entity with sprite.
-    local x_st, y_st, layer_st = self:get_position()
-    local w_st, h_st = self:get_size()
+    local x, y, layer = entity:get_position()
+    local w, h = entity:get_size()
     local id = sprite:get_animation_set()
     local anim = sprite:get_animation()
     local dir = sprite:get_direction()
-    local prop = {x = x_st, y = y_st, layer = layer_st,
-      direction = dir, width = w_st, height = h_st, sprite = id}
+    local prop = {x = x, y = y, layer = layer,
+      direction = dir, width = w, height = h, sprite = id}
     local sprite_entity = map:create_custom_entity(prop)
-  end
-  -- Destroy sprite entity if the stream is destroyed.
-  function self:on_removed()
-    if sprite_entity and sprite_entity:exists() then
-      sprite_entity:remove()
-    end
+    -- Destroy the sprite entity if the entity is destroyed.
+    entity:register_event("on_removed", function(entity)
+      if sprite_entity and sprite_entity:exists() then
+        sprite_entity:remove()
+      end
+    end)
   end
 end
+
+local stream_meta = sol.main.get_metatable("stream")
+stream_meta:register_event("on_created", entity_to_hide_on_created)
+local teletransporter_meta = sol.main.get_metatable("teletransporter")
+teletransporter_meta:register_event("on_created", entity_to_hide_on_created)
