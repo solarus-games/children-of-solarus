@@ -886,3 +886,34 @@ stream{
   allow_item = false,
 }
 
+pickable{
+  layer = 0,
+  x = 16,
+  y = 141,
+  treasure_name = "shield",
+}
+
+pickable{
+  layer = 0,
+  x = 88,
+  y = 29,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 104,
+  y = 29,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 72,
+  y = 29,
+  treasure_name = "arrow",
+  treasure_variant = 3,
+}
+

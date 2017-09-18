@@ -751,9 +751,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 920,
+  x = 888,
   y = 456,
-  width = 160,
+  width = 192,
   height = 8,
   pattern = "MtShadowBorder6",
 }
@@ -2398,15 +2398,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 848,
-  y = 464,
-  width = 8,
-  height = 8,
-  pattern = "Gnd_grass_smallcorner1",
-}
-
-tile{
-  layer = 0,
   x = 1104,
   y = 464,
   width = 8,
@@ -3717,6 +3708,24 @@ tile{
   width = 8,
   height = 16,
   pattern = "fence_post",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder6R",
 }
 
 wall{
