@@ -398,6 +398,7 @@ item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
 
+entity{ id = "arrow", description = "arrow" }
 
 language{ id = "en", description = "English" }
 
