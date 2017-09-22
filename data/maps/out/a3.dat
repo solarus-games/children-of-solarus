@@ -4511,6 +4511,51 @@ tile{
   pattern = "Wood_tree_trunk_big_middle",
 }
 
+tile{
+  layer = 0,
+  x = 368,
+  y = 704,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 704,
+  width = 240,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 704,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 744,
+  width = 240,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 712,
+  width = 240,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
 wall{
   layer = 0,
   x = 824,
@@ -5129,6 +5174,42 @@ tile{
 tile{
   layer = 2,
   x = 336,
+  y = 696,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 376,
+  y = 744,
+  width = 240,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 376,
+  y = 688,
+  width = 240,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 368,
+  y = 696,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 616,
   y = 696,
   width = 8,
   height = 40,
