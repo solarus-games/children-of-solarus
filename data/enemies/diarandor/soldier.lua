@@ -15,8 +15,8 @@ local hero = map:get_hero()
 
 sol.main.load_file("enemies/generic_soldier")(enemy)
 enemy:set_properties({
- main_sprite = "enemies/soldier",
- sword_sprite = "enemies/soldier_sword",
+ main_sprite = "enemies/diarandor/soldier",
+ sword_sprite = "enemies/diarandor/soldier_sword",
  life = 40,
  damage = 2,
  play_hero_seen_sound = false,
@@ -27,7 +27,7 @@ enemy:set_properties({
 
 -- Create feather on the helmet.
 enemy:register_event("on_created", function()
-  local feather = enemy:create_sprite("enemies/soldier_feather")
+  local feather = enemy:create_sprite("enemies/diarandor/soldier_feather")
   feather:set_xy(0, -24)
   enemy:set_invincible_sprite(feather)
   enemy:bring_sprite_to_front(feather)

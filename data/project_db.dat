@@ -397,6 +397,8 @@ item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
+enemy{ id = "diarandor/soldier", description = "soldier" }
+enemy{ id = "generic_soldier", description = "generic soldier" }
 
 entity{ id = "arrow", description = "arrow" }
 

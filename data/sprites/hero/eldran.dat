@@ -269,9 +269,9 @@ animation{
   frame_to_loop_on = 0,
   directions = {
     { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
-    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
+    { x = 0, y = 32, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 21, num_frames = 8 },
     { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
-    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
+    { x = 0, y = 72, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 21, num_frames = 8 },
   },
 }
 animation{
