@@ -24,8 +24,8 @@ tile{
   layer = 0,
   x = 40,
   y = 128,
-  width = 216,
-  height = 560,
+  width = 152,
+  height = 544,
   pattern = "GrassPlain",
 }
 
@@ -4556,6 +4556,303 @@ tile{
   pattern = "Wood_tree_trunk_big_middle",
 }
 
+tile{
+  layer = 0,
+  x = 248,
+  y = 400,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 400,
+  width = 240,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 400,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 440,
+  width = 240,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 408,
+  width = 240,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 448,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 448,
+  width = 288,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 448,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 488,
+  width = 288,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 456,
+  width = 288,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 496,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 496,
+  width = 336,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 496,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 536,
+  width = 336,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 504,
+  width = 336,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 544,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 544,
+  width = 288,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 544,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 584,
+  width = 288,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 552,
+  width = 288,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 592,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 592,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 592,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 632,
+  width = 96,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 600,
+  width = 96,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 592,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 592,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 592,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 632,
+  width = 96,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 600,
+  width = 96,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "Wood_tree_entrance_middle",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 576,
+  width = 8,
+  height = 32,
+  pattern = "Wood_tree_entrance_left",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 576,
+  width = 8,
+  height = 32,
+  pattern = "Wood_tree_entrance_right",
+}
+
 wall{
   layer = 0,
   x = 824,
@@ -5214,5 +5511,230 @@ tile{
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 440,
+  width = 240,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 384,
+  width = 240,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 392,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 392,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 488,
+  width = 288,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 432,
+  width = 288,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 440,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 520,
+  y = 440,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 536,
+  width = 336,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 208,
+  y = 480,
+  width = 336,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 488,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 544,
+  y = 488,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 584,
+  width = 288,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 232,
+  y = 528,
+  width = 288,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 224,
+  y = 536,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 520,
+  y = 536,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 632,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 256,
+  y = 576,
+  width = 96,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 584,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 352,
+  y = 584,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 400,
+  y = 632,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 400,
+  y = 576,
+  width = 96,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 392,
+  y = 584,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 496,
+  y = 584,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 368,
+  y = 576,
+  width = 16,
+  height = 8,
+  pattern = "Wood_tree_entrance_up",
 }
 
