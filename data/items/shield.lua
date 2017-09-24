@@ -1,5 +1,8 @@
 local item = ...
 
+local enemy_meta = sol.main.get_metatable("enemy")
+local hero_meta = sol.main.get_metatable("hero")
+
 local direction_fix_enabled = true
 local shield_state, shield_command_released
 local shield -- Custom entity shield.
@@ -24,8 +27,9 @@ function item:on_using()
   local hero_tunic_sprite = hero:get_sprite()
   local variant = item:get_variant()
 
-  -- Do not use if there is bad ground below.
-  if not hero:is_jumping() and not map:is_solid_ground(hero:get_ground_position()) then return end 
+  -- Do not use if there is bad ground below or while jumping.
+  if not map:is_solid_ground(hero:get_ground_position()) then return end 
+  if hero.is_jumping and hero:is_jumping() then return end
     
   -- Do nothing if game is suspended or if shield is being used.
   if game:is_suspended() then return end
@@ -34,7 +38,8 @@ function item:on_using()
   -- Play shield sound.
   sol.audio.play_sound("shield_brandish")
 
-  -- Freeze hero and save state. 
+  -- Freeze hero and save state.
+  hero:set_using_shield(true)
   if hero:get_state() ~= "frozen" then
     hero:freeze() -- Freeze hero if necessary.
   end
@@ -43,7 +48,7 @@ function item:on_using()
   -- Remove fixed animations (used if jumping).
   hero:set_fixed_animations(nil, nil)
   -- Show "shield_brandish" animation on hero.
-  hero:set_animation("shield_" .. variant .. "_brandish")
+  hero:set_animation("shield_brandish")
   
   -- Create shield.
   self:create_shield()
@@ -91,10 +96,10 @@ function item:on_using()
     end
     -- Start loading sword if necessary. Fix direction and loading animations.
     shield_state = "using"
-    hero:set_fixed_animations("shield_" .. variant .. "_stopped", "shield_" .. variant .. "_walking")
+    hero:set_fixed_animations("shield_stopped", "shield_walking")
     local dir = direction_fix_enabled and hero:get_direction() or nil
     hero:set_fixed_direction(dir)
-    hero:set_animation("shield_" .. variant .. "_stopped")
+    hero:set_animation("shield_stopped")
     hero:unfreeze() -- Allow the hero to walk.
   end)
 
@@ -123,21 +128,55 @@ function item:finish_using()
   end
   -- Unfreeze the hero if necessary.
   hero:unfreeze() -- This updates direction too, preventing moonwalk!
+  hero:set_using_shield(false)
 end
 
 
 function item:create_shield()
+  -- Create shield entities.
   local map = self:get_map()
   local hero = map:get_hero()
   local hx, hy, hlayer = hero:get_position()
   local hdir = hero:get_direction()
-  local prop = {x=hx, y=hy, layer=hlayer, direction=hdir, width=2*16, height=2*16}
+  local prop = {x=hx, y=hy+2, layer=hlayer, direction=hdir, width=2*16, height=2*16}
   shield = map:create_custom_entity(prop)
+  local shield_below = map:create_custom_entity(prop)
+  function shield:on_removed() shield_below:remove() end
+  -- Create sprites.
+  local variant = item:get_variant()
+  shield_below:create_sprite("hero/shield_"..variant.."_below")
+  shield:create_sprite("hero/shield_ahead")
+  shield:create_sprite("hero/shield_"..variant.."_above")
+  -- Draw above hero. This works with the 2-sprite shift on position and sprites.
+  shield:set_drawn_in_y_order(true)
+  -- Update position and sprites.
+  local tunic_sprite = hero:get_sprite()
   sol.timer.start(shield, 1, function()
-    shield:set_position(hero:get_position())
+    local x, y, layer = hero:get_position()
+    shield_below:set_position(x, y, layer)
+    shield:set_position(x, y + 2, layer)
     shield:set_direction(hero:get_direction())
+    shield_below:set_direction(hero:get_direction())
+    for _, s in shield:get_sprites() do
+      local anim = tunic_sprite:get_animation()
+      if s:has_animation(anim) then s:set_animation(anim) end
+      local frame = tunic_sprite:get_frame()
+      if frame > s:get_num_frames()-1 then frame = 0 end
+      s:set_frame(frame)
+      local x, y = tunic_sprite:get_xy()
+      s:set_xy(x, y-2)
+    end
+    for _, s in shield_below:get_sprites() do
+      local anim = tunic_sprite:get_animation()
+      if s:has_animation(anim) then s:set_animation(anim) end
+      local frame = tunic_sprite:get_frame()
+      if frame > s:get_num_frames()-1 then frame = 0 end
+      s:set_frame(frame)
+      s:set_xy(tunic_sprite:get_xy())
+    end
+    return true
   end)
-  
+    
   -- Create collision test.
   shield:add_collision_test("overlapping", --"sprite",
   function(shield, entity, shield_sprite, entity_sprite)
@@ -148,6 +187,14 @@ function item:create_shield()
     entity:push(p)  
   end)  
   -- TODO: PUSH HERO.
+end
+
+-- Detect if hero is using shield.
+function hero_meta:is_using_shield()
+  return self.using_shield or false
+end
+function hero_meta:set_using_shield(using_shield)
+  self.using_shield = using_shield
 end
 
 --[[ Pushing commands for the shield:
@@ -178,8 +225,6 @@ enemy:on_pushing_hero_on_shield()
 -sound_id
 -pushing_entity or angle
 --]]
-local enemy_meta = sol.main.get_metatable("enemy")
-local hero_meta = sol.main.get_metatable("hero")
 
 -- Pushing enemy functions.
 function enemy_meta:get_can_be_pushed_by_shield()

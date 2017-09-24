@@ -84,10 +84,15 @@ function item:start_custom_jump()
   local ground_type = map:get_ground(hero:get_position())
   local is_ground_jumpable = is_jumpable_ground(ground_type)
   local is_blocked_on_stream = blocking_stream_below_hero(map)
-
-  if is_hero_frozen or is_hero_jumping or is_hero_carrying 
+  
+  if is_hero_frozen or is_hero_jumping or is_hero_carrying or is_using_shield
       or (not is_ground_jumpable) or is_blocked_on_stream then
     return
+  end
+
+  -- Stop using shield if necessary.
+  if hero.is_using_shield and hero:is_using_shield() then
+    game:get_item("shield"):finish_using()
   end
 
   -- Prepare hero for jump.
