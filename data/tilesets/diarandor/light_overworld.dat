@@ -3254,7 +3254,7 @@ tile_pattern{
 
 tile_pattern{
   id = "Wood_tree_trunk_big_left",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 464,
   y = 0,
@@ -3265,7 +3265,7 @@ tile_pattern{
 
 tile_pattern{
   id = "Wood_tree_trunk_big_middle",
-  ground = "traversable",
+  ground = "wall",
   default_layer = 0,
   x = 472,
   y = 8,
@@ -3276,7 +3276,7 @@ tile_pattern{
 
 tile_pattern{
   id = "Wood_tree_trunk_big_right",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 520,
   y = 0,

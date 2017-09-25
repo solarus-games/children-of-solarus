@@ -13,7 +13,7 @@ properties{
 custom_entity{
   layer = -1,
   x = 8,
-  y = 13,
+  y = -35,
   width = 1120,
   height = 1008,
   direction = 0,
@@ -22,17 +22,143 @@ custom_entity{
 
 tile{
   layer = 0,
-  x = 40,
-  y = 128,
-  width = 152,
-  height = 544,
-  pattern = "GrassPlain",
+  x = 16,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6L",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 24,
+  width = 336,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = -8,
+  width = 336,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = -16,
+  width = 336,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = -16,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 216,
+  width = 80,
+  height = 8,
+  pattern = "MtInnerBorder6",
+}
+
+tile{
+  layer = 0,
+  x = 1304,
+  y = 32,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 72,
+  width = 144,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 520,
+  width = 96,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 480,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 480,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 432,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 432,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 472,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 424,
+  width = 96,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
 }
 
 tile{
   layer = 0,
   x = 104,
-  y = 664,
+  y = 616,
   width = 48,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -41,7 +167,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 656,
+  y = 608,
   width = 64,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -50,7 +176,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 648,
+  y = 600,
   width = 80,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -59,7 +185,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 640,
+  y = 592,
   width = 96,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -68,7 +194,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 632,
+  y = 584,
   width = 112,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -77,7 +203,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 440,
+  y = 392,
   width = 128,
   height = 192,
   pattern = "ShallowWaterPlain",
@@ -86,7 +212,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 432,
+  y = 384,
   width = 112,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -95,7 +221,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 424,
+  y = 376,
   width = 96,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -104,7 +230,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 416,
+  y = 368,
   width = 80,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -113,7 +239,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 408,
+  y = 360,
   width = 64,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -122,7 +248,7 @@ tile{
 tile{
   layer = 0,
   x = 104,
-  y = 400,
+  y = 352,
   width = 48,
   height = 8,
   pattern = "ShallowWaterPlain",
@@ -130,17 +256,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 880,
-  y = 248,
-  width = 400,
-  height = 152,
-  pattern = "GrassPlain",
-}
-
-tile{
-  layer = 0,
   x = 1232,
-  y = 544,
+  y = 496,
   width = 16,
   height = 64,
   pattern = "ShallowWaterPlain",
@@ -149,7 +266,7 @@ tile{
 tile{
   layer = 0,
   x = 1248,
-  y = 552,
+  y = 504,
   width = 32,
   height = 40,
   pattern = "ShallowWaterPlain",
@@ -158,7 +275,7 @@ tile{
 tile{
   layer = 0,
   x = 1176,
-  y = 544,
+  y = 496,
   width = 8,
   height = 64,
   pattern = "ShallowWaterPlain",
@@ -167,7 +284,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 536,
+  y = 488,
   width = 48,
   height = 80,
   pattern = "ShallowWaterPlain",
@@ -176,7 +293,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 488,
+  y = 440,
   width = 32,
   height = 16,
   pattern = "Gnd_sand",
@@ -185,7 +302,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 456,
+  y = 408,
   width = 64,
   height = 16,
   pattern = "Gnd_sand",
@@ -194,7 +311,7 @@ tile{
 tile{
   layer = 0,
   x = 872,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -202,9 +319,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 872,
-  y = 400,
-  width = 80,
+  x = 888,
+  y = 352,
+  width = 64,
   height = 8,
   pattern = "MtInnerBorder6",
 }
@@ -212,7 +329,7 @@ tile{
 tile{
   layer = 0,
   x = 1080,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -221,7 +338,7 @@ tile{
 tile{
   layer = 0,
   x = 1080,
-  y = 440,
+  y = 392,
   width = 16,
   height = 16,
   pattern = "MtBorder7",
@@ -230,7 +347,7 @@ tile{
 tile{
   layer = 0,
   x = 1056,
-  y = 560,
+  y = 512,
   width = 80,
   height = 16,
   pattern = "roof_red_6",
@@ -239,7 +356,7 @@ tile{
 tile{
   layer = 0,
   x = 1048,
-  y = 576,
+  y = 528,
   width = 96,
   height = 16,
   pattern = "house_woodbright_center",
@@ -248,7 +365,7 @@ tile{
 tile{
   layer = 0,
   x = 1056,
-  y = 576,
+  y = 528,
   width = 80,
   height = 8,
   pattern = "roof_red_border_6",
@@ -257,7 +374,7 @@ tile{
 tile{
   layer = 0,
   x = 1072,
-  y = 568,
+  y = 520,
   width = 32,
   height = 16,
   pattern = "house_entrance_wooden_up",
@@ -266,7 +383,7 @@ tile{
 tile{
   layer = 0,
   x = 832,
-  y = 568,
+  y = 520,
   width = 80,
   height = 24,
   pattern = "house_brickgreen_center",
@@ -275,7 +392,7 @@ tile{
 tile{
   layer = 0,
   x = 840,
-  y = 568,
+  y = 520,
   width = 64,
   height = 8,
   pattern = "roof_blue_border_6",
@@ -284,7 +401,7 @@ tile{
 tile{
   layer = 0,
   x = 1120,
-  y = 608,
+  y = 560,
   width = 40,
   height = 16,
   pattern = "fence_wall",
@@ -293,7 +410,7 @@ tile{
 tile{
   layer = 0,
   x = 1040,
-  y = 592,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "house_woodbright_leftcorner",
@@ -302,7 +419,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 592,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "house_woodbright_rightcorner",
@@ -311,7 +428,7 @@ tile{
 tile{
   layer = 0,
   x = 1040,
-  y = 576,
+  y = 528,
   width = 8,
   height = 16,
   pattern = "house_woodbright_left",
@@ -320,7 +437,7 @@ tile{
 tile{
   layer = 0,
   x = 1048,
-  y = 592,
+  y = 544,
   width = 96,
   height = 8,
   pattern = "house_woodbright_down",
@@ -329,7 +446,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 576,
+  y = 528,
   width = 8,
   height = 16,
   pattern = "house_woodbright_right",
@@ -338,7 +455,7 @@ tile{
 tile{
   layer = 0,
   x = 1096,
-  y = 584,
+  y = 536,
   width = 8,
   height = 16,
   pattern = "house_entrance_wooden_right",
@@ -347,7 +464,7 @@ tile{
 tile{
   layer = 0,
   x = 1080,
-  y = 584,
+  y = 536,
   width = 16,
   height = 16,
   pattern = "house_entrance_wooden_center",
@@ -356,7 +473,7 @@ tile{
 tile{
   layer = 0,
   x = 1072,
-  y = 584,
+  y = 536,
   width = 8,
   height = 16,
   pattern = "house_entrance_wooden_left",
@@ -365,7 +482,7 @@ tile{
 tile{
   layer = 0,
   x = 1000,
-  y = 608,
+  y = 560,
   width = 56,
   height = 16,
   pattern = "fence_wall",
@@ -374,7 +491,7 @@ tile{
 tile{
   layer = 0,
   x = 1024,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -383,7 +500,7 @@ tile{
 tile{
   layer = 0,
   x = 1040,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -392,7 +509,7 @@ tile{
 tile{
   layer = 0,
   x = 1056,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -401,7 +518,7 @@ tile{
 tile{
   layer = 0,
   x = 1064,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -410,7 +527,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -419,7 +536,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -428,7 +545,7 @@ tile{
 tile{
   layer = 0,
   x = 1128,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -437,7 +554,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -446,7 +563,7 @@ tile{
 tile{
   layer = 0,
   x = 1160,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -455,7 +572,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 584,
+  y = 536,
   width = 16,
   height = 16,
   pattern = "house_window_wooden",
@@ -464,7 +581,7 @@ tile{
 tile{
   layer = 0,
   x = 1024,
-  y = 512,
+  y = 464,
   width = 8,
   height = 96,
   pattern = "fence_post2",
@@ -473,7 +590,7 @@ tile{
 tile{
   layer = 0,
   x = 1160,
-  y = 512,
+  y = 464,
   width = 8,
   height = 96,
   pattern = "fence_post2",
@@ -482,7 +599,7 @@ tile{
 tile{
   layer = 0,
   x = 1032,
-  y = 504,
+  y = 456,
   width = 128,
   height = 16,
   pattern = "fence_post",
@@ -491,7 +608,7 @@ tile{
 tile{
   layer = 0,
   x = 1072,
-  y = 632,
+  y = 584,
   width = 32,
   height = 16,
   pattern = "Ground_castle_golden_center",
@@ -500,7 +617,7 @@ tile{
 tile{
   layer = 0,
   x = 912,
-  y = 648,
+  y = 600,
   width = 368,
   height = 16,
   pattern = "Ground_castle_golden_center",
@@ -509,7 +626,7 @@ tile{
 tile{
   layer = 0,
   x = 928,
-  y = 520,
+  y = 472,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -518,7 +635,7 @@ tile{
 tile{
   layer = 0,
   x = 936,
-  y = 520,
+  y = 472,
   width = 48,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -527,7 +644,7 @@ tile{
 tile{
   layer = 0,
   x = 984,
-  y = 520,
+  y = 472,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -536,7 +653,7 @@ tile{
 tile{
   layer = 0,
   x = 936,
-  y = 560,
+  y = 512,
   width = 48,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -545,7 +662,7 @@ tile{
 tile{
   layer = 0,
   x = 824,
-  y = 592,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "house_brickgreen_leftcorner",
@@ -554,7 +671,7 @@ tile{
 tile{
   layer = 0,
   x = 912,
-  y = 568,
+  y = 520,
   width = 8,
   height = 24,
   pattern = "house_brickgreen_right",
@@ -563,7 +680,7 @@ tile{
 tile{
   layer = 0,
   x = 912,
-  y = 592,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "house_brickgreen_rightcorner",
@@ -572,7 +689,7 @@ tile{
 tile{
   layer = 0,
   x = 824,
-  y = 568,
+  y = 520,
   width = 8,
   height = 24,
   pattern = "house_brickgreen_left",
@@ -581,7 +698,7 @@ tile{
 tile{
   layer = 0,
   x = 832,
-  y = 592,
+  y = 544,
   width = 80,
   height = 8,
   pattern = "house_brickgreen_down",
@@ -590,7 +707,7 @@ tile{
 tile{
   layer = 0,
   x = 880,
-  y = 584,
+  y = 536,
   width = 8,
   height = 16,
   pattern = "house_entrance_wooden_right",
@@ -599,7 +716,7 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 584,
+  y = 536,
   width = 16,
   height = 16,
   pattern = "house_entrance_wooden_center",
@@ -608,7 +725,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 584,
+  y = 536,
   width = 8,
   height = 16,
   pattern = "house_entrance_wooden_left",
@@ -617,7 +734,7 @@ tile{
 tile{
   layer = 0,
   x = 1080,
-  y = 576,
+  y = 528,
   width = 16,
   height = 24,
   pattern = "house_door_wooden",
@@ -626,7 +743,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 568,
+  y = 520,
   width = 32,
   height = 16,
   pattern = "house_entrance_wooden_up",
@@ -635,7 +752,7 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 576,
+  y = 528,
   width = 16,
   height = 24,
   pattern = "house_door_wooden",
@@ -644,7 +761,7 @@ tile{
 tile{
   layer = 0,
   x = 888,
-  y = 440,
+  y = 392,
   width = 192,
   height = 16,
   pattern = "MtBorder6R",
@@ -653,7 +770,7 @@ tile{
 tile{
   layer = 0,
   x = 968,
-  y = 416,
+  y = 368,
   width = 32,
   height = 8,
   pattern = "MtBorderUpper6",
@@ -662,7 +779,7 @@ tile{
 tile{
   layer = 0,
   x = 888,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -671,7 +788,7 @@ tile{
 tile{
   layer = 0,
   x = 904,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -680,7 +797,7 @@ tile{
 tile{
   layer = 0,
   x = 920,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -689,7 +806,7 @@ tile{
 tile{
   layer = 0,
   x = 936,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -698,7 +815,7 @@ tile{
 tile{
   layer = 0,
   x = 952,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -707,7 +824,7 @@ tile{
 tile{
   layer = 0,
   x = 968,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -716,7 +833,7 @@ tile{
 tile{
   layer = 0,
   x = 1016,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -725,7 +842,7 @@ tile{
 tile{
   layer = 0,
   x = 1032,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -734,7 +851,7 @@ tile{
 tile{
   layer = 0,
   x = 1048,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -743,7 +860,7 @@ tile{
 tile{
   layer = 0,
   x = 1064,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -752,7 +869,7 @@ tile{
 tile{
   layer = 0,
   x = 888,
-  y = 456,
+  y = 408,
   width = 192,
   height = 8,
   pattern = "MtShadowBorder6",
@@ -761,7 +878,7 @@ tile{
 tile{
   layer = 0,
   x = 952,
-  y = 408,
+  y = 360,
   width = 16,
   height = 16,
   pattern = "MtInnerBorder5",
@@ -770,7 +887,7 @@ tile{
 tile{
   layer = 0,
   x = 952,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "MtInnerBorder5Bis",
@@ -779,7 +896,7 @@ tile{
 tile{
   layer = 0,
   x = 888,
-  y = 408,
+  y = 360,
   width = 64,
   height = 16,
   pattern = "MtPeakBorder6R",
@@ -788,7 +905,7 @@ tile{
 tile{
   layer = 0,
   x = 1008,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "MtInnerBorder7Bis",
@@ -797,7 +914,7 @@ tile{
 tile{
   layer = 0,
   x = 1000,
-  y = 408,
+  y = 360,
   width = 16,
   height = 16,
   pattern = "MtInnerBorder7",
@@ -806,8 +923,8 @@ tile{
 tile{
   layer = 0,
   x = 1016,
-  y = 400,
-  width = 80,
+  y = 352,
+  width = 64,
   height = 8,
   pattern = "MtInnerBorder6",
 }
@@ -815,7 +932,7 @@ tile{
 tile{
   layer = 0,
   x = 1016,
-  y = 408,
+  y = 360,
   width = 64,
   height = 16,
   pattern = "MtPeakBorder6R",
@@ -824,7 +941,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 400,
+  y = 352,
   width = 8,
   height = 16,
   pattern = "MtBorder0",
@@ -833,7 +950,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 392,
+  y = 344,
   width = 8,
   height = 16,
   pattern = "MtBorderUpper0Bis",
@@ -842,7 +959,7 @@ tile{
 tile{
   layer = 0,
   x = 1096,
-  y = 416,
+  y = 368,
   width = 8,
   height = 16,
   pattern = "MtBorder0",
@@ -851,7 +968,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 400,
+  y = 352,
   width = 8,
   height = 16,
   pattern = "MtBorder4",
@@ -860,7 +977,7 @@ tile{
 tile{
   layer = 0,
   x = 872,
-  y = 424,
+  y = 376,
   width = 8,
   height = 16,
   pattern = "MtBorder4",
@@ -869,7 +986,7 @@ tile{
 tile{
   layer = 0,
   x = 1080,
-  y = 408,
+  y = 360,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -878,7 +995,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 376,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "MtBorder1Small",
@@ -887,7 +1004,7 @@ tile{
 tile{
   layer = 0,
   x = 872,
-  y = 408,
+  y = 360,
   width = 16,
   height = 16,
   pattern = "MtPeak6L",
@@ -896,7 +1013,7 @@ tile{
 tile{
   layer = 0,
   x = 848,
-  y = 376,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "MtBorder3Small",
@@ -905,7 +1022,7 @@ tile{
 tile{
   layer = 0,
   x = 848,
-  y = 384,
+  y = 336,
   width = 8,
   height = 16,
   pattern = "MtBorder4",
@@ -914,7 +1031,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 416,
+  y = 368,
   width = 8,
   height = 8,
   pattern = "MtBorder5Small",
@@ -923,7 +1040,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 384,
+  y = 336,
   width = 8,
   height = 16,
   pattern = "MtBorder0",
@@ -932,7 +1049,7 @@ tile{
 tile{
   layer = 0,
   x = 872,
-  y = 424,
+  y = 376,
   width = 16,
   height = 8,
   pattern = "MtPeak5Small",
@@ -941,7 +1058,7 @@ tile{
 tile{
   layer = 0,
   x = 848,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "MtBorder5Small",
@@ -950,7 +1067,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 392,
+  y = 344,
   width = 8,
   height = 16,
   pattern = "MtBorderUpper4Bis",
@@ -959,7 +1076,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "MtPeak5Small",
@@ -968,7 +1085,7 @@ tile{
 tile{
   layer = 0,
   x = 1080,
-  y = 424,
+  y = 376,
   width = 16,
   height = 8,
   pattern = "MtPeak7Small",
@@ -977,7 +1094,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "MtBorder7Small",
@@ -986,7 +1103,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 416,
+  y = 368,
   width = 8,
   height = 8,
   pattern = "MtBorder7Small",
@@ -995,7 +1112,7 @@ tile{
 tile{
   layer = 0,
   x = 848,
-  y = 368,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder2L",
@@ -1004,7 +1121,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 368,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder2R",
@@ -1013,7 +1130,7 @@ tile{
 tile{
   layer = 0,
   x = 848,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder5",
@@ -1022,7 +1139,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 424,
+  y = 376,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder5",
@@ -1031,7 +1148,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder7",
@@ -1040,7 +1157,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 424,
+  y = 376,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder7",
@@ -1049,7 +1166,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 368,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder2L",
@@ -1058,7 +1175,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 368,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder2R",
@@ -1067,7 +1184,7 @@ tile{
 tile{
   layer = 0,
   x = 1080,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder6R",
@@ -1075,125 +1192,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 856,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 392,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder1",
-}
-
-tile{
-  layer = 0,
-  x = 880,
-  y = 400,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 880,
-  y = 392,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder1",
-}
-
-tile{
-  layer = 0,
-  x = 872,
-  y = 400,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak7Small",
-}
-
-tile{
-  layer = 0,
-  x = 856,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder3Small",
-}
-
-tile{
-  layer = 0,
   x = 1096,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder3Small",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 400,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder3Small",
-}
-
-tile{
-  layer = 0,
-  x = 1096,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder3",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 392,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder3",
-}
-
-tile{
-  layer = 0,
-  x = 1096,
-  y = 392,
+  y = 344,
   width = 8,
   height = 8,
   pattern = "MtPeak7Small",
@@ -1202,7 +1202,7 @@ tile{
 tile{
   layer = 0,
   x = 872,
-  y = 440,
+  y = 392,
   width = 16,
   height = 16,
   pattern = "MtBorder5",
@@ -1211,7 +1211,7 @@ tile{
 tile{
   layer = 0,
   x = 880,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder6L",
@@ -1220,7 +1220,7 @@ tile{
 tile{
   layer = 0,
   x = 1096,
-  y = 432,
+  y = 384,
   width = 8,
   height = 8,
   pattern = "MtBorder7Small",
@@ -1229,7 +1229,7 @@ tile{
 tile{
   layer = 0,
   x = 1096,
-  y = 400,
+  y = 352,
   width = 8,
   height = 16,
   pattern = "MtBorderUpper0Bis",
@@ -1237,35 +1237,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1088,
-  y = 392,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder3Small",
-}
-
-tile{
-  layer = 0,
-  x = 1088,
-  y = 400,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak7Small",
-}
-
-tile{
-  layer = 0,
-  x = 1088,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder3",
-}
-
-tile{
-  layer = 0,
   x = 1096,
-  y = 440,
+  y = 392,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder7",
@@ -1274,7 +1247,7 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 424,
+  y = 376,
   width = 8,
   height = 8,
   pattern = "MtBorder5Small",
@@ -1283,7 +1256,7 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 432,
+  y = 384,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder5",
@@ -1292,7 +1265,7 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 408,
+  y = 360,
   width = 8,
   height = 16,
   pattern = "MtBorder4",
@@ -1301,7 +1274,7 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 400,
+  y = 352,
   width = 8,
   height = 16,
   pattern = "MtBorderUpper4Bis",
@@ -1310,7 +1283,7 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "MtPeak5Small",
@@ -1319,34 +1292,16 @@ tile{
 tile{
   layer = 0,
   x = 864,
-  y = 392,
+  y = 344,
   width = 8,
   height = 8,
   pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 864,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 864,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder1",
 }
 
 tile{
   layer = 0,
   x = 1072,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "flower_blue",
@@ -1355,7 +1310,7 @@ tile{
 tile{
   layer = 0,
   x = 1064,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "flower_blue",
@@ -1364,7 +1319,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 440,
+  y = 392,
   width = 8,
   height = 8,
   pattern = "Gnd_leaves_left",
@@ -1373,7 +1328,7 @@ tile{
 tile{
   layer = 0,
   x = 1128,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_smallrock1",
@@ -1382,7 +1337,7 @@ tile{
 tile{
   layer = 0,
   x = 816,
-  y = 472,
+  y = 424,
   width = 384,
   height = 32,
   pattern = "Gnd_sand",
@@ -1391,7 +1346,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 496,
+  y = 448,
   width = 96,
   height = 16,
   pattern = "Gnd_sand",
@@ -1400,7 +1355,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 472,
+  y = 424,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1409,7 +1364,7 @@ tile{
 tile{
   layer = 0,
   x = 1176,
-  y = 464,
+  y = 416,
   width = 32,
   height = 16,
   pattern = "Gnd_sand",
@@ -1418,7 +1373,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 464,
+  y = 416,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1427,7 +1382,7 @@ tile{
 tile{
   layer = 0,
   x = 1120,
-  y = 408,
+  y = 360,
   width = 32,
   height = 48,
   pattern = "Gnd_sand",
@@ -1436,7 +1391,7 @@ tile{
 tile{
   layer = 0,
   x = 1128,
-  y = 400,
+  y = 352,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1445,7 +1400,7 @@ tile{
 tile{
   layer = 0,
   x = 1136,
-  y = 392,
+  y = 344,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1454,7 +1409,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 488,
+  y = 440,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1463,7 +1418,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 480,
+  y = 432,
   width = 48,
   height = 16,
   pattern = "Gnd_sand",
@@ -1472,7 +1427,7 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 464,
+  y = 416,
   width = 16,
   height = 32,
   pattern = "Gnd_sand",
@@ -1481,8 +1436,8 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 456,
-  width = 48,
+  y = 408,
+  width = 80,
   height = 16,
   pattern = "Gnd_sand",
 }
@@ -1490,7 +1445,7 @@ tile{
 tile{
   layer = 0,
   x = 808,
-  y = 472,
+  y = 424,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1499,7 +1454,7 @@ tile{
 tile{
   layer = 0,
   x = 824,
-  y = 464,
+  y = 416,
   width = 64,
   height = 16,
   pattern = "Gnd_sand",
@@ -1508,7 +1463,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 160,
+  y = 112,
   width = 64,
   height = 16,
   pattern = "Gnd_sand",
@@ -1517,7 +1472,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 168,
+  y = 120,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1526,7 +1481,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 176,
+  y = 128,
   width = 64,
   height = 16,
   pattern = "Gnd_sand",
@@ -1535,7 +1490,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 184,
+  y = 136,
   width = 32,
   height = 192,
   pattern = "Gnd_sand",
@@ -1544,7 +1499,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 184,
+  y = 136,
   width = 32,
   height = 16,
   pattern = "Gnd_sand",
@@ -1553,7 +1508,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 192,
+  y = 144,
   width = 32,
   height = 16,
   pattern = "Gnd_sand",
@@ -1562,7 +1517,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 200,
+  y = 152,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1571,7 +1526,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 208,
+  y = 160,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1580,7 +1535,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 168,
+  y = 120,
   width = 16,
   height = 16,
   pattern = "Gnd_sand",
@@ -1589,7 +1544,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 368,
+  y = 320,
   width = 32,
   height = 16,
   pattern = "Gnd_sand",
@@ -1598,7 +1553,7 @@ tile{
 tile{
   layer = 0,
   x = 136,
-  y = 320,
+  y = 272,
   width = 64,
   height = 48,
   pattern = "Gnd_sand",
@@ -1607,7 +1562,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 328,
+  y = 280,
   width = 16,
   height = 32,
   pattern = "Gnd_sand",
@@ -1616,7 +1571,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 328,
+  y = 280,
   width = 16,
   height = 32,
   pattern = "Gnd_sand",
@@ -1625,7 +1580,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 160,
+  y = 112,
   width = 48,
   height = 8,
   pattern = "Gnd_grassedge6",
@@ -1634,7 +1589,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 192,
+  y = 144,
   width = 8,
   height = 128,
   pattern = "Gnd_grassedge0",
@@ -1643,7 +1598,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 224,
+  y = 176,
   width = 8,
   height = 96,
   pattern = "Gnd_grassedge4",
@@ -1652,7 +1607,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 320,
+  y = 272,
   width = 16,
   height = 8,
   pattern = "Gnd_grassedge6",
@@ -1661,7 +1616,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 336,
+  y = 288,
   width = 8,
   height = 16,
   pattern = "Gnd_grassedge0",
@@ -1670,7 +1625,7 @@ tile{
 tile{
   layer = 0,
   x = 200,
-  y = 336,
+  y = 288,
   width = 8,
   height = 16,
   pattern = "Gnd_grassedge4",
@@ -1679,7 +1634,7 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 360,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge2",
@@ -1688,7 +1643,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 368,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge4",
@@ -1697,7 +1652,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 376,
+  y = 328,
   width = 16,
   height = 8,
   pattern = "Gnd_grassedge2",
@@ -1706,7 +1661,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 160,
+  y = 112,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -1715,7 +1670,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 160,
+  y = 112,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -1724,7 +1679,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 168,
+  y = 120,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -1733,7 +1688,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 168,
+  y = 120,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -1742,7 +1697,7 @@ tile{
 tile{
   layer = 0,
   x = 216,
-  y = 168,
+  y = 120,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -1751,7 +1706,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 168,
+  y = 120,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -1760,7 +1715,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 176,
+  y = 128,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -1769,7 +1724,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 176,
+  y = 128,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -1778,7 +1733,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 176,
+  y = 128,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -1787,7 +1742,7 @@ tile{
 tile{
   layer = 0,
   x = 216,
-  y = 176,
+  y = 128,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -1796,7 +1751,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 184,
+  y = 136,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -1805,7 +1760,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 184,
+  y = 136,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -1814,7 +1769,7 @@ tile{
 tile{
   layer = 0,
   x = 200,
-  y = 184,
+  y = 136,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -1823,7 +1778,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 184,
+  y = 136,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -1832,7 +1787,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 192,
+  y = 144,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -1841,7 +1796,7 @@ tile{
 tile{
   layer = 0,
   x = 200,
-  y = 192,
+  y = 144,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -1850,7 +1805,7 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 200,
+  y = 152,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -1859,7 +1814,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 200,
+  y = 152,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -1868,7 +1823,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 208,
+  y = 160,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -1877,7 +1832,7 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 208,
+  y = 160,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -1886,7 +1841,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 216,
+  y = 168,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -1895,7 +1850,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 216,
+  y = 168,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -1904,7 +1859,7 @@ tile{
 tile{
   layer = 0,
   x = 136,
-  y = 320,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -1913,7 +1868,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 320,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -1922,7 +1877,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 320,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge5",
@@ -1931,7 +1886,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 320,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -1940,7 +1895,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 328,
+  y = 280,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -1949,7 +1904,7 @@ tile{
 tile{
   layer = 0,
   x = 136,
-  y = 328,
+  y = 280,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -1958,7 +1913,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 328,
+  y = 280,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge5",
@@ -1967,7 +1922,7 @@ tile{
 tile{
   layer = 0,
   x = 200,
-  y = 328,
+  y = 280,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -1976,7 +1931,7 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 352,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner5",
@@ -1985,7 +1940,7 @@ tile{
 tile{
   layer = 0,
   x = 136,
-  y = 352,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge1",
@@ -1994,7 +1949,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 352,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -2003,7 +1958,7 @@ tile{
 tile{
   layer = 0,
   x = 200,
-  y = 352,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -2012,7 +1967,7 @@ tile{
 tile{
   layer = 0,
   x = 136,
-  y = 360,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner5",
@@ -2021,7 +1976,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 360,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge1",
@@ -2030,7 +1985,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 360,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge3",
@@ -2039,7 +1994,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 360,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -2048,7 +2003,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 368,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner5",
@@ -2057,7 +2012,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 368,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge1",
@@ -2066,7 +2021,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 376,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner5",
@@ -2075,7 +2030,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 376,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -2084,7 +2039,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 344,
+  y = 296,
   width = 8,
   height = 8,
   pattern = "Gnd_smallrock1",
@@ -2093,10 +2048,46 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 336,
+  y = 288,
   width = 8,
   height = 8,
   pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
 }
 
 tile{
@@ -2105,49 +2096,13 @@ tile{
   y = 272,
   width = 8,
   height = 8,
-  pattern = "Gnd_smallrock1",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 192,
-  width = 8,
-  height = 8,
-  pattern = "Gnd_smallrock1",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 168,
-  width = 8,
-  height = 8,
-  pattern = "Gnd_smallrock1",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "Gnd_smallrock3",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 320,
-  width = 8,
-  height = 8,
   pattern = "Gnd_smallrock3",
 }
 
 tile{
   layer = 0,
   x = 144,
-  y = 336,
+  y = 288,
   width = 8,
   height = 8,
   pattern = "Gnd_smallrock3",
@@ -2156,7 +2111,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 360,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "Gnd_smallrock4",
@@ -2165,7 +2120,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 288,
+  y = 240,
   width = 8,
   height = 8,
   pattern = "Gnd_smallrock4",
@@ -2174,7 +2129,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 400,
+  y = 352,
   width = 8,
   height = 56,
   pattern = "Gnd_grassedge4",
@@ -2183,7 +2138,7 @@ tile{
 tile{
   layer = 0,
   x = 1120,
-  y = 416,
+  y = 368,
   width = 8,
   height = 40,
   pattern = "Gnd_grassedge0",
@@ -2192,7 +2147,7 @@ tile{
 tile{
   layer = 0,
   x = 808,
-  y = 456,
+  y = 408,
   width = 64,
   height = 8,
   pattern = "Gnd_grassedge6",
@@ -2201,7 +2156,7 @@ tile{
 tile{
   layer = 0,
   x = 1152,
-  y = 456,
+  y = 408,
   width = 16,
   height = 8,
   pattern = "Gnd_grassedge6",
@@ -2210,7 +2165,7 @@ tile{
 tile{
   layer = 0,
   x = 1176,
-  y = 464,
+  y = 416,
   width = 24,
   height = 8,
   pattern = "Gnd_grassedge6",
@@ -2219,7 +2174,7 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 472,
+  y = 424,
   width = 8,
   height = 16,
   pattern = "Gnd_grassedge0",
@@ -2228,7 +2183,7 @@ tile{
 tile{
   layer = 0,
   x = 888,
-  y = 472,
+  y = 424,
   width = 216,
   height = 8,
   pattern = "Gnd_grassedge6",
@@ -2237,7 +2192,7 @@ tile{
 tile{
   layer = 0,
   x = 1272,
-  y = 496,
+  y = 448,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge4",
@@ -2246,7 +2201,7 @@ tile{
 tile{
   layer = 0,
   x = 808,
-  y = 496,
+  y = 448,
   width = 376,
   height = 8,
   pattern = "Gnd_grassedge2",
@@ -2255,7 +2210,7 @@ tile{
 tile{
   layer = 0,
   x = 1192,
-  y = 504,
+  y = 456,
   width = 80,
   height = 8,
   pattern = "Gnd_grassedge2",
@@ -2264,7 +2219,7 @@ tile{
 tile{
   layer = 0,
   x = 1136,
-  y = 392,
+  y = 344,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -2273,7 +2228,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 392,
+  y = 344,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -2282,7 +2237,7 @@ tile{
 tile{
   layer = 0,
   x = 1128,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -2291,7 +2246,7 @@ tile{
 tile{
   layer = 0,
   x = 1136,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -2300,7 +2255,7 @@ tile{
 tile{
   layer = 0,
   x = 1120,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -2309,7 +2264,7 @@ tile{
 tile{
   layer = 0,
   x = 1128,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -2318,7 +2273,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -2327,7 +2282,7 @@ tile{
 tile{
   layer = 0,
   x = 840,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -2336,7 +2291,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -2345,7 +2300,7 @@ tile{
 tile{
   layer = 0,
   x = 1120,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -2354,7 +2309,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge5",
@@ -2363,7 +2318,7 @@ tile{
 tile{
   layer = 0,
   x = 1168,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -2372,7 +2327,7 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -2381,7 +2336,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -2390,7 +2345,7 @@ tile{
 tile{
   layer = 0,
   x = 872,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge5",
@@ -2399,7 +2354,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner3",
@@ -2408,7 +2363,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -2417,7 +2372,7 @@ tile{
 tile{
   layer = 0,
   x = 1168,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge5",
@@ -2426,7 +2381,7 @@ tile{
 tile{
   layer = 0,
   x = 1272,
-  y = 488,
+  y = 440,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -2435,7 +2390,7 @@ tile{
 tile{
   layer = 0,
   x = 880,
-  y = 472,
+  y = 424,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge5",
@@ -2444,7 +2399,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 472,
+  y = 424,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge7",
@@ -2453,7 +2408,7 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 488,
+  y = 440,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner5",
@@ -2462,7 +2417,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 488,
+  y = 440,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge1",
@@ -2471,7 +2426,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 496,
+  y = 448,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner5",
@@ -2480,7 +2435,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 496,
+  y = 448,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge1",
@@ -2489,7 +2444,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 504,
+  y = 456,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner5",
@@ -2498,7 +2453,7 @@ tile{
 tile{
   layer = 0,
   x = 1272,
-  y = 504,
+  y = 456,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner7",
@@ -2507,7 +2462,7 @@ tile{
 tile{
   layer = 0,
   x = 1208,
-  y = 480,
+  y = 432,
   width = 32,
   height = 8,
   pattern = "Gnd_grassedge6",
@@ -2516,7 +2471,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -2525,7 +2480,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 480,
+  y = 432,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge5",
@@ -2534,7 +2489,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 472,
+  y = 424,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge4",
@@ -2543,7 +2498,7 @@ tile{
 tile{
   layer = 0,
   x = 1248,
-  y = 488,
+  y = 440,
   width = 24,
   height = 8,
   pattern = "Gnd_grassedge6",
@@ -2552,7 +2507,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 480,
+  y = 432,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_smallcorner1",
@@ -2561,7 +2516,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 488,
+  y = 440,
   width = 8,
   height = 8,
   pattern = "Gnd_grassedge5",
@@ -2570,7 +2525,7 @@ tile{
 tile{
   layer = 0,
   x = 112,
-  y = 400,
+  y = 352,
   width = 32,
   height = 8,
   pattern = "Gnd_grassborder6",
@@ -2579,7 +2534,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 448,
+  y = 400,
   width = 8,
   height = 176,
   pattern = "Gnd_grassborder0",
@@ -2588,7 +2543,7 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 448,
+  y = 400,
   width = 8,
   height = 176,
   pattern = "Gnd_grassborder4",
@@ -2597,7 +2552,7 @@ tile{
 tile{
   layer = 0,
   x = 112,
-  y = 664,
+  y = 616,
   width = 32,
   height = 8,
   pattern = "Gnd_grassborder2",
@@ -2606,7 +2561,7 @@ tile{
 tile{
   layer = 0,
   x = 104,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7inner",
@@ -2615,7 +2570,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5inner",
@@ -2624,7 +2579,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7inner",
@@ -2633,7 +2588,7 @@ tile{
 tile{
   layer = 0,
   x = 104,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7",
@@ -2642,7 +2597,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5",
@@ -2651,7 +2606,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5inner",
@@ -2660,7 +2615,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 416,
+  y = 368,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7inner",
@@ -2669,7 +2624,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 416,
+  y = 368,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7",
@@ -2678,7 +2633,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 416,
+  y = 368,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5",
@@ -2687,7 +2642,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 416,
+  y = 368,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5inner",
@@ -2696,7 +2651,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 424,
+  y = 376,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7inner",
@@ -2705,7 +2660,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 424,
+  y = 376,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7",
@@ -2714,7 +2669,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 424,
+  y = 376,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5",
@@ -2723,7 +2678,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 424,
+  y = 376,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5inner",
@@ -2732,7 +2687,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 432,
+  y = 384,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7inner",
@@ -2741,7 +2696,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 432,
+  y = 384,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7",
@@ -2750,7 +2705,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 432,
+  y = 384,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5",
@@ -2759,7 +2714,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 432,
+  y = 384,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5inner",
@@ -2768,7 +2723,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 440,
+  y = 392,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7inner",
@@ -2777,7 +2732,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 440,
+  y = 392,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7",
@@ -2786,7 +2741,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 440,
+  y = 392,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5",
@@ -2795,7 +2750,7 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 440,
+  y = 392,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5inner",
@@ -2804,7 +2759,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 624,
+  y = 576,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1inner",
@@ -2813,7 +2768,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 624,
+  y = 576,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1",
@@ -2822,7 +2777,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 624,
+  y = 576,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3",
@@ -2831,7 +2786,7 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 624,
+  y = 576,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3inner",
@@ -2840,7 +2795,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 632,
+  y = 584,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1inner",
@@ -2849,7 +2804,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 632,
+  y = 584,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1",
@@ -2858,7 +2813,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 632,
+  y = 584,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3",
@@ -2867,7 +2822,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 632,
+  y = 584,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3inner",
@@ -2876,7 +2831,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 640,
+  y = 592,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1inner",
@@ -2885,7 +2840,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 640,
+  y = 592,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1",
@@ -2894,7 +2849,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 640,
+  y = 592,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3",
@@ -2903,7 +2858,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 640,
+  y = 592,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3inner",
@@ -2912,7 +2867,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 648,
+  y = 600,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1inner",
@@ -2921,7 +2876,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 648,
+  y = 600,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1",
@@ -2930,7 +2885,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 648,
+  y = 600,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3",
@@ -2939,7 +2894,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 648,
+  y = 600,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3inner",
@@ -2948,7 +2903,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 656,
+  y = 608,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1inner",
@@ -2957,7 +2912,7 @@ tile{
 tile{
   layer = 0,
   x = 104,
-  y = 656,
+  y = 608,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1",
@@ -2966,7 +2921,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 656,
+  y = 608,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3",
@@ -2975,7 +2930,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 656,
+  y = 608,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3inner",
@@ -2984,7 +2939,7 @@ tile{
 tile{
   layer = 0,
   x = 104,
-  y = 664,
+  y = 616,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1inner",
@@ -2993,7 +2948,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 664,
+  y = 616,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3inner",
@@ -3002,7 +2957,7 @@ tile{
 tile{
   layer = 0,
   x = 1192,
-  y = 536,
+  y = 488,
   width = 32,
   height = 8,
   pattern = "Gnd_grassborder6",
@@ -3011,7 +2966,7 @@ tile{
 tile{
   layer = 0,
   x = 1232,
-  y = 544,
+  y = 496,
   width = 16,
   height = 8,
   pattern = "Gnd_grassborder6",
@@ -3020,7 +2975,7 @@ tile{
 tile{
   layer = 0,
   x = 1248,
-  y = 552,
+  y = 504,
   width = 32,
   height = 8,
   pattern = "Gnd_grassborder6",
@@ -3029,7 +2984,7 @@ tile{
 tile{
   layer = 0,
   x = 1248,
-  y = 584,
+  y = 536,
   width = 32,
   height = 8,
   pattern = "Gnd_grassborder2",
@@ -3038,7 +2993,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 592,
+  y = 544,
   width = 8,
   height = 16,
   pattern = "Gnd_grassborder4",
@@ -3047,7 +3002,7 @@ tile{
 tile{
   layer = 0,
   x = 1232,
-  y = 600,
+  y = 552,
   width = 16,
   height = 8,
   pattern = "Gnd_grassborder2",
@@ -3056,7 +3011,7 @@ tile{
 tile{
   layer = 0,
   x = 1192,
-  y = 608,
+  y = 560,
   width = 32,
   height = 8,
   pattern = "Gnd_grassborder2",
@@ -3065,7 +3020,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 536,
+  y = 488,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7inner",
@@ -3074,7 +3029,7 @@ tile{
 tile{
   layer = 0,
   x = 1224,
-  y = 536,
+  y = 488,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5inner",
@@ -3083,7 +3038,7 @@ tile{
 tile{
   layer = 0,
   x = 1176,
-  y = 544,
+  y = 496,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7inner",
@@ -3092,7 +3047,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 544,
+  y = 496,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder7",
@@ -3101,7 +3056,7 @@ tile{
 tile{
   layer = 0,
   x = 1224,
-  y = 544,
+  y = 496,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5",
@@ -3110,7 +3065,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 544,
+  y = 496,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5inner",
@@ -3119,7 +3074,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 552,
+  y = 504,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder5",
@@ -3128,7 +3083,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 584,
+  y = 536,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3",
@@ -3137,7 +3092,7 @@ tile{
 tile{
   layer = 0,
   x = 1176,
-  y = 600,
+  y = 552,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1inner",
@@ -3146,7 +3101,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 600,
+  y = 552,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1",
@@ -3155,7 +3110,7 @@ tile{
 tile{
   layer = 0,
   x = 1224,
-  y = 600,
+  y = 552,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3",
@@ -3164,7 +3119,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 600,
+  y = 552,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3inner",
@@ -3173,7 +3128,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 608,
+  y = 560,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder1inner",
@@ -3182,7 +3137,7 @@ tile{
 tile{
   layer = 0,
   x = 1224,
-  y = 608,
+  y = 560,
   width = 8,
   height = 8,
   pattern = "Gnd_grassborder3inner",
@@ -3191,7 +3146,7 @@ tile{
 tile{
   layer = 0,
   x = 1192,
-  y = 560,
+  y = 512,
   width = 16,
   height = 16,
   pattern = "Water_shallow_spotted_big",
@@ -3200,7 +3155,7 @@ tile{
 tile{
   layer = 0,
   x = 1216,
-  y = 576,
+  y = 528,
   width = 16,
   height = 16,
   pattern = "Water_shallow_spotted_big",
@@ -3209,7 +3164,7 @@ tile{
 tile{
   layer = 0,
   x = 1224,
-  y = 552,
+  y = 504,
   width = 8,
   height = 8,
   pattern = "Water_shallow_spotted_small",
@@ -3218,7 +3173,7 @@ tile{
 tile{
   layer = 0,
   x = 1192,
-  y = 592,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "Water_shallow_spotted_small",
@@ -3227,7 +3182,7 @@ tile{
 tile{
   layer = 0,
   x = 1256,
-  y = 568,
+  y = 520,
   width = 8,
   height = 8,
   pattern = "Water_shallow_spotted_small",
@@ -3236,7 +3191,7 @@ tile{
 tile{
   layer = 0,
   x = 1176,
-  y = 552,
+  y = 504,
   width = 8,
   height = 48,
   pattern = "Gnd_grassborder0",
@@ -3245,7 +3200,7 @@ tile{
 tile{
   layer = 0,
   x = 1072,
-  y = 600,
+  y = 552,
   width = 8,
   height = 8,
   pattern = "house_entrance_wooden_down_left",
@@ -3254,7 +3209,7 @@ tile{
 tile{
   layer = 0,
   x = 1096,
-  y = 600,
+  y = 552,
   width = 8,
   height = 8,
   pattern = "house_entrance_wooden_down_right",
@@ -3263,7 +3218,7 @@ tile{
 tile{
   layer = 0,
   x = 856,
-  y = 600,
+  y = 552,
   width = 8,
   height = 8,
   pattern = "house_entrance_wooden_down_left",
@@ -3272,7 +3227,7 @@ tile{
 tile{
   layer = 0,
   x = 880,
-  y = 600,
+  y = 552,
   width = 8,
   height = 8,
   pattern = "house_entrance_wooden_down_right",
@@ -3281,7 +3236,7 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3290,7 +3245,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3299,7 +3254,7 @@ tile{
 tile{
   layer = 0,
   x = 872,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner1",
@@ -3308,7 +3263,7 @@ tile{
 tile{
   layer = 0,
   x = 880,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner1",
@@ -3317,7 +3272,7 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 488,
+  y = 440,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner5",
@@ -3326,7 +3281,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 496,
+  y = 448,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner5",
@@ -3335,7 +3290,7 @@ tile{
 tile{
   layer = 0,
   x = 1168,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner1",
@@ -3344,7 +3299,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner1",
@@ -3353,7 +3308,7 @@ tile{
 tile{
   layer = 0,
   x = 1240,
-  y = 480,
+  y = 432,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner1",
@@ -3362,7 +3317,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 392,
+  y = 344,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner1",
@@ -3371,7 +3326,7 @@ tile{
 tile{
   layer = 0,
   x = 1136,
-  y = 392,
+  y = 344,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3380,7 +3335,7 @@ tile{
 tile{
   layer = 0,
   x = 1128,
-  y = 400,
+  y = 352,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3389,7 +3344,7 @@ tile{
 tile{
   layer = 0,
   x = 1120,
-  y = 408,
+  y = 360,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3398,7 +3353,7 @@ tile{
 tile{
   layer = 0,
   x = 1112,
-  y = 456,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3407,7 +3362,7 @@ tile{
 tile{
   layer = 0,
   x = 1104,
-  y = 464,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3416,7 +3371,7 @@ tile{
 tile{
   layer = 0,
   x = 1272,
-  y = 504,
+  y = 456,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3425,7 +3380,7 @@ tile{
 tile{
   layer = 0,
   x = 1184,
-  y = 504,
+  y = 456,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner5",
@@ -3434,7 +3389,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 160,
+  y = 112,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3443,7 +3398,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 168,
+  y = 120,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3452,7 +3407,7 @@ tile{
 tile{
   layer = 0,
   x = 152,
-  y = 176,
+  y = 128,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3461,7 +3416,7 @@ tile{
 tile{
   layer = 0,
   x = 144,
-  y = 184,
+  y = 136,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner3",
@@ -3470,52 +3425,52 @@ tile{
 tile{
   layer = 0,
   x = 136,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner5",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner5",
+}
+
+tile{
+  layer = 0,
+  x = 144,
   y = 320,
   width = 8,
   height = 8,
-  pattern = "Gnd_grass_bigcorner3",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 328,
-  width = 8,
-  height = 8,
-  pattern = "Gnd_grass_bigcorner3",
-}
-
-tile{
-  layer = 0,
-  x = 128,
-  y = 352,
-  width = 8,
-  height = 8,
-  pattern = "Gnd_grass_bigcorner5",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 360,
-  width = 8,
-  height = 8,
-  pattern = "Gnd_grass_bigcorner5",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 368,
-  width = 8,
-  height = 8,
   pattern = "Gnd_grass_bigcorner5",
 }
 
 tile{
   layer = 0,
   x = 152,
-  y = 376,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner5",
@@ -3524,7 +3479,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 160,
+  y = 112,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner1",
@@ -3533,7 +3488,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 320,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner1",
@@ -3542,25 +3497,25 @@ tile{
 tile{
   layer = 0,
   x = 200,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
   y = 328,
   width = 8,
   height = 8,
-  pattern = "Gnd_grass_bigcorner1",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 376,
-  width = 8,
-  height = 8,
   pattern = "Gnd_grass_bigcorner7",
 }
 
 tile{
   layer = 0,
   x = 192,
-  y = 360,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3569,7 +3524,7 @@ tile{
 tile{
   layer = 0,
   x = 200,
-  y = 352,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3578,7 +3533,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 216,
+  y = 168,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3587,7 +3542,7 @@ tile{
 tile{
   layer = 0,
   x = 184,
-  y = 208,
+  y = 160,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3596,7 +3551,7 @@ tile{
 tile{
   layer = 0,
   x = 192,
-  y = 200,
+  y = 152,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3605,7 +3560,7 @@ tile{
 tile{
   layer = 0,
   x = 200,
-  y = 192,
+  y = 144,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3614,7 +3569,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 184,
+  y = 136,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3623,7 +3578,7 @@ tile{
 tile{
   layer = 0,
   x = 216,
-  y = 176,
+  y = 128,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3632,7 +3587,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 168,
+  y = 120,
   width = 8,
   height = 8,
   pattern = "Gnd_grass_bigcorner7",
@@ -3641,7 +3596,7 @@ tile{
 tile{
   layer = 0,
   x = 1048,
-  y = 584,
+  y = 536,
   width = 24,
   height = 16,
   pattern = "sign_inn",
@@ -3650,7 +3605,7 @@ tile{
 tile{
   layer = 0,
   x = 888,
-  y = 576,
+  y = 528,
   width = 24,
   height = 16,
   pattern = "sign_shop",
@@ -3659,7 +3614,7 @@ tile{
 tile{
   layer = 0,
   x = 920,
-  y = 584,
+  y = 536,
   width = 16,
   height = 16,
   pattern = "mailbox_up",
@@ -3668,7 +3623,7 @@ tile{
 tile{
   layer = 0,
   x = 920,
-  y = 600,
+  y = 552,
   width = 16,
   height = 8,
   pattern = "mailbox_down",
@@ -3677,7 +3632,7 @@ tile{
 tile{
   layer = 0,
   x = 984,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -3686,7 +3641,7 @@ tile{
 tile{
   layer = 0,
   x = 1000,
-  y = 424,
+  y = 376,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -3695,7 +3650,7 @@ tile{
 tile{
   layer = 0,
   x = 1008,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -3704,7 +3659,7 @@ tile{
 tile{
   layer = 0,
   x = 992,
-  y = 608,
+  y = 560,
   width = 8,
   height = 16,
   pattern = "fence_post",
@@ -3713,7 +3668,7 @@ tile{
 tile{
   layer = 0,
   x = 992,
-  y = 416,
+  y = 368,
   width = 8,
   height = 8,
   pattern = "MtInnerBorder6L",
@@ -3722,7 +3677,7 @@ tile{
 tile{
   layer = 0,
   x = 968,
-  y = 416,
+  y = 368,
   width = 8,
   height = 8,
   pattern = "MtInnerBorder6R",
@@ -3731,7 +3686,7 @@ tile{
 tile{
   layer = 0,
   x = 624,
-  y = 320,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -3739,9 +3694,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 624,
-  y = 296,
-  width = 32,
+  x = 640,
+  y = 248,
+  width = 16,
   height = 8,
   pattern = "MtInnerBorder6",
 }
@@ -3749,7 +3704,7 @@ tile{
 tile{
   layer = 0,
   x = 736,
-  y = 320,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -3758,7 +3713,7 @@ tile{
 tile{
   layer = 0,
   x = 736,
-  y = 336,
+  y = 288,
   width = 16,
   height = 16,
   pattern = "MtBorder7",
@@ -3767,7 +3722,7 @@ tile{
 tile{
   layer = 0,
   x = 640,
-  y = 336,
+  y = 288,
   width = 96,
   height = 16,
   pattern = "MtBorder6R",
@@ -3776,7 +3731,7 @@ tile{
 tile{
   layer = 0,
   x = 672,
-  y = 312,
+  y = 264,
   width = 32,
   height = 8,
   pattern = "MtBorderUpper6",
@@ -3785,7 +3740,7 @@ tile{
 tile{
   layer = 0,
   x = 640,
-  y = 320,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -3794,7 +3749,7 @@ tile{
 tile{
   layer = 0,
   x = 656,
-  y = 320,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -3803,7 +3758,7 @@ tile{
 tile{
   layer = 0,
   x = 672,
-  y = 320,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -3812,7 +3767,7 @@ tile{
 tile{
   layer = 0,
   x = 720,
-  y = 320,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -3821,7 +3776,7 @@ tile{
 tile{
   layer = 0,
   x = 640,
-  y = 352,
+  y = 304,
   width = 96,
   height = 8,
   pattern = "MtShadowBorder6",
@@ -3830,7 +3785,7 @@ tile{
 tile{
   layer = 0,
   x = 656,
-  y = 304,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "MtInnerBorder5",
@@ -3839,7 +3794,7 @@ tile{
 tile{
   layer = 0,
   x = 656,
-  y = 296,
+  y = 248,
   width = 8,
   height = 8,
   pattern = "MtInnerBorder5Bis",
@@ -3848,7 +3803,7 @@ tile{
 tile{
   layer = 0,
   x = 640,
-  y = 304,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "MtPeakBorder6R",
@@ -3857,7 +3812,7 @@ tile{
 tile{
   layer = 0,
   x = 712,
-  y = 296,
+  y = 248,
   width = 8,
   height = 8,
   pattern = "MtInnerBorder7Bis",
@@ -3866,7 +3821,7 @@ tile{
 tile{
   layer = 0,
   x = 704,
-  y = 304,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "MtInnerBorder7",
@@ -3875,8 +3830,8 @@ tile{
 tile{
   layer = 0,
   x = 720,
-  y = 296,
-  width = 32,
+  y = 248,
+  width = 16,
   height = 8,
   pattern = "MtInnerBorder6",
 }
@@ -3884,7 +3839,7 @@ tile{
 tile{
   layer = 0,
   x = 720,
-  y = 304,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "MtPeakBorder6R",
@@ -3893,7 +3848,7 @@ tile{
 tile{
   layer = 0,
   x = 760,
-  y = 296,
+  y = 248,
   width = 8,
   height = 16,
   pattern = "MtBorder0",
@@ -3902,7 +3857,7 @@ tile{
 tile{
   layer = 0,
   x = 760,
-  y = 288,
+  y = 240,
   width = 8,
   height = 16,
   pattern = "MtBorderUpper0Bis",
@@ -3911,7 +3866,7 @@ tile{
 tile{
   layer = 0,
   x = 752,
-  y = 312,
+  y = 264,
   width = 8,
   height = 16,
   pattern = "MtBorder0",
@@ -3920,7 +3875,7 @@ tile{
 tile{
   layer = 0,
   x = 608,
-  y = 296,
+  y = 248,
   width = 8,
   height = 16,
   pattern = "MtBorder4",
@@ -3929,7 +3884,7 @@ tile{
 tile{
   layer = 0,
   x = 624,
-  y = 320,
+  y = 272,
   width = 8,
   height = 16,
   pattern = "MtBorder4",
@@ -3938,7 +3893,7 @@ tile{
 tile{
   layer = 0,
   x = 736,
-  y = 304,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -3947,7 +3902,7 @@ tile{
 tile{
   layer = 0,
   x = 768,
-  y = 272,
+  y = 224,
   width = 8,
   height = 8,
   pattern = "MtBorder1Small",
@@ -3956,7 +3911,7 @@ tile{
 tile{
   layer = 0,
   x = 624,
-  y = 304,
+  y = 256,
   width = 16,
   height = 16,
   pattern = "MtPeak6L",
@@ -3965,7 +3920,7 @@ tile{
 tile{
   layer = 0,
   x = 600,
-  y = 272,
+  y = 224,
   width = 8,
   height = 8,
   pattern = "MtBorder3Small",
@@ -3974,7 +3929,7 @@ tile{
 tile{
   layer = 0,
   x = 600,
-  y = 280,
+  y = 232,
   width = 8,
   height = 16,
   pattern = "MtBorder4",
@@ -3983,7 +3938,7 @@ tile{
 tile{
   layer = 0,
   x = 608,
-  y = 312,
+  y = 264,
   width = 8,
   height = 8,
   pattern = "MtBorder5Small",
@@ -3992,7 +3947,7 @@ tile{
 tile{
   layer = 0,
   x = 768,
-  y = 280,
+  y = 232,
   width = 8,
   height = 16,
   pattern = "MtBorder0",
@@ -4001,7 +3956,7 @@ tile{
 tile{
   layer = 0,
   x = 624,
-  y = 320,
+  y = 272,
   width = 16,
   height = 8,
   pattern = "MtPeak5Small",
@@ -4010,7 +3965,7 @@ tile{
 tile{
   layer = 0,
   x = 600,
-  y = 296,
+  y = 248,
   width = 8,
   height = 8,
   pattern = "MtBorder5Small",
@@ -4019,7 +3974,7 @@ tile{
 tile{
   layer = 0,
   x = 608,
-  y = 288,
+  y = 240,
   width = 8,
   height = 16,
   pattern = "MtBorderUpper4Bis",
@@ -4028,7 +3983,7 @@ tile{
 tile{
   layer = 0,
   x = 608,
-  y = 296,
+  y = 248,
   width = 8,
   height = 8,
   pattern = "MtPeak5Small",
@@ -4037,7 +3992,7 @@ tile{
 tile{
   layer = 0,
   x = 736,
-  y = 320,
+  y = 272,
   width = 16,
   height = 8,
   pattern = "MtPeak7Small",
@@ -4046,7 +4001,7 @@ tile{
 tile{
   layer = 0,
   x = 768,
-  y = 296,
+  y = 248,
   width = 8,
   height = 8,
   pattern = "MtBorder7Small",
@@ -4055,7 +4010,7 @@ tile{
 tile{
   layer = 0,
   x = 760,
-  y = 312,
+  y = 264,
   width = 8,
   height = 8,
   pattern = "MtBorder7Small",
@@ -4064,7 +4019,7 @@ tile{
 tile{
   layer = 0,
   x = 600,
-  y = 264,
+  y = 216,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder2L",
@@ -4073,7 +4028,7 @@ tile{
 tile{
   layer = 0,
   x = 608,
-  y = 264,
+  y = 216,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder2R",
@@ -4082,7 +4037,7 @@ tile{
 tile{
   layer = 0,
   x = 600,
-  y = 304,
+  y = 256,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder5",
@@ -4091,7 +4046,7 @@ tile{
 tile{
   layer = 0,
   x = 608,
-  y = 320,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder5",
@@ -4100,7 +4055,7 @@ tile{
 tile{
   layer = 0,
   x = 768,
-  y = 304,
+  y = 256,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder7",
@@ -4109,7 +4064,7 @@ tile{
 tile{
   layer = 0,
   x = 760,
-  y = 320,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder7",
@@ -4118,7 +4073,7 @@ tile{
 tile{
   layer = 0,
   x = 760,
-  y = 264,
+  y = 216,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder2L",
@@ -4127,7 +4082,7 @@ tile{
 tile{
   layer = 0,
   x = 768,
-  y = 264,
+  y = 216,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder2R",
@@ -4135,125 +4090,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 608,
-  y = 272,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 288,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 280,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder1",
-}
-
-tile{
-  layer = 0,
-  x = 632,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 632,
-  y = 288,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder1",
-}
-
-tile{
-  layer = 0,
-  x = 624,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 280,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak7Small",
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = 280,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 760,
-  y = 272,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder3Small",
-}
-
-tile{
-  layer = 0,
   x = 752,
-  y = 280,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder3Small",
-}
-
-tile{
-  layer = 0,
-  x = 736,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder3Small",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 272,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder3",
-}
-
-tile{
-  layer = 0,
-  x = 736,
-  y = 288,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder3",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 288,
+  y = 240,
   width = 8,
   height = 8,
   pattern = "MtPeak7Small",
@@ -4262,7 +4100,7 @@ tile{
 tile{
   layer = 0,
   x = 624,
-  y = 336,
+  y = 288,
   width = 16,
   height = 16,
   pattern = "MtBorder5",
@@ -4270,17 +4108,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 648,
-  y = 352,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder6L",
-}
-
-tile{
-  layer = 0,
   x = 752,
-  y = 296,
+  y = 248,
   width = 8,
   height = 16,
   pattern = "MtBorderUpper0Bis",
@@ -4288,35 +4117,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 744,
-  y = 288,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder3Small",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak7Small",
-}
-
-tile{
-  layer = 0,
-  x = 744,
-  y = 280,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder3",
-}
-
-tile{
-  layer = 0,
   x = 616,
-  y = 320,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "MtBorder5Small",
@@ -4325,7 +4127,7 @@ tile{
 tile{
   layer = 0,
   x = 616,
-  y = 328,
+  y = 280,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder5",
@@ -4334,7 +4136,7 @@ tile{
 tile{
   layer = 0,
   x = 616,
-  y = 304,
+  y = 256,
   width = 8,
   height = 16,
   pattern = "MtBorder4",
@@ -4343,7 +4145,7 @@ tile{
 tile{
   layer = 0,
   x = 616,
-  y = 296,
+  y = 248,
   width = 8,
   height = 16,
   pattern = "MtBorderUpper4Bis",
@@ -4352,7 +4154,7 @@ tile{
 tile{
   layer = 0,
   x = 616,
-  y = 304,
+  y = 256,
   width = 8,
   height = 8,
   pattern = "MtPeak5Small",
@@ -4361,34 +4163,16 @@ tile{
 tile{
   layer = 0,
   x = 616,
-  y = 288,
+  y = 240,
   width = 8,
   height = 8,
   pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 280,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 616,
-  y = 272,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder1",
 }
 
 tile{
   layer = 0,
   x = 688,
-  y = 320,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "MtWall6R",
@@ -4397,7 +4181,7 @@ tile{
 tile{
   layer = 0,
   x = 704,
-  y = 320,
+  y = 272,
   width = 16,
   height = 16,
   pattern = "MtPeak6R",
@@ -4406,7 +4190,7 @@ tile{
 tile{
   layer = 0,
   x = 696,
-  y = 312,
+  y = 264,
   width = 8,
   height = 8,
   pattern = "MtInnerBorder6L",
@@ -4415,7 +4199,7 @@ tile{
 tile{
   layer = 0,
   x = 672,
-  y = 312,
+  y = 264,
   width = 8,
   height = 8,
   pattern = "MtInnerBorder6R",
@@ -4424,7 +4208,7 @@ tile{
 tile{
   layer = 0,
   x = 632,
-  y = 352,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder6L",
@@ -4433,7 +4217,7 @@ tile{
 tile{
   layer = 0,
   x = 736,
-  y = 352,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder6R",
@@ -4442,7 +4226,7 @@ tile{
 tile{
   layer = 0,
   x = 752,
-  y = 336,
+  y = 288,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder7",
@@ -4451,7 +4235,7 @@ tile{
 tile{
   layer = 0,
   x = 752,
-  y = 328,
+  y = 280,
   width = 8,
   height = 8,
   pattern = "MtBorder7Small",
@@ -4460,7 +4244,7 @@ tile{
 tile{
   layer = 0,
   x = 40,
-  y = 704,
+  y = 656,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4469,7 +4253,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 704,
+  y = 656,
   width = 288,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4478,7 +4262,7 @@ tile{
 tile{
   layer = 0,
   x = 336,
-  y = 704,
+  y = 656,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -4487,7 +4271,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 744,
+  y = 696,
   width = 288,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4496,7 +4280,7 @@ tile{
 tile{
   layer = 0,
   x = 48,
-  y = 712,
+  y = 664,
   width = 288,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4505,7 +4289,7 @@ tile{
 tile{
   layer = 0,
   x = 936,
-  y = 528,
+  y = 480,
   width = 48,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4514,7 +4298,7 @@ tile{
 tile{
   layer = 0,
   x = 368,
-  y = 704,
+  y = 656,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4523,7 +4307,7 @@ tile{
 tile{
   layer = 0,
   x = 376,
-  y = 704,
+  y = 656,
   width = 240,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4532,7 +4316,7 @@ tile{
 tile{
   layer = 0,
   x = 616,
-  y = 704,
+  y = 656,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -4541,7 +4325,7 @@ tile{
 tile{
   layer = 0,
   x = 376,
-  y = 744,
+  y = 696,
   width = 240,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4550,7 +4334,7 @@ tile{
 tile{
   layer = 0,
   x = 376,
-  y = 712,
+  y = 664,
   width = 240,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4559,7 +4343,7 @@ tile{
 tile{
   layer = 0,
   x = 248,
-  y = 400,
+  y = 352,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4568,7 +4352,7 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 400,
+  y = 352,
   width = 240,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4577,7 +4361,7 @@ tile{
 tile{
   layer = 0,
   x = 496,
-  y = 400,
+  y = 352,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -4586,7 +4370,7 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 440,
+  y = 392,
   width = 240,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4595,7 +4379,7 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 408,
+  y = 360,
   width = 240,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4604,7 +4388,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 448,
+  y = 400,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4613,7 +4397,7 @@ tile{
 tile{
   layer = 0,
   x = 232,
-  y = 448,
+  y = 400,
   width = 288,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4622,7 +4406,7 @@ tile{
 tile{
   layer = 0,
   x = 520,
-  y = 448,
+  y = 400,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -4631,7 +4415,7 @@ tile{
 tile{
   layer = 0,
   x = 232,
-  y = 488,
+  y = 440,
   width = 288,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4640,7 +4424,7 @@ tile{
 tile{
   layer = 0,
   x = 232,
-  y = 456,
+  y = 408,
   width = 288,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4649,7 +4433,7 @@ tile{
 tile{
   layer = 0,
   x = 200,
-  y = 496,
+  y = 448,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4658,7 +4442,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 496,
+  y = 448,
   width = 336,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4667,7 +4451,7 @@ tile{
 tile{
   layer = 0,
   x = 544,
-  y = 496,
+  y = 448,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -4676,7 +4460,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 536,
+  y = 488,
   width = 336,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4685,7 +4469,7 @@ tile{
 tile{
   layer = 0,
   x = 208,
-  y = 504,
+  y = 456,
   width = 336,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4694,7 +4478,7 @@ tile{
 tile{
   layer = 0,
   x = 224,
-  y = 544,
+  y = 496,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4703,7 +4487,7 @@ tile{
 tile{
   layer = 0,
   x = 232,
-  y = 544,
+  y = 496,
   width = 288,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4712,7 +4496,7 @@ tile{
 tile{
   layer = 0,
   x = 520,
-  y = 544,
+  y = 496,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -4721,7 +4505,7 @@ tile{
 tile{
   layer = 0,
   x = 232,
-  y = 584,
+  y = 536,
   width = 288,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4730,7 +4514,7 @@ tile{
 tile{
   layer = 0,
   x = 232,
-  y = 552,
+  y = 504,
   width = 288,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4739,7 +4523,7 @@ tile{
 tile{
   layer = 0,
   x = 248,
-  y = 592,
+  y = 544,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4748,7 +4532,7 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 592,
+  y = 544,
   width = 96,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4757,7 +4541,7 @@ tile{
 tile{
   layer = 0,
   x = 352,
-  y = 592,
+  y = 544,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -4766,7 +4550,7 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 632,
+  y = 584,
   width = 96,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4775,7 +4559,7 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 600,
+  y = 552,
   width = 96,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4784,7 +4568,7 @@ tile{
 tile{
   layer = 0,
   x = 392,
-  y = 592,
+  y = 544,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4793,7 +4577,7 @@ tile{
 tile{
   layer = 0,
   x = 400,
-  y = 592,
+  y = 544,
   width = 96,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4802,7 +4586,7 @@ tile{
 tile{
   layer = 0,
   x = 496,
-  y = 592,
+  y = 544,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
@@ -4811,7 +4595,7 @@ tile{
 tile{
   layer = 0,
   x = 400,
-  y = 632,
+  y = 584,
   width = 96,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4820,7 +4604,7 @@ tile{
 tile{
   layer = 0,
   x = 400,
-  y = 600,
+  y = 552,
   width = 96,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4829,7 +4613,7 @@ tile{
 tile{
   layer = 0,
   x = 368,
-  y = 584,
+  y = 536,
   width = 16,
   height = 16,
   pattern = "Wood_tree_entrance_middle",
@@ -4838,7 +4622,7 @@ tile{
 tile{
   layer = 0,
   x = 360,
-  y = 576,
+  y = 528,
   width = 8,
   height = 32,
   pattern = "Wood_tree_entrance_left",
@@ -4847,7 +4631,7 @@ tile{
 tile{
   layer = 0,
   x = 384,
-  y = 576,
+  y = 528,
   width = 8,
   height = 32,
   pattern = "Wood_tree_entrance_right",
@@ -4856,7 +4640,7 @@ tile{
 tile{
   layer = 0,
   x = 672,
-  y = 576,
+  y = 528,
   width = 48,
   height = 8,
   pattern = "Wood_tree_trunk_big_up",
@@ -4865,7 +4649,7 @@ tile{
 tile{
   layer = 0,
   x = 672,
-  y = 616,
+  y = 568,
   width = 48,
   height = 16,
   pattern = "Wood_tree_trunk_big_down",
@@ -4874,7 +4658,7 @@ tile{
 tile{
   layer = 0,
   x = 672,
-  y = 584,
+  y = 536,
   width = 48,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
@@ -4883,7 +4667,7 @@ tile{
 tile{
   layer = 0,
   x = 664,
-  y = 576,
+  y = 528,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_left",
@@ -4892,16 +4676,2986 @@ tile{
 tile{
   layer = 0,
   x = 720,
-  y = 576,
+  y = 528,
   width = 8,
   height = 56,
   pattern = "Wood_tree_trunk_big_right",
 }
 
+tile{
+  layer = 0,
+  x = 648,
+  y = 480,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 488,
+  width = 96,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 432,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 392,
+  width = 96,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 384,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 376,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 344,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 336,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 288,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 328,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 296,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 288,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 288,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 336,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 384,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 384,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 336,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 440,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 880,
+  width = 144,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 920,
+  width = 144,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 728,
+  y = 888,
+  width = 144,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 880,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 880,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 928,
+  width = 240,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 968,
+  width = 240,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 936,
+  width = 240,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 928,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 928,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 864,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 904,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 872,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 864,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 864,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 912,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 952,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 920,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 912,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 912,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 960,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 1000,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 968,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 960,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 960,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 232,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 232,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 232,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 272,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 240,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 168,
+  width = 96,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 136,
+  width = 96,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 80,
+  width = 144,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 120,
+  width = 144,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 32,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 32,
+  width = 144,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 40,
+  width = 144,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 128,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 128,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 80,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 88,
+  width = 144,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 104,
+  width = 96,
+  height = 8,
+  pattern = "MtInnerBorder6",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 144,
+  width = 96,
+  height = 16,
+  pattern = "MtBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 160,
+  width = 96,
+  height = 8,
+  pattern = "MtShadowBorder6",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 112,
+  width = 96,
+  height = 16,
+  pattern = "MtPeakBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper0Bis",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 120,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 128,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder1Small",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6L",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder3Small",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 128,
+  width = 16,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 128,
+  width = 16,
+  height = 8,
+  pattern = "MtPeak7Small",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2L",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2R",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2L",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2R",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak7Small",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper0Bis",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 120,
+  width = 32,
+  height = 40,
+  pattern = "dungeon_entrance_evilspikes_left",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "dungeon_entrance_evilspikes_up",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 120,
+  width = 32,
+  height = 40,
+  pattern = "dungeon_entrance_evilspikes_right",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 136,
+  width = 16,
+  height = 24,
+  pattern = "dungeon_entrance_evilspikes_center",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 384,
+  width = 48,
+  height = 16,
+  pattern = "MtBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak5",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 272,
+  width = 16,
+  height = 96,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 256,
+  width = 16,
+  height = 112,
+  pattern = "MtPeak4",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 216,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 240,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6L",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder3Small",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2L",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2R",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 248,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 216,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak5",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "MtPeakBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 224,
+  width = 80,
+  height = 16,
+  pattern = "MtPeakBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 24,
+  width = 240,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = -8,
+  width = 240,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = -16,
+  width = 240,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = -16,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 72,
+  width = 192,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 40,
+  width = 192,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 32,
+  width = 192,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 32,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 32,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = -16,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 272,
+  width = 32,
+  height = 8,
+  pattern = "MtCaveCeiling",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 280,
+  width = 16,
+  height = 24,
+  pattern = "MtCave",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 280,
+  width = 8,
+  height = 24,
+  pattern = "MtCaveLeft",
+}
+
+tile{
+  layer = 0,
+  x = 696,
+  y = 280,
+  width = 8,
+  height = 24,
+  pattern = "MtCaveRight",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 816,
+  width = 64,
+  height = 16,
+  pattern = "MtBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 792,
+  width = 32,
+  height = 8,
+  pattern = "MtBorderUpper6",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 832,
+  width = 64,
+  height = 8,
+  pattern = "MtShadowBorder6",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 776,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder7Bis",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 792,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper0Bis",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 808,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 792,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 768,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder1Small",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 768,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder3Small",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 776,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 776,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 800,
+  width = 16,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 792,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 792,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 808,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 760,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2L",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 760,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2R",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 800,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 816,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 760,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2L",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 760,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2R",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 784,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 784,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak7Small",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 792,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper0Bis",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 792,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 792,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 832,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 832,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 824,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 800,
+  width = 32,
+  height = 8,
+  pattern = "MtCaveCeiling",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 808,
+  width = 16,
+  height = 24,
+  pattern = "MtCave",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 808,
+  width = 8,
+  height = 24,
+  pattern = "MtCaveLeft",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 808,
+  width = 8,
+  height = 24,
+  pattern = "MtCaveRight",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 792,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 800,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder5Bis",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder7Bis",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder5Bis",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder7Bis",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder5Bis",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder5Bis",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder7Bis",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 808,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 816,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 776,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder5Bis",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 824,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 808,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 904,
+  width = 64,
+  height = 16,
+  pattern = "MtBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 880,
+  width = 32,
+  height = 8,
+  pattern = "MtBorderUpper6",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 920,
+  width = 64,
+  height = 8,
+  pattern = "MtShadowBorder6",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 864,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder7Bis",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 872,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper0Bis",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 896,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 856,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder1Small",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 856,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder3Small",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 864,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 864,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 888,
+  width = 16,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 880,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 848,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2L",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 848,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2R",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 888,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 904,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 848,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2L",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 848,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2R",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 872,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 872,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak7Small",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 880,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper0Bis",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 880,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 880,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 888,
+  width = 32,
+  height = 8,
+  pattern = "MtCaveCeiling",
+}
+
+tile{
+  layer = 0,
+  x = 616,
+  y = 896,
+  width = 16,
+  height = 24,
+  pattern = "MtCave",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 896,
+  width = 8,
+  height = 24,
+  pattern = "MtCaveLeft",
+}
+
+tile{
+  layer = 0,
+  x = 632,
+  y = 896,
+  width = 8,
+  height = 24,
+  pattern = "MtCaveRight",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 880,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 888,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 904,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 872,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 864,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder5Bis",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 872,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 896,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 944,
+  width = 32,
+  height = 32,
+  pattern = "Wood_tree_green_small",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 944,
+  width = 32,
+  height = 32,
+  pattern = "Wood_tree_green_small",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 944,
+  width = 32,
+  height = 32,
+  pattern = "Wood_tree_green_small",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 752,
+  width = 32,
+  height = 32,
+  pattern = "Wood_tree_green_small",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 736,
+  width = 32,
+  height = 32,
+  pattern = "Wood_tree_trunk_small",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "Hole",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 384,
+  width = 8,
+  height = 576,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 384,
+  width = 16,
+  height = 576,
+  pattern = "MtPeak0",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 328,
+  width = 48,
+  height = 8,
+  pattern = "MtInnerBorder6",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 336,
+  width = 48,
+  height = 16,
+  pattern = "MtPeakBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 328,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper0Bis",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 344,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder1Small",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 312,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 352,
+  width = 16,
+  height = 8,
+  pattern = "MtPeak7Small",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 328,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 352,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2L",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder2R",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak7Small",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 328,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper0Bis",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 384,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 368,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder7Small",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder7",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder7Bis",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak7",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 280,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 280,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 280,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 320,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
+}
+
+tile{
+  layer = 0,
+  x = -8,
+  y = 288,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 352,
+  width = 32,
+  height = 608,
+  pattern = "MtWallBig",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 240,
+  width = 64,
+  height = 128,
+  pattern = "MtWallBig",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 944,
+  width = 32,
+  height = 32,
+  pattern = "Wood_tree_green_small",
+}
+
 wall{
   layer = 0,
   x = 824,
-  y = 528,
+  y = 480,
   width = 96,
   height = 40,
   stops_hero = true,
@@ -4915,7 +7669,7 @@ destination{
   name = "from_hero_house",
   layer = 0,
   x = 1088,
-  y = 613,
+  y = 565,
   direction = 3,
   default = true,
 }
@@ -4923,7 +7677,7 @@ destination{
 wall{
   layer = 0,
   x = 1040,
-  y = 528,
+  y = 480,
   width = 112,
   height = 48,
   stops_hero = true,
@@ -4936,7 +7690,7 @@ wall{
 jumper{
   layer = 0,
   x = 968,
-  y = 424,
+  y = 376,
   width = 32,
   height = 8,
   direction = 6,
@@ -4946,7 +7700,7 @@ jumper{
 teletransporter{
   layer = 0,
   x = 1224,
-  y = 632,
+  y = 584,
   width = 16,
   height = 16,
   destination_map = "test_maps/start_point",
@@ -4957,7 +7711,27 @@ teletransporter{
 jumper{
   layer = 0,
   x = 672,
-  y = 320,
+  y = 272,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 48,
+}
+
+jumper{
+  layer = 0,
+  x = 512,
+  y = 800,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 48,
+}
+
+jumper{
+  layer = 0,
+  x = 608,
+  y = 888,
   width = 32,
   height = 8,
   direction = 6,
@@ -4967,7 +7741,7 @@ jumper{
 tile{
   layer = 1,
   x = 1032,
-  y = 536,
+  y = 488,
   width = 8,
   height = 32,
   pattern = "roof_red_border_4_middle",
@@ -4976,7 +7750,7 @@ tile{
 tile{
   layer = 1,
   x = 1032,
-  y = 528,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "roof_red_border_4_up",
@@ -4985,7 +7759,7 @@ tile{
 tile{
   layer = 1,
   x = 1032,
-  y = 568,
+  y = 520,
   width = 8,
   height = 8,
   pattern = "roof_red_border_4_down",
@@ -4994,7 +7768,7 @@ tile{
 tile{
   layer = 1,
   x = 1040,
-  y = 528,
+  y = 480,
   width = 16,
   height = 32,
   pattern = "roof_red_4",
@@ -5003,7 +7777,7 @@ tile{
 tile{
   layer = 1,
   x = 1040,
-  y = 520,
+  y = 472,
   width = 16,
   height = 8,
   pattern = "roof_red_border_3",
@@ -5012,7 +7786,7 @@ tile{
 tile{
   layer = 1,
   x = 1040,
-  y = 560,
+  y = 512,
   width = 16,
   height = 16,
   pattern = "roof_red_5",
@@ -5021,7 +7795,7 @@ tile{
 tile{
   layer = 1,
   x = 1040,
-  y = 576,
+  y = 528,
   width = 16,
   height = 8,
   pattern = "roof_red_border_5",
@@ -5030,7 +7804,7 @@ tile{
 tile{
   layer = 1,
   x = 1136,
-  y = 576,
+  y = 528,
   width = 16,
   height = 8,
   pattern = "roof_red_border_7",
@@ -5039,7 +7813,7 @@ tile{
 tile{
   layer = 1,
   x = 1136,
-  y = 560,
+  y = 512,
   width = 16,
   height = 16,
   pattern = "roof_red_7",
@@ -5048,7 +7822,7 @@ tile{
 tile{
   layer = 1,
   x = 1136,
-  y = 528,
+  y = 480,
   width = 16,
   height = 32,
   pattern = "roof_red_0",
@@ -5057,7 +7831,7 @@ tile{
 tile{
   layer = 1,
   x = 1064,
-  y = 536,
+  y = 488,
   width = 64,
   height = 16,
   pattern = "roof_red_plain",
@@ -5066,7 +7840,7 @@ tile{
 tile{
   layer = 1,
   x = 1112,
-  y = 536,
+  y = 488,
   width = 16,
   height = 16,
   pattern = "house_chimney_big",
@@ -5075,7 +7849,7 @@ tile{
 tile{
   layer = 1,
   x = 1056,
-  y = 520,
+  y = 472,
   width = 40,
   height = 8,
   pattern = "roof_red_2_left",
@@ -5084,7 +7858,7 @@ tile{
 tile{
   layer = 1,
   x = 1096,
-  y = 520,
+  y = 472,
   width = 40,
   height = 8,
   pattern = "roof_red_2_right",
@@ -5093,7 +7867,7 @@ tile{
 tile{
   layer = 1,
   x = 1136,
-  y = 520,
+  y = 472,
   width = 16,
   height = 8,
   pattern = "roof_red_border_1",
@@ -5102,7 +7876,7 @@ tile{
 tile{
   layer = 1,
   x = 1152,
-  y = 536,
+  y = 488,
   width = 8,
   height = 32,
   pattern = "roof_red_border_0_middle",
@@ -5111,7 +7885,7 @@ tile{
 tile{
   layer = 1,
   x = 1152,
-  y = 568,
+  y = 520,
   width = 8,
   height = 8,
   pattern = "roof_red_border_0_down",
@@ -5120,7 +7894,7 @@ tile{
 tile{
   layer = 1,
   x = 1152,
-  y = 528,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "roof_red_border_0_up",
@@ -5129,7 +7903,7 @@ tile{
 tile{
   layer = 1,
   x = 1064,
-  y = 528,
+  y = 480,
   width = 64,
   height = 8,
   pattern = "roof_red_plain_2",
@@ -5138,7 +7912,7 @@ tile{
 tile{
   layer = 1,
   x = 1056,
-  y = 536,
+  y = 488,
   width = 8,
   height = 16,
   pattern = "roof_red_plain_4",
@@ -5147,7 +7921,7 @@ tile{
 tile{
   layer = 1,
   x = 1128,
-  y = 536,
+  y = 488,
   width = 8,
   height = 16,
   pattern = "roof_red_plain_0",
@@ -5156,7 +7930,7 @@ tile{
 tile{
   layer = 1,
   x = 1064,
-  y = 552,
+  y = 504,
   width = 64,
   height = 8,
   pattern = "roof_red_plain_6",
@@ -5165,7 +7939,7 @@ tile{
 tile{
   layer = 1,
   x = 1056,
-  y = 528,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "roof_red_plain_3",
@@ -5174,7 +7948,7 @@ tile{
 tile{
   layer = 1,
   x = 1128,
-  y = 528,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "roof_red_plain_1",
@@ -5183,7 +7957,7 @@ tile{
 tile{
   layer = 1,
   x = 1056,
-  y = 552,
+  y = 504,
   width = 8,
   height = 8,
   pattern = "roof_red_plain_5",
@@ -5192,7 +7966,7 @@ tile{
 tile{
   layer = 1,
   x = 1128,
-  y = 552,
+  y = 504,
   width = 8,
   height = 8,
   pattern = "roof_red_plain_7",
@@ -5201,7 +7975,7 @@ tile{
 tile{
   layer = 1,
   x = 904,
-  y = 568,
+  y = 520,
   width = 16,
   height = 8,
   pattern = "roof_blue_border_7",
@@ -5210,7 +7984,7 @@ tile{
 tile{
   layer = 1,
   x = 840,
-  y = 520,
+  y = 472,
   width = 32,
   height = 8,
   pattern = "roof_blue_2_left",
@@ -5219,7 +7993,7 @@ tile{
 tile{
   layer = 1,
   x = 824,
-  y = 568,
+  y = 520,
   width = 16,
   height = 8,
   pattern = "roof_blue_border_5",
@@ -5228,7 +8002,7 @@ tile{
 tile{
   layer = 1,
   x = 904,
-  y = 520,
+  y = 472,
   width = 16,
   height = 8,
   pattern = "roof_blue_border_1",
@@ -5237,7 +8011,7 @@ tile{
 tile{
   layer = 1,
   x = 872,
-  y = 520,
+  y = 472,
   width = 32,
   height = 8,
   pattern = "roof_blue_2_right",
@@ -5246,7 +8020,7 @@ tile{
 tile{
   layer = 1,
   x = 824,
-  y = 528,
+  y = 480,
   width = 16,
   height = 32,
   pattern = "roof_blue_4",
@@ -5255,7 +8029,7 @@ tile{
 tile{
   layer = 1,
   x = 824,
-  y = 520,
+  y = 472,
   width = 16,
   height = 8,
   pattern = "roof_blue_border_3",
@@ -5264,7 +8038,7 @@ tile{
 tile{
   layer = 1,
   x = 840,
-  y = 552,
+  y = 504,
   width = 64,
   height = 16,
   pattern = "roof_blue_6",
@@ -5273,7 +8047,7 @@ tile{
 tile{
   layer = 1,
   x = 904,
-  y = 528,
+  y = 480,
   width = 16,
   height = 32,
   pattern = "roof_blue_0",
@@ -5282,7 +8056,7 @@ tile{
 tile{
   layer = 1,
   x = 824,
-  y = 552,
+  y = 504,
   width = 16,
   height = 16,
   pattern = "roof_blue_5",
@@ -5291,7 +8065,7 @@ tile{
 tile{
   layer = 1,
   x = 904,
-  y = 552,
+  y = 504,
   width = 16,
   height = 16,
   pattern = "roof_blue_7",
@@ -5300,7 +8074,7 @@ tile{
 tile{
   layer = 1,
   x = 848,
-  y = 536,
+  y = 488,
   width = 48,
   height = 8,
   pattern = "roof_blue_plain",
@@ -5309,7 +8083,7 @@ tile{
 tile{
   layer = 1,
   x = 848,
-  y = 528,
+  y = 480,
   width = 48,
   height = 8,
   pattern = "roof_blue_plain_2",
@@ -5318,7 +8092,7 @@ tile{
 tile{
   layer = 1,
   x = 848,
-  y = 544,
+  y = 496,
   width = 48,
   height = 8,
   pattern = "roof_blue_plain_6",
@@ -5327,7 +8101,7 @@ tile{
 tile{
   layer = 1,
   x = 840,
-  y = 528,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "roof_blue_plain_3",
@@ -5336,7 +8110,7 @@ tile{
 tile{
   layer = 1,
   x = 896,
-  y = 528,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "roof_blue_plain_1",
@@ -5345,7 +8119,7 @@ tile{
 tile{
   layer = 1,
   x = 840,
-  y = 544,
+  y = 496,
   width = 8,
   height = 8,
   pattern = "roof_blue_plain_5",
@@ -5354,7 +8128,7 @@ tile{
 tile{
   layer = 1,
   x = 896,
-  y = 544,
+  y = 496,
   width = 8,
   height = 8,
   pattern = "roof_blue_plain_7",
@@ -5363,7 +8137,7 @@ tile{
 tile{
   layer = 1,
   x = 840,
-  y = 536,
+  y = 488,
   width = 8,
   height = 8,
   pattern = "roof_blue_plain_4",
@@ -5372,7 +8146,7 @@ tile{
 tile{
   layer = 1,
   x = 896,
-  y = 536,
+  y = 488,
   width = 8,
   height = 8,
   pattern = "roof_blue_plain_0",
@@ -5381,7 +8155,7 @@ tile{
 tile{
   layer = 1,
   x = 848,
-  y = 536,
+  y = 488,
   width = 8,
   height = 8,
   pattern = "house_chimney_small",
@@ -5390,7 +8164,7 @@ tile{
 tile{
   layer = 1,
   x = 888,
-  y = 536,
+  y = 488,
   width = 8,
   height = 8,
   pattern = "house_chimney_small",
@@ -5399,7 +8173,7 @@ tile{
 tile{
   layer = 1,
   x = 816,
-  y = 560,
+  y = 512,
   width = 8,
   height = 8,
   pattern = "roof_blue_border_4_down",
@@ -5408,7 +8182,7 @@ tile{
 tile{
   layer = 1,
   x = 816,
-  y = 528,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "roof_blue_border_4_up",
@@ -5417,7 +8191,7 @@ tile{
 tile{
   layer = 1,
   x = 816,
-  y = 536,
+  y = 488,
   width = 8,
   height = 24,
   pattern = "roof_blue_border_4_middle",
@@ -5426,7 +8200,7 @@ tile{
 tile{
   layer = 1,
   x = 920,
-  y = 560,
+  y = 512,
   width = 8,
   height = 8,
   pattern = "roof_blue_border_0_down",
@@ -5435,7 +8209,7 @@ tile{
 tile{
   layer = 1,
   x = 920,
-  y = 528,
+  y = 480,
   width = 8,
   height = 8,
   pattern = "roof_blue_border_0_up",
@@ -5444,7 +8218,7 @@ tile{
 tile{
   layer = 1,
   x = 920,
-  y = 536,
+  y = 488,
   width = 8,
   height = 24,
   pattern = "roof_blue_border_0_middle",
@@ -5453,7 +8227,7 @@ tile{
 tile{
   layer = 2,
   x = 936,
-  y = 560,
+  y = 512,
   width = 48,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5462,7 +8236,7 @@ tile{
 tile{
   layer = 2,
   x = 936,
-  y = 504,
+  y = 456,
   width = 48,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5471,7 +8245,7 @@ tile{
 tile{
   layer = 2,
   x = 928,
-  y = 512,
+  y = 464,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5480,7 +8254,7 @@ tile{
 tile{
   layer = 2,
   x = 984,
-  y = 512,
+  y = 464,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5489,7 +8263,7 @@ tile{
 tile{
   layer = 2,
   x = 48,
-  y = 744,
+  y = 696,
   width = 288,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5498,7 +8272,7 @@ tile{
 tile{
   layer = 2,
   x = 48,
-  y = 688,
+  y = 640,
   width = 288,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5507,7 +8281,7 @@ tile{
 tile{
   layer = 2,
   x = 40,
-  y = 696,
+  y = 648,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5516,7 +8290,7 @@ tile{
 tile{
   layer = 2,
   x = 336,
-  y = 696,
+  y = 648,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5525,7 +8299,7 @@ tile{
 tile{
   layer = 2,
   x = 376,
-  y = 744,
+  y = 696,
   width = 240,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5534,7 +8308,7 @@ tile{
 tile{
   layer = 2,
   x = 376,
-  y = 688,
+  y = 640,
   width = 240,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5543,7 +8317,7 @@ tile{
 tile{
   layer = 2,
   x = 368,
-  y = 696,
+  y = 648,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5552,7 +8326,7 @@ tile{
 tile{
   layer = 2,
   x = 616,
-  y = 696,
+  y = 648,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5561,7 +8335,7 @@ tile{
 tile{
   layer = 2,
   x = 256,
-  y = 440,
+  y = 392,
   width = 240,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5570,7 +8344,7 @@ tile{
 tile{
   layer = 2,
   x = 256,
-  y = 384,
+  y = 336,
   width = 240,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5579,7 +8353,7 @@ tile{
 tile{
   layer = 2,
   x = 248,
-  y = 392,
+  y = 344,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5588,7 +8362,7 @@ tile{
 tile{
   layer = 2,
   x = 496,
-  y = 392,
+  y = 344,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5597,7 +8371,7 @@ tile{
 tile{
   layer = 2,
   x = 232,
-  y = 488,
+  y = 440,
   width = 288,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5606,7 +8380,7 @@ tile{
 tile{
   layer = 2,
   x = 232,
-  y = 432,
+  y = 384,
   width = 288,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5615,7 +8389,7 @@ tile{
 tile{
   layer = 2,
   x = 224,
-  y = 440,
+  y = 392,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5624,7 +8398,7 @@ tile{
 tile{
   layer = 2,
   x = 520,
-  y = 440,
+  y = 392,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5633,7 +8407,7 @@ tile{
 tile{
   layer = 2,
   x = 208,
-  y = 536,
+  y = 488,
   width = 336,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5642,7 +8416,7 @@ tile{
 tile{
   layer = 2,
   x = 208,
-  y = 480,
+  y = 432,
   width = 336,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5651,7 +8425,7 @@ tile{
 tile{
   layer = 2,
   x = 200,
-  y = 488,
+  y = 440,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5660,7 +8434,7 @@ tile{
 tile{
   layer = 2,
   x = 544,
-  y = 488,
+  y = 440,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5669,7 +8443,7 @@ tile{
 tile{
   layer = 2,
   x = 232,
-  y = 584,
+  y = 536,
   width = 288,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5678,7 +8452,7 @@ tile{
 tile{
   layer = 2,
   x = 232,
-  y = 528,
+  y = 480,
   width = 288,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5687,7 +8461,7 @@ tile{
 tile{
   layer = 2,
   x = 224,
-  y = 536,
+  y = 488,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5696,7 +8470,7 @@ tile{
 tile{
   layer = 2,
   x = 520,
-  y = 536,
+  y = 488,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5705,7 +8479,7 @@ tile{
 tile{
   layer = 2,
   x = 256,
-  y = 632,
+  y = 584,
   width = 96,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5714,7 +8488,7 @@ tile{
 tile{
   layer = 2,
   x = 256,
-  y = 576,
+  y = 528,
   width = 96,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5723,7 +8497,7 @@ tile{
 tile{
   layer = 2,
   x = 248,
-  y = 584,
+  y = 536,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5732,7 +8506,7 @@ tile{
 tile{
   layer = 2,
   x = 352,
-  y = 584,
+  y = 536,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5741,7 +8515,7 @@ tile{
 tile{
   layer = 2,
   x = 400,
-  y = 632,
+  y = 584,
   width = 96,
   height = 8,
   pattern = "Wood_tree_green_low",
@@ -5750,7 +8524,7 @@ tile{
 tile{
   layer = 2,
   x = 400,
-  y = 576,
+  y = 528,
   width = 96,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5759,7 +8533,7 @@ tile{
 tile{
   layer = 2,
   x = 392,
-  y = 584,
+  y = 536,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5768,7 +8542,7 @@ tile{
 tile{
   layer = 2,
   x = 496,
-  y = 584,
+  y = 536,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5777,7 +8551,7 @@ tile{
 tile{
   layer = 2,
   x = 368,
-  y = 576,
+  y = 528,
   width = 16,
   height = 8,
   pattern = "Wood_tree_entrance_up",
@@ -5786,7 +8560,124 @@ tile{
 tile{
   layer = 2,
   x = 672,
-  y = 560,
+  y = 568,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 600,
+  y = 272,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 592,
+  y = 280,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 280,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 600,
+  y = 328,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 624,
+  y = 320,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 616,
+  y = 328,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 672,
+  y = 328,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 624,
+  y = 376,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 368,
+  width = 96,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 640,
+  y = 376,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 744,
+  y = 376,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 424,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 672,
+  y = 416,
   width = 48,
   height = 56,
   pattern = "Wood_tree_green_center",
@@ -5795,7 +8686,7 @@ tile{
 tile{
   layer = 2,
   x = 664,
-  y = 568,
+  y = 424,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_left",
@@ -5804,7 +8695,7 @@ tile{
 tile{
   layer = 2,
   x = 720,
-  y = 568,
+  y = 424,
   width = 8,
   height = 40,
   pattern = "Wood_tree_green_right",
@@ -5813,9 +8704,540 @@ tile{
 tile{
   layer = 2,
   x = 672,
-  y = 616,
+  y = 472,
   width = 48,
   height = 8,
   pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 464,
+  width = 96,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 640,
+  y = 472,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 744,
+  y = 472,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 520,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 672,
+  y = 512,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 720,
+  y = 520,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 664,
+  y = 520,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 928,
+  y = 904,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 928,
+  y = 848,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 976,
+  y = 856,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 920,
+  y = 856,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 952,
+  y = 952,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 952,
+  y = 896,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 1000,
+  y = 904,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 944,
+  y = 904,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 976,
+  y = 1000,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 976,
+  y = 944,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 1024,
+  y = 952,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 968,
+  y = 952,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 728,
+  y = 920,
+  width = 144,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 728,
+  y = 864,
+  width = 144,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 872,
+  y = 872,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 720,
+  y = 872,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 656,
+  y = 968,
+  width = 240,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 656,
+  y = 912,
+  width = 240,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 896,
+  y = 920,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 920,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 960,
+  y = 272,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 960,
+  y = 216,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 952,
+  y = 224,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 1008,
+  y = 224,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 624,
+  y = 24,
+  width = 240,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 624,
+  y = -32,
+  width = 240,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 616,
+  y = -24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 864,
+  y = -24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 72,
+  width = 192,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 648,
+  y = 16,
+  width = 192,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 640,
+  y = 24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 840,
+  y = 24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 944,
+  y = 24,
+  width = 336,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 944,
+  y = -32,
+  width = 336,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 936,
+  y = -24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 1280,
+  y = -24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 1160,
+  y = 72,
+  width = 144,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 1160,
+  y = 16,
+  width = 144,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 1152,
+  y = 24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 1304,
+  y = 24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 1184,
+  y = 120,
+  width = 144,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 1184,
+  y = 64,
+  width = 144,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 1176,
+  y = 72,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 1328,
+  y = 72,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 1208,
+  y = 168,
+  width = 96,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 1208,
+  y = 112,
+  width = 96,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 1200,
+  y = 120,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 1304,
+  y = 120,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = -8,
+  y = 320,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = -8,
+  y = 264,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = 272,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 40,
+  y = 272,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
 }
 
