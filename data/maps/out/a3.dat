@@ -7652,6 +7652,24 @@ tile{
   pattern = "Wood_tree_green_small",
 }
 
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 8,
+  height = 192,
+  pattern = "MtBorder0",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 192,
+  pattern = "MtPeak0",
+}
+
 wall{
   layer = 0,
   x = 824,
