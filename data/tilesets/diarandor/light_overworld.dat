@@ -3242,6 +3242,36 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "Wood_tree_root_left",
+  ground = "wall_top_right",
+  default_layer = 0,
+  x = 464,
+  y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Wood_tree_root_right",
+  ground = "wall_top_left",
+  default_layer = 0,
+  x = 472,
+  y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Wood_tree_root_up",
+  ground = "wall",
+  default_layer = 0,
+  x = 464,
+  y = 88,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
   id = "Wood_tree_trunk_big_down",
   ground = "wall",
   default_layer = 0,

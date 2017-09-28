@@ -22,6 +22,15 @@ custom_entity{
 
 tile{
   layer = 0,
+  x = 0,
+  y = -48,
+  width = 1320,
+  height = 1072,
+  pattern = "GrassPlain",
+}
+
+tile{
+  layer = 0,
   x = 16,
   y = 368,
   width = 16,
