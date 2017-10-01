@@ -5,7 +5,6 @@
 require("scripts/features")
 local initial_menus_config = require("scripts/menus/initial_menus_config")
 local initial_menus = {}
-local game_manager = require("scripts/game_manager")
 
 -- This function is called when Solarus starts.
 function sol.main:on_started()
