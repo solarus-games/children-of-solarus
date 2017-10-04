@@ -98,6 +98,83 @@ pickable{
 }
 
 custom_entity{
+  layer = 0,
+  x = 248,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/bird_red",
+  model = "animals/bird",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 101,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/bird_red",
+  model = "animals/bird",
+}
+
+custom_entity{
+  layer = 0,
+  x = 192,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/bird_red",
+  model = "animals/bird",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 53,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/bird_red",
+  model = "animals/bird",
+}
+
+custom_entity{
+  layer = 0,
+  x = 248,
+  y = 117,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/bird_red",
+  model = "animals/bird",
+}
+
+custom_entity{
+  layer = 0,
+  x = 272,
+  y = 85,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/bird_red",
+  model = "animals/bird",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/bird_red",
+  model = "animals/bird",
+}
+
+custom_entity{
   layer = 2,
   x = 112,
   y = 29,

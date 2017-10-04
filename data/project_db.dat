@@ -14,6 +14,7 @@ map{ id = "test_maps/start_point", description = "Starting Point" }
 
 tileset{ id = "diarandor/light_overworld", description = "Light Overworld" }
 
+sprite{ id = "animals/bird_red", description = "Bird red" }
 sprite{ id = "console/cursor", description = "Console cursor" }
 sprite{ id = "console/icons", description = "Console icons" }
 sprite{ id = "destructibles/cabbagge_green", description = "Plant Green" }
@@ -411,6 +412,7 @@ item{ id = "world_map", description = "World map" }
 enemy{ id = "diarandor/soldier", description = "soldier" }
 enemy{ id = "generic_soldier", description = "generic soldier" }
 
+entity{ id = "animals/bird", description = "bird" }
 entity{ id = "arrow", description = "arrow" }
 entity{ id = "insects/butterfly", description = "Butterfly" }
 

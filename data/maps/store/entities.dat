@@ -9,6 +9,17 @@ properties{
 }
 
 custom_entity{
+  layer = 0,
+  x = 24,
+  y = 37,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/bird_red",
+  model = "animals/bird",
+}
+
+custom_entity{
   layer = 2,
   x = 24,
   y = 21,
