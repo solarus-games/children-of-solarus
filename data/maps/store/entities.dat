@@ -1,0 +1,65 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "diarandor/light_overworld",
+}
+
+custom_entity{
+  layer = 2,
+  x = 24,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "insects/butterfly_blue",
+  model = "insects/butterfly",
+}
+
+custom_entity{
+  layer = 2,
+  x = 40,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "insects/butterfly_pink",
+  model = "insects/butterfly",
+}
+
+custom_entity{
+  layer = 2,
+  x = 56,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "insects/butterfly_purple",
+  model = "insects/butterfly",
+}
+
+custom_entity{
+  layer = 2,
+  x = 72,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "insects/butterfly_white",
+  model = "insects/butterfly",
+}
+
+custom_entity{
+  layer = 2,
+  x = 88,
+  y = 21,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "insects/butterfly_yellow",
+  model = "insects/butterfly",
+}
+

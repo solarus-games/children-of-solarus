@@ -7,6 +7,9 @@ map{ id = "out/b1", description = "Outside B1" }
 map{ id = "out/b2", description = "Outside B2" }
 map{ id = "out/b3", description = "Outside B3" }
 map{ id = "out/b4", description = "Outside B2" }
+map{ id = "store/enemies", description = "Enemies" }
+map{ id = "store/entities", description = "Entities" }
+map{ id = "store/overworldTest0.4", description = "OverworldTest0.4" }
 map{ id = "test_maps/start_point", description = "Starting Point" }
 
 tileset{ id = "diarandor/light_overworld", description = "Light Overworld" }
@@ -153,6 +156,11 @@ sprite{ id = "hud/gameover_fade", description = "Game-over fade" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
 sprite{ id = "hud/pause_icon_flip", description = "Pause icon" }
 sprite{ id = "hud/sword_icon_flip", description = "Sword icon" }
+sprite{ id = "insects/butterfly_blue", description = "Butterfly blue" }
+sprite{ id = "insects/butterfly_pink", description = "Butterfly pink" }
+sprite{ id = "insects/butterfly_purple", description = "Butterfly purple" }
+sprite{ id = "insects/butterfly_white", description = "Butterfly white" }
+sprite{ id = "insects/butterfly_yellow", description = "Butterfly yellow" }
 sprite{ id = "menus/arrow", description = "Arrow" }
 sprite{ id = "menus/hero_head", description = "Hero head" }
 sprite{ id = "menus/hero_point", description = "Hero point" }
@@ -404,6 +412,7 @@ enemy{ id = "diarandor/soldier", description = "soldier" }
 enemy{ id = "generic_soldier", description = "generic soldier" }
 
 entity{ id = "arrow", description = "arrow" }
+entity{ id = "insects/butterfly", description = "Butterfly" }
 
 language{ id = "en", description = "English" }
 
