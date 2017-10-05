@@ -212,6 +212,7 @@ sprite{ id = "npc/villager2", description = "ALTTP villager 2" }
 sprite{ id = "npc/villager3", description = "ALTTP villager 3" }
 sprite{ id = "npc/witch", description = "Witch" }
 sprite{ id = "npc/wizard", description = "Wizard" }
+sprite{ id = "weather/rain", description = "rain" }
 sprite{ id = "work/1120x1008", description = "1120x1008" }
 
 music{ id = "eduardo/boss", description = "Boss" }
