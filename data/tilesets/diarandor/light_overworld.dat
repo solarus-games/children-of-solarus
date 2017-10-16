@@ -4307,7 +4307,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house_entrance_wooden_down_left",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 944,
   y = 32,
@@ -4317,7 +4317,7 @@ tile_pattern{
 
 tile_pattern{
   id = "house_entrance_wooden_down_right",
-  ground = "wall",
+  ground = "traversable",
   default_layer = 0,
   x = 968,
   y = 32,
@@ -7078,6 +7078,19 @@ tile_pattern{
   y = 96,
   width = 8,
   height = 8,
+}
+
+border_set{
+  id = "deep_water_to_shallow_water",
+  inner = true,
+  pattern_0 = "Water_shallowborder_4",
+  pattern_1 = "Water_shallowborder_6",
+  pattern_2 = "Water_shallowborder_0",
+  pattern_3 = "Water_shallowborder_2",
+  pattern_4 = "Water_shallowborder_5bis",
+  pattern_5 = "Water_shallowborder_7bis",
+  pattern_6 = "Water_shallowborder_1bis",
+  pattern_7 = "Water_shallowborder_3bis",
 }
 
 border_set{
