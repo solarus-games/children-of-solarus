@@ -380,7 +380,7 @@ tile{
 tile{
   layer = 0,
   x = 168,
-  y = 40,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "MtInnerBorder1",
@@ -425,7 +425,7 @@ tile{
 tile{
   layer = 0,
   x = 72,
-  y = 40,
+  y = 48,
   width = 16,
   height = 16,
   pattern = "MtInnerBorder3",

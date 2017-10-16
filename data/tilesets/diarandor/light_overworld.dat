@@ -1891,6 +1891,17 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "MtBorder6",
+  ground = "wall",
+  default_layer = 0,
+  x = 48,
+  y = 32,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "MtBorder6L",
   ground = "wall",
   default_layer = 0,
