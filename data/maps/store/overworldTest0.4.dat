@@ -6020,6 +6020,60 @@ destructible{
   can_be_cut = true,
 }
 
+destructible{
+  layer = 0,
+  x = 96,
+  y = 181,
+  sprite = "destructibles/cabbagge_green",
+  destruction_sound = "bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 112,
+  y = 181,
+  sprite = "destructibles/cabbagge_green",
+  destruction_sound = "bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 96,
+  y = 197,
+  sprite = "destructibles/cabbagge_green",
+  destruction_sound = "bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 112,
+  y = 197,
+  sprite = "destructibles/cabbagge_green",
+  destruction_sound = "bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 80,
+  y = 181,
+  sprite = "destructibles/cabbagge_green",
+  destruction_sound = "bush",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 80,
+  y = 197,
+  sprite = "destructibles/cabbagge_green",
+  destruction_sound = "bush",
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 992,
