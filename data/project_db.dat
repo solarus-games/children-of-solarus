@@ -123,7 +123,10 @@ sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/stone_small_black", description = "Small black stone" }
 sprite{ id = "entities/stone_small_white", description = "Small white stone" }
 sprite{ id = "entities/switch", description = "Switch" }
-sprite{ id = "entities/teletransporter", description = "Teletransporter (yellow)" }
+sprite{ id = "entities/teletransporter_blue", description = "Teletransporter (blue)" }
+sprite{ id = "entities/teletransporter_green", description = "Teletransporter (green)" }
+sprite{ id = "entities/teletransporter_pink", description = "Teletransporter (pink)" }
+sprite{ id = "entities/teletransporter_yellow", description = "Teletransporter (yellow)" }
 sprite{ id = "entities/the_end", description = "The end" }
 sprite{ id = "entities/torch", description = "Torch" }
 sprite{ id = "entities/vine", description = "Vine" }

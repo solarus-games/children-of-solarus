@@ -16957,7 +16957,7 @@ teletransporter{
   height = 16,
   destination_map = "test_maps/start_point",
   destination = "starting_point",
-  sprite = "entities/teletransporter",
+  sprite = "entities/teletransporter_pink",
 }
 
 jumper{
