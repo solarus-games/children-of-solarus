@@ -87,7 +87,12 @@ sprite{ id = "entities/boomerang2", description = "Boomerang 2" }
 sprite{ id = "entities/bush", description = "Bush" }
 sprite{ id = "entities/cannon", description = "Cannon" }
 sprite{ id = "entities/castle_lock", description = "Castle prison lock" }
-sprite{ id = "entities/chest", description = "Chest (normal)" }
+sprite{ id = "entities/chest_blue", description = "Chest (blue)" }
+sprite{ id = "entities/chest_brown", description = "Chest (brown)" }
+sprite{ id = "entities/chest_green", description = "Chest (green)" }
+sprite{ id = "entities/chest_purple", description = "Chest (purple)" }
+sprite{ id = "entities/chest_red", description = "Chest (red)" }
+sprite{ id = "entities/chest_yellow", description = "Chest (yellow)" }
 sprite{ id = "entities/conveyor_belt", description = "Conveyor belt" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }

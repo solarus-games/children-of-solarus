@@ -17421,7 +17421,7 @@ chest{
   layer = 0,
   x = 688,
   y = 181,
-  sprite = "entities/chest",
+  sprite = "entities/chest_yellow",
 }
 
 tile{
