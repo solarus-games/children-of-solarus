@@ -2,15 +2,13 @@ animation{
   name = "closed",
   src_image = "entities/chest.png",
   directions = {
-    { x = 0, y = 16, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 32, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
   },
 }
-
 animation{
   name = "open",
   src_image = "entities/chest.png",
   directions = {
-    { x = 0, y = 40, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+    { x = 64, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
   },
 }
-
