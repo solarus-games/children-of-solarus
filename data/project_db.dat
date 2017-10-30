@@ -22,6 +22,16 @@ sprite{ id = "destructibles/cabbagge_grey", description = "Plant Grey" }
 sprite{ id = "destructibles/cabbagge_red", description = "Plant Red" }
 sprite{ id = "destructibles/cabbagge_violet", description = "Plant Violet" }
 sprite{ id = "destructibles/cabbagge_yellow", description = "Plant Yellow" }
+sprite{ id = "destructibles/grass_green", description = "Grass Green (center)" }
+sprite{ id = "destructibles/grass_green_1", description = "Grass Green 1" }
+sprite{ id = "destructibles/grass_green_3", description = "Grass Green 3" }
+sprite{ id = "destructibles/grass_green_5", description = "Grass Green 5" }
+sprite{ id = "destructibles/grass_green_7", description = "Grass Green 7" }
+sprite{ id = "destructibles/grass_yellow", description = "Grass Yellow (center)" }
+sprite{ id = "destructibles/grass_yellow_1", description = "Grass Yellow 1" }
+sprite{ id = "destructibles/grass_yellow_3", description = "Grass Yellow 3" }
+sprite{ id = "destructibles/grass_yellow_5", description = "Grass Yellow 5" }
+sprite{ id = "destructibles/grass_yellow_7", description = "Grass Yellow 7" }
 sprite{ id = "destructibles/pot_1", description = "Pot 1" }
 sprite{ id = "destructibles/rock_golden", description = "Rock Golden" }
 sprite{ id = "destructibles/rock_grey", description = "Rock Grey" }
