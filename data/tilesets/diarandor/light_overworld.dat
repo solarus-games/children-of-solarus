@@ -5463,6 +5463,7 @@ tile_pattern{
   y = 96,
   width = 8,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -5473,6 +5474,7 @@ tile_pattern{
   y = 96,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -5483,6 +5485,7 @@ tile_pattern{
   y = 96,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -5493,6 +5496,7 @@ tile_pattern{
   y = 80,
   width = 8,
   height = 8,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -5503,6 +5507,7 @@ tile_pattern{
   y = 72,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -5513,6 +5518,7 @@ tile_pattern{
   y = 72,
   width = 8,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -5523,6 +5529,7 @@ tile_pattern{
   y = 72,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -5533,6 +5540,7 @@ tile_pattern{
   y = 80,
   width = 8,
   height = 8,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -5543,6 +5551,7 @@ tile_pattern{
   y = 88,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -5553,6 +5562,7 @@ tile_pattern{
   y = 88,
   width = 8,
   height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -5563,6 +5573,7 @@ tile_pattern{
   y = 88,
   width = 8,
   height = 8,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -7401,20 +7412,7 @@ tile_pattern{
 }
 
 border_set{
-  id = "deep_water_to_shallow_water",
-  inner = true,
-  pattern_0 = "Water_shallowborder_4",
-  pattern_1 = "Water_shallowborder_6",
-  pattern_2 = "Water_shallowborder_0",
-  pattern_3 = "Water_shallowborder_2",
-  pattern_4 = "Water_shallowborder_5bis",
-  pattern_5 = "Water_shallowborder_7bis",
-  pattern_6 = "Water_shallowborder_1bis",
-  pattern_7 = "Water_shallowborder_3bis",
-}
-
-border_set{
-  id = "grassborder",
+  id = "any_to_green",
   inner = true,
   pattern_0 = "Gnd_grassborder4",
   pattern_1 = "Gnd_grassborder6",
@@ -7431,7 +7429,7 @@ border_set{
 }
 
 border_set{
-  id = "grassedge",
+  id = "any_to_green_flat",
   inner = true,
   pattern_0 = "Gnd_grassedge4",
   pattern_1 = "Gnd_grassedge6",
@@ -7445,6 +7443,31 @@ border_set{
   pattern_9 = "Gnd_grassedge7",
   pattern_10 = "Gnd_grassedge1",
   pattern_11 = "Gnd_grassedge3",
+}
+
+border_set{
+  id = "deep_water_to_shallow_water",
+  inner = true,
+  pattern_0 = "Water_shallowborder_4",
+  pattern_1 = "Water_shallowborder_6",
+  pattern_2 = "Water_shallowborder_0",
+  pattern_3 = "Water_shallowborder_2",
+  pattern_4 = "Water_shallowborder_5bis",
+  pattern_5 = "Water_shallowborder_7bis",
+  pattern_6 = "Water_shallowborder_1bis",
+  pattern_7 = "Water_shallowborder_3bis",
+}
+
+border_set{
+  id = "grass_to_any",
+  pattern_0 = "Grass_border0",
+  pattern_1 = "Grass_border2",
+  pattern_2 = "Grass_border4",
+  pattern_3 = "Grass_border6",
+  pattern_4 = "Grass_border1",
+  pattern_5 = "Grass_border3",
+  pattern_6 = "Grass_border5",
+  pattern_7 = "Grass_border7",
 }
 
 border_set{
