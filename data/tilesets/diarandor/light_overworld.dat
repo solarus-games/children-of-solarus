@@ -4,7 +4,47 @@ tile_pattern{
   ground = "traversable",
   default_layer = 0,
   x = 144,
-  y = 32,
+  y = 184,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Gnd_cut_grass1",
+  ground = "traversable",
+  default_layer = 0,
+  x = 128,
+  y = 184,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Gnd_cut_grass3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 112,
+  y = 184,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Gnd_cut_grass5",
+  ground = "traversable",
+  default_layer = 0,
+  x = 112,
+  y = 200,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Gnd_cut_grass7",
+  ground = "traversable",
+  default_layer = 0,
+  x = 128,
+  y = 200,
   width = 16,
   height = 16,
 }
@@ -563,7 +603,7 @@ tile_pattern{
   id = "Gnd_smallrocks",
   ground = "traversable",
   default_layer = 0,
-  x = 176,
+  x = 144,
   y = 32,
   width = 16,
   height = 16,
@@ -3663,6 +3703,46 @@ tile_pattern{
   y = 32,
   width = 32,
   height = 32,
+}
+
+tile_pattern{
+  id = "below_plant",
+  ground = "empty",
+  default_layer = 0,
+  x = 160,
+  y = 176,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "below_rock_darksand",
+  ground = "empty",
+  default_layer = 0,
+  x = 176,
+  y = 160,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "below_rock_sand",
+  ground = "empty",
+  default_layer = 0,
+  x = 160,
+  y = 160,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "below_signpost",
+  ground = "traversable",
+  default_layer = 0,
+  x = 176,
+  y = 176,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
