@@ -2,7 +2,7 @@ animation{
   name = "on_ground",
   src_image = "destructibles/plant_cabbage.png",
   directions = {
-    { x = 48, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -10,6 +10,6 @@ animation{
   src_image = "destructibles/plant_cabbage.png",
   frame_delay = 150,
   directions = {
-    { x = 48, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4, num_columns = 1 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4, num_columns = 1 },
   },
 }
