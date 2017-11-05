@@ -13,7 +13,7 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
   -- TESTING WEATHER MANAGER:
-  -- game:set_rain_type("outside", "rain")
+  game:set_rain_type("outside", "rain")
 end
 
 -- Event called after the opening transition effect of the map,
