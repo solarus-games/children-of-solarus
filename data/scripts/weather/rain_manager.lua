@@ -17,34 +17,60 @@ local rain_manager = {}
 local game_meta = sol.main.get_metatable("game")
 local map_meta = sol.main.get_metatable("map")
 
+-- Assets: sounds and sprites.
+local drop_sprite = sol.sprite.create("weather/rain")
+local thunder_sounds = {"thunder1", "thunder2", "thunder3", "thunder_far", "thunder_double"}
+
 -- Default settings. Change these for testing.
 local rain_enabled = true -- Do not change this property, unless you are testing.
 -- local lightning_enabled = true
-local rain_speed = 140 -- Default drop speed 100.
-local storm_speed = 300 -- Default drop speed 300.
-local drop_speed -- Local variable to store the speed.
+local rain_speed = 140
+local storm_speed = 220
+local current_drop_speed
 local drop_min_distance = 40 -- Min possible distance for drop movements.
 local drop_max_distance = 300 -- Max possible distance for drop movements.
 local rain_drop_delay = 10 -- Delay between drops for rain, in milliseconds.
-local storm_drop_delay = 5 -- Delay between drops for storms, in milliseconds.
+local storm_drop_delay = 2 -- Delay between drops for storms, in milliseconds.
+local current_drop_delay
 local min_lightning_delay = 2000
 local max_lightning_delay = 10000
-local drop_sprite = sol.sprite.create("weather/rain")
-local thunder_sounds = {"thunder1", "thunder2", "thunder3", "thunder_far", "thunder_double"}
 local rain_surface, flash_surface -- Surfaces to draw rain and lightning flash.
 local draw_flash_surface = false -- Used by the lightning menu.
-local current_drop_number = 0
-local max_drop_number = 200
+local current_drop_index = 0 -- Current index for the next drop to be created.
+local max_drop_number_rain = 200
+local max_drop_number_storm = 500
+local max_drop_number -- Max number of drops per map.
 local drop_list = {} -- List of properties for each drop.
+local splash_list = {} -- List of properties for each splash effect.
 local timers = {}
+local num_drops, num_splashes = 0, 0
 local current_map
-  
+
+-- Get the rain manager.
+function game_meta:get_rain_manager() return rain_manager end
+
 -- Initialize rain on maps when necessary.
 game_meta:register_event("on_map_changed", function(game)
   local map = game:get_map()
   current_map = map
-  rain_manager:update_rain()
+  rain_manager:on_map_changed()
 end)
+
+-- Create rain if necessary when entering a new map.
+function rain_manager:on_map_changed()
+  -- Clear variables.
+  rain_surface = nil
+  drop_list, splash_list, timers = {}, {}, {}
+  num_drops, num_splashes = 0, 0
+  -- Get rain state in this world.
+  local map = current_map
+  local world = map:get_world()
+  local rain_type = map:get_game():get_rain_type(world)
+  -- Start rain if necessary.
+  self:start_rain_mode(rain_type)
+  -- Draw rain: start menu.
+  sol.menu.start(map, rain_manager)
+end
 
 -- Get/set the raining state for a given world.
 function game_meta:get_rain_type(world)
@@ -61,10 +87,6 @@ function game_meta:set_rain_type(world, rain_type)
   -- Check if rain is necessary: if we are in that world and rain is needed.  
   local current_world = self:get_map():get_world()
   local rain_needed = (current_world == world) and rain_enabled and rain_type
-  if (not rain_needed) then return end -- Do nothing if rain is not needed!
-  -- We need to start the rain in the current map.
-  local map = self:get_map()
-  rain_manager:update_rain(map)
 end
 
 -- Define on_draw event for the rain_manager menu (if it is initialized).
@@ -83,7 +105,7 @@ function rain_manager:on_draw(dst_surface)
     end
     -- Draw splashes on surface.
     drop_sprite:set_animation("drop_splash")
-    for _, splash in pairs(splash_list) do 
+    for _, splash in pairs(splash_list) do
       drop_sprite:set_frame(splash.frame)
       local x = (splash.x - cx) % cw
       local y = (splash.y - cy) % ch
@@ -97,61 +119,9 @@ function rain_manager:on_draw(dst_surface)
   end
 end
 
--- Create rain if necessary when entering a new map.
-function rain_manager:update_rain()
-  -- Clear variables.
-  timers = {}
-  drop_list = {}
-  splash_list = {}
-  -- Get rain state in this world.
-  local map = current_map
-  local world = map:get_world()
-  local rain_type = map:get_game():get_rain_type(world)
-  -- Start rain if necessary.
-  if rain_type == "rain" then
-    self:start_rain()
-  elseif rain_type == "storm" then
-    self:start_storm()
-  end
-  -- Draw rain: start menu.
-  sol.menu.start(map, rain_manager)
-end
-
---[[
--- Define function to create splash effects.
--- If no parameters x, y are given, the position is random.
-local function create_drop_splash(map, x, y)
-  local max_layer = map:get_max_layer()
-  local min_layer = map:get_min_layer()
-  local camera = map:get_camera()
-  local cx, cy, cw, ch = camera:get_bounding_box()
-  local drop_properties = {direction = 0, x = 0, y = 0, layer = max_layer,
-    width = 16, height = 16, sprite = drop_sprite_id}
-  -- Initialize parameters.
-  local x = x or cx + cw * math.random()
-  local y = y or cy + ch * math.random()
-  local layer = max_layer
-  while map:get_ground(x,y,layer) == "empty" and layer > min_layer do
-    layer = layer - 1 -- Draw the splash at the lower layer we can.
-  end
-  -- Do not draw splash over some bad grounds: "hole" and "lava".
-  local ground = map:get_ground(x, y, layer)
-  if ground ~= "hole" and ground ~= "lava" then
-    drop_properties.x = x
-    drop_properties.y = y
-    drop_properties.layer = layer
-    local drop_splash = map:create_custom_entity(drop_properties)
-    local splash_sprite = drop_splash:get_sprite()
-    splash_sprite:set_animation("drop_splash")
-    splash_sprite:set_direction(0)
-    function splash_sprite:on_animation_finished() drop_splash:remove() end
-  end
-end
---]]
-
-
 -- Create properties list for water drop at random position.
-function rain_manager:create_drop()
+function rain_manager:create_drop(deviation)
+  local r = deviation or 0
   local map = current_map
   local camera = map:get_camera()
   local cx, cy, cw, ch = camera:get_bounding_box()
@@ -159,16 +129,15 @@ function rain_manager:create_drop()
   local drop = {} -- Drop properties.
   drop.init_x = cx + cw * math.random()
   drop.init_y = cy + ch * math.random()
-  drop.x = 0
-  drop.y = 0
-  drop.frame = 0
-  drop.index = current_drop_number
-  current_drop_number = (current_drop_number + 1) % max_drop_number
+  drop.x, drop.y, drop.frame = 0, 0, 0
+  drop.index = current_drop_index
+  current_drop_index = (current_drop_index + 1) % max_drop_number
   drop_list[drop.index] = drop
+  num_drops = num_drops + 1
   -- Initialize drop movement.
   local m = sol.movement.create("straight")
-  m:set_angle(7 * math.pi / 5)
-  m:set_speed(drop_speed)
+  m:set_angle(7 * math.pi / 5 + r)
+  m:set_speed(current_drop_speed)
   local random_distance = math.random(drop_min_distance, drop_max_distance)
   m:set_max_distance(random_distance)
   -- Callback: create splash effect.
@@ -176,54 +145,83 @@ function rain_manager:create_drop()
     local index = drop.index
     local splash = {x = drop.init_x + drop.x, y = drop.init_y + drop.y}
     drop_list[index] = nil
+    num_drops = num_drops - 1
+    if num_drops == 0 then timers["drop_frame_timer"]:stop() end
     splash.index = index
     splash.frame = 0
     splash_list[index] = splash
-    -- Update splash frames.
-    sol.timer.start(splash, 100, function()
-      splash.frame = splash.frame + 1
-      if splash.frame >= 4 then
-        -- Destroy splash after last frame.
-        splash_list[index] = nil
-        return false
-      end
-      return true
-    end)
+    num_splashes = num_splashes + 1
   end)
   return drop
 end
 
-
 -- Stop rain effects for the current map.
 function rain_manager:stop()
-  -- Stop rain timers if already started.
-  for k, timer in pairs(timers) do
-    timer:stop()
-    timers[k] = nil
-  end
+  -- Stop drop rain timers if already started.
+  local t = timers["drop_timer"]
+  if t then t:stop() end
+  timers["drop_timer"] = nil
+  return true
 end
 
 -- Start rain in the current map.
-function rain_manager:start_rain()
+function rain_manager:start_rain_mode(rain_type)
+  -- Reset drop timer.
+  self:stop()
+  if rain_type == nil then return end
+  -- Reset other timers.
+  for _, t in pairs(timers) do t:stop() end
+  -- Initialize parameters.
+  local drop_deviation = 0
+  if rain_type == "rain" then
+    current_drop_speed = rain_speed
+    current_drop_delay = rain_drop_delay
+    max_drop_number = max_drop_number_rain
+  elseif rain_type == "storm" then
+    current_drop_speed = storm_speed
+    current_drop_delay = storm_drop_delay
+    max_drop_number = max_drop_number_storm
+  else
+    error("Invalid rain mode.")
+  end
   -- Create rain surface.
   local map = current_map
   local camera = map:get_camera()
   local cx, cy, cw, ch = camera:get_bounding_box()
   rain_surface = sol.surface.create(cw, ch)
-  -- Start timer to draw rain drops.
-  drop_speed = rain_speed -- Initialize drop speed.
-  self:stop() -- Stop rain timers if already started.
-  timers["drop_timer"] = sol.timer.start(map, rain_drop_delay, function()
-    rain_manager:create_drop() -- Create drops at random positions.
+  -- Initialize drop timer.
+  timers["drop_timer"] = sol.timer.start(map, current_drop_delay, function()
+    -- Check if there is space for a new drop (there is a max number of drops).
+    if drop_list[current_drop_index] == nil then
+      -- Random angle deviation in case of storm.
+      if rain_type == "storm" then
+        drop_deviation = math.random(-1, 1) * math.random() * math.pi / 8
+      end
+      -- Create drops at random positions.
+      rain_manager:create_drop(drop_deviation)
+    end
     return true -- Repeat loop.
   end)
-  -- Update rain frames for all drops at the same time.
-  sol.timer.start(map, 75, function()
+  -- Update rain frames for all drops at once.
+  timers["drop_frame_timer"] = sol.timer.start(map, 75, function()
     for _, drop in pairs(drop_list) do
       drop.frame = (drop.frame + 1) % 3
     end
     return true
-  end)  
+  end)
+  -- Update splash frames for all splashes at once.
+  timers["splash_frame_timer"] = sol.timer.start(map, 100, function()
+    for index, splash in pairs(splash_list) do
+      splash.frame = splash.frame + 1
+      if splash.frame >= 4 then
+        -- Destroy splash after last frame.
+        splash_list[index] = nil
+        num_splashes = num_splashes - 1
+        if num_splashes == 0 then return false end
+      end
+    end
+    return true
+  end)
 end
 
 --[[
@@ -252,7 +250,7 @@ end
 -- Start storm in the current map.
 function rain_manager:start_storm(map)
   -- Initialize drop speed.
-  drop_speed = storm_speed
+  current_drop_speed = storm_speed
   -- Stop rain timers if already started.
   self:stop()
   -- Create lightning surface.
