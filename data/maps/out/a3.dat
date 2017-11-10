@@ -21665,15 +21665,6 @@ wall{
   stops_projectiles = true,
 }
 
-destination{
-  name = "from_hero_house",
-  layer = 0,
-  x = 736,
-  y = 797,
-  direction = 3,
-  default = true,
-}
-
 destructible{
   layer = 0,
   x = 832,
@@ -21789,6 +21780,15 @@ destructible{
   can_be_cut = true,
   damage_on_enemies = 0,
   ground = "grass",
+}
+
+destination{
+  name = "from_hero_house",
+  layer = 0,
+  x = 1176,
+  y = 597,
+  direction = 3,
+  default = true,
 }
 
 tile{

@@ -59,7 +59,7 @@ end)
 -- Create rain if necessary when entering a new map.
 function rain_manager:on_map_changed()
   -- Clear variables.
-  rain_surface = nil
+  rain_surface, flash_surface, draw_flash_surface = nil, nil, nil
   drop_list, splash_list, timers = {}, {}, {}
   num_drops, num_splashes = 0, 0
   -- Get rain state in this world.
@@ -114,7 +114,7 @@ function rain_manager:on_draw(dst_surface)
     -- Draw the surface.
     rain_surface:draw(dst_surface) -- Draw rain.
   end
-  if draw_flash_surface then
+  if draw_flash_surface and flash_surface then
     flash_surface:draw(dst_surface) -- Draw lightning if necessary.
   end
 end
@@ -161,6 +161,9 @@ function rain_manager:stop()
   local t = timers["drop_timer"]
   if t then t:stop() end
   timers["drop_timer"] = nil
+  t = timers["lightning_timer"]
+  if t then t:stop() end
+  timers["lightning_timer"] = nil
   return true
 end
 
@@ -184,11 +187,17 @@ function rain_manager:start_rain_mode(rain_type)
   else
     error("Invalid rain mode.")
   end
-  -- Create rain surface.
+  -- Create rain and lightning surfaces.
   local map = current_map
   local camera = map:get_camera()
   local cx, cy, cw, ch = camera:get_bounding_box()
   rain_surface = sol.surface.create(cw, ch)
+  if rain_type == "storm" then
+    flash_surface = sol.surface.create(cw, ch)
+    flash_surface:fill_color({255, 255, 100})
+    flash_surface:set_opacity(170)
+    self:start_lightnings()
+  else flash_surface = nil end
   -- Initialize drop timer.
   timers["drop_timer"] = sol.timer.start(map, current_drop_delay, function()
     -- Check if there is space for a new drop (there is a max number of drops).
@@ -224,10 +233,13 @@ function rain_manager:start_rain_mode(rain_type)
   end)
 end
 
---[[
--- Start lighnings in the current map.
-local function create_lightnings(map)
+
+-- Start lightnings in the current map.
+function rain_manager:start_lightnings()
   -- Play thunder sound after a random delay.
+  local map = current_map
+  local t = timers["lightning_timer"]
+  if t then t:stop() end
   local lightning_delay = math.random(min_lightning_delay, max_lightning_delay)
   timers["lightning_timer"] = sol.timer.start(map, lightning_delay, function()
     -- Create lightning flash.
@@ -243,36 +255,9 @@ local function create_lightnings(map)
       sol.audio.play_sound(sound_id)
     end)
     -- Prepare next lightning.
-    create_lightnings(map)
-  end)
-end
-
--- Start storm in the current map.
-function rain_manager:start_storm(map)
-  -- Initialize drop speed.
-  current_drop_speed = storm_speed
-  -- Stop rain timers if already started.
-  self:stop()
-  -- Create lightning surface.
-  local camera = map:get_camera()
-  local cx, cy, cw, ch = camera:get_bounding_box()
-  flash_surface = sol.surface.create(cw, ch)
-  flash_surface:fill_color({255, 255, 100})
-  flash_surface:set_opacity(170)
-  -- Initialize menu to draw lightning surface.
-  sol.menu.start(map, rain_manager)
-
-  -- Start timer to draw rain drops.
-  timers["drop_timer"] = sol.timer.start(map, storm_drop_delay, function()
-    -- Create drops on random positions.
-    create_drop(map)
-    -- Repeat loop.
     return true
   end)
-  -- Start lightning effects.
-  create_lightnings(map)
 end
---]]
 
 -- Return rain manager.
 return rain_manager
