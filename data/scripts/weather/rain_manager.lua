@@ -32,15 +32,15 @@ local current_drop_speed
 local drop_min_distance = 40 -- Min possible distance for drop movements.
 local drop_max_distance = 300 -- Max possible distance for drop movements.
 local rain_drop_delay = 10 -- Delay between drops for rain, in milliseconds.
-local storm_drop_delay = 2 -- Delay between drops for storms, in milliseconds.
+local storm_drop_delay = 5 -- Delay between drops for storms, in milliseconds.
 local current_drop_delay
 local min_lightning_delay = 2000
 local max_lightning_delay = 10000
 local rain_surface, flash_surface -- Surfaces to draw rain and lightning flash.
 local draw_flash_surface = false -- Used by the lightning menu.
 local current_drop_index = 0 -- Current index for the next drop to be created.
-local max_drop_number_rain = 200
-local max_drop_number_storm = 500
+local max_drop_number_rain = 120
+local max_drop_number_storm = 300
 local max_drop_number -- Max number of drops per map.
 local drop_list = {} -- List of properties for each drop.
 local splash_list = {} -- List of properties for each splash effect.
@@ -144,15 +144,17 @@ function rain_manager:create_drop(deviation)
   m.map_id = current_map:get_id()
   function m:on_finished()
     local index = drop.index
-    local splash = {x = drop.init_x + drop.x, y = drop.init_y + drop.y}
     drop_list[index] = nil
     num_drops = num_drops - 1
     -- If the map has not changed, add to the splash list.
     if current_map:get_id() == m.map_id then
-      splash.index = index
-      splash.frame = 0
-      splash_list[index] = splash
-      num_splashes = num_splashes + 1
+      if splash_list[index] == nil then
+        local splash = {x = drop.init_x + drop.x, y = drop.init_y + drop.y}
+        splash.index = index
+        splash.frame = 0
+        splash_list[index] = splash
+        num_splashes = num_splashes + 1
+      end
     end
   end
   return drop
@@ -161,12 +163,11 @@ end
 -- Stop rain effects for the current map.
 function rain_manager:stop()
   -- Stop drop rain timers if already started.
-  local t = timers["drop_timer"]
-  if t then t:stop() end
-  timers["drop_timer"] = nil
-  t = timers["lightning_timer"]
-  if t then t:stop() end
-  timers["lightning_timer"] = nil
+  for _, key in pairs({"drop_timer", "lightning_timer"}) do
+    local t = timers[key]
+    if t then t:stop() end
+    timers[key] = nil
+  end
   return true
 end
 

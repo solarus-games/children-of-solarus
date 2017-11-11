@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  --game:set_world_rain_mode("outside", "storm")
 end
 
 -- Event called after the opening transition effect of the map,
