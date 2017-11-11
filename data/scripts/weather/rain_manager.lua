@@ -4,10 +4,12 @@ To add this script to your game, call from game_manager script:
     require("scripts/weather/rain_manager")
 
 The functions here defined are:
-    game:get_rain_type(world)
-    game:set_rain_type(world, rain_type)
+    game:get_rain_mode()
+    game:set_rain_mode(rain_mode)
+    game:get_world_rain_mode(world)
+    game:set_world_rain_mode(world, rain_mode)
 
-Rain types: nil (no rain), "rain", "storm".
+Rain modes: "rain", "storm", nil (no rain).
 --]]
 
 -- This script requires the multi_event script:
@@ -44,15 +46,11 @@ local drop_list = {} -- List of properties for each drop.
 local splash_list = {} -- List of properties for each splash effect.
 local timers = {}
 local num_drops, num_splashes = 0, 0
-local current_map
-
--- Get the rain manager.
-function game_meta:get_rain_manager() return rain_manager end
+local current_map, current_rain_mode
 
 -- Initialize rain on maps when necessary.
 game_meta:register_event("on_map_changed", function(game)
-  local map = game:get_map()
-  current_map = map
+  current_map = game:get_map()
   rain_manager:on_map_changed()
 end)
 
@@ -65,28 +63,29 @@ function rain_manager:on_map_changed()
   -- Get rain state in this world.
   local map = current_map
   local world = map:get_world()
-  local rain_type = map:get_game():get_rain_type(world)
+  local rain_mode = map:get_game():get_world_rain_mode(world)
   -- Start rain if necessary.
-  self:start_rain_mode(rain_type)
+  self:start_rain_mode(rain_mode)
   -- Draw rain: start menu.
   sol.menu.start(map, rain_manager)
 end
 
--- Get/set the raining state for a given world.
-function game_meta:get_rain_type(world)
-  local rain_type = nil 
-  if world then
-    rain_type = self:get_value("rain_state_" .. world)
-  end
-  return rain_enabled and rain_type
+-- Get/set current rain mode in the current map.
+function game_meta:get_rain_mode() return current_rain_mode end
+function game_meta:set_rain_mode(rain_mode)
+  rain_manager:start_rain_mode(rain_mode)
 end
--- Set the raining state for a given world.
-function game_meta:set_rain_type(world, rain_type)
-  -- Update savegame variable.
-  self:set_value("rain_state_" .. world, rain_type)
+-- Get/set the rain mode for a given world.
+function game_meta:get_world_rain_mode(world)
+  local rain_mode 
+  if world then rain_mode = self:get_value("rain_mode_" .. world) end
+  return rain_mode
+end
+function game_meta:set_world_rain_mode(world, rain_mode)
+  self:set_value("rain_mode_" .. world, rain_mode)
   -- Check if rain is necessary: if we are in that world and rain is needed.  
   local current_world = self:get_map():get_world()
-  local rain_needed = (current_world == world) and rain_enabled and rain_type
+  if current_world == world then rain_manager:start_rain_mode(rain_mode) end
 end
 
 -- Define on_draw event for the rain_manager menu (if it is initialized).
@@ -141,17 +140,21 @@ function rain_manager:create_drop(deviation)
   local random_distance = math.random(drop_min_distance, drop_max_distance)
   m:set_max_distance(random_distance)
   -- Callback: create splash effect.
-  m:start(drop, function()
+  m:start(drop)
+  m.map_id = current_map:get_id()
+  function m:on_finished()
     local index = drop.index
     local splash = {x = drop.init_x + drop.x, y = drop.init_y + drop.y}
     drop_list[index] = nil
     num_drops = num_drops - 1
-    if num_drops == 0 then timers["drop_frame_timer"]:stop() end
-    splash.index = index
-    splash.frame = 0
-    splash_list[index] = splash
-    num_splashes = num_splashes + 1
-  end)
+    -- If the map has not changed, add to the splash list.
+    if current_map:get_id() == m.map_id then
+      splash.index = index
+      splash.frame = 0
+      splash_list[index] = splash
+      num_splashes = num_splashes + 1
+    end
+  end
   return drop
 end
 
@@ -168,19 +171,21 @@ function rain_manager:stop()
 end
 
 -- Start rain in the current map.
-function rain_manager:start_rain_mode(rain_type)
-  -- Reset drop timer.
+function rain_manager:start_rain_mode(rain_mode)
+  -- Reset drop timer. Do nothing unless necessary.
+  if current_rain_mode == rain_mode then return end
   self:stop()
-  if rain_type == nil then return end
+  current_rain_mode = rain_mode
+  if rain_mode == nil or (not rain_enabled) then return end
   -- Reset other timers.
   for _, t in pairs(timers) do t:stop() end
   -- Initialize parameters.
   local drop_deviation = 0
-  if rain_type == "rain" then
+  if rain_mode == "rain" then
     current_drop_speed = rain_speed
     current_drop_delay = rain_drop_delay
     max_drop_number = max_drop_number_rain
-  elseif rain_type == "storm" then
+  elseif rain_mode == "storm" then
     current_drop_speed = storm_speed
     current_drop_delay = storm_drop_delay
     max_drop_number = max_drop_number_storm
@@ -192,7 +197,7 @@ function rain_manager:start_rain_mode(rain_type)
   local camera = map:get_camera()
   local cx, cy, cw, ch = camera:get_bounding_box()
   rain_surface = sol.surface.create(cw, ch)
-  if rain_type == "storm" then
+  if rain_mode == "storm" then
     flash_surface = sol.surface.create(cw, ch)
     flash_surface:fill_color({255, 255, 100})
     flash_surface:set_opacity(170)
@@ -203,7 +208,7 @@ function rain_manager:start_rain_mode(rain_type)
     -- Check if there is space for a new drop (there is a max number of drops).
     if drop_list[current_drop_index] == nil then
       -- Random angle deviation in case of storm.
-      if rain_type == "storm" then
+      if rain_mode == "storm" then
         drop_deviation = math.random(-1, 1) * math.random() * math.pi / 8
       end
       -- Create drops at random positions.
@@ -226,11 +231,17 @@ function rain_manager:start_rain_mode(rain_type)
         -- Destroy splash after last frame.
         splash_list[index] = nil
         num_splashes = num_splashes - 1
-        if num_splashes == 0 then return false end
+        if num_splashes == 0 and current_rain_mode == nil then
+          return false
+        end
       end
     end
     return true
   end)
+  -- Do not suspend rain when paused.
+  timers["drop_timer"]:set_suspended_with_map(false)
+  timers["drop_frame_timer"]:set_suspended_with_map(false)
+  timers["splash_frame_timer"]:set_suspended_with_map(false)
 end
 
 
@@ -257,6 +268,8 @@ function rain_manager:start_lightnings()
     -- Prepare next lightning.
     return true
   end)
+  -- Do not suspend timer when paused.
+  timers["lightning_timer"]:set_suspended_with_map(false)
 end
 
 -- Return rain manager.
