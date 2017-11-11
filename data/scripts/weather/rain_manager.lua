@@ -130,7 +130,9 @@ function rain_manager:create_drop(deviation)
   drop.init_y = cy + ch * math.random()
   drop.x, drop.y, drop.frame = 0, 0, 0
   drop.index = current_drop_index
+  drop.map_id = current_map:get_id()
   current_drop_index = (current_drop_index + 1) % max_drop_number
+  if drop_list[drop.index] ~= nil then return end
   drop_list[drop.index] = drop
   num_drops = num_drops + 1
   -- Initialize drop movement.
@@ -141,23 +143,31 @@ function rain_manager:create_drop(deviation)
   m:set_max_distance(random_distance)
   -- Callback: create splash effect.
   m:start(drop)
-  m.map_id = current_map:get_id()
+  m.index = drop.index
   function m:on_finished()
-    local index = drop.index
-    drop_list[index] = nil
-    num_drops = num_drops - 1
-    -- If the map has not changed, add to the splash list.
-    if current_map:get_id() == m.map_id then
-      if splash_list[index] == nil then
-        local splash = {x = drop.init_x + drop.x, y = drop.init_y + drop.y}
-        splash.index = index
-        splash.frame = 0
-        splash_list[index] = splash
-        num_splashes = num_splashes + 1
-      end
+    rain_manager:create_splash(m.index)
+  end
+  return true
+end
+
+-- Create splash effect and put it in the list.
+function rain_manager:create_splash(index)
+  -- Remove associated drop.
+  local drop = drop_list[index]
+  if drop == nil then return end
+  drop_list[index] = nil
+  num_drops = num_drops - 1
+  -- If the map has not changed, add to the splash list.
+  if current_map:get_id() == drop.map_id then
+    if splash_list[index] == nil then
+      -- Create splash.
+      local splash = {x = drop.init_x + drop.x, y = drop.init_y + drop.y}
+      splash.index = index
+      splash.frame = 0
+      splash_list[index] = splash
+      num_splashes = num_splashes + 1
     end
   end
-  return drop
 end
 
 -- Stop rain effects for the current map.
@@ -245,32 +255,35 @@ function rain_manager:start_rain_mode(rain_mode)
   timers["splash_frame_timer"]:set_suspended_with_map(false)
 end
 
-
 -- Start lightnings in the current map.
 function rain_manager:start_lightnings()
   -- Play thunder sound after a random delay.
   local map = current_map
   local t = timers["lightning_timer"]
   if t then t:stop() end
-  local lightning_delay = math.random(min_lightning_delay, max_lightning_delay)
-  timers["lightning_timer"] = sol.timer.start(map, lightning_delay, function()
-    -- Create lightning flash.
-    draw_flash_surface = true
-    sol.timer.start(map, 150, function()
-      draw_flash_surface = false -- Stop drawing lightning flash.
+  local function create_next_lightning()
+    local lightning_delay = math.random(min_lightning_delay, max_lightning_delay)
+    timers["lightning_timer"] = sol.timer.start(map, lightning_delay, function()
+      -- Create lightning flash.
+      draw_flash_surface = true
+      sol.timer.start(map, 150, function()
+        draw_flash_surface = false -- Stop drawing lightning flash.
+      end)
+      -- Play random thunder sound after a delay.
+      local thunder_delay = math.random(200, 1500)
+      sol.timer.start(map, thunder_delay, function()
+        local random_index = math.random(1, #thunder_sounds)
+        local sound_id = thunder_sounds[random_index]
+        sol.audio.play_sound(sound_id)
+      end)
+      -- Start next loop of lightnings.
+      create_next_lightning()
     end)
-    -- Play random thunder sound after a delay.
-    local thunder_delay = math.random(200, 1500)
-    sol.timer.start(map, thunder_delay, function()
-      local random_index = math.random(1, #thunder_sounds)
-      local sound_id = thunder_sounds[random_index]
-      sol.audio.play_sound(sound_id)
-    end)
-    -- Prepare next lightning.
-    return true
-  end)
-  -- Do not suspend timer when paused.
-  timers["lightning_timer"]:set_suspended_with_map(false)
+    -- Do not suspend timer when paused.
+    timers["lightning_timer"]:set_suspended_with_map(false)
+  end
+  -- Start loop of lightnings.
+  create_next_lightning()
 end
 
 -- Return rain manager.
