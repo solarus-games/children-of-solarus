@@ -41,9 +41,9 @@ local current_drop_delay
 local min_lightning_delay = 3000
 local max_lightning_delay = 15000
 local rain_surface, flash_surface, dark_surface -- Surfaces.
-local min_darkness, max_darkness = 120, 170 -- Opacity during storm.
+local min_darkness, max_darkness = 120, 200 -- Opacity during storm.
 local current_darkness = 0 -- Opacity (transparent = 0).
-local color_darkness = {120, 120, 200} -- Used for full darkness.
+local color_darkness = {150, 150, 240} -- Used for full darkness.
 local draw_flash_surface = false -- Used by the lightning menu.
 local current_drop_index = 0 -- Current index for the next drop to be created.
 local max_drop_number_rain = 120
