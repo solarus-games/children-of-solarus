@@ -45,6 +45,33 @@ teletransporter{
 
 tile{
   layer = 0,
+  x = 520,
+  y = 0,
+  width = 760,
+  height = 384,
+  pattern = "GrassPlain",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 120,
+  width = 8,
+  height = 48,
+  pattern = "MtShadowInnerBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 128,
+  width = 8,
+  height = 48,
+  pattern = "MtInnerBorder4",
+}
+
+tile{
+  layer = 0,
   x = 0,
   y = 256,
   width = 296,
@@ -346,15 +373,6 @@ tile{
   y = 288,
   width = 80,
   height = 96,
-  pattern = "GrassPlain",
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 0,
-  width = 760,
-  height = 384,
   pattern = "GrassPlain",
 }
 
@@ -702,7 +720,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
+  x = 888,
   y = 64,
   width = 8,
   height = 8,
@@ -1035,7 +1053,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
+  x = 888,
   y = 72,
   width = 8,
   height = 8,
@@ -1080,7 +1098,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 888,
+  x = 896,
   y = 88,
   width = 8,
   height = 8,
@@ -4325,24 +4343,6 @@ tile{
   width = 128,
   height = 16,
   pattern = "fence_post",
-}
-
-tile{
-  layer = 0,
-  x = 1072,
-  y = 584,
-  width = 32,
-  height = 16,
-  pattern = "Ground_castle_golden_center",
-}
-
-tile{
-  layer = 0,
-  x = 912,
-  y = 600,
-  width = 368,
-  height = 16,
-  pattern = "Ground_castle_golden_center",
 }
 
 tile{
@@ -8766,7 +8766,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
+  x = 888,
   y = 56,
   width = 8,
   height = 8,
@@ -8775,7 +8775,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
+  x = 888,
   y = 64,
   width = 8,
   height = 16,
@@ -8784,7 +8784,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
+  x = 888,
   y = 80,
   width = 8,
   height = 8,
@@ -8793,7 +8793,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
+  x = 888,
   y = 48,
   width = 8,
   height = 8,
@@ -8802,7 +8802,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 904,
+  x = 896,
   y = 48,
   width = 8,
   height = 8,
@@ -8811,38 +8811,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
+  x = 888,
   y = 88,
   width = 8,
   height = 8,
   pattern = "MtShadowBorder5",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder2L",
-}
-
-tile{
-  layer = 0,
-  x = 1064,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder2R",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 136,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder6R",
 }
 
 tile{
@@ -16398,7 +16371,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 888,
+  x = 896,
   y = 80,
   width = 8,
   height = 8,
@@ -16457,15 +16430,6 @@ tile{
   width = 48,
   height = 32,
   pattern = "Wood_tree_trunk_big_middle",
-}
-
-tile{
-  layer = 0,
-  x = 1064,
-  y = 32,
-  width = 64,
-  height = 32,
-  pattern = "Wood_tree_green_small",
 }
 
 tile{
@@ -19926,15 +19890,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 872,
-  y = 184,
-  width = 8,
-  height = 64,
-  pattern = "fence_post2",
-}
-
-tile{
-  layer = 0,
   x = 880,
   y = 200,
   width = 56,
@@ -20043,29 +19998,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 872,
-  y = 248,
-  width = 8,
-  height = 16,
-  pattern = "fence_post",
-}
-
-tile{
-  layer = 0,
   x = 832,
-  y = 280,
+  y = 312,
   width = 24,
   height = 16,
   pattern = "fence_wall",
-}
-
-tile{
-  layer = 0,
-  x = 840,
-  y = 280,
-  width = 8,
-  height = 16,
-  pattern = "fence_post",
 }
 
 tile{
@@ -20109,17 +20046,8 @@ tile{
   x = 824,
   y = 296,
   width = 8,
-  height = 48,
+  height = 32,
   pattern = "fence_post2",
-}
-
-tile{
-  layer = 0,
-  x = 824,
-  y = 344,
-  width = 8,
-  height = 16,
-  pattern = "fence_post",
 }
 
 tile{
@@ -20205,29 +20133,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1056,
-  y = 104,
-  width = 8,
-  height = 48,
-  pattern = "fence_post2",
-}
-
-tile{
-  layer = 0,
   x = 1032,
   y = 200,
   width = 8,
   height = 16,
   pattern = "fence_wall",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 152,
-  width = 8,
-  height = 16,
-  pattern = "fence_post",
 }
 
 tile{
@@ -20295,18 +20205,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1056,
-  y = 184,
-  width = 16,
-  height = 16,
-  pattern = "MtPeak6R",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
+  x = 1072,
   y = 200,
-  width = 64,
+  width = 48,
   height = 16,
   pattern = "MtBorder6R",
 }
@@ -20323,17 +20224,8 @@ tile{
 tile{
   layer = 0,
   x = 1072,
-  y = 184,
-  width = 16,
-  height = 16,
-  pattern = "MtPeak6R",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
   y = 216,
-  width = 64,
+  width = 48,
   height = 8,
   pattern = "MtShadowBorder6",
 }
@@ -20385,15 +20277,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1040,
-  y = 176,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder4",
-}
-
-tile{
-  layer = 0,
   x = 1136,
   y = 152,
   width = 8,
@@ -20403,38 +20286,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1032,
-  y = 160,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder4",
-}
-
-tile{
-  layer = 0,
   x = 1136,
   y = 160,
   width = 8,
   height = 16,
   pattern = "MtBorder0",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 184,
-  width = 16,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 176,
-  width = 8,
-  height = 16,
-  pattern = "MtBorderUpper4Bis",
 }
 
 tile{
@@ -20493,15 +20349,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1048,
-  y = 168,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
   x = 1120,
   y = 168,
   width = 8,
@@ -20516,15 +20363,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "MtBorderUpper0Bis",
-}
-
-tile{
-  layer = 0,
-  x = 1088,
-  y = 184,
-  width = 16,
-  height = 16,
-  pattern = "MtWall6R",
 }
 
 tile{
@@ -20556,15 +20394,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1048,
-  y = 216,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder6L",
-}
-
-tile{
-  layer = 0,
   x = 1120,
   y = 208,
   width = 8,
@@ -20574,110 +20403,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1072,
-  y = 184,
-  width = 32,
-  height = 8,
-  pattern = "MtCaveCeiling",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder5Small",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 184,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder5",
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 152,
-  width = 16,
-  height = 16,
-  pattern = "MtInnerBorder5",
-}
-
-tile{
-  layer = 0,
   x = 1120,
   y = 152,
   width = 16,
   height = 16,
   pattern = "MtInnerBorder7",
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 192,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder5Small",
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder5",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 168,
-  width = 16,
-  height = 16,
-  pattern = "MtInnerBorder5",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 160,
-  width = 8,
-  height = 8,
-  pattern = "MtInnerBorder5Bis",
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 168,
-  width = 8,
-  height = 16,
-  pattern = "MtBorderUpper4Bis",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder5Small",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 192,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder4",
 }
 
 tile{
@@ -20691,367 +20421,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 920,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "MtPeak6R",
-}
-
-tile{
-  layer = 0,
-  x = 936,
-  y = 80,
-  width = 96,
-  height = 8,
-  pattern = "MtInnerBorder6",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "MtPeak6R",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 120,
-  width = 16,
-  height = 16,
-  pattern = "MtBorder7",
-}
-
-tile{
-  layer = 0,
-  x = 936,
-  y = 120,
-  width = 96,
-  height = 16,
-  pattern = "MtBorder6R",
-}
-
-tile{
-  layer = 0,
-  x = 936,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "MtWall6R",
-}
-
-tile{
-  layer = 0,
-  x = 952,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "MtWall6R",
-}
-
-tile{
-  layer = 0,
-  x = 968,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "MtPeak6R",
-}
-
-tile{
-  layer = 0,
-  x = 1016,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "MtWall6R",
-}
-
-tile{
-  layer = 0,
-  x = 936,
-  y = 136,
-  width = 96,
-  height = 8,
-  pattern = "MtShadowBorder6",
-}
-
-tile{
-  layer = 0,
-  x = 936,
-  y = 88,
-  width = 96,
-  height = 16,
-  pattern = "MtPeakBorder6R",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder0",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 72,
-  width = 8,
-  height = 16,
-  pattern = "MtBorderUpper0Bis",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 96,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder0",
-}
-
-tile{
-  layer = 0,
-  x = 904,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder4",
-}
-
-tile{
-  layer = 0,
-  x = 920,
-  y = 104,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder4",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 88,
-  width = 16,
-  height = 16,
-  pattern = "MtPeak6R",
-}
-
-tile{
-  layer = 0,
-  x = 1064,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder1Small",
-}
-
-tile{
-  layer = 0,
-  x = 920,
-  y = 88,
-  width = 16,
-  height = 16,
-  pattern = "MtPeak6L",
-}
-
-tile{
-  layer = 0,
-  x = 904,
-  y = 96,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder5Small",
-}
-
-tile{
-  layer = 0,
-  x = 1064,
-  y = 64,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder0",
-}
-
-tile{
-  layer = 0,
-  x = 920,
-  y = 104,
-  width = 16,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 904,
-  y = 64,
-  width = 8,
-  height = 16,
-  pattern = "MtBorderUpper4Bis",
-}
-
-tile{
-  layer = 0,
-  x = 904,
-  y = 80,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 104,
-  width = 16,
-  height = 8,
-  pattern = "MtPeak7Small",
-}
-
-tile{
-  layer = 0,
-  x = 1064,
-  y = 80,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder7Small",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 96,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder7Small",
-}
-
-tile{
-  layer = 0,
-  x = 904,
-  y = 104,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder5",
-}
-
-tile{
-  layer = 0,
-  x = 1064,
-  y = 88,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder7",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 104,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder7",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 72,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak7Small",
-}
-
-tile{
-  layer = 0,
-  x = 920,
-  y = 120,
-  width = 16,
-  height = 16,
-  pattern = "MtBorder5",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "MtBorderUpper0Bis",
-}
-
-tile{
-  layer = 0,
   x = 912,
-  y = 104,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder5Small",
-}
-
-tile{
-  layer = 0,
-  x = 912,
-  y = 112,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder5",
-}
-
-tile{
-  layer = 0,
-  x = 912,
-  y = 88,
-  width = 8,
-  height = 16,
-  pattern = "MtBorder4",
-}
-
-tile{
-  layer = 0,
-  x = 912,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "MtBorderUpper4Bis",
-}
-
-tile{
-  layer = 0,
-  x = 912,
-  y = 88,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 912,
-  y = 72,
-  width = 8,
-  height = 8,
-  pattern = "MtPeak5Small",
-}
-
-tile{
-  layer = 0,
-  x = 984,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "MtWall6R",
-}
-
-tile{
-  layer = 0,
-  x = 1000,
   y = 104,
   width = 16,
   height = 16,
@@ -21061,6 +20431,231 @@ tile{
 tile{
   layer = 0,
   x = 928,
+  y = 80,
+  width = 96,
+  height = 8,
+  pattern = "MtInnerBorder6",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 120,
+  width = 96,
+  height = 16,
+  pattern = "MtBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 136,
+  width = 96,
+  height = 8,
+  pattern = "MtShadowBorder6",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 88,
+  width = 96,
+  height = 16,
+  pattern = "MtPeakBorder6R",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6L",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "MtBorder5Small",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "MtPeak5Small",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "MtWall6R",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6R",
+}
+
+tile{
+  layer = 0,
+  x = 920,
   y = 136,
   width = 8,
   height = 8,
@@ -21069,25 +20664,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1048,
-  y = 120,
-  width = 8,
-  height = 8,
-  pattern = "MtShadowBorder7",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 112,
-  width = 8,
-  height = 8,
-  pattern = "MtBorder7Small",
-}
-
-tile{
-  layer = 0,
-  x = 944,
+  x = 936,
   y = 96,
   width = 32,
   height = 40,
@@ -21096,7 +20673,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 976,
+  x = 968,
   y = 96,
   width = 16,
   height = 16,
@@ -21105,7 +20682,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 992,
+  x = 984,
   y = 96,
   width = 32,
   height = 40,
@@ -21114,7 +20691,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 976,
+  x = 968,
   y = 112,
   width = 16,
   height = 24,
@@ -21123,7 +20700,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 920,
+  x = 912,
   y = 72,
   width = 16,
   height = 16,
@@ -21132,7 +20709,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 920,
+  x = 912,
   y = 64,
   width = 8,
   height = 8,
@@ -21141,7 +20718,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 904,
+  x = 896,
   y = 56,
   width = 16,
   height = 16,
@@ -21150,29 +20727,164 @@ tile{
 
 tile{
   layer = 0,
-  x = 1032,
-  y = 72,
+  x = 1056,
+  y = 200,
   width = 16,
   height = 16,
-  pattern = "MtInnerBorder7",
+  pattern = "MtBorder5",
 }
 
 tile{
   layer = 0,
-  x = 1048,
-  y = 56,
+  x = 1056,
+  y = 184,
   width = 16,
   height = 16,
-  pattern = "MtInnerBorder7",
+  pattern = "MtPeak5",
 }
 
 tile{
   layer = 0,
   x = 1040,
-  y = 64,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 152,
+  width = 8,
+  height = 32,
+  pattern = "MtBorder4",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "MtBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "MtPeakBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 152,
+  width = 8,
+  height = 32,
+  pattern = "MtBorderUpper4Bis",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 216,
   width = 8,
   height = 8,
-  pattern = "MtInnerBorder7Bis",
+  pattern = "MtShadowBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "MtShadowBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder5Bis",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "MtInnerBorder5Bis",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak5",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "MtPeak6L",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "GrassPlain",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "MtInnerBorder5",
 }
 
 tile{
@@ -21181,51 +20893,1186 @@ tile{
   y = 152,
   width = 8,
   height = 8,
-  pattern = "MtBorder3Small",
+  pattern = "MtShadowBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 32,
+  width = 32,
+  height = 32,
+  pattern = "Wood_tree_green_small",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 32,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_right",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 32,
+  width = 8,
+  height = 56,
+  pattern = "Wood_tree_trunk_big_left",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 32,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_trunk_big_up",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 40,
+  width = 48,
+  height = 32,
+  pattern = "Wood_tree_trunk_big_middle",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 72,
+  width = 48,
+  height = 16,
+  pattern = "Wood_tree_trunk_big_down",
 }
 
 tile{
   layer = 0,
   x = 1032,
-  y = 120,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "Wood_tree_root_up",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 88,
   width = 8,
   height = 8,
-  pattern = "MtShadowBorder2L",
+  pattern = "Wood_tree_root_left",
 }
 
 tile{
   layer = 0,
   x = 1040,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "Wood_tree_root_right",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 104,
+  width = 32,
+  height = 32,
+  pattern = "Wood_tree_green_small",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 248,
+  width = 32,
+  height = 16,
+  pattern = "below_plant",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 184,
+  width = 32,
+  height = 16,
+  pattern = "MtPeakBorder6L",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 240,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 280,
+  width = 24,
+  height = 16,
+  pattern = "fence_wall",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 312,
+  width = 8,
+  height = 16,
+  pattern = "fence_post",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 312,
+  width = 8,
+  height = 16,
+  pattern = "fence_post",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 296,
+  width = 8,
+  height = 16,
+  pattern = "fence_post",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 280,
+  width = 8,
+  height = 16,
+  pattern = "fence_post2",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 280,
+  width = 8,
+  height = 16,
+  pattern = "fence_post",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 184,
+  width = 8,
+  height = 96,
+  pattern = "fence_post2",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 328,
+  width = 8,
+  height = 16,
+  pattern = "fence_post",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 288,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 376,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 264,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_right",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "flower_yellow",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 288,
+  width = 8,
+  height = 8,
+  pattern = "flower_yellow",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 288,
+  width = 8,
+  height = 8,
+  pattern = "flower_yellow",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "flower_yellow",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 264,
+  width = 8,
+  height = 8,
+  pattern = "flower_purple",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "flower_purple",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "flower_purple",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "Gnd_sand",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 168,
+  width = 32,
+  height = 32,
+  pattern = "Gnd_sand",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 144,
+  width = 16,
+  height = 8,
+  pattern = "Gnd_grassedge6",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 152,
+  width = 8,
+  height = 16,
+  pattern = "Gnd_grassedge0",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 152,
+  width = 8,
+  height = 16,
+  pattern = "Gnd_grassedge4",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 176,
+  width = 8,
+  height = 16,
+  pattern = "Gnd_grassedge0",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 176,
+  width = 8,
+  height = 16,
+  pattern = "Gnd_grassedge4",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 192,
+  width = 16,
+  height = 8,
+  pattern = "Gnd_grassedge2",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner3",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner5",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge1",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grassedge5",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner1",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner5",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_grass_bigcorner7",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "Grass_big",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 304,
+  width = 32,
+  height = 16,
+  pattern = "Grass_big",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "Grass_big",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 280,
+  width = 32,
+  height = 8,
+  pattern = "Grass_border2",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = "Grass_border4",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = "Grass_border0",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 296,
+  width = 16,
+  height = 8,
+  pattern = "Grass_border2",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "Grass_border6",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 304,
+  width = 8,
+  height = 16,
+  pattern = "Grass_border0",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 304,
+  width = 8,
+  height = 32,
+  pattern = "Grass_border4",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 320,
+  width = 16,
+  height = 8,
+  pattern = "Grass_border6",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "Grass_border0",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 336,
+  width = 16,
+  height = 8,
+  pattern = "Grass_border6",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border3",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border1",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 296,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border1",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border5",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border7",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border5",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border7",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 232,
+  width = 32,
+  height = 16,
+  pattern = "Grass_big",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 248,
+  width = 16,
+  height = 32,
+  pattern = "Grass_big",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 224,
+  width = 32,
+  height = 8,
+  pattern = "Grass_border2",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 232,
+  width = 8,
+  height = 16,
+  pattern = "Grass_border4",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 232,
+  width = 8,
+  height = 48,
+  pattern = "Grass_border0",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "Grass_border6",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 248,
+  width = 8,
+  height = 32,
+  pattern = "Grass_border4",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "Grass_border6",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border3",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border1",
+}
+
+tile{
+  layer = 0,
+  x = 888,
+  y = 248,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border5",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border5",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 280,
+  width = 8,
+  height = 8,
+  pattern = "Grass_border7",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 840,
+  y = 288,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_leaves_left",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 728,
   y = 120,
   width = 8,
   height = 8,
-  pattern = "MtShadowBorder2R",
+  pattern = "Gnd_smallrock1",
 }
 
-destructible{
-  layer = 0,
-  x = 792,
-  y = 709,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_3",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
+tile{
   layer = 0,
   x = 808,
-  y = 709,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_1",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock1",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 64,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_smallrock3",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 608,
+  width = 400,
+  height = 16,
+  pattern = "Ground_rockyground",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 592,
+  width = 48,
+  height = 16,
+  pattern = "Ground_rockyground",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 560,
+  width = 16,
+  height = 112,
+  pattern = "Ground_rockyground",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 576,
+  width = 96,
+  height = 16,
+  pattern = "Ground_rockyground",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 480,
+  width = 16,
+  height = 96,
+  pattern = "Ground_rockyground",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 592,
+  width = 32,
+  height = 16,
+  pattern = "Ground_rockyground",
 }
 
 destructible{
@@ -21233,7 +22080,7 @@ destructible{
   x = 648,
   y = 709,
   treasure_name = "random",
-  sprite = "destructibles/grass_green_3",
+  sprite = "destructibles/grass_blue",
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
@@ -21246,7 +22093,33 @@ destructible{
   x = 664,
   y = 709,
   treasure_name = "random",
-  sprite = "destructibles/grass_green_1",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 709,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 808,
+  y = 709,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
   destruction_sound = "bush",
   weight = -1,
   can_be_cut = true,
@@ -21727,201 +22600,6 @@ chest{
 
 destructible{
   layer = 0,
-  x = 512,
-  y = 277,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_3",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 544,
-  y = 261,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 512,
-  y = 293,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_5",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 544,
-  y = 277,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 528,
-  y = 261,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_3",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 528,
-  y = 277,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 528,
-  y = 293,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 544,
-  y = 293,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 560,
-  y = 277,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 544,
-  y = 309,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 560,
-  y = 309,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_7",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 528,
-  y = 309,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_5",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 560,
-  y = 293,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 576,
-  y = 293,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_7",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 576,
-  y = 277,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_1",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
   x = 856,
   y = 717,
   sprite = "destructibles/cabbagge_green",
@@ -22214,266 +22892,6 @@ wall{
 
 destructible{
   layer = 0,
-  x = 664,
-  y = 725,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 680,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 696,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 712,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 712,
-  y = 757,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 696,
-  y = 757,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 728,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 744,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 760,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 760,
-  y = 757,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 744,
-  y = 757,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 728,
-  y = 757,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 792,
-  y = 725,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 776,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 776,
-  y = 757,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_7",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 680,
-  y = 757,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_5",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 712,
-  y = 725,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_3",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 728,
-  y = 725,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_1",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 664,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_5",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 792,
-  y = 741,
-  treasure_name = "random",
-  sprite = "destructibles/grass_green_7",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
   x = 680,
   y = 725,
   sprite = "destructibles/cabbagge_green",
@@ -22542,7 +22960,7 @@ destination{
 destructible{
   layer = 0,
   x = 544,
-  y = 357,
+  y = 277,
   treasure_name = "random",
   sprite = "destructibles/grass_blue",
   destruction_sound = "bush",
@@ -22554,21 +22972,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 560,
-  y = 373,
-  treasure_name = "random",
-  sprite = "destructibles/grass_blue_7",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
   x = 528,
-  y = 373,
+  y = 309,
   treasure_name = "random",
   sprite = "destructibles/grass_blue_5",
   destruction_sound = "bush",
@@ -22580,21 +22985,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 528,
-  y = 341,
-  treasure_name = "random",
-  sprite = "destructibles/grass_blue_3",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 560,
-  y = 341,
+  x = 576,
+  y = 277,
   treasure_name = "random",
   sprite = "destructibles/grass_blue_1",
   destruction_sound = "bush",
@@ -22606,47 +22998,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 560,
-  y = 357,
-  treasure_name = "random",
-  sprite = "destructibles/grass_blue",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 528,
-  y = 357,
-  treasure_name = "random",
-  sprite = "destructibles/grass_blue",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
   x = 544,
-  y = 373,
-  treasure_name = "random",
-  sprite = "destructibles/grass_blue",
-  destruction_sound = "bush",
-  weight = -1,
-  can_be_cut = true,
-  damage_on_enemies = 0,
-  ground = "grass",
-}
-
-destructible{
-  layer = 0,
-  x = 544,
-  y = 341,
+  y = 261,
   treasure_name = "random",
   sprite = "destructibles/grass_blue",
   destruction_sound = "bush",
@@ -22789,6 +23142,409 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 48,
+}
+
+destructible{
+  layer = 0,
+  x = 560,
+  y = 277,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 560,
+  y = 293,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 544,
+  y = 293,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 544,
+  y = 309,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 528,
+  y = 293,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 528,
+  y = 277,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 576,
+  y = 293,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_7",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 560,
+  y = 309,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_7",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 512,
+  y = 293,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_5",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 512,
+  y = 277,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_3",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 528,
+  y = 261,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_3",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 664,
+  y = 725,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 680,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 696,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 696,
+  y = 757,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 712,
+  y = 757,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 712,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 728,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 728,
+  y = 757,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 744,
+  y = 757,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 744,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 760,
+  y = 757,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 725,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 680,
+  y = 757,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_5",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 728,
+  y = 725,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_1",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 712,
+  y = 725,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_3",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 664,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_5",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 757,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_7",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
+}
+
+destructible{
+  layer = 0,
+  x = 792,
+  y = 741,
+  treasure_name = "random",
+  sprite = "destructibles/grass_blue_7",
+  destruction_sound = "bush",
+  weight = -1,
+  can_be_cut = true,
+  damage_on_enemies = 0,
+  ground = "grass",
 }
 
 tile{
@@ -25666,6 +26422,42 @@ tile{
   layer = 2,
   x = -8,
   y = 320,
+  width = 48,
+  height = 8,
+  pattern = "Wood_tree_green_low",
+}
+
+tile{
+  layer = 2,
+  x = 1016,
+  y = 16,
+  width = 48,
+  height = 56,
+  pattern = "Wood_tree_green_center",
+}
+
+tile{
+  layer = 2,
+  x = 1064,
+  y = 24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_right",
+}
+
+tile{
+  layer = 2,
+  x = 1008,
+  y = 24,
+  width = 8,
+  height = 40,
+  pattern = "Wood_tree_green_left",
+}
+
+tile{
+  layer = 2,
+  x = 1016,
+  y = 72,
   width = 48,
   height = 8,
   pattern = "Wood_tree_green_low",

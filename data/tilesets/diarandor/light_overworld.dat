@@ -7576,6 +7576,18 @@ border_set{
 }
 
 border_set{
+  id = "dark_sand_to_any",
+  pattern_0 = "Gnd_darksand_0",
+  pattern_1 = "Gnd_darksand_2",
+  pattern_2 = "Gnd_darksand_4",
+  pattern_3 = "Gnd_darksand_6",
+  pattern_4 = "Gnd_darksand_1",
+  pattern_5 = "Gnd_darksand_3",
+  pattern_6 = "Gnd_darksand_5",
+  pattern_7 = "Gnd_darksand_7",
+}
+
+border_set{
   id = "deep_water_to_shallow_water",
   inner = true,
   pattern_0 = "Water_shallowborder_4",
@@ -7598,6 +7610,22 @@ border_set{
   pattern_5 = "Grass_border3",
   pattern_6 = "Grass_border5",
   pattern_7 = "Grass_border7",
+}
+
+border_set{
+  id = "ground_castle_golden",
+  pattern_0 = "Ground_castle_golden_0",
+  pattern_1 = "Ground_castle_golden_2",
+  pattern_2 = "Ground_castle_golden_4",
+  pattern_3 = "Ground_castle_golden_6",
+  pattern_4 = "Ground_castle_golden_1",
+  pattern_5 = "Ground_castle_golden_3",
+  pattern_6 = "Ground_castle_golden_5",
+  pattern_7 = "Ground_castle_golden_7",
+  pattern_8 = "Ground_castle_golden_bis1",
+  pattern_9 = "Ground_castle_golden_bis3",
+  pattern_10 = "Ground_castle_golden_bis5",
+  pattern_11 = "Ground_castle_golden_bis7",
 }
 
 border_set{
@@ -7630,6 +7658,18 @@ border_set{
   pattern_9 = "roof_red_circle_7",
   pattern_10 = "roof_red_circle_1",
   pattern_11 = "roof_red_circle_3",
+}
+
+border_set{
+  id = "sand_to_any",
+  pattern_0 = "Gnd_sand_0",
+  pattern_1 = "Gnd_sand_2",
+  pattern_2 = "Gnd_sand_4",
+  pattern_3 = "Gnd_sand_6",
+  pattern_4 = "Gnd_sand_1",
+  pattern_5 = "Gnd_sand_3",
+  pattern_6 = "Gnd_sand_5",
+  pattern_7 = "Gnd_sand_7",
 }
 
 border_set{
