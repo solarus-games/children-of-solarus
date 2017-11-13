@@ -1,0 +1,11 @@
+animation{
+  name = "fountain",
+  src_image = "entities/fountain.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 128, y = 0, frame_width = 64, frame_height = 56, origin_x = 32, origin_y = 48, num_frames = 6, num_columns = 2 },
+    { x = 80, y = 168, frame_width = 64, frame_height = 24, origin_x = 32, origin_y = 16 },
+    { x = 0, y = 0, frame_width = 64, frame_height = 56, origin_x = 32, origin_y = 48, num_frames = 6, num_columns = 2 },
+  },
+}

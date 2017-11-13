@@ -21791,6 +21791,55 @@ destination{
   default = true,
 }
 
+wall{
+  layer = 0,
+  x = 872,
+  y = 640,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 880,
+  y = 648,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 872,
+  y = 632,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 896,
+  y = 653,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/fountain",
+}
+
 tile{
   layer = 1,
   x = 280,
@@ -23652,6 +23701,16 @@ destructible{
   sprite = "destructibles/cabbagge_violet",
   destruction_sound = "bush",
   can_be_cut = true,
+}
+
+custom_entity{
+  layer = 1,
+  x = 896,
+  y = 653,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/fountain",
 }
 
 tile{

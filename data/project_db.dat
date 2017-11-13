@@ -117,6 +117,7 @@ sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
+sprite{ id = "entities/fountain", description = "Fountain" }
 sprite{ id = "entities/fresco", description = "Intro fresco" }
 sprite{ id = "entities/frozen_door", description = "Frozen door" }
 sprite{ id = "entities/grass", description = "Grass" }
