@@ -10,3 +10,140 @@ properties{
   music = "eduardo/overworld",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 1280,
+  height = 960,
+  pattern = "GrassPlain",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 600,
+  width = 368,
+  height = 16,
+  pattern = "Ground_castle_golden_center",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 704,
+  width = 176,
+  height = 16,
+  pattern = "fence_post",
+}
+
+wall{
+  layer = 0,
+  x = 328,
+  y = 896,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 336,
+  y = 904,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 328,
+  y = 888,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 909,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/fountain",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 0,
+  width = 16,
+  height = 960,
+  transition = "scrolling",
+  destination_map = "out/a3",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 1280,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/b2",
+  destination = "_side",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 960,
+  width = 1280,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "out/b4",
+  destination = "_side",
+}
+
+custom_entity{
+  layer = 1,
+  x = 352,
+  y = 909,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/fountain",
+}
+
+dynamic_tile{
+  name = "invisible_tile",
+  layer = 1,
+  x = 344,
+  y = 880,
+  pattern = "Gnd_sand",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+pickable{
+  layer = 1,
+  x = 352,
+  y = 893,
+  treasure_name = "piece_of_heart",
+}
+

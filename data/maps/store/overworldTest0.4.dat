@@ -5952,12 +5952,12 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 272,
+  x = 288,
   y = 205,
   sprite = "destructibles/rock_grey",
   destruction_sound = "stone",
-  weight = 1,
-  damage_on_enemies = 2,
+  weight = 2,
+  damage_on_enemies = 4,
 }
 
 destructible{
@@ -5985,12 +5985,12 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 288,
+  x = 272,
   y = 205,
   sprite = "destructibles/rock_golden",
   destruction_sound = "stone",
-  weight = 2,
-  damage_on_enemies = 4,
+  weight = 1,
+  damage_on_enemies = 2,
 }
 
 destructible{
