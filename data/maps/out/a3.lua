@@ -12,7 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-
+  game:set_world_rain_mode("outside", "storm")
   -- You can initialize the movement and sprites of various
   -- map entities here.
 end

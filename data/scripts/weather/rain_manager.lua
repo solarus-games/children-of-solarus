@@ -16,8 +16,9 @@ The functions here defined are:
 Rain modes: "rain", "storm", nil (no rain).
 --]]
 
--- This script requires the multi_event script:
+-- This script requires the multi_event script and the teleporters meta:
 require("scripts/multi_events")
+require("scripts/meta/teletransporter_meta")
 local rain_manager = {}
 
 local game_meta = sol.main.get_metatable("game")
@@ -37,12 +38,13 @@ local current_darkness = 0 -- Opacity (transparent = 0, opaque = 255).
 local color_darkness = {150, 150, 240} -- Used for full darkness.
 local current_drop_index = 0 -- Current index for the next drop to be created.
 local max_num_drops_rain, max_num_drops_storm = 120, 300
+local sx, sy = 0, 0 -- Scrolling shifts for drop positions.
 
 -- Main variables.
 local rain_surface, flash_surface, dark_surface, draw_flash_surface
 local drop_list, splash_list, timers, num_drops, num_splashes
 local current_game, current_map, current_rain_mode, previous_rain_mode
-local previous_world, current_world
+local previous_world, current_world, is_scrolling
 
 -- Get/set current rain mode in the current map.
 function game_meta:get_rain_mode() return current_rain_mode end
@@ -90,6 +92,8 @@ function rain_manager:on_created()
     drop_list[i] = {index = i}
     splash_list[i] = {index = i}
   end
+  -- Add scrolling feature with teletransporters.
+  self:initialize_scrolling_feature()
   -- Start menu on the rain manager (it uses the event "on_draw").
   sol.menu.start(current_game, rain_manager)
 end
@@ -102,6 +106,7 @@ function rain_manager:on_map_changed(map)
   current_world = world
   local rain_mode = current_game:get_world_rain_mode(world)
   self:start_rain_mode(rain_mode)
+  if is_scrolling then self:finish_scrolling() end
 end
 
 -- Draw surfaces of the rain manager.
@@ -137,8 +142,8 @@ function rain_manager:update_rain_surface()
   for _, drop in pairs(drop_list) do
     if drop.exists then
       drop_sprite:set_frame(drop.frame)
-      local x = (drop.init_x + drop.x - cx) % cw
-      local y = (drop.init_y + drop.y - cy) % ch
+      local x = (drop.init_x + drop.x - cx + sx) % cw
+      local y = (drop.init_y + drop.y - cy + sy) % ch
       drop_sprite:draw(rain_surface, x, y)
     end
   end
@@ -147,8 +152,8 @@ function rain_manager:update_rain_surface()
   for _, splash in pairs(splash_list) do
     if splash.exists then
       drop_sprite:set_frame(splash.frame)
-      local x = (splash.x - cx) % cw
-      local y = (splash.y - cy) % ch
+      local x = (splash.x - cx + sx) % cw
+      local y = (splash.y - cy + sy) % ch
       drop_sprite:draw(rain_surface, x, y)
     end
   end
@@ -344,6 +349,37 @@ function rain_manager:update_darkness()
     return true -- Keep modifying darkness value.
   end)
   timers["darkness_timer"]:set_suspended_with_map(false)
+end
+
+-- Add scrolling features to teletransporters.
+function rain_manager:initialize_scrolling_feature()
+  local tele_meta = sol.main.get_metatable("teletransporter")
+  tele_meta:register_event("on_activated", function(tele)
+    local dir = tele:get_scrolling_direction()
+    if dir then rain_manager:start_scrolling(dir) end
+  end)
+end
+
+-- Start scrolling feature: shift 5 pixels each 10 milliseconds (like the engine).
+function rain_manager:start_scrolling(direction)
+  is_scrolling = true
+  local dx = {[0] = -1, [1] = 0, [2] = 1, [3] = 0}
+  local dy = {[0] = 0, [1] = -1, [2] = 0, [3] = 1}
+  dx, dy = dx[direction], dy[direction]
+  self:stop_timers({"scrolling"}) -- Needed in case of consecutive teleportation.
+  timers["scrolling"] = sol.timer.start(current_game, 10, function()
+    sx, sy = sx + 5 * dx, sy - 5 * dy
+    if is_scrolling then return true
+    else timers["scrolling"] = nil end
+  end)
+  timers["scrolling"]:set_suspended_with_map(false)
+end
+-- Stop scrolling feature.
+function rain_manager:finish_scrolling()
+  local map = current_map
+  map:register_event("on_opening_transition_finished", function(map)
+    is_scrolling = false
+  end)
 end
 
 -- Return rain manager.
