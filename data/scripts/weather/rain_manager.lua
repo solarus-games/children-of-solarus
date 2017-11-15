@@ -28,20 +28,15 @@ local drop_sprite = sol.sprite.create("weather/rain")
 local thunder_sounds = {"thunder1", "thunder2", "thunder3", "thunder_far", "thunder_double"}
 
 -- Default settings. Change these for testing.
-local rain_speed = 140
-local storm_speed = 220
-local drop_min_distance = 40 -- Min possible distance for drop movements.
-local drop_max_distance = 300 -- Max possible distance for drop movements.
-local rain_drop_delay = 10 -- Delay between drops for rain, in milliseconds.
-local storm_drop_delay = 5 -- Delay between drops for storms, in milliseconds.
-local min_lightning_delay = 3000
-local max_lightning_delay = 15000
+local rain_speed, storm_speed = 140, 220 -- In pixels per second.
+local drop_min_distance, drop_max_distance = 40, 300
+local rain_drop_delay, storm_drop_delay = 10, 5 -- In milliseconds.
+local min_lightning_delay, max_lightning_delay = 3000, 15000
 local min_darkness, max_darkness = 120, 200 -- Opacity during storm.
-local current_darkness = 0 -- Opacity (transparent = 0).
+local current_darkness = 0 -- Opacity (transparent = 0, opaque = 255).
 local color_darkness = {150, 150, 240} -- Used for full darkness.
 local current_drop_index = 0 -- Current index for the next drop to be created.
-local max_num_drops_rain = 120
-local max_num_drops_storm = 300
+local max_num_drops_rain, max_num_drops_storm = 120, 300
 
 -- Main variables.
 local rain_surface, flash_surface, dark_surface, draw_flash_surface
@@ -162,42 +157,29 @@ end
 -- Create properties list for a new water drop at random position.
 function rain_manager:create_drop(deviation)
   -- Check if there is space for a new drop.
-  local drop = drop_list[current_drop_index]
-  if drop.exists then return end
   local index = current_drop_index
+  local drop = drop_list[index]
+  if drop.exists then return end
   -- Prepare next slot.
   local max_num_drops = max_num_drops_rain
   if current_rain_mode == "storm" then max_num_drops = max_num_drops_storm end
   current_drop_index = (current_drop_index + 1) % max_num_drops
   -- Set properties for new drop.
-  local r = deviation or 0
   local map = current_map
   local cx, cy, cw, ch = map:get_camera():get_bounding_box()
   drop.init_x = cx + cw * math.random()
   drop.init_y = cy + ch * math.random()
   drop.x, drop.y, drop.frame = 0, 0, 0
-  drop.exists = true
+  drop.angle = 7 * math.pi / 5 + (deviation or 0)
+  drop.max_distance = math.random(drop_min_distance, drop_max_distance)
   num_drops = num_drops + 1
-  -- Initialize drop movement.
-  local m = sol.movement.create("straight")
-  m:set_angle(7 * math.pi / 5 + r)
-  local drop_speed = (rain_mode == "rain") and rain_speed or storm_speed
-  m:set_speed(drop_speed)
-  local random_distance = math.random(drop_min_distance, drop_max_distance)
-  m:set_max_distance(random_distance)
-  m.index = index
-  m:start(drop)
-  function m:on_finished() -- Callback: create splash effect.
-    rain_manager:create_splash(m.index)
-  end
-  return true
+  drop.exists = true
 end
 
 -- Create splash effect and put it in the list.
 function rain_manager:create_splash(index)
   -- Diable associated drop.
   local drop = drop_list[index]
-  drop.exists = false
   num_drops = num_drops - 1
   -- Do nothing if there is no space for a new splash.
   local splash = splash_list[index]
@@ -206,13 +188,12 @@ function rain_manager:create_splash(index)
   splash.x = drop.init_x + drop.x
   splash.y = drop.init_y + drop.y
   splash.frame = 0
-  splash.exists = true
   num_splashes = num_splashes + 1
+  splash.exists = true
 end
 
--- Stop certain timers.
+-- Destroy the timers whose names appear in the list.
 function rain_manager:stop_timers(timers_list)
-  -- Stop drop rain timers if already started.
   for _, key  in pairs(timers_list) do
     local t = timers[key]
     if t then t:stop() end
@@ -226,7 +207,7 @@ function rain_manager:start_rain_mode(rain_mode)
   previous_rain_mode = current_rain_mode
   current_rain_mode = rain_mode
   -- Stop creating drops and lightnings (timer delays differ on each mode).
-  self:stop_timers({"drop_timer", "lightning_timer"})
+  self:stop_timers({"drop_creation_timer", "lightning_timer"})
   -- Update darkness (fade-out effects included).
   self:update_darkness()
   -- Nothing more to do if there is no rain.
@@ -239,8 +220,8 @@ function rain_manager:start_rain_mode(rain_mode)
   elseif rain_mode ~= nil then error("Invalid rain mode.") end
   -- Start lightnings if necessary.
   if rain_mode == "storm" then self:start_lightnings() end
-  -- Initialize drop timer: create drops.
-  timers["drop_timer"] = sol.timer.start(game, current_drop_delay, function()
+  -- Initialize drop creation timer.
+  timers["drop_creation_timer"] = sol.timer.start(game, current_drop_delay, function()
     -- Random angle deviation in case of storm.
     local drop_deviation = 0
     if rain_mode == "storm" then
@@ -249,6 +230,27 @@ function rain_manager:start_rain_mode(rain_mode)
     rain_manager:create_drop(drop_deviation)
     return true -- Repeat loop.
   end)
+  -- Initialize drop position timer.
+  if timers["drop_position_timer"] == nil then
+    local dt = 10 -- Timer delay.
+    timers["drop_position_timer"] = sol.timer.start(game, dt, function()
+      local drop_speed = (rain_mode == "rain") and rain_speed or storm_speed
+      local distance_increment = math.floor(drop_speed * (dt / 1000))
+      for index, drop in pairs(drop_list) do
+        if drop.exists then
+          drop.x = drop.x + distance_increment * math.cos(drop.angle)
+          drop.y = drop.y + distance_increment * math.sin(drop.angle) * (-1)
+          local distance = math.sqrt((drop.x)^2 + (drop.y)^2)
+          if distance >= drop.max_distance then
+            -- Disable drop and create drop splash.
+            drop.exists = false
+            rain_manager:create_splash(index)
+          end
+        end
+      end
+      return true
+    end)
+  end
   -- Update rain frames for all drops at once.
   if timers["drop_frame_timer"] == nil then
     timers["drop_frame_timer"] = sol.timer.start(game, 75, function()
@@ -277,7 +279,8 @@ function rain_manager:start_rain_mode(rain_mode)
     end)
   end
   -- Do not suspend rain when paused.
-  timers["drop_timer"]:set_suspended_with_map(false)
+  timers["drop_creation_timer"]:set_suspended_with_map(false)
+  timers["drop_position_timer"]:set_suspended_with_map(false)
   timers["drop_frame_timer"]:set_suspended_with_map(false)
   timers["splash_frame_timer"]:set_suspended_with_map(false)
 end
@@ -335,8 +338,6 @@ function rain_manager:update_darkness()
     if darkness == current_darkness then -- Darkness reached.
       if current_rain_mode == "storm" then -- Storm mode.
         self:update_darkness() -- Repeat process with new random darkness value.
-      elseif darkness == 0 and current_rain_mode == nil then 
-        return -- No storm: stop darkness.
       end
       return false
     end
