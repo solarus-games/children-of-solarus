@@ -32,7 +32,10 @@ local thunder_sounds = {"thunder1", "thunder2", "thunder3", "thunder_far", "thun
 local rain_speed, storm_speed = 140, 220 -- In pixels per second.
 local drop_min_distance, drop_max_distance = 40, 300
 local rain_drop_delay, storm_drop_delay = 10, 5 -- In milliseconds.
+local lightning_duration = 800 -- In milliseconds.
+local max_lightning_opacity = 255 -- (Opaque = 255).
 local min_lightning_delay, max_lightning_delay = 3000, 15000
+local min_thunder_delay, max_thunder_delay = 500, 2500 
 local min_darkness, max_darkness = 120, 200 -- Opacity during storm.
 local current_darkness = 0 -- Opacity (transparent = 0, opaque = 255).
 local color_darkness = {150, 150, 240} -- Used for full darkness.
@@ -70,6 +73,10 @@ end)
 game_meta:register_event("on_map_changed", function(game)
   rain_manager:on_map_changed(game:get_map())
 end)
+-- Allow to draw surfaces (it uses the event "game.on_draw").
+game_meta:register_event("on_draw", function(game, dst_surface)
+  rain_manager:on_draw(dst_surface)
+end)
 
 -- Create rain, dark and lightning surfaces.
 function rain_manager:on_created()
@@ -80,7 +87,6 @@ function rain_manager:on_created()
   flash_surface = sol.surface.create(w, h)
   dark_surface:set_blend_mode("multiply")
   flash_surface:fill_color({250, 250, 250})
-  flash_surface:set_opacity(170)
   flash_surface:set_blend_mode("add")
   -- Initialize main variables.
   current_rain_mode, previous_rain_mode, previous_world = nil, nil, nil
@@ -94,8 +100,6 @@ function rain_manager:on_created()
   end
   -- Add scrolling feature with teletransporters.
   self:initialize_scrolling_feature()
-  -- Start menu on the rain manager (it uses the event "on_draw").
-  sol.menu.start(current_game, rain_manager)
 end
 
 -- Update current_rain_mode and current_map variables.
@@ -121,11 +125,11 @@ function rain_manager:on_draw(dst_surface)
     self:update_rain_surface()
     rain_surface:draw(dst_surface)
   end
-  if draw_flash_surface and flash_surface then
-    flash_surface:draw(dst_surface)
-  end
   if dark_surface and current_darkness > 0 then
     dark_surface:draw(dst_surface)
+  end
+  if draw_flash_surface and flash_surface then
+    flash_surface:draw(dst_surface)
   end
 end
 
@@ -212,7 +216,7 @@ function rain_manager:start_rain_mode(rain_mode)
   previous_rain_mode = current_rain_mode
   current_rain_mode = rain_mode
   -- Stop creating drops and lightnings (timer delays differ on each mode).
-  self:stop_timers({"drop_creation_timer", "lightning_timer"})
+  self:stop_timers({"drop_creation_timer", "lightning_creation_timer"})
   -- Update darkness (fade-out effects included).
   self:update_darkness()
   -- Nothing more to do if there is no rain.
@@ -293,18 +297,30 @@ end
 -- Start lightnings in the current map.
 function rain_manager:start_lightnings()
   -- Play thunder sound after a random delay.
-  if timers["lightning_timer"] ~= nil then return end
+  if timers["lightning_creation_timer"] ~= nil then return end
   local game = current_game
   local function create_next_lightning()
+    flash_surface:set_opacity(255)
     local lightning_delay = math.random(min_lightning_delay, max_lightning_delay)
-    timers["lightning_timer"] = sol.timer.start(game, lightning_delay, function()
+    timers["lightning_creation_timer"] = sol.timer.start(game, lightning_delay, function()
       -- Create lightning flash.
       draw_flash_surface = true
-      sol.timer.start(game, 150, function()
-        draw_flash_surface = false -- Stop drawing lightning flash.
+      local dt = 0 -- Time.
+      timers["lightning_duration_timer"] = sol.timer.start(game, 10, function()
+        dt = dt + 10
+        -- Decrease lightning brightness with a quadratic curve.
+        local op = max_lightning_opacity * (1 - (dt / lightning_duration)^2)
+        op = math.max(0, math.floor(op))
+        flash_surface:set_opacity(op)
+        if op == 0 then
+          draw_flash_surface = false -- Stop drawing lightning flash.
+          return
+        end
+        return true
       end)
+      timers["lightning_duration_timer"]:set_suspended_with_map(false)
       -- Play random thunder sound after a delay.
-      local thunder_delay = math.random(200, 1500)
+      local thunder_delay = math.random(min_thunder_delay, max_thunder_delay)
       sol.timer.start(game, thunder_delay, function()
         local random_index = math.random(1, #thunder_sounds)
         local sound_id = thunder_sounds[random_index]
@@ -314,7 +330,7 @@ function rain_manager:start_lightnings()
       create_next_lightning()
     end)
     -- Do not suspend timer when paused.
-    timers["lightning_timer"]:set_suspended_with_map(false)
+    timers["lightning_creation_timer"]:set_suspended_with_map(false)
   end
   -- Start loop of lightnings.
   create_next_lightning()
