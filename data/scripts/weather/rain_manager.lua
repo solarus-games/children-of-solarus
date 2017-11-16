@@ -39,7 +39,6 @@ local min_thunder_delay, max_thunder_delay = 500, 2500
 local min_darkness, max_darkness = 120, 200 -- Opacity during storm.
 local current_darkness = 0 -- Opacity (transparent = 0, opaque = 255).
 local color_darkness = {150, 150, 240} -- Used for full darkness.
-local current_drop_index = 0 -- Current index for the next drop to be created.
 local max_num_drops_rain, max_num_drops_storm = 120, 300
 local sx, sy = 0, 0 -- Scrolling shifts for drop positions.
 
@@ -165,20 +164,22 @@ end
 
 -- Create properties list for a new water drop at random position.
 function rain_manager:create_drop(deviation)
-  -- Check if there is space for a new drop.
-  local index = current_drop_index
-  local drop = drop_list[index]
-  if drop.exists then return end
   -- Prepare next slot.
   local max_num_drops = max_num_drops_rain
   if current_rain_mode == "storm" then max_num_drops = max_num_drops_storm end
-  current_drop_index = (current_drop_index + 1) % max_num_drops
+  local index, drop = 0, drop_list[0]
+  while index < max_num_drops and drop.exists do
+    index = index + 1
+    drop = drop_list[index]
+  end
+  if drop == nil or drop.exists then return end
   -- Set properties for new drop.
   local map = current_map
   local cx, cy, cw, ch = map:get_camera():get_bounding_box()
   drop.init_x = cx + cw * math.random()
   drop.init_y = cy + ch * math.random()
   drop.x, drop.y, drop.frame = 0, 0, 0
+  drop.speed = (current_rain_mode == "rain") and rain_speed or storm_speed
   drop.angle = 7 * math.pi / 5 + (deviation or 0)
   drop.max_distance = math.random(drop_min_distance, drop_max_distance)
   num_drops = num_drops + 1
@@ -243,10 +244,9 @@ function rain_manager:start_rain_mode(rain_mode)
   if timers["drop_position_timer"] == nil then
     local dt = 10 -- Timer delay.
     timers["drop_position_timer"] = sol.timer.start(game, dt, function()
-      local drop_speed = (rain_mode == "rain") and rain_speed or storm_speed
-      local distance_increment = math.floor(drop_speed * (dt / 1000))
       for index, drop in pairs(drop_list) do
         if drop.exists then
+          local distance_increment = drop.speed * (dt / 1000)
           drop.x = drop.x + distance_increment * math.cos(drop.angle)
           drop.y = drop.y + distance_increment * math.sin(drop.angle) * (-1)
           local distance = math.sqrt((drop.x)^2 + (drop.y)^2)

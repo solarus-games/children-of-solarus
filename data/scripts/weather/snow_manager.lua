@@ -28,19 +28,19 @@ local map_meta = sol.main.get_metatable("map")
 local flake_sprite = sol.sprite.create("weather/snow")
 
 -- Default settings. Change these for testing.
-local snow_speed, snowstorm_speed = 140, 200 -- In pixels per second.
+local snow_speed, snowstorm_speed = 60, 140 -- In pixels per second.
 local flake_min_distance, flake_max_distance = 40, 300
 local flake_min_zigzag_distance, flake_max_zigzag_distance = 10, 250
-local snow_flake_delay, snowstorm_flake_delay = 10, 2 -- In milliseconds.
-local min_darkness, max_darkness = 120, 200 -- Opacity during snowstorm.
+local snow_flake_delay, snowstorm_flake_delay = 10, 5 -- In milliseconds.
+local min_darkness, max_darkness = 80, 160 -- Opacity during snowstorm.
 local current_darkness = 0 -- Opacity (transparent = 0, opaque = 255).
 local color_darkness = {150, 150, 240} -- Used for full darkness.
-local current_flake_index = 0 -- Current index for the next flake to be created.
-local max_num_flakes_snow, max_num_flakes_snowstorm = 120, 450
+local max_num_flakes_snow, max_num_flakes_snowstorm = 100, 200
+local flake_min_opacity, flake_max_opacity = 50, 255
 local sx, sy = 0, 0 -- Scrolling shifts for flake positions.
 
 -- Main variables.
-local snow_surface, dark_surface
+local snow_surface, dark_surface, flake_surface
 local flake_list, splash_list, timers, num_flakes, num_splashes
 local current_game, current_map, current_snow_mode, previous_snow_mode
 local previous_world, current_world, is_scrolling
@@ -80,7 +80,9 @@ function snow_manager:on_created()
   local w, h = sol.video.get_quest_size()
   snow_surface = sol.surface.create(w, h)
   dark_surface = sol.surface.create(w, h)
+  snow_surface:set_blend_mode("add")
   dark_surface:set_blend_mode("multiply")
+  flake_surface = sol.surface.create(8, 8)
   -- Initialize main variables.
   current_snow_mode, previous_snow_mode, previous_world = nil, nil, nil
   num_flakes, num_splashes, current_darkness = 0, 0, 0
@@ -122,6 +124,17 @@ function snow_manager:on_draw(dst_surface)
   end
 end
 
+-- Draw snowflake or splash on a surface with its properties (Opacity = 0 means transparent).
+function snow_manager:draw_flake(dst_surface, x, y, flake, animation)
+  flake_sprite:set_animation(animation)
+  flake_sprite:set_direction(flake.direction or 0)
+  flake_sprite:set_frame(flake.frame or 0)
+  flake_surface:clear()
+  flake_sprite:draw(flake_surface)
+  flake_surface:set_opacity(flake.opacity)
+  flake_surface:draw(dst_surface, x, y)
+end
+
 -- Update snow surface.
 function snow_manager:update_snow_surface()
   if current_snow_mode == nil and previous_snow_mode == nil then
@@ -131,44 +144,41 @@ function snow_manager:update_snow_surface()
   local camera = current_map:get_camera()
   local cx, cy, cw, ch = camera:get_bounding_box()
   -- Draw flakes on surface.
-  flake_sprite:set_animation("flake")
   for _, flake in pairs(flake_list) do
     if flake.exists then
-      flake_sprite:set_direction(flake.direction)
-      flake_sprite:set_frame(flake.frame)
       local x = (flake.init_x + flake.x - cx + sx) % cw
       local y = (flake.init_y + flake.y - cy + sy) % ch
-      flake_sprite:draw(snow_surface, x, y)
+      self:draw_flake(snow_surface, x, y, flake, "flake")
     end
   end
   -- Draw splashes on surface.
-  flake_sprite:set_animation("flake_splash")
   for _, splash in pairs(splash_list) do
     if splash.exists then
-      flake_sprite:set_frame(splash.frame)
       local x = (splash.x - cx + sx) % cw
       local y = (splash.y - cy + sy) % ch
-      flake_sprite:draw(snow_surface, x, y)
+      self:draw_flake(snow_surface, x, y, splash, "flake_splash")
     end
   end
 end
 
 -- Create properties list for a new water flake at random position.
 function snow_manager:create_flake(deviation)
-  -- Check if there is space for a new flake.
-  local index = current_flake_index
-  local flake = flake_list[index]
-  if flake.exists then return end
   -- Prepare next slot.
   local max_num_flakes = max_num_flakes_snow
   if current_snow_mode == "snowstorm" then max_num_flakes = max_num_flakes_snowstorm end
-  current_flake_index = (current_flake_index + 1) % max_num_flakes
+  local index, flake = 0, flake_list[0]
+  while index < max_num_flakes and flake.exists do
+    index = index + 1
+    flake = flake_list[index]
+  end
+  if flake == nil or flake.exists then return end
   -- Set properties for new flake.
   local map = current_map
   local cx, cy, cw, ch = map:get_camera():get_bounding_box()
   flake.init_x = cx + cw * math.random()
   flake.init_y = cy + ch * math.random()
   flake.x, flake.y, flake.frame = 0, 0, 0
+  flake.speed = (current_snow_mode == "snow") and snow_speed or snowstorm_speed
   local num_dir = flake_sprite:get_num_directions("flake")
   flake.direction = math.random(0, num_dir - 1) -- Sprite direction.
   local inverted_angle = (math.random(0,1) == 1)
@@ -176,6 +186,8 @@ function snow_manager:create_flake(deviation)
   if inverted_angle then flake.angle = math.pi - flake.angle end
   flake.max_distance = math.random(flake_min_distance, flake_max_distance)
   flake.zigzag_dist = math.random(flake_min_zigzag_distance, flake_max_zigzag_distance)
+  flake.opacity = 255
+  flake.target_opacity = math.random(flake_min_opacity, flake_max_opacity)
   num_flakes = num_flakes + 1
   flake.exists = true
 end
@@ -191,7 +203,7 @@ function snow_manager:create_splash(index)
   -- Create splash.
   splash.x = flake.init_x + flake.x
   splash.y = flake.init_y + flake.y
-  splash.frame = 0
+  splash.opacity = flake.opacity
   num_splashes = num_splashes + 1
   splash.exists = true
 end
@@ -236,10 +248,9 @@ function snow_manager:start_snow_mode(snow_mode)
   if timers["flake_position_timer"] == nil then
     local dt = 10 -- Timer delay.
     timers["flake_position_timer"] = sol.timer.start(game, dt, function()
-      local flake_speed = (snow_mode == "snow") and snow_speed or snowstorm_speed
-      local distance_increment = math.floor(flake_speed * (dt / 1000))
       for index, flake in pairs(flake_list) do
         if flake.exists then
+          local distance_increment = flake.speed * (dt / 1000)
           flake.x = flake.x + distance_increment * math.cos(flake.angle)
           flake.y = flake.y + distance_increment * math.sin(flake.angle) * (-1)
           local distance = math.sqrt((flake.x)^2 + (flake.y)^2)
@@ -270,13 +281,24 @@ function snow_manager:start_snow_mode(snow_mode)
     end)
   end
   -- Update splash frames for all splashes at once.
-  if timers["splash_frame_timer"] == nil then
-    timers["splash_frame_timer"] = sol.timer.start(game, 100, function()
-      for index, splash in pairs(splash_list) do
+  if timers["flake_opacity_timer"] == nil then
+    timers["flake_opacity_timer"] = sol.timer.start(game, 10, function()
+      for _, flake in pairs(flake_list) do
+        if flake.exists then
+          -- Modify opacity towards the target opacity.
+          if flake.opacity == flake.target_opacity then
+            flake.target_opacity = math.random(flake_min_opacity, flake_max_opacity)
+          else
+            local d = (flake.opacity < flake.target_opacity) and 1 or -1
+            flake.opacity = flake.opacity + d
+          end
+        end
+      end
+      for _, splash in pairs(splash_list) do
         if splash.exists then
-          splash.frame = splash.frame + 1
-          if splash.frame >= 4 then
-            -- Disable splash after last frame.
+          -- Disable splash when transparent.
+          splash.opacity = math.max(0, splash.opacity - 1)
+          if splash.opacity == 0 then
             splash.exists = false
             num_splashes = num_splashes - 1
           end
@@ -289,7 +311,7 @@ function snow_manager:start_snow_mode(snow_mode)
   timers["flake_creation_timer"]:set_suspended_with_map(false)
   timers["flake_position_timer"]:set_suspended_with_map(false)
   timers["flake_frame_timer"]:set_suspended_with_map(false)
-  timers["splash_frame_timer"]:set_suspended_with_map(false)
+  timers["flake_opacity_timer"]:set_suspended_with_map(false)
 end
 
 -- Fade in/out dark surface for snowstorm mode. Parameter (opacity) is optional.
