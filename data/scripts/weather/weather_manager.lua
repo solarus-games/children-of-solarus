@@ -4,6 +4,7 @@
 -- Donations: solarus-games.org, diarandor at gmail dot com.
 
 local rain_script_enabled = true
+local snow_script_enabled = true
 
 local game_meta = sol.main.get_metatable("game")
 
@@ -14,4 +15,12 @@ else -- Redefine methods to avoid errors.
   function game_meta:set_rain_mode(rain_mode) end
   function game_meta:get_world_rain_mode(world) return nil end
   function game_meta:set_world_rain_mode(world, rain_mode) end
+end
+if snow_script_enabled then
+  require("scripts/weather/snow_manager")
+else -- Redefine methods to avoid errors.
+  function game_meta:get_snow_mode() return nil end
+  function game_meta:set_snow_mode(snow_mode) end
+  function game_meta:get_world_snow_mode(world) return nil end
+  function game_meta:set_world_snow_mode(world, snow_mode) end
 end
