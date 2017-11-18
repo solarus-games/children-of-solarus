@@ -25,10 +25,10 @@ local game_meta = sol.main.get_metatable("game")
 local map_meta = sol.main.get_metatable("map")
 
 -- Assets: sounds and sprites.
-local stone_sprite = sol.sprite.create("weather/snow")
+-- [Nothing]
 
 -- Default settings. Change these for testing.
-local hail_speed, hailstorm_speed = 200, 300 -- In pixels per second.
+local hail_speed, hailstorm_speed = 200, 230 -- In pixels per second.
 local stone_min_distance, stone_max_distance = 40, 300
 local splash_min_distance, splash_max_distance = 10, 20
 local splash_min_height, splash_max_height = 8, 16
@@ -83,11 +83,10 @@ function hail_manager:on_created()
   local w, h = sol.video.get_quest_size()
   hail_surface = sol.surface.create(w, h)
   dark_surface = sol.surface.create(w, h)
-  stone_surface = sol.surface.create(8, 8)
+  stone_surface = sol.surface.create(2, 2)
+  stone_surface:fill_color({255, 255, 255})
   dark_surface:set_blend_mode("add")
   hail_surface:set_blend_mode("add")
-  stone_sprite:set_animation("flake_splash")
-  stone_sprite:draw(stone_surface)
   -- Initialize main variables.
   current_hail_mode, previous_hail_mode, previous_world = nil, nil, nil
   num_stones, num_splashes, current_darkness = 0, 0, 0
@@ -129,12 +128,6 @@ function hail_manager:on_draw(dst_surface)
   end
 end
 
--- Draw semitransparent stone on a surface (Opacity = 0 means transparent).
-function hail_manager:draw_stone(dst_surface, x, y, opacity)
-  stone_surface:set_opacity(opacity or 255)
-  stone_surface:draw(dst_surface, x, y)
-end
-
 -- Update hail surface.
 function hail_manager:update_hail_surface()
   if current_hail_mode == nil and previous_hail_mode == nil then
@@ -148,7 +141,8 @@ function hail_manager:update_hail_surface()
     if stone.exists then
       local x = (stone.init_x + stone.x - cx + sx) % cw
       local y = (stone.init_y + stone.y - cy + sy) % ch
-      stone_sprite:draw(hail_surface, x, y)
+      stone_surface:set_opacity(255)
+      stone_surface:draw(hail_surface, x, y)
     end
   end
   -- Draw splashes on surface.
@@ -158,7 +152,8 @@ function hail_manager:update_hail_surface()
       local x = (splash.init_x + splash.x - cx + sx) % cw
       local y = (splash.init_y + splash.y + height - cy + sy) % ch
       local opacity = splash.opacity or 255
-      hail_manager:draw_stone(hail_surface, x, y, opacity)
+      stone_surface:set_opacity(opacity or 255)
+      stone_surface:draw(hail_surface, x, y)
     end
   end
 end
