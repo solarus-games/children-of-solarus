@@ -32,9 +32,9 @@ local snow_speed, snowstorm_speed = 60, 140 -- In pixels per second.
 local flake_min_distance, flake_max_distance = 40, 300
 local flake_min_zigzag_distance, flake_max_zigzag_distance = 10, 250
 local snow_flake_delay, snowstorm_flake_delay = 10, 5 -- In milliseconds.
-local min_darkness, max_darkness = 80, 160 -- Opacity during snowstorm.
+local snow_darkness, snowstorm_darkness = 50, 90 -- Opacity during snowstorm.
 local current_darkness = 0 -- Opacity (transparent = 0, opaque = 255).
-local color_darkness = {150, 150, 240} -- Used for full darkness.
+local color_darkness = {100, 100, 255} -- Used for full darkness.
 local max_num_flakes_snow, max_num_flakes_snowstorm = 100, 200
 local flake_min_opacity, flake_max_opacity = 50, 255
 local sx, sy = 0, 0 -- Scrolling shifts for flake positions.
@@ -81,7 +81,7 @@ function snow_manager:on_created()
   snow_surface = sol.surface.create(w, h)
   dark_surface = sol.surface.create(w, h)
   snow_surface:set_blend_mode("add")
-  dark_surface:set_blend_mode("multiply")
+  dark_surface:set_blend_mode("add")
   flake_surface = sol.surface.create(8, 8)
   -- Initialize main variables.
   current_snow_mode, previous_snow_mode, previous_world = nil, nil, nil
@@ -318,26 +318,25 @@ end
 function snow_manager:update_darkness()
   -- Define next darkness value.
   local darkness = 0
-  if current_snow_mode == "snowstorm" then
-    darkness = math.random(min_darkness, max_darkness)
+  if current_snow_mode == "snow" then
+    darkness = snow_darkness
+  elseif current_snow_mode == "snowstorm" then
+    darkness = snowstorm_darkness
   end
   local d = 0 -- Increment/decrement for opacity.
   if darkness > current_darkness then d = 1
   elseif darkness < current_darkness then d = -1 end
   self:stop_timers({"darkness_timer"}) -- Destroy old timer.
   -- Start modifying darkness towards the next value.
-  timers["darkness_timer"] = sol.timer.start(current_game, 15, function()
+  timers["darkness_timer"] = sol.timer.start(current_game, 40, function()
     if dark_surface == nil then return end
     current_darkness = current_darkness + d
-    local r = 255 - math.floor(color_darkness[1] * (current_darkness / 255))
-    local g = 255 - math.floor(color_darkness[2] * (current_darkness / 255))
-    local b = 255 - math.floor(color_darkness[3] * (current_darkness / 255))
+    local r = math.floor(color_darkness[1] * (current_darkness / 255))
+    local g = math.floor(color_darkness[2] * (current_darkness / 255))
+    local b = math.floor(color_darkness[3] * (current_darkness / 255))
     dark_surface:clear()
     dark_surface:fill_color({r, g, b})
     if darkness == current_darkness then -- Darkness reached.
-      if current_snow_mode == "snowstorm" then -- snowstorm mode.
-        self:update_darkness() -- Repeat process with new random darkness value.
-      end
       return false
     end
     return true -- Keep modifying darkness value.
