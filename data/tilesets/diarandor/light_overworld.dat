@@ -3,8 +3,8 @@ tile_pattern{
   id = "Gnd_cut_grass",
   ground = "traversable",
   default_layer = 0,
-  x = 144,
-  y = 184,
+  x = 128,
+  y = 160,
   width = 16,
   height = 16,
 }
@@ -13,8 +13,8 @@ tile_pattern{
   id = "Gnd_cut_grass1",
   ground = "traversable",
   default_layer = 0,
-  x = 128,
-  y = 184,
+  x = 160,
+  y = 160,
   width = 16,
   height = 16,
 }
@@ -23,8 +23,8 @@ tile_pattern{
   id = "Gnd_cut_grass3",
   ground = "traversable",
   default_layer = 0,
-  x = 112,
-  y = 184,
+  x = 144,
+  y = 160,
   width = 16,
   height = 16,
 }
@@ -33,8 +33,8 @@ tile_pattern{
   id = "Gnd_cut_grass5",
   ground = "traversable",
   default_layer = 0,
-  x = 112,
-  y = 200,
+  x = 144,
+  y = 176,
   width = 16,
   height = 16,
 }
@@ -43,8 +43,8 @@ tile_pattern{
   id = "Gnd_cut_grass7",
   ground = "traversable",
   default_layer = 0,
-  x = 128,
-  y = 200,
+  x = 160,
+  y = 176,
   width = 16,
   height = 16,
 }
@@ -63,8 +63,8 @@ tile_pattern{
   id = "Gnd_darksand_0",
   ground = "empty",
   default_layer = 0,
-  x = 152,
-  y = 168,
+  x = 136,
+  y = 184,
   width = 8,
   height = 8,
 }
@@ -73,8 +73,8 @@ tile_pattern{
   id = "Gnd_darksand_1",
   ground = "empty",
   default_layer = 0,
-  x = 152,
-  y = 160,
+  x = 136,
+  y = 176,
   width = 8,
   height = 8,
 }
@@ -83,8 +83,8 @@ tile_pattern{
   id = "Gnd_darksand_2",
   ground = "empty",
   default_layer = 0,
-  x = 144,
-  y = 160,
+  x = 128,
+  y = 176,
   width = 8,
   height = 8,
 }
@@ -93,8 +93,8 @@ tile_pattern{
   id = "Gnd_darksand_3",
   ground = "empty",
   default_layer = 0,
-  x = 136,
-  y = 160,
+  x = 120,
+  y = 176,
   width = 8,
   height = 8,
 }
@@ -103,8 +103,8 @@ tile_pattern{
   id = "Gnd_darksand_4",
   ground = "empty",
   default_layer = 0,
-  x = 136,
-  y = 168,
+  x = 120,
+  y = 184,
   width = 8,
   height = 8,
 }
@@ -113,8 +113,8 @@ tile_pattern{
   id = "Gnd_darksand_5",
   ground = "empty",
   default_layer = 0,
-  x = 136,
-  y = 176,
+  x = 120,
+  y = 192,
   width = 8,
   height = 8,
 }
@@ -123,8 +123,8 @@ tile_pattern{
   id = "Gnd_darksand_6",
   ground = "empty",
   default_layer = 0,
-  x = 144,
-  y = 176,
+  x = 128,
+  y = 192,
   width = 8,
   height = 8,
 }
@@ -133,8 +133,48 @@ tile_pattern{
   id = "Gnd_darksand_7",
   ground = "empty",
   default_layer = 0,
-  x = 152,
-  y = 176,
+  x = 136,
+  y = 192,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Gnd_darksand_inner1",
+  ground = "traversable",
+  default_layer = 0,
+  x = 120,
+  y = 160,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Gnd_darksand_inner3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 112,
+  y = 160,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Gnd_darksand_inner5",
+  ground = "traversable",
+  default_layer = 0,
+  x = 112,
+  y = 168,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Gnd_darksand_inner7",
+  ground = "traversable",
+  default_layer = 0,
+  x = 120,
+  y = 168,
   width = 8,
   height = 8,
 }
@@ -143,8 +183,8 @@ tile_pattern{
   id = "Gnd_darksand_small",
   ground = "traversable",
   default_layer = 0,
-  x = 144,
-  y = 168,
+  x = 128,
+  y = 184,
   width = 8,
   height = 8,
 }
@@ -473,8 +513,8 @@ tile_pattern{
   id = "Gnd_sand_0",
   ground = "empty",
   default_layer = 0,
-  x = 128,
-  y = 168,
+  x = 112,
+  y = 184,
   width = 8,
   height = 8,
 }
@@ -483,8 +523,8 @@ tile_pattern{
   id = "Gnd_sand_1",
   ground = "empty",
   default_layer = 0,
-  x = 128,
-  y = 160,
+  x = 112,
+  y = 176,
   width = 8,
   height = 8,
 }
@@ -493,8 +533,8 @@ tile_pattern{
   id = "Gnd_sand_2",
   ground = "empty",
   default_layer = 0,
-  x = 120,
-  y = 160,
+  x = 104,
+  y = 176,
   width = 8,
   height = 8,
 }
@@ -503,8 +543,8 @@ tile_pattern{
   id = "Gnd_sand_3",
   ground = "empty",
   default_layer = 0,
-  x = 112,
-  y = 160,
+  x = 96,
+  y = 176,
   width = 8,
   height = 8,
 }
@@ -513,8 +553,8 @@ tile_pattern{
   id = "Gnd_sand_4",
   ground = "empty",
   default_layer = 0,
-  x = 112,
-  y = 168,
+  x = 96,
+  y = 184,
   width = 8,
   height = 8,
 }
@@ -523,8 +563,8 @@ tile_pattern{
   id = "Gnd_sand_5",
   ground = "empty",
   default_layer = 0,
-  x = 112,
-  y = 176,
+  x = 96,
+  y = 192,
   width = 8,
   height = 8,
 }
@@ -533,8 +573,8 @@ tile_pattern{
   id = "Gnd_sand_6",
   ground = "empty",
   default_layer = 0,
-  x = 120,
-  y = 176,
+  x = 104,
+  y = 192,
   width = 8,
   height = 8,
 }
@@ -543,8 +583,48 @@ tile_pattern{
   id = "Gnd_sand_7",
   ground = "empty",
   default_layer = 0,
-  x = 128,
-  y = 176,
+  x = 112,
+  y = 192,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Gnd_sand_inner1",
+  ground = "traversable",
+  default_layer = 0,
+  x = 104,
+  y = 160,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Gnd_sand_inner3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 96,
+  y = 160,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Gnd_sand_inner5",
+  ground = "traversable",
+  default_layer = 0,
+  x = 96,
+  y = 168,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Gnd_sand_inner7",
+  ground = "traversable",
+  default_layer = 0,
+  x = 104,
+  y = 168,
   width = 8,
   height = 8,
 }
@@ -553,8 +633,8 @@ tile_pattern{
   id = "Gnd_sand_small",
   ground = "traversable",
   default_layer = 0,
-  x = 120,
-  y = 168,
+  x = 104,
+  y = 184,
   width = 8,
   height = 8,
 }
@@ -1480,11 +1560,31 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "Ground_castle_grey_bis1 (copy)",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1064,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "Ground_castle_grey_bis3",
   ground = "traversable",
   default_layer = 0,
   x = 1056,
   y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_castle_grey_bis3 (copy)",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1056,
+  y = 128,
   width = 8,
   height = 8,
 }
@@ -1500,11 +1600,31 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "Ground_castle_grey_bis5 (copy)",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1056,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "Ground_castle_grey_bis7",
   ground = "traversable",
   default_layer = 0,
   x = 1064,
   y = 104,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_castle_grey_bis7 (copy)",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1064,
+  y = 136,
   width = 8,
   height = 8,
 }
@@ -1610,11 +1730,31 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "Ground_castle_pink_bis1 (copy)",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1064,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "Ground_castle_pink_bis3",
   ground = "traversable",
   default_layer = 0,
   x = 1056,
   y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_castle_pink_bis3 (copy)",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1056,
+  y = 144,
   width = 8,
   height = 8,
 }
@@ -1630,11 +1770,31 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "Ground_castle_pink_bis5 (copy)",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1056,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "Ground_castle_pink_bis7",
   ground = "traversable",
   default_layer = 0,
   x = 1064,
   y = 120,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_castle_pink_bis7 (copy)",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1064,
+  y = 152,
   width = 8,
   height = 8,
 }
@@ -1780,11 +1940,181 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "Ground_rockyground",
+  id = "Ground_rocky_brown_0",
   ground = "traversable",
   default_layer = 0,
-  x = 144,
-  y = 48,
+  x = 1096,
+  y = 136,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Ground_rocky_brown_1",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1096,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_brown_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1080,
+  y = 128,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_brown_3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1072,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_brown_4",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1072,
+  y = 136,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Ground_rocky_brown_5",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1072,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_brown_6",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1080,
+  y = 152,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_brown_7",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1096,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_brown_center",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1080,
+  y = 136,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_0",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1048,
+  y = 136,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_1",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1048,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1032,
+  y = 128,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1024,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_4",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1024,
+  y = 136,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_5",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1024,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_6",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1032,
+  y = 152,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_7",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1048,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "Ground_rocky_purple_center",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1032,
+  y = 136,
   width = 16,
   height = 16,
 }
@@ -3709,8 +4039,8 @@ tile_pattern{
   id = "below_plant",
   ground = "empty",
   default_layer = 0,
-  x = 160,
-  y = 176,
+  x = 144,
+  y = 48,
   width = 16,
   height = 16,
 }
@@ -3720,7 +4050,7 @@ tile_pattern{
   ground = "empty",
   default_layer = 0,
   x = 176,
-  y = 160,
+  y = 48,
   width = 16,
   height = 16,
 }
@@ -3729,8 +4059,8 @@ tile_pattern{
   id = "below_rock_sand",
   ground = "empty",
   default_layer = 0,
-  x = 160,
-  y = 160,
+  x = 176,
+  y = 32,
   width = 16,
   height = 16,
 }
@@ -3739,10 +4069,10 @@ tile_pattern{
   id = "below_signpost",
   ground = "traversable",
   default_layer = 0,
-  x = 176,
-  y = 176,
+  x = 928,
+  y = 48,
   width = 16,
-  height = 16,
+  height = 8,
 }
 
 tile_pattern{
