@@ -39,6 +39,7 @@ sprite{ id = "destructibles/signpost", description = "Signpost" }
 sprite{ id = "enemies/apyronet/bosses/khorneth", description = "Khorneth" }
 sprite{ id = "enemies/apyronet/bosses/khorneth_left_blade", description = "Khorneth left blade" }
 sprite{ id = "enemies/apyronet/bosses/khorneth_right_blade", description = "Khorneth right blade" }
+sprite{ id = "enemies/diarandor/pterobat", description = "Pterobat" }
 sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
 sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }
 sprite{ id = "enemies/diarandor/soldier_sword", description = "Soldier Sword" }
