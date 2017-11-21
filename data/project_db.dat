@@ -152,6 +152,7 @@ sprite{ id = "ground_effects/lava_splash", description = "lava splash" }
 sprite{ id = "ground_effects/leaves", description = "leaves" }
 sprite{ id = "ground_effects/water_splash", description = "water splash" }
 sprite{ id = "hero/eldran", description = "Eldran sprite" }
+sprite{ id = "hero/eldran2", description = "Eldran blue" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/shield_1_above", description = "Shield 1 Above" }
