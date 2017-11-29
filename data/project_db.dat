@@ -1,4 +1,3 @@
-map{ id = "SHOP_maps/overworldTest0.4", description = "overworldTest0.4" }
 map{ id = "out/a1", description = "Outside A1" }
 map{ id = "out/a2", description = "Outside A2" }
 map{ id = "out/a3", description = "Outside A3" }
@@ -446,4 +445,5 @@ font{ id = "minecraftia_mono", description = "Minecraftia mono" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
+
 
