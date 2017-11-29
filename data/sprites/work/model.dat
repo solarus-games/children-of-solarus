@@ -1,0 +1,7 @@
+animation{
+  name = "normal",
+  src_image = "work/model.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1120, frame_height = 976, origin_x = 8, origin_y = 13 },
+  },
+}

@@ -22260,33 +22260,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 784,
-  y = 560,
-  width = 8,
-  height = 8,
-  pattern = "Ground_castle_grey_bis1 (copy)",
-}
-
-tile{
-  layer = 0,
-  x = 856,
-  y = 560,
-  width = 8,
-  height = 8,
-  pattern = "Ground_castle_grey_bis3 (copy)",
-}
-
-tile{
-  layer = 0,
-  x = 880,
-  y = 576,
-  width = 8,
-  height = 8,
-  pattern = "Ground_castle_grey_bis1 (copy)",
-}
-
-tile{
-  layer = 0,
   x = 896,
   y = 576,
   width = 8,
@@ -22328,33 +22301,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "Ground_castle_grey_bis5 (copy)",
-}
-
-tile{
-  layer = 0,
-  x = 896,
-  y = 600,
-  width = 8,
-  height = 8,
-  pattern = "Ground_castle_grey_bis1 (copy)",
-}
-
-tile{
-  layer = 0,
-  x = 1064,
-  y = 600,
-  width = 8,
-  height = 8,
-  pattern = "Ground_castle_grey_bis3 (copy)",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 600,
-  width = 8,
-  height = 8,
-  pattern = "Ground_castle_grey_bis1 (copy)",
 }
 
 tile{
@@ -22409,6 +22355,51 @@ tile{
   width = 16,
   height = 16,
   pattern = "Ground_rocky_purple_center",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "Ground_rocky_purple_bis3",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 600,
+  width = 8,
+  height = 8,
+  pattern = "Ground_rocky_purple_bis3",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "Ground_rocky_purple_bis1",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 600,
+  width = 8,
+  height = 8,
+  pattern = "Ground_rocky_purple_bis1",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 576,
+  width = 8,
+  height = 8,
+  pattern = "Ground_rocky_purple_bis1",
 }
 
 destructible{
@@ -23284,15 +23275,6 @@ wall{
   stops_projectiles = true,
 }
 
-destination{
-  name = "from_hero_house",
-  layer = 0,
-  x = 1176,
-  y = 597,
-  direction = 3,
-  default = true,
-}
-
 destructible{
   layer = 0,
   x = 544,
@@ -23914,6 +23896,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "out/a4",
   destination = "_side",
+}
+
+destination{
+  name = "from_hero_house",
+  layer = 0,
+  x = 576,
+  y = 21,
+  direction = 3,
+  default = true,
 }
 
 tile{

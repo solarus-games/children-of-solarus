@@ -231,7 +231,7 @@ sprite{ id = "shadows/shadow_big_dynamic", description = "Shadow Big Dynamic" }
 sprite{ id = "shadows/shadow_small", description = "Shadow Small" }
 sprite{ id = "weather/rain", description = "rain" }
 sprite{ id = "weather/snow", description = "snow" }
-sprite{ id = "work/1120x1008", description = "1120x1008" }
+sprite{ id = "work/model", description = "Map model" }
 
 music{ id = "eduardo/boss", description = "Boss" }
 music{ id = "eduardo/cave", description = "Cave" }
