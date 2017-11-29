@@ -44,6 +44,7 @@ sprite{ id = "enemies/diarandor/pterobat", description = "Pterobat" }
 sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
 sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }
 sprite{ id = "enemies/diarandor/soldier_sword", description = "Soldier Sword" }
+sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/newlink/bee_guard", description = "Bee Guard" }
 sprite{ id = "enemies/newlink/bee_guard_weapon", description = "Bee Guard weapon" }
 sprite{ id = "enemies/newlink/bosses/arbror_root", description = "Arbror root" }
@@ -226,6 +227,9 @@ sprite{ id = "npc/villager2", description = "ALTTP villager 2" }
 sprite{ id = "npc/villager3", description = "ALTTP villager 3" }
 sprite{ id = "npc/witch", description = "Witch" }
 sprite{ id = "npc/wizard", description = "Wizard" }
+sprite{ id = "shadows/shadow_big", description = "Shadow Big" }
+sprite{ id = "shadows/shadow_big_dynamic", description = "Shadow Big Dynamic" }
+sprite{ id = "shadows/shadow_small", description = "Shadow Small" }
 sprite{ id = "weather/rain", description = "rain" }
 sprite{ id = "weather/snow", description = "snow" }
 sprite{ id = "work/1120x1008", description = "1120x1008" }
@@ -425,6 +429,7 @@ item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
+enemy{ id = "diarandor/pterobat", description = "pterobat" }
 enemy{ id = "diarandor/soldier", description = "soldier" }
 enemy{ id = "generic_soldier", description = "generic soldier" }
 

@@ -16,10 +16,10 @@ animation{
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
-    { x = 160, y = 0, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 8, num_frames = 4 },
-    { x = 160, y = 8, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 8, num_frames = 4 },
-    { x = 160, y = 16, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 8, num_frames = 4 },
-    { x = 160, y = 24, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 160, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 168, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 176, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 8, num_frames = 4 },
+    { x = 0, y = 184, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 8, num_frames = 4 },
   },
 }
 animation{
