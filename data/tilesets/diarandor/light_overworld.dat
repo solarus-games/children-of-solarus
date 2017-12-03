@@ -4196,6 +4196,196 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "bridge_wood_border_down",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1152,
+  y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_border_horizontal_down",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1112,
+  y = 104,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_border_horizontal_lower_left",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1104,
+  y = 104,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_border_horizontal_lower_right",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1128,
+  y = 104,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_border_horizontal_up",
+  ground = "traversable",
+  default_layer = 1,
+  x = 1112,
+  y = 96,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_border_horizontal_upper_left",
+  ground = "traversable",
+  default_layer = 1,
+  x = 1104,
+  y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_border_horizontal_upper_right",
+  ground = "traversable",
+  default_layer = 1,
+  x = 1128,
+  y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_border_up",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1152,
+  y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_border_vertical",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1152,
+  y = 104,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_down_long",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1136,
+  y = 104,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_down_short",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1144,
+  y = 104,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_horizontal",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1136,
+  y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_left_long",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1120,
+  y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_left_short",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1104,
+  y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_right_long",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1112,
+  y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_right_short",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1128,
+  y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_up_long",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1144,
+  y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_up_short",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1136,
+  y = 96,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_wood_vertical",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1144,
+  y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "cactus_big_down",
   ground = "prickles",
   default_layer = 0,
