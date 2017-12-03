@@ -14,7 +14,7 @@ map{ id = "test_maps/start_point", description = "Starting Point" }
 tileset{ id = "diarandor/light_overworld", description = "Light Overworld" }
 
 sprite{ id = "animals/bird_red", description = "Bird red" }
-sprite{ id = "animals/chicken_white", description = "Chicken white" }
+sprite{ id = "animals/clucko_white", description = "Clucko white" }
 sprite{ id = "console/cursor", description = "Console cursor" }
 sprite{ id = "console/icons", description = "Console icons" }
 sprite{ id = "destructibles/cabbagge_green", description = "Plant Green" }
@@ -428,11 +428,12 @@ item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
+enemy{ id = "diarandor/clucko", description = "Clucko" }
 enemy{ id = "diarandor/pterobat", description = "pterobat" }
 enemy{ id = "diarandor/soldier", description = "soldier" }
 enemy{ id = "generic_soldier", description = "generic soldier" }
 
-entity{ id = "animals/bird", description = "bird" }
+entity{ id = "animals/bird", description = "Bird" }
 entity{ id = "arrow", description = "arrow" }
 entity{ id = "insects/butterfly", description = "Butterfly" }
 
@@ -445,5 +446,4 @@ font{ id = "minecraftia_mono", description = "Minecraftia mono" }
 font{ id = "small_green_digits", description = "small_green_digits" }
 font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
-
 

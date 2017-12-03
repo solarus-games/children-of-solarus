@@ -1,6 +1,6 @@
 animation{
   name = "stopped",
-  src_image = "animals/chicken_white.png",
+  src_image = "animals/clucko_white.png",
   frame_delay = 500,
   frame_to_loop_on = 0,
   directions = {
@@ -12,7 +12,7 @@ animation{
 }
 animation{
   name = "fly",
-  src_image = "animals/chicken_white.png",
+  src_image = "animals/clucko_white.png",
   frame_delay = 150,
   frame_to_loop_on = 0,
   directions = {

@@ -28,21 +28,21 @@ destination{
 
 pickable{
   layer = 0,
-  x = -8,
+  x = -16,
   y = 181,
   treasure_name = "sword",
 }
 
 pickable{
   layer = 0,
-  x = -8,
+  x = -16,
   y = 93,
   treasure_name = "flippers",
 }
 
 pickable{
   layer = 0,
-  x = -8,
+  x = -16,
   y = 117,
   treasure_name = "bow",
 }
@@ -60,7 +60,7 @@ teletransporter{
 
 pickable{
   layer = 0,
-  x = -8,
+  x = -16,
   y = 157,
   treasure_name = "feather",
   treasure_variant = 2,
@@ -68,30 +68,14 @@ pickable{
 
 pickable{
   layer = 0,
-  x = -8,
+  x = -16,
   y = 133,
   treasure_name = "shield",
 }
 
 pickable{
   layer = 0,
-  x = -8,
-  y = 213,
-  treasure_name = "arrow",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = -8,
-  y = 221,
-  treasure_name = "arrow",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = -8,
+  x = -16,
   y = 205,
   treasure_name = "arrow",
   treasure_variant = 3,
@@ -107,59 +91,13 @@ teletransporter{
   sprite = "entities/teletransporter_blue",
 }
 
-enemy{
+custom_entity{
   layer = 0,
-  x = 160,
-  y = 45,
+  x = 80,
+  y = 69,
+  width = 16,
+  height = 16,
   direction = 3,
-  breed = "diarandor/pterobat",
-}
-
-enemy{
-  layer = 0,
-  x = 280,
-  y = 101,
-  direction = 3,
-  breed = "diarandor/pterobat",
-}
-
-enemy{
-  layer = 0,
-  x = 240,
-  y = 173,
-  direction = 3,
-  breed = "diarandor/pterobat",
-}
-
-enemy{
-  layer = 0,
-  x = 64,
-  y = 181,
-  direction = 3,
-  breed = "diarandor/pterobat",
-}
-
-enemy{
-  layer = 0,
-  x = 160,
-  y = 213,
-  direction = 3,
-  breed = "diarandor/pterobat",
-}
-
-enemy{
-  layer = 0,
-  x = 128,
-  y = 141,
-  direction = 3,
-  breed = "diarandor/pterobat",
-}
-
-enemy{
-  layer = 0,
-  x = 224,
-  y = 21,
-  direction = 3,
-  breed = "diarandor/pterobat",
+  sprite = "animals/clucko_white",
 }
 
