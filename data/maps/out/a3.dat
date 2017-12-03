@@ -22300,7 +22300,7 @@ tile{
   y = 584,
   width = 8,
   height = 8,
-  pattern = "Ground_castle_grey_bis5 (copy)",
+  pattern = "Ground_rocky_purple_bis5",
 }
 
 tile{
@@ -22318,7 +22318,7 @@ tile{
   y = 600,
   width = 8,
   height = 8,
-  pattern = "Ground_castle_grey_bis5 (copy)",
+  pattern = "Ground_rocky_purple_bis5",
 }
 
 tile{
@@ -22327,7 +22327,7 @@ tile{
   y = 624,
   width = 8,
   height = 8,
-  pattern = "Ground_castle_grey_bis7 (copy)",
+  pattern = "Ground_rocky_purple_bis7",
 }
 
 tile{
