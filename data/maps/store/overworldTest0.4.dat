@@ -2,7 +2,7 @@ properties{
   x = 0,
   y = 0,
   width = 1296,
-  height = 568,
+  height = 696,
   min_layer = 0,
   max_layer = 2,
   tileset = "diarandor/light_overworld",
@@ -13,7 +13,7 @@ tile{
   x = 0,
   y = 0,
   width = 1296,
-  height = 568,
+  height = 696,
   pattern = "GrassPlain",
 }
 
@@ -6425,6 +6425,906 @@ tile{
   pattern = "bridge_rock_border_normal_2",
 }
 
+tile{
+  layer = 0,
+  x = 184,
+  y = 472,
+  width = 8,
+  height = 80,
+  pattern = "bridge_rock_border_4",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 464,
+  width = 48,
+  height = 96,
+  pattern = "bridge_rock_ground",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 472,
+  width = 8,
+  height = 80,
+  pattern = "bridge_rock_border_0",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_moss_0",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_moss_4",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 512,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_broken_4",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_broken_0",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_broken_4",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 472,
+  width = 56,
+  height = 80,
+  pattern = "bridge_wood_horizontal",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 472,
+  width = 8,
+  height = 80,
+  pattern = "bridge_wood_border_vertical",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 472,
+  width = 8,
+  height = 80,
+  pattern = "bridge_wood_border_vertical",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_down",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_down",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_up",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_up",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 472,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_short",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 480,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_long",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_short",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_long",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_short",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 512,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_long",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_short",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_long",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_short",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_left_long",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 472,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_long",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 480,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_short",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 488,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_long",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_short",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_long",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 512,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_short",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 520,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_long",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_short",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_long",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_right_short",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 464,
+  width = 64,
+  height = 8,
+  pattern = "Gnd_sand_6",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 456,
+  width = 64,
+  height = 8,
+  pattern = "Gnd_sand_2",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_sand_7",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_sand_1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_sand_5",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_sand_3",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_3",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 464,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_1",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 560,
+  width = 64,
+  height = 8,
+  pattern = "Gnd_sand_6",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 552,
+  width = 64,
+  height = 8,
+  pattern = "Gnd_sand_2",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_sand_7",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_sand_5",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_sand_1",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_7",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "Gnd_sand_3",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_border_5",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_rock_wall_moss",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 504,
+  width = 144,
+  height = 48,
+  pattern = "bridge_wood_vertical",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_lower_left",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_lower_left",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_upper_left",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_short",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_down_long",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 552,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_lower_right",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 552,
+  width = 128,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_down",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_long",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 504,
+  width = 128,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_down",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 504,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_lower_right",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_up_short",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 496,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_upper_right",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 496,
+  width = 128,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_up",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 472,
+  width = 8,
+  height = 88,
+  pattern = "bridge_rock_border_shadow_4",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 472,
+  width = 8,
+  height = 88,
+  pattern = "bridge_rock_border_shadow_0",
+}
+
 destination{
   name = "starting_point",
   layer = 0,
@@ -6585,6 +7485,32 @@ destructible{
   sprite = "destructibles/cabbagge_green",
   destruction_sound = "bush",
   can_be_cut = true,
+}
+
+wall{
+  layer = 0,
+  x = 360,
+  y = 496,
+  width = 144,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 360,
+  y = 552,
+  width = 144,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -8205,6 +9131,33 @@ tile{
   width = 8,
   height = 8,
   pattern = "bridge_rock_arch",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 544,
+  width = 128,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_up",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_upper_left",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "bridge_wood_border_horizontal_upper_right",
 }
 
 tile{
