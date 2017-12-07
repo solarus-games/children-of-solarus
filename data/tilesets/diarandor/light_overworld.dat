@@ -4196,6 +4196,306 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "bridge_rock_arch",
+  ground = "traversable",
+  default_layer = 1,
+  x = 1128,
+  y = 120,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_arch_left",
+  ground = "wall",
+  default_layer = 1,
+  x = 1104,
+  y = 120,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_arch_right",
+  ground = "wall",
+  default_layer = 1,
+  x = 1120,
+  y = 120,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 1128,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_1",
+  ground = "wall",
+  default_layer = 0,
+  x = 1144,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 1136,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 1104,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_5",
+  ground = "wall",
+  default_layer = 0,
+  x = 1136,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_7",
+  ground = "wall",
+  default_layer = 0,
+  x = 1144,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_broken_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 1152,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_broken_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 1128,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_broken_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 1144,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_broken_6",
+  ground = "wall",
+  default_layer = 0,
+  x = 1120,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_moss_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 1128,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_moss_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 1112,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_moss_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 1104,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_moss_6",
+  ground = "wall",
+  default_layer = 0,
+  x = 1104,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_normal_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 1136,
+  y = 120,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_shadow_0",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1120,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_shadow_1",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1120,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_shadow_3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1112,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_border_shadow_4",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1112,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_column",
+  ground = "wall",
+  default_layer = 0,
+  x = 1128,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_column_down",
+  ground = "wall",
+  default_layer = 0,
+  x = 1112,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_column_left",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1104,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_column_right",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1120,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_ground",
+  ground = "traversable",
+  default_layer = 0,
+  x = 1144,
+  y = 120,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "bridge_rock_wall",
+  ground = "wall",
+  default_layer = 0,
+  x = 1112,
+  y = 120,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_wall_broken",
+  ground = "wall",
+  default_layer = 0,
+  x = 1136,
+  y = 128,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "bridge_rock_wall_moss",
+  ground = "wall",
+  default_layer = 0,
+  x = 1136,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "bridge_wood_border_down",
   ground = "traversable",
   default_layer = 0,
