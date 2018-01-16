@@ -39,7 +39,19 @@ function enemy_meta:receive_attack_consequence(attack, reaction)
       self:on_custom_attack_received(attack)
     end
   end
+end
 
+-- Warning: do not override this function if you are using the "custom shield" script.
+function enemy_meta:on_attacking_hero(hero, enemy_sprite)
+  local enemy = self
+  -- Do nothing when shield is protecting.
+  if hero.is_shield_protecting_from_enemy
+      and hero:is_shield_protecting_from_enemy(enemy, enemy_sprite) then
+    return
+  end
+  -- Otherwise, hero is not protected by shield: use built-in behavior.
+  local damage = enemy:get_damage()
+  hero:start_hurt(enemy, enemy_sprite, damage)
 end
 
 return true

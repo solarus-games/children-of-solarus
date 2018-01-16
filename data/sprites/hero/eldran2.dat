@@ -246,20 +246,20 @@ animation{
   src_image = "hero/eldran2_on_shield.png",
   frame_delay = 50,
   directions = {
-    { x = 48, y = 48, frame_width = 16, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3, num_columns = 1 },
-    { x = 96, y = 56, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 3 },
-    { x = 80, y = 48, frame_width = 16, frame_height = 24, origin_x = 4, origin_y = 21, num_frames = 3, num_columns = 1 },
-    { x = 96, y = 72, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 21, num_frames = 3 },
+    { x = 48, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3, num_columns = 1 },
+    { x = 96, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3, num_columns = 1 },
+    { x = 96, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 3 },
   },
 }
 animation{
   name = "shield_stopped",
   src_image = "hero/eldran2_on_shield.png",
   directions = {
-    { x = 0, y = 72, frame_width = 16, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 120, y = 56, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
-    { x = 32, y = 72, frame_width = 16, frame_height = 24, origin_x = 4, origin_y = 21 },
-    { x = 120, y = 24, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 21 },
+    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 120, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 24, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 120, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
 animation{
@@ -268,10 +268,10 @@ animation{
   frame_delay = 70,
   frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8, num_columns = 1 },
-    { x = 48, y = 8, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 8 },
-    { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 4, origin_y = 21, num_frames = 8, num_columns = 1 },
-    { x = 48, y = 24, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 21, num_frames = 8 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8, num_columns = 1 },
+    { x = 48, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
+    { x = 24, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8, num_columns = 1 },
+    { x = 48, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
   },
 }
 animation{
@@ -304,16 +304,6 @@ animation{
     { x = 0, y = 64, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 37, num_frames = 12 },
     { x = 0, y = 128, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 37, num_frames = 12 },
     { x = 0, y = 192, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 37, num_frames = 12 },
-  },
-}
-animation{
-  name = "stopped_with_shield",
-  src_image = "hero/eldran2.png",
-  directions = {
-    { x = 72, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 72, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 72, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
 animation{
@@ -431,18 +421,6 @@ animation{
 }
 animation{
   name = "walking",
-  src_image = "hero/eldran2.png",
-  frame_delay = 70,
-  frame_to_loop_on = 0,
-  directions = {
-    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
-    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
-    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 8 },
-  },
-}
-animation{
-  name = "walking_with_shield",
   src_image = "hero/eldran2.png",
   frame_delay = 70,
   frame_to_loop_on = 0,

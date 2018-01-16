@@ -101,3 +101,19 @@ custom_entity{
   sprite = "animals/clucko_white",
 }
 
+enemy{
+  layer = 0,
+  x = 200,
+  y = 149,
+  direction = 3,
+  breed = "diarandor/pterobat",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 205,
+  direction = 3,
+  breed = "diarandor/pterobat",
+}
+
