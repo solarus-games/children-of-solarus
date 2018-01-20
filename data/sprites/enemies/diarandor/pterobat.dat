@@ -35,6 +35,26 @@ animation{
   },
 }
 animation{
+  name = "immobilized",
+  src_image = "enemies/diarandor/pterobat.png",
+  directions = {
+    { x = 128, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20 },
+    { x = 128, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20 },
+    { x = 128, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20 },
+    { x = 128, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20 },
+  },
+}
+animation{
+  name = "immobilized_wings",
+  src_image = "enemies/diarandor/pterobat.png",
+  directions = {
+    { x = 256, y = 72, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20 },
+    { x = 256, y = 24, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20 },
+    { x = 256, y = 48, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20 },
+    { x = 256, y = 0, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 20 },
+  },
+}
+animation{
   name = "stopped",
   src_image = "enemies/diarandor/pterobat.png",
   directions = {

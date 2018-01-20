@@ -3,6 +3,7 @@
 -- require("scripts/ground_effects")
 
 local map_meta = sol.main.get_metatable("map")
+local enemy_meta = sol.main.get_metatable("enemy")
 
 -- Create ground effect.
 function map_meta:create_ground_effect(effect, x, y, layer, sound_id)
@@ -22,16 +23,26 @@ end
 
 -- Display effects when an entity falls to the ground.
 function map_meta:ground_collision(entity, collision_sound, callback_bad_ground)
+  local map = self
   local x, y, layer = entity:get_position()
   local ground = entity:get_ground_below()
   local min_layer = self:get_min_layer()
   local hero = self:get_hero()
   local game = self:get_game()
+  -- If ground is empty, fall to lower layer and check ground again.
   while ground == "empty" and layer > min_layer do
-    -- If ground is empty, fall to lower layer and check ground again.
-     layer = layer-1
+     layer = layer - 1
      entity:set_position(x, y, layer)
      ground = entity:get_ground_below()
+  end
+  -- Destroy enemies falling on a bad ground, if necessary.
+  if entity:get_type() == "enemy" then
+    local needs_destruction = true
+    if map:is_solid_ground(x, y, layer) then needs_destruction = false end
+    local obstacle_behavior = entity:get_obstacle_behavior()
+    if obstacle_behavior == "flying" then needs_destruction = false end
+    if obstacle_behavior == "swimming" and ground == "deep_water" then needs_destruction = false end
+    if needs_destruction then entity:remove() end -- Kill the enemy on bad ground.
   end
   -- If the entity falls on hole, water or lava, remove entity and create effect.
   if ground == "hole" and entity ~= hero then  

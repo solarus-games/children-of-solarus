@@ -41,15 +41,25 @@ function enemy_meta:receive_attack_consequence(attack, reaction)
   end
 end
 
--- Warning: do not override this function if you are using the "custom shield" script.
+-- Attach a custom damage to the sprites of the enemy.
+function enemy_meta:get_sprite_damage(sprite)
+  return sprite.custom_damage or self:get_damage()
+end
+function enemy_meta:set_sprite_damage(sprite, damage)
+  sprite.custom_damage = damage
+end
+
+-- Warning: do not override these functions if you use the "custom shield" script.
 function enemy_meta:on_attacking_hero(hero, enemy_sprite)
   local enemy = self
+  -- Do nothing if enemy sprite cannot hurt hero.
+  if enemy:get_sprite_damage(enemy_sprite) == 0 then print("undetected"); return end
   -- Do nothing when shield is protecting.
   if hero.is_shield_protecting_from_enemy
       and hero:is_shield_protecting_from_enemy(enemy, enemy_sprite) then
     return
   end
-  -- Otherwise, hero is not protected by shield: use built-in behavior.
+  -- Otherwise, hero is not protected. Use built-in behavior.
   local damage = enemy:get_damage()
   hero:start_hurt(enemy, enemy_sprite, damage)
 end

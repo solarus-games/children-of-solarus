@@ -19,16 +19,16 @@ function enemy:on_created()
   shadow_sprite = self:create_sprite("shadows/shadow_big_dynamic", "shadow")
   body_sprite = self:create_sprite(sprite_id, "body")
   wings_sprite = self:create_sprite(sprite_id, "wings")
-  -- Set sprite properties.
+  -- Set sprite properties. Shadow and wings are invincible and cannot hurt the hero.
   wings_sprite:synchronize(body_sprite)
   self:set_invincible_sprite(shadow_sprite)
   self:set_invincible_sprite(wings_sprite)
-  
+  self:set_sprite_damage(shadow_sprite, 0)
+  self:set_sprite_damage(wings_sprite, 0)
   
   -- TODO: DO NOT ALLOW WINGS OR SHADOW HURT THE HERO.
   -- CONVERT IN RAT ENEMY AFTER HURT? (DRAW AND CODE).
 
-  
   -- Set enemy properties.
   self:set_obstacle_behavior("flying")
   self:set_life(2)
@@ -114,9 +114,10 @@ function enemy:update_shadow()
   shadow_timer = sol.timer.start(enemy, 10, function()
     local frame = math.floor((current_height / max_height) * num_frames)
     frame = math.min(frame, num_frames - 1)
+    shadow_sprite:set_animation("ascend")
     shadow_sprite:set_frame(frame)
     return true
-  end)  
+  end)
 end
 
 -- Start circular movement, towards the hero if possible.

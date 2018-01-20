@@ -21,7 +21,7 @@ enemy:set_properties({
  damage = 2,
  play_hero_seen_sound = false,
  normal_speed = 32,
- faster_speed = 64,
+ faster_speed = 48,
  hurt_style = "normal"
 })
 
@@ -31,4 +31,6 @@ enemy:register_event("on_created", function()
   feather:set_xy(0, -24)
   enemy:set_invincible_sprite(feather)
   enemy:bring_sprite_to_front(feather)
+  enemy:set_can_be_pushed_by_shield(true)
+  enemy:set_can_push_hero_on_shield(true)
 end)

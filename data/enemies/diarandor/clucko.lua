@@ -1,4 +1,4 @@
--- Chicken script.
+-- Clucko script.
 -- Solarus Lua API documentation: http://www.solarus-games.org/doc/latest
 
 local enemy = ...
@@ -14,13 +14,14 @@ function enemy:on_created()
   -- Create sprites.
   sprite = self:get_sprite()
   if not sprite then
-    sprite = self:create_sprite("animals/chicken_white")
+    sprite = self:create_sprite("animals/clucko_white")
   end
-  self:create_sprite("animals/shadow_big")
+  shadow_sprite = self:create_sprite("shadows/shadow_big")
   self:bring_sprite_to_back(shadow_sprite)
   -- Set properties.
   self:set_invincible_sprite(shadow_sprite)
   self:set_life(1)
+  self:set_can_be_pushed_by_shield(true)
   -- Define attack consequences.
   for _, attack in pairs({"sword", "thrown_item", "explosion",
       "arrow", "hookshot", "boomerang", "fire"}) do
@@ -47,7 +48,7 @@ function enemy:update_shadow()
   -- Stop shadow timers.
   if shadow_timer then shadow_timer:stop() end
   -- Update shadow frame while ascending or descending.
-  shadow_sprite:set_animation("ascend")
+  ----shadow_sprite:set_animation("ascend")
   local num_frames = shadow_sprite:get_num_frames()
   shadow_timer = sol.timer.start(enemy, 10, function()
     local frame = math.floor((current_height / max_height) * num_frames)

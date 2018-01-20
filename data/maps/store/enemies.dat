@@ -24,3 +24,13 @@ enemy{
   breed = "diarandor/pterobat",
 }
 
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/clucko_white",
+}
+

@@ -428,8 +428,8 @@ item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
 enemy{ id = "diarandor/clucko", description = "Clucko" }
-enemy{ id = "diarandor/pterobat", description = "pterobat" }
-enemy{ id = "diarandor/soldier", description = "soldier" }
+enemy{ id = "diarandor/pterobat", description = "Pterobat" }
+enemy{ id = "diarandor/soldier", description = "Soldier" }
 enemy{ id = "generic_soldier", description = "generic soldier" }
 
 entity{ id = "animals/bird", description = "Bird" }
