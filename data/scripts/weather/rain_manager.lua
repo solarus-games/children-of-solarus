@@ -14,6 +14,10 @@ The functions here defined are:
     game:set_world_rain_mode(world, rain_mode)
 
 Rain modes: "rain", "storm", nil (no rain).
+
+Warning: all events registered below with the syntax of the multi_events script
+need to be "registered" in the same way in other scripts, if defined, to avoid overriding
+previous code. Otherwise, you will get errors and the script will not work as it should.
 --]]
 
 -- This script requires the multi_event script and the teleporters meta:
