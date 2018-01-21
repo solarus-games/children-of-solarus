@@ -120,9 +120,9 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 160,
-  y = 141,
+  x = 128,
+  y = 117,
   direction = 3,
-  breed = "diarandor/soldier",
+  breed = "diarandor/pterobat",
 }
 

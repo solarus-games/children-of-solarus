@@ -40,8 +40,13 @@ function map_meta:ground_collision(entity, collision_sound, callback_bad_ground)
     local needs_destruction = true
     if map:is_solid_ground(x, y, layer) then needs_destruction = false end
     local obstacle_behavior = entity:get_obstacle_behavior()
-    if obstacle_behavior == "flying" then needs_destruction = false end
-    if obstacle_behavior == "swimming" and ground == "deep_water" then needs_destruction = false end
+    if obstacle_behavior == "flying" then
+      needs_destruction = false
+      return -- Stop the function. No ground effect in this case.
+    end
+    if obstacle_behavior == "swimming" and ground == "deep_water" then
+      needs_destruction = false
+    end
     if needs_destruction then entity:remove() end -- Kill the enemy on bad ground.
   end
   -- If the entity falls on hole, water or lava, remove entity and create effect.

@@ -23907,6 +23907,36 @@ destination{
   default = true,
 }
 
+custom_entity{
+  layer = 0,
+  x = 1000,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "animals/clucko_white",
+}
+
+custom_entity{
+  layer = 0,
+  x = 928,
+  y = 653,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "animals/clucko_white",
+}
+
+custom_entity{
+  layer = 0,
+  x = 808,
+  y = 773,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "animals/clucko_white",
+}
+
 tile{
   layer = 1,
   x = 280,

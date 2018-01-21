@@ -25,9 +25,10 @@ function enemy:on_created()
   self:set_invincible_sprite(wings_sprite)
   self:set_sprite_damage(shadow_sprite, 0)
   self:set_sprite_damage(wings_sprite, 0)
+  enemy:set_can_be_pushed_by_shield(true)
+  enemy:set_can_push_hero_on_shield(true)
   
-  -- TODO: DO NOT ALLOW WINGS OR SHADOW HURT THE HERO.
-  -- CONVERT IN RAT ENEMY AFTER HURT? (DRAW AND CODE).
+  -- TODO: CONVERT IN RAT ENEMY AFTER HURT? (DRAW AND CODE).
 
   -- Set enemy properties.
   self:set_obstacle_behavior("flying")
