@@ -92,7 +92,11 @@ function item:on_using()
   end)
 
   -- Start custom shield state when necessary: allow to sidle with shield.
-  local anim_duration = hero_tunic_sprite:get_num_frames() * hero_tunic_sprite:get_frame_delay()
+  local num_frames = hero_tunic_sprite:get_num_frames()
+  local frame_delay = hero_tunic_sprite:get_frame_delay()
+  -- Prevent bug: if frame delay is nil (which happens with 1 frame) stop using shield.
+  if not frame_delay then self:finish_using() return end  
+  local anim_duration = frame_delay * num_frames
   sol.timer.start(item, anim_duration, function()  
     -- Do not allow walking with shield if the command was released.
     if shield_command_released == true then
