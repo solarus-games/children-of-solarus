@@ -269,13 +269,12 @@ function hero_meta:is_shield_protecting_from_enemy(enemy, enemy_sprite)
     return false
   end
   -- Check overlap with reduced bounding box (shield side not included).
-  -- Shield width: 8 pixels.
   local hx, hy, hw, hh = hero:get_bounding_box()
   local dir = hero:get_direction()
-  if dir == 0 then hw = hw - 8
-  elseif dir == 1 then hy = hy + 8; hh = hh - 8
-  elseif dir == 2 then hx = hx + 8 ; hw = hw - 8
-  elseif dir == 3 then hh = hh - 8 end
+  if dir == 0 then hw = hw - shield_width
+  elseif dir == 1 then hy = hy + shield_width; hh = hh - shield_width
+  elseif dir == 2 then hx = hx + shield_width ; hw = hw - shield_width
+  elseif dir == 3 then hh = hh - shield_width end
   if enemy:overlaps(hx, hy, hw, hh) then
     return false
   end
