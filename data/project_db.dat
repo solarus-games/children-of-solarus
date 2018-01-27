@@ -39,6 +39,9 @@ sprite{ id = "destructibles/signpost", description = "Signpost" }
 sprite{ id = "enemies/apyronet/bosses/khorneth", description = "Khorneth" }
 sprite{ id = "enemies/apyronet/bosses/khorneth_left_blade", description = "Khorneth left blade" }
 sprite{ id = "enemies/apyronet/bosses/khorneth_right_blade", description = "Khorneth right blade" }
+sprite{ id = "enemies/diarandor/goblin", description = "Goblin Green" }
+sprite{ id = "enemies/diarandor/goblin_axe", description = "Goblin Axe" }
+sprite{ id = "enemies/diarandor/goblin_club", description = "Goblin Club" }
 sprite{ id = "enemies/diarandor/pterobat", description = "Pterobat" }
 sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
 sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }
@@ -428,6 +431,7 @@ item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
 enemy{ id = "diarandor/clucko", description = "Clucko" }
+enemy{ id = "diarandor/goblin", description = "Goblin" }
 enemy{ id = "diarandor/pterobat", description = "Pterobat" }
 enemy{ id = "diarandor/soldier", description = "Soldier" }
 enemy{ id = "generic_soldier", description = "generic soldier" }

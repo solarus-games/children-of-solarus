@@ -17,6 +17,10 @@ function map:on_started()
   hero:set_tunic_sprite_id("hero/eldran3")
   game:set_max_life(80)
   game:set_life(80)
+
+  goblin_axe:set_weapon("axe")
+  goblin_club:set_weapon("club")
+
 end
 
 -- Event called after the opening transition effect of the map,

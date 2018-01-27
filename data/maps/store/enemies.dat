@@ -34,3 +34,11 @@ custom_entity{
   sprite = "animals/clucko_white",
 }
 
+enemy{
+  layer = 0,
+  x = 112,
+  y = 45,
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+

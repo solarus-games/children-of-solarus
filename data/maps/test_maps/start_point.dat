@@ -17,33 +17,6 @@ tile{
   pattern = "GrassPlain",
 }
 
-tile{
-  layer = 0,
-  x = 120,
-  y = 224,
-  width = 112,
-  height = 16,
-  pattern = "Hole_horizontal",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "Hole_corner4",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 224,
-  width = 16,
-  height = 16,
-  pattern = "Hole_corner0",
-}
-
 destination{
   name = "starting_point",
   layer = 0,
@@ -119,10 +92,28 @@ teletransporter{
 }
 
 enemy{
+  name = "goblin_axe",
   layer = 0,
-  x = 128,
+  x = 72,
   y = 117,
   direction = 3,
-  breed = "diarandor/pterobat",
+  breed = "diarandor/goblin",
+}
+
+enemy{
+  layer = 0,
+  x = 256,
+  y = 77,
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+
+enemy{
+  name = "goblin_club",
+  layer = 0,
+  x = 176,
+  y = 157,
+  direction = 3,
+  breed = "diarandor/goblin",
 }
 
