@@ -7,9 +7,9 @@ local sprite, tail
 function entity:on_created()
   sprite = self:get_sprite()
   if not sprite then
-    sprite = self:create_sprite("animals/meow_orange")
+    sprite = self:create_sprite("animals/worf_brown")
   end
-  tail = self:create_sprite("animals/meow_orange")
+  tail = self:create_sprite("animals/worf_brown")
   -- Update tail sprite when necessary (animation and direction).
   tail:set_animation(sprite:get_animation() .. "_tail")
   tail:set_direction(sprite:get_direction())

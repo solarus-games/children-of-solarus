@@ -94,16 +94,16 @@ teletransporter{
 enemy{
   name = "goblin_axe",
   layer = 0,
-  x = 48,
-  y = -11,
+  x = 184,
+  y = 181,
   direction = 3,
   breed = "diarandor/goblin",
 }
 
 enemy{
   layer = 0,
-  x = 72,
-  y = -11,
+  x = 208,
+  y = 181,
   direction = 3,
   breed = "diarandor/goblin",
 }
@@ -111,53 +111,97 @@ enemy{
 enemy{
   name = "goblin_club",
   layer = 0,
-  x = 96,
-  y = -11,
+  x = 232,
+  y = 181,
   direction = 3,
   breed = "diarandor/goblin",
 }
 
 custom_entity{
   layer = 0,
-  x = 160,
-  y = 53,
+  x = 144,
+  y = 109,
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "animals/kitten_orange",
+  sprite = "animals/meow_orange",
   model = "cat",
 }
 
 custom_entity{
   layer = 0,
-  x = 96,
-  y = 53,
+  x = 80,
+  y = 109,
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "animals/kitten_orange",
+  sprite = "animals/meow_orange",
   model = "cat",
 }
 
 custom_entity{
   layer = 0,
-  x = 128,
-  y = 53,
+  x = 112,
+  y = 109,
   width = 16,
   height = 16,
   direction = 2,
-  sprite = "animals/kitten_orange",
+  sprite = "animals/meow_orange",
   model = "cat",
 }
 
 custom_entity{
   layer = 0,
-  x = 184,
-  y = 53,
+  x = 168,
+  y = 109,
   width = 16,
   height = 16,
   direction = 1,
-  sprite = "animals/kitten_orange",
+  sprite = "animals/meow_orange",
   model = "cat",
+}
+
+custom_entity{
+  layer = 0,
+  x = 144,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/worf_brown",
+  model = "worf",
+}
+
+custom_entity{
+  layer = 0,
+  x = 80,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "animals/worf_brown",
+  model = "worf",
+}
+
+custom_entity{
+  layer = 0,
+  x = 112,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 2,
+  sprite = "animals/worf_brown",
+  model = "worf",
+}
+
+custom_entity{
+  layer = 0,
+  x = 168,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "animals/worf_brown",
+  model = "worf",
 }
 
