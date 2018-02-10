@@ -205,3 +205,13 @@ custom_entity{
   model = "worf",
 }
 
+teletransporter{
+  layer = 0,
+  x = 136,
+  y = 0,
+  width = 16,
+  height = 16,
+  destination_map = "store/house_test",
+  sprite = "entities/teletransporter_yellow",
+}
+

@@ -43,7 +43,7 @@ end
 
 -- Attach a custom damage to the sprites of the enemy.
 function enemy_meta:get_sprite_damage(sprite)
-  return sprite.custom_damage or self:get_damage()
+  return (sprite and sprite.custom_damage) or self:get_damage()
 end
 function enemy_meta:set_sprite_damage(sprite, damage)
   sprite.custom_damage = damage
@@ -61,7 +61,11 @@ function enemy_meta:on_attacking_hero(hero, enemy_sprite)
   end
   -- Otherwise, hero is not protected. Use built-in behavior.
   local damage = enemy:get_damage()
-  hero:start_hurt(enemy, enemy_sprite, damage)
+  if enemy_sprite then
+    hero:start_hurt(enemy, enemy_sprite, damage)
+  else
+    hero:start_hurt(enemy, damage)
+  end
 end
 
 return true

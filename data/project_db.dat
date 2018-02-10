@@ -8,9 +8,11 @@ map{ id = "out/b3", description = "Outside B3" }
 map{ id = "out/b4", description = "Outside B4" }
 map{ id = "store/enemies", description = "Enemies" }
 map{ id = "store/entities", description = "Entities" }
+map{ id = "store/house_test", description = "house_test" }
 map{ id = "store/overworldTest0.4", description = "OverworldTest0.4" }
 map{ id = "test_maps/start_point", description = "Starting Point" }
 
+tileset{ id = "diarandor/house", description = "House" }
 tileset{ id = "diarandor/light_overworld", description = "Light Overworld" }
 
 sprite{ id = "animals/bird_red", description = "Bird red" }
@@ -192,6 +194,7 @@ sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
 sprite{ id = "npc/billy", description = "Billy" }
 sprite{ id = "npc/black_knight_soldier", description = "Black Knight Soldier" }
 sprite{ id = "npc/castle_guard", description = "Castle guard" }
+sprite{ id = "npc/diarandor/kaleido", description = "Kaleido" }
 sprite{ id = "npc/great_fairy", description = "Great Fairy" }
 sprite{ id = "npc/inferno", description = "Inferno" }
 sprite{ id = "npc/monkey", description = "Monkey" }
@@ -229,7 +232,6 @@ sprite{ id = "npc/villager1", description = "ALTTP villager 1" }
 sprite{ id = "npc/villager2", description = "ALTTP villager 2" }
 sprite{ id = "npc/villager3", description = "ALTTP villager 3" }
 sprite{ id = "npc/witch", description = "Witch" }
-sprite{ id = "npc/wizard", description = "Wizard" }
 sprite{ id = "shadows/shadow_big", description = "Shadow Big" }
 sprite{ id = "shadows/shadow_big_dynamic", description = "Shadow Big Dynamic" }
 sprite{ id = "shadows/shadow_small", description = "Shadow Small" }

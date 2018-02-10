@@ -1,6 +1,6 @@
 animation{
   name = "stopped",
-  src_image = "npc/kaleido.npc",
+  src_image = "npc/diarandor/kaleido.png",
   directions = {
     { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 23 },
     { x = 24, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 23 },
@@ -10,7 +10,7 @@ animation{
 }
 animation{
   name = "walking",
-  src_image = "npc/kaleido.npc",
+  src_image = "npc/diarandor/kaleido.png",
   frame_delay = 70,
   frame_to_loop_on = 0,
   directions = {
