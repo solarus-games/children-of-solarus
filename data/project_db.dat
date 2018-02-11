@@ -1,3 +1,4 @@
+map{ id = "houses/inn", description = "Inn" }
 map{ id = "out/a1", description = "Outside A1" }
 map{ id = "out/a2", description = "Outside A2" }
 map{ id = "out/a3", description = "Outside A3" }
