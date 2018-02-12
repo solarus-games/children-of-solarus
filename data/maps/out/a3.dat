@@ -22402,6 +22402,16 @@ tile{
   pattern = "Ground_rocky_purple_bis1",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1080,
+  y = 536,
+  width = 16,
+  height = 16,
+  destination_map = "houses/inn",
+  destination = "from_outside",
+}
+
 destructible{
   layer = 0,
   x = 648,
@@ -23898,15 +23908,6 @@ teletransporter{
   destination = "_side",
 }
 
-destination{
-  name = "from_hero_house",
-  layer = 0,
-  x = 576,
-  y = 21,
-  direction = 3,
-  default = true,
-}
-
 custom_entity{
   layer = 0,
   x = 1000,
@@ -23935,6 +23936,15 @@ custom_entity{
   height = 16,
   direction = 2,
   sprite = "animals/clucko_white",
+}
+
+destination{
+  name = "from_inn",
+  layer = 0,
+  x = 1088,
+  y = 565,
+  direction = 3,
+  default = true,
 }
 
 tile{
