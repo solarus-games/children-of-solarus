@@ -1096,3 +1096,66 @@ npc{
   sprite = "npc/diarandor/kaleido",
 }
 
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 640,
+  height = 16,
+  pattern = "wall_blue_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 208,
+  pattern = "wall_blue_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 224,
+  width = 184,
+  height = 16,
+  pattern = "wall_blue_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 16,
+  width = 32,
+  height = 72,
+  pattern = "wall_blue_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 152,
+  width = 32,
+  height = 72,
+  pattern = "wall_blue_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 224,
+  width = 392,
+  height = 16,
+  pattern = "wall_blue_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 16,
+  width = 16,
+  height = 208,
+  pattern = "wall_blue_ceiling",
+}
+

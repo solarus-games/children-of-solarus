@@ -824,7 +824,7 @@ tile{
   y = 176,
   width = 8,
   height = 8,
-  pattern = "chair_yellow_leg",
+  pattern = "table_yellow_leg",
 }
 
 tile{
@@ -833,7 +833,7 @@ tile{
   y = 176,
   width = 8,
   height = 8,
-  pattern = "chair_yellow_leg",
+  pattern = "table_yellow_leg",
 }
 
 tile{
@@ -1364,7 +1364,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = "chair_blue_leg",
+  pattern = "table_blue_leg",
 }
 
 tile{
@@ -1373,7 +1373,7 @@ tile{
   y = 184,
   width = 8,
   height = 8,
-  pattern = "chair_blue_leg",
+  pattern = "table_blue_leg",
 }
 
 tile{
@@ -1517,7 +1517,7 @@ tile{
   y = 64,
   width = 8,
   height = 8,
-  pattern = "chair_blue_leg",
+  pattern = "table_blue_leg",
 }
 
 tile{
@@ -1526,7 +1526,7 @@ tile{
   y = 64,
   width = 8,
   height = 8,
-  pattern = "chair_blue_leg",
+  pattern = "table_blue_leg",
 }
 
 tile{
@@ -1833,5 +1833,68 @@ tile{
   width = 16,
   height = 16,
   pattern = "fireplace_grey_up",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 16,
+  width = 16,
+  height = 208,
+  pattern = "wall_brown_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 16,
+  pattern = "wall_brown_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 224,
+  width = 104,
+  height = 16,
+  pattern = "wall_brown_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 224,
+  width = 248,
+  height = 16,
+  pattern = "wall_brown_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 128,
+  width = 16,
+  height = 96,
+  pattern = "wall_brown_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 16,
+  width = 16,
+  height = 208,
+  pattern = "wall_brown_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "wall_brown_ceiling",
 }
 

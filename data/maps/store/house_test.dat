@@ -491,7 +491,7 @@ tile{
   y = 200,
   width = 8,
   height = 8,
-  pattern = "chair_yellow_leg",
+  pattern = "table_yellow_leg",
 }
 
 tile{
@@ -500,7 +500,7 @@ tile{
   y = 200,
   width = 8,
   height = 8,
-  pattern = "chair_yellow_leg",
+  pattern = "table_yellow_leg",
 }
 
 tile{
@@ -509,7 +509,7 @@ tile{
   y = 200,
   width = 8,
   height = 8,
-  pattern = "chair_yellow_leg",
+  pattern = "table_yellow_leg",
 }
 
 tile{
@@ -518,7 +518,7 @@ tile{
   y = 200,
   width = 8,
   height = 8,
-  pattern = "chair_yellow_leg",
+  pattern = "table_yellow_leg",
 }
 
 tile{
@@ -1013,7 +1013,7 @@ tile{
   y = 176,
   width = 8,
   height = 8,
-  pattern = "chair_green_leg",
+  pattern = "table_green_leg",
 }
 
 tile{
@@ -1022,7 +1022,7 @@ tile{
   y = 176,
   width = 8,
   height = 8,
-  pattern = "chair_green_leg",
+  pattern = "table_green_leg",
 }
 
 tile{
