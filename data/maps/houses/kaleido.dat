@@ -1079,12 +1079,139 @@ tile{
   pattern = "wall_grey_7",
 }
 
-separator{
+tile{
   layer = 0,
-  x = 312,
-  y = 0,
+  x = 224,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_high_3",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_low_3",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_high_3",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_low_3",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_high_0",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_low_0",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_low_0",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_high_0",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_high_2",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_low_2",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_low_2",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_high_2",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 216,
   width = 16,
-  height = 240,
+  height = 16,
+  pattern = "ground_shadow_semitransparent",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "ground_shadow_semitransparent",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "ground_shadow_semitransparent",
 }
 
 npc{
@@ -1094,6 +1221,14 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/diarandor/kaleido",
+}
+
+separator{
+  layer = 0,
+  x = 312,
+  y = 0,
+  width = 16,
+  height = 240,
 }
 
 tile{
@@ -1128,16 +1263,7 @@ tile{
   x = 304,
   y = 16,
   width = 32,
-  height = 72,
-  pattern = "wall_blue_ceiling",
-}
-
-tile{
-  layer = 1,
-  x = 304,
-  y = 152,
-  width = 32,
-  height = 72,
+  height = 208,
   pattern = "wall_blue_ceiling",
 }
 
@@ -1157,5 +1283,140 @@ tile{
   width = 16,
   height = 208,
   pattern = "wall_blue_ceiling",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_right_3",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_left_3",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 232,
+  width = 16,
+  height = 8,
+  pattern = "door_wood_top_middle_3",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_leftborder_3",
+}
+
+tile{
+  layer = 1,
+  x = 232,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_rightborder_3",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "door_wood_top_middle_0",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_leftborder_0",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_right_0",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_left_0",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_rightborder_0",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_left_2",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "door_wood_top_middle_2",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_right_2",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_leftborder_2",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_top_rightborder_2",
 }
 

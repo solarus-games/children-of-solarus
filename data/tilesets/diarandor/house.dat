@@ -875,6 +875,446 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "door_wood_left_high_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 536,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_high_1",
+  ground = "wall",
+  default_layer = 0,
+  x = 472,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_high_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 512,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_high_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 472,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_low_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 528,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_low_1",
+  ground = "wall",
+  default_layer = 0,
+  x = 472,
+  y = 16,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_low_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 520,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_low_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 472,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_middle_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 536,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_middle_1",
+  ground = "wall",
+  default_layer = 0,
+  x = 464,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_middle_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 512,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_left_middle_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 464,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_high_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 536,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_high_1",
+  ground = "wall",
+  default_layer = 0,
+  x = 488,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_high_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 512,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_high_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 488,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_low_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 528,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_low_1",
+  ground = "wall",
+  default_layer = 0,
+  x = 488,
+  y = 16,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_low_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 520,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_low_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 488,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_middle_0",
+  ground = "wall",
+  default_layer = 0,
+  x = 536,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_middle_1",
+  ground = "wall",
+  default_layer = 0,
+  x = 496,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_middle_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 512,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_right_middle_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 496,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_left_0",
+  ground = "wall",
+  default_layer = 1,
+  x = 544,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_left_1",
+  ground = "wall",
+  default_layer = 1,
+  x = 472,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_left_2",
+  ground = "wall",
+  default_layer = 1,
+  x = 504,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_left_3",
+  ground = "wall",
+  default_layer = 1,
+  x = 472,
+  y = 40,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_leftborder_0",
+  ground = "empty",
+  default_layer = 1,
+  x = 544,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_leftborder_1",
+  ground = "empty",
+  default_layer = 1,
+  x = 464,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_leftborder_2",
+  ground = "empty",
+  default_layer = 1,
+  x = 504,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_leftborder_3",
+  ground = "empty",
+  default_layer = 1,
+  x = 464,
+  y = 40,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_middle_0",
+  ground = "wall",
+  default_layer = 1,
+  x = 544,
+  y = 16,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_middle_1",
+  ground = "wall",
+  default_layer = 1,
+  x = 480,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_middle_2",
+  ground = "wall",
+  default_layer = 1,
+  x = 504,
+  y = 16,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_middle_3",
+  ground = "wall",
+  default_layer = 1,
+  x = 480,
+  y = 40,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_right_0",
+  ground = "wall",
+  default_layer = 1,
+  x = 544,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_right_1",
+  ground = "wall",
+  default_layer = 1,
+  x = 488,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_right_2",
+  ground = "wall",
+  default_layer = 1,
+  x = 504,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_right_3",
+  ground = "wall",
+  default_layer = 1,
+  x = 488,
+  y = 40,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_rightborder_0",
+  ground = "empty",
+  default_layer = 1,
+  x = 544,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_rightborder_1",
+  ground = "empty",
+  default_layer = 1,
+  x = 496,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_rightborder_2",
+  ground = "empty",
+  default_layer = 1,
+  x = 504,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "door_wood_top_rightborder_3",
+  ground = "empty",
+  default_layer = 1,
+  x = 496,
+  y = 40,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "fireplace_blue",
   ground = "wall",
   default_layer = 0,
@@ -1147,6 +1587,26 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "ground_shadow",
+  ground = "traversable",
+  default_layer = 0,
+  x = 480,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "ground_shadow_semitransparent",
+  ground = "traversable",
+  default_layer = 0,
+  x = 480,
+  y = 16,
+  width = 8,
+  height = 8,
 }
 
 tile_pattern{
@@ -5004,6 +5464,70 @@ border_set{
 }
 
 border_set{
+  id = "wall_crimson",
+  pattern_0 = "wall_crimson_0",
+  pattern_1 = "wall_crimson_2",
+  pattern_2 = "wall_crimson_4",
+  pattern_3 = "wall_crimson_6",
+  pattern_4 = "wall_crimson_1",
+  pattern_5 = "wall_crimson_3",
+  pattern_6 = "wall_crimson_5",
+  pattern_7 = "wall_crimson_7",
+  pattern_8 = "wall_corner_crimson_1",
+  pattern_9 = "wall_corner_crimson_3",
+  pattern_10 = "wall_corner_crimson_5",
+  pattern_11 = "wall_corner_crimson_7",
+}
+
+border_set{
+  id = "wall_crimson_up",
+  pattern_0 = "wall_up_crimson_0",
+  pattern_1 = "wall_up_crimson_2",
+  pattern_2 = "wall_up_crimson_4",
+  pattern_3 = "wall_up_crimson_6",
+  pattern_4 = "wall_crimson_1",
+  pattern_5 = "wall_crimson_3",
+  pattern_6 = "wall_crimson_5",
+  pattern_7 = "wall_crimson_7",
+  pattern_8 = "wall_corner_up_crimson_1",
+  pattern_9 = "wall_corner_up_crimson_3",
+  pattern_10 = "wall_corner_up_crimson_5",
+  pattern_11 = "wall_corner_up_crimson_7",
+}
+
+border_set{
+  id = "wall_emerald",
+  pattern_0 = "wall_emerald_0",
+  pattern_1 = "wall_emerald_2",
+  pattern_2 = "wall_emerald_4",
+  pattern_3 = "wall_emerald_6",
+  pattern_4 = "wall_emerald_1",
+  pattern_5 = "wall_emerald_3",
+  pattern_6 = "wall_emerald_5",
+  pattern_7 = "wall_emerald_7",
+  pattern_8 = "wall_corner_emerald_1",
+  pattern_9 = "wall_corner_emerald_3",
+  pattern_10 = "wall_corner_emerald_5",
+  pattern_11 = "wall_corner_emerald_7",
+}
+
+border_set{
+  id = "wall_emerald_up",
+  pattern_0 = "wall_up_emerald_0",
+  pattern_1 = "wall_up_emerald_2",
+  pattern_2 = "wall_up_emerald_4",
+  pattern_3 = "wall_up_emerald_6",
+  pattern_4 = "wall_emerald_1",
+  pattern_5 = "wall_emerald_3",
+  pattern_6 = "wall_emerald_5",
+  pattern_7 = "wall_emerald_7",
+  pattern_8 = "wall_corner_up_emerald_1",
+  pattern_9 = "wall_corner_up_emerald_3",
+  pattern_10 = "wall_corner_up_emerald_5",
+  pattern_11 = "wall_corner_up_emerald_7",
+}
+
+border_set{
   id = "wall_green",
   pattern_0 = "wall_green_0",
   pattern_1 = "wall_green_2",
@@ -5068,227 +5592,35 @@ border_set{
 }
 
 border_set{
-  id = "wall_pink",
-  pattern_0 = "wall_pink_0",
-  pattern_1 = "wall_pink_2",
-  pattern_2 = "wall_pink_4",
-  pattern_3 = "wall_pink_6",
-  pattern_4 = "wall_pink_1",
-  pattern_5 = "wall_pink_3",
-  pattern_6 = "wall_pink_5",
-  pattern_7 = "wall_pink_7",
-  pattern_8 = "wall_pink_0",
-  pattern_9 = "wall_pink_2",
-  pattern_10 = "wall_pink_4",
-  pattern_11 = "wall_pink_6",
+  id = "wall_jade",
+  pattern_0 = "wall_jade_0",
+  pattern_1 = "wall_jade_2",
+  pattern_2 = "wall_jade_4",
+  pattern_3 = "wall_jade_6",
+  pattern_4 = "wall_jade_1",
+  pattern_5 = "wall_jade_3",
+  pattern_6 = "wall_jade_5",
+  pattern_7 = "wall_jade_7",
+  pattern_8 = "wall_corner_jade_1",
+  pattern_9 = "wall_corner_jade_3",
+  pattern_10 = "wall_corner_jade_5",
+  pattern_11 = "wall_corner_jade_7",
 }
 
 border_set{
-  id = "wall_pink_up",
-  pattern_0 = "wall_up_pink_0",
-  pattern_1 = "wall_up_pink_2",
-  pattern_2 = "wall_up_pink_4",
-  pattern_3 = "wall_up_pink_6",
-  pattern_4 = "wall_pink_1",
-  pattern_5 = "wall_pink_3",
-  pattern_6 = "wall_pink_5",
-  pattern_7 = "wall_pink_7",
-  pattern_8 = "wall_corner_up_pink_1",
-  pattern_9 = "wall_corner_up_pink_3",
-  pattern_10 = "wall_corner_up_pink_5",
-  pattern_11 = "wall_corner_up_pink_7",
-}
-
-border_set{
-  id = "wall_red",
-  pattern_0 = "wall_red_0",
-  pattern_1 = "wall_red_2",
-  pattern_2 = "wall_red_4",
-  pattern_3 = "wall_red_6",
-  pattern_4 = "wall_red_1",
-  pattern_5 = "wall_red_3",
-  pattern_6 = "wall_red_5",
-  pattern_7 = "wall_red_7",
-  pattern_8 = "wall_corner_red_1",
-  pattern_9 = "wall_corner_red_3",
-  pattern_10 = "wall_corner_red_5",
-  pattern_11 = "wall_corner_red_7",
-}
-
-border_set{
-  id = "wall_red_up",
-  pattern_0 = "wall_up_red_0",
-  pattern_1 = "wall_up_red_2",
-  pattern_2 = "wall_up_red_4",
-  pattern_3 = "wall_up_red_6",
-  pattern_4 = "wall_red_1",
-  pattern_5 = "wall_red_3",
-  pattern_6 = "wall_red_5",
-  pattern_7 = "wall_red_7",
-  pattern_8 = "wall_corner_up_red_1",
-  pattern_9 = "wall_corner_up_red_3",
-  pattern_10 = "wall_corner_up_red_5",
-  pattern_11 = "wall_corner_up_red_7",
-}
-
-border_set{
-  id = "wall_yellow",
-  pattern_0 = "wall_yellow_0",
-  pattern_1 = "wall_yellow_2",
-  pattern_2 = "wall_yellow_4",
-  pattern_3 = "wall_yellow_6",
-  pattern_4 = "wall_yellow_1",
-  pattern_5 = "wall_yellow_3",
-  pattern_6 = "wall_yellow_5",
-  pattern_7 = "wall_yellow_7",
-  pattern_8 = "wall_corner_yellow_1",
-  pattern_9 = "wall_corner_yellow_3",
-  pattern_10 = "wall_corner_yellow_5",
-  pattern_11 = "wall_corner_yellow_7",
-}
-
-border_set{
-  id = "wall_yellow_up",
-  pattern_0 = "wall_up_yellow_0",
-  pattern_1 = "wall_up_yellow_2",
-  pattern_2 = "wall_up_yellow_4",
-  pattern_3 = "wall_up_yellow_6",
-  pattern_4 = "wall_yellow_1",
-  pattern_5 = "wall_yellow_3",
-  pattern_6 = "wall_yellow_5",
-  pattern_7 = "wall_yellow_7",
-  pattern_8 = "wall_corner_up_yellow_1",
-  pattern_9 = "wall_corner_up_yellow_3",
-  pattern_10 = "wall_corner_up_yellow_5",
-  pattern_11 = "wall_corner_up_yellow_7",
-}
-
-border_set{
-  id = "wall_emerald",
-  pattern_0 = "wall_emerald_0",
-  pattern_1 = "wall_emerald_2",
-  pattern_2 = "wall_emerald_4",
-  pattern_3 = "wall_emerald_6",
-  pattern_4 = "wall_emerald_1",
-  pattern_5 = "wall_emerald_3",
-  pattern_6 = "wall_emerald_5",
-  pattern_7 = "wall_emerald_7",
-  pattern_8 = "wall_corner_emerald_1",
-  pattern_9 = "wall_corner_emerald_3",
-  pattern_10 = "wall_corner_emerald_5",
-  pattern_11 = "wall_corner_emerald_7",
-}
-
-border_set{
-  id = "wall_emerald_up",
-  pattern_0 = "wall_up_emerald_0",
-  pattern_1 = "wall_up_emerald_2",
-  pattern_2 = "wall_up_emerald_4",
-  pattern_3 = "wall_up_emerald_6",
-  pattern_4 = "wall_emerald_1",
-  pattern_5 = "wall_emerald_3",
-  pattern_6 = "wall_emerald_5",
-  pattern_7 = "wall_emerald_7",
-  pattern_8 = "wall_corner_up_emerald_1",
-  pattern_9 = "wall_corner_up_emerald_3",
-  pattern_10 = "wall_corner_up_emerald_5",
-  pattern_11 = "wall_corner_up_emerald_7",
-}
-
-border_set{
-  id = "wall_purple",
-  pattern_0 = "wall_purple_0",
-  pattern_1 = "wall_purple_2",
-  pattern_2 = "wall_purple_4",
-  pattern_3 = "wall_purple_6",
-  pattern_4 = "wall_purple_1",
-  pattern_5 = "wall_purple_3",
-  pattern_6 = "wall_purple_5",
-  pattern_7 = "wall_purple_7",
-  pattern_8 = "wall_corner_purple_1",
-  pattern_9 = "wall_corner_purple_3",
-  pattern_10 = "wall_corner_purple_5",
-  pattern_11 = "wall_corner_purple_7",
-}
-
-border_set{
-  id = "wall_purple_up",
-  pattern_0 = "wall_up_purple_0",
-  pattern_1 = "wall_up_purple_2",
-  pattern_2 = "wall_up_purple_4",
-  pattern_3 = "wall_up_purple_6",
-  pattern_4 = "wall_purple_1",
-  pattern_5 = "wall_purple_3",
-  pattern_6 = "wall_purple_5",
-  pattern_7 = "wall_purple_7",
-  pattern_8 = "wall_corner_up_purple_1",
-  pattern_9 = "wall_corner_up_purple_3",
-  pattern_10 = "wall_corner_up_purple_5",
-  pattern_11 = "wall_corner_up_purple_7",
-}
-
-border_set{
-  id = "wall_orange",
-  pattern_0 = "wall_orange_0",
-  pattern_1 = "wall_orange_2",
-  pattern_2 = "wall_orange_4",
-  pattern_3 = "wall_orange_6",
-  pattern_4 = "wall_orange_1",
-  pattern_5 = "wall_orange_3",
-  pattern_6 = "wall_orange_5",
-  pattern_7 = "wall_orange_7",
-  pattern_8 = "wall_corner_orange_1",
-  pattern_9 = "wall_corner_orange_3",
-  pattern_10 = "wall_corner_orange_5",
-  pattern_11 = "wall_corner_orange_7",
-}
-
-border_set{
-  id = "wall_orange_up",
-  pattern_0 = "wall_up_orange_0",
-  pattern_1 = "wall_up_orange_2",
-  pattern_2 = "wall_up_orange_4",
-  pattern_3 = "wall_up_orange_6",
-  pattern_4 = "wall_orange_1",
-  pattern_5 = "wall_orange_3",
-  pattern_6 = "wall_orange_5",
-  pattern_7 = "wall_orange_7",
-  pattern_8 = "wall_corner_up_orange_1",
-  pattern_9 = "wall_corner_up_orange_3",
-  pattern_10 = "wall_corner_up_orange_5",
-  pattern_11 = "wall_corner_up_orange_7",
-}
-
-border_set{
-  id = "wall_violet",
-  pattern_0 = "wall_violet_0",
-  pattern_1 = "wall_violet_2",
-  pattern_2 = "wall_violet_4",
-  pattern_3 = "wall_violet_6",
-  pattern_4 = "wall_violet_1",
-  pattern_5 = "wall_violet_3",
-  pattern_6 = "wall_violet_5",
-  pattern_7 = "wall_violet_7",
-  pattern_8 = "wall_corner_violet_1",
-  pattern_9 = "wall_corner_violet_3",
-  pattern_10 = "wall_corner_violet_5",
-  pattern_11 = "wall_corner_violet_7",
-}
-
-border_set{
-  id = "wall_violet_up",
-  pattern_0 = "wall_up_violet_0",
-  pattern_1 = "wall_up_violet_2",
-  pattern_2 = "wall_up_violet_4",
-  pattern_3 = "wall_up_violet_6",
-  pattern_4 = "wall_violet_1",
-  pattern_5 = "wall_violet_3",
-  pattern_6 = "wall_violet_5",
-  pattern_7 = "wall_violet_7",
-  pattern_8 = "wall_corner_up_violet_1",
-  pattern_9 = "wall_corner_up_violet_3",
-  pattern_10 = "wall_corner_up_violet_5",
-  pattern_11 = "wall_corner_up_violet_7",
+  id = "wall_jade_up",
+  pattern_0 = "wall_up_jade_0",
+  pattern_1 = "wall_up_jade_2",
+  pattern_2 = "wall_up_jade_4",
+  pattern_3 = "wall_up_jade_6",
+  pattern_4 = "wall_jade_1",
+  pattern_5 = "wall_jade_3",
+  pattern_6 = "wall_jade_5",
+  pattern_7 = "wall_jade_7",
+  pattern_8 = "wall_corner_up_jade_1",
+  pattern_9 = "wall_corner_up_jade_3",
+  pattern_10 = "wall_corner_up_jade_5",
+  pattern_11 = "wall_corner_up_jade_7",
 }
 
 border_set{
@@ -5324,65 +5656,194 @@ border_set{
 }
 
 border_set{
-  id = "wall_crimson",
-  pattern_0 = "wall_crimson_0",
-  pattern_1 = "wall_crimson_2",
-  pattern_2 = "wall_crimson_4",
-  pattern_3 = "wall_crimson_6",
-  pattern_4 = "wall_crimson_1",
-  pattern_5 = "wall_crimson_3",
-  pattern_6 = "wall_crimson_5",
-  pattern_7 = "wall_crimson_7",
-  pattern_8 = "wall_corner_crimson_1",
-  pattern_9 = "wall_corner_crimson_3",
-  pattern_10 = "wall_corner_crimson_5",
-  pattern_11 = "wall_corner_crimson_7",
+  id = "wall_orange",
+  pattern_0 = "wall_orange_0",
+  pattern_1 = "wall_orange_2",
+  pattern_2 = "wall_orange_4",
+  pattern_3 = "wall_orange_6",
+  pattern_4 = "wall_orange_1",
+  pattern_5 = "wall_orange_3",
+  pattern_6 = "wall_orange_5",
+  pattern_7 = "wall_orange_7",
+  pattern_8 = "wall_corner_orange_1",
+  pattern_9 = "wall_corner_orange_3",
+  pattern_10 = "wall_corner_orange_5",
+  pattern_11 = "wall_corner_orange_7",
 }
 
 border_set{
-  id = "wall_crimson_up",
-  pattern_0 = "wall_up_crimson_0",
-  pattern_1 = "wall_up_crimson_2",
-  pattern_2 = "wall_up_crimson_4",
-  pattern_3 = "wall_up_crimson_6",
-  pattern_4 = "wall_crimson_1",
-  pattern_5 = "wall_crimson_3",
-  pattern_6 = "wall_crimson_5",
-  pattern_7 = "wall_crimson_7",
-  pattern_8 = "wall_corner_up_crimson_1",
-  pattern_9 = "wall_corner_up_crimson_3",
-  pattern_10 = "wall_corner_up_crimson_5",
-  pattern_11 = "wall_corner_up_crimson_7",
+  id = "wall_orange_up",
+  pattern_0 = "wall_up_orange_0",
+  pattern_1 = "wall_up_orange_2",
+  pattern_2 = "wall_up_orange_4",
+  pattern_3 = "wall_up_orange_6",
+  pattern_4 = "wall_orange_1",
+  pattern_5 = "wall_orange_3",
+  pattern_6 = "wall_orange_5",
+  pattern_7 = "wall_orange_7",
+  pattern_8 = "wall_corner_up_orange_1",
+  pattern_9 = "wall_corner_up_orange_3",
+  pattern_10 = "wall_corner_up_orange_5",
+  pattern_11 = "wall_corner_up_orange_7",
 }
 
 border_set{
-  id = "wall_jade",
-  pattern_0 = "wall_jade_0",
-  pattern_1 = "wall_jade_2",
-  pattern_2 = "wall_jade_4",
-  pattern_3 = "wall_jade_6",
-  pattern_4 = "wall_jade_1",
-  pattern_5 = "wall_jade_3",
-  pattern_6 = "wall_jade_5",
-  pattern_7 = "wall_jade_7",
-  pattern_8 = "wall_corner_jade_1",
-  pattern_9 = "wall_corner_jade_3",
-  pattern_10 = "wall_corner_jade_5",
-  pattern_11 = "wall_corner_jade_7",
+  id = "wall_pink",
+  pattern_0 = "wall_pink_0",
+  pattern_1 = "wall_pink_2",
+  pattern_2 = "wall_pink_4",
+  pattern_3 = "wall_pink_6",
+  pattern_4 = "wall_pink_1",
+  pattern_5 = "wall_pink_3",
+  pattern_6 = "wall_pink_5",
+  pattern_7 = "wall_pink_7",
+  pattern_8 = "wall_pink_0",
+  pattern_9 = "wall_pink_2",
+  pattern_10 = "wall_pink_4",
+  pattern_11 = "wall_pink_6",
 }
 
 border_set{
-  id = "wall_jade_up",
-  pattern_0 = "wall_up_jade_0",
-  pattern_1 = "wall_up_jade_2",
-  pattern_2 = "wall_up_jade_4",
-  pattern_3 = "wall_up_jade_6",
-  pattern_4 = "wall_jade_1",
-  pattern_5 = "wall_jade_3",
-  pattern_6 = "wall_jade_5",
-  pattern_7 = "wall_jade_7",
-  pattern_8 = "wall_corner_up_jade_1",
-  pattern_9 = "wall_corner_up_jade_3",
-  pattern_10 = "wall_corner_up_jade_5",
-  pattern_11 = "wall_corner_up_jade_7",
+  id = "wall_pink_up",
+  pattern_0 = "wall_up_pink_0",
+  pattern_1 = "wall_up_pink_2",
+  pattern_2 = "wall_up_pink_4",
+  pattern_3 = "wall_up_pink_6",
+  pattern_4 = "wall_pink_1",
+  pattern_5 = "wall_pink_3",
+  pattern_6 = "wall_pink_5",
+  pattern_7 = "wall_pink_7",
+  pattern_8 = "wall_corner_up_pink_1",
+  pattern_9 = "wall_corner_up_pink_3",
+  pattern_10 = "wall_corner_up_pink_5",
+  pattern_11 = "wall_corner_up_pink_7",
 }
+
+border_set{
+  id = "wall_purple",
+  pattern_0 = "wall_purple_0",
+  pattern_1 = "wall_purple_2",
+  pattern_2 = "wall_purple_4",
+  pattern_3 = "wall_purple_6",
+  pattern_4 = "wall_purple_1",
+  pattern_5 = "wall_purple_3",
+  pattern_6 = "wall_purple_5",
+  pattern_7 = "wall_purple_7",
+  pattern_8 = "wall_corner_purple_1",
+  pattern_9 = "wall_corner_purple_3",
+  pattern_10 = "wall_corner_purple_5",
+  pattern_11 = "wall_corner_purple_7",
+}
+
+border_set{
+  id = "wall_purple_up",
+  pattern_0 = "wall_up_purple_0",
+  pattern_1 = "wall_up_purple_2",
+  pattern_2 = "wall_up_purple_4",
+  pattern_3 = "wall_up_purple_6",
+  pattern_4 = "wall_purple_1",
+  pattern_5 = "wall_purple_3",
+  pattern_6 = "wall_purple_5",
+  pattern_7 = "wall_purple_7",
+  pattern_8 = "wall_corner_up_purple_1",
+  pattern_9 = "wall_corner_up_purple_3",
+  pattern_10 = "wall_corner_up_purple_5",
+  pattern_11 = "wall_corner_up_purple_7",
+}
+
+border_set{
+  id = "wall_red",
+  pattern_0 = "wall_red_0",
+  pattern_1 = "wall_red_2",
+  pattern_2 = "wall_red_4",
+  pattern_3 = "wall_red_6",
+  pattern_4 = "wall_red_1",
+  pattern_5 = "wall_red_3",
+  pattern_6 = "wall_red_5",
+  pattern_7 = "wall_red_7",
+  pattern_8 = "wall_corner_red_1",
+  pattern_9 = "wall_corner_red_3",
+  pattern_10 = "wall_corner_red_5",
+  pattern_11 = "wall_corner_red_7",
+}
+
+border_set{
+  id = "wall_red_up",
+  pattern_0 = "wall_up_red_0",
+  pattern_1 = "wall_up_red_2",
+  pattern_2 = "wall_up_red_4",
+  pattern_3 = "wall_up_red_6",
+  pattern_4 = "wall_red_1",
+  pattern_5 = "wall_red_3",
+  pattern_6 = "wall_red_5",
+  pattern_7 = "wall_red_7",
+  pattern_8 = "wall_corner_up_red_1",
+  pattern_9 = "wall_corner_up_red_3",
+  pattern_10 = "wall_corner_up_red_5",
+  pattern_11 = "wall_corner_up_red_7",
+}
+
+border_set{
+  id = "wall_violet",
+  pattern_0 = "wall_violet_0",
+  pattern_1 = "wall_violet_2",
+  pattern_2 = "wall_violet_4",
+  pattern_3 = "wall_violet_6",
+  pattern_4 = "wall_violet_1",
+  pattern_5 = "wall_violet_3",
+  pattern_6 = "wall_violet_5",
+  pattern_7 = "wall_violet_7",
+  pattern_8 = "wall_corner_violet_1",
+  pattern_9 = "wall_corner_violet_3",
+  pattern_10 = "wall_corner_violet_5",
+  pattern_11 = "wall_corner_violet_7",
+}
+
+border_set{
+  id = "wall_violet_up",
+  pattern_0 = "wall_up_violet_0",
+  pattern_1 = "wall_up_violet_2",
+  pattern_2 = "wall_up_violet_4",
+  pattern_3 = "wall_up_violet_6",
+  pattern_4 = "wall_violet_1",
+  pattern_5 = "wall_violet_3",
+  pattern_6 = "wall_violet_5",
+  pattern_7 = "wall_violet_7",
+  pattern_8 = "wall_corner_up_violet_1",
+  pattern_9 = "wall_corner_up_violet_3",
+  pattern_10 = "wall_corner_up_violet_5",
+  pattern_11 = "wall_corner_up_violet_7",
+}
+
+border_set{
+  id = "wall_yellow",
+  pattern_0 = "wall_yellow_0",
+  pattern_1 = "wall_yellow_2",
+  pattern_2 = "wall_yellow_4",
+  pattern_3 = "wall_yellow_6",
+  pattern_4 = "wall_yellow_1",
+  pattern_5 = "wall_yellow_3",
+  pattern_6 = "wall_yellow_5",
+  pattern_7 = "wall_yellow_7",
+  pattern_8 = "wall_corner_yellow_1",
+  pattern_9 = "wall_corner_yellow_3",
+  pattern_10 = "wall_corner_yellow_5",
+  pattern_11 = "wall_corner_yellow_7",
+}
+
+border_set{
+  id = "wall_yellow_up",
+  pattern_0 = "wall_up_yellow_0",
+  pattern_1 = "wall_up_yellow_2",
+  pattern_2 = "wall_up_yellow_4",
+  pattern_3 = "wall_up_yellow_6",
+  pattern_4 = "wall_yellow_1",
+  pattern_5 = "wall_yellow_3",
+  pattern_6 = "wall_yellow_5",
+  pattern_7 = "wall_yellow_7",
+  pattern_8 = "wall_corner_up_yellow_1",
+  pattern_9 = "wall_corner_up_yellow_3",
+  pattern_10 = "wall_corner_up_yellow_5",
+  pattern_11 = "wall_corner_up_yellow_7",
+}
+
