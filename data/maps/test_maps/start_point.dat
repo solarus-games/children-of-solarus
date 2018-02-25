@@ -54,7 +54,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "out/a3",
-  destination = "from_hero_house",
+  destination = "from_inn",
   sprite = "entities/teletransporter_green",
 }
 

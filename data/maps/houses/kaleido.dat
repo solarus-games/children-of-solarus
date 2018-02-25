@@ -1214,6 +1214,294 @@ tile{
   pattern = "ground_shadow_semitransparent",
 }
 
+tile{
+  layer = 0,
+  x = 504,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_3",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_1",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_0down",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_7",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_end_2right",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_end_2left",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_4down",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_5",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_5",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_3",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_4up",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_end_6left",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_end_6right",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_0up",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_7",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_1",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_0down",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_7",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_4down",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_5",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "lowwall_corner_blue",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "lowwall_corner_blue",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "lowwall_corner_blue",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "lowwall_corner_blue",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "lowwall_corner_blue",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 152,
+  width = 64,
+  height = 8,
+  pattern = "lowwall_horizontal_blue",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 152,
+  width = 56,
+  height = 8,
+  pattern = "lowwall_horizontal_blue",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 48,
+  width = 8,
+  height = 104,
+  pattern = "lowwall_vertical_blue",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "window_big_6",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "window_small_6",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 32,
+  height = 16,
+  pattern = "window_big_2",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "window_small_2",
+}
+
 npc{
   layer = 0,
   x = 144,
@@ -1229,6 +1517,24 @@ separator{
   y = 0,
   width = 16,
   height = 240,
+}
+
+teletransporter{
+  layer = 0,
+  x = 208,
+  y = 232,
+  width = 16,
+  height = 16,
+  destination_map = "out/a3",
+  destination = "from_kaleido",
+}
+
+destination{
+  name = "to_kaleido",
+  layer = 0,
+  x = 216,
+  y = 229,
+  direction = 1,
 }
 
 tile{

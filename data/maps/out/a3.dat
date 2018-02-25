@@ -23947,6 +23947,33 @@ destination{
   default = true,
 }
 
+npc{
+  layer = 0,
+  x = 688,
+  y = 781,
+  direction = 3,
+  subtype = 1,
+  sprite = "destructibles/signpost",
+}
+
+teletransporter{
+  layer = 0,
+  x = 712,
+  y = 712,
+  width = 16,
+  height = 16,
+  destination_map = "houses/kaleido",
+  destination = "to_kaleido",
+}
+
+destination{
+  name = "from_kaleido",
+  layer = 0,
+  x = 720,
+  y = 741,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 280,
