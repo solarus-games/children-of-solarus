@@ -1,3 +1,4 @@
+map{ id = "houses/gem_house", description = "Gem House" }
 map{ id = "houses/inn", description = "Inn" }
 map{ id = "houses/kaleido", description = "Kaleido house" }
 map{ id = "out/a1", description = "Outside A1" }
@@ -99,7 +100,7 @@ sprite{ id = "enemies/newlink/spider", description = "Spider" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
-sprite{ id = "entities/block", description = "Block" }
+sprite{ id = "entities/block_brown", description = "Block (brown)" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/bone_key_door", description = "Bone key door" }
