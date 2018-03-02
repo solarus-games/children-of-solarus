@@ -1548,42 +1548,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 40,
-  y = 40,
-  width = 8,
-  height = 160,
-  pattern = "ground_shadow_60",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 40,
-  width = 224,
-  height = 8,
-  pattern = "ground_shadow_60",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 192,
-  width = 160,
-  height = 8,
-  pattern = "ground_shadow_60",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 40,
-  width = 8,
-  height = 160,
-  pattern = "ground_shadow_60",
-}
-
-tile{
-  layer = 0,
   x = 280,
   y = 112,
   width = 8,
@@ -1616,24 +1580,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "ground_shadow_100",
-}
-
-tile{
-  layer = 0,
-  x = 360,
-  y = 40,
-  width = 8,
-  height = 160,
-  pattern = "ground_shadow_60",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 192,
-  width = 48,
-  height = 8,
-  pattern = "ground_shadow_60",
 }
 
 tile{
@@ -1723,33 +1669,6 @@ tile{
   y = 24,
   width = 256,
   height = 8,
-  pattern = "ground_shadow_60",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 40,
-  width = 64,
-  height = 8,
-  pattern = "ground_shadow_60",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 192,
-  width = 232,
-  height = 8,
-  pattern = "ground_shadow_60",
-}
-
-tile{
-  layer = 0,
-  x = 592,
-  y = 160,
-  width = 8,
-  height = 32,
   pattern = "ground_shadow_60",
 }
 
