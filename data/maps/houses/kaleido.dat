@@ -235,20 +235,29 @@ tile{
 
 tile{
   layer = -1,
+  x = 456,
+  y = 56,
+  width = 128,
+  height = 8,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = -1,
+  x = 456,
+  y = 128,
+  width = 128,
+  height = 8,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = -1,
   x = 504,
   y = 120,
   width = 8,
   height = 8,
   pattern = "stairs_vertical_border_3",
-}
-
-tile{
-  layer = -1,
-  x = 520,
-  y = 136,
-  width = 8,
-  height = 8,
-  pattern = "stairs_vertical_1",
 }
 
 tile{
@@ -267,6 +276,87 @@ tile{
   width = 8,
   height = 8,
   pattern = "stairs_vertical_end_2left",
+}
+
+tile{
+  layer = -1,
+  x = 528,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_1",
+}
+
+tile{
+  layer = -1,
+  x = 456,
+  y = 64,
+  width = 8,
+  height = 64,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = -1,
+  x = 576,
+  y = 64,
+  width = 8,
+  height = 64,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = -1,
+  x = 528,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_0down",
+}
+
+tile{
+  layer = -1,
+  x = 520,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_7",
+}
+
+tile{
+  layer = -1,
+  x = 504,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_border_4down",
+}
+
+tile{
+  layer = -1,
+  x = 512,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_5",
+}
+
+tile{
+  layer = -1,
+  x = 448,
+  y = 136,
+  width = 144,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = -1,
+  x = 520,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "stairs_vertical_1",
 }
 
 tile{
@@ -298,38 +388,11 @@ tile{
 
 tile{
   layer = -1,
-  x = 528,
-  y = 120,
-  width = 8,
-  height = 8,
-  pattern = "stairs_vertical_border_1",
-}
-
-tile{
-  layer = -1,
-  x = 528,
-  y = 128,
-  width = 8,
-  height = 8,
-  pattern = "stairs_vertical_border_0down",
-}
-
-tile{
-  layer = -1,
   x = 520,
   y = 128,
   width = 8,
   height = 8,
   pattern = "stairs_vertical_7",
-}
-
-tile{
-  layer = -1,
-  x = 504,
-  y = 128,
-  width = 8,
-  height = 8,
-  pattern = "stairs_vertical_border_4down",
 }
 
 tile{
@@ -343,26 +406,8 @@ tile{
 
 tile{
   layer = -1,
-  x = 528,
-  y = 144,
-  width = 8,
-  height = 8,
-  pattern = "stairs_vertical_border_0down",
-}
-
-tile{
-  layer = -1,
-  x = 520,
-  y = 144,
-  width = 8,
-  height = 8,
-  pattern = "stairs_vertical_7",
-}
-
-tile{
-  layer = -1,
   x = 504,
-  y = 144,
+  y = 128,
   width = 8,
   height = 8,
   pattern = "stairs_vertical_border_4down",
@@ -370,11 +415,38 @@ tile{
 
 tile{
   layer = -1,
-  x = 512,
-  y = 144,
+  x = 528,
+  y = 128,
   width = 8,
   height = 8,
-  pattern = "stairs_vertical_5",
+  pattern = "stairs_vertical_border_0down",
+}
+
+tile{
+  layer = -1,
+  x = 448,
+  y = 48,
+  width = 144,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = -1,
+  x = 584,
+  y = 56,
+  width = 8,
+  height = 80,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = -1,
+  x = 448,
+  y = 56,
+  width = 8,
+  height = 80,
+  pattern = "ground_shadow_60",
 }
 
 tile{
@@ -388,20 +460,20 @@ tile{
 
 tile{
   layer = -1,
-  x = 560,
-  y = 48,
+  x = 544,
+  y = 56,
   width = 8,
   height = 8,
-  pattern = "door_wood_right_high_1",
+  pattern = "stairs_vertical_5",
 }
 
 tile{
   layer = -1,
-  x = 536,
-  y = 48,
+  x = 552,
+  y = 56,
   width = 8,
   height = 8,
-  pattern = "door_wood_left_high_1",
+  pattern = "stairs_vertical_7",
 }
 
 tile{
@@ -411,6 +483,15 @@ tile{
   width = 8,
   height = 8,
   pattern = "door_wood_right_low_1",
+}
+
+tile{
+  layer = -1,
+  x = 560,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_high_1",
 }
 
 tile{
@@ -433,20 +514,11 @@ tile{
 
 tile{
   layer = -1,
-  x = 552,
-  y = 56,
+  x = 536,
+  y = 48,
   width = 8,
   height = 8,
-  pattern = "stairs_vertical_7",
-}
-
-tile{
-  layer = -1,
-  x = 544,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "stairs_vertical_5",
+  pattern = "door_wood_left_high_1",
 }
 
 stairs{
@@ -1017,132 +1089,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_right_high_3",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_right_low_3",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_left_high_3",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_left_low_3",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 128,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_left_high_0",
-}
-
-tile{
-  layer = 0,
-  x = 280,
-  y = 104,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_right_low_0",
-}
-
-tile{
-  layer = 0,
-  x = 280,
-  y = 128,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_left_low_0",
-}
-
-tile{
-  layer = 0,
-  x = 288,
-  y = 104,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_right_high_0",
-}
-
-tile{
-  layer = 0,
-  x = 344,
-  y = 128,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_left_high_2",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 128,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_left_low_2",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 104,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_right_low_2",
-}
-
-tile{
-  layer = 0,
-  x = 344,
-  y = 104,
-  width = 8,
-  height = 8,
-  pattern = "door_wood_right_high_2",
-}
-
-tile{
-  layer = 0,
-  x = 280,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "ground_shadow_semitransparent",
-}
-
-tile{
-  layer = 0,
-  x = 344,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "ground_shadow_semitransparent",
-}
-
-tile{
-  layer = 0,
   x = 504,
   y = 152,
   width = 8,
@@ -1296,15 +1242,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "ground_shadow_semitransparent",
-}
-
-tile{
-  layer = 0,
   x = 224,
   y = 224,
   width = 8,
@@ -1391,6 +1328,447 @@ tile{
   width = 8,
   height = 8,
   pattern = "door_wood_top_leftborder_1",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 32,
+  width = 8,
+  height = 80,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 32,
+  width = 80,
+  height = 8,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 152,
+  width = 8,
+  height = 48,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 128,
+  width = 8,
+  height = 80,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_low_2",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_low_2",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 200,
+  width = 248,
+  height = 8,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 24,
+  width = 8,
+  height = 88,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 128,
+  width = 8,
+  height = 88,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_high_2",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_high_2",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 24,
+  width = 88,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 208,
+  width = 264,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 152,
+  width = 8,
+  height = 56,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 32,
+  width = 8,
+  height = 80,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 128,
+  width = 8,
+  height = 80,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 24,
+  width = 8,
+  height = 88,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 128,
+  width = 8,
+  height = 88,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_low_0",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_low_0",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_high_0",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_high_0",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 8,
+  height = 176,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 24,
+  width = 8,
+  height = 192,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 40,
+  width = 8,
+  height = 160,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 40,
+  width = 224,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 192,
+  width = 160,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 40,
+  width = 8,
+  height = 160,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "ground_shadow_160",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "ground_shadow_160",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 40,
+  width = 8,
+  height = 160,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 192,
+  width = 48,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 200,
+  width = 168,
+  height = 8,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 208,
+  width = 176,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 208,
+  width = 64,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 200,
+  width = 56,
+  height = 8,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_low_3",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_left_high_3",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_high_3",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 200,
+  width = 8,
+  height = 8,
+  pattern = "door_wood_right_low_3",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 32,
+  width = 240,
+  height = 8,
+  pattern = "ground_shadow_100",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 24,
+  width = 256,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 40,
+  width = 64,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 192,
+  width = 232,
+  height = 8,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 160,
+  width = 8,
+  height = 32,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 24,
+  width = 176,
+  height = 16,
+  pattern = "ground_shadow_60",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 40,
+  width = 16,
+  height = 112,
+  pattern = "ground_shadow_60",
 }
 
 npc{

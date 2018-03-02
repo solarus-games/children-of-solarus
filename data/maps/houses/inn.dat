@@ -1445,7 +1445,7 @@ tile{
   y = 200,
   width = 16,
   height = 16,
-  pattern = "ground_shadow_semitransparent",
+  pattern = "ground_shadow_200",
 }
 
 tile{
@@ -1553,7 +1553,7 @@ tile{
   y = 88,
   width = 16,
   height = 16,
-  pattern = "ground_shadow_semitransparent",
+  pattern = "ground_shadow_200",
 }
 
 tile{
@@ -1562,7 +1562,7 @@ tile{
   y = 88,
   width = 16,
   height = 16,
-  pattern = "ground_shadow_semitransparent",
+  pattern = "ground_shadow_200",
 }
 
 tile{

@@ -1697,22 +1697,90 @@ tile_pattern{
   id = "ground_shadow",
   ground = "traversable",
   default_layer = 0,
-  x = 480,
-  y = 8,
+  x = 80,
+  y = 176,
   width = 8,
   height = 8,
-  repeat_mode = "none",
 }
 
 tile_pattern{
-  id = "ground_shadow_semitransparent",
+  id = "ground_shadow_100",
   ground = "traversable",
   default_layer = 0,
-  x = 480,
-  y = 16,
+  x = 80,
+  y = 128,
   width = 8,
   height = 8,
-  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "ground_shadow_120",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 136,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "ground_shadow_140",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 144,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "ground_shadow_160",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 152,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "ground_shadow_180",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 160,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "ground_shadow_200",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 168,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "ground_shadow_60",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 112,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "ground_shadow_80",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 120,
+  width = 8,
+  height = 8,
 }
 
 tile_pattern{

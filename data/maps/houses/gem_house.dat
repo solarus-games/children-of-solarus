@@ -735,7 +735,7 @@ tile{
   y = 280,
   width = 16,
   height = 16,
-  pattern = "ground_shadow_semitransparent",
+  pattern = "ground_shadow_200",
 }
 
 tile{
