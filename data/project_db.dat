@@ -100,7 +100,15 @@ sprite{ id = "enemies/newlink/spider", description = "Spider" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/bed", description = "Hero's bed" }
 sprite{ id = "entities/big_chest", description = "Chest (big)" }
+sprite{ id = "entities/block_blue", description = "Block (blue)" }
 sprite{ id = "entities/block_brown", description = "Block (brown)" }
+sprite{ id = "entities/block_green", description = "Block (green)" }
+sprite{ id = "entities/block_grey", description = "Block (grey)" }
+sprite{ id = "entities/block_pink", description = "Block (pink)" }
+sprite{ id = "entities/block_purple", description = "Block (purple)" }
+sprite{ id = "entities/block_red", description = "Block (red)" }
+sprite{ id = "entities/block_violet", description = "Block (violet)" }
+sprite{ id = "entities/block_yellow", description = "Block (yellow)" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/bomb_flower", description = "Bomb flower" }
 sprite{ id = "entities/bone_key_door", description = "Bone key door" }
