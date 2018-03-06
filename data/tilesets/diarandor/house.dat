@@ -1579,61 +1579,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "flask_blue",
-  ground = "empty",
-  default_layer = 0,
-  x = 312,
-  y = 40,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "flask_blue_orange",
-  ground = "empty",
-  default_layer = 0,
-  x = 336,
-  y = 40,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "flask_green",
-  ground = "empty",
-  default_layer = 0,
-  x = 328,
-  y = 40,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "flask_green_orange_blue",
-  ground = "empty",
-  default_layer = 0,
-  x = 344,
-  y = 40,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "flask_orange",
-  ground = "empty",
-  default_layer = 0,
-  x = 320,
-  y = 40,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
-}
-
-tile_pattern{
   id = "ground_cross_grey",
   ground = "traversable",
   default_layer = 0,
@@ -1878,7 +1823,7 @@ tile_pattern{
   ground = "empty",
   default_layer = 0,
   x = 312,
-  y = 48,
+  y = 40,
   width = 16,
   height = 16,
   repeat_mode = "none",
@@ -2291,6 +2236,26 @@ tile_pattern{
   y = 0,
   width = 24,
   height = 8,
+}
+
+tile_pattern{
+  id = "stairs_spiral_1",
+  ground = "traversable",
+  default_layer = 0,
+  x = 432,
+  y = 144,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "stairs_spiral_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 448,
+  y = 144,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
