@@ -5,12 +5,13 @@
 -- Features can be enabled to disabled independently by commenting
 -- or uncommenting lines below.
 
-require("scripts/hud/hud")
+--require("scripts/hud/hud")
 require("scripts/menus/game_over")
 require("scripts/menus/dialog_box")
-require("scripts/menus/pause")
+--require("scripts/menus/pause")
 require("scripts/chronometer")
 require("scripts/debug")
+require("scripts/debug_dialogs")
 require("scripts/dungeons")
 require("scripts/equipment")
 require("scripts/maps/light_manager.lua")

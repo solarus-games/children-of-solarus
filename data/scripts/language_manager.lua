@@ -5,7 +5,7 @@
 
 local language_manager = {}
 
-local default_language = "fr"
+local default_language = "en"
 
 -- Returns the id of the default language.
 function language_manager:get_default_language()
