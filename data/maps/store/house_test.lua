@@ -9,6 +9,7 @@
 
 local map = ...
 local game = map:get_game()
+local hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
@@ -17,8 +18,12 @@ function map:on_started()
   -- map entities here.
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
+-- Test sprites of NPCs with the hero.
 function map:on_opening_transition_finished()
-
+  for npc in self:get_entities_by_type("npc") do
+    function npc:on_interaction()
+      local sprite_id = npc:get_sprite():get_animation_set()
+      hero:set_tunic_sprite_id(sprite_id)
+    end
+  end
 end

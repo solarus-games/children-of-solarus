@@ -1340,11 +1340,65 @@ wall{
 
 npc{
   layer = 0,
-  x = 176,
-  y = 101,
+  x = 32,
+  y = 85,
   direction = 3,
   subtype = 1,
   sprite = "npc/diarandor/kaleido",
+}
+
+npc{
+  layer = 0,
+  x = 136,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/diarandor/woman_1a",
+}
+
+npc{
+  layer = 0,
+  x = 160,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/diarandor/woman_1b",
+}
+
+npc{
+  layer = 0,
+  x = 184,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/diarandor/woman_1c",
+}
+
+npc{
+  layer = 0,
+  x = 208,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/diarandor/woman_1d",
+}
+
+npc{
+  layer = 0,
+  x = 232,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/diarandor/woman_1e",
+}
+
+npc{
+  layer = 0,
+  x = 256,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/diarandor/woman_1f",
 }
 
 tile{

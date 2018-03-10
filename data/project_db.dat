@@ -206,6 +206,12 @@ sprite{ id = "npc/billy", description = "Billy" }
 sprite{ id = "npc/black_knight_soldier", description = "Black Knight Soldier" }
 sprite{ id = "npc/castle_guard", description = "Castle guard" }
 sprite{ id = "npc/diarandor/kaleido", description = "Kaleido" }
+sprite{ id = "npc/diarandor/woman_1a", description = "Woman 1a" }
+sprite{ id = "npc/diarandor/woman_1b", description = "Woman 1b" }
+sprite{ id = "npc/diarandor/woman_1c", description = "Woman 1c" }
+sprite{ id = "npc/diarandor/woman_1d", description = "Woman 1d" }
+sprite{ id = "npc/diarandor/woman_1e", description = "Woman 1e" }
+sprite{ id = "npc/diarandor/woman_1f", description = "Woman 1f" }
 sprite{ id = "npc/great_fairy", description = "Great Fairy" }
 sprite{ id = "npc/inferno", description = "Inferno" }
 sprite{ id = "npc/monkey", description = "Monkey" }
