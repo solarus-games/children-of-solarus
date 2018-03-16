@@ -12,7 +12,7 @@ local shield, shield_below -- Custom entity shield.
 local shield_width = 8 -- In pixels. Change this if necessary!
 
 function item:on_created()
-  self:set_savegame_variable("i1130")
+  self:set_savegame_variable("shield_possession")
   self:set_assignable(true)
 end
 
@@ -157,8 +157,10 @@ function item:create_shield()
   
   -- Create sprites.
   local variant = item:get_variant()
-  shield_below:create_sprite("hero/shield_"..variant.."_below")
+  local sprite_shield_below = shield_below:create_sprite("hero/shield_"..variant.."_below")
   local sprite_shield = shield:create_sprite("hero/shield_"..variant.."_above")
+  sprite_shield_below:set_direction(hdir)
+  sprite_shield:set_direction(hdir)
   
   -- Redefine functions to draw "shield" above hero and "shield_below" below hero.
   shield:set_drawn_in_y_order(true)
