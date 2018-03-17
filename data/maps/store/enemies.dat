@@ -24,20 +24,58 @@ enemy{
   breed = "diarandor/pterobat",
 }
 
-custom_entity{
+enemy{
+  layer = 0,
+  x = 64,
+  y = 77,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+
+enemy{
   layer = 0,
   x = 88,
-  y = 45,
-  width = 16,
-  height = 16,
+  y = 77,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
   direction = 3,
-  sprite = "animals/clucko_white",
+  breed = "diarandor/goblin",
 }
 
 enemy{
   layer = 0,
   x = 112,
-  y = 45,
+  y = 77,
+  properties = {
+    {
+      key = "weapon",
+      value = "random",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+
+enemy{
+  layer = 0,
+  x = 40,
+  y = 77,
+  properties = {
+    {
+      key = "weapon",
+      value = "none",
+    },
+  },
   direction = 3,
   breed = "diarandor/goblin",
 }

@@ -20,6 +20,38 @@ custom_entity{
 }
 
 custom_entity{
+  layer = 0,
+  x = 48,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/meow_orange",
+  model = "cat",
+}
+
+custom_entity{
+  layer = 0,
+  x = 24,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/worf_brown",
+  model = "worf",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 69,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "animals/clucko_white",
+}
+
+custom_entity{
   layer = 2,
   x = 24,
   y = 21,

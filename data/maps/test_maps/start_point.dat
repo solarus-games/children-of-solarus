@@ -91,120 +91,6 @@ teletransporter{
   sprite = "entities/teletransporter_blue",
 }
 
-enemy{
-  name = "goblin_axe",
-  layer = 0,
-  x = 184,
-  y = 181,
-  direction = 3,
-  breed = "diarandor/goblin",
-}
-
-enemy{
-  layer = 0,
-  x = 208,
-  y = 181,
-  direction = 3,
-  breed = "diarandor/goblin",
-}
-
-enemy{
-  name = "goblin_club",
-  layer = 0,
-  x = 232,
-  y = 181,
-  direction = 3,
-  breed = "diarandor/goblin",
-}
-
-custom_entity{
-  layer = 0,
-  x = 144,
-  y = 109,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "animals/meow_orange",
-  model = "cat",
-}
-
-custom_entity{
-  layer = 0,
-  x = 80,
-  y = 109,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "animals/meow_orange",
-  model = "cat",
-}
-
-custom_entity{
-  layer = 0,
-  x = 112,
-  y = 109,
-  width = 16,
-  height = 16,
-  direction = 2,
-  sprite = "animals/meow_orange",
-  model = "cat",
-}
-
-custom_entity{
-  layer = 0,
-  x = 168,
-  y = 109,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "animals/meow_orange",
-  model = "cat",
-}
-
-custom_entity{
-  layer = 0,
-  x = 144,
-  y = 69,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "animals/worf_brown",
-  model = "worf",
-}
-
-custom_entity{
-  layer = 0,
-  x = 80,
-  y = 69,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "animals/worf_brown",
-  model = "worf",
-}
-
-custom_entity{
-  layer = 0,
-  x = 112,
-  y = 69,
-  width = 16,
-  height = 16,
-  direction = 2,
-  sprite = "animals/worf_brown",
-  model = "worf",
-}
-
-custom_entity{
-  layer = 0,
-  x = 168,
-  y = 69,
-  width = 16,
-  height = 16,
-  direction = 1,
-  sprite = "animals/worf_brown",
-  model = "worf",
-}
-
 teletransporter{
   layer = 0,
   x = 136,
@@ -213,5 +99,61 @@ teletransporter{
   height = 16,
   destination_map = "store/house_test",
   sprite = "entities/teletransporter_yellow",
+}
+
+enemy{
+  layer = 0,
+  x = 80,
+  y = 181,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+
+enemy{
+  layer = 0,
+  x = 104,
+  y = 181,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+
+enemy{
+  layer = 0,
+  x = 128,
+  y = 181,
+  properties = {
+    {
+      key = "weapon",
+      value = "random",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+
+enemy{
+  layer = 0,
+  x = 56,
+  y = 181,
+  properties = {
+    {
+      key = "weapon",
+      value = "none",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin",
 }
 
