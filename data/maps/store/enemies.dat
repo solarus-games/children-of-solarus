@@ -54,7 +54,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 112,
+  x = 136,
   y = 77,
   properties = {
     {
@@ -74,6 +74,20 @@ enemy{
     {
       key = "weapon",
       value = "none",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+
+enemy{
+  layer = 0,
+  x = 112,
+  y = 77,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
     },
   },
   direction = 3,

@@ -4,10 +4,10 @@ animation{
   frame_delay = 200,
   frame_to_loop_on = 0,
   directions = {
-    { x = 96, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
-    { x = 96, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
-    { x = 96, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
-    { x = 96, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 168, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 168, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 168, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
+    { x = 168, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 4 },
   },
 }
 animation{
@@ -15,9 +15,9 @@ animation{
   src_image = "enemies/diarandor/goblin_green.png",
   frame_delay = 200,
   directions = {
-    { x = 96, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 96, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 96, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 96, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 168, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 168, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 168, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 168, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }

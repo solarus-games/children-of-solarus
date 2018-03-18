@@ -49,6 +49,7 @@ sprite{ id = "enemies/apyronet/bosses/khorneth_right_blade", description = "Khor
 sprite{ id = "enemies/diarandor/goblin", description = "Goblin Green" }
 sprite{ id = "enemies/diarandor/goblin_axe", description = "Goblin Axe" }
 sprite{ id = "enemies/diarandor/goblin_club", description = "Goblin Club" }
+sprite{ id = "enemies/diarandor/goblin_green_slingshot", description = "Goblin Slingshot" }
 sprite{ id = "enemies/diarandor/pterobat", description = "Pterobat" }
 sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
 sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }

@@ -103,8 +103,8 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 80,
-  y = 181,
+  x = 104,
+  y = 189,
   properties = {
     {
       key = "weapon",
@@ -117,8 +117,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 104,
-  y = 181,
+  x = 128,
+  y = 189,
   properties = {
     {
       key = "weapon",
@@ -131,8 +131,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 128,
-  y = 181,
+  x = 152,
+  y = 189,
   properties = {
     {
       key = "weapon",
@@ -145,12 +145,26 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 56,
-  y = 181,
+  x = 80,
+  y = 189,
   properties = {
     {
       key = "weapon",
       value = "none",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin",
+}
+
+enemy{
+  layer = 0,
+  x = 176,
+  y = 165,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
     },
   },
   direction = 3,

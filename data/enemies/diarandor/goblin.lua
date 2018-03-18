@@ -44,24 +44,29 @@ function enemy:on_restarted()
   movement:start(enemy)
 end
 
--- Weapon names: "club", "axe", "random".
+-- Weapon names: "club", "axe", "slingshot", "random".
 function enemy:set_weapon(weapon_name)
   -- Choose randon weapon, if necessary.
-  local weapon_list = {"club", "axe"}
+  local weapon_list = {"club", "axe", "slingshot"}
   if weapon_name == "random" then
     local index = math.random(1, #weapon_list)
     weapon_name = weapon_list[index]
   end
   -- Set sprites and properties for each weapon.
   local sprite_id = sprite:get_animation_set()
-  local weapon_sprite = enemy:create_sprite(sprite_id .. "_" .. weapon_name)
-  if not weapon_sprite then return end
-  local damage = 0
-  if weapon_name == "club" then damage = 2
-  elseif weapon_name == "axe" then damage = 3
+  local weapon_damage = 0
+  if weapon_name == "club" then weapon_damage = 2
+  elseif weapon_name == "axe" then weapon_damage = 3
+  elseif weapon_name == "slingshot" then
+    -- Replace main sprite.
+    self:remove_sprite(self:get_sprite())
+    self:create_sprite(sprite_id .. "_green_slingshot")
   end
-  self:set_sprite_damage(weapon_sprite, damage)
-  self:set_invincible_sprite(weapon_sprite)
+  if weapon_name == "club" or weapon_name == "axe" then
+    local weapon_sprite = enemy:create_sprite(sprite_id .. "_" .. weapon_name)
+    self:set_sprite_damage(weapon_sprite, weapon_damage)
+    self:set_invincible_sprite(weapon_sprite)
+  end
 end
 
 -- Update direction.
