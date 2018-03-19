@@ -36,7 +36,6 @@ animation{
 animation{
   name = "stopped",
   src_image = "enemies/diarandor/goblin_green.png",
-  frame_delay = 200,
   directions = {
     { x = 72, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 72, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },

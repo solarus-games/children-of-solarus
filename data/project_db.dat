@@ -453,6 +453,7 @@ item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
 enemy{ id = "diarandor/clucko", description = "Clucko" }
+enemy{ id = "diarandor/generic_projectile", description = "Projectile" }
 enemy{ id = "diarandor/goblin", description = "Goblin" }
 enemy{ id = "diarandor/pterobat", description = "Pterobat" }
 enemy{ id = "diarandor/soldier", description = "Soldier" }

@@ -1,5 +1,38 @@
-local item = ...
+--[[ Pushing commands for the shield:
+-------- CUSTOM EVENTS:
+enemy:on_shield_collision(properties) -- Overrides push behavior.
+enemy:on_pushed_by_shield()
+enemy:on_finished_pushed_by_shield(properties)
+hero:on_finished_pushed_on_shield(properties)
 
+-------- VARIABLES in tables of properties:
+-distance
+-speed
+-behavior (function or string)
+-sound_id
+-pushing_entity or angle
+
+-------- FUNCTIONS:
+enemy:get_can_be_pushed_by_shield()
+enemy:set_can_be_pushed_by_shield(boolean)
+enemy:is_being_pushed_by_shield()
+enemy:set_being_pushed_by_shield(boolean)
+enemy:get_pushed_by_shield_properties()
+enemy:set_pushed_by_shield_properties(properties)
+enemy:get_pushed_by_shield_property(property_name)
+enemy:set_pushed_by_shield_property(property_name, value)
+enemy:get_can_push_hero_on_shield()
+enemy:set_can_push_hero_on_shield(boolean)
+hero:is_using_shield()
+hero:is_shield_protecting_from_enemy(enemy, enemy_sprite)
+hero:is_being_pushed_on_shield()
+hero:set_being_pushed_on_shield(boolean)
+enemy:get_push_hero_on_shield_properties()
+enemy:set_push_hero_on_shield_properties(properties)
+enemy/hero:push(table)
+--]]
+
+local item = ...
 require("scripts/ground_effects") -- Used for enemies pushed into bad grounds.
 local enemy_meta = sol.main.get_metatable("enemy")
 local hero_meta = sol.main.get_metatable("hero")
@@ -228,36 +261,6 @@ function item:set_grabing_abilities_enabled(enabled)
   end
 end
 
---[[ Pushing commands for the shield:
--------- FUNCTIONS:
-enemy:get_can_be_pushed_by_shield()
-enemy:set_can_be_pushed_by_shield(boolean)
-enemy:is_being_pushed_by_shield()
-enemy:set_being_pushed_by_shield(boolean)
-enemy:get_pushed_by_shield_properties()
-enemy:set_pushed_by_shield_properties(properties)
-enemy:get_can_push_hero_on_shield()
-enemy:set_can_push_hero_on_shield(boolean)
-hero:is_using_shield()
-hero:is_shield_protecting_from_enemy(enemy, enemy_sprite)
-hero:is_being_pushed_on_shield()
-hero:set_being_pushed_on_shield(boolean)
-enemy:get_push_hero_on_shield_properties()
-enemy:set_push_hero_on_shield_properties(properties)
-enemy/hero:push(table)
-
--------- CUSTOM EVENTS:
-enemy:on_pushed_by_shield()
-enemy:on_finished_pushed_by_shield(properties)
-hero:on_finished_pushed_on_shield(properties)
-
--------- VARIABLES in tables of properties:
--distance
--speed
--behavior (function or string)
--sound_id
--pushing_entity or angle
---]]
 
 -- Detect if hero is using shield.
 function hero_meta:is_using_shield()
@@ -305,15 +308,19 @@ function enemy_meta:set_being_pushed_by_shield(pushed)
   pushed = pushed or false
   if self:is_being_pushed_by_shield() == pushed then return end
   self.pushed_by_shield = pushed
-  if pushed and self.on_pushed_by_shield then
-    self:on_pushed_by_shield() -- Call custom event.
-  end
 end
 function enemy_meta:get_pushed_by_shield_properties()
   return self.pushed_by_shield_properties or {}
 end
 function enemy_meta:set_pushed_by_shield_properties(properties)
   self.pushed_by_shield_properties = properties
+end
+function enemy_meta:get_pushed_by_shield_property(property_name)
+  return (self.pushed_by_shield_properties)[property_name]
+end
+function enemy_meta:set_pushed_by_shield_property(property_name, value)
+  local p = self.pushed_by_shield_properties
+  p[property_name] = value
 end
 
 -- Pushing hero functions.
@@ -343,7 +350,9 @@ function enemy_meta:push(properties)
   local need_push = self:get_can_be_pushed_by_shield()
     and not self:is_being_pushed_by_shield()
   if not need_push then return end
-  local p = properties or {}
+  local p = properties
+  local default_p = self:get_pushed_by_shield_properties()
+  for k, v in pairs(default_p) do p[k] = p[k] or v end
   local default_behavior = "normal_push" -- Default behavior.
   local behavior = (p.behavior == nil) and default_behavior or p.behavior
   if behavior == nil then return end
@@ -353,6 +362,11 @@ function enemy_meta:push(properties)
   sol.timer.start(map, 200, function()
     self:set_being_pushed_by_shield(false) 
   end)
+  -- Call custom event, if any, to override push.
+  if self.on_shield_collision then
+    self:on_shield_collision(p)
+    return -- Behavior is overriden. Do not push enemy!
+  end
   -- Push enemy.
   if type(behavior) == "function" then
     behavior(self, properties)
@@ -405,6 +419,10 @@ function enemy_meta:push(properties)
     function m:on_finished() finish_push() end
     function m:on_obstacle_reached() finish_push() end
     m:start(p) -- Start movement.
+    -- Call custom event, if any.
+    if self.on_pushed_by_shield then
+      self:on_pushed_by_shield() 
+    end
   end
 end
 
@@ -460,6 +478,10 @@ function hero_meta:push(properties)
     -- Finish movement.
     local function finish_push()
       self:unfreeze() -- Unfreeze hero.
+      -- Call custom event on hero after being push.
+      if self.on_finished_pushed_on_shield then
+        self:on_finished_pushed_on_shield(properties)
+      end
     end
     function m:on_finished() finish_push() end
     function m:on_obstacle_reached() finish_push() end
