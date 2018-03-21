@@ -3,6 +3,7 @@
 enemy:on_shield_collision(properties) -- Overrides push behavior.
 enemy:on_pushed_by_shield()
 enemy:on_finished_pushed_by_shield(properties)
+enemy:on_shield_collision_test(shield_collision_mask) -- Test: Return true to confirm collision.
 hero:on_finished_pushed_on_shield(properties)
 
 -------- VARIABLES in tables of properties:
@@ -11,6 +12,7 @@ hero:on_finished_pushed_on_shield(properties)
 -behavior (function or string)
 -sound_id
 -pushing_entity or angle
+-push_delay
 
 -------- FUNCTIONS:
 enemy:get_can_be_pushed_by_shield()
@@ -42,7 +44,9 @@ local direction_fix_enabled = true
 local shield_state -- Values: "preparing", "using".
 local shield_command_released
 local shield, shield_below -- Custom entity shield.
-local shield_width = 8 -- In pixels. Change this if necessary!
+local collision_mask -- Custom entity used to detect collisions.
+local path_collision_mask_sprite = "hero/shield_collision_mask"
+local collision_mask_visible = false -- Change this to debug.
 
 function item:on_created()
   self:set_savegame_variable("shield_possession")
@@ -178,7 +182,7 @@ end
 
 function item:create_shield()
 
-  -- Create shield entities.
+  -- Create shield entities, including collision_mask.
   local map = self:get_map()
   local hero = game:get_hero()
   local hx, hy, hlayer = hero:get_position()
@@ -186,14 +190,22 @@ function item:create_shield()
   local prop = {x=hx, y=hy+2, layer=hlayer, direction=hdir, width=2*16, height=2*16}
   shield = map:create_custom_entity(prop) -- (Script variable.)
   shield_below = map:create_custom_entity(prop)
-  function shield:on_removed() shield_below:remove() end
+  collision_mask = map:create_custom_entity(prop)
+  function shield:on_removed()
+    shield_below:remove()
+    collision_mask:remove()
+  end
   
-  -- Create sprites.
+  -- Create visible sprites.
   local variant = item:get_variant()
   local sprite_shield_below = shield_below:create_sprite("hero/shield_"..variant.."_below")
   local sprite_shield = shield:create_sprite("hero/shield_"..variant.."_above")
   sprite_shield_below:set_direction(hdir)
   sprite_shield:set_direction(hdir)
+  -- Create (invisible) collision mask sprite.
+  local sprite_collision_mask = collision_mask:create_sprite(path_collision_mask_sprite)
+  sprite_collision_mask:set_direction(hdir)
+  collision_mask:set_visible(collision_mask_visible)
   
   -- Redefine functions to draw "shield" above hero and "shield_below" below hero.
   shield:set_drawn_in_y_order(true)
@@ -206,7 +218,7 @@ function item:create_shield()
   sol.timer.start(shield, 1, function()
     local tunic_sprite = hero:get_sprite()
     local x, y, layer = hero:get_position()
-    for _, sh in pairs({shield, shield_below}) do
+    for _, sh in pairs({shield, shield_below, collision_mask}) do
       sh:set_position(x, y, layer)
       sh:set_direction(hero:get_direction())
       local s = sh:get_sprite()
@@ -226,17 +238,19 @@ function item:create_shield()
     return true
   end)
   -- Define collision test to detect enemies with shield.
+  -- A pixel-precise collision between enemy and shield is assumed before calling this test.
   local function shield_collision_test(shield, enemy, shield_sprite, enemy_sprite)
-  -- Check enemies that can be pushed.
-    if enemy:get_type() ~= "enemy" then return end
+    -- Check enemies that can be pushed.
+    if enemy == nil or enemy:get_type() ~= "enemy" then return end
     if enemy.get_can_be_pushed_by_shield == nil or
         not enemy:get_can_be_pushed_by_shield() then
       return 
     end
-    -- Check protection with shield.
-    if not hero:is_shield_protecting_from_enemy(enemy, enemy_sprite) then 
+    -- Check custom collision test if defined. If false is returned, the push is cancelled.
+    if enemy.on_shield_collision_test
+        and (not enemy:on_shield_collision_test(collision_mask)) then
       return
-    end    
+    end
     -- Push enemy and hero.
     local p = {}
     p.pushing_entity = shield
@@ -244,15 +258,11 @@ function item:create_shield()
     p.pushing_entity = enemy
     hero:push(p)
   end
-  -- Initialize collision test on shield entities.
-  shield:add_collision_test("sprite",
+  -- Initialize collision test on the shield collision mask.
+  collision_mask:add_collision_test("sprite",
   function(shield, enemy, shield_sprite, enemy_sprite)
     shield_collision_test(shield, enemy, shield_sprite, enemy_sprite)
   end)
-  shield_below:add_collision_test("sprite",
-  function(shield, enemy, shield_sprite, enemy_sprite)
-    shield_collision_test(shield, enemy, shield_sprite, enemy_sprite)
-  end)  
 end
 
 function item:set_grabing_abilities_enabled(enabled)
@@ -261,6 +271,14 @@ function item:set_grabing_abilities_enabled(enabled)
   end
 end
 
+-- Get shield collision mask entity, if any.
+function item:get_collision_mask() return collision_mask end
+-- Set collision mask visible/invisible.
+function item:get_collision_mask_visible() return collision_mask_visible end
+function item:set_collision_mask_visible(visible) 
+  collision_mask_visible = visible
+  if collision_mask then collision_mask:set_visible(visible) end
+end
 
 -- Detect if hero is using shield.
 function hero_meta:is_using_shield()
@@ -270,26 +288,18 @@ function hero_meta:set_using_shield(using_shield)
   self.using_shield = using_shield
 end
 
--- Check if the shield is protecting the hero from a given enemy.
+
+-- True if there is a pixel collision between shield and enemy.
 function hero_meta:is_shield_protecting_from_enemy(enemy, enemy_sprite)
-  -- Check use of shield.
-  local hero = self
-  local collision_mode = enemy:get_attacking_collision_mode()
-  if not (hero:is_using_shield() and hero:overlaps(enemy, collision_mode)) then
-    return false
+  -- Check use of shield and shield collision.
+  local hero = self  
+  if not hero:is_using_shield() then return false end
+  local shield_collision_mask = self:get_game():get_item("shield"):get_collision_mask()
+  if not shield_collision_mask then return false end
+  if enemy:overlaps(shield_collision_mask, "sprite") then
+    return true -- The shield is protecting
   end
-  -- Check overlap with reduced bounding box (shield side not included).
-  local hx, hy, hw, hh = hero:get_bounding_box()
-  local dir = hero:get_direction()
-  if dir == 0 then hw = hw - shield_width
-  elseif dir == 1 then hy = hy + shield_width; hh = hh - shield_width
-  elseif dir == 2 then hx = hx + shield_width ; hw = hw - shield_width
-  elseif dir == 3 then hh = hh - shield_width end
-  if enemy:overlaps(hx, hy, hw, hh) then
-    return false
-  end
-  -- Otherwise, shield is protecting hero.
-  return true
+  return false -- The shield is not protecting the hero.
 end
 
 -- Pushing enemy functions.
@@ -356,10 +366,11 @@ function enemy_meta:push(properties)
   local default_behavior = "normal_push" -- Default behavior.
   local behavior = (p.behavior == nil) and default_behavior or p.behavior
   if behavior == nil then return end
+  local push_delay = p.push_delay or 200
   -- Disable push temporarily.
   local map = self:get_map()
   self:set_being_pushed_by_shield(true)
-  sol.timer.start(map, 200, function()
+  sol.timer.start(map, push_delay, function()
     self:set_being_pushed_by_shield(false) 
   end)
   -- Call custom event, if any, to override push.
@@ -435,10 +446,11 @@ function hero_meta:push(properties)
   local default_behavior = "normal_push" -- Default behavior.
   local behavior = (p.behavior == nil) and default_behavior or p.behavior
   if behavior == nil then return end
+  local push_delay = p.push_delay or 200
   -- Disable push temporarily.
   local map = self:get_map()
   self:set_being_pushed_on_shield(true)
-  sol.timer.start(map, 200, function()
+  sol.timer.start(map, push_delay, function()
     self:set_being_pushed_on_shield(false)
   end)
   -- Push hero.

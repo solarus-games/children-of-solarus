@@ -54,6 +54,8 @@ function enemy_meta:on_attacking_hero(hero, enemy_sprite)
   local enemy = self
   -- Do nothing if enemy sprite cannot hurt hero.
   if enemy:get_sprite_damage(enemy_sprite) == 0 then return end
+  local collision_mode = enemy:get_attacking_collision_mode()
+  if not hero:overlaps(enemy, collision_mode) then return end  
   -- Do nothing when shield is protecting.
   if hero.is_shield_protecting_from_enemy
       and hero:is_shield_protecting_from_enemy(enemy, enemy_sprite) then

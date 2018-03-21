@@ -71,23 +71,19 @@ function hero_meta:initialize_fixing_functions()
       if fixed_walking_animation ~= tunic_animation then
         sprite:set_animation(fixed_walking_animation)
       end
-    --elseif tunic_animation == "pushing" then
-      --local pushing_animation = hero:get_pushing_animation()
-      --if pushing_animation then hero:set_animation(pushing_animation) end
-    --end
-  end
-  function sprite:on_direction_changed(animation, direction)
-    local fixed_direction = fixed_direction
-    local tunic_direction = sprite:get_direction()
-    if fixed_direction ~= nil and fixed_direction ~= tunic_direction then
-      sprite:set_direction(fixed_direction)
+    end
+    function sprite:on_direction_changed(animation, direction)
+      local fixed_direction = fixed_direction
+      local tunic_direction = sprite:get_direction()
+      if fixed_direction ~= nil and fixed_direction ~= tunic_direction then
+        sprite:set_direction(fixed_direction)
+      end
     end
   end
-end
 
--- Initialize fixing functions for the new sprite when the tunic sprite is changed.
-local old_set_tunic = hero_meta.set_tunic_sprite_id -- We redefine this function.
-function hero_meta:set_tunic_sprite_id(sprite_id)
+  -- Initialize fixing functions for the new sprite when the tunic sprite is changed.
+  local old_set_tunic = hero_meta.set_tunic_sprite_id -- We redefine this function.
+  function hero_meta:set_tunic_sprite_id(sprite_id)
     old_set_tunic(self, sprite_id)
     self:initialize_fixing_functions()
   end
