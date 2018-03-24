@@ -21,7 +21,7 @@ function enemy:on_created()
   -- Set properties.
   self:set_invincible_sprite(shadow_sprite)
   self:set_life(1)
-  self:set_can_be_pushed_by_shield(true)
+  self:set_default_behavior_on_hero_shield("block_push")
   -- Define attack consequences.
   for _, attack in pairs({"sword", "thrown_item", "explosion",
       "arrow", "hookshot", "boomerang", "fire"}) do

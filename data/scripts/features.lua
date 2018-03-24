@@ -2,7 +2,7 @@
 
 -- Usage: require("scripts/features")
 
--- Features can be enabled to disabled independently by commenting
+-- Features can be enabled or disabled independently by commenting
 -- or uncommenting lines below.
 
 --require("scripts/hud/hud")
@@ -24,4 +24,5 @@ require("scripts/meta/npc.lua")
 require("scripts/meta/pickable.lua")
 require("scripts/meta/sensor.lua")
 require("scripts/meta/stairs.lua")
+require("scripts/pushing_manager.lua")
 require("scripts/weather/weather_manager")

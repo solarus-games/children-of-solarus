@@ -1,24 +1,17 @@
 --[[ Pushing commands for the shield:
--------- CUSTOM EVENTS:
-enemy:on_shield_collision(properties) -- Overrides push behavior.
-enemy:on_pushed_by_shield()
-enemy:on_finished_pushed_by_shield(properties)
-enemy:on_shield_collision_test(shield_collision_mask) -- Test: Return true to confirm collision.
-hero:on_finished_pushed_on_shield(properties)
+This is defined for entities of types: "hero" and "enemy".
+It can be extended to other types of entities.
 
--------- VARIABLES in tables of properties:
--distance
--speed
--behavior (function or string)
--sound_id
--pushing_entity or angle
--push_delay
+-------- CUSTOM EVENTS:
+enemy:on_shield_collision(shield) -- Overrides push behavior.
+enemy:on_pushed_by_shield(shield) -- Called after creating the push.
+enemy:on_finished_pushed_by_shield()
+enemy:on_finished_pushed_hero_on_shield()
+enemy:on_shield_collision_test(shield_collision_mask) -- Test: true to confirm collision.
 
 -------- FUNCTIONS:
 enemy:get_can_be_pushed_by_shield()
 enemy:set_can_be_pushed_by_shield(boolean)
-enemy:is_being_pushed_by_shield()
-enemy:set_being_pushed_by_shield(boolean)
 enemy:get_pushed_by_shield_properties()
 enemy:set_pushed_by_shield_properties(properties)
 enemy:get_pushed_by_shield_property(property_name)
@@ -27,15 +20,27 @@ enemy:get_can_push_hero_on_shield()
 enemy:set_can_push_hero_on_shield(boolean)
 hero:is_using_shield()
 hero:is_shield_protecting_from_enemy(enemy, enemy_sprite)
-hero:is_being_pushed_on_shield()
-hero:set_being_pushed_on_shield(boolean)
 enemy:get_push_hero_on_shield_properties()
 enemy:set_push_hero_on_shield_properties(properties)
-enemy/hero:push(table)
+item:set_collision_mask() 
+item:get_collision_mask_visible() 
+item:set_collision_mask_visible(visible)
+
+-------- Default shield BEHAVIORS (string values):
+enemy:set_default_behavior_on_hero_shield(behavior)
+"normal_shield_push", "enemy_weak_to_shield_push", "enemy_strong_to_shield_push", "block_push", nil.
+
+-------- VARIABLES in tables of properties:
+-distance
+-speed
+-sound_id
+-push_delay
+-num_directions: 4 or "any".
 --]]
 
 local item = ...
 require("scripts/ground_effects") -- Used for enemies pushed into bad grounds.
+require("scripts/pushing_manager")
 local enemy_meta = sol.main.get_metatable("enemy")
 local hero_meta = sol.main.get_metatable("hero")
 local game = item:get_game()
@@ -68,8 +73,7 @@ function item:on_using()
   local variant = item:get_variant()
 
   -- Do nothing if game is suspended or if shield is being used.
-  if game:is_suspended() then return end
-  if shield_state then return end
+  if game:is_suspended() or hero:is_using_shield() then return end
   -- Do not use if there is bad ground below or while jumping.
   if not map:is_solid_ground(hero:get_ground_position()) then return end 
   if hero.is_jumping and hero:is_jumping() then return end
@@ -148,13 +152,12 @@ function item:on_using()
     hero:set_animation("shield_stopped")
     hero:unfreeze() -- Allow the hero to walk.
   end)
-
 end
-
 
 -- Stop using items when changing maps.
 function item:on_map_changed(map)
-  if shield_state ~= nil then self:finish_using() end
+  local hero = game:get_hero()
+  if hero and hero:is_using_shield() then self:finish_using() end
 end
 
 function item:finish_using()
@@ -192,7 +195,7 @@ function item:create_shield()
   shield_below = map:create_custom_entity(prop)
   collision_mask = map:create_custom_entity(prop)
   function shield:on_removed()
-    shield_below:remove()
+    if shield_below then shield_below:remove() end
     collision_mask:remove()
   end
   
@@ -200,7 +203,8 @@ function item:create_shield()
   local variant = item:get_variant()
   local sprite_shield_below = shield_below:create_sprite("hero/shield_"..variant.."_below")
   local sprite_shield = shield:create_sprite("hero/shield_"..variant.."_above")
-  sprite_shield_below:set_direction(hdir)
+  if sprite_shield_below then sprite_shield_below:set_direction(hdir)
+  else shield_below:remove(); shield_below = nil  end
   sprite_shield:set_direction(hdir)
   -- Create (invisible) collision mask sprite.
   local sprite_collision_mask = collision_mask:create_sprite(path_collision_mask_sprite)
@@ -239,24 +243,52 @@ function item:create_shield()
   end)
   -- Define collision test to detect enemies with shield.
   -- A pixel-precise collision between enemy and shield is assumed before calling this test.
-  local function shield_collision_test(shield, enemy, shield_sprite, enemy_sprite)
+  local function shield_collision_test(shield, entity, shield_sprite, entity_sprite)
     -- Check enemies that can be pushed.
-    if enemy == nil or enemy:get_type() ~= "enemy" then return end
-    if enemy.get_can_be_pushed_by_shield == nil or
-        not enemy:get_can_be_pushed_by_shield() then
-      return 
+    if (not entity) then return end
+    if entity.get_can_be_pushed_by_shield
+        and entity:get_can_be_pushed_by_shield() and (not entity:is_being_pushed()) then
+      local entity_test = (entity.on_shield_collision_test == nil)
+          or entity:on_shield_collision_test(collision_mask)
+      if entity_test then
+        -- Check for overriding event. Do not push if event exists.
+        if entity.on_shield_collision then
+          entity:on_shield_collision(shield)
+          return
+        end
+        -- Push entity.
+        local p = {}
+        if entity.get_pushed_by_shield_properties then 
+          p = entity:get_pushed_by_shield_properties()
+        end
+        p.pushing_entity = shield
+        p.on_pushed = function()
+          if entity.on_finished_pushed_by_shield then
+            entity:on_finished_pushed_by_shield()
+          end
+        end
+        entity:push(p)
+        -- Custom event.
+        if entity.on_pushed_by_shield then
+          entity:on_pushed_by_shield(shield)
+        end
+      end
     end
-    -- Check custom collision test if defined. If false is returned, the push is cancelled.
-    if enemy.on_shield_collision_test
-        and (not enemy:on_shield_collision_test(collision_mask)) then
-      return
+    -- Check if hero can be pushed.
+    if entity.get_can_push_hero_on_shield and entity:get_can_push_hero_on_shield() 
+        and (not hero:is_being_pushed()) then
+      local p = {}
+      if entity.get_push_hero_on_shield_properties then 
+        p = entity:get_push_hero_on_shield_properties()
+      end
+      p.pushing_entity = entity
+      p.on_pushed = function()
+        if entity.on_finished_pushed_hero_on_shield then
+          entity:on_finished_pushed_hero_on_shield()
+        end
+      end
+      hero:push(p)
     end
-    -- Push enemy and hero.
-    local p = {}
-    p.pushing_entity = shield
-    enemy:push(p)
-    p.pushing_entity = enemy
-    hero:push(p)
   end
   -- Initialize collision test on the shield collision mask.
   collision_mask:add_collision_test("sprite",
@@ -288,7 +320,6 @@ function hero_meta:set_using_shield(using_shield)
   self.using_shield = using_shield
 end
 
-
 -- True if there is a pixel collision between shield and enemy.
 function hero_meta:is_shield_protecting_from_enemy(enemy, enemy_sprite)
   -- Check use of shield and shield collision.
@@ -302,22 +333,12 @@ function hero_meta:is_shield_protecting_from_enemy(enemy, enemy_sprite)
   return false -- The shield is not protecting the hero.
 end
 
--- Pushing enemy functions.
+-- Properties for being pushed.
 function enemy_meta:get_can_be_pushed_by_shield()
-  local default = false -- Default value.
-  return (self.can_be_pushed_by_shield == nil) and default or self.can_be_pushed_by_shield
+  return self.can_be_pushed_by_shield
 end
 function enemy_meta:set_can_be_pushed_by_shield(boolean)
   self.can_be_pushed_by_shield = boolean
-end
-function enemy_meta:is_being_pushed_by_shield()
-  return self.pushed_by_shield or false
-end
-function enemy_meta:set_being_pushed_by_shield(pushed)
-  if not self:get_can_be_pushed_by_shield() then return end
-  pushed = pushed or false
-  if self:is_being_pushed_by_shield() == pushed then return end
-  self.pushed_by_shield = pushed
 end
 function enemy_meta:get_pushed_by_shield_properties()
   return self.pushed_by_shield_properties or {}
@@ -333,170 +354,61 @@ function enemy_meta:set_pushed_by_shield_property(property_name, value)
   p[property_name] = value
 end
 
--- Pushing hero functions.
+-- Properties for pushing.
 function enemy_meta:get_can_push_hero_on_shield()
-  return self.can_push_hero_on_shield or false
+  return self.can_push_hero_on_shield
 end
 function enemy_meta:set_can_push_hero_on_shield(boolean)
-  self.can_push_hero_on_shield = boolean or false
-end
-function hero_meta:is_being_pushed_on_shield()
-  return self.pushed_on_shield or false
-end
-function hero_meta:set_being_pushed_on_shield(boolean)
-  self.pushed_on_shield = boolean
+  self.can_push_hero_on_shield = boolean
 end
 function enemy_meta:get_push_hero_on_shield_properties()
-  return self.push_hero_on_shield_properties or {}
+  return self.push_on_shield_properties or {}
 end
 function enemy_meta:set_push_hero_on_shield_properties(properties)
-  self.push_hero_on_shield_properties = properties
+  self.push_on_shield_properties = properties
 end
 
--- Enemy pushing function.
-function enemy_meta:push(properties)
-  local enemy = self
-  -- Check if enemy can be pushed.
-  local need_push = self:get_can_be_pushed_by_shield()
-    and not self:is_being_pushed_by_shield()
-  if not need_push then return end
-  local p = properties
-  local default_p = self:get_pushed_by_shield_properties()
-  for k, v in pairs(default_p) do p[k] = p[k] or v end
-  local default_behavior = "normal_push" -- Default behavior.
-  local behavior = (p.behavior == nil) and default_behavior or p.behavior
-  if behavior == nil then return end
-  local push_delay = p.push_delay or 200
-  -- Disable push temporarily.
-  local map = self:get_map()
-  self:set_being_pushed_by_shield(true)
-  sol.timer.start(map, push_delay, function()
-    self:set_being_pushed_by_shield(false) 
-  end)
-  -- Call custom event, if any, to override push.
-  if self.on_shield_collision then
-    self:on_shield_collision(p)
-    return -- Behavior is overriden. Do not push enemy!
-  end
-  -- Push enemy.
-  if type(behavior) == "function" then
-    behavior(self, properties)
-    return
-  elseif type(behavior) == "string" then
-    -- Stop enemy movement.
-    self:stop_movement()
-    -- Initialize coordinates for the movement.
-    p.x, p.y, p.x0, p.y0 = 0, 0, 0, 0
-    -- Get angle.
-    local e = p.pushing_entity
-    local a = p.angle or (e and e:get_angle(self))
-    if not a then return end
-    -- Play sound if any.
-    local sound_id = p.sound_id
-    if sound_id then 
-      sol.audio.play_sound(sound_id)
-    end
-    -- Create movement.
-    local m = sol.movement.create("straight")
-    local speed = p.speed or 120
-    local distance = p.distance or 32
-    m:set_angle(a)
-    m:set_speed(speed)
-    m:set_max_distance(distance)
-    -- Apply movement indirectly to enemy to avoid direction change.
-    function m:on_position_changed()
-      local dx, dy = p.x - p.x0, p.y - p.y0 -- Get movement shift.
-      p.x0, p.y0 = p.x, p.y -- Update origin coordinates.
-      -- Force movement on the enemy if possible.
-      local x, y, layer = enemy:get_position()
-      if enemy:test_obstacles(dx, dy, layer) then return end
-      enemy:set_position(x + dx, y + dy, layer) -- Shift enemy position.
-    end
-    -- Modify obstacle behavior to allow falling on bad grounds.
-    local obstacle_behavior = self:get_obstacle_behavior()
-    self:set_obstacle_behavior("flying")
-    -- Finish movement.
-    local function finish_push()
-      -- Restart enemy and traversable properties.
-      self:restart()
-      self:set_obstacle_behavior(obstacle_behavior)
-      -- Make enemy fall on bad grounds if necessary.
-      map:ground_collision(self, nil, nil)
-      -- Call custom event if defined.
-      if self.on_finished_pushed_by_shield then
-        self:on_finished_pushed_by_shield(properties)
-      end
-    end
-    function m:on_finished() finish_push() end
-    function m:on_obstacle_reached() finish_push() end
-    m:start(p) -- Start movement.
-    -- Call custom event, if any.
-    if self.on_pushed_by_shield then
-      self:on_pushed_by_shield() 
+--[[ Behavior function: get properties for each behavior. Behaviors:
+"normal_shield_push", "enemy_weak_to_shield_push", "enemy_strong_to_shield_push", "block_push", nil.
+--]]
+function enemy_meta:set_default_behavior_on_hero_shield(behavior)
+  -- Define default properties.
+  local p_enemy, p_hero
+  local normal_push = {distance = 32, speed = 120, sound_id = nil,
+    push_delay = 200, num_directions = "any"}
+  local weak_push = {distance = 16, speed = 120, sound_id = nil,
+    push_delay = 200, num_directions = "any"}
+  local block_push = {distance = 1, speed = 80, sound_id = nil,
+    push_delay = 30, num_directions = 4}
+  self:set_can_push_hero_on_shield(true)
+  self:set_can_be_pushed_by_shield(true)
+  local normal_sound_id, block_sound_id = "shield_push", "shield2"
+  -- Select properties for each behavior.
+  if behavior == nil then
+    p_enemy, p_hero = {}, {}
+  elseif behavior == "normal_shield_push" then
+    p_enemy, p_hero = normal_push, weak_push
+    p_enemy.sound_id = sound_id
+  elseif behavior == "enemy_weak_to_shield_push" then
+    p_enemy, p_hero = normal_push, {}
+    self:set_can_push_hero_on_shield(false)
+    p_enemy.sound_id = sound_id
+  elseif behavior == "enemy_strong_to_shield_push" then
+    p_enemy, p_hero = {}, normal_push
+    self:set_can_be_pushed_by_shield(false)
+    p_enemy.sound_id = sound_id    
+  elseif behavior == "block_push" then
+    p_enemy, p_hero = block_push, {}
+    self:set_can_push_hero_on_shield(false)
+    self:set_traversable(false)
+    p_enemy.sound_id = block_sound_id
+    -- Test condition for pushing like a block: "facing" overlap.
+    function self:on_shield_collision_test(shield_collision_mask)
+      local hero = self:get_map():get_hero()
+      return self:overlaps(hero, "facing")
     end
   end
-end
-
--- Hero pushing function.
-function hero_meta:push(properties)
-  local hero = self
-  -- Check if hero can be pushed.
-  if self:is_being_pushed_on_shield() then return end
-  local p = properties or {}
-  local default_behavior = "normal_push" -- Default behavior.
-  local behavior = (p.behavior == nil) and default_behavior or p.behavior
-  if behavior == nil then return end
-  local push_delay = p.push_delay or 200
-  -- Disable push temporarily.
-  local map = self:get_map()
-  self:set_being_pushed_on_shield(true)
-  sol.timer.start(map, push_delay, function()
-    self:set_being_pushed_on_shield(false)
-  end)
-  -- Push hero.
-  if type(behavior) == "function" then
-    behavior(self, properties)
-    return
-  elseif type(behavior) == "string" then
-    -- Freeze during push.
-    self:freeze()
-    -- Initialize coordinates for the movement.
-    p.x, p.y, p.x0, p.y0 = 0, 0, 0, 0
-    -- Get angle.
-    local e = p.pushing_entity
-    local a = p.angle or (e and e:get_angle(self))
-    if not a then return end
-    -- Play sound if any.
-    local sound_id = p.sound_id
-    if sound_id then 
-      sol.audio.play_sound(sound_id)
-    end
-    -- Create movement.
-    local m = sol.movement.create("straight")
-    local speed = p.speed or 120
-    local distance = p.distance or 16
-    m:set_angle(a)
-    m:set_speed(speed)
-    m:set_max_distance(distance)
-    -- Apply movement indirectly to enemy to avoid direction change.
-    function m:on_position_changed()
-      local dx, dy = p.x - p.x0, p.y - p.y0 -- Get movement shift.
-      p.x0, p.y0 = p.x, p.y -- Update origin coordinates.
-      -- Force movement on the enemy if possible.
-      local x, y, layer = hero:get_position()
-      if hero:test_obstacles(dx, dy, layer) then return end
-      hero:set_position(x + dx, y + dy, layer) -- Shift enemy position.
-    end
-    -- Finish movement.
-    local function finish_push()
-      self:unfreeze() -- Unfreeze hero.
-      -- Call custom event on hero after being push.
-      if self.on_finished_pushed_on_shield then
-        self:on_finished_pushed_on_shield(properties)
-      end
-    end
-    function m:on_finished() finish_push() end
-    function m:on_obstacle_reached() finish_push() end
-    m:start(p) -- Start movement.
-  end
+  -- Set properties to enemy.
+  self:set_pushed_by_shield_properties(p_enemy)
+  self:set_push_hero_on_shield_properties(p_hero)
 end

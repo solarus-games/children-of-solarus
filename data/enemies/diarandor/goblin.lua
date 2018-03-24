@@ -31,8 +31,7 @@ function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(3)
   enemy:set_damage(body_damage)
-  enemy:set_can_be_pushed_by_shield(true)
-  enemy:set_can_push_hero_on_shield(true)
+  self:set_default_behavior_on_hero_shield("normal_shield_push")
   -- Initialize weapon from custom properties.
   local weapon_name = self:get_property("weapon")
   if weapon_name ~= nil and weapon_name ~= "none" then
@@ -180,14 +179,19 @@ function enemy:throw()
   projectile:set_can_be_pushed_by_shield(true)
   projectile:set_can_push_hero_on_shield(true)
   -- Override normal push function.
-  function projectile:on_shield_collision()
+  function projectile:on_shield_collision(shield)
+    -- Disable push for a while.
+    self:set_being_pushed(true)
+    sol.timer.start(map, 200, function()
+      self:set_being_pushed(false)
+    end)
     -- Hurt enemies after bounce on shield.
-    projectile:allow_hurt_enemies(true) 
+    self:allow_hurt_enemies(true)
     -- Override movement.
     local m = projectile:get_movement()
     if not m then return end
     m = sol.movement.create("straight")
-    m:set_angle(hero:get_angle(projectile))
+    m:set_angle(shield:get_angle(projectile))
     m:set_smooth(false)
     m:set_speed(speed_axe)
     m:set_max_distance(300)
