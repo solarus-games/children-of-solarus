@@ -52,6 +52,7 @@ local shield, shield_below -- Custom entity shield.
 local collision_mask -- Custom entity used to detect collisions.
 local path_collision_mask_sprite = "hero/shield_collision_mask"
 local collision_mask_visible = false -- Change this to debug.
+local normal_sound_id, block_sound_id = "shield_push", "shield2"
 
 function item:on_created()
   self:set_savegame_variable("shield_possession")
@@ -86,12 +87,14 @@ function item:on_using()
   if hero:get_state() ~= "frozen" then
     hero:freeze() -- Freeze hero if necessary.
   end
-  shield_state = "preparing"
   shield_command_released = false
   -- Remove fixed animations (used if jumping).
   hero:set_fixed_animations(nil, nil)
   -- Show "shield_brandish" animation on hero.
-  hero:set_animation("shield_brandish")
+  if hero:get_sprite():has_animation("shield_brandish") then
+    shield_state = "preparing"
+    hero:set_animation("shield_brandish")
+  end
   
   -- Disable hero abilities.
   item:set_grabing_abilities_enabled(0)
@@ -132,13 +135,7 @@ function item:on_using()
     return true
   end)
 
-  -- Start custom shield state when necessary: allow to sidle with shield.
-  local num_frames = hero_tunic_sprite:get_num_frames()
-  local frame_delay = hero_tunic_sprite:get_frame_delay()
-  -- Prevent bug: if frame delay is nil (which happens with 1 frame) stop using shield.
-  if not frame_delay then self:finish_using() return end  
-  local anim_duration = frame_delay * num_frames
-  sol.timer.start(item, anim_duration, function()  
+  local function start_using_shield_state()
     -- Do not allow walking with shield if the command was released.
     if shield_command_released == true then
       self:finish_using()
@@ -151,7 +148,21 @@ function item:on_using()
     hero:set_fixed_direction(dir)
     hero:set_animation("shield_stopped")
     hero:unfreeze() -- Allow the hero to walk.
-  end)
+  end
+  
+  if shield_state == "preparing" then
+    -- Start custom shield state when necessary: allow to sidle with shield.
+    local num_frames = hero_tunic_sprite:get_num_frames()
+    local frame_delay = hero_tunic_sprite:get_frame_delay()
+    -- Prevent bug: if frame delay is nil (which happens with 1 frame) stop using shield.
+    if not frame_delay then self:finish_using() return end  
+    local anim_duration = frame_delay * num_frames
+    sol.timer.start(item, anim_duration, function()  
+      start_using_shield_state()
+    end)
+  else
+    start_using_shield_state()
+  end
 end
 
 -- Stop using items when changing maps.
@@ -201,11 +212,18 @@ function item:create_shield()
   
   -- Create visible sprites.
   local variant = item:get_variant()
-  local sprite_shield_below = shield_below:create_sprite("hero/shield_"..variant.."_below")
-  local sprite_shield = shield:create_sprite("hero/shield_"..variant.."_above")
-  if sprite_shield_below then sprite_shield_below:set_direction(hdir)
-  else shield_below:remove(); shield_below = nil  end
+  local shield_below_path = "hero/shield_"..variant.."_below"
+  local shield_above_path = "hero/shield_"..variant.."_above"
+  local sprite_shield, sprite_shield_below
+  if sol.file.exists("sprites/"..shield_below_path) then
+    sprite_shield_below = shield_below:create_sprite(shield_below_path)
+    sprite_shield_below:set_direction(hdir)
+  else
+    shield_below:remove(); shield_below = nil
+  end
+  sprite_shield = shield:create_sprite(shield_above_path)
   sprite_shield:set_direction(hdir)
+  
   -- Create (invisible) collision mask sprite.
   local sprite_collision_mask = collision_mask:create_sprite(path_collision_mask_sprite)
   sprite_collision_mask:set_direction(hdir)
@@ -382,7 +400,6 @@ function enemy_meta:set_default_behavior_on_hero_shield(behavior)
     push_delay = 30, num_directions = 4}
   self:set_can_push_hero_on_shield(true)
   self:set_can_be_pushed_by_shield(true)
-  local normal_sound_id, block_sound_id = "shield_push", "shield2"
   -- Select properties for each behavior.
   if behavior == nil then
     p_enemy, p_hero = {}, {}
