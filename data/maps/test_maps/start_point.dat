@@ -112,7 +112,7 @@ enemy{
     },
   },
   direction = 3,
-  breed = "diarandor/goblin",
+  breed = "diarandor/goblin_green",
 }
 
 enemy{
@@ -126,7 +126,7 @@ enemy{
     },
   },
   direction = 3,
-  breed = "diarandor/goblin",
+  breed = "diarandor/goblin_green",
 }
 
 enemy{
@@ -140,7 +140,7 @@ enemy{
     },
   },
   direction = 3,
-  breed = "diarandor/goblin",
+  breed = "diarandor/goblin_green",
 }
 
 enemy{

@@ -26,9 +26,9 @@ animation{
   frame_delay = 100,
   frame_to_loop_on = 0,
   directions = {
-    { x = 264, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
-    { x = 264, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
-    { x = 264, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
-    { x = 264, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
+    { x = 280, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
+    { x = 280, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
+    { x = 280, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
+    { x = 280, y = 96, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 6, num_frames = 8 },
   },
 }

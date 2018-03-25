@@ -11,6 +11,17 @@ animation{
   },
 }
 animation{
+  name = "attack",
+  src_image = "enemies/diarandor/goblin_green.png",
+  frame_delay = 200,
+  directions = {
+    { x = 120, y = 96, frame_width = 32, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 5 },
+    { x = 384, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 5, num_columns = 1 },
+    { x = 120, y = 144, frame_width = 32, frame_height = 24, origin_x = 20, origin_y = 21, num_frames = 5 },
+    { x = 360, y = 0, frame_width = 24, frame_height = 32, origin_x = 12, origin_y = 21, num_frames = 5, num_columns = 1 },
+  },
+}
+animation{
   name = "hurt",
   src_image = "enemies/diarandor/goblin_green.png",
   frame_delay = 50,
