@@ -45,7 +45,6 @@ enemy/sprite:set_default_behavior_on_hero_shield(behavior)
 --]]
 
 local item = ...
-require("scripts/ground_effects") -- Used for enemies pushed into bad grounds.
 require("scripts/pushing_manager")
 local enemy_meta = sol.main.get_metatable("enemy")
 local hero_meta = sol.main.get_metatable("hero")
@@ -458,7 +457,7 @@ for _, entity_meta in ipairs({sprite_meta, enemy_meta}) do
       p_enemy, p_hero = block_push, {}
       self:set_can_push_hero_on_shield(false)
       self:set_traversable(false)
-      p_enemy.sound_id = block_block_sound_id
+      p_enemy.sound_id = block_sound_id
       -- Test condition for pushing like a block: "facing" overlap.
       function self:on_shield_collision_test(shield_collision_mask)
         local hero = self:get_map():get_hero()

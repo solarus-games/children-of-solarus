@@ -30,6 +30,7 @@ function map_meta:ground_collision(entity, collision_sound, callback_bad_ground)
   local hero = self:get_hero()
   local game = self:get_game()
   -- If ground is empty, fall to lower layer and check ground again.
+  local hits_ground = (ground == "empty")
   while ground == "empty" and layer > min_layer do
      layer = layer - 1
      entity:set_position(x, y, layer)
@@ -62,13 +63,15 @@ function map_meta:ground_collision(entity, collision_sound, callback_bad_ground)
     self:create_ground_effect("lava_splash", x, y, layer, "walk_on_water")
     if callback_bad_ground then callback_bad_ground() end
   else -- The ground is solid ground. Make ground effect and sound of ground.
-    if ground == "shallow_water" then
-      self:create_ground_effect("water_splash", x, y, layer, "walk_on_water")
-    elseif ground == "grass" then
-      self:create_ground_effect("leaves", x, y, layer, "walk_on_grass")
-    else -- Normal traversable ground. No ground effect, just a sound.
-       local sound = collision_sound or "hero_lands"
-       sol.audio.play_sound(sound)
+    if hits_ground then
+      if ground == "shallow_water" then
+        self:create_ground_effect("water_splash", x, y, layer, "walk_on_water")
+      elseif ground == "grass" then
+        self:create_ground_effect("leaves", x, y, layer, "walk_on_grass")
+      else -- Normal traversable ground. No ground effect, just a sound.
+         local sound = collision_sound or "hero_lands"
+         sol.audio.play_sound(sound)
+      end
     end
   end
 end
