@@ -352,6 +352,10 @@ sound{ id = "running_obstacle", description = "running_obstacle" }
 sound{ id = "shield", description = "shield" }
 sound{ id = "shield2", description = "shield2" }
 sound{ id = "shield3", description = "shield3" }
+sound{ id = "shield_brandish", description = "shield_brandish" }
+sound{ id = "shield_push", description = "shield_push" }
+sound{ id = "shovel", description = "shovel" }
+sound{ id = "slash", description = "slash" }
 sound{ id = "soft_tap", description = "soft_tap" }
 sound{ id = "splash", description = "splash" }
 sound{ id = "stairs_down_end", description = "stairs_down_end" }
@@ -477,3 +481,276 @@ font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
 
 
+file{ path = "enemies/diarandor/clucko.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "enemies/diarandor/generic_projectile.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "enemies/diarandor/goblin_green.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "enemies/diarandor/pterobat.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "enemies/diarandor/soldier.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "entities/animals/bird.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "entities/cat.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "entities/insects/butterfly.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "entities/worf.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "items/feather.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "items/shield.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "languages/en", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "main.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/houses/gem_house.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/houses/gem_house.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/houses/inn.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/houses/inn.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/houses/kaleido.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/houses/kaleido.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/a1.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/a1.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/a2.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/a2.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/a3.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/a3.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/a4.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/a4.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/b1.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/b1.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/b2.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/b2.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/b3.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/b3.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/b4.dat", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/out/b4.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "maps/store/enemies.dat", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/store/enemies.lua", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/store/entities.dat", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/store/entities.lua", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/store/house_test.dat", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/store/house_test.lua", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/store/overworldTest0.4.dat", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/store/overworldTest0.4.lua", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/test_maps/start_point.dat", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "maps/test_maps/start_point.lua", author = "Solarus Team", license = "GPLv3+" }
+file{ path = "musics/eduardo/boss.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/cave.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/dungeon_finished.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/fairy.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/fanfare.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/game_over.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/lunarius.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/mini_game.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/mountains.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/neptune_battle.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/overworld.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/soldiers.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/sword_fanfare.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/title_screen.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/village.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/eduardo/witch_hut.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "musics/zonzifleur/carrousel.ogg", author = "Zonzifleur", license = "CC-BY-SA 4.0" }
+file{ path = "scripts/chronometer.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/console.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/debug.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/debug_dialogs.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "scripts/dungeons.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/equipment.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/features.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/ground_effects.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "scripts/initial_game.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/language_manager.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/meta/teletransporter_meta.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "scripts/multi_events.lua", author = "Christopho", license = "GPLv3+" }
+file{ path = "scripts/pushing_manager.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "scripts/weather/hail_manager.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "scripts/weather/rain_manager.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "scripts/weather/snow_manager.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "scripts/weather/weather_manager.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sounds/arrow_hit.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/bird_chirp.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/bird_chirp1.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/bird_chirp2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/bird_cute.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/bomb.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/boomerang.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/boss_charge.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/boss_fireball.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/boss_hurt.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/boss_killed.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/bounce.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/bow.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/bush.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/cane.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/cane2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/cane3.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/cat.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/chest_appears.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/chest_open.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/cricket.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/crystal.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/crystal2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/cursor.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/danger.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/diarandor/solarus_logo.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/door_closed.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/door_open.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/door_unlocked.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/eduardo/secret.ogg", author = "Eduardo Dueñas", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/electrified.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/electrified2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/enemy_awake.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/enemy_hurt.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/enemy_killed.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/explosion.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/falling_on_hole.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/falling_rock.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/fire_ball.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/fire_ball2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/frost1.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/frost2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/heart.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/heart_container.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/hero_dying.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/hero_falls.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/hero_hurt.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/hero_lands.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/hero_pushes.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/hero_seen.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/hookshot.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/item_fall.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/jump.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/key_fall.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/lamp.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/lift.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/magnet1.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/message_end.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/message_letter.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/money_counter.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/money_counter_end.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/monster_hurt.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/mouse.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/ok.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/open_lock.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/pause_closed.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/pause_open.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/picked_item.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/picked_money.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/picked_small_key.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/quake.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/running.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/running_obstacle.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/shield.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/shield2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/shield3.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/shield_brandish.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/shield_push.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/shovel.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/slash.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/soft_tap.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/splash.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/stairs_down_end.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/stairs_down_start.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/stairs_up_end.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/stairs_up_start.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/stone.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/swim.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/switch.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/switch_hero.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/sword1.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/sword2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/sword3.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/sword4.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/sword_spin_attack_load.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/sword_spin_attack_release.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/sword_tapping.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/sword_tapping_weak_wall.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/teleporter.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/throw.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/thunder1.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/thunder2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/thunder3.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/thunder_double.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/thunder_far.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/timer.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/timer2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/timer_hurry.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/tongue.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/treasure.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/victory.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/walk_on_grass.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/walk_on_water.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/warp.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/water_fill.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/wings1.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/wings2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/world_warp.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/wrong.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/wrong2.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/wrong3.ogg", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sounds/zonzifleur/solarus_team_logo.ogg", author = "Zonzifleur", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/animals/bird_red.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/animals/birds.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/animals/clucko_white.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/animals/clucko_white.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/animals/meow_orange.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/animals/meow_orange.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/animals/worf_brown.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/animals/worf_brown.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/destructibles/broken_vase.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/destructibles/cabbagge_green.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/cabbagge_grey.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/cabbagge_red.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/cabbagge_violet.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/cabbagge_yellow.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_blue.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_blue_1.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_blue_3.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_blue_5.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_blue_7.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_green.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_green_1.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_green_3.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_green_5.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/grass_green_7.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/plant_cabbage.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/destructibles/pot_1.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/rock_golden.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/rock_grey.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/rocks_and_signpost.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/destructibles/signpost.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/destructibles/vase.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/enemies/diarandor/enemy_killed.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/enemies/diarandor/goblin_axe.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/goblin_club.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/goblin_green.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/goblin_green.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/enemies/diarandor/goblin_green_slingshot.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/pterobat.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/pterobat.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/enemies/diarandor/soldier.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/soldier.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/enemies/diarandor/soldier_feather.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/soldier_sword.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/soldier_sword.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/enemies/enemy_killed.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/npc/diarandor/kaleido.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/npc/diarandor/kaleido.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/npc/diarandor/woman_1a.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/npc/diarandor/woman_1b.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/npc/diarandor/woman_1c.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/npc/diarandor/woman_1d.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/npc/diarandor/woman_1e.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/npc/diarandor/woman_1f.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/npc/diarandor/woman_type1_a.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/npc/diarandor/woman_type1_b.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/npc/diarandor/woman_type1_c.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/npc/diarandor/woman_type1_d.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/npc/diarandor/woman_type1_e.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/npc/diarandor/woman_type1_f.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/shadows/shadow.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/shadows/shadow_big.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/shadows/shadow_big_dynamic.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/shadows/shadow_small.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/weather/rain.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/weather/rain.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/weather/snow.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/weather/snow.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/diarandor/house.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "tilesets/diarandor/house.tiles.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "tilesets/diarandor/light_overworld.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "tilesets/diarandor/light_overworld.tiles.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
