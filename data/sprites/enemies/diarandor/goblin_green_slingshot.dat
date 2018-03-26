@@ -34,17 +34,6 @@ animation{
   },
 }
 animation{
-  name = "nut",
-  src_image = "enemies/diarandor/goblin_green.png",
-  frame_delay = 200,
-  directions = {
-    { x = 280, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
-    { x = 280, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
-    { x = 280, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
-    { x = 280, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
-  },
-}
-animation{
   name = "nut_break",
   src_image = "enemies/diarandor/goblin_green.png",
   frame_delay = 120,
@@ -56,9 +45,19 @@ animation{
   },
 }
 animation{
-  name = "shot",
+  name = "stopped",
   src_image = "enemies/diarandor/goblin_green.png",
-  frame_delay = 200,
+  directions = {
+    { x = 0, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 0, y = 120, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 0, y = 144, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 0, y = 168, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
+animation{
+  name = "throw",
+  src_image = "enemies/diarandor/goblin_green.png",
+  frame_delay = 1000,
   directions = {
     { x = 96, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 96, y = 120, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
@@ -67,12 +66,12 @@ animation{
   },
 }
 animation{
-  name = "stopped",
+  name = "thrown",
   src_image = "enemies/diarandor/goblin_green.png",
   directions = {
-    { x = 0, y = 96, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 0, y = 120, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 0, y = 144, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 0, y = 168, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 280, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 280, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 280, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+    { x = 280, y = 104, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
   },
 }

@@ -103,12 +103,530 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 216,
-  y = 421,
+  x = 80,
+  y = 197,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 128,
+  y = 181,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 112,
+  y = 205,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 80,
+  y = 237,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 120,
+  y = 237,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 448,
+  y = 269,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 488,
+  y = 229,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 488,
+  y = 269,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 96,
+  y = 301,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 240,
+  y = 301,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 224,
+  y = 325,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 96,
+  y = 341,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 232,
+  y = 357,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 280,
+  y = 349,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 448,
+  y = 365,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 496,
+  y = 349,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 480,
+  y = 373,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 448,
+  y = 405,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 488,
+  y = 405,
+  properties = {
+    {
+      key = "weapon",
+      value = "club",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 256,
+  y = 397,
   properties = {
     {
       key = "weapon",
       value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 136,
+  y = 365,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 160,
+  y = 309,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 40,
+  y = 293,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 560,
+  y = 309,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 336,
+  y = 229,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 488,
+  y = 141,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 408,
+  y = 165,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 312,
+  y = 141,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 256,
+  y = 181,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 352,
+  y = 341,
+  properties = {
+    {
+      key = "weapon",
+      value = "axe",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 277,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 296,
+  y = 285,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 325,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 216,
+  y = 261,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 176,
+  y = 293,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 136,
+  y = 269,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 184,
+  y = 221,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 216,
+  y = 141,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
     },
   },
   direction = 3,
@@ -118,11 +636,11 @@ enemy{
 enemy{
   layer = 0,
   x = 304,
-  y = 405,
+  y = 93,
   properties = {
     {
       key = "weapon",
-      value = "axe",
+      value = "slingshot",
     },
   },
   direction = 3,
@@ -131,12 +649,82 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 248,
+  x = 432,
+  y = 117,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 104,
+  y = 397,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 32,
+  y = 365,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 80,
+  y = 269,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 40,
+  y = 221,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 336,
   y = 389,
   properties = {
     {
       key = "weapon",
-      value = "axe",
+      value = "slingshot",
     },
   },
   direction = 3,
@@ -145,9 +733,43 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 216,
-  y = 101,
-  direction = 0,
-  breed = "diarandor/clucko",
+  x = 432,
+  y = 333,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 536,
+  y = 261,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
+}
+
+enemy{
+  layer = 0,
+  x = 408,
+  y = 221,
+  properties = {
+    {
+      key = "weapon",
+      value = "slingshot",
+    },
+  },
+  direction = 3,
+  breed = "diarandor/goblin_green",
 }
 

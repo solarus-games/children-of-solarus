@@ -99,7 +99,7 @@ for _, entity_meta in pairs({enemy_meta, hero_meta}) do
       e:set_obstacle_behavior("flying")
     end
     -- Play sound if any.
-    if sound_id and sol.file.exists("sounds/"..sound_id) then
+    if sound_id then
       sol.audio.play_sound(sound_id)
     end
     -- Create movement.

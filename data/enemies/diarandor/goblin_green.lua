@@ -15,9 +15,15 @@ local hero = map:get_hero()
 local sprite, weapon_sprite, weapon, has_weapon, has_throwable_weapon
 local behavior = "passive" -- Values: "passive", "aggressive".
 local detection_distance = 64
-local throw_distance = 160
+local throw_axe_distance = 100
+local club_attack_distance = 50
 local body_damage = 2
-local speed_axe = 100
+local speed_axe, speed_nut = 100, 160
+local club_sound_id = "slash"
+local throw_axe_sound_id = "slash"
+local axe_hit_shield_sound_id = "shield"
+local throw_slingshot_sound_id = "throw"
+local slingshot_hit_shield_sound_id = "shield"
 
 --[[ CUSTOM PROPERTY "weapon" has values:
 "club", "axe", "none" (or nil), "slingshot", "random".
@@ -26,28 +32,26 @@ local speed_axe = 100
 -- Event called when the enemy is initialized.
 function enemy:on_created()
 
-  -- Initialize the properties of your enemy here,
-  -- like the sprite, the life and the damage.
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(3)
-  enemy:set_damage(body_damage)
+  -- Initialize sprites and weapon from custom properties.
+  weapon = self:get_property("weapon")
+  self:set_weapon(weapon) -- Create sprites depending on the weapon.
+  self:set_life(3)
+  self:set_damage(body_damage)
+  -- General shield properties.
   self:set_default_behavior_on_hero_shield("normal_shield_push")
-  -- Initialize weapon from custom properties.
-  local weapon_name = self:get_property("weapon")
-  if weapon_name ~= nil and weapon_name ~= "none" then
-    enemy:set_weapon(weapon_name)
-  end
 end
 
 -- Event called when the enemy should start or restart its movements.
 function enemy:on_restarted()
   -- Wait a delay when restarted.
   self:stop_movement()
+  sprite.on_animation_finished = nil
+  sprite.on_frame_changed = nil
   for _, s in self:get_sprites() do
     if s:has_animation("stopped") then s:set_animation("stopped") end
   end
   local delay = math.random(500, 1000)
-  sol.timer.start(enemy, delay, function()
+  sol.timer.start(map, delay, function()
     if behavior == "aggressive" and self:get_distance(hero) <= detection_distance then
       self:start_walking("go_to_hero")
     else
@@ -55,8 +59,8 @@ function enemy:on_restarted()
     end
   end)
   -- Check hero for throwing.
-  if has_throwable_weapon and self:get_distance(hero) <= throw_distance then
-    self:throw()
+  if has_throwable_weapon and self:get_distance(hero) <= throw_axe_distance then
+    if has_throwable_weapon then self:throw() end
   end
 end
 
@@ -70,28 +74,34 @@ function enemy:set_weapon(weapon_name)
     local index = math.random(1, #weapon_list)
     weapon_name = weapon_list[index]
   end
-  if weapon_name and weapon_name ~= "none" then
-    has_weapon = true
-  end
+  -- Destroy weapons and sprites.
+  sprite, weapon_sprite, has_weapon, has_throwable_weapon = nil, nil, nil
+  for _, sp in self:get_sprites() do self:remove_sprite(sp) end
   -- Set sprites and properties for each weapon.
-  local sprite_id = sprite:get_animation_set()
   local weapon_damage = 0
+  if weapon ~= "slingshot" then
+    sprite = self:create_sprite("enemies/diarandor/goblin_green")
+  end
   if weapon_name == "club" then
-    weapon_damage = 2
+    has_weapon, weapon_damage = true, 2
     behavior = "aggressive"
   elseif weapon_name == "axe" then
     weapon_damage = 3
-    has_throwable_weapon = true
+    has_weapon, has_throwable_weapon = true, true
   elseif weapon_name == "slingshot" then
     -- Replace main sprite.
-    has_throwable_weapon = true
-    self:remove_sprite(self:get_sprite())
-    weapon_sprite = self:create_sprite(sprite_id .. "_green_slingshot")
+    has_weapon, has_throwable_weapon = true, true
+    sprite = self:create_sprite("enemies/diarandor/goblin_green_slingshot")    
   end
   if weapon_name == "club" or weapon_name == "axe" then
-    weapon_sprite = enemy:create_sprite(sprite_id .. "_" .. weapon_name)
+    weapon_sprite = enemy:create_sprite("enemies/diarandor/goblin_" .. weapon)
     self:set_sprite_damage(weapon_sprite, weapon_damage)
     self:set_invincible_sprite(weapon_sprite)
+    self:set_attack_consequence_sprite(weapon_sprite, "sword", "custom")
+  end
+  -- Club collision with shield.
+  if weapon_sprite then
+    weapon_sprite:set_default_behavior_on_hero_shield("enemy_strong_to_shield_push")
   end
 end
 
@@ -117,10 +127,16 @@ function enemy:start_walking(behavior)
     m:set_target(hero)
     m:set_speed(math.random(50, 65))
     m:start(enemy)
-    sol.timer.start(enemy, 1000, function()
+    sol.timer.start(enemy, 250, function()
       if enemy:get_distance(hero) > detection_distance then
         enemy:restart()
         return
+      elseif weapon == "club" and enemy:get_distance(hero) < club_attack_distance then
+        -- Choose randomly if there will be a club attack or not.
+        if math.random(0, 1) == 0 then
+          enemy:club_attack()
+          return
+        end
       end
       return true
     end)
@@ -142,42 +158,69 @@ end
 function enemy:throw()
   -- Do nothing if there is no weapon.
   if not has_throwable_weapon then return end
-  -- Remove enemy sprites if necessary.
-  local sprite_id = sprite:get_animation_set() .. "_" .. weapon
-  if weapon == "axe" then
+  -- Disable throwable weapon for a while.
+  local proj_sprite_id, speed
+  local weapon_name = weapon
+  if weapon_name == "axe" then
+    proj_sprite_id = "enemies/diarandor/goblin_axe"
     self:remove_sprite(weapon_sprite)
-    weapon, weapon_sprite, has_weapon, has_throwable_weapon = nil, nil, nil, nil
-    
-    -- TEST:
-    sol.timer.start(map, 5000, function()
-      if not self:get_weapon() then
-        self:set_weapon("axe")
-      end
-    end)
-    
+    weapon_sprite, has_weapon, has_throwable_weapon = nil, nil, nil
+    speed = speed_axe
+  elseif weapon_name == "slingshot" then
+    proj_sprite_id = "enemies/diarandor/goblin_green_slingshot"
+    has_throwable_weapon = nil
+    speed = speed_nut
   end
+  sprite:set_animation("throw")
+  function sprite:on_animation_finished(anim)
+    if anim == "throw" then self:set_animation("stopped") end
+  end
+  sol.timer.start(map, 5000, function()
+    self:set_weapon(weapon_name)
+  end)
   -- Create thrown entity.
   local x, y, layer = self:get_position()
   local dir = sprite:get_direction()
   local prop = {x=x, y=y, layer=layer, direction=dir, width=16, height=16,
     breed="diarandor/generic_projectile"}
   local projectile = map:create_enemy(prop)
-  local proj_sprite = projectile:create_sprite(sprite_id)
+  local proj_sprite = projectile:create_sprite(proj_sprite_id)
   proj_sprite:set_animation("thrown")
   -- Create movement for projectile.
   projectile:stop_movement()
   local m = sol.movement.create("straight")
   m:set_smooth(false)
-  m:set_angle(projectile:get_angle(hero))
-  m:set_speed(speed_axe)
+  if weapon_name == "slingshot" then
+    m:set_angle(dir * math.pi/2)
+    m:set_speed(speed_nut)
+  elseif weapon_name == "axe" then
+    m:set_angle(self:get_angle(hero))
+    m:set_speed(speed_axe)
+  end
   m:set_max_distance(300)
   function projectile:on_obstacle_reached() projectile:remove() end
   function projectile:on_movement_finished() projectile:remove() end
   m:start(projectile)
   -- Initialize collision properties.
-  projectile:set_invincible(true)
-  projectile:set_can_be_pushed_by_shield(true)
-  projectile:set_can_push_hero_on_shield(true)
+  local behavior
+  if weapon_name == "axe" then
+    projectile:set_invincible(true)
+    behavior = "normal_shield_push"
+  elseif weapon_name == "slingshot" then
+    behavior = "enemy_weak_to_shield_push"
+    function projectile:on_dying()
+      self:get_sprite():set_animation("nut_break")
+    end
+  end
+  projectile:set_default_behavior_on_hero_shield(behavior)
+  -- Start throw sounds.
+  if weapon_name == "axe" then
+    sol.audio.play_sound(throw_axe_sound_id)
+    projectile:set_pushed_by_shield_property("sound_id", axe_hit_shield_sound_id)
+  elseif weapon_name == "slingshot" then
+    sol.audio.play_sound(throw_slingshot_sound_id)
+    projectile:set_pushed_by_shield_property("sound_id", slingshot_hit_shield_sound_id)
+  end
   -- Override normal push function.
   function projectile:on_shield_collision(shield)
     -- Disable push for a while.
@@ -191,10 +234,52 @@ function enemy:throw()
     local m = projectile:get_movement()
     if not m then return end
     m = sol.movement.create("straight")
-    m:set_angle(shield:get_angle(projectile))
+    local angle = 0
+    if weapon_name == "axe" then
+      angle = shield:get_angle(projectile)
+      m:set_speed(speed_axe)
+    elseif weapon_name == "slingshot" then
+      angle = shield:get_direction4_to(projectile) * math.pi/2
+      m:set_speed(speed_nut)
+    end
+    m:set_angle(angle)
     m:set_smooth(false)
-    m:set_speed(speed_axe)
     m:set_max_distance(300)
     m:start(self)
+    -- Disable collisions to avoid problems.
+    self.on_shield_collision = nil
+    self:set_default_behavior_on_hero_shield(nil)
+  end
+end
+
+-- Attack with club a random number of times.
+function enemy:club_attack()
+  if weapon ~= "club" then self:restart(); return end
+  self:stop_movement()
+  local num_attacks = math.random(1,3)
+  function sprite:on_frame_changed(animation, frame)
+    if frame == 1 or frame == 3 then
+      sol.audio.play_sound(club_sound_id)
+    end
+  end
+  sprite:set_animation("attack")
+  weapon_sprite:set_animation("attack")
+  function sprite:on_animation_finished()
+    num_attacks = num_attacks - 1
+    if num_attacks > 0 then
+      sprite:set_animation("attack")
+      weapon_sprite:set_animation("attack")
+    else
+      enemy:restart()
+    end
+  end
+end
+
+-- Push hero if sword hits the club.
+function enemy:on_custom_attack_received(attack, sprite)
+  if weapon == "club" and attack == "sword" and sprite == weapon_sprite then
+    local p = weapon_sprite:get_push_hero_on_shield_properties()
+    p.pushing_entity = self
+    hero:push(p)
   end
 end
