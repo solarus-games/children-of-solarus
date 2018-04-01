@@ -137,9 +137,16 @@ function item:on_using()
   -- Stop fixed animations if the command is released.
   sol.timer.start(item, 1, function()
     if shield_state == "using" then
-      if shield_command_released == true or hero:get_state() == "sword swinging" then 
-        -- Finish using item if sword is used or if shield command is released.
+      if shield_command_released == true then
+      -- Finish using if shield command is released.
         self:finish_using()
+        return
+      elseif hero:get_state() == "sword swinging" then 
+      -- Finish using if sword is used.
+        self:finish_using()
+        -- Restart sword attack.
+        local sword = game:get_item("sword")
+        game:get_hero():start_attack()
         return
       end
     end
