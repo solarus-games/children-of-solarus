@@ -50,6 +50,7 @@ sprite{ id = "enemies/diarandor/goblin_axe", description = "Goblin Axe" }
 sprite{ id = "enemies/diarandor/goblin_club", description = "Goblin Club" }
 sprite{ id = "enemies/diarandor/goblin_green", description = "Goblin Green" }
 sprite{ id = "enemies/diarandor/goblin_green_slingshot", description = "Goblin Slingshot" }
+sprite{ id = "enemies/diarandor/goblin_shaman_fire", description = "Goblin Shaman Fire" }
 sprite{ id = "enemies/diarandor/pterobat", description = "Pterobat" }
 sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
 sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }
@@ -460,6 +461,7 @@ item{ id = "world_map", description = "World map" }
 enemy{ id = "diarandor/clucko", description = "Clucko" }
 enemy{ id = "diarandor/generic_projectile", description = "Projectile" }
 enemy{ id = "diarandor/goblin_green", description = "Goblin" }
+enemy{ id = "diarandor/goblin_shaman_fire", description = "Goblin Shaman Fire" }
 enemy{ id = "diarandor/pterobat", description = "Pterobat" }
 enemy{ id = "diarandor/soldier", description = "Soldier" }
 enemy{ id = "generic_soldier", description = "generic soldier" }
@@ -484,6 +486,7 @@ font{ id = "white_digits", description = "white_digits" }
 file{ path = "enemies/diarandor/clucko.lua", author = "Diarandor", license = "GPLv3+" }
 file{ path = "enemies/diarandor/generic_projectile.lua", author = "Diarandor", license = "GPLv3+" }
 file{ path = "enemies/diarandor/goblin_green.lua", author = "Diarandor", license = "GPLv3+" }
+file{ path = "enemies/diarandor/goblin_shaman_fire.lua", author = "Diarandor", license = "GPLv3+" }
 file{ path = "enemies/diarandor/pterobat.lua", author = "Diarandor", license = "GPLv3+" }
 file{ path = "enemies/diarandor/soldier.lua", author = "Diarandor", license = "GPLv3+" }
 file{ path = "entities/animals/bird.lua", author = "Diarandor", license = "GPLv3+" }
@@ -720,6 +723,8 @@ file{ path = "sprites/enemies/diarandor/goblin_club.dat", author = "Diarandor", 
 file{ path = "sprites/enemies/diarandor/goblin_green.dat", author = "Diarandor", license = "GPLv3+" }
 file{ path = "sprites/enemies/diarandor/goblin_green.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies/diarandor/goblin_green_slingshot.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/goblin_shaman_fire.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/goblin_shaman_fire.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies/diarandor/pterobat.dat", author = "Diarandor", license = "GPLv3+" }
 file{ path = "sprites/enemies/diarandor/pterobat.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies/diarandor/soldier.dat", author = "Diarandor", license = "GPLv3+" }

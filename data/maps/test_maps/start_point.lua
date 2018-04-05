@@ -17,7 +17,7 @@ function map:on_started()
   hero:set_tunic_sprite_id("hero/eldran3")
   game:set_max_life(80)
   game:set_life(80)
-
+  hero:set_walking_speed(100)
 end
 
 -- Event called after the opening transition effect of the map,

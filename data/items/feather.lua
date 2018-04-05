@@ -46,6 +46,9 @@ end
 -- Necessary to determine if other items can be used.
 function item:is_jumping() return is_hero_jumping end
 function hero_meta:is_jumping()
+  return self:get_state() == "jumping" or self:get_game():get_item("feather"):is_jumping()
+end
+function hero_meta:is_using_feather()
   return self:get_game():get_item("feather"):is_jumping()
 end
 

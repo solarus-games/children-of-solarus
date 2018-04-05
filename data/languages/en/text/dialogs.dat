@@ -7,7 +7,7 @@ Huh? It's locked!
 If you had the Large
 Key you might be
 able to open it!
-]]
+]],
 }
 
 dialog{
@@ -19,7 +19,7 @@ This door leads to
 the Boss's Lair!
 You will need the
 Boss Key to open it.
-]]
+]],
 }
 
 dialog{
@@ -29,7 +29,7 @@ dialog{
 You will need something
 sharp to cut through
 these bushes.
-]]
+]],
 }
 
 dialog{
@@ -38,7 +38,7 @@ dialog{
   text = [[
 It's still too heavy
 for you!
-]]
+]],
 }
 
 dialog{
@@ -50,7 +50,7 @@ too heavy!
 
 You'll never manage
 with your bare hands!
-]]
+]],
 }
 
 dialog{
@@ -60,7 +60,7 @@ dialog{
 It's a crystal switch.
 Try to hit it with
 something...
-]]
+]],
 }
 
 dialog{
@@ -68,7 +68,7 @@ dialog{
   text = [[
 This chest is empty!
 Too bad!
-]]
+]],
 }
 
 dialog{
@@ -78,7 +78,7 @@ dialog{
   text = [[
 Eat Apples to
 recover Hearts.
-]]
+]],
 }
 
 dialog{
@@ -89,7 +89,7 @@ dialog{
 Use Bombs against
 enemies and to
 destroy obstacles.
-]]
+]],
 }
 
 dialog{
@@ -99,7 +99,7 @@ dialog{
   text = [[
 What could the Bone
 Key be used for?
-]]
+]],
 }
 
 dialog{
@@ -111,7 +111,7 @@ Use the Boomerang to
 immobilize enemies
 and pick up far-away
 objects.
-]]
+]],
 }
 
 dialog{
@@ -124,7 +124,7 @@ Boomerang to
 immobilize enemies
 and pick up far-away
 objects.
-]]
+]],
 }
 
 dialog{
@@ -135,7 +135,7 @@ dialog{
 The Magic Bottle can
 hold various
 substances.
-]]
+]],
 }
 
 dialog{
@@ -149,7 +149,7 @@ water.
 
 Use it at an
 appropriate spot...
-]]
+]],
 }
 
 dialog{
@@ -160,7 +160,7 @@ dialog{
 Drink the Red Potion
 to fill up your
 Heart Meter.
-]]
+]],
 }
 
 dialog{
@@ -171,7 +171,7 @@ dialog{
 Drink the Green Potion
 to fill up your
 Magic Meter.
-]]
+]],
 }
 
 dialog{
@@ -183,7 +183,7 @@ Drink the Blue Potion
 to fill up both your
 Heart and Magic
 Meters!
-]]
+]],
 }
 
 dialog{
@@ -196,7 +196,7 @@ you in time of need.
 You can also use it
 whenever you want to
 recover your Hearts!
-]]
+]],
 }
 
 dialog{
@@ -207,7 +207,7 @@ dialog{
 The Magic Bottle can
 hold various
 substances.
-]]
+]],
 }
 
 dialog{
@@ -221,7 +221,7 @@ water.
 
 Use it at an
 appropriate spot...
-]]
+]],
 }
 
 dialog{
@@ -232,7 +232,7 @@ dialog{
 Drink the Red Potion
 to fill up your
 Heart Meter.
-]]
+]],
 }
 
 dialog{
@@ -243,7 +243,7 @@ dialog{
 Drink the Green Potion
 to fill up your
 Magic Meter.
-]]
+]],
 }
 
 dialog{
@@ -255,7 +255,7 @@ Drink the Blue Potion
 to fill up both your
 Heart and Magic
 Meters!
-]]
+]],
 }
 
 dialog{
@@ -268,7 +268,7 @@ you in time of need.
 You can also use it
 whenever you want to
 recover your Hearts!
-]]
+]],
 }
 
 dialog{
@@ -279,7 +279,7 @@ dialog{
 The Magic Bottle can
 hold various
 substances.
-]]
+]],
 }
 
 dialog{
@@ -293,7 +293,7 @@ water.
 
 Use it at an
 appropriate spot...
-]]
+]],
 }
 
 dialog{
@@ -304,7 +304,7 @@ dialog{
 Drink the Red Potion
 to fill up your
 Heart Meter.
-]]
+]],
 }
 
 dialog{
@@ -315,7 +315,7 @@ dialog{
 Drink the Green Potion
 to fill up your
 Magic Meter.
-]]
+]],
 }
 
 dialog{
@@ -327,7 +327,7 @@ Drink the Blue Potion
 to fill up both your
 Heart and Magic
 Meters!
-]]
+]],
 }
 
 dialog{
@@ -340,7 +340,7 @@ you in time of need.
 You can also use it
 whenever you want to
 recover your Hearts!
-]]
+]],
 }
 
 dialog{
@@ -351,7 +351,7 @@ dialog{
 The Magic Bottle can
 hold various
 substances.
-]]
+]],
 }
 
 dialog{
@@ -365,7 +365,7 @@ water.
 
 Use it at an
 appropriate spot...
-]]
+]],
 }
 
 dialog{
@@ -376,7 +376,7 @@ dialog{
 Drink the Red Potion
 to fill up your
 Heart Meter.
-]]
+]],
 }
 
 dialog{
@@ -387,7 +387,7 @@ dialog{
 Drink the Green Potion
 to fill up your
 Magic Meter.
-]]
+]],
 }
 
 dialog{
@@ -399,7 +399,7 @@ Drink the Blue Potion
 to fill up both your
 Heart and Magic
 Meters!
-]]
+]],
 }
 
 dialog{
@@ -412,7 +412,7 @@ you in time of need.
 You can also use it
 whenever you want to
 recover your Hearts!
-]]
+]],
 }
 
 dialog{
@@ -422,7 +422,7 @@ dialog{
   text = [[
 You don't have any
 Arrows left!
-]]
+]],
 }
 
 dialog{
@@ -433,7 +433,7 @@ dialog{
 Shoot Arrows to
 defeat tough
 enemies.
-]]
+]],
 }
 
 dialog{
@@ -445,7 +445,7 @@ dialog{
 Create a block and
 hook yourself to it
 using the Hookshot.
-]]
+]],
 }
 
 dialog{
@@ -456,7 +456,7 @@ dialog{
 The Earth Key. It
 allows access to the
 village's cave.
-]]
+]],
 }
 
 dialog{
@@ -467,7 +467,7 @@ dialog{
 Eat a Croissant to
 recover seven
 Hearts.
-]]
+]],
 }
 
 dialog{
@@ -477,7 +477,7 @@ dialog{
   text = [[
 Use the Feather to
 jump over obstacles.
-]]
+]],
 }
 
 dialog{
@@ -488,7 +488,7 @@ dialog{
 Find all three Fire
 Stones and bring
 them to Inferno.
-]]
+]],
 }
 
 dialog{
@@ -498,7 +498,7 @@ dialog{
   text = [[
 Swim in deep waters
 with these flippers.
-]]
+]],
 }
 
 dialog{
@@ -509,7 +509,7 @@ dialog{
 These Iron Gloves
 will let you lift
 rocks.
-]]
+]],
 }
 
 dialog{
@@ -520,7 +520,7 @@ dialog{
 Lift black rocks
 with these Golden
 Gloves.
-]]
+]],
 }
 
 dialog{
@@ -532,7 +532,7 @@ Hoist yourself up to
 inaccessible places
 with the help of the
 Hookshot.
-]]
+]],
 }
 
 dialog{
@@ -543,7 +543,7 @@ dialog{
 The Ice Key. You must
 find a frozen place for
 it to work!
-]]
+]],
 }
 
 dialog{
@@ -554,7 +554,7 @@ dialog{
 The Iron Key.
 Be sure to use it on
 the correct lock!
-]]
+]],
 }
 
 dialog{
@@ -567,7 +567,7 @@ and light torches
 with the Lamp, but
 watch your Magic
 Meter!
-]]
+]],
 }
 
 dialog{
@@ -577,7 +577,7 @@ dialog{
   text = [[
 This Apple Pie looks
 odd...
-]]
+]],
 }
 
 dialog{
@@ -587,7 +587,7 @@ dialog{
   text = [[
 Three authentic Gold
 Bars!
-]]
+]],
 }
 
 dialog{
@@ -599,7 +599,7 @@ The Edelweiss is a
 very rare flower in
 the Kingdom of
 Hyrule.
-]]
+]],
 }
 
 dialog{
@@ -611,7 +611,7 @@ These Tiger Scrolls
 will let you master
 advanced sword
 techniques.
-]]
+]],
 }
 
 dialog{
@@ -622,7 +622,7 @@ dialog{
 The Magic Cape warns
 you when you are
 near a weak wall.
-]]
+]],
 }
 
 dialog{
@@ -633,7 +633,7 @@ dialog{
 The Mystic Mirror
 has strange
 powers...
-]]
+]],
 }
 
 dialog{
@@ -644,7 +644,7 @@ dialog{
 Eat a Chocolate
 Croissant to recover
 three Hearts.
-]]
+]],
 }
 
 dialog{
@@ -657,7 +657,7 @@ lightning by using
 the Pegasus Shoes.
 Press and hold the
 Action key to run.
-]]
+]],
 }
 
 dialog{
@@ -668,7 +668,7 @@ dialog{
 The Rock Key! But
 where is the right
 lock?
-]]
+]],
 }
 
 dialog{
@@ -679,7 +679,7 @@ dialog{
 The Stone Key!
 Let's find the right
 lock!
-]]
+]],
 }
 
 dialog{
@@ -690,7 +690,7 @@ dialog{
 The Wooden Key.
 There's only one
 lock for this key!
-]]
+]],
 }
 
 dialog{
@@ -698,7 +698,7 @@ dialog{
   text = [[
 You can't carry any
 more!
-]]
+]],
 }
 
 dialog{
@@ -707,7 +707,7 @@ dialog{
   text = [[
 Sorry, you don't
 have enough Gems!
-]]
+]],
 }
 
 dialog{
@@ -717,7 +717,7 @@ dialog{
 Price: $v Gems.
 Buy
 Don't Buy
-]]
+]],
 }
 
 dialog{
@@ -726,7 +726,7 @@ dialog{
   skip = "all",
   text = [[
 It's locked!
-]]
+]],
 }
 
 dialog{
@@ -736,7 +736,7 @@ dialog{
 You found 3 Apples!$0
 Eat them later to
 recover Hearts!
-]]
+]],
 }
 
 dialog{
@@ -747,7 +747,7 @@ dialog{
 You found an Arrow!$0
 Use the Bow and
 Arrows to defeat
-]]
+]],
 }
 
 dialog{
@@ -755,7 +755,7 @@ dialog{
   text = [[
 tough enemies from
 afar.
-]]
+]],
 }
 
 dialog{
@@ -766,7 +766,7 @@ dialog{
 You found 5 Arrows!$0
 Use the Bow and
 Arrows to defeat
-]]
+]],
 }
 
 dialog{
@@ -777,7 +777,7 @@ dialog{
 You found 10 Arrows!$0
 Use the Bow and
 Arrows to defeat
-]]
+]],
 }
 
 dialog{
@@ -790,7 +790,7 @@ Key!
 You can now open
 special doors and
 find new treasures!
-]]
+]],
 }
 
 dialog{
@@ -803,7 +803,7 @@ Blue Potion!$0
 Drink it to restore
 both your life and
 magic energy.
-]]
+]],
 }
 
 dialog{
@@ -812,7 +812,7 @@ dialog{
   next = "_treasure.bomb.1.1",
   text = [[
 You found a Bomb!$0
-]]
+]],
 }
 
 dialog{
@@ -821,7 +821,7 @@ dialog{
 Use a Bomb to make
 an enemy or obstacle
 explode.
-]]
+]],
 }
 
 dialog{
@@ -831,7 +831,7 @@ dialog{
   text = [[
 You found three
 Bombs!$0
-]]
+]],
 }
 
 dialog{
@@ -841,7 +841,7 @@ dialog{
   text = [[
 You found eight
 Bombs!$0
-]]
+]],
 }
 
 dialog{
@@ -853,7 +853,7 @@ Bag!$0 It holds 10
 Bombs.
 Assign it to a key
 and bombs away!
-]]
+]],
 }
 
 dialog{
@@ -865,7 +865,7 @@ Bomb Bag!$0
 
 It can hold up to 30
 Bombs instead of 10!
-]]
+]],
 }
 
 dialog{
@@ -877,7 +877,7 @@ Bomb Bag!$0
 
 It can hold up to 99
 Bombs instead of 30!
-]]
+]],
 }
 
 dialog{
@@ -889,7 +889,7 @@ Key!$0
 
 But what could it be
 used for?
-]]
+]],
 }
 
 dialog{
@@ -905,7 +905,7 @@ There are several
 ways of using it,
 it’s up to you to
 discover them all!
-]]
+]],
 }
 
 dialog{
@@ -918,7 +918,7 @@ Super Boomerang!$0
 It's faster and
 more powerful than
 the original!
-]]
+]],
 }
 
 dialog{
@@ -930,7 +930,7 @@ Key!
 
 Now you can enter
 the Boss's Lair!
-]]
+]],
 }
 
 dialog{
@@ -942,7 +942,7 @@ Magic Bottle!$0
 
 Fill it with
 various substances.
-]]
+]],
 }
 
 dialog{
@@ -952,7 +952,7 @@ dialog{
 You filled your
 Magic Bottle with
 water!
-]]
+]],
 }
 
 dialog{
@@ -964,7 +964,7 @@ Red Potion!$0
 
 Drink it to recover
 your health.
-]]
+]],
 }
 
 dialog{
@@ -976,7 +976,7 @@ Green Potion!$0
 
 Drink it to recover
 your magic energy.
-]]
+]],
 }
 
 dialog{
@@ -989,7 +989,7 @@ Blue Potion!$0
 Drink it to fully
 restore both your
 health and magic!
-]]
+]],
 }
 
 dialog{
@@ -1003,7 +1003,7 @@ you in a time of
 need. You can also
 use it at any time
 to recover Hearts!
-]]
+]],
 }
 
 dialog{
@@ -1015,7 +1015,7 @@ Magic Bottle!$0
 
 Fill it with
 various substances.
-]]
+]],
 }
 
 dialog{
@@ -1025,7 +1025,7 @@ dialog{
 You filled your
 Magic Bottle with
 water!
-]]
+]],
 }
 
 dialog{
@@ -1037,7 +1037,7 @@ Red Potion!$0
 
 Drink it to recover
 your health.
-]]
+]],
 }
 
 dialog{
@@ -1049,7 +1049,7 @@ Green Potion!$0
 
 Drink it to recover
 your magic energy.
-]]
+]],
 }
 
 dialog{
@@ -1062,7 +1062,7 @@ Blue Potion!$0
 Drink it to fully
 restore both your
 health and magic!
-]]
+]],
 }
 
 dialog{
@@ -1076,7 +1076,7 @@ you in a time of
 need. You can also
 use it at any time
 to recover Hearts!
-]]
+]],
 }
 
 dialog{
@@ -1088,7 +1088,7 @@ Magic Bottle!$0
 
 Fill it with
 various substances.
-]]
+]],
 }
 
 dialog{
@@ -1098,7 +1098,7 @@ dialog{
 You filled your
 Magic Bottle with
 water!
-]]
+]],
 }
 
 dialog{
@@ -1110,7 +1110,7 @@ Red Potion!$0
 
 Drink it to recover
 your health.
-]]
+]],
 }
 
 dialog{
@@ -1122,7 +1122,7 @@ Green Potion!$0
 
 Drink it to recover
 your magic energy.
-]]
+]],
 }
 
 dialog{
@@ -1135,7 +1135,7 @@ Blue Potion!$0
 Drink it to fully
 restore both your
 health and magic!
-]]
+]],
 }
 
 dialog{
@@ -1149,7 +1149,7 @@ you in a time of
 need. You can also
 use it at any time
 to recover Hearts!
-]]
+]],
 }
 
 dialog{
@@ -1161,7 +1161,7 @@ Magic Bottle!$0
 
 Fill it with
 various substances.
-]]
+]],
 }
 
 dialog{
@@ -1171,7 +1171,7 @@ dialog{
 You filled your
 Magic Bottle with
 water!
-]]
+]],
 }
 
 dialog{
@@ -1183,7 +1183,7 @@ Red Potion!$0
 
 Drink it to recover
 your health.
-]]
+]],
 }
 
 dialog{
@@ -1195,7 +1195,7 @@ Green Potion!$0
 
 Drink it to recover
 your magic energy.
-]]
+]],
 }
 
 dialog{
@@ -1208,7 +1208,7 @@ Blue Potion!$0
 Drink it to fully
 restore both your
 health and magic!
-]]
+]],
 }
 
 dialog{
@@ -1222,7 +1222,7 @@ you in a time of
 need. You can also
 use it at any time
 to recover Hearts!
-]]
+]],
 }
 
 dialog{
@@ -1234,7 +1234,7 @@ Find some Arrows and
 you will be able to
 defeat tough enemies
 from afar!
-]]
+]],
 }
 
 dialog{
@@ -1244,7 +1244,7 @@ dialog{
 You found the Bow!$0
 You can fight tough
 enemies from afar!
-]]
+]],
 }
 
 dialog{
@@ -1258,7 +1258,7 @@ You can create a
 block and grab onto
 it with the
 Hookshot.
-]]
+]],
 }
 
 dialog{
@@ -1270,7 +1270,7 @@ Key!$0
 
 Now you can access
 the village's cave!
-]]
+]],
 }
 
 dialog{
@@ -1286,7 +1286,7 @@ as well as the
 Boss's Lair! Now
 we're getting
 somewhere!
-]]
+]],
 }
 
 dialog{
@@ -1298,7 +1298,7 @@ Croissant!$0
 It's crispy! Eat a
 Croissant to recover
 Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1310,7 +1310,7 @@ You found the
 Feather!$0 Use it to
 jump in place and
 over obstacles!
-]]
+]],
 }
 
 dialog{
@@ -1318,7 +1318,7 @@ dialog{
   text = [[
 You found the
 Feather Lv2!$0
-]]
+]],
 }
 
 dialog{
@@ -1327,7 +1327,7 @@ dialog{
   text = [[
 You found a
 Fire Stone!
-]]
+]],
 }
 
 dialog{
@@ -1339,7 +1339,7 @@ Flippers!$0
 
 You can now swim
 in deep waters!
-]]
+]],
 }
 
 dialog{
@@ -1349,7 +1349,7 @@ dialog{
 You found a
 Green Gem!
 That's one Gem!
-]]
+]],
 }
 
 dialog{
@@ -1359,7 +1359,7 @@ dialog{
 You found a
 Blue Gem!
 That's 5 Gems!
-]]
+]],
 }
 
 dialog{
@@ -1369,7 +1369,7 @@ dialog{
 You found a
 Red Gem!
 That's 20 Gems!
-]]
+]],
 }
 
 dialog{
@@ -1378,7 +1378,7 @@ dialog{
   text = [[
 You found 50 Gems!
 Marvelous!
-]]
+]],
 }
 
 dialog{
@@ -1387,7 +1387,7 @@ dialog{
   text = [[
 You found 100
 Gems! Fantastic!
-]]
+]],
 }
 
 dialog{
@@ -1396,7 +1396,7 @@ dialog{
   text = [[
 You found 300 Gems!
 How wonderful!
-]]
+]],
 }
 
 dialog{
@@ -1408,7 +1408,7 @@ Big Wallet!$0
 
 It can hold up to
 300 Gems!
-]]
+]],
 }
 
 dialog{
@@ -1420,7 +1420,7 @@ Giant Wallet!$0
 
 It can hold up to
 999 Gems!
-]]
+]],
 }
 
 dialog{
@@ -1432,7 +1432,7 @@ Gloves!$0
 
 With these you can
 lift rocks.
-]]
+]],
 }
 
 dialog{
@@ -1444,7 +1444,7 @@ Gloves!$0
 
 Now you can lift
 black rocks!
-]]
+]],
 }
 
 dialog{
@@ -1457,7 +1457,7 @@ Green Potion!$0
 Drink it to
 completely restore
 your magic energy.
-]]
+]],
 }
 
 dialog{
@@ -1465,7 +1465,7 @@ dialog{
   icon = "84",
   text = [[
 You found a Heart!
-]]
+]],
 }
 
 dialog{
@@ -1477,7 +1477,7 @@ Container!
 
 Your Heart Meter
 increased by one!
-]]
+]],
 }
 
 dialog{
@@ -1491,7 +1491,7 @@ Immobilize your
 enemies and fling
 yourself to
 inaccessible places!
-]]
+]],
 }
 
 dialog{
@@ -1503,7 +1503,7 @@ Key!$0
 
 It must open the way
 to a frozen place...
-]]
+]],
 }
 
 dialog{
@@ -1515,7 +1515,7 @@ Key!$0
 
 Surely it must open
 a door!
-]]
+]],
 }
 
 dialog{
@@ -1527,7 +1527,7 @@ You found the Lamp!$0
 Use it to brighten
 dark places and
 light torches.
-]]
+]],
 }
 
 dialog{
@@ -1540,7 +1540,7 @@ $1...$3 Hmmm, I
 wouldn't eat it if
 I were you, it
 looks odd...
-]]
+]],
 }
 
 dialog{
@@ -1552,7 +1552,7 @@ Gold Bars!!!$0
 
 They shimmer and
 are very valuable!
-]]
+]],
 }
 
 dialog{
@@ -1566,7 +1566,7 @@ This pretty flower
 from Hyrule's
 mountains is
 extremely rare!
-]]
+]],
 }
 
 dialog{
@@ -1578,7 +1578,7 @@ Scrolls!$0 You've now
 mastered the long
 forgotten Whirlwind
 Attack.
-]]
+]],
 }
 
 dialog{
@@ -1590,7 +1590,7 @@ Magic Meter!$0
 
 Your Magic Meter
 just doubled!
-]]
+]],
 }
 
 dialog{
@@ -1603,7 +1603,7 @@ Cape!$0
 It will warn you
 when you are near a
 weak wall.
-]]
+]],
 }
 
 dialog{
@@ -1614,7 +1614,7 @@ You found a Small
 Magic Jar! Your
 Magic Meter is
 refilled a bit.
-]]
+]],
 }
 
 dialog{
@@ -1625,7 +1625,7 @@ You found a Large
 Magic Jar! Your
 Magic Meter is
 greatly refilled.
-]]
+]],
 }
 
 dialog{
@@ -1635,7 +1635,7 @@ dialog{
 You found the Map!
 Use it to see the
 dungeon's layout.
-]]
+]],
 }
 
 dialog{
@@ -1648,7 +1648,7 @@ Mystic Mirror!$0
 Its strange powers
 will surely be of
 help in your quest.
-]]
+]],
 }
 
 dialog{
@@ -1661,7 +1661,7 @@ Chocolate Croissant!$0
 Eat a Chocolate
 Croissant to recover
 some Hearts.
-]]
+]],
 }
 
 dialog{
@@ -1677,7 +1677,7 @@ enemies!
 Press and hold the
 Action key to use
 them.
-]]
+]],
 }
 
 dialog{
@@ -1686,7 +1686,7 @@ dialog{
   text = [[
 You found a
 Piece of Heart!
-]]
+]],
 }
 
 dialog{
@@ -1699,7 +1699,7 @@ Large Quiver!$0
 It can hold up to
 30 Arrows instead of
 10!
-]]
+]],
 }
 
 dialog{
@@ -1712,7 +1712,7 @@ Giant Quiver!$0
 It can hold up to
 99 Arrows instead of
 30!
-]]
+]],
 }
 
 dialog{
@@ -1725,7 +1725,7 @@ Red Potion!$0
 Drink it to
 completely restore
 your life energy.
-]]
+]],
 }
 
 dialog{
@@ -1734,7 +1734,7 @@ dialog{
   text = [[
 You found the Rock
 Key!$0
-]]
+]],
 }
 
 dialog{
@@ -1747,7 +1747,7 @@ Shield!$0
 You can defend
 yourself from enemy
 attacks!
-]]
+]],
 }
 
 dialog{
@@ -1760,7 +1760,7 @@ Fire Shield!$0
 You are now
 protected from fire
 attacks!
-]]
+]],
 }
 
 dialog{
@@ -1772,7 +1772,16 @@ Mirror Shield!$0
 
 You can now reflect
 lasers!
-]]
+]],
+}
+
+dialog{
+  id = "_treasure.shield.burnt",
+  text = [[
+Your wooden shield
+has been burnt!!!$0
+Holy shit!!!
+]],
 }
 
 dialog{
@@ -1785,7 +1794,7 @@ Key!
 This key will open
 a locked door in
 this dungeon.
-]]
+]],
 }
 
 dialog{
@@ -1797,7 +1806,7 @@ Key!$0
 
 But where is the
 lock it opens?
-]]
+]],
 }
 
 dialog{
@@ -1809,7 +1818,7 @@ Sword of Courage!$0
 
 Use it to vanquish
 your enemies!
-]]
+]],
 }
 
 dialog{
@@ -1820,7 +1829,7 @@ dialog{
 $1You found the
 Hylian Blade!$0$0$0
 This new sword
-]]
+]],
 }
 
 dialog{
@@ -1829,7 +1838,7 @@ dialog{
 is twice as
 powerful as your
 old one!
-]]
+]],
 }
 
 dialog{
@@ -1840,7 +1849,7 @@ dialog{
 $1You found the
 Hero's Sword!$0$0$0
 This new blade
-]]
+]],
 }
 
 dialog{
@@ -1853,7 +1862,7 @@ The power of this
 ultimate sword is
 beyond anything you
 have ever seen!
-]]
+]],
 }
 
 dialog{
@@ -1867,7 +1876,7 @@ taken from enemies
 and protects you
 from freezing
 temperatures...
-]]
+]],
 }
 
 dialog{
@@ -1880,7 +1889,7 @@ Red Mail!$0
 It provides even
 better protection
 than the Blue Mail!
-]]
+]],
 }
 
 dialog{
@@ -1892,7 +1901,7 @@ Key!$0
 
 You must find where
 to use it!
-]]
+]],
 }
 
 dialog{
@@ -1904,7 +1913,7 @@ World Map!$0
 
 View it on the Map
 screen.
-]]
+]],
 }
 
 dialog{
@@ -1912,7 +1921,7 @@ dialog{
   text = [[
 Watch your Magic
 Meter!
-]]
+]],
 }
 
 dialog{
@@ -1920,7 +1929,7 @@ dialog{
   text = [[
 No thanks, that's far
 from fair...
-]]
+]],
 }
 
 dialog{
@@ -1928,7 +1937,7 @@ dialog{
   text = [[
 Pfft! You don't even
 have any apple pies!
-]]
+]],
 }
 
 dialog{
@@ -1936,7 +1945,7 @@ dialog{
   text = [[
 A croissant?
 Are you kidding me?
-]]
+]],
 }
 
 dialog{
@@ -1944,7 +1953,7 @@ dialog{
   text = [[
 You don't even have a
 croissant! Thief!
-]]
+]],
 }
 
 dialog{
@@ -1956,7 +1965,7 @@ $0...$0....................
 $3Deal!
 Here, take your stupid
 flower...
-]]
+]],
 }
 
 dialog{
@@ -1996,7 +2005,7 @@ heroism that I found
 this flower of
 extreme value:
 an edelweiss!
-]]
+]],
 }
 
 dialog{
@@ -2012,7 +2021,7 @@ to find it. If you
 don't have anything of
 value to give me, then
 run along.
-]]
+]],
 }
 
 dialog{
@@ -2022,7 +2031,7 @@ dialog{
 What will you give me?
 Gold bars
 An apple pie
-]]
+]],
 }
 
 dialog{
@@ -2032,7 +2041,7 @@ dialog{
 What will you give me?
 A croissant
 An apple pie
-]]
+]],
 }
 
 dialog{
@@ -2041,7 +2050,7 @@ dialog{
   text = [[
 Only by repelling light
 will light shine anew.
-]]
+]],
 }
 
 dialog{
@@ -2050,7 +2059,7 @@ dialog{
   text = [[
 An Apple Pie.
 Baked with your help!
-]]
+]],
 }
 
 dialog{
@@ -2060,7 +2069,7 @@ dialog{
 This crispy croissant
 will restore seven
 Hearts.
-]]
+]],
 }
 
 dialog{
@@ -2076,7 +2085,7 @@ it.
 Do you want to help?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -2085,7 +2094,7 @@ dialog{
 Thank you... Come back
 to see me if you find
 some!
-]]
+]],
 }
 
 dialog{
@@ -2094,7 +2103,7 @@ dialog{
 Oh, you don't have
 enough apples... Come
 back later then.
-]]
+]],
 }
 
 dialog{
@@ -2104,7 +2113,7 @@ dialog{
 A delicious Chocolate
 Croissant that will
 restore three Hearts.
-]]
+]],
 }
 
 dialog{
@@ -2118,7 +2127,7 @@ great apple pie.
 Do you want to help?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -2126,7 +2135,7 @@ dialog{
   text = [[
 Welcome. Choose the
 pastry you wish to buy.
-]]
+]],
 }
 
 dialog{
@@ -2141,7 +2150,7 @@ this empty Bottle...
 It's a small reward but
 I'm sure you will make
 good use of it.
-]]
+]],
 }
 
 dialog{
@@ -2152,7 +2161,7 @@ What a magnificent
 cannon!
 You had better not be
 an enemy of the King!
-]]
+]],
 }
 
 dialog{
@@ -2163,7 +2172,7 @@ I am sorry sir, but you
 are not allowed to
 access to the dungeon
 cells.
-]]
+]],
 }
 
 dialog{
@@ -2176,7 +2185,7 @@ How did you get in
 here?
 You are walking in
 a forbidden area!
-]]
+]],
 }
 
 dialog{
@@ -2188,7 +2197,7 @@ upper level and to the
 balcony.
 Access is forbidden to
 the public though.
-]]
+]],
 }
 
 dialog{
@@ -2202,7 +2211,7 @@ Nowadays, tourists from
 all around Hyrule make
 the trip to witness the
 beauty of the place!
-]]
+]],
 }
 
 dialog{
@@ -2219,7 +2228,7 @@ off such a wonderful
 piece of architecture
 with the means they had
 at that time...
-]]
+]],
 }
 
 dialog{
@@ -2228,7 +2237,7 @@ dialog{
   text = [[
 What luxury! This
 place is magnificent!
-]]
+]],
 }
 
 dialog{
@@ -2239,7 +2248,7 @@ Prisoners of the King
 were held captive
 inside these dark
 cells.
-]]
+]],
 }
 
 dialog{
@@ -2252,7 +2261,7 @@ a historical monument.
 Please refrain from
 disturbing the
 surroundings.
-]]
+]],
 }
 
 dialog{
@@ -2263,7 +2272,7 @@ Tom, one of our best
 soldiers, mysteriously
 disappeared while he
 was exploring a cave.
-]]
+]],
 }
 
 dialog{
@@ -2273,7 +2282,7 @@ dialog{
 Only an attentive
 observer will be able
 to follow the path.
-]]
+]],
 }
 
 dialog{
@@ -2281,7 +2290,7 @@ dialog{
   skip = "all",
   text = [[
 Pick a chest!
-]]
+]],
 }
 
 dialog{
@@ -2297,7 +2306,7 @@ here, how would you
 like to be the first to
 play my new game? One
 game costs 30 Gems.
-]]
+]],
 }
 
 dialog{
@@ -2306,7 +2315,7 @@ dialog{
   text = [[
 You don't have enough
 Gems!
-]]
+]],
 }
 
 dialog{
@@ -2316,7 +2325,7 @@ dialog{
   text = [[
 Hi! One game costs 30
 Gems.
-]]
+]],
 }
 
 dialog{
@@ -2326,7 +2335,7 @@ dialog{
 Do you want to play?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -2337,7 +2346,7 @@ Thanks! You can open
 one of the chests.
 Its contents are yours
 to keep.
-]]
+]],
 }
 
 dialog{
@@ -2351,7 +2360,7 @@ contents are yours to
 keep. Today's
 Grand Prize is a
 Piece of Heart!
-]]
+]],
 }
 
 dialog{
@@ -2365,7 +2374,7 @@ contents are yours to
 keep. Today's
 Grand Prize is a
 magnificent wooden key!
-]]
+]],
 }
 
 dialog{
@@ -2376,7 +2385,7 @@ $1        Credits$0
 
       Programming:$0
 Christopho$0
-]]
+]],
 }
 
 dialog{
@@ -2391,7 +2400,7 @@ Christopho$0
 Metallizer$0
 Binbin$0
 Mymy$0
-]]
+]],
 }
 
 dialog{
@@ -2406,7 +2415,7 @@ Djipi$0
 $1        Music:$0
 Marine$0
 Metallizer$0
-]]
+]],
 }
 
 dialog{
@@ -2421,7 +2430,7 @@ $1        English
 Alex_XelA$0          Jeff$0
 Rypervenche$0
 bcallah@openbsd.org$0
-]]
+]],
 }
 
 dialog{
@@ -2448,7 +2457,7 @@ Thanks for playing!$0
 
 
  www.solarus-games.org$0
-]]
+]],
 }
 
 dialog{
@@ -2457,7 +2466,7 @@ dialog{
   text = [[
          Level 1
       Forest Dungeon
-]]
+]],
 }
 
 dialog{
@@ -2500,7 +2509,7 @@ chaos...
 May the hero bring
 peace and prosperity
 to the Kingdom!
-]]
+]],
 }
 
 dialog{
@@ -2509,7 +2518,7 @@ dialog{
   text = [[
      Secret level
      Skyward Tower
-]]
+]],
 }
 
 dialog{
@@ -2518,7 +2527,7 @@ dialog{
   text = [[
          Level 2
       Roc's Cavern
-]]
+]],
 }
 
 dialog{
@@ -2528,7 +2537,7 @@ dialog{
        F | B | E
       ---|---|---
        C | D | A
-]]
+]],
 }
 
 dialog{
@@ -2538,7 +2547,7 @@ dialog{
 Both eyes must be
 pierced with
 perseverance.
-]]
+]],
 }
 
 dialog{
@@ -2547,7 +2556,7 @@ dialog{
   text = [[
 Both eyes must be
 pierced.
-]]
+]],
 }
 
 dialog{
@@ -2578,7 +2587,7 @@ trust your courage.
 May the hero bring
 peace and prosperity
 to the Kingdom!
-]]
+]],
 }
 
 dialog{
@@ -2587,7 +2596,7 @@ dialog{
   text = [[
          Level 3
   Master Arbror's Den
-]]
+]],
 }
 
 dialog{
@@ -2595,7 +2604,7 @@ dialog{
   text = [[
 
   North: Master Arbror
-]]
+]],
 }
 
 dialog{
@@ -2604,7 +2613,7 @@ dialog{
 Haa!!! You'll never
 defeat me, Master
 Arbror!
-]]
+]],
 }
 
 dialog{
@@ -2615,7 +2624,7 @@ defeated, but you won't
 get far...
 You will
 never succeed...
-]]
+]],
 }
 
 dialog{
@@ -2641,14 +2650,14 @@ peace to these lands.
 May the hero bring
 peace and prosperity
 to the Kingdom!
-]]
+]],
 }
 
 dialog{
   id = "dungeon_3.water_drained_somewhere",
   text = [[
 Far away... a noise...
-]]
+]],
 }
 
 dialog{
@@ -2699,7 +2708,7 @@ and with my powers, I
 will put an end to your
 tale!
 Ah ah ah ah ah ah!!!
-]]
+]],
 }
 
 dialog{
@@ -2708,7 +2717,7 @@ dialog{
 The way is shown by
 the crossing of four
 chests.
-]]
+]],
 }
 
 dialog{
@@ -2716,7 +2725,7 @@ dialog{
   text = [[
 If you do not see the
 exits, use the map.
-]]
+]],
 }
 
 dialog{
@@ -2737,7 +2746,7 @@ safe.
 May the hero bring
 peace and prosperity
 to the Kingdom!
-]]
+]],
 }
 
 dialog{
@@ -2745,7 +2754,7 @@ dialog{
   text = [[
 It's too cold here...
 You need to leave!
-]]
+]],
 }
 
 dialog{
@@ -2754,7 +2763,7 @@ dialog{
   text = [[
          Level 4
     Beaumont's Palace
-]]
+]],
 }
 
 dialog{
@@ -2767,7 +2776,7 @@ in the castle.
 Impressive!
 Unfortunately for you,
 your journey ends here!
-]]
+]],
 }
 
 dialog{
@@ -2790,7 +2799,7 @@ children are...
 Ah ah ah ah ah!
 I must leave now. See
 you later!
-]]
+]],
 }
 
 dialog{
@@ -2798,7 +2807,7 @@ dialog{
   text = [[
 HALT!
 Don't move!
-]]
+]],
 }
 
 dialog{
@@ -2808,7 +2817,7 @@ dialog{
 The key to the puzzle
 is to circle the jars
 in the right direction.
-]]
+]],
 }
 
 dialog{
@@ -2817,7 +2826,7 @@ dialog{
      - Iron Lock -
 None of your keys seem
 to fit...
-]]
+]],
 }
 
 dialog{
@@ -2826,14 +2835,14 @@ dialog{
   text = [[
 $1You use the Iron
 Key...
-]]
+]],
 }
 
 dialog{
   id = "dungeon_5.prison_2_locked_1",
   text = [[
 It's locked!
-]]
+]],
 }
 
 dialog{
@@ -2842,7 +2851,7 @@ dialog{
 It's so rusty that even
 the Large Key won't
 work.
-]]
+]],
 }
 
 dialog{
@@ -2851,7 +2860,7 @@ dialog{
 Perhaps there is a way
 to force this old lock
 open...
-]]
+]],
 }
 
 dialog{
@@ -2860,7 +2869,7 @@ dialog{
 Somewhere deep within
 the castle, a trigger
 is activated...
-]]
+]],
 }
 
 dialog{
@@ -2869,7 +2878,7 @@ dialog{
   text = [[
          Level 5
      Ancient Castle
-]]
+]],
 }
 
 dialog{
@@ -2877,14 +2886,14 @@ dialog{
   text = [[
 Then close the path
 behind you.
-]]
+]],
 }
 
 dialog{
   id = "dungeon_6.dont_fall_hint",
   text = [[
 Do not fall, but jump.
-]]
+]],
 }
 
 dialog{
@@ -2896,7 +2905,7 @@ You have gone through a
 lengthy journey and
 overcome many ordeals
 since we last met.
-]]
+]],
 }
 
 dialog{
@@ -2935,7 +2944,7 @@ he needs...
 Please take this, my
 little contribution
 to your quest...
-]]
+]],
 }
 
 dialog{
@@ -2943,7 +2952,7 @@ dialog{
   text = [[
 The three lights show
 the way to the fall.
-]]
+]],
 }
 
 dialog{
@@ -2952,7 +2961,7 @@ dialog{
   text = [[
          Level 6
      Inferno's Maze
-]]
+]],
 }
 
 dialog{
@@ -2960,7 +2969,7 @@ dialog{
   text = [[
 The solution is to not
 fall alone.
-]]
+]],
 }
 
 dialog{
@@ -2968,7 +2977,7 @@ dialog{
   text = [[
 In soil sleeps secrets,
 beneath your soles...
-]]
+]],
 }
 
 dialog{
@@ -2978,7 +2987,7 @@ dialog{
         4  7  2        
         6  1  8        
            3  5        
-]]
+]],
 }
 
 dialog{
@@ -3034,7 +3043,7 @@ of the relic, she alone
 masters the Triforce's
 seal. This is why you
 must protect the seal.
-]]
+]],
 }
 
 dialog{
@@ -3043,7 +3052,7 @@ dialog{
   text = [[
          Level 7
      Crystal Temple
-]]
+]],
 }
 
 dialog{
@@ -3063,7 +3072,7 @@ I will get my hands on
 the Triforce and
 conquer the whole
 world. Ah ah ah ah!
-]]
+]],
 }
 
 dialog{
@@ -3083,7 +3092,7 @@ to defeat you, it is
 now time for me to free
 my Master...
 Ah ah ah ah ah ah!!!
-]]
+]],
 }
 
 dialog{
@@ -3093,7 +3102,7 @@ $1$0...$0.............$0
 You are rather tough,
 that is no lie.
 But what about this?
-]]
+]],
 }
 
 dialog{
@@ -3118,7 +3127,7 @@ first to witness this
 amazing event.
 Let your spirit travel
 freely...
-]]
+]],
 }
 
 dialog{
@@ -3141,7 +3150,7 @@ Lunarius...
 
 Now, it is your turn
 to die!
-]]
+]],
 }
 
 dialog{
@@ -3152,7 +3161,7 @@ Throw yourself into
 the depths of the
 dungeon and continue
 on your journey.
-]]
+]],
 }
 
 dialog{
@@ -3161,7 +3170,7 @@ dialog{
   text = [[
 If you are stuck, fight
 spades with spades.
-]]
+]],
 }
 
 dialog{
@@ -3170,7 +3179,7 @@ dialog{
   text = [[
          Level 8
    Rock Peaks Dungeon
-]]
+]],
 }
 
 dialog{
@@ -3178,7 +3187,7 @@ dialog{
   skip = "all",
   text = [[
 To the right.
-]]
+]],
 }
 
 dialog{
@@ -3186,7 +3195,7 @@ dialog{
   skip = "all",
   text = [[
 To the left.
-]]
+]],
 }
 
 dialog{
@@ -3194,7 +3203,7 @@ dialog{
   skip = "all",
   text = [[
 Down.
-]]
+]],
 }
 
 dialog{
@@ -3204,7 +3213,7 @@ dialog{
 $1To defeat Neptune,
 the torches must be
 lit clockwise.
-]]
+]],
 }
 
 dialog{
@@ -3222,7 +3231,7 @@ world has been restored
 to its original state.
 The Kingdom of Hyrule
 is whole once again.
-]]
+]],
 }
 
 dialog{
@@ -3249,7 +3258,7 @@ the relic could break
 the Seal.
 Now you understand why
 I must destroy it.
-]]
+]],
 }
 
 dialog{
@@ -3264,7 +3273,7 @@ forever.
 The Triforce will
 remain sealed until
 the end of time.
-]]
+]],
 }
 
 dialog{
@@ -3279,7 +3288,7 @@ time now.
 The time for revenge
 has finally come!
 Prepare to die.
-]]
+]],
 }
 
 dialog{
@@ -3287,7 +3296,7 @@ dialog{
   skip = "all",
   text = [[
 Go clockwise.
-]]
+]],
 }
 
 dialog{
@@ -3296,7 +3305,7 @@ dialog{
   text = [[
          Level 9
    Shrine of Memories
-]]
+]],
 }
 
 dialog{
@@ -3313,7 +3322,7 @@ with this gift...
 
 You have proven that
 you deserve it.
-]]
+]],
 }
 
 dialog{
@@ -3325,7 +3334,7 @@ full of wisdom.
 I am the Enchanting
 Fairy. Close your eyes
 and relax.
-]]
+]],
 }
 
 dialog{
@@ -3336,7 +3345,7 @@ dialog{
   text = [[
 You found a Fairy,
 she's wonderful!
-]]
+]],
 }
 
 dialog{
@@ -3347,7 +3356,7 @@ dialog{
 What do you want to do?
 Recover your health
 Keep it
-]]
+]],
 }
 
 dialog{
@@ -3356,7 +3365,7 @@ dialog{
   text = [[
 You don't have an empty
 Bottle!
-]]
+]],
 }
 
 dialog{
@@ -3366,7 +3375,7 @@ dialog{
 Collect four Pieces
 of Heart to obtain
 a new Heart.
-]]
+]],
 }
 
 dialog{
@@ -3376,7 +3385,7 @@ dialog{
 You found four
 Pieces of Heart. You
 got an extra Heart!
-]]
+]],
 }
 
 dialog{
@@ -3385,7 +3394,7 @@ dialog{
   text = [[
 Two more and you'll
 have another Heart.
-]]
+]],
 }
 
 dialog{
@@ -3395,7 +3404,7 @@ dialog{
 Find one more and
 you will have
 another Heart!
-]]
+]],
 }
 
 dialog{
@@ -3409,7 +3418,7 @@ some water in your
 Magic Bottle?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -3419,7 +3428,7 @@ dialog{
 There is some water
 here, but you have no
 way of storing it...
-]]
+]],
 }
 
 dialog{
@@ -3432,7 +3441,7 @@ here, but you need
 an empty Magic
 Bottle to store
 it...
-]]
+]],
 }
 
 dialog{
@@ -3444,14 +3453,14 @@ a chest!
 Quit staring at me,
 I won't tell you
 which one to choose!
-]]
+]],
 }
 
 dialog{
   id = "gem_house.game_1.good_luck",
   text = [[
 Good luck!
-]]
+]],
 }
 
 dialog{
@@ -3467,7 +3476,7 @@ earning more gems!
 Do you want to play?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -3476,7 +3485,7 @@ dialog{
 You've already won
 haven't you? We are
 ruined because of you!
-]]
+]],
 }
 
 dialog{
@@ -3485,7 +3494,7 @@ dialog{
 You have to have more
 passion!
 Live a little!
-]]
+]],
 }
 
 dialog{
@@ -3498,7 +3507,7 @@ again?
 It's 20 Gems!
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -3508,7 +3517,7 @@ dialog{
 How much will you bet?
 5 Gems
 20 Gems
-]]
+]],
 }
 
 dialog{
@@ -3527,7 +3536,7 @@ what you put in!
 Do you want to play?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -3535,14 +3544,14 @@ dialog{
   next = "gem_house.game_2.playing",
   text = [[
 Thanks!
-]]
+]],
 }
 
 dialog{
   id = "gem_house.game_2.not_playing",
   text = [[
 Next time then...
-]]
+]],
 }
 
 dialog{
@@ -3553,7 +3562,7 @@ roulettes and press the
 Action key to stop
 them.
 Good luck!
-]]
+]],
 }
 
 dialog{
@@ -3563,7 +3572,7 @@ Three blue Gems!
 Congratulations, you
 are off with 7 times
 your bet!
-]]
+]],
 }
 
 dialog{
@@ -3575,7 +3584,7 @@ color, it doesn't
 happen every day!
 The reward amounts to
 15 times your bet.
-]]
+]],
 }
 
 dialog{
@@ -3584,7 +3593,7 @@ dialog{
 Three green Gems,
 nice! You win 5 times
 your bet.
-]]
+]],
 }
 
 dialog{
@@ -3597,7 +3606,7 @@ combination.
 Want to try again?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -3607,7 +3616,7 @@ Three red Gems!!!
 That's astonishing!
 You earn 10 times
 your bet!
-]]
+]],
 }
 
 dialog{
@@ -3617,7 +3626,7 @@ Three identical
 symbols, not bad!
 You win 4 times your
 bet.
-]]
+]],
 }
 
 dialog{
@@ -3629,7 +3638,7 @@ That's the best
 possible combination...
 You win 20 times what
 you bet!
-]]
+]],
 }
 
 dialog{
@@ -3637,7 +3646,7 @@ dialog{
   text = [[
 Here we go!
 Good luck!
-]]
+]],
 }
 
 dialog{
@@ -3659,7 +3668,7 @@ It's 10 Gems only.
 Do you want to play?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -3667,14 +3676,14 @@ dialog{
   text = [[
 Sorry, you already beat
 this game!
-]]
+]],
 }
 
 dialog{
   id = "gem_house.game_3.not_playing",
   text = [[
 It's your choice...
-]]
+]],
 }
 
 dialog{
@@ -3687,7 +3696,7 @@ again?
 That will be 10 Gems.
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -3695,7 +3704,7 @@ dialog{
   text = [[
 You don't have enough
 money!
-]]
+]],
 }
 
 dialog{
@@ -3703,7 +3712,7 @@ dialog{
   text = [[
 Hey! You have to pay if
 you want to play!
-]]
+]],
 }
 
 dialog{
@@ -3714,7 +3723,7 @@ Help!
 
 The house has been
 robbed!
-]]
+]],
 }
 
 dialog{
@@ -3723,7 +3732,7 @@ dialog{
 The bandits stole
 the Gems used for
 payout!
-]]
+]],
 }
 
 dialog{
@@ -3732,7 +3741,7 @@ dialog{
 The bandits were
 headed towards the
 blacksmith's cave!
-]]
+]],
 }
 
 dialog{
@@ -3744,14 +3753,14 @@ going to get our
 business back up and
 running. I don't know
 how to repay you...
-]]
+]],
 }
 
 dialog{
   id = "gem_house_broken.thanks_again",
   text = [[
 Thanks again!
-]]
+]],
 }
 
 dialog{
@@ -3770,7 +3779,7 @@ possible!
 Moreover, some bandits
 ransacked the Gem
 House!
-]]
+]],
 }
 
 dialog{
@@ -3788,7 +3797,7 @@ His house is southwest
 of here, close to the
 bakery. You don't
 remember?
-]]
+]],
 }
 
 dialog{
@@ -3799,7 +3808,7 @@ I'm sorry, but I don't
 know.
 Sahasrahla should be
 able to help.
-]]
+]],
 }
 
 dialog{
@@ -3813,7 +3822,7 @@ in a gloomy dungeon in
 the forest south of
 the village. What are
 you waiting for?
-]]
+]],
 }
 
 dialog{
@@ -3825,7 +3834,7 @@ are holding! Isn't it
 time for you to look
 for the second lost
 child?
-]]
+]],
 }
 
 dialog{
@@ -3836,7 +3845,7 @@ This key allows you to
 get inside the cavern
 located north of the
 village.
-]]
+]],
 }
 
 dialog{
@@ -3853,7 +3862,7 @@ through telepathy?
 Modern and more
 convenient for this
 old body.
-]]
+]],
 }
 
 dialog{
@@ -3867,7 +3876,7 @@ to the south, and
 unveil the secrets
 they withhold.
 Go for it!
-]]
+]],
 }
 
 dialog{
@@ -3891,7 +3900,7 @@ of the village. He is
 a bit grumpy but he
 will be able to help
 you.
-]]
+]],
 }
 
 dialog{
@@ -3899,7 +3908,7 @@ dialog{
   skip = "all",
   text = [[
 The door won't open...
-]]
+]],
 }
 
 dialog{
@@ -3908,7 +3917,7 @@ dialog{
   text = [[
 $1You use the Bone
 Key...
-]]
+]],
 }
 
 dialog{
@@ -3927,7 +3936,7 @@ back the three Fire
 Stones, and only then
 shall Inferno's rage
 be calmed.
-]]
+]],
 }
 
 dialog{
@@ -3949,7 +3958,7 @@ and find the three
 Fire Stones I hid
 inside my gloomy
 mazes.
-]]
+]],
 }
 
 dialog{
@@ -3968,7 +3977,7 @@ anything you wish.
 What would you like?
 The black stones...
 100 Gems?
-]]
+]],
 }
 
 dialog{
@@ -3982,14 +3991,14 @@ land, and overcome
 many dangers.
 I shall send you to
 the hell of flames...
-]]
+]],
 }
 
 dialog{
   id = "inferno.want_gems",
   text = [[
 So be it.
-]]
+]],
 }
 
 dialog{
@@ -3997,7 +4006,7 @@ dialog{
   text = [[
 I already gave you
 this prize.
-]]
+]],
 }
 
 dialog{
@@ -4019,7 +4028,7 @@ Golden Land, the
 Utopian reflection of
 the world. Centuries
 passed...
-]]
+]],
 }
 
 dialog{
@@ -4043,7 +4052,7 @@ family. He tried to
 bring back Neptune,
 King of Thieves, from a
 forgotten time.
-]]
+]],
 }
 
 dialog{
@@ -4056,7 +4065,7 @@ went on a quest,
 exploring lost temples,
 traveling through the
 plains and valleys.
-]]
+]],
 }
 
 dialog{
@@ -4071,7 +4080,7 @@ he defeated Neptune,
 who had built an
 impressive pyramid
 within the Golden Land.
-]]
+]],
 }
 
 dialog{
@@ -4087,7 +4096,7 @@ Hyrule, a descendant
 of the Seven Sages,
 cast him away by using
 the seal's magic.
-]]
+]],
 }
 
 dialog{
@@ -4105,7 +4114,7 @@ passed and his power
 vanished. The seal
 of the Seven Sages
 weakened once again.
-]]
+]],
 }
 
 dialog{
@@ -4130,14 +4139,14 @@ Peace was restored.
 
 And so begins our
 journey...
-]]
+]],
 }
 
 dialog{
   id = "junk_shop.arrows",
   text = [[
 Standard Arrows.
-]]
+]],
 }
 
 dialog{
@@ -4145,7 +4154,7 @@ dialog{
   text = [[
 Eight bombs at a
 reduced price.
-]]
+]],
 }
 
 dialog{
@@ -4153,7 +4162,7 @@ dialog{
   text = [[
 One Croissant. To fill
 your Hearts.
-]]
+]],
 }
 
 dialog{
@@ -4161,7 +4170,7 @@ dialog{
   text = [[
 A Heart. Useful if you
 need energy.
-]]
+]],
 }
 
 dialog{
@@ -4170,7 +4179,7 @@ dialog{
 The Mystic Mirror. They
 say it can reverse the
 flow of water!
-]]
+]],
 }
 
 dialog{
@@ -4178,7 +4187,7 @@ dialog{
   text = [[
 A Chocolate Croissant
 for recovering Hearts.
-]]
+]],
 }
 
 dialog{
@@ -4186,7 +4195,7 @@ dialog{
   text = [[
 An authentic Piece of
 Heart.
-]]
+]],
 }
 
 dialog{
@@ -4195,7 +4204,7 @@ dialog{
 A special offer on a
 Red Gem, but it's
 the floor model.
-]]
+]],
 }
 
 dialog{
@@ -4206,7 +4215,7 @@ Welcome to the Junk
 Shop! Top of the line
 items at extraordinary
 prices! Help yourself!
-]]
+]],
 }
 
 dialog{
@@ -4214,7 +4223,7 @@ dialog{
   text = [[
 Three apples at value
 price.
-]]
+]],
 }
 
 dialog{
@@ -4223,7 +4232,7 @@ dialog{
 Ten arrows, an
 excellent value for the
 price!
-]]
+]],
 }
 
 dialog{
@@ -4231,7 +4240,7 @@ dialog{
   text = [[
 Special offer:
 a jar of magic energy.
-]]
+]],
 }
 
 dialog{
@@ -4239,7 +4248,7 @@ dialog{
   text = [[
 Eight bombs. I'll give
 them to you at cost!
-]]
+]],
 }
 
 dialog{
@@ -4249,7 +4258,7 @@ Welcome to the Lake
 Shop! Our items are the
 cheapest in the area.
 What can I do for you?
-]]
+]],
 }
 
 dialog{
@@ -4260,7 +4269,7 @@ It's me...
 ... Sahasrahla...
 I have... to speak...
 Come quickly, $v...
-]]
+]],
 }
 
 dialog{
@@ -4275,7 +4284,7 @@ finished.
 If you manage to obtain
 the Heart Container, I
 will be very impressed!
-]]
+]],
 }
 
 dialog{
@@ -4291,7 +4300,7 @@ as you are courageous.
 If you don't mind, I'll
 be taking my Boomerang
 back now.
-]]
+]],
 }
 
 dialog{
@@ -4329,7 +4338,7 @@ make it up!
 Do you accept my help?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -4338,14 +4347,14 @@ dialog{
 Thank you. Come see me
 again if you would like
 my help.
-]]
+]],
 }
 
 dialog{
   id = "lyriann_cave.tom.leaving",
   text = [[
 Hey! Wait!
-]]
+]],
 }
 
 dialog{
@@ -4362,7 +4371,7 @@ skill to be able to
 use it! Come see me
 again if you would like
 my help.
-]]
+]],
 }
 
 dialog{
@@ -4384,7 +4393,7 @@ you, even if you move.
 What do you want to do?
 Continue
 Return the Boomerang
-]]
+]],
 }
 
 dialog{
@@ -4401,14 +4410,14 @@ make it up!  Will you
 accept my help?
 Yes
 No
-]]
+]],
 }
 
 dialog{
   id = "lyriann_cave.tom.refuse_help",
   text = [[
 Fine, as you wish.
-]]
+]],
 }
 
 dialog{
@@ -4418,7 +4427,7 @@ If you like, I can
 lend a hand during
 your adventures, if
 ever you are in need.
-]]
+]],
 }
 
 dialog{
@@ -4430,7 +4439,7 @@ apples from this
 morning!
 Each apple restores a
 Heart.
-]]
+]],
 }
 
 dialog{
@@ -4440,7 +4449,7 @@ dialog{
 A bigger Bomb Bag.
 Really fashionable
 nowadays!
-]]
+]],
 }
 
 dialog{
@@ -4449,7 +4458,7 @@ dialog{
   text = [[
 A new Wallet to carry
 more Gems.
-]]
+]],
 }
 
 dialog{
@@ -4459,7 +4468,7 @@ dialog{
 Refills one Heart, used
 immediately upon
 purchase.
-]]
+]],
 }
 
 dialog{
@@ -4469,7 +4478,7 @@ dialog{
 A Lamp.
 Travel through dark
 places!
-]]
+]],
 }
 
 dialog{
@@ -4479,7 +4488,7 @@ dialog{
 A larger Quiver.
 Now you can carry
 more arrows!
-]]
+]],
 }
 
 dialog{
@@ -4487,7 +4496,7 @@ dialog{
   text = [[
 Welcome. Choose the
 item you wish to buy.
-]]
+]],
 }
 
 dialog{
@@ -4496,7 +4505,7 @@ dialog{
   text = [[
 The worst is not to
 come.
-]]
+]],
 }
 
 dialog{
@@ -4505,7 +4514,7 @@ dialog{
   text = [[
     Mount Terror
         --->
-]]
+]],
 }
 
 dialog{
@@ -4515,7 +4524,7 @@ dialog{
 If you are reading this,
 then you haven't gotten
 very far.
-]]
+]],
 }
 
 dialog{
@@ -4525,7 +4534,7 @@ dialog{
 Patience is the virtue
 of a true hero.
     - Author unknown -
-]]
+]],
 }
 
 dialog{
@@ -4541,7 +4550,7 @@ fight evil
 relentlessly, allow me
 to pass on to you an
 ancient technique...
-]]
+]],
 }
 
 dialog{
@@ -4553,7 +4562,7 @@ filled with courage.
 I am the Traveling
 Fairy. Close your eyes
 and relax.
-]]
+]],
 }
 
 dialog{
@@ -4561,7 +4570,7 @@ dialog{
   text = [[
 You're planting your
 edelweiss...
-]]
+]],
 }
 
 dialog{
@@ -4571,7 +4580,7 @@ He who plants an
 edelweiss at the top
 of the Beaumont Hill,
 will have a nice day.
-]]
+]],
 }
 
 dialog{
@@ -4580,7 +4589,7 @@ dialog{
 Billy the Reckless's
 cavern.
 Entry Forbidden!
-]]
+]],
 }
 
 dialog{
@@ -4590,7 +4599,7 @@ The hole close to the
 flower isn't as
 dangerous as it
 looks...
-]]
+]],
 }
 
 dialog{
@@ -4602,7 +4611,7 @@ press D to pause the
 game and then press C.
 Keep an eye on the
 green icon!
-]]
+]],
 }
 
 dialog{
@@ -4610,7 +4619,7 @@ dialog{
   text = [[
    - Ice Lock -
 It's locked!
-]]
+]],
 }
 
 dialog{
@@ -4618,7 +4627,7 @@ dialog{
   text = [[
     - Iron Lock -
 It's locked!
-]]
+]],
 }
 
 dialog{
@@ -4630,7 +4639,7 @@ dialog{
 
 The largest selection
 at exceptional prices!
-]]
+]],
 }
 
 dialog{
@@ -4640,7 +4649,7 @@ dialog{
 There must be a way
 to go through this
 waterfall...
-]]
+]],
 }
 
 dialog{
@@ -4650,14 +4659,14 @@ dialog{
 
      Ancient Castle
          <---
-]]
+]],
 }
 
 dialog{
   id = "outside_world.rock_key_required",
   text = [[
 It's locked!
-]]
+]],
 }
 
 dialog{
@@ -4665,14 +4674,14 @@ dialog{
   text = [[
    - Stone Lock -
 It's locked!
-]]
+]],
 }
 
 dialog{
   id = "outside_world.surprise_wall_closed",
   text = [[
 It's closed!
-]]
+]],
 }
 
 dialog{
@@ -4683,7 +4692,7 @@ something to eat,
 I'll grant you entry
 to the other side of
 this wall.
-]]
+]],
 }
 
 dialog{
@@ -4696,7 +4705,7 @@ Give me that apple pie!
 Well?
 OK
 No way
-]]
+]],
 }
 
 dialog{
@@ -4706,7 +4715,7 @@ Some people believe
 there is treasure
 behind this wall, but
 I've never found any.
-]]
+]],
 }
 
 dialog{
@@ -4715,7 +4724,7 @@ dialog{
   text = [[
 Super! I'll eat the pie
 in appreciation.
-]]
+]],
 }
 
 dialog{
@@ -4725,14 +4734,14 @@ dialog{
 Come in and try your
 luck to win the
 hidden treasure!
-]]
+]],
 }
 
 dialog{
   id = "outside_world.telepathic_booth_sign",
   text = [[
 Telepathic Booth
-]]
+]],
 }
 
 dialog{
@@ -4740,14 +4749,14 @@ dialog{
   text = [[
 Be careful, it looks
 dangerous in there.
-]]
+]],
 }
 
 dialog{
   id = "outside_world.tom_dungeon_1_entrance.hey",
   text = [[
 Hey!
-]]
+]],
 }
 
 dialog{
@@ -4756,14 +4765,14 @@ dialog{
 Hmmm, I bet there is a
 ladder hidden here.
 Let's see...
-]]
+]],
 }
 
 dialog{
   id = "outside_world.tom_dungeon_1_entrance.need_help",
   text = [[
 Do you need any help?
-]]
+]],
 }
 
 dialog{
@@ -4771,7 +4780,7 @@ dialog{
   text = [[
 I think I can move it.
 $0Voila!
-]]
+]],
 }
 
 dialog{
@@ -4779,7 +4788,7 @@ dialog{
   text = [[
 
          Bakery
-]]
+]],
 }
 
 dialog{
@@ -4801,7 +4810,7 @@ Keep an eye on the icon
 to know when you can
 interact with your
 environment!
-]]
+]],
 }
 
 dialog{
@@ -4812,14 +4821,14 @@ It is said that every
 dungeon hides a Piece
 of Heart...
 Funny, isn't it?
-]]
+]],
 }
 
 dialog{
   id = "outside_world.village.clay_key_required",
   text = [[
 It's locked!
-]]
+]],
 }
 
 dialog{
@@ -4832,7 +4841,7 @@ certain cliffs?
 That might help you
 reach places that are
 difficult to access.
-]]
+]],
 }
 
 dialog{
@@ -4841,7 +4850,7 @@ dialog{
    - Gem House -
 Earn some Gems
 while having fun!
-]]
+]],
 }
 
 dialog{
@@ -4860,7 +4869,7 @@ She lives next to
 the Gem House.
 I don't know anything
 else, I'm just a kid!
-]]
+]],
 }
 
 dialog{
@@ -4878,7 +4887,7 @@ smarter than me.
 
 Perhaps you'll do
 better than me!
-]]
+]],
 }
 
 dialog{
@@ -4891,7 +4900,7 @@ the waterfall behind
 the ancient castle.
 Do you believe that's
 true?
-]]
+]],
 }
 
 dialog{
@@ -4900,7 +4909,7 @@ dialog{
   text = [[
 Don't look at letters
 that aren't yours!
-]]
+]],
 }
 
 dialog{
@@ -4913,7 +4922,7 @@ Help!
 The village has been
 surrounded by
 monsters!
-]]
+]],
 }
 
 dialog{
@@ -4924,7 +4933,7 @@ going on, but you are
 right to at least have
 a Shield with you...
 Be careful!
-]]
+]],
 }
 
 dialog{
@@ -4935,7 +4944,7 @@ going on, but I
 wouldn't leave town
 without protection if
 I were you.
-]]
+]],
 }
 
 dialog{
@@ -4943,7 +4952,7 @@ dialog{
   text = [[
 
           Shop
-]]
+]],
 }
 
 dialog{
@@ -4954,7 +4963,7 @@ dialog{
 You're lost with the
 HUD? Let me explain.
 The icons above to the
-]]
+]],
 }
 
 dialog{
@@ -4965,7 +4974,7 @@ Well, let me explain
 once again, but listen
 carefully this time.
 The icons above to the
-]]
+]],
 }
 
 dialog{
@@ -5013,7 +5022,7 @@ with a gamepad!
 Did you get it all?
 Yes
 No, I did not
-]]
+]],
 }
 
 dialog{
@@ -5025,7 +5034,7 @@ explanation!
 I am really grateful!
 Here, you deserve this
 little gift.
-]]
+]],
 }
 
 dialog{
@@ -5036,7 +5045,7 @@ take our fresh spring
 water home with you.
         Lyriann
      Tourist Center
-]]
+]],
 }
 
 dialog{
@@ -5044,7 +5053,7 @@ dialog{
   text = [[
          Welcome
        to Lyriann
-]]
+]],
 }
 
 dialog{
@@ -5055,14 +5064,14 @@ The land seems very
 fertile around here,
 but it lacks
 humidity...
-]]
+]],
 }
 
 dialog{
   id = "outside_world.warning_holes_sign",
   text = [[
 Beware of holes!
-]]
+]],
 }
 
 dialog{
@@ -5070,7 +5079,7 @@ dialog{
   text = [[
     - Wooden Lock -
 It's locked!
-]]
+]],
 }
 
 dialog{
@@ -5079,7 +5088,7 @@ dialog{
 Blue Potion:
 restores life and
 magic! Hehehe...
-]]
+]],
 }
 
 dialog{
@@ -5089,7 +5098,7 @@ As a new customer, you
 get to walk away with a
 Magic Bottle for free.
 Hehehe...
-]]
+]],
 }
 
 dialog{
@@ -5098,7 +5107,7 @@ dialog{
 Green Potion:
 restores your magic
 bar! Hehehe...
-]]
+]],
 }
 
 dialog{
@@ -5107,7 +5116,7 @@ dialog{
 You can't buy this
 Potion without an empty
 Bottle! Hehehe...
-]]
+]],
 }
 
 dialog{
@@ -5116,7 +5125,7 @@ dialog{
 Red Potion:
 restores life!
 Hehehe...
-]]
+]],
 }
 
 dialog{
@@ -5128,7 +5137,7 @@ Hehehe...
 Red gives life, green
 gives magic, blue gives
 both life and magic!
-]]
+]],
 }
 
 dialog{
@@ -5143,7 +5152,7 @@ new client! Hehehe...
 Red gives life, green
 gives magic, blue gives
 both life and magic!
-]]
+]],
 }
 
 dialog{
@@ -5180,7 +5189,7 @@ I can feel the courage
 in you, $v.
 You must rescue the
 children and
-]]
+]],
 }
 
 dialog{
@@ -5193,7 +5202,7 @@ dialog{
 protect the Triforce!
 You can count on me!
 No thanks...
-]]
+]],
 }
 
 dialog{
@@ -5208,7 +5217,7 @@ You are the only hope
 for the kingdom...
 Alright
 No way
-]]
+]],
 }
 
 dialog{
@@ -5218,7 +5227,7 @@ dialog{
 Thank you, courageous
 child. We put our
 faith in you!
-]]
+]],
 }
 
 dialog{
@@ -5229,7 +5238,7 @@ dialog{
 I have faith in you.
 Courage and wisdom will
 guide you.
-]]
+]],
 }
 
 dialog{
@@ -5244,7 +5253,7 @@ resuming your journey,
 go back to my cave,
 perhaps new items found
 their way there.
-]]
+]],
 }
 
 dialog{
@@ -5254,7 +5263,7 @@ dialog{
 The door is frozen.
 There must be a way to
 melt the ice!
-]]
+]],
 }
 
 dialog{
@@ -5264,7 +5273,7 @@ dialog{
 The door is frozen?
 Try to melt the ice
 with some water.
-]]
+]],
 }
 
 dialog{
@@ -5273,7 +5282,7 @@ dialog{
 Here's a little item
 that will help you
 on your way.
-]]
+]],
 }
 
 dialog{
@@ -5286,7 +5295,7 @@ east of the village.
 She's an old friend
 and knows everything
 about the area.
-]]
+]],
 }
 
 dialog{
@@ -5300,14 +5309,14 @@ Sahasrahla's memories.
 Read them?
 Yes
 No
-]]
+]],
 }
 
 dialog{
   id = "sahasrahla_house.memories.read",
   text = [[
 That's way too long!
-]]
+]],
 }
 
 dialog{
@@ -5320,7 +5329,7 @@ use. Nothing too fancy
 I guess, it's been a
 while since I went back
 there...
-]]
+]],
 }
 
 dialog{
@@ -5330,7 +5339,7 @@ Up to you, but don't
 come back here crying
 if you get in serious
 trouble.
-]]
+]],
 }
 
 dialog{
@@ -5339,7 +5348,7 @@ dialog{
 Are you trying to rip
 me off? You don't have
 enough Gems!
-]]
+]],
 }
 
 dialog{
@@ -5349,7 +5358,7 @@ Thanks a lot. To swing
 your sword, press C. Or
 hold the C key to
 launch a spin attack!
-]]
+]],
 }
 
 dialog{
@@ -5358,7 +5367,7 @@ dialog{
 Don't go and break my
 Sword because I won't
 forge you another one!
-]]
+]],
 }
 
 dialog{
@@ -5377,7 +5386,7 @@ with just that shield.
 So, interested?
 Yes
 No
-]]
+]],
 }
 
 dialog{
@@ -5385,7 +5394,7 @@ dialog{
   text = [[
 
           Right
-]]
+]],
 }
 
 dialog{
@@ -5393,7 +5402,7 @@ dialog{
   text = [[
 
            Up
-]]
+]],
 }
 
 dialog{
@@ -5401,7 +5410,7 @@ dialog{
   text = [[
 
           Left
-]]
+]],
 }
 
 dialog{
@@ -5409,7 +5418,7 @@ dialog{
   text = [[
 
           Down
-]]
+]],
 }
 
 dialog{
@@ -5422,7 +5431,7 @@ Telepathy, it works!
 But are you sure that
 you found everything
 in Roc's Cavern?
-]]
+]],
 }
 
 dialog{
@@ -5437,7 +5446,7 @@ Reckless? It appears
 he came back safe and
 sound from his journey
 to Mount Terror!
-]]
+]],
 }
 
 dialog{
@@ -5453,7 +5462,7 @@ north of here.
 Master Arbror is said
 to haunt the land
 flooded by the river.
-]]
+]],
 }
 
 dialog{
@@ -5466,7 +5475,7 @@ Telepathy, it works!
 You should pay a visit
 to Sahasrahla, he has
 something for you.
-]]
+]],
 }
 
 dialog{
@@ -5481,7 +5490,7 @@ the twin caves south
 of the forest dungeon
 hide an important
 treasure...
-]]
+]],
 }
 
 dialog{
@@ -5490,7 +5499,7 @@ dialog{
   text = [[
 Hello? ... Hello? ...
 Anybody there? ...
-]]
+]],
 }
 
 dialog{
@@ -5511,7 +5520,7 @@ started selling only
 weapons for survival,
 they're making real
 Gems!
-]]
+]],
 }
 
 dialog{
@@ -5520,7 +5529,7 @@ dialog{
   text = [[
 There must be a way to
 light this torch...
-]]
+]],
 }
 
 dialog{
@@ -5534,7 +5543,7 @@ What do you want to
 do?
 Eat an apple
 Nothing
-]]
+]],
 }
 
 dialog{
@@ -5548,7 +5557,7 @@ Do you want to pour
 it out?
 Pour water
 Keep it
-]]
+]],
 }
 
 dialog{
@@ -5561,7 +5570,7 @@ seven hearts. What
 do you want to do?
 Eat one
 Nothing
-]]
+]],
 }
 
 dialog{
@@ -5575,6 +5584,6 @@ three hearts. What
 do you want to do?
 Eat one
 Nothing
-]]
+]],
 }
 
