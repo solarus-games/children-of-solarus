@@ -46,6 +46,7 @@ sprite{ id = "destructibles/signpost", description = "Signpost" }
 sprite{ id = "enemies/apyronet/bosses/khorneth", description = "Khorneth" }
 sprite{ id = "enemies/apyronet/bosses/khorneth_left_blade", description = "Khorneth left blade" }
 sprite{ id = "enemies/apyronet/bosses/khorneth_right_blade", description = "Khorneth right blade" }
+sprite{ id = "enemies/diarandor/chameleon", description = "Chameleon" }
 sprite{ id = "enemies/diarandor/goblin_axe", description = "Goblin Axe" }
 sprite{ id = "enemies/diarandor/goblin_club", description = "Goblin Club" }
 sprite{ id = "enemies/diarandor/goblin_green", description = "Goblin Green" }
@@ -458,6 +459,7 @@ item{ id = "tunic", description = "Tunic (green / blue / red)" }
 item{ id = "wooden_key", description = "Wooden key" }
 item{ id = "world_map", description = "World map" }
 
+enemy{ id = "diarandor/chameleon", description = "chameleon" }
 enemy{ id = "diarandor/clucko", description = "Clucko" }
 enemy{ id = "diarandor/generic_projectile", description = "Projectile" }
 enemy{ id = "diarandor/goblin_green", description = "Goblin" }
@@ -483,6 +485,7 @@ font{ id = "small_white_digits", description = "small_white_digits" }
 font{ id = "white_digits", description = "white_digits" }
 
 
+file{ path = "enemies/diarandor/chameleon.lua", author = "Diarandor", license = "GPLv3+" }
 file{ path = "enemies/diarandor/clucko.lua", author = "Diarandor", license = "GPLv3+" }
 file{ path = "enemies/diarandor/generic_projectile.lua", author = "Diarandor", license = "GPLv3+" }
 file{ path = "enemies/diarandor/goblin_green.lua", author = "Diarandor", license = "GPLv3+" }
@@ -717,6 +720,8 @@ file{ path = "sprites/destructibles/rock_grey.dat", author = "Diarandor", licens
 file{ path = "sprites/destructibles/rocks_and_signpost.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/destructibles/signpost.dat", author = "Diarandor", license = "GPLv3+" }
 file{ path = "sprites/destructibles/vase.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
+file{ path = "sprites/enemies/diarandor/chameleon.dat", author = "Diarandor", license = "GPLv3+" }
+file{ path = "sprites/enemies/diarandor/chameleon.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies/diarandor/enemy_killed.png", author = "Diarandor", license = "CC-BY-SA 4.0" }
 file{ path = "sprites/enemies/diarandor/goblin_axe.dat", author = "Diarandor", license = "GPLv3+" }
 file{ path = "sprites/enemies/diarandor/goblin_club.dat", author = "Diarandor", license = "GPLv3+" }
