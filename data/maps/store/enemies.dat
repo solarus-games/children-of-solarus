@@ -94,3 +94,11 @@ enemy{
   breed = "diarandor/goblin_green",
 }
 
+enemy{
+  layer = 0,
+  x = 160,
+  y = 77,
+  direction = 3,
+  breed = "diarandor/shamablin_fire",
+}
+

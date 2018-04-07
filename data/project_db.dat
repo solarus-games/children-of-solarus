@@ -51,8 +51,8 @@ sprite{ id = "enemies/diarandor/goblin_axe", description = "Goblin Axe" }
 sprite{ id = "enemies/diarandor/goblin_club", description = "Goblin Club" }
 sprite{ id = "enemies/diarandor/goblin_green", description = "Goblin Green" }
 sprite{ id = "enemies/diarandor/goblin_green_slingshot", description = "Goblin Slingshot" }
-sprite{ id = "enemies/diarandor/goblin_shaman_fire", description = "Goblin Shaman Fire" }
 sprite{ id = "enemies/diarandor/pterobat", description = "Pterobat" }
+sprite{ id = "enemies/diarandor/shamablin_fire", description = "Goblin Shaman Fire" }
 sprite{ id = "enemies/diarandor/soldier", description = "Soldier" }
 sprite{ id = "enemies/diarandor/soldier_feather", description = "Soldier Feather" }
 sprite{ id = "enemies/diarandor/soldier_sword", description = "Soldier Sword" }
@@ -463,8 +463,8 @@ enemy{ id = "diarandor/chameleon", description = "chameleon" }
 enemy{ id = "diarandor/clucko", description = "Clucko" }
 enemy{ id = "diarandor/generic_projectile", description = "Projectile" }
 enemy{ id = "diarandor/goblin_green", description = "Goblin" }
-enemy{ id = "diarandor/goblin_shaman_fire", description = "Goblin Shaman Fire" }
 enemy{ id = "diarandor/pterobat", description = "Pterobat" }
+enemy{ id = "diarandor/shamablin_fire", description = "Goblin Shaman Fire" }
 enemy{ id = "diarandor/soldier", description = "Soldier" }
 enemy{ id = "generic_soldier", description = "generic soldier" }
 

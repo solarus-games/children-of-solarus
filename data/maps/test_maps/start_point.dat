@@ -103,106 +103,66 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 136,
-  y = 141,
+  x = 104,
+  y = 189,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
   x = 248,
+  y = 221,
+  direction = 3,
+  breed = "diarandor/chameleon",
+}
+
+enemy{
+  layer = 0,
+  x = 384,
   y = 125,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 64,
-  y = 181,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 128,
-  y = 213,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 232,
-  y = 213,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 352,
-  y = 189,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 368,
-  y = 109,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 448,
-  y = 149,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
   x = 160,
-  y = 189,
+  y = 237,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
-  x = 272,
-  y = 173,
+  x = 216,
+  y = 141,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
-  x = 88,
-  y = 229,
+  x = 296,
+  y = 277,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
-  x = 152,
-  y = 261,
+  x = 96,
+  y = 285,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
-  x = 256,
-  y = 261,
+  x = 240,
+  y = 317,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
@@ -210,118 +170,30 @@ enemy{
   x = 376,
   y = 221,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
-  x = 488,
-  y = 205,
+  x = 152,
+  y = 333,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 304,
-  y = 261,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 368,
-  y = 293,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 472,
-  y = 293,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 112,
-  y = 301,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 224,
-  y = 285,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 40,
-  y = 341,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 104,
-  y = 373,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
   x = 208,
-  y = 373,
+  y = 237,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
 enemy{
   layer = 0,
-  x = 336,
-  y = 341,
+  x = 360,
+  y = 301,
   direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 448,
-  y = 325,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 264,
-  y = 381,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 328,
-  y = 413,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
-}
-
-enemy{
-  layer = 0,
-  x = 432,
-  y = 413,
-  direction = 3,
-  breed = "diarandor/goblin_shaman_fire",
+  breed = "diarandor/chameleon",
 }
 
