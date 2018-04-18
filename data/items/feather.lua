@@ -11,6 +11,7 @@ local max_height = 16 -- Height of jump in pixels.
 local max_distance = 31 -- Max distance of jump in pixels.
 local jumping_speed = math.floor(1000 * max_distance / jump_duration)
 local disabled_entities -- Nearby streams and teletransporters that are disabled during the jump
+local current_angle -- Used to restart movement if some item stops it.
 
 function item:on_created()
   self:set_savegame_variable("possession_feather")
@@ -144,6 +145,14 @@ function item:start_custom_jump()
     for _, s in hero:get_sprites() do
       s:set_xy(0, -height)
     end
+    -- Update angle for hero movement.
+    if not hero:is_walking() then
+      current_angle = nil
+    else
+      local m = hero:get_movement()
+      local angle = m and m.get_angle and m:get_angle()
+      current_angle = angle
+    end
     -- Continue shifting while jumping.
     instant = instant + 1
     return true
@@ -190,6 +199,7 @@ function item:start_custom_jump()
     -- Finish jump.
     item:set_finished()
     sol.timer.stop_all(item)
+    current_angle = nil
     is_hero_jumping = false
   end)
 end
@@ -269,3 +279,36 @@ local stream_meta = sol.main.get_metatable("stream")
 stream_meta:register_event("on_created", entity_to_hide_on_created)
 local teletransporter_meta = sol.main.get_metatable("teletransporter")
 teletransporter_meta:register_event("on_created", entity_to_hide_on_created)
+
+-- Check for other abilities used.
+function item:on_ability_used(ability_name)
+  -- Restart jump movement if sword is used (which freezes hero).
+  local hero = self:get_game():get_hero()
+  if self:is_jumping() and current_angle then
+    if ability_name == "sword" or ability_name == "sword_knowledge" then
+      local m = sol.movement.create("straight")
+      m.pos = {x = 0, y = 0}
+      m.pos0 = {x = 0, y = 0}
+      m:set_angle(current_angle)
+      m:set_speed(jumping_speed)
+      m:set_smooth(true)
+      m:set_max_distance(max_distance)
+      m:start(m.pos)
+      function m:on_position_changed()
+        -- Stop movement when hero has fallen.
+        local _, height = hero:get_sprite():get_xy()
+        if height == 0 then
+          m:stop(); return
+        end
+        -- Shift hero "indirectly": this allows using sword several times on the air.
+        local dx, dy = m.pos.x - m.pos0.x, m.pos.y - m.pos0.y
+        m.pos0 = {x = m.pos.x, y = m.pos.y}
+        if hero:test_obstacles(dx, dy) then
+          m:stop(); return
+        end
+        local x, y, layer = hero:get_position()
+        hero:set_position(x + dx, y + dy, layer)
+      end
+    end
+  end
+end
