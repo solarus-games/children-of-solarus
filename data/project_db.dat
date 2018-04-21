@@ -1,3 +1,6 @@
+map{ id = "dungeon_1/1f", description = "Dungeon 1 - 1F" }
+map{ id = "dungeon_1/2f", description = "Dungeon 1 - 2F" }
+map{ id = "dungeon_1/b1", description = "Dungeon 1 -B1" }
 map{ id = "houses/gem_house", description = "Gem House" }
 map{ id = "houses/inn", description = "Inn" }
 map{ id = "houses/kaleido", description = "Kaleido house" }
@@ -258,6 +261,9 @@ sprite{ id = "shadows/shadow_big_dynamic", description = "Shadow Big Dynamic" }
 sprite{ id = "shadows/shadow_small", description = "Shadow Small" }
 sprite{ id = "weather/rain", description = "rain" }
 sprite{ id = "weather/snow", description = "snow" }
+sprite{ id = "work/dungeon_1_rdc", description = "map dungeon 1 rdc" }
+sprite{ id = "work/dungeon_1_ss1", description = "map dungeon 1 ss1" }
+sprite{ id = "work/dungeon_1et", description = "map dungeon 1 1et" }
 sprite{ id = "work/model", description = "Map model" }
 
 music{ id = "eduardo/boss", description = "Boss" }

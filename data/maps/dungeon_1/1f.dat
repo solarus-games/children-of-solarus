@@ -1,0 +1,22 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 912,
+  height = 624,
+  min_layer = -1,
+  max_layer = 2,
+  world = "dungeon_1",
+  floor = 0,
+  tileset = "diarandor/house",
+}
+
+custom_entity{
+  layer = -1,
+  x = 8,
+  y = 13,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "work/dungeon_1_rdc",
+}
+
