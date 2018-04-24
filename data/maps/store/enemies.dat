@@ -11,7 +11,7 @@ properties{
 enemy{
   layer = 0,
   x = 40,
-  y = 45,
+  y = 141,
   direction = 3,
   breed = "diarandor/soldier",
 }
@@ -100,5 +100,21 @@ enemy{
   y = 77,
   direction = 3,
   breed = "diarandor/shamablin_fire",
+}
+
+enemy{
+  layer = 0,
+  x = 40,
+  y = 45,
+  direction = 3,
+  breed = "diarandor/chameleon",
+}
+
+enemy{
+  layer = 0,
+  x = 40,
+  y = 109,
+  direction = 3,
+  breed = "diarandor/skelfos",
 }
 

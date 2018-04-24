@@ -440,9 +440,9 @@ for _, entity_meta in ipairs({sprite_meta, enemy_meta}) do
   function entity_meta:set_default_behavior_on_hero_shield(behavior)
     -- Define default properties.
     local p_enemy, p_hero
-    local normal_push = {distance = 32, speed = 120, push_delay = 500, num_directions = "any"}
-    local weak_push = {distance = 16, speed = 120, push_delay = 250, num_directions = "any"}
-    local strong_push = {distance = 48, speed = 200, push_delay = 1000, num_directions = "any"}
+    local normal_push = {distance = 32, speed = 120, push_delay = 250, num_directions = "any"}
+    local weak_push = {distance = 16, speed = 120, push_delay = 100, num_directions = "any"}
+    local strong_push = {distance = 48, speed = 200, push_delay = 500, num_directions = "any"}
     local block_push = {distance = 1, speed = 80, push_delay = 30, num_directions = 4}
     self:set_can_push_hero_on_shield(true)
     self:set_can_be_pushed_by_shield(true)
