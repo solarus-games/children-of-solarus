@@ -1,0 +1,7 @@
+animation{
+  name = "normal",
+  src_image = "work/dungeon_1_ss1.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 1032, frame_height = 696, origin_x = 8, origin_y = 13 },
+  },
+}
