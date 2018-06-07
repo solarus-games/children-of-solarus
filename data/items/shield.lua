@@ -181,10 +181,15 @@ function item:on_using()
   end
 end
 
--- Stop using items when changing maps.
-function item:on_map_changed(map)
+-- Map transition events: stop using when changing maps.
+function item:on_map_finished(map)
   local hero = game:get_hero()
   if hero and hero:is_using_shield() then self:finish_using() end
+end
+function item:on_map_changed(map)
+  map:register_event("on_finished", function()
+    item:on_map_finished(map)
+  end)
 end
 
 function item:finish_using()
@@ -277,13 +282,10 @@ function item:create_shield()
   end)
   -- Define collision test to detect enemies with shield.
   -- A pixel-precise collision between enemy and shield is assumed before calling this test.
-  local function shield_collision_test(shield, entity, entity_sprite, shield_sprite)
-    -- Check enemies that can be pushed.
-    if (not entity) or (not entity_sprite) then return end
-    -- TODO: REMOVE NEXT LINE WHEN #1162 IS FIXED.
-    if entity_sprite:get_animation_set() == "hero/shield_collision_mask" then return end
+  local function shield_collision_test(shield, entity, shield_sprite, entity_sprite)
     
     -- Check collision conditions. Sprite collision overrides entity collision.
+    if (not entity) or (not entity_sprite) then return end
     for _, e in ipairs({entity_sprite, entity}) do
       
       local custom_test = (e.on_shield_collision_test == nil)
@@ -348,10 +350,7 @@ function item:create_shield()
   end
   
   -- Initialize collision test on the shield collision mask.
-  collision_mask:add_collision_test("sprite",
-  function(shield, entity, shield_sprite, entity_sprite)
-    shield_collision_test(shield, entity, shield_sprite, entity_sprite)
-  end)
+  collision_mask:add_collision_test("sprite", shield_collision_test)
 end
 
 function item:set_grabing_abilities_enabled(enabled)
@@ -375,6 +374,9 @@ function hero_meta:is_using_shield()
 end
 function hero_meta:set_using_shield(using_shield)
   self.using_shield = using_shield
+end
+function item:is_being_used()
+  return self:get_map():get_hero().using_shield or false
 end
 
 -- True if there is a pixel collision between shield and enemy.

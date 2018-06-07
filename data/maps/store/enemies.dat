@@ -118,3 +118,11 @@ enemy{
   breed = "diarandor/skelfos",
 }
 
+enemy{
+  layer = 0,
+  x = 64,
+  y = 109,
+  direction = 3,
+  breed = "diarandor/skullbat",
+}
+
