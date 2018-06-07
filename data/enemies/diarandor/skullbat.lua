@@ -1,4 +1,4 @@
--- Lua script for "pterobat" enemy.
+-- Lua script for "skullbat" enemy.
 
 local enemy = ...
 local game = enemy:get_game()
@@ -7,9 +7,13 @@ local hero = map:get_hero()
 local state
 local detection_distance = 80
 local speed = 50
-local max_height, current_height = 16, 0
+local damage = 1
+local life, flying_life = 2, 1
+local wings_stopped_animation, wings_walking_animation
+local wings_color = "random" -- Possible values: "random", "white", "green", "brown".
+local max_height, current_height = 24, 0
 local min_distance, max_distance = 10, 40 -- Used for each small movement.
-local body_sprite, wings_sprite, shadow_sprite
+local head_sprite, wings_sprite, shadow_sprite
 local height_timer, shadow_timer -- Used to ascend and descend.
 
 -- Event called when the enemy is initialized.
@@ -17,32 +21,78 @@ function enemy:on_created()
   -- Create sprites.
   local sprite_id = "enemies/" .. enemy:get_breed()
   shadow_sprite = self:create_sprite("shadows/shadow_big_dynamic", "shadow")
-  body_sprite = self:create_sprite(sprite_id, "body")
+  shadow_sprite:set_xy(0, -6)
+  head_sprite = self:create_sprite(sprite_id, "body")
   wings_sprite = self:create_sprite(sprite_id, "wings")
-  -- Set sprite properties. Shadow and wings are invincible and cannot hurt the hero.
-  wings_sprite:synchronize(body_sprite)
+  -- Select wings color.
+  local colors = {"white", "green", "brown"}
+  if wings_color == "random" then
+    local index = math.random(1, #colors)
+    wings_color = colors[index]
+  end
+  wings_stopped_animation = "stopped_wings_" .. wings_color
+  wings_walking_animation = "walking_wings_" .. wings_color
+  -- Set properties. Shadow and wings are decoration.
+  wings_sprite:synchronize(head_sprite)
   self:set_invincible_sprite(shadow_sprite)
   self:set_invincible_sprite(wings_sprite)
   self:set_sprite_damage(shadow_sprite, 0)
   self:set_sprite_damage(wings_sprite, 0)
-  self:set_default_behavior_on_hero_shield("block_push")
-  
-  -- Set enemy properties.
+  head_sprite:set_default_behavior_on_hero_shield("enemy_weak_to_shield_push")
+  head_sprite.on_shield_collision_test = enemy.custom_attacking_collision_test -- Collision test.
+  self:set_damage(damage) -- Head damage.
+  self:set_life(life)
   self:set_obstacle_behavior("flying")
-  self:set_life(2)
-  self:set_damage(1)
+  self:set_attack_consequence_sprite(head_sprite, "sword", enemy.on_sword_collision)
+  -- Update sprites.
+  function head_sprite:on_animation_changed(anim)
+    if anim == "stopped" then
+      self:set_animation("stopped_head"); return
+    elseif anim == "walking" then
+      self:set_animation("walking_head"); return
+    elseif anim == "hurt" then
+      self:set_animation("hurt_head"); return
+    elseif wings_sprite then 
+      if anim == "stopped_head" then
+        wings_sprite:set_animation(wings_stopped_animation)
+      elseif anim == "walking_head" then
+        wings_sprite:set_animation(wings_walking_animation)
+      elseif anim == "hurt_head" then
+        wings_sprite:set_animation("hurt_wings")
+      end
+    end
+  end
+  function head_sprite:on_frame_changed(anim, frame)
+    if wings_sprite and wings_sprite:get_num_frames() > frame then wings_sprite:set_frame(frame) end
+  end
+  function head_sprite:on_direction_changed(anim, dir)
+    if wings_sprite then wings_sprite:set_direction(dir) end
+  end
+  function wings_sprite:on_animation_changed(anim)
+    if anim == "stopped" then
+      self:set_animation(wings_stopped_animation)
+    elseif anim == "walking" then
+      self:set_animation(wings_walking_animation)
+    elseif anim == "hurt" then
+      self:set_animation("hurt_wings")
+    end
+  end
+
+  -- TODO: CONVERT IN JUMPING SKULL AFTER HURT! (DRAW AND CODE).
+
 end
 
 -- Event called when the enemy is restarted.
 function enemy:on_restarted()
   self:wait_for_hero() -- Update state.
-  self:update_shadow() -- Update shadow frame.
+  if wings_sprite then
+    self:update_shadow() -- Update shadow frame.
+  end
 end
 
 -- Event called when the enemy is hurt.
 function enemy:on_hurt()
   self:update_shadow() -- Update shadow frame.
-  wings_sprite:set_animation("hurt_wings") -- Update wings animation.
 end
 
 -- Get/set state values: "waiting", "flying", "ascending", "descending".
@@ -50,14 +100,13 @@ function enemy:get_state() return state end
 function enemy:set_state(new_state)
   state = new_state -- Update state.
   -- Update sprites.
-  local body_animation, wings_animation
+  local body_animation
   if state == "waiting" and current_height == 0 then
-    body_animation, wings_animation = "stopped", "stopped_wings"
+    body_animation = "stopped"
   elseif state == "flying" or current_height > 0 then
-    body_animation, wings_animation = "walking", "walking_wings"
+    body_animation = "walking"
   end
-  body_sprite:set_animation(body_animation)
-  wings_sprite:set_animation(wings_animation)
+  head_sprite:set_animation(body_animation)
   -- Update height.
   if state == "waiting" then
     self:update_height(0)
@@ -71,7 +120,11 @@ function enemy:wait_for_hero()
   self:set_state("waiting")
   sol.timer.start(self, 500, function()
     if enemy:get_distance(hero) <= detection_distance then
-      enemy:start_flying()
+      if wings_sprite then
+        enemy:start_flying()
+      else
+        enemy:start_jumping()
+      end
       return false
     end
     return true
@@ -88,13 +141,12 @@ function enemy:update_height(new_height)
           or ((new_height < current_height) and -1)
   height_timer = sol.timer.start(enemy, 50, function()
     current_height = current_height + dh
-    body_sprite:set_xy(0, -current_height)
+    head_sprite:set_xy(0, -current_height)
     wings_sprite:set_xy(0, -current_height)
     if new_height == current_height then
       -- Update animations after descending, if necessary.
       if state == "waiting" and current_height == 0 then
-        body_sprite:set_animation("stopped")
-        wings_sprite:set_animation("stopped_wings")
+        head_sprite:set_animation("stopped")
       end
       return -- Stop timer.
     end
@@ -145,4 +197,37 @@ function enemy:start_flying()
   -- Update sprite directions.
   for _, s in self:get_sprites() do s:set_direction(dir4) end
   m:start(self) -- Start movement.
+end
+
+-- Destroy wings sprite.
+function enemy:destroy_wings()
+  self:remove_sprite(wings_sprite)
+  self:remove_sprite(shadow_sprite)
+  shadow_sprite = self:create_sprite("shadows/shadow_big_dynamic", "shadow")
+  self:bring_sprite_to_back(shadow_sprite)
+  shadow_sprite:set_xy(0, -6)
+  self:set_invincible_sprite(shadow_sprite)
+  self:set_sprite_damage(shadow_sprite, 0)
+
+  -- TODO: change to jumping behavior.
+end
+
+-- Custom test used in enemy_meta script and also in this script.
+-- Decide if enemy can hurt hero and viceversa, depending on the flying height.
+function enemy:custom_attacking_collision_test()
+  if (current_height < 24 and not hero:is_jumping()) then
+    return "ground_collision_possible"
+  elseif (current_height >= 24 and hero:is_jumping()) then
+    return "air_collision_possible"
+  end
+  return nil -- No possible collision.
+end
+
+-- Avoid sword attacks while flying, unless the hero is jumping.
+function enemy:on_sword_collision()
+  if not enemy:custom_attacking_collision_test(sprite) then return end
+  enemy:start_hurt_by_sword(hero, head_sprite)
+   
+  print("being hurt now!!! life: " .. (self:get_life() or "???"))
+
 end
